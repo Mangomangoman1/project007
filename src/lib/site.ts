@@ -15,7 +15,7 @@ export const SITE = {
    * licensed inspector has reviewed the content.
    */
   reviewStatus:
-    'The content has been compiled from the cited public sources and has not yet been reviewed by a licensed home inspector.',
+    '',
   /** Date the privacy, terms and corrections pages were last changed (shown at the top of each). */
   policiesUpdated: 'November 16, 2026',
   /** Production origin, used for canonical URLs and OG images. */

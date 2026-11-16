@@ -443,8 +443,9 @@ export default function AboutPage() {
                 manufacturer, contractor, inspector or government agency. Nobody pays to be included or left out.
               </p>
               <p>
-                The people behind it are not licensed home inspectors. {SITE.reviewStatus} That is why every claim links to
-                its source and quotes it: you can check each one yourself.
+                {SITE.name} is a reference, not an inspection service. Everything on it is compiled from public records:
+                federal agencies, recall notices, court documents, the Census and the other sources cited on each page.
+                Every claim links to its source and quotes it, so you can check each one yourself. {SITE.reviewStatus}
               </p>
               <p>
                 Spotted an error? See <Link href="/corrections">how corrections work</Link>. <Contact />
