@@ -20,6 +20,9 @@ import { CheckFirstTag, EvidenceStamp } from '../Stamps';
 import { IssueBand } from '../IssueBand';
 import { IssueRow, type ReportIssue } from './IssueRow';
 import { LifespanList } from './LifespanList';
+import { PlaceSection } from '@/components/place/PlaceSection';
+import { TypicalHouse } from '@/components/typical/TypicalHouse';
+import { typicalNavCount } from '@/components/typical/data';
 import styles from './Report.module.css';
 
 export type ReportProps = {
@@ -144,7 +147,9 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
     { id: 'check-first', label: 'Check first', n: first.length },
     { id: 'built-without', label: 'Built without', n: missing.length },
     { id: 'by-part', label: 'By part of the house', n: rest.length },
+    { id: 'typical-house', label: 'Typical new house', n: typicalNavCount(year) },
     ...(!newHouse ? [{ id: 'whats-due', label: "What's due", n: dueOrSoon }] : []),
+    { id: 'your-place', label: 'Your place', n: 4 }, // four ZIP/county facts
   ].filter((t) => t.n > 0 || t.id === 'whats-due');
   const tocKey = toc.map((t) => t.id).join(',');
 
@@ -577,7 +582,11 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
             </section>
           )}
 
+          <TypicalHouse year={year} state={state} />
+
           {!newHouse && dueSection}
+
+          <PlaceSection year={year} state={state} onStateChange={chooseState} />
         </div>
       </div>
 

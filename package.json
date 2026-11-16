@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "data": "node scripts/build-data.mjs",
+    "data:typical": "python3 scripts/data-prep/typical_house.py",
     "predev": "node scripts/build-data.mjs",
     "dev": "next dev",
     "prebuild": "node scripts/build-data.mjs",

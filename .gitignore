@@ -30,3 +30,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 .next-*/
+
+# data-prep downloads (scripts/data-prep/*)
+/scripts/data-prep/.cache/
+
+# data-prep downloads (scripts/data-prep/typical_house.py)
+/scripts/data-prep/.cache/

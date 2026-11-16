@@ -24,6 +24,25 @@ passed through in canonical attribute order; meta gains `conditionalIssueCount`/
 It exits 1 and lists every problem (no verified source, bad Zone, bad state code, duplicate slug,
 bad years, unknown `when` attribute or value...). The generated JSON is committed so lint/typecheck work without a build.
 
+## Census data prep: `scripts/data-prep/typical_house.py` (typical new house)
+`npm run data:typical` (= `python3 scripts/data-prep/typical_house.py [--refresh]`). Needs Python 3.9+,
+`xlrd`, `curl`, `pdftotext`. Downloads the Census Survey of Construction "Characteristics of New Housing"
+tables (houses COMPLETED, Total sheet: foundation, exterior wall, heating fuel, heating system, AC,
+stories, parking, bedrooms, bathrooms, fireplaces, square feet) with plain `curl -sL` into the gitignored
+`scripts/data-prep/.cache/`, plus the 2008 annual report PDF for stories 1973–2008 (pp. 451–457, old
+scheme 1 / 2+ / split-level). Writes the committed `src/data/typical-house.json` (~52 KB): per
+characteristic `cats` (with `from`/`to` for categories that start or stop, `relabel` when a category's
+contents change, e.g. "Other, incl. vinyl" before 1992, "Oil or other" from 2014), `data[geo][year-from]`
+= cells aligned to `cats`, with Census marks kept verbatim (`"NA"` not published, `"S"`/`"A"` withheld,
+`"Z"` < 0.5%); `sources` (table title, file, URL, years); `completed` (thousands); `sqft` median/average;
+`notes` (universe, pre-1999 3.3% adjustment, slab-or-other, vinyl 1992, fiber cement 2005, oil 2014,
+heat pump 1978, stories break 2009, garage 3+ 1992, baths 2½+ through 1986, sampling); `corrections`
+(six published percent cells that contradict their own row's counts are replaced by the count-derived
+share and listed). The script checks every header, that `NA` appears only outside a category's years,
+regional counts add to the US, rows add to ~100, the PDF totals match the XLS, and 36 figures from
+`research/feasibility-typical-house.md` (e.g. 1987 South: slab or other 56, crawl 25, basement 20, AC 92,
+median 1,755 sq ft); it exits 1 on any mismatch. The site build never touches the network.
+
 ## Library (`src/lib`)
 | file | what |
 |---|---|
@@ -35,6 +54,8 @@ bad years, unknown `when` attribute or value...). The generated JSON is committe
 | `labels.ts` | `CATEGORIES` (lane order), `EVIDENCE` (stamp text + long explanation), `PREVALENCE`, `SEVERITY`, `TIER`, `ZONE_LABEL`, `PARTS` (zone → "part of the house"), `STATES`, `plural()` |
 | `storage.ts` | `readStore` / `writeStore` (localStorage, try/catch'd) |
 | `profile.ts` (pure, import-free) | House profile, the single source of truth: `HouseProfile`, `When`, `PROFILE_KEYS`, `PROFILE_QUESTIONS` (question, name, chips: `label`, `fact` for "Hidden because: …", optional out-of-context `summary`), `PROFILE_GROUPS` (the building / its systems / its services), `matchesProfile` (spec rule: every listed attribute unset or allowed), `profileConflicts`, `hiddenReason` ("no gas", "furnace heat and no gas"), `splitByProfile`, `setAnswer`, `answeredCount`, `sanitizeProfile` (stored data), `validateWhen` (used by build-data). Tests: `profile.test.ts`. `types.ts` re-exports `HouseProfile`/`When`; `Issue.when?`, `Lifespan.when?`; `IssueLite` carries `when`. `STORAGE_KEYS.profile` = `builtin:profile` (shared by all years), `profileOpen`. |
+| `regions.ts` (pure) | Census regions: `REGIONS` (states per region, DC in the South), `GeoId` (`US`/`NE`/`MW`/`S`/`W`), `GEO_LABEL`, `regionOfState(code)`, `geoPhrase` ("in the South" / "across the US"). |
+| `typical.ts` (pure; data passed in) | Types for `typical-house.json`; `hasTypical`, `typicalFor(data, year, geo)` → `{completed, sqft, chars: CharRecord[] (shares present that year, withheld points, lead, close runner-up, sources, notes that apply, breaks), notes}`; `catSeries` / `sqftSeries` (over-time lines), `charBreaks`, `summarize` ("Most often: one story, on a slab or other foundation, wood or brick outside, electric heat and air-conditioning."; each part is that characteristic's own most common category, two when within 3 points), `yoursFor(record, profile)` (only answers whose categories line up: foundation, walls with caveats, heating system, cooling, floors, chimney↔fireplaces; withheld → `share: null`), `pct`. Tests: `typical.test.ts`. |
 
 ## Components (`src/components`)
 | component | props | notes |
@@ -51,6 +72,9 @@ bad years, unknown `when` attribute or value...). The generated JSON is committe
 | `SiteHeader`, `SiteFooter`, `ThemeToggle`, `LogoMark` | | Footer is a title block; shows a note when built on sample content. |
 | `profile/useHouseProfile` (client) | | `[profile, save]` from `localStorage[builtin:profile]` via `useSyncExternalStore`: one shared snapshot for every component on the page, a custom event on save, the `storage` event across tabs. Server snapshot is `{}`, so static HTML is always unfiltered. `saveHouseProfile()` sanitizes. |
 | `profile/ProfilePanel` (client) | `year`, `profile`, `onChange`, `hiddenCount`, `reveal`, `onReveal` | "About your house", a row joined under the report's title block (`id="about-your-house"`; that hash opens it). Collapsed: answers so far, an 11-tick progress scale ("4 of 11"), Answer/Edit toggle (`aria-expanded`), and "N items hidden by your answers · show them". Open: three groups (columns on desktop; at ≤720px an accordion, one group at a time, each header showing its answers). Each question is a native radio group (`fieldset`/`legend`) whose first chip is a dashed "Not sure" (= unset). Clear all, Done; a polite live region announces each change and the hidden count. Open state kept in `builtin:profile-open`. Hidden without JS and in print. Also exports `RevealButton` ("show them / hide them", `aria-pressed`, `data-reveal-hidden`). |
+| `typical/TypicalHouse` (client) | `year`, `state`, `id?='typical-house'` | Report section "The typical new house of YEAR" (after By part, before What's due; navigator entry "Typical new house" with the characteristic count, absent before 1971). Region = the report's state's Census region (US when none; static HTML is US-wide); a US/Northeast/Midwest/South/West switch (radio group, JS only) overrides it until the state changes. Title block: one-sentence summary, median size, houses completed, median-size line. Then one row per characteristic: big lead share, `ShareStrip`, notes that apply to the year, and an over-time `Spark` of the lead category with the year marked and series breaks dashed (the line breaks there). House profile answers that line up get a dashed "yours" bracket and a line ("yours: slab, like 56% of new houses in the South that year (Census category: slab or other)"). Footer: general notes, source link and every table used. Before 1971 (and for years the Census has not published yet) only a short honest note. `typical/data.ts` imports the JSON (bundled once, ~12 KB gzipped) and exports `typicalNavCount(year)`. The printable checklist does not carry this section (the sheet is already one tight page for most years). |
+| `typical/ShareStrip` | `rec`, `yours?` | 20px stacked strip on a 0–100 ruler, table order, lead solid `--line`, others alternating tints, withheld hatched, numbers inside segments ≥ 11%; key below lists every category with its share (no information by colour alone). |
+| `typical/Spark` | `series`, `year`, `x0`, `x1`, `y0?`, `y1?`, `breaks?`, `valueText`, `label` | Stretchy SVG line (non-scaling strokes) with HTML dot/value so they stay round; `role=img` + label. |
 | `checklist/Tailor` (client islands) | | `ChecklistTailor` (injects `[data-item]`/`[data-part]{display:none}` for ruled-out rows/parts and a "Tailored to your answers: 3 items left out (no gas; …)" line in the sheet's title-block foot), `TailoredCount`, `TailoredCutaway`. |
 
 ## House profile in the report (v1.1)

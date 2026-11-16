@@ -31,4 +31,6 @@ export const STORAGE_KEYS = {
   profile: 'builtin:profile',
   /** "1" while the About your house panel is open, so it stays open from year to year. */
   profileOpen: 'builtin:profile-open',
+  /** "Your place": { zip: "83333", keep?: "OH" } (keep = state the visitor chose to keep over the ZIP's). */
+  place: 'builtin:place',
 } as const;

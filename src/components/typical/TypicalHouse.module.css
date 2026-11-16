@@ -1,0 +1,616 @@
+/* "The typical new house of YEAR" — Census shares drawn as thin strips on a ruler. */
+
+.section {
+  display: grid;
+  gap: var(--s-5);
+  scroll-margin-top: calc(var(--report-sticky, 0px) + var(--s-5));
+}
+.lede {
+  max-width: var(--measure);
+  color: var(--ink-2);
+}
+
+/* ---------- which geography ---------- */
+.where {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-3) var(--s-5);
+}
+.whereNote {
+  font-size: var(--t-sm);
+  color: var(--ink);
+}
+.whereNote strong {
+  font-weight: 500;
+}
+.whereWhy {
+  color: var(--ink-3);
+}
+.geoSwitch {
+  display: none;
+  margin: 0;
+  padding: 0;
+  border: var(--hair) solid var(--rule-strong);
+  border-radius: var(--radius);
+  min-width: 0;
+}
+:global(html.js) .geoSwitch {
+  display: inline-flex;
+}
+.geoOpt {
+  position: relative;
+  display: inline-flex;
+}
+.geoOpt + .geoOpt {
+  border-left: var(--hair) solid var(--rule);
+}
+.geoOpt input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.geoOpt > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  min-height: 36px;
+  padding: 0 var(--s-3);
+  font-family: var(--font-mono);
+  font-size: var(--t-xs);
+  letter-spacing: 0.03em;
+  color: var(--ink-2);
+  white-space: nowrap;
+  transition: background-color var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+}
+.geoOpt:hover > span {
+  color: var(--ink);
+  background: var(--paper-2);
+}
+.geoOpt input:checked + span {
+  background: var(--ink);
+  color: var(--paper);
+}
+.geoOpt input:focus-visible + span {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+.geoYours {
+  color: var(--line);
+  font-size: 1.1em;
+  line-height: 1;
+}
+.geoOpt input:checked + span .geoYours {
+  color: var(--paper);
+}
+
+/* ---------- summary title block ---------- */
+.block {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  border: var(--rule-strong-w) solid var(--ink);
+}
+.blockMain {
+  display: grid;
+  align-content: start;
+  gap: var(--s-3);
+  padding: var(--s-4) var(--s-5) var(--s-5);
+  background-image: linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: -1px -1px;
+}
+.summary {
+  max-width: 30ch;
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 1.2rem + 1.3vw, 2.25rem);
+  line-height: 1.14;
+  letter-spacing: -0.015em;
+  font-weight: 360;
+  font-variation-settings: 'opsz' 96, 'SOFT' 40;
+  text-wrap: balance;
+}
+.blockFoot {
+  max-width: var(--measure);
+  font-size: var(--t-sm);
+  color: var(--ink-3);
+}
+.blockCells {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  min-width: 13.5rem;
+  border-left: var(--hair) solid var(--rule-strong);
+}
+.blockCells > div {
+  display: grid;
+  align-content: space-between;
+  gap: var(--s-1);
+  padding: var(--s-3) var(--s-4);
+}
+.blockCells > div + div {
+  border-top: var(--hair) solid var(--rule-strong);
+}
+.blockCells dt,
+.sparkTitle {
+  font-family: var(--font-mono);
+  font-size: var(--t-2xs);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.blockCells dd {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 1.4rem + 1.2vw, 2.5rem);
+  line-height: 1;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-variation-settings: 'opsz' 144;
+  font-weight: 360;
+  white-space: nowrap;
+}
+.blockCells dd small {
+  margin-left: 0.3em;
+  font-family: var(--font-mono);
+  font-size: var(--t-xs);
+  color: var(--ink-3);
+  letter-spacing: 0.04em;
+}
+.blockCells dd small.na {
+  margin-left: 0;
+}
+.blockSpark {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: var(--s-2);
+  padding: var(--s-3) var(--s-5) var(--s-4);
+  border-top: var(--hair) solid var(--rule-strong);
+}
+
+/* ---------- your answers ---------- */
+.yoursLede {
+  max-width: var(--measure);
+  font-size: var(--t-sm);
+  color: var(--ink-3);
+}
+.yoursTag {
+  display: inline-block;
+  padding: 0 5px;
+  border: var(--hair) dashed var(--ink-2);
+  border-radius: var(--radius);
+  font-family: var(--font-mono);
+  font-size: var(--t-2xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: var(--ink);
+  vertical-align: 0.1em;
+}
+.yoursLine {
+  font-size: var(--t-sm);
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+
+/* ---------- rows ---------- */
+.rows {
+  list-style: none;
+  border-top: var(--hair) solid var(--rule-strong);
+}
+.row {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr) 15rem;
+  gap: var(--s-3) var(--s-6);
+  padding: var(--s-5) 0 var(--s-5);
+  border-bottom: var(--hair) solid var(--rule);
+}
+.rowHead {
+  display: grid;
+  align-content: start;
+  gap: var(--s-1);
+}
+.rowTitle {
+  font-family: var(--font-mono);
+  font-size: var(--t-xs);
+  font-weight: 500;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  line-height: 1.4;
+  color: var(--ink);
+}
+.rowLead {
+  font-size: var(--t-sm);
+  line-height: 1.35;
+  color: var(--ink-2);
+}
+.rowLeadVal {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--t-xl);
+  line-height: 1;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-variation-settings: 'opsz' 144;
+  font-weight: 360;
+  color: var(--line);
+  margin-bottom: 2px;
+}
+.rowChart {
+  display: grid;
+  align-content: start;
+  gap: var(--s-3);
+  min-width: 0;
+}
+.rowNotes {
+  list-style: none;
+  display: grid;
+  gap: var(--s-1);
+}
+.rowNotes li,
+.notes li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: var(--t-xs);
+  line-height: 1.5;
+  color: var(--ink-3);
+  max-width: 60ch;
+}
+.rowNotes li::before,
+.notes li::before {
+  content: '※';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--line-2);
+}
+.rowSpark {
+  display: grid;
+  align-content: start;
+  gap: var(--s-2);
+  min-width: 0;
+}
+
+/* ---------- the strip ---------- */
+.stripWrap {
+  display: grid;
+  gap: var(--s-3);
+}
+.strip {
+  position: relative;
+}
+.stripMine {
+  padding-top: 18px; /* room for the "yours" bracket */
+}
+.jsOnly {
+  display: none;
+}
+:global(html.js) .jsOnly {
+  display: inline;
+}
+.bar {
+  position: relative;
+  height: 20px;
+}
+.seg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid var(--paper);
+  overflow: hidden;
+}
+.seg:last-child {
+  border-right: 0;
+}
+.seg_lead {
+  background: var(--line);
+}
+.seg_a {
+  background: color-mix(in srgb, var(--line) 40%, var(--paper));
+}
+.seg_b {
+  background: color-mix(in srgb, var(--line) 18%, var(--paper));
+}
+.seg_withheld {
+  background: repeating-linear-gradient(135deg, var(--rule-strong) 0 1px, transparent 1px 5px);
+  box-shadow: inset 0 0 0 1px var(--rule);
+}
+.segNum {
+  font-family: var(--font-mono);
+  font-size: var(--t-2xs);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.seg_lead .segNum {
+  color: var(--paper);
+}
+/* a ruler under the strip: ticks every 10, longer at 0/50/100 */
+.ruler {
+  display: block;
+  height: 7px;
+  margin-top: 3px;
+  background:
+    linear-gradient(90deg, var(--rule-strong) 1px, transparent 1px) 0 0 / 50% 7px repeat-x,
+    linear-gradient(90deg, var(--rule) 1px, transparent 1px) 0 0 / 10% 4px repeat-x,
+    linear-gradient(var(--rule-strong), var(--rule-strong)) 0 0 / 100% 1px no-repeat;
+  box-shadow: inset -1px 0 0 var(--rule-strong);
+}
+.yoursMark {
+  position: absolute;
+  top: 2px;
+  height: 14px;
+  border: var(--hair) dashed var(--ink-2);
+  border-bottom: 0;
+  min-width: 10px;
+}
+.yoursMark > span {
+  position: absolute;
+  left: 50%;
+  top: -7px;
+  transform: translateX(-50%);
+  padding: 0 4px;
+  background: var(--paper);
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1.3;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+/* key: every category with its share */
+.key {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-1) var(--s-5);
+}
+.key li {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  font-size: var(--t-sm);
+  line-height: 1.4;
+  color: var(--ink-2);
+}
+.keyLabel {
+  white-space: nowrap;
+}
+.keyVal {
+  font-family: var(--font-mono);
+  font-size: var(--t-xs);
+  color: var(--ink-3);
+  font-variant-numeric: tabular-nums;
+}
+.keyLead {
+  color: var(--ink) !important;
+  font-weight: 500;
+}
+.keyLead .keyVal {
+  color: var(--ink);
+}
+.keyMine .keyLabel {
+  text-decoration: underline dashed var(--ink-2);
+  text-underline-offset: 0.25em;
+}
+.sw {
+  flex: none;
+  width: 10px;
+  height: 10px;
+  align-self: center;
+  border: var(--hair) solid var(--rule-strong);
+}
+.sw_lead {
+  background: var(--line);
+  border-color: var(--line);
+}
+.sw_a {
+  background: color-mix(in srgb, var(--line) 40%, var(--paper));
+}
+.sw_b {
+  background: color-mix(in srgb, var(--line) 18%, var(--paper));
+}
+.sw_withheld {
+  background: repeating-linear-gradient(135deg, var(--rule-strong) 0 1px, transparent 1px 3px);
+}
+
+/* ---------- sparkline ---------- */
+.spark {
+  margin: 0;
+  display: grid;
+  gap: 2px;
+}
+.sparkPlot {
+  position: relative;
+  height: 44px;
+}
+.sparkPlot svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.sparkPlot svg * {
+  vector-effect: non-scaling-stroke;
+  fill: none;
+}
+.sparkBase {
+  stroke: var(--rule-strong);
+  stroke-width: 1;
+}
+.sparkMid {
+  stroke: var(--rule);
+  stroke-width: 1;
+  stroke-dasharray: 2 3;
+}
+.sparkBreak {
+  stroke: var(--ink-3);
+  stroke-width: 1;
+  stroke-dasharray: 1 2;
+}
+.sparkYear {
+  stroke: var(--ink);
+  stroke-width: 1;
+}
+.sparkLine {
+  stroke: var(--line);
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.sparkDot {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  margin: -3.5px 0 0 -3.5px;
+  border-radius: 50%;
+  background: var(--ink);
+  box-shadow: 0 0 0 2px var(--paper);
+}
+.sparkVal {
+  position: absolute;
+  top: -2px;
+  margin-left: 6px;
+  padding: 0 3px;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.04em;
+  line-height: 1.3;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--paper) 85%, transparent);
+  white-space: nowrap;
+}
+.sparkValLeft {
+  margin-left: 0;
+  transform: translateX(calc(-100% - 6px));
+}
+.sparkAxis {
+  position: relative;
+  height: 1.1em;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-3);
+}
+.sparkAxis > span {
+  position: absolute;
+  top: 0;
+}
+.sparkBreakLabel {
+  transform: translateX(-50%);
+}
+
+/* ---------- notes and source ---------- */
+.foot {
+  display: grid;
+  gap: var(--s-4);
+}
+.notes {
+  list-style: none;
+  display: grid;
+  gap: var(--s-1);
+}
+.source {
+  max-width: 68ch;
+  font-size: var(--t-xs);
+  line-height: 1.6;
+  color: var(--ink-3);
+}
+.source a {
+  color: var(--ink-2);
+}
+.source :global(.label) {
+  margin-right: var(--s-1);
+}
+
+@media (max-width: 1180px) {
+  .row {
+    grid-template-columns: 10rem minmax(0, 1fr);
+  }
+  .rowSpark {
+    grid-column: 2;
+    max-width: 26rem;
+  }
+}
+@media (max-width: 720px) {
+  .block {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .blockMain {
+    padding: var(--s-4);
+  }
+  .blockCells {
+    grid-template-rows: none;
+    grid-template-columns: 1fr 1fr;
+    min-width: 0;
+    border-left: 0;
+    border-top: var(--hair) solid var(--rule-strong);
+  }
+  .blockCells > div + div {
+    border-top: 0;
+    border-left: var(--hair) solid var(--rule-strong);
+  }
+  .blockSpark {
+    padding: var(--s-3) var(--s-4) var(--s-4);
+  }
+  .row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--s-3);
+  }
+  .rowHead {
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: baseline;
+    column-gap: var(--s-3);
+  }
+  .rowTitle {
+    grid-column: 1 / -1;
+  }
+  .rowLead {
+    display: flex;
+    align-items: baseline;
+    gap: var(--s-2);
+    grid-column: 1 / -1;
+  }
+  .rowLeadVal {
+    display: inline;
+    font-size: var(--t-lg);
+    margin: 0;
+  }
+  .rowSpark {
+    grid-column: 1;
+    max-width: none;
+  }
+  .where {
+    display: grid;
+  }
+  .geoSwitch {
+    width: 100%;
+  }
+  .geoOpt {
+    flex: 1 1 auto;
+  }
+  .geoOpt > span {
+    width: 100%;
+    justify-content: center;
+    padding: 0 var(--s-2);
+  }
+}
+@media print {
+  .geoSwitch {
+    display: none !important;
+  }
+}
+.sparkFrom {
+  left: 0;
+}
+.sparkTo {
+  right: 0;
+  text-align: right;
+}

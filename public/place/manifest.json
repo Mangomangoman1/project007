@@ -1,0 +1,47 @@
+{
+  "generated": "2026-11-16",
+  "minUnits": 100,
+  "counts": {
+    "zips": 33791,
+    "shards": 896,
+    "counties": 3230,
+    "zipsWithoutAcs": 830,
+    "radon": 3143,
+    "climate": 3143,
+    "nfip": 3040
+  },
+  "sources": {
+    "acs": {
+      "name": "U.S. Census Bureau, 2020-2024 American Community Survey 5-Year Estimates (tables B25034, B25035, B25040)",
+      "url": "https://www.census.gov/programs-surveys/acs/data/summary-file.html",
+      "files": [
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25034.dat",
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25035.dat",
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25040.dat"
+      ],
+      "vintage": "2020-2024"
+    },
+    "zcta": {
+      "name": "U.S. Census Bureau, 2020 ZCTA to County Relationship File",
+      "url": "https://www2.census.gov/geo/docs/maps-data/data/rel2020/zcta520/tab20_zcta520_county20_natl.txt",
+      "vintage": "2020"
+    },
+    "radon": {
+      "name": "U.S. EPA, Map of Radon Zones",
+      "url": "https://www.epa.gov/radon/epa-map-radon-zones",
+      "file": "https://www.epa.gov/system/files/other-files/2024-06/radon-zones-202406.json",
+      "vintage": "1993 map; county list 2024-06"
+    },
+    "climate": {
+      "name": "U.S. DOE / PNNL, Guide to Determining Climate Regions by County (Building America Vol. 7.3)",
+      "url": "https://www.energy.gov/sites/prod/files/2015/10/f27/ba_climate_region_guide_7.3.pdf",
+      "vintage": "2015"
+    },
+    "nfip": {
+      "name": "FEMA, NFIP Community Status Book (OpenFEMA)",
+      "url": "https://www.fema.gov/about/openfema/data-sets",
+      "file": "https://www.fema.gov/api/open/v1/NfipCommunityStatusBook.csv",
+      "vintage": "2026-11-15"
+    }
+  }
+}
