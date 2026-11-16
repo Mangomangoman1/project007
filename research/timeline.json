@@ -1,0 +1,1662 @@
+{
+ "events": [
+  {
+   "id": "knob-and-tube-era",
+   "year": 1880,
+   "yearTo": 1940,
+   "precision": "range",
+   "category": "electrical",
+   "title": "Knob-and-tube wiring is the standard wiring method",
+   "text": "Single conductors run on porcelain knobs and through tubes were the common way to wire American buildings from about the 1880s into the 1940s. Houses wired in this period have no grounding conductor in the original circuits.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Knob-and-tube_wiring",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "It was common in North America and Japan starting in the 1880s, remaining prevalent until the 1940s in North America",
+     "verified": true
+    },
+    {
+     "url": "https://www.nachi.org/knob-and-tube.htm",
+     "publisher": "InterNACHI",
+     "tier": "trade",
+     "quote": "in common use in North America from about 1880 to the 1940s",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "two-by-four-framing-standard",
+   "year": 1880,
+   "yearTo": null,
+   "precision": "circa",
+   "category": "materials",
+   "title": "Light 2x4 framing becomes standard practice",
+   "text": "By the 1880s some form of light 2x4 wood framing was standard in American house building, after builders had been slow to adopt the idea in the decades before. Houses from the 1880s onward are generally framed with many small studs rather than heavy hand-cut timbers.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Balloon_framing",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "by the 1880s, some form of 2×4 framing was standard",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "streetcar-suburbs",
+   "year": 1888,
+   "yearTo": 1928,
+   "precision": "range",
+   "category": "industry",
+   "title": "Streetcar suburbs spread",
+   "text": "The National Park Service dates the streetcar suburb era of American housing from 1888 to 1928. Houses on lots near these transit lines were built for commuters rather than for work on the premises.",
+   "sources": [
+    {
+     "url": "https://www.nps.gov/subjects/nationalregister/upload/NRB46_Suburbs_part1_508.pdf",
+     "publisher": "National Park Service, National Register Bulletin 46 (Historic Residential Suburbs)",
+     "tier": "primary",
+     "quote": "Streetcar Suburbs, 1888 to 1928",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "linoleum-floors",
+   "year": 1890,
+   "yearTo": 1960,
+   "precision": "range",
+   "category": "materials",
+   "title": "Linoleum becomes a common hallway and kitchen floor",
+   "text": "Linoleum became common in hallways and passages around 1890 and was widely used for kitchen floors into the 20th century, up through about 1960, before other floor coverings overtook it.",
+   "sources": [
+    {
+     "url": "https://www.nachi.org/determine-building-age.htm",
+     "publisher": "InterNACHI",
+     "tier": "trade",
+     "quote": "In the late 19 th century (1890), linoleum became common for use in hallways and passages",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "sackett-board",
+   "year": 1890,
+   "yearTo": null,
+   "precision": "circa",
+   "category": "materials",
+   "title": "Sackett Board, the ancestor of drywall",
+   "text": "Sackett Board, plaster layered between sheets of felt paper, was invented around 1890 and is the forerunner of modern gypsum wallboard. It was not yet the normal way to finish a wall; plaster on lath was.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Drywall",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "Sackett Board was invented in 1890 by New York Coal Tar Chemical Company employees Augustine Sackett and Fred L. Kane",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "wire-nails",
+   "year": 1890,
+   "yearTo": null,
+   "precision": "circa",
+   "category": "materials",
+   "title": "Machine-made wire nails replace cut nails",
+   "text": "Round machine-made wire nails came into use around 1890 and are the nails found in houses built after that, replacing the square cut nails of earlier decades.",
+   "sources": [
+    {
+     "url": "https://www.nachi.org/determine-building-age.htm",
+     "publisher": "InterNACHI",
+     "tier": "trade",
+     "quote": "Wire nails, used from 1890 through today",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "national-electrical-code-first",
+   "year": 1897,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "electrical",
+   "title": "First National Electrical Code published",
+   "text": "The first National Electrical Code was published in 1897 and has been revised on a three-year cycle since. Wiring in houses built before the code existed, or before a local government adopted it, may not follow any written national standard.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/National_Electrical_Code",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "First published in 1897, the NEC is updated and published every three years",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "gypsum-plaster-1900",
+   "year": 1900,
+   "yearTo": null,
+   "precision": "circa",
+   "category": "materials",
+   "title": "Gypsum plaster starts to replace lime plaster",
+   "text": "Around 1900 gypsum began to be used as a plastering material in American houses, which sets faster than the older lime plaster. The National Park Service also notes that gypsum rock lath, a plasterboard base, was in use by 1900.",
+   "sources": [
+    {
+     "url": "https://www.nps.gov/orgs/1739/upload/preservation-brief-21-flat-plaster.pdf",
+     "publisher": "National Park Service, Preservation Brief 21: Repairing Historic Flat Plaster Walls and Ceilings",
+     "tier": "primary",
+     "quote": "Around 1900, gypsum began to be used as a plastering material.",
+     "verified": true
+    },
+    {
+     "url": "https://www.nps.gov/orgs/1739/upload/preservation-brief-21-flat-plaster.pdf",
+     "publisher": "National Park Service, Preservation Brief 21: Repairing Historic Flat Plaster Walls and Ceilings",
+     "tier": "primary",
+     "quote": "In use as early as 1900, rock lath was made up of",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "asphalt-shingles-first-used",
+   "year": 1903,
+   "yearTo": null,
+   "precision": "circa",
+   "category": "materials",
+   "title": "Asphalt shingles first used",
+   "text": "Asphalt shingles are an American invention first used in 1903 and in general use in parts of the country by 1911. A roof on a house built before about 1910 was most likely wood, slate, tile or metal rather than asphalt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Asphalt_shingle",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "They were first used in 1903, in general use in parts of the United States by 1911",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "nbfu-building-code-1905",
+   "year": 1905,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "codes",
+   "title": "Insurance underwriters publish a model building code",
+   "text": "The National Board of Fire Underwriters published a Recommended Building Code in 1905, later renamed the National Building Code. It was an early model code that cities could adopt, before most localities had their own.",
+   "sources": [
+    {
+     "url": "https://www.nps.gov/orgs/1739/upload/preservation-brief-51-building-codes.pdf",
+     "publisher": "National Park Service, Preservation Brief 51: Building Codes for Historic and Existing Buildings",
+     "tier": "primary",
+     "quote": "Their comprehensive 1905 Recommended Building Code,",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "plywood-1905",
+   "year": 1905,
+   "yearTo": null,
+   "precision": "circa",
+   "category": "materials",
+   "title": "Modern plywood shown at the Portland fair",
+   "text": "The Portland Manufacturing Company developed modern veneer-core plywood for the 1905 Portland World Fair, and plywood use in building is said to begin around that year. Plywood sheathing and subfloors in houses of the 1900s and 1910s would be unusual; common use came later.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Plywood",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "who developed modern veneer core plywood for the 1905 Portland World Fair",
+     "verified": true
+    },
+    {
+     "url": "https://www.nachi.org/determine-building-age.htm",
+     "publisher": "InterNACHI",
+     "tier": "trade",
+     "quote": "Plywood's use began around 1905.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "kit-homes-begin",
+   "year": 1906,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "industry",
+   "title": "Mail-order kit homes begin",
+   "text": "In 1906 a Sears manager was given the building-materials department that led to its kit homes, and the Aladdin Company of Bay City, Michigan, offered the first kit homes by mail order that year. Kit houses arrived as pre-cut lumber and parts, so a kit house can look like any other house of its period.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Sears_Modern_Homes",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "In 1906, Frank W. Kushel, a Sears manager, was given responsibility for the catalog company's unwieldy, unprofitable building-materials department.",
+     "verified": true
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Sears_Modern_Homes",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "offered the first kit homes through mail order",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "san-francisco-1906-codes",
+   "year": 1906,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "event",
+   "title": "San Francisco earthquake and fire shape fire and seismic code thinking",
+   "text": "The 1906 San Francisco earthquake and the fires that followed supplied damage assessments that informed the National Building Code. Western building codes later added earthquake provisions, but homes built before those provisions may have no seismic bracing.",
+   "sources": [
+    {
+     "url": "https://www.nps.gov/orgs/1739/upload/preservation-brief-51-building-codes.pdf",
+     "publisher": "National Park Service, Preservation Brief 51: Building Codes for Historic and Existing Buildings",
+     "tier": "primary",
+     "quote": "following the 1906 San Francisco earthquake.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "sears-modern-homes",
+   "year": 1908,
+   "yearTo": 1940,
+   "precision": "range",
+   "category": "industry",
+   "title": "Sears Modern Homes sold by catalog",
+   "text": "Sears published its first house catalog in 1908 and sold more than 70,000 homes through 1942, with the catalog ending after 1940. Sears records were destroyed, so most of these houses are hard to identify today.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Sears_Modern_Homes",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "In 1908, Sears issued its first specialty catalog for houses, Book of Modern Homes and Building Plans",
+     "verified": true
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Sears_Modern_Homes",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "Sears discontinued its Modern Homes catalog after 1940 with sales through local sales offices continuing into 1942.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "gypsum-board-takes-shape",
+   "year": 1910,
+   "yearTo": 1930,
+   "precision": "range",
+   "category": "materials",
+   "title": "Gypsum board takes its modern form",
+   "text": "Gypsum board evolved between 1910 and 1930, with United States Gypsum buying the Sackett company in 1910 and introducing Sheetrock by about 1917. Some sources give 1916 for Sheetrock, so the year is approximate.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Drywall",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "Gypsum board evolved between 1910 and 1930, beginning with wrapped board edges",
+     "verified": true
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Sheetrock",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "In 1910 United States Gypsum Corporation bought Sackett Plaster Board Company and by 1917 introduced Sheetrock",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "asphalt-tile-floors",
+   "year": 1920,
+   "yearTo": 1969,
+   "precision": "circa",
+   "category": "materials",
+   "title": "Asphalt tile floors",
+   "text": "Asphalt floor tile was used starting around 1920 through the 1960s, and vinyl asbestos tile followed as lighter-colored patterns became popular. Floor tile from these decades can contain asbestos and should be tested before it is disturbed.",
+   "sources": [
+    {
+     "url": "https://www.nachi.org/determine-building-age.htm",
+     "publisher": "InterNACHI",
+     "tier": "trade",
+     "quote": "Asphalt tile was used for floor tiles starting around 1920 through the 1960s.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "platform-framing-prevalent",
+   "year": 1920,
+   "yearTo": null,
+   "precision": "circa",
+   "category": "materials",
+   "title": "Platform framing becomes common as long studs get scarce",
+   "text": "As tall trees were used up in the 1920s, platform framing, which builds one floor at a time on a flat deck, became prevalent. Sources differ on timing: other accounts say balloon framing lasted into the late 1940s or mid-1950s in some regions, so the switch was gradual.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Balloon_framing",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "as tall trees were exhausted in the 1920s, platform framing became prevalent",
+     "verified": true
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Balloon_framing",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "Balloon framing using a technique suspending floors from the walls was common until the late 1940s",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "miniature-circuit-breaker-patent",
+   "year": 1924,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "electrical",
+   "title": "Modern miniature circuit breaker patented",
+   "text": "The miniature circuit breaker similar to those now used in panels was patented in 1924. Houses of the 1920s through the 1940s were typically protected by fuses rather than breakers.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Circuit_breaker",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "A modern miniature circuit breaker similar to the ones now in use was patented by Brown, Boveri & Cie in 1924.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "softwood-lumber-standard-1924",
+   "year": 1924,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "materials",
+   "title": "First national softwood lumber size standard",
+   "text": "Commerce Secretary Herbert Hoover offered help to the lumber industry in 1922, leading to Simplified Practice Recommendation R 16 in 1924, the ancestor of the American Softwood Lumber Standard. Dimensional lumber sizes were revised several times after that, so lumber from different decades is not always the same size.",
+   "sources": [
+    {
+     "url": "https://www.nist.gov/system/files/documents/2019/12/11/PS%2020-20%20final%20WERB%20approved.pdf",
+     "publisher": "National Institute of Standards and Technology, PS 20-20",
+     "tier": "primary",
+     "quote": "editions issued, respectively, in 1924, 1925,",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "uniform-building-code-1927",
+   "year": 1927,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "codes",
+   "title": "Uniform Building Code first published",
+   "text": "The Uniform Building Code was first published in 1927 by the International Conference of Building Officials and was updated about every three years until 1997. It became the dominant model code in the western states.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Uniform_Building_Code",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "The UBC was first published in 1927 by the International Conference of Building Officials",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "plaster-era-ends",
+   "year": 1930,
+   "yearTo": 1949,
+   "precision": "range",
+   "category": "materials",
+   "title": "Plaster stops being the default wall finish",
+   "text": "The National Park Service notes that plaster was the interior wall surface for nearly all buildings until the 1930s or 1940s. Houses built after that period increasingly have gypsum board walls instead.",
+   "sources": [
+    {
+     "url": "https://www.nps.gov/orgs/1739/upload/preservation-brief-21-flat-plaster.pdf",
+     "publisher": "National Park Service, Preservation Brief 21: Repairing Historic Flat Plaster Walls and Ceilings",
+     "tier": "primary",
+     "quote": "for nearly all buildings until the 1930s or 40s (Fig. 1).",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "rock-lath-dominant",
+   "year": 1930,
+   "yearTo": 1939,
+   "precision": "range",
+   "category": "materials",
+   "title": "Rock lath nearly universal under plaster",
+   "text": "By the late 1930s rock lath (gypsum plasterboard) was used almost exclusively as the base for plaster in houses, replacing wood and metal lath. A plastered house from this period often has gypsum lath behind the plaster.",
+   "sources": [
+    {
+     "url": "https://www.nps.gov/orgs/1739/upload/preservation-brief-21-flat-plaster.pdf",
+     "publisher": "National Park Service, Preservation Brief 21: Repairing Historic Flat Plaster Walls and Ceilings",
+     "tier": "primary",
+     "quote": "By the late 1930s, rock lath was used",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "thermopane-1930s",
+   "year": 1930,
+   "yearTo": 1939,
+   "precision": "circa",
+   "category": "materials",
+   "title": "Factory-sealed double-pane glass becomes a product",
+   "text": "The insulating glass unit was patented in 1865 but developed into a commercial product in the 1930s. Sealed double-pane windows are very uncommon in houses built before then.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Insulated_glazing",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "It was developed into a commercial product in the 1930s",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "president-conference-home-building",
+   "year": 1931,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "President's Conference on Home Building and Home Ownership",
+   "text": "A conference convened in December 1931 examined construction, financing, house design and zoning, and fed into the federal housing programs of the early New Deal.",
+   "sources": [
+    {
+     "url": "https://www.nps.gov/subjects/nationalregister/upload/NRB46_Suburbs_part1_508.pdf",
+     "publisher": "National Park Service, National Register Bulletin 46 (Historic Residential Suburbs)",
+     "tier": "primary",
+     "quote": "In December 1931, he convened the",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "room-air-conditioner",
+   "year": 1931,
+   "yearTo": 1932,
+   "precision": "range",
+   "category": "heating-cooling",
+   "title": "Window-ledge room air conditioner developed",
+   "text": "The window-ledge room air conditioner was developed in 1931 and went on sale in 1932, at prices far beyond ordinary households. Air conditioning in houses built before the late 1940s, if present, was almost certainly added later.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Air_conditioning",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "In 1931, H.H. Schultz and J.Q. Sherman developed what would become the most common type of individual room air conditioner",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "federal-home-loan-bank-act",
+   "year": 1932,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "Federal Home Loan Bank system created",
+   "text": "The Federal Home Loan Bank Act of July 22, 1932 created a credit reserve for savings and loan associations that lent on home mortgages. It began the system of mortgage finance that later federal programs built on.",
+   "sources": [
+    {
+     "url": "https://www.nps.gov/subjects/nationalregister/upload/NRB46_Suburbs_part1_508.pdf",
+     "publisher": "National Park Service, National Register Bulletin 46 (Historic Residential Suburbs)",
+     "tier": "primary",
+     "quote": "Loan Bank Act of July 22,1932, created",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "glass-wool-patent",
+   "year": 1933,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "materials",
+   "title": "Glass wool process patented",
+   "text": "A patent for producing glass wool, the base material of fiberglass insulation, was first applied for in 1933. Fiberglass batts therefore appear in houses only from the late 1930s at the earliest.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fiberglass",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "A patent for this method of producing glass wool was first applied for in 1933",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "hol-corporation",
+   "year": 1933,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "Home Owners' Loan Corporation refinances mortgages",
+   "text": "When the Roosevelt administration began in 1933, home foreclosures were running about 1,000 per day, and the Home Owners' Loan Corporation refinanced distressed mortgages into long-term amortizing loans. Its neighborhood risk maps later shaped where federally backed lending went.",
+   "sources": [
+    {
+     "url": "https://www.nps.gov/subjects/nationalregister/upload/NRB46_Suburbs_part1_508.pdf",
+     "publisher": "National Park Service, National Register Bulletin 46 (Historic Residential Suburbs)",
+     "tier": "primary",
+     "quote": "began in 1933, home foreclosures were",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "long-beach-earthquake-1933",
+   "year": 1933,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "event",
+   "title": "Long Beach earthquake changes California building standards",
+   "text": "The 1933 Long Beach earthquake led to improved school construction standards and a heightened awareness of earthquake risk in California. Houses of that era were tossed off foundations, so California houses built before the 1930s may lack foundation anchoring.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1933_Long_Beach_earthquake",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "the 1933 quake changed the landscape, leading to improved school construction standards and a heightened awareness of earthquake risks.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "fha-created",
+   "year": 1934,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "Federal Housing Administration created",
+   "text": "The National Housing Act of 1934 created the Federal Housing Administration to insure mortgages made by private lenders. FHA insurance made long-term, low-down-payment loans normal and brought FHA appraisal standards into house design.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Federal_Housing_Administration",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "created in part by the National Housing Act of 1934",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "rural-electrification-begins",
+   "year": 1935,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "electrical",
+   "title": "Rural Electrification Administration created",
+   "text": "The Rural Electrification Administration was created in 1935 and backed by the 1936 Rural Electrification Act to bring electric service to farms and small towns. Many rural houses built before then were first wired in the late 1930s or 1940s, so the wiring can be younger than the house.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Rural_Electrification_Administration",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "The REA was created by executive order on May 11, 1935, by President Franklin D. Roosevelt",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "fha-planning-neighborhoods",
+   "year": 1936,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "FHA publishes neighborhood planning guidance",
+   "text": "In 1936 the FHA published Planning Neighborhoods for Small Houses, followed by Planning Profitable Neighborhoods in 1938, promoting curving streets and deeper setbacks. Subdivisions approved for FHA loans from this period often show those layouts.",
+   "sources": [
+    {
+     "url": "https://www.nps.gov/subjects/nationalregister/upload/NRB46_Suburbs_part1_508.pdf",
+     "publisher": "National Park Service, National Register Bulletin 46 (Historic Residential Suburbs)",
+     "tier": "primary",
+     "quote": "In 1936, FHA published Planning",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "aluminum-siding-late-1930s",
+   "year": 1938,
+   "yearTo": null,
+   "precision": "circa",
+   "category": "materials",
+   "title": "Aluminum siding introduced",
+   "text": "The National Park Service says aluminum siding, advertised as maintenance free, was introduced in the late 1930s and became popular for single-family houses. InterNACHI dates its residential production to the 1940s, so original aluminum siding is more likely on houses from the 1940s onward.",
+   "sources": [
+    {
+     "url": "https://www.nps.gov/orgs/1739/upload/treatment-guidelines-2017-part1-preservation-rehabilitation.pdf",
+     "publisher": "National Park Service, Secretary of the Interior's Standards for the Treatment of Historic Properties",
+     "tier": "primary",
+     "quote": "for single-family residences after it was introduced in the late 1930s.",
+     "verified": true
+    },
+    {
+     "url": "https://www.nachi.org/aluminum-siding-inspection.htm",
+     "publisher": "InterNACHI",
+     "tier": "trade",
+     "quote": "By the 1940s, aluminum siding was being produced for use on residential structures",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "fannie-mae-1938",
+   "year": 1938,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "Fannie Mae created and FHA terms loosened",
+   "text": "In 1938 Congress created the Federal National Mortgage Association (Fannie Mae) to buy and sell mortgages, and FHA insurance was extended to 90 percent of a home's value over up to 25 years.",
+   "sources": [
+    {
+     "url": "https://www.nps.gov/subjects/nationalregister/upload/NRB46_Suburbs_part1_508.pdf",
+     "publisher": "National Park Service, National Register Bulletin 46 (Historic Residential Suburbs)",
+     "tier": "primary",
+     "quote": "Legislation in 1938 created",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "asphalt-shingles-1939",
+   "year": 1939,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "materials",
+   "title": "Asphalt shingle production reaches 11 million squares",
+   "text": "By 1939 asphalt shingle production had reached 11 million squares a year, after a National Board of Fire Underwriters campaign against wood shingle roofs. Asphalt had become the common American roof covering.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Asphalt_shingle",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "by 1939 11 million squares",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "wpb-halts-nondefense-construction",
+   "year": 1942,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "event",
+   "title": "War Production Board halts nondefense construction",
+   "text": "In April 1942 the War Production Board banned all nondefense construction and sharply limited alterations to existing houses, which produced a national housing shortage during and after the war. Houses of 1942 to 1945 are scarce, and building materials and products of those years were whatever the restrictions allowed.",
+   "sources": [
+    {
+     "url": "https://www.nps.gov/articles/war-bonds-scrap-drives-housing-shortages-st-paul-s-as-world-war-ii-home-front.htm",
+     "publisher": "National Park Service",
+     "tier": "primary",
+     "quote": "the War Production Board in April 1942 banned all nondefense construction and put stringent limitations on the alteration or improvement of existing residential buildings.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "gi-bill-home-loans",
+   "year": 1944,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "GI Bill signed, opening home loans to veterans",
+   "text": "President Roosevelt signed the Servicemen's Readjustment Act (GI Bill) in June 1944. Together with FHA insurance it produced the long-term, low-down-payment mortgages that financed the postwar building boom.",
+   "sources": [
+    {
+     "url": "https://www.nps.gov/articles/000/american-home-front-after-world-war-ii.htm",
+     "publisher": "National Park Service",
+     "tier": "primary",
+     "quote": "President Roosevelt signed it into law in June, 1944",
+     "verified": true
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Federal_Housing_Administration",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "After the adoption of the Serviceman's Readjustment Act (known as the GI Bill ) in 1944, the FHA brought together a system of long-term mortgages for the construction and sale of private homes.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "standard-building-code-1945",
+   "year": 1945,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "codes",
+   "title": "Southern Building Code Congress issues the Standard Building Code",
+   "text": "The Southern Building Code Congress International, established in 1940, published the Standard Building Code in 1945, widely adopted in the southeastern states. Houses built in the Southeast after about 1945 were typically governed by it where a local code existed.",
+   "sources": [
+    {
+     "url": "https://www.nps.gov/orgs/1739/upload/preservation-brief-51-building-codes.pdf",
+     "publisher": "National Park Service, Preservation Brief 51: Building Codes for Historic and Existing Buildings",
+     "tier": "primary",
+     "quote": "dard Building Code in 1945 which was widely adopted by",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "veterans-emergency-housing",
+   "year": 1946,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "Veterans' Emergency Housing Act",
+   "text": "The Veterans' Emergency Housing Act of 1946 authorized federal help to house returning veterans and extended FHA authority to insure mortgages for veteran housing.",
+   "sources": [
+    {
+     "url": "https://www.nps.gov/subjects/nationalregister/upload/NRB46_Suburbs_part1_508.pdf",
+     "publisher": "National Park Service, National Register Bulletin 46 (Historic Residential Suburbs)",
+     "tier": "primary",
+     "quote": "Veterans' Emergency Housing Act of 1946",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "levittown-1947",
+   "year": 1947,
+   "yearTo": 1951,
+   "precision": "range",
+   "category": "industry",
+   "title": "Levittown, New York, built on assembly-line methods",
+   "text": "Levitt and Sons built Levittown on Long Island from 1947 to 1951, using assembly-line methods in which a house could be started and finished in one day, on slabs without basements. It set the pattern for large tract subdivisions of small, similar houses.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Levittown",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "Levittown, New York – the first Levittown (built 1947–1951)",
+     "verified": true
+    },
+    {
+     "url": "https://www.nps.gov/articles/000/american-home-front-after-world-war-ii.htm",
+     "publisher": "National Park Service",
+     "tier": "primary",
+     "quote": "Levittown on Long Island, New York was America's first planned suburban community.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "fha-terms-1948",
+   "year": 1948,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "FHA loan terms liberalized to 95 percent and 30 years",
+   "text": "The Housing Act of 1948 allowed FHA insurance on up to 95 percent of a home's value with repayment periods up to 30 years. Smaller down payments widened the market for new tract houses.",
+   "sources": [
+    {
+     "url": "https://www.nps.gov/subjects/nationalregister/upload/NRB46_Suburbs_part1_508.pdf",
+     "publisher": "National Park Service, National Register Bulletin 46 (Historic Residential Suburbs)",
+     "tier": "primary",
+     "quote": "Act of 1948 further liberalized FHA",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "lustron-steel-houses",
+   "year": 1948,
+   "yearTo": 1950,
+   "precision": "range",
+   "category": "industry",
+   "title": "Lustron enameled-steel prefabricated houses",
+   "text": "The Lustron Corporation built 2,498 prefabricated houses clad in porcelain-enameled steel panels between 1948 and 1950 in Columbus, Ohio. Their walls, roof and interior are steel, which affects how they are renovated.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lustron_Corporation",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "the corporation eventually constructed 2,498 Lustron homes between 1948 and 1950",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "housing-act-1949",
+   "year": 1949,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "Housing Act of 1949",
+   "text": "The Housing Act of 1949 set a national housing objective and provided federal aid for slum clearance and public housing. Its urban renewal programs reshaped older city neighborhoods.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Housing_Act_of_1949",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "An Act to establish a national housing objective and the policy to be followed in the attainment thereof, to provide Federal aid to assist slum-clearance projects",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "boca-basic-code-1950",
+   "year": 1950,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "codes",
+   "title": "BOCA Basic Building Code published",
+   "text": "The Building Officials and Code Administrators, founded in 1915, published its first model code, the BOCA Basic Building Code, in 1950, widely used in the northeastern states.",
+   "sources": [
+    {
+     "url": "https://www.nps.gov/orgs/1739/upload/preservation-brief-51-building-codes.pdf",
+     "publisher": "National Park Service, Preservation Brief 51: Building Codes for Historic and Existing Buildings",
+     "tier": "primary",
+     "quote": "Code, in 1950. The Southern Building Code Congress Inter-",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "mobile-homes-permanent",
+   "year": 1950,
+   "yearTo": 1959,
+   "precision": "circa",
+   "category": "industry",
+   "title": "Mobile homes marketed as permanent housing",
+   "text": "From the 1950s mobile homes were marketed as inexpensive housing to be left in one place for long periods rather than moved. Homes built before June 1976 are called mobile homes and were not built to the later HUD code.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Manufactured_housing",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "beginning in the 1950s, these homes began to be marketed primarily as an inexpensive form of housing",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "ranch-house-dominant",
+   "year": 1950,
+   "yearTo": 1969,
+   "precision": "circa",
+   "category": "industry",
+   "title": "Ranch house becomes the default new house",
+   "text": "First appearing as a residential style in the 1920s, the ranch became extremely popular after World War II, from the 1940s to the 1970s, and one source says it accounted for nine of every ten new houses by the 1950s. Ranch houses usually have a long single-story layout and often an attached garage.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ranch-style_house",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "First appearing as a residential style in the 1920s, the ranch was extremely popular with the booming post-war middle class of the 1940s to the 1970s.",
+     "verified": true
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Ranch-style_house",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "By the 1950s, the California ranch house, by now often called simply the ranch house or \"rambler house\", accounted for nine out of every ten new houses.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "split-level-popular",
+   "year": 1950,
+   "yearTo": null,
+   "precision": "circa",
+   "category": "industry",
+   "title": "Split-level houses spread in postwar suburbs",
+   "text": "The split-level house gained popularity in North America from the 1950s onward, as suburbs expanded after World War II. Its staggered half-floors are one clue to a house from this period.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Split-level_home",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "has remained a popular housing style from the 1950s onward.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "stab-lok-breakers",
+   "year": 1950,
+   "yearTo": 1980,
+   "precision": "range",
+   "category": "electrical",
+   "title": "Federal Pacific Stab-Lok breakers installed",
+   "text": "Stab-Lok circuit breakers made by Federal Pacific Electric were manufactured from 1950 to 1980. In 1983 the Consumer Product Safety Commission closed an investigation without finding that they were a proven hazard, saying it lacked data and money to settle the question.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Federal_Pacific_Electric",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "Stab-Lok is a brand name of electrical circuit breakers that were manufactured primarily by Federal Pacific Electric from 1950 to 1980.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Commission-Closes-Investigation-Of-FPE-Circuit-Breakers-And-Provides-Safety-Information-For-Consumers/",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "The Commission investigation into Federal Pacific Electric (FPE) circuit breakers began in June 1980",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "ionization-smoke-detectors-1951",
+   "year": 1951,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "fire-safety",
+   "title": "Ionization smoke detectors first sold",
+   "text": "Ionization smoke detectors were first sold in the United States in 1951, but for many years they were too large and costly for houses. A house from before the 1970s will not have had a smoke alarm in the original construction.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Smoke_detector",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "In 1951, ionization smoke detectors were first sold in the United States.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "housing-act-1954",
+   "year": 1954,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "Housing Act of 1954",
+   "text": "The Housing Act of 1954 took effect on August 2, 1954 and provided planning assistance and urban renewal funding under what became known as Section 701.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Housing_Act_of_1954",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "Effective August 2, 1954",
+     "verified": true
+    },
+    {
+     "url": "https://www.nps.gov/subjects/nationalregister/upload/NRB46_Suburbs_part1_508.pdf",
+     "publisher": "National Park Service, National Register Bulletin 46 (Historic Residential Suburbs)",
+     "tier": "primary",
+     "quote": "Housing Act of 1954 (68 Stat. 590)",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "vinyl-siding-introduced",
+   "year": 1958,
+   "yearTo": null,
+   "precision": "circa",
+   "category": "materials",
+   "title": "Vinyl siding comes on the market",
+   "text": "Vinyl siding came on the market in the late 1950s as a replacement for aluminum siding, and its use grew as the product and its colors improved. Vinyl siding on a house older than the late 1950s was added later.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Vinyl_siding",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "Vinyl siding was introduced to the exterior market in the late 1950s as a replacement for aluminum siding.",
+     "verified": true
+    },
+    {
+     "url": "https://www.nps.gov/orgs/1739/upload/treatment-guidelines-2017-part1-preservation-rehabilitation.pdf",
+     "publisher": "National Park Service, Secretary of the Interior's Standards for the Treatment of Historic Properties",
+     "tier": "primary",
+     "quote": "Vinyl siding came on the market in the late 1950s,",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "galvanized-to-copper",
+   "year": 1960,
+   "yearTo": null,
+   "precision": "circa",
+   "category": "plumbing",
+   "title": "Copper replaces galvanized steel water pipe",
+   "text": "Galvanized steel pipe was commonplace for household water from the late 1800s until around 1960, after which copper took over. Some sources put the switch to copper later, in the late 1960s, so a house of the 1950s to 1960s may have either.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Plumbing",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "galvanized iron piping was commonplace in the United States from the late 1800s until around 1960",
+     "verified": true
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Cross-linked_polyethylene",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "these were replaced by copper pipes in the late 1960s",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "gfci-invented-1961",
+   "year": 1961,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "electrical",
+   "title": "Ground fault circuit interrupter developed",
+   "text": "A transistorized ground fault circuit interrupter (GFCI) was developed in 1961. It was not required in houses until later: underwater pool lighting in 1968, outdoor receptacles in 1973, and bathrooms in 1975.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Residual-current_device",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "In 1961, Dalziel, working with Rucker Manufacturing Co., developed a transistorized device for earth leakage protection which became known as a ground fault circuit interrupter",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "cpvc-early-1960s",
+   "year": 1962,
+   "yearTo": null,
+   "precision": "circa",
+   "category": "plumbing",
+   "title": "CPVC water tubing introduced",
+   "text": "Chlorinated PVC tubing and fittings for hot and cold water were first made in the early 1960s, with a solvent cement for CPVC introduced in 1965. CPVC supply lines in houses are therefore unlikely before the mid-1960s.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Chlorinated_polyvinyl_chloride",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "initially created the first CPVC tubing and fittings for hot- and cold-water distribution systems in the early 1960s",
+     "verified": true
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Chlorinated_polyvinyl_chloride",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "high-strength formulas being first introduced in 1965 by Genova Products",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "grounded-receptacles-1962",
+   "year": 1962,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "electrical",
+   "title": "National Electrical Code requires grounded receptacles",
+   "text": "As of 1962 the National Electrical Code required new 120-volt general-purpose receptacles to be both grounded and polarized. A house built earlier is likely to have two-slot outlets, though local adoption of the code varied.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/National_Electrical_Code",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "As of 1962, the NEC required that new 120 volt household receptacle outlets, for general purpose use, be both grounded and polarized .",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "osb-invented-1963",
+   "year": 1963,
+   "yearTo": null,
+   "precision": "circa",
+   "category": "materials",
+   "title": "Oriented strand board invented",
+   "text": "Oriented strand board was invented in 1963 but did not become common sheathing for some years. InterNACHI dates its development to the 1980s and says it overtook plywood in North America by 2000, so sources differ on when houses began to use it.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Oriented_strand_board",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "It was invented by Armin Elmendorf in California in 1963.",
+     "verified": true
+    },
+    {
+     "url": "https://www.nachi.org/determine-building-age.htm",
+     "publisher": "InterNACHI",
+     "tier": "trade",
+     "quote": "OSB was developed the 1980s",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "aluminum-branch-wiring",
+   "year": 1965,
+   "yearTo": 1973,
+   "precision": "range",
+   "category": "electrical",
+   "title": "Aluminum branch-circuit wiring used in new houses",
+   "text": "A copper shortage in the mid-1960s led builders to use aluminum wire on ordinary 15- and 20-ampere circuits, a practice the Consumer Product Safety Commission associates with 1965 to 1973 (some sources say into the mid-1970s). Homes built before 1965 are unlikely to have it.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/516.pdf",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Homes built before 1965 are unlikely to have aluminum branch circuit wiring.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/1978/CPSC-Testifies-On-Residential-Aluminum-Wiring",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "residential aluminum wiring systems manufactured between 1965 and 1973",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "hud-created",
+   "year": 1965,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "Department of Housing and Urban Development created",
+   "text": "The Department of Housing and Urban Development was established on September 9, 1965, and the FHA became part of it. HUD later wrote the Minimum Property Standards and the manufactured housing code.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/United_States_Department_of_Housing_and_Urban_Development",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "The department was established on September 9, 1965, when President Lyndon B. Johnson signed the Department of Housing and Urban Development Act",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "first-smoke-alarm-standard",
+   "year": 1967,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "fire-safety",
+   "title": "First US standard for home smoke alarms",
+   "text": "The first US standard for home smoke alarms was established in 1967, and a single-station battery model reached the market in 1971. Houses built before the early 1970s did not have them from the factory.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Smoke_detector",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "In the United States, the first standard for home smoke alarms was established in 1967.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "pool-light-gfci-1968",
+   "year": 1968,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "electrical",
+   "title": "GFCI first required for underwater pool lighting",
+   "text": "The National Electrical Code began requiring ground fault protection for underwater swimming pool lights in 1968, the first GFCI requirement in the code.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/099_0.pdf",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Underwater pool lighting (since 1968)",
+     "verified": true
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Ground_fault_circuit_interrupter",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "Beginning with underwater swimming pool lights (1968)",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "lumber-standard-ps-20-70",
+   "year": 1970,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "materials",
+   "title": "New American Softwood Lumber Standard sets separate dry and green sizes",
+   "text": "The 1953 version of the lumber standard was revised in 1969 and superseded by PS 20-70, which set separate size standards for dry and green lumber. Commonly repeated dates of 1964 for the smaller modern 2x4 were not found in the NIST history, so lumber dimensions on houses of the 1960s may vary.",
+   "sources": [
+    {
+     "url": "https://www.nist.gov/system/files/documents/2017/06/13/ps20-10.pdf",
+     "publisher": "National Institute of Standards and Technology, PS 20-10",
+     "tier": "primary",
+     "quote": "R 16-53 was revised in 1969 and superseded by",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "particleboard-waferboard-1970s",
+   "year": 1970,
+   "yearTo": 1979,
+   "precision": "circa",
+   "category": "materials",
+   "title": "Waferboard and particleboard panels developed",
+   "text": "InterNACHI says waferboard and particleboard panels were developed in the 1970s for use alongside plywood, which is why panel sheathing from the 1970s and 1980s may not be plywood.",
+   "sources": [
+    {
+     "url": "https://www.nachi.org/determine-building-age.htm",
+     "publisher": "InterNACHI",
+     "tier": "trade",
+     "quote": "Waferboard or particle board was developed in the 1970s",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "cabo-formed-1972",
+   "year": 1972,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "codes",
+   "title": "Council of American Building Officials formed for a one- and two-family code",
+   "text": "In 1972 the three regional model code groups created the Council of American Building Officials to prepare a national residential code. Its One and Two Family Dwelling Code was adopted by only a handful of jurisdictions, so local rules still varied.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/International_Residential_Code",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "In 1972, BOCA, SBCCI, and ICBO created the Council of American Building Officials (CABO)",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "cpsc-created-1972",
+   "year": 1972,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "Consumer Product Safety Commission created",
+   "text": "Congress created the Consumer Product Safety Commission in October 1972. Its later actions on aluminum wiring, safety glazing, cellulose insulation and lead paint affect houses built in the following decade.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Consumer_Product_Safety_Commission",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "Formed October   24, 1972",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "bathrooms-1973",
+   "year": 1973,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "industry",
+   "title": "Two in five new houses had one and a half baths or fewer",
+   "text": "In 1973 about 40 percent of new single-family houses had one and a half bathrooms or fewer, a share that fell to 13 percent by 1990. By 2017 about 37 percent had three or more bathrooms.",
+   "sources": [
+    {
+     "url": "https://www.census.gov/construction/chars/pdf/c25ann2017.pdf",
+     "publisher": "U.S. Census Bureau, Characteristics of New Housing 2017 (annual tables)",
+     "tier": "primary",
+     "quote": "1973 1,197 482 485 229 (NA) 100 40 41 19 (NA)",
+     "verified": true
+    },
+    {
+     "url": "https://www.census.gov/construction/chars/pdf/c25ann2017.pdf",
+     "publisher": "U.S. Census Bureau, Characteristics of New Housing 2017 (annual tables)",
+     "tier": "primary",
+     "quote": "1990 966 124 409 263 170 100 13 42 27 18",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "census-ac-1973",
+   "year": 1973,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "heating-cooling",
+   "title": "About half of new houses had air conditioning",
+   "text": "In 1973 about 49 percent of new single-family houses completed had air conditioning, rising to 63 percent in 1980, 76 percent in 1990 and 85 percent in 2000. A house built in the early 1970s may have none.",
+   "sources": [
+    {
+     "url": "https://www.census.gov/construction/chars/pdf/c25ann2017.pdf",
+     "publisher": "U.S. Census Bureau, Characteristics of New Housing 2017 (annual tables)",
+     "tier": "primary",
+     "quote": "1973 1,197 582 616 100 49 51",
+     "verified": true
+    },
+    {
+     "url": "https://www.census.gov/construction/chars/pdf/c25ann2017.pdf",
+     "publisher": "U.S. Census Bureau, Characteristics of New Housing 2017 (annual tables)",
+     "tier": "primary",
+     "quote": "1980 957 598 358 100 63 37",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "census-forced-air-1973",
+   "year": 1973,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "heating-cooling",
+   "title": "Forced-air furnaces in about three-quarters of new houses",
+   "text": "Census data show a forced-air furnace in 74 percent of new single-family houses completed in 1973, with hot-water or steam heat at 6 percent. Heat pumps were first counted separately in 1978, when they were in about a quarter of new houses.",
+   "sources": [
+    {
+     "url": "https://www.census.gov/construction/chars/pdf/c25ann2017.pdf",
+     "publisher": "U.S. Census Bureau, Characteristics of New Housing 2017 (annual tables)",
+     "tier": "primary",
+     "quote": "1973 1,197 890 (NA) 70 238 100 74 (NA) 6 20",
+     "verified": true
+    },
+    {
+     "url": "https://www.census.gov/construction/chars/pdf/c25ann2017.pdf",
+     "publisher": "U.S. Census Bureau, Characteristics of New Housing 2017 (annual tables)",
+     "tier": "primary",
+     "quote": "1978 1,369 781 336 65 188 100 57 25 5 14",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "gfci-outdoor-1973",
+   "year": 1973,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "electrical",
+   "title": "GFCI protection first required on outdoor receptacles",
+   "text": "GFCI protection was first required on outdoor receptacle circuits in 1973 and in bathrooms in 1975. Houses built before 1973 do not have it unless it was added later.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/1991/Electrical-Safety-Month-Inexpensive-Device-Protects-Consumers-Against-Shock-Electrocution",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "GFCIs were first required in outdoor receptacle circuits in 1973, bathrooms in 1975, garage wall outlets in 1978,",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "median-new-house-size-1973",
+   "year": 1973,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "industry",
+   "title": "Median new house about 1,525 square feet",
+   "text": "The median new single-family house completed in 1973 had 1,525 square feet of floor area, rising to 1,905 square feet in 1990 and 2,057 in 2000. A house built before the 1970s is likely smaller than a current new one.",
+   "sources": [
+    {
+     "url": "https://www.census.gov/construction/chars/pdf/c25ann2017.pdf",
+     "publisher": "U.S. Census Bureau, Characteristics of New Housing 2017 (annual tables)",
+     "tier": "primary",
+     "quote": "1973 1,525 1,450 1,445 1,555 1,575 1,660 1,595 1,615 1,670 1,715",
+     "verified": true
+    },
+    {
+     "url": "https://www.census.gov/construction/chars/pdf/c25ann2017.pdf",
+     "publisher": "U.S. Census Bureau, Characteristics of New Housing 2017 (annual tables)",
+     "tier": "primary",
+     "quote": "1990 1,905 1,955 1,850 1,855 1,985 2,080 2,105 2,005 2,055 2,160",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "oil-embargo-1973",
+   "year": 1973,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "event",
+   "title": "Oil embargo begins the energy crisis",
+   "text": "The 1973 Arab oil embargo raised gasoline prices and started a decade of concern about energy costs. Houses built from the mid-1970s on show more insulation and tighter construction than those of the 1960s.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1973_oil_crisis",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "The average US retail price of a gallon of regular gasoline rose 43% from 38.5¢ in May 1973 to 55.1¢ in June 1974.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "spray-asbestos-ban-1973",
+   "year": 1973,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "hazmat",
+   "title": "EPA bans spray-applied asbestos surfacing material",
+   "text": "In 1973 the EPA banned spray-applied asbestos-containing surfacing material used for fireproofing and insulating. The ban did not cover other asbestos products, which stayed in use in house materials for years.",
+   "sources": [
+    {
+     "url": "https://www.epa.gov/asbestos/epa-actions-protect-public-exposure-asbestos",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "In 1973, EPA banned spray-applied surfacing asbestos-containing material for fireproofing/insulating purposes.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "aluminum-wiring-cpsc-1974",
+   "year": 1974,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "electrical",
+   "title": "CPSC issues first aluminum wiring recommendations",
+   "text": "In 1974 the Consumer Product Safety Commission estimated that two million homes and mobile homes had been built with aluminum wiring since 1965 and issued safety recommendations.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/1974/CPSC-Safety-Recommendations-For-Aluminum-Wiring-In-Homes",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "An estimated two million homes and mobile homes have been constructed using aluminum wiring since 1965.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "manufactured-housing-act-1974",
+   "year": 1974,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "National manufactured housing act passed",
+   "text": "The National Manufactured Housing Construction and Safety Standards Act of 1974 gave HUD authority to set a national standard for factory-built homes, replacing a patchwork of state rules.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mobile_home",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "In the United States, mobile homes are regulated by the US Department of Housing and Urban Development (HUD), via the Federal National Manufactured Housing Construction and Safety Standards Act of 1974.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "bathroom-gfci-1975",
+   "year": 1975,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "electrical",
+   "title": "GFCI protection required in bathrooms",
+   "text": "Bathroom receptacles were required to have GFCI protection starting in 1975, followed by garage outlets in 1978, some kitchen receptacles in 1987 and unfinished basements and crawl spaces in 1990.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/099_0.pdf",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "o Bathrooms (since 1975)",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "hud-code-1976",
+   "year": 1976,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "HUD manufactured home code takes effect",
+   "text": "The federal Manufactured Home Construction and Safety Standards (the HUD Code) went into effect June 15, 1976. Factory-built homes made before that date are called mobile homes and were not built to it.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Manufactured_housing",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "The Federal Manufactured Home Construction and Safety Standards (commonly known as the HUD Code) went into effect June 15, 1976.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "nfpa-101-smoke-alarms-1976",
+   "year": 1976,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "fire-safety",
+   "title": "Life Safety Code first requires smoke alarms in homes",
+   "text": "The NFPA Life Safety Code first required smoke alarms in homes in 1976. Many houses built in the late 1970s have them, usually battery-powered.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Smoke_detector",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "The Life Safety Code (NFPA 101), passed by the US National Fire Protection Association (NFPA) in 1976, first required smoke alarms in homes.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "weatherization-program-1976",
+   "year": 1976,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "Weatherization Assistance Program created",
+   "text": "Congress created the Weatherization Assistance Program in 1976, in response to the 1973 oil crisis, to insulate and air-seal the homes of low-income families. Older houses may have been retrofitted with insulation under it.",
+   "sources": [
+    {
+     "url": "https://www.energy.gov/cmei/articles/national-weatherization-network-celebrates-40-years-service",
+     "publisher": "U.S. Department of Energy",
+     "tier": "primary",
+     "quote": "The program was created in 1976 under Title IV of the Energy Conservation and Production Act",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "safety-glazing-1977",
+   "year": 1977,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "codes",
+   "title": "Federal safety glazing standard takes effect",
+   "text": "The CPSC architectural glazing standard took effect on July 6, 1977 for glass in doors and similar hazardous locations. Houses built before then may have ordinary annealed glass in doors, sidelights and shower enclosures.",
+   "sources": [
+    {
+     "url": "https://www.govinfo.gov/content/pkg/CFR-2012-title16-vol2/pdf/CFR-2012-title16-vol2-part1201.pdf",
+     "publisher": "Code of Federal Regulations, 16 CFR 1201",
+     "tier": "primary",
+     "quote": "shall be July 6, 1977 except:",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "lead-paint-ban-1978",
+   "year": 1978,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "hazmat",
+   "title": "Lead paint banned for consumer and residential use",
+   "text": "In 1978 the CPSC banned consumer paint containing more than 0.06 percent lead. Homes built before 1978 are treated by EPA and HUD as likely to contain lead-based paint, which is mostly a hazard when deteriorated or disturbed.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/cpscleadpaint.pdf",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "In 1978, the CPSC banned the sale of paint containing in excess of 0.06% lead intended for",
+     "verified": true
+    },
+    {
+     "url": "https://www.epa.gov/lead/lead-renovation-repair-and-painting-program",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "In 1978, the federal government banned the sale of lead-based paint for use in homes, childcare facilities and preschools.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "polybutylene-pipe",
+   "year": 1978,
+   "yearTo": 1997,
+   "precision": "circa",
+   "category": "plumbing",
+   "title": "Polybutylene water pipe used in houses",
+   "text": "Polybutylene plumbing, sold as Poly-B, was used in several million US and Canadian homes from around 1978 to 1997. Leaks led to a class action lawsuit settled for $1 billion, and the pipe is no longer accepted by building codes.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Polybutylene",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "Polybutylene plumbing (marketed as Poly-B ) was used in several million homes built in the United States and Canada from around 1978 to 1997.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "cellulose-insulation-standard-1979",
+   "year": 1979,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "hazmat",
+   "title": "Federal flammability standard for cellulose insulation",
+   "text": "A CPSC interim safety standard applies to cellulose insulation manufactured after October 15, 1979. Loose-fill cellulose installed earlier may not have met it.",
+   "sources": [
+    {
+     "url": "https://www.govinfo.gov/content/pkg/CFR-2012-title16-vol2/pdf/CFR-2012-title16-vol2-part1209.pdf",
+     "publisher": "Code of Federal Regulations, 16 CFR 1209",
+     "tier": "primary",
+     "quote": "manufactured after October 15, 1979",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "fpe-investigation-1980",
+   "year": 1980,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "electrical",
+   "title": "FPE reports its breakers failed calibration tests",
+   "text": "In June 1980 the parent of Federal Pacific Electric reported to the CPSC that many FPE circuit breakers did not fully comply with UL requirements. The agency closed its investigation in 1983 without resolving whether the breakers were a household hazard.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Commission-Closes-Investigation-Of-FPE-Circuit-Breakers-And-Provides-Safety-Information-For-Consumers/",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "The Commission investigation into Federal Pacific Electric (FPE) circuit breakers began in June 1980",
+     "verified": true
+    }
+   ]
+  }
+ ],
+ "coverage": {
+  "1880s": 3,
+  "1890s": 4,
+  "1900s": 7,
+  "1910s": 1,
+  "1920s": 5,
+  "1930s": 15,
+  "1940s": 8,
+  "1950s": 8,
+  "1960s": 9,
+  "1970s": 21,
+  "1980s": 1
+ },
+ "notes": "Work in progress."
+}
