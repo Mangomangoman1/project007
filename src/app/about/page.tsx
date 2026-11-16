@@ -157,6 +157,7 @@ export default function AboutPage() {
           <p className="label">On this page</p>
           <ol>
             <li><a href="#data">Where the data comes from</a></li>
+            <li><a href="#context-data">The year in context</a></li>
             <li><a href="#evidence">What the labels mean</a></li>
             <li><a href="#years">How years are decided</a></li>
             <li><a href="#left-out">What is left out</a></li>
@@ -205,6 +206,50 @@ export default function AboutPage() {
                 </p>
               </li>
             </ol>
+          </section>
+
+          {/* ---------- the year in context ---------- */}
+          <section id="context-data" className={styles.section} aria-labelledby="context-data-h">
+            <div className="section-head">
+              <h2 id="context-data-h">The year in context: sources and their limits</h2>
+              <p className={styles.sectionLede}>
+                The second part of every year&rsquo;s report describes houses in general, never yours. Each figure there names its
+                source; here is what each one can and cannot say.
+              </p>
+            </div>
+            <ul className={styles.limits}>
+              <li>
+                <strong>Events around the year.</strong> A researched timeline of 150 dated changes to US homebuilding, each
+                checked against a quoted source. Many early entries rest on Wikipedia or trade bodies, so every event shows its
+                source&rsquo;s tier. The record is thin for 1910 to 1929 and for some mechanical systems, and a date marks when
+                something began or became required, not when every builder followed.
+              </li>
+              <li>
+                <strong>Homes started.</strong> From 1959, the Census Bureau&rsquo;s count of privately owned housing units
+                started. Before that, Historical Statistics of the United States, which pieced the years 1889 to 1958 together
+                from permits and other records in several series and leaves out farm housing; we transcribed those figures by
+                hand from a scanned copy, checked them against the table&rsquo;s own totals and show them rounded. New-house prices
+                start in 1963 and are in the dollars of the day.
+              </li>
+              <li>
+                <strong>Houses of the era today: EIA RECS 2020.</strong> The Energy Information Administration&rsquo;s survey of
+                about 18,500 occupied primary homes, which we tabulated for detached single-family houses: roof, outside walls,
+                window glass, stories and size. It groups everything built before 1950 together, and it describes homes as they
+                were in 2020, replacement roofs and siding included.
+              </li>
+              <li>
+                <strong>Houses of the era today: AHS 2023.</strong> The Census Bureau and HUD&rsquo;s American Housing Survey,
+                about 55,700 homes, tabulated the same way for foundation, heating, cooling, bathrooms, fireplaces, size and
+                garages, by decade built (before 1920 grouped). Residents report the year and the features; the Census Bureau
+                warns some features came later. Bands with fewer than 30 sampled homes are never shown.
+              </li>
+              <li>
+                <strong>The country that decade.</strong> The Census Bureau&rsquo;s Historical Census of Housing Tables, 1940 to
+                2000, US and every state: these describe all homes standing at each census, not houses built that year, and 1940
+                is the earliest. Homes still standing by decade built come from the American Community Survey, 2020 to 2024, and
+                the age of the 1950 housing stock from the 1950 Census of Housing (regions only).
+              </li>
+            </ul>
           </section>
 
           {/* ---------- labels ---------- */}

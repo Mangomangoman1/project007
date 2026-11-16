@@ -1,0 +1,432 @@
+/* "Around YEAR": a drafted year axis with numbered keynotes, then the keyed event list. */
+
+.section {
+  display: grid;
+  gap: var(--s-5);
+  scroll-margin-top: calc(var(--report-sticky, 0px) + var(--s-5));
+}
+.lede {
+  max-width: var(--measure);
+  color: var(--ink-2);
+}
+
+/* ---------- the strip ---------- */
+.strip {
+  --row: 24px;
+  --key: 20px;
+  margin: 0;
+  display: grid;
+  gap: var(--s-3);
+  padding: var(--s-5) var(--s-5) var(--s-4);
+  border: var(--rule-strong-w) solid var(--ink);
+  background-image: linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: -1px -1px;
+}
+.plot {
+  position: relative;
+  display: grid;
+}
+.marks {
+  position: relative;
+  height: calc(var(--rows) * var(--row) + 6px);
+}
+.mark {
+  position: absolute;
+  bottom: 0;
+  height: var(--row);
+}
+/* point marks are centered on their year; a leader drops to the axis */
+.mark:not(.markRange) {
+  transform: translateX(-50%);
+}
+.mark::after {
+  content: '';
+  position: absolute;
+  left: calc(var(--key) / 2);
+  top: calc(var(--key) - 1px);
+  width: 1px;
+  height: calc(var(--lv, 0) * var(--row) + var(--row) - var(--key) + 7px);
+  background: var(--rule-strong);
+  pointer-events: none;
+}
+.mark:not(.markRange)::after {
+  left: 50%;
+}
+.markRange .key {
+  transform: translateX(-50%);
+  position: relative;
+  z-index: 1;
+}
+.markRange::after {
+  left: 0;
+}
+.rangeLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(var(--key) / 2);
+  height: 0;
+  border-top: 1.5px solid var(--line);
+}
+.rangeLine::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -4.5px;
+  width: 1.5px;
+  height: 8px;
+  background: var(--line);
+}
+.rangeOpen::after {
+  top: -4.5px;
+  width: 0;
+  height: 0;
+  background: none;
+  border-left: 7px solid var(--line);
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  right: -2px;
+}
+
+.key {
+  display: inline-grid;
+  place-items: center;
+  width: var(--key);
+  height: var(--key);
+  border: 1.5px solid var(--line);
+  border-radius: 50%;
+  background: var(--paper);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--line);
+  font-variant-numeric: tabular-nums;
+}
+.keyCirca {
+  border-style: dashed;
+}
+.markYear .key {
+  background: var(--line);
+  color: var(--paper);
+}
+
+/* axis: ruler ticks per year, labels where there is room, the build year line */
+.axis {
+  position: relative;
+  height: 30px;
+  border-top: var(--rule-strong-w) solid var(--ink);
+}
+.tick {
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 5px;
+  background: var(--rule-strong);
+}
+.tickLabel {
+  position: absolute;
+  top: 8px;
+  transform: translateX(-50%);
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+.yearLine {
+  position: absolute;
+  top: calc(var(--rows) * var(--row) * -1 - 6px);
+  bottom: 0;
+  width: 0;
+  border-left: 1.5px solid var(--yearline);
+}
+.yearTag {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transform: translateX(-50%);
+  padding: 1px 5px;
+  background: var(--yearline);
+  color: var(--accent-ink);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+}
+
+/* long-running ranges: lines across the whole window, arrowed both ends */
+.ongoing {
+  display: grid;
+  gap: 4px;
+  padding-top: var(--s-2);
+}
+.ongoingRow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: var(--key);
+}
+.ongoingLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  border-top: 1.5px dashed var(--line-2);
+}
+.ongoingLine::before,
+.ongoingLine::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+.ongoingLine::before {
+  left: -1px;
+  border-right: 7px solid var(--line-2);
+}
+.ongoingLine::after {
+  right: -1px;
+  border-left: 7px solid var(--line-2);
+}
+.ongoingKey {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  margin-left: var(--s-4);
+  padding-right: var(--s-2);
+  background: var(--paper);
+}
+.ongoingYears {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--ink-2);
+}
+.cap {
+  font-family: var(--font-mono);
+  font-size: var(--t-2xs);
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: var(--ink-3);
+}
+
+/* ---------- the keyed list ---------- */
+.groups {
+  display: grid;
+  gap: var(--s-6);
+}
+.none {
+  font-size: var(--t-sm);
+  color: var(--ink-3);
+}
+.group {
+  display: grid;
+}
+.groupHead {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--s-1) var(--s-4);
+  padding-bottom: var(--s-2);
+  border-bottom: var(--hair) solid var(--rule-strong);
+  font-family: var(--font-mono);
+  font-size: var(--t-xs);
+  font-weight: 500;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.groupNote {
+  color: var(--ink-3);
+  font-weight: 400;
+}
+.groupLead .groupHead {
+  border-bottom: var(--rule-strong-w) solid var(--ink);
+}
+.events {
+  list-style: none;
+}
+.event {
+  display: grid;
+  grid-template-columns: var(--key) 6.5rem minmax(0, 1fr);
+  column-gap: var(--s-4);
+  padding: var(--s-4) 0;
+  border-bottom: var(--hair) solid var(--rule);
+  --key: 22px;
+}
+.listKey {
+  margin-top: 2px;
+}
+.when {
+  display: grid;
+  align-content: start;
+  gap: 2px;
+}
+.whenYears {
+  font-family: var(--font-display);
+  font-size: var(--t-md);
+  line-height: 1.2;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-variation-settings: 'opsz' 96;
+}
+.circa {
+  justify-self: start;
+  padding: 0 4px;
+  border: var(--hair) dashed var(--ink-3);
+  border-radius: var(--radius);
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.body {
+  display: grid;
+  gap: var(--s-1);
+  min-width: 0;
+  max-width: 44rem;
+}
+.cat {
+  font-family: var(--font-mono);
+  font-size: var(--t-2xs);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--line);
+}
+.title {
+  font-family: var(--font-display);
+  font-size: var(--t-md);
+  font-weight: 420;
+  line-height: 1.25;
+}
+.eventLead .title {
+  font-size: var(--t-lg);
+  font-weight: 380;
+  letter-spacing: -0.01em;
+}
+.eventLead .whenYears {
+  font-size: var(--t-lg);
+  color: var(--ink);
+}
+.text {
+  font-size: var(--t-sm);
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+.eventLead .text {
+  font-size: var(--t-base);
+}
+.issueLink {
+  font-size: var(--t-sm);
+  color: var(--ink-2);
+}
+.issueLink a {
+  color: var(--line);
+  font-weight: 500;
+}
+.sources {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--s-1) var(--s-4);
+  margin-top: var(--s-1);
+}
+.source {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--s-2);
+  font-size: var(--t-xs);
+  color: var(--ink-3);
+}
+.source a {
+  color: var(--ink-2);
+}
+.quote {
+  flex-basis: 100%;
+  font-size: var(--t-xs);
+}
+.quote summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 24px;
+  font-family: var(--font-mono);
+  font-size: var(--t-2xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--line);
+  cursor: pointer;
+  list-style: none;
+}
+.quote summary::-webkit-details-marker {
+  display: none;
+}
+.quote summary::before {
+  content: '+';
+  display: inline-grid;
+  place-items: center;
+  width: 12px;
+  height: 12px;
+  border: 1px solid currentColor;
+  border-radius: 1px;
+  font-size: 10px;
+  line-height: 1;
+}
+.quote[open] summary::before {
+  content: '−';
+}
+.quote blockquote {
+  margin: var(--s-2) 0 0;
+  padding: var(--s-1) 0 var(--s-1) var(--s-3);
+  border-left: 1.5px solid var(--line-2);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--t-sm);
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+.quote cite {
+  display: block;
+  margin-top: 2px;
+  font-family: var(--font-mono);
+  font-style: normal;
+  font-size: var(--t-2xs);
+  color: var(--ink-3);
+}
+.foot {
+  max-width: 68ch;
+  font-size: var(--t-xs);
+  line-height: 1.9;
+  color: var(--ink-3);
+}
+
+@media (max-width: 720px) {
+  .strip {
+    padding: var(--s-4) var(--s-3) var(--s-3);
+    --row: 23px;
+  }
+  .event {
+    grid-template-columns: var(--key) minmax(0, 1fr);
+    column-gap: var(--s-3);
+    row-gap: 2px;
+  }
+  .when {
+    grid-column: 2;
+    display: flex;
+    align-items: baseline;
+    gap: var(--s-2);
+  }
+  .body {
+    grid-column: 2;
+  }
+  .listKey {
+    grid-row: 1;
+  }
+}

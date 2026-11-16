@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { Fragment, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import type { Lifespan, Zone } from '@/lib/types';
 import type { IssueTimeline } from '@/lib/data';
 import { groupByPart, groupLifespans, inState, isCore, issuesForYear } from '@/lib/select';
@@ -22,7 +22,8 @@ import { IssueRow, type ReportIssue } from './IssueRow';
 import { LifespanList } from './LifespanList';
 import { PlaceSection } from '@/components/place/PlaceSection';
 import { TypicalHouse } from '@/components/typical/TypicalHouse';
-import { typicalNavCount } from '@/components/typical/data';
+import { TYPICAL, typicalNavCount } from '@/components/typical/data';
+import { ReportStateContext } from '@/components/era/ReportState';
 import styles from './Report.module.css';
 
 export type ReportProps = {
@@ -32,7 +33,24 @@ export type ReportProps = {
   lifespans: Lifespan[];
   /** All issues, for the timeline. */
   timelineIssues: IssueTimeline[];
+  /**
+   * "The year in context": sections made on the server (era events, homes started, houses of the
+   * era today, the census), passed in as rendered slots so their data stays out of this component.
+   * Client slots read the report's state through ReportStateContext.
+   */
+  context?: YearContext;
 };
+
+export type YearContext = {
+  around: ReactNode;
+  housing: ReactNode;
+  today: ReactNode;
+  country: ReactNode;
+  /** Navigator labels and counts. */
+  nav: { around: number; today: string; country: string };
+};
+
+type TocItem = { id: string; label: string; n: number | null };
 
 /**
  * A house is "new" when it is young (≤ 15 years) and at most two priority-1/2 issues apply.
@@ -61,7 +79,7 @@ function openHashTarget() {
  * (title block, headline, timeline, diagram, What's due) and can be revealed in place, marked. "Check these first" is rich and open; the long tail ("Built without",
  * "by part of the house") is compact <details> rows that expand in place.
  */
-export function Report({ year, issues, lifespans, timelineIssues }: ReportProps) {
+export function Report({ year, issues, lifespans, timelineIssues, context }: ReportProps) {
   const router = useRouter();
   const age = MAX_YEAR - year;
   const [state, setState] = useState<string | null>(null);
@@ -142,16 +160,34 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
     if (y !== year) router.push(`/built/${y}`);
   };
 
+  // The typical new house exists from 1971 (and says "not yet published" after its latest year).
+  const showTypical = typicalNavCount(year) > 0 || year > TYPICAL.latestYear;
   // n = item count shown beside the entry; null = no count (Your place depends on a ZIP the visitor may not give).
-  const toc: { id: string; label: string; n: number | null }[] = [
+  // Two parts: this house (safety first, then upkeep and place), then the year in context.
+  const tocHouse: TocItem[] = [
     ...(newHouse ? [{ id: 'whats-due', label: "What's due", n: dueOrSoon }] : []),
     { id: 'check-first', label: 'Check first', n: first.length },
     { id: 'built-without', label: 'Built without', n: missing.length },
     { id: 'by-part', label: 'By part of the house', n: rest.length },
-    { id: 'typical-house', label: 'Typical new house', n: typicalNavCount(year) },
     ...(!newHouse ? [{ id: 'whats-due', label: "What's due", n: dueOrSoon }] : []),
     { id: 'your-place', label: 'Your place', n: null },
   ].filter((t) => t.n === null || t.n > 0 || t.id === 'whats-due');
+  const tocContext: TocItem[] = context
+    ? [
+        { id: 'around', label: `Around ${year}`, n: context.nav.around },
+        { id: 'housing', label: 'Homes started', n: null },
+        ...(showTypical ? [{ id: 'typical-house', label: 'New houses, as built', n: typicalNavCount(year) || null }] : []),
+        { id: 'era-today', label: context.nav.today, n: null },
+        { id: 'country', label: context.nav.country, n: null },
+      ]
+    : showTypical
+      ? [{ id: 'typical-house', label: 'Typical new house', n: typicalNavCount(year) || null }]
+      : [];
+  const tocGroups = [
+    { id: 'house', label: 'This house', items: tocHouse },
+    { id: 'context', label: 'The year in context', items: tocContext },
+  ].filter((g) => g.items.length);
+  const toc = [...tocHouse, ...tocContext];
   const tocKey = toc.map((t) => t.id).join(',');
 
   // Which section is on screen, for the navigator.
@@ -455,16 +491,26 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
       <div className={`wrap ${styles.body}`}>
         <aside ref={tocRef} className={styles.toc} aria-label="On this page">
           <p className={`label ${styles.tocLabel}`}>On this page</p>
-          <ol>
-            {toc.map((t) => (
-              <li key={t.id}>
-                <a href={`#${t.id}`} aria-current={active === t.id ? 'true' : undefined}>
-                  <span>{t.label}</span>
-                  {t.n !== null ? <span className={styles.tocN}>{t.n}</span> : null}
-                </a>
-              </li>
-            ))}
-          </ol>
+          {tocGroups.map((g, gi) => (
+            <Fragment key={g.id}>
+              <p className={styles.tocGroup} id={`toc-${g.id}`}>
+                <span className={styles.tocGroupN} aria-hidden="true">
+                  {gi + 1}
+                </span>
+                {g.label}
+              </p>
+              <ol aria-labelledby={`toc-${g.id}`}>
+                {g.items.map((t) => (
+                  <li key={t.id}>
+                    <a href={`#${t.id}`} aria-current={active === t.id ? 'true' : undefined}>
+                      <span>{t.label}</span>
+                      {t.n !== null ? <span className={styles.tocN}>{t.n}</span> : null}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </Fragment>
+          ))}
           {printLink(styles.tocPrint)}
         </aside>
 
@@ -583,11 +629,39 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
             </section>
           )}
 
-          <TypicalHouse year={year} state={state} />
-
           {!newHouse && dueSection}
 
           <PlaceSection year={year} state={state} onStateChange={chooseState} />
+
+          {/* ---------- part two: the year in context ---------- */}
+          <ReportStateContext.Provider value={state}>
+            {context ? (
+              <>
+                <header className={styles.partHeadBig} aria-labelledby="context-h">
+                  <p className={`label ${styles.partKicker}`}>
+                    <span className={styles.tocGroupN} aria-hidden="true">
+                      2
+                    </span>
+                    Part two
+                  </p>
+                  <h2 id="context-h" className={styles.partTitle}>
+                    The year in context
+                  </h2>
+                  <p className={styles.partLede}>
+                    What was changing around {year}, how much the country was building, how houses of this era stand today
+                    and what homes were like then. All of it describes houses in general, never this one.
+                  </p>
+                </header>
+                {context.around}
+                {context.housing}
+                {showTypical ? <TypicalHouse year={year} state={state} /> : null}
+                {context.today}
+                {context.country}
+              </>
+            ) : showTypical ? (
+              <TypicalHouse year={year} state={state} />
+            ) : null}
+          </ReportStateContext.Provider>
         </div>
       </div>
 

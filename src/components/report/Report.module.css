@@ -366,6 +366,62 @@
 .toc a[aria-current='true'] .tocN {
   color: var(--ink);
 }
+.tocGroup {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  margin-top: var(--s-2);
+  font-family: var(--font-mono);
+  font-size: var(--t-2xs);
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.tocGroup + ol {
+  margin-top: calc(var(--s-1) * -1);
+}
+.tocGroupN {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid var(--ink);
+  border-radius: 50%;
+  font-size: 0.625rem;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+/* ---------- part two: the year in context ---------- */
+.partHeadBig {
+  display: grid;
+  gap: var(--s-3);
+  padding: var(--s-6) 0 var(--s-2);
+  margin-bottom: calc(var(--s-6) - var(--s-9));
+  border-top: 4px double var(--ink);
+}
+.partKicker {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  color: var(--ink);
+}
+.partTitle {
+  font-size: var(--t-2xl);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  font-weight: 340;
+  font-variation-settings: 'opsz' 144, 'SOFT' 40;
+}
+.partLede {
+  max-width: 36rem;
+  font-size: var(--t-md);
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+
 .tocPrint {
   display: inline-flex;
   align-items: center;
@@ -655,6 +711,30 @@
   .toc li {
     border-bottom: 0;
     flex: none;
+  }
+  /* a group becomes a numbered divider in the strip */
+  .tocGroup {
+    flex: none;
+    margin: 0;
+    padding-left: var(--s-2);
+    border-left: var(--hair) solid var(--rule-strong);
+    font-size: 0.625rem;
+    letter-spacing: 0.06em;
+    color: var(--ink-3);
+    white-space: nowrap;
+  }
+  .tocLabel + .tocGroup {
+    padding-left: 0;
+    border-left: 0;
+  }
+  .tocGroup + ol {
+    margin-top: 0;
+  }
+  .tocGroupN {
+    width: 16px;
+    height: 16px;
+    border-width: 1px;
+    border-color: var(--ink-3);
   }
   .toc a {
     justify-content: start;

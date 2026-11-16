@@ -91,6 +91,7 @@ export function TypicalHouse({ year, state, id = 'typical-house' }: Props) {
   return (
     <section id={id} className={styles.section} aria-labelledby={headId}>
       <div className="section-head">
+        <p className="label">As built · new houses of {year}</p>
         <h2 id={headId}>The typical new house of {year}</h2>
         <p className={styles.lede}>
           How new single-family houses completed in {year} {where} were built, from the US Census Bureau&rsquo;s Survey of

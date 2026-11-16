@@ -7,6 +7,14 @@ import { groupLifespans, isCore } from '@/lib/select';
 import { pageMeta } from '@/lib/seo';
 import { Report } from '@/components/report/Report';
 import { toReportIssue } from '@/components/report/IssueRow';
+import { CENSUS, CONSTRUCTION, STOCK, getCountrySlice, getEventsAround, getStockSlice } from '@/lib/era-data';
+import { bandShort } from '@/lib/era';
+import { hasTypical } from '@/lib/typical';
+import { TYPICAL } from '@/components/typical/data';
+import { AroundYear } from '@/components/timeline/AroundYear';
+import { HousingThatYear } from '@/components/era/HousingThatYear';
+import { EraToday } from '@/components/era/EraToday';
+import { CountryDecade } from '@/components/era/CountryDecade';
 
 export const dynamicParams = false;
 
@@ -72,12 +80,43 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function BuiltYearPage({ params }: Props) {
   const year = parseYear((await params).year);
   if (year === null) notFound();
+  const pick = getEventsAround(year);
+  const stock = getStockSlice(year);
+  const country = getCountrySlice(year);
+  const era = stock.ahsBand ?? stock.recsBand;
+  const { recs, ahs } = STOCK.sources;
+  const { census, acs, yb1950 } = CENSUS.sources;
   return (
     <Report
       year={year}
       issues={getIssuesForYear(year).map(toReportIssue)}
       lifespans={getLifespansLite()}
       timelineIssues={getIssuesTimeline()}
+      context={{
+        around: <AroundYear pick={pick} />,
+        housing: <HousingThatYear year={year} data={CONSTRUCTION} />,
+        today: (
+          <EraToday
+            slice={stock}
+            pairedWithTypical={hasTypical(TYPICAL, year)}
+            sources={{
+              recs: { publisher: recs.publisher, title: recs.title, url: recs.url },
+              ahs: { publisher: ahs.publisher, title: ahs.title, url: ahs.url, paper: ahs.paper },
+            }}
+          />
+        ),
+        country: (
+          <CountryDecade
+            slice={country}
+            links={{ census: { publisher: census.publisher, title: census.title, pages: census.pages }, acs, yb1950 }}
+          />
+        ),
+        nav: {
+          around: pick.exact.length + pick.near.length + pick.ongoing.length,
+          today: era ? `${bandShort(era)} houses today` : 'Houses of the era today',
+          country: country.census ? `The country in ${country.census}` : 'The country today',
+        },
+      }}
     />
   );
 }
