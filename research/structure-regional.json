@@ -1,0 +1,647 @@
+{
+  "domain": "Structure, foundations and regional / natural-hazard code milestones",
+  "web_access": "partial",
+  "web_access_detail": "Search only. Every direct page fetch failed (fema.gov, hud.gov, gao.gov, portal.ct.gov, mass.gov, osfm.fire.ca.gov, dbs.lacity.gov, earthquakebracebolt.com, wikipedia, ecfr.gov were all refused by the session's network policy). WebSearch worked and returned result lists plus machine-written summaries with quoted snippets. Because no page was actually opened, EVERY source below is marked verified:false, as the brief requires. The extra field search_confirmed:true means the URL appeared in a live search result this session and the search summary quoted text from it supporting the claim; it is weaker than opening the page and must be re-checked. No URL in this file was written from memory: all came from search results.",
+  "entries": [
+    {
+      "id": "unbolted-foundation-unbraced-cripple-wall",
+      "name": "House not bolted to its foundation / unbraced cripple walls (earthquake country)",
+      "category": "structure",
+      "summary": "Older wood-frame houses on raised foundations were often not bolted to the concrete, and the short stud walls (cripple walls) between foundation and floor were left without plywood bracing. In an earthquake the house can slide or topple off its foundation. The fix is a well-understood, relatively cheap retrofit.",
+      "installed_from": null,
+      "installed_to": 1979,
+      "peak_from": null,
+      "peak_to": 1940,
+      "date_confidence": "medium",
+      "date_notes": "There is no single code year. California's grant programme (Earthquake Brace + Bolt / CEA Brace + Bolt) uses 'built before 1980' as its eligibility screen; one news item quoting CEA says 'before 1979'. A secondary source says most California codes did not require anchor bolts 'until 1940', and a Structure magazine column describes mudsill anchor bolts in the 1952 UBC; so bolting generally arrives 1940s-50s, while adequate cripple-wall bracing is the later (roughly late-1970s) change. Piedmont, CA notes the condition is 'more prevalent before 1940'. Outside California the cut-offs are softer: Seattle material says state codes did not require bolting 'before 1980'; Oregon sources conflict between 1974 (first statewide code) and 1976. Treat 1980 as a programme screening date, not a code date.",
+      "regions": "California (programme limited to listed high-hazard ZIP codes; a 2022 release cited 521 ZIPs); Washington (Seattle/Puget Sound) and Oregon (Portland/Willamette Valley) with softer dates. Similar exposure exists in other seismic areas (Utah, Alaska, Memphis/New Madrid, Charleston SC) but I found no dated programme for wood-frame houses there.",
+      "prevalence": "possible",
+      "prevalence_basis": "No statewide count was found. Portland's city estimate is about 100,000 unbolted homes, which the source itself calls an educated guess. Only houses on raised foundations (crawl space/cripple wall) are affected; slab-on-grade houses of the same age are not, and many houses have since been retrofitted. So 'possible', not 'likely', even for pre-1940 stock.",
+      "how_to_identify": "Go into the crawl space. Look along the top of the concrete foundation for the wooden sill plate: bolts with nuts/washers every 4-6 ft mean it is bolted. If there is a short wood-stud wall between the foundation and the floor, check whether plywood/OSB is nailed to the inside face of it. Houses on a concrete slab have no cripple wall.",
+      "risk": {
+        "safety": "House can shift off the foundation in strong shaking, rupturing gas and water lines and making the house uninhabitable; collapse of cripple walls is a classic failure in California earthquakes.",
+        "financial": "A house that slides off its foundation is typically a very expensive repair or a total loss; standard homeowners policies exclude earthquake.",
+        "insurance_or_sale": "CEA offers a premium discount for verified retrofits and its Brace + Bolt grants require a pre-1980 house on a raised continuous perimeter concrete foundation. California sellers of pre-1960 homes must deliver the state earthquake-safety booklet/disclosure (from memory, not confirmed this session)."
+      },
+      "fix": {
+        "what": "Bolt the sill plate to the foundation and sheathe cripple walls with structural plywood, following California Existing Building Code Appendix Chapter A3 (cripple walls up to 4 ft are prescriptive; 4-7 ft need an engineer). Seattle and Portland publish their own prescriptive plan sets.",
+        "cost_low_usd": 3000,
+        "cost_high_usd": 7000,
+        "cost_year": 2024,
+        "cost_source": "CEA / California Residential Mitigation Program FAQ: 'A typical retrofit may cost between $3,000 to $7,000'. A non-government site says $5,000-$10,000. Grant is up to $3,000, with supplemental grants for some households."
+      },
+      "sources": [
+        { "url": "https://portal.earthquakeauthority.com/sites/portal/files/ceabbletter/ceabbletters/CEA-BB-One-Sheet.pdf", "publisher": "California Earthquake Authority", "supports": "Eligibility: built before 1980, raised continuous perimeter concrete foundation; grant up to $3,000", "verified": false, "search_confirmed": true },
+        { "url": "https://www.crmp.org/index.php/resources/faqs", "publisher": "California Residential Mitigation Program (CEA + Cal OES)", "supports": "Typical retrofit cost $3,000-$7,000", "verified": false, "search_confirmed": true },
+        { "url": "https://www.crmp.org/our-seismic-retrofit-programs/the-retrofits/ebb-retrofit", "publisher": "California Residential Mitigation Program", "supports": "What the brace + bolt retrofit consists of", "verified": false, "search_confirmed": true },
+        { "url": "https://www.crmp.org/press-room/press-releases/2022/80-million-in-grant-funding-now-available-for-california-homeowners-to-help-offset-the-cost-of-a-seismic-retrofit", "publisher": "California Residential Mitigation Program", "supports": "Programme limited to 521 high-risk ZIP codes (2022)", "verified": false, "search_confirmed": true },
+        { "url": "https://www.piedmont.ca.gov/news/seismic_retrofit_grant_opportunity_october_2025", "publisher": "City of Piedmont, CA", "supports": "Pre-1980 screen; condition more prevalent before 1940; supplemental grants", "verified": false, "search_confirmed": true },
+        { "url": "https://pd.earthquakeauthority.com/prepare-your-house-earthquake-risk/brace-and-bolt-grants/cea-policyholder-brace-bolt-grants/homeowner-resources/program-glossary", "publisher": "California Earthquake Authority", "supports": "CEBC Appendix A3; engineered solution needed for 4-7 ft cripple walls", "verified": false, "search_confirmed": true },
+        { "url": "https://www.structuremag.org/wp-content/uploads/2014/08/InFocus-Hess-Aug-081.pdf", "publisher": "STRUCTURE magazine", "supports": "Anchor-bolt provisions in the 1952 UBC (search snippet was garbled; needs reading)", "verified": false, "search_confirmed": true },
+        { "url": "https://www.seattle.gov/construction-and-inspections/permits/permits-we-issue-%28a-z%29/earthquake-home-retrofit-permit", "publisher": "City of Seattle SDCI", "supports": "Seattle prescriptive Earthquake Home Retrofit permit for older wood-frame homes", "verified": false, "search_confirmed": true },
+        { "url": "https://www.portland.gov/ppd/residential-permitting/home-projects/residential-seismic-strengthening", "publisher": "City of Portland", "supports": "Portland prescriptive residential seismic strengthening standard", "verified": false, "search_confirmed": true },
+        { "url": "https://www.Oregon.Gov/ccb/Documents/Earthquake%20Retrofitting.pdf", "publisher": "Oregon Construction Contractors Board", "supports": "Oregon cut-off year for bolting (sources conflict 1974 vs 1976)", "verified": false, "search_confirmed": true }
+      ],
+      "open_questions": "The actual UBC edition years in which anchor bolts and cripple-wall sheathing became mandatory (and when each state/city adopted them) were not established; FEMA P-1100 and the CEA/PEER cripple-wall study should settle it. No statewide prevalence count. Whether the 1980 screen should be shown as 1979 or 1980."
+    },
+    {
+      "id": "soft-story-wood-frame-apartments",
+      "name": "Soft-story apartment buildings (tuck-under parking)",
+      "category": "structure",
+      "summary": "Wood-frame multi-unit buildings with open ground floors (parking or shopfronts) built before the 1978 code change have a weak first storey that can collapse in an earthquake. Several California cities now legally require owners to retrofit them. This is a small-multifamily issue, not a single-family one.",
+      "installed_from": null,
+      "installed_to": 1977,
+      "peak_from": 1950,
+      "peak_to": 1977,
+      "date_confidence": "high",
+      "date_notes": "Cut-off is legally defined but city-specific. Los Angeles Ord. 183893: permit for new construction applied for before January 1, 1978. San Francisco (2013 ordinance, SFBC Ch. 34B): permitted before January 1, 1978. Culver City uses October 23, 1978. The 'peak' start year (1950s-70s 'dingbat' era) is from general knowledge, not a sourced figure.",
+      "regions": "California cities with mandatory ordinances: Los Angeles (wood-frame, 2+ storeys; LADBS says not applicable to residential buildings with 3 or fewer units), San Francisco (5+ units; city pages say 2+ storeys, press coverage said 3+), plus Culver City, West Hollywood and others (Santa Monica, Berkeley, Oakland, Pasadena etc. from memory, not confirmed this session). No mandatory programmes found in Oregon/Washington.",
+      "prevalence": "possible",
+      "prevalence_basis": "San Francisco sent screening notices to more than 6,000 owners in 2013. Los Angeles's count (commonly cited as about 13,500 buildings) was not confirmed this session. Applies only to multi-unit buildings with an open ground floor, so irrelevant to most single-family users.",
+      "how_to_identify": "Two or more storeys of wood-frame apartments sitting over open carports, garages or large shopfront openings with slender posts and little solid wall at ground level. In LA and SF the building department publishes an address look-up of covered buildings and compliance status.",
+      "risk": {
+        "safety": "First-storey collapse; this failure type killed residents at Northridge Meadows in 1994 (from general knowledge).",
+        "financial": "Owner must fund an engineered retrofit; in rent-controlled cities part of the cost can be passed through to tenants under local rules.",
+        "insurance_or_sale": "Non-compliance with a mandatory ordinance is recorded against the property and affects sale and lending."
+      },
+      "fix": {
+        "what": "Engineered retrofit of the ground storey: steel moment frames, plywood shear walls and/or new foundations.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No authoritative per-building cost found this session."
+      },
+      "sources": [
+        { "url": "https://cityclerk.lacity.org/onlinedocs/2014/14-1697-S1_ord_183893_11-22-15.pdf", "publisher": "City of Los Angeles (ordinance text)", "supports": "Ord. 183893 scope: existing wood-frame buildings with permit applied for before the cut-off date", "verified": false, "search_confirmed": true },
+        { "url": "https://ladbs.org/services/core-services/plan-check-permit/plan-check-permit-special-assistance/mandatory-retrofit-programs/soft-story-retrofit-program", "publisher": "Los Angeles Dept. of Building and Safety", "supports": "Pre-1978 test; not applicable to residential buildings with three or fewer units", "verified": false, "search_confirmed": true },
+        { "url": "https://sfdbi.org/soft-story-resources", "publisher": "San Francisco Dept. of Building Inspection", "supports": "SF criteria: wood frame, 5+ units, 2+ storeys, permitted before January 1978; programme created 2013", "verified": false, "search_confirmed": true },
+        { "url": "https://www.spur.org/news/2013-04-24/san-francisco-passes-landmark-earthquake-retrofit-law", "publisher": "SPUR", "supports": "Describes SF law as 3+ storeys, 5+ units, pre-1978 (conflicts with city on storeys)", "verified": false, "search_confirmed": true },
+        { "url": "https://www.culvercity.org/files/assets/public/v/1/documents/planning-amp-development/seismic-retrofit/handout-swof-design-guidelines-060623-final.pdf", "publisher": "City of Culver City", "supports": "Different local cut-off date (October 23, 1978)", "verified": false, "search_confirmed": true }
+      ],
+      "open_questions": "Full list of cities with mandatory ordinances and each one's unit/storey thresholds; LA building count; retrofit cost ranges. The SF storey threshold (2+ vs 3+) needs reading the ordinance."
+    },
+    {
+      "id": "unreinforced-masonry-urm",
+      "name": "Unreinforced brick (URM) buildings and brick houses in earthquake zones",
+      "category": "structure",
+      "summary": "Load-bearing brick walls with no steel reinforcement and weak ties to floors and roof. They are the deadliest building type in earthquakes because walls and parapets fall outward. The cut-off year depends entirely on where you are: about 1933 in California, 1945 in Seattle, 1960 in Portland and the mid-1970s in Utah.",
+      "installed_from": null,
+      "installed_to": 1975,
+      "peak_from": 1880,
+      "peak_to": 1933,
+      "date_confidence": "medium",
+      "date_notes": "California: URM is 'generally brick buildings constructed prior to 1933' (EERI); the 1933 Long Beach earthquake led to the Riley Act (local building departments, lateral-force design) and the Field Act (schools). My search did NOT confirm that any 1933 statute expressly banned URM, and individual city ordinances use other dates (one uses pre-1946, another pre-1935). Seattle defines URM as brick built before 1945. Portland says its URMs date from about 1870 to 1960. Salt Lake City's Fix the Bricks programme covers URM homes built before 1975 (an earlier city announcement said 1970). installed_to is set to the latest of these (Utah); for California use 1933.",
+      "regions": "California (state URM Law, SB 547 of 1986, Gov. Code 8875: 366 local governments in Seismic Zone 4 had to inventory URMs; mostly commercial/multifamily, single-family largely outside the law). Washington: Seattle (about 1,100 buildings). Oregon: Portland (about 1,600-1,800). Utah: Wasatch Front, where URM is common in ordinary single-family houses (over 140,000 structures). Also relevant in Charleston SC and the New Madrid zone but no dated programme found.",
+      "prevalence": "possible",
+      "prevalence_basis": "Utah DEM: over 140,000 URM structures along the Wasatch fault (other sources 144,000-147,000); a 2018 Deseret News headline put it at 1 in 3 Salt Lake County homes. Portland: about 1,600 (2024) to 1,800 (earlier) buildings, roughly 9% of building stock per a 2018 city presentation, about 1,300 unretrofitted. Seattle: about 1,100 buildings, 60% with no retrofit. California: 20 years after the 1986 law the mitigation rate was reported as 51% (secondary source). For single-family users outside Utah the chance is low ('rare'); in pre-1975 Salt Lake Valley brick houses it is 'likely'.",
+      "how_to_identify": "Solid brick walls (not veneer): look for header courses - a row of bricks laid end-on every 5-7 courses - and walls 8-13 inches thick at window reveals. Star-shaped or square metal plates on the outside wall indicate past tie retrofits. Brick veneer over a wood frame has no header rows and is a different, lesser issue.",
+      "risk": {
+        "safety": "Wall, parapet and chimney collapse onto occupants and pavements; the 1933 Long Beach deaths (115-120 depending on source) were mostly from falling masonry.",
+        "financial": "Full retrofits are engineered and costly; many cities require at least parapet bracing or placarding.",
+        "insurance_or_sale": "California requires posted warning signs on unretrofitted URMs (from memory); earthquake insurance is expensive or unavailable for URM; lenders may require a seismic report."
+      },
+      "fix": {
+        "what": "Tie walls to floors and roof, brace parapets and chimneys, add shear walls or frames. Salt Lake City's Fix the Bricks pays up to 75% of a house retrofit (roof-to-wall ties and chimney bracing) for owner-occupied pre-1975 URM homes within city limits; the waiting list is long.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No authoritative per-house figure found this session."
+      },
+      "sources": [
+        { "url": "https://ssc.ca.gov/wp-content/uploads/sites/9/2020/08/cssc_2005-02_urm.pdf", "publisher": "California Seismic Safety Commission", "supports": "URM Law (SB 547, 1986): 366 Zone 4 jurisdictions must inventory URMs and set up loss-reduction programmes", "verified": false, "search_confirmed": true },
+        { "url": "https://pfwt.ssc.ca.gov/wp-content/uploads/sites/17/2020/08/cssc_2006_urm_report_final.pdf", "publisher": "California Seismic Safety Commission", "supports": "2006 status of the URM law", "verified": false, "search_confirmed": true },
+        { "url": "https://www.usgs.gov/news/featured-story/earthquake-southern-california-90-years-ago-changed-way-we-build", "publisher": "USGS", "supports": "1933 Long Beach earthquake, Riley Act and Field Act", "verified": false, "search_confirmed": true },
+        { "url": "https://seattle.gov/construction-and-inspections/codes/changes-to-code/unreinforced-masonry-buildings/frequently-asked-questions", "publisher": "City of Seattle SDCI", "supports": "Seattle definition (brick, pre-1945, unreinforced) and policy status", "verified": false, "search_confirmed": true },
+        { "url": "https://kuow.org/stories/with-no-retrofit-requirment-in-seattle-1-100-buildings-are-an-earthquake-risk", "publisher": "KUOW", "supports": "About 1,100 Seattle URMs; 60% without retrofit activity", "verified": false, "search_confirmed": true },
+        { "url": "https://www.portland.gov/bds/unreinforced-masonry-urm-buildings", "publisher": "City of Portland", "supports": "1,600+ URMs, built about 1870-1960", "verified": false, "search_confirmed": true },
+        { "url": "https://dem.utah.gov/earthquake-hazard/", "publisher": "Utah Division of Emergency Management", "supports": "Over 140,000 URM structures along the Wasatch fault", "verified": false, "search_confirmed": true },
+        { "url": "https://www.slc.gov/housingstability/?p=1150", "publisher": "Salt Lake City", "supports": "Fix the Bricks: URM home built before 1975, up to 75% of retrofit cost", "verified": false, "search_confirmed": true },
+        { "url": "https://www.fema.gov/sites/default/files/documents/fema_wasatch-front-urm-risk-reduction-strategy.pdf", "publisher": "FEMA", "supports": "Wasatch Front URM risk reduction strategy", "verified": false, "search_confirmed": true }
+      ],
+      "open_questions": "Whether and when URM was actually prohibited for new construction in each state (the 'banned in 1933' claim is widely repeated but unconfirmed here); why Utah's cut-off is the mid-1970s (seismic code adoption date); retrofit costs; final terms of Seattle's 2024 URM legislation."
+    },
+    {
+      "id": "florida-pre-2002-wind-construction",
+      "name": "Florida homes built before the post-Andrew codes (1994 South Florida / 2002 statewide)",
+      "category": "code-milestone",
+      "summary": "Hurricane Andrew (August 1992) exposed weak codes and enforcement. Miami-Dade and Broward adopted a strengthened South Florida Building Code in September 1994, and the statewide Florida Building Code replaced all local codes on March 1, 2002. Homes permitted before those dates often lack rated roof-to-wall straps, well-nailed roof decks and impact protection for windows, and pay markedly more for wind insurance unless retrofitted.",
+      "installed_from": null,
+      "installed_to": 2002,
+      "peak_from": null,
+      "peak_to": 1994,
+      "date_confidence": "high",
+      "date_notes": "Dates are firm but hinge on PERMIT APPLICATION date, not year built: the state wind-mitigation form (OIR-B1-1802) asks whether the home was built under 'FBC 2001 or later' or, in the HVHZ (Miami-Dade and Broward only), 'SFBC-94'. The FBC 2001 edition took effect March 1, 2002 (delayed from July 1, 2001 and then January 1, 2002), so a house 'built in 2002' may have been permitted under the old local code. The April 2026 revision of the form adds a separate tier for FBC 2007 or later. Before 2002 Florida codes were local, so pre-2002 quality outside the two south-east counties varies by county.",
+      "regions": "Florida statewide (cut-off March 1, 2002). Miami-Dade and Broward counties (High Velocity Hurricane Zone): cut-off September 1994. Wind-borne-debris-region requirements for opening protection vary by distance from the coast and by code edition.",
+      "prevalence": "likely",
+      "prevalence_basis": "By definition every Florida home permitted before the cut-off was built to an earlier local code; what it actually lacks varies (many 1980s-90s homes do have clips). No statewide count of unretrofitted homes was found. Florida DHSMV/insurer post-storm studies consistently show post-code homes performing better.",
+      "how_to_identify": "In the attic at the eaves, look where each truss/rafter meets the wall top: only angled nails = toe-nailed; a small metal bracket with at least 3 nails = clip; a metal strap wrapping over the truss = single wrap; two straps = double wrap. Check windows and doors for impact-rated labels or shutter hardware. The county permit record gives the original permit date. A licensed wind-mitigation inspection (form OIR-B1-1802, valid 5 years) documents all of this.",
+      "risk": {
+        "safety": "Roof loss and envelope breach in a hurricane.",
+        "financial": "Higher wind premiums; a Florida Building Code retrofit rule ties roof-to-wall upgrades to re-roofing for homes in the wind-borne debris region with insured value of $300,000 or more, capped at 15% of the re-roof cost.",
+        "insurance_or_sale": "Florida law requires insurers to offer discounts/credits for wind-loss mitigation features (roof covering, deck attachment, roof-to-wall connection, roof shape, secondary water resistance, opening protection). Connections are ranked toe-nail < clip < single wrap < double wrap; toe-nailed roofs may get no credit. Exact percentages vary by insurer and filing - no uniform figure exists. Citizens also uses the form for underwriting."
+      },
+      "fix": {
+        "what": "Wind-mitigation inspection first; then, typically at re-roof: re-nail the deck, add secondary water barrier, add roof-to-wall clips/straps, and add shutters or impact glazing. The My Safe Florida Home programme offers inspections and matching grants (availability depends on annual funding).",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No authoritative cost range found this session."
+      },
+      "sources": [
+        { "url": "https://www.floridabuilding.org/fbc/commission/FBC_0422/Commission/FBC_Milestones_February_2022.doc", "publisher": "Florida Building Commission", "supports": "'the first edition replaced all local codes on March 1, 2002'", "verified": false, "search_confirmed": true },
+        { "url": "https://flsenate.gov/Session/Bill/2002/1307/Analyses/20021307HLGVA_2002h1307s1z.lgva.pdf", "publisher": "Florida Legislature staff analysis", "supports": "ch. 2001-372 delayed the Code's effective date to March 1, 2002", "verified": false, "search_confirmed": true },
+        { "url": "https://miamidade.gov/global/economy/board-and-code/building-code-history.page", "publisher": "Miami-Dade County", "supports": "South Florida Building Code revised after Andrew, implemented September 1994, retired 2002", "verified": false, "search_confirmed": true },
+        { "url": "https://www.iccsafe.org/content/florida-case-study/", "publisher": "International Code Council", "supports": "History of local codes, Andrew, HVHZ = Miami-Dade and Broward only", "verified": false, "search_confirmed": true },
+        { "url": "https://floridadisaster.org/globalassets/swaw/wind-mitigation-inspection-fillable-form.pdf", "publisher": "Florida Division of Emergency Management (copy of OIR-B1-1802)", "supports": "Form wording: FBC 2001 or later, or SFBC-94 in HVHZ; permit application date; 5-year validity", "verified": false, "search_confirmed": true },
+        { "url": "https://www.citizensfla.com/-/20260319-uniform-mitigation-verification-inspection-form-changes", "publisher": "Citizens Property Insurance Corp.", "supports": "Revised form mandatory from April 1, 2026; new 2007-or-later code tier", "verified": false, "search_confirmed": true },
+        { "url": "https://www.myfloridacfo.com/docs-sf/consumer-services-libraries/consumerservices-documents/understanding-coverage/consumer-guides/premium-discounts-for-hurricane-loss-mitigation.pdf?sfvrsn=cf7d1fb8_15", "publisher": "Florida Dept. of Financial Services", "supports": "Insurers must offer premium discounts for hurricane loss-mitigation features", "verified": false, "search_confirmed": true },
+        { "url": "https://www.flsenate.gov/Laws/statutes/2007/553.844", "publisher": "Florida Statutes s. 553.844", "supports": "Retrofit triggers at re-roof ($300,000 value, 15% cap)", "verified": false, "search_confirmed": true },
+        { "url": "https://www.floridabuilding.org/fbc/commission/FBC_0815/Commission_Education_POC/365/365-2-MATERIAL-Course_Narration_with_Figures.pdf", "publisher": "Florida Building Commission course material", "supports": "Retrofit provisions aimed at homes built before the 2002 code changes", "verified": false, "search_confirmed": true }
+      ],
+      "open_questions": "Actual discount percentages (insurer-specific); retrofit costs; what the pre-1994 South Florida code and the Standard Building Code versions used elsewhere in Florida actually required for roof-to-wall connections by year; statute 627.0629 text was not retrieved."
+    },
+    {
+      "id": "hurricane-straps-gulf-atlantic",
+      "name": "Missing hurricane straps / continuous load path outside Florida (Gulf and Atlantic coast)",
+      "category": "code-milestone",
+      "summary": "Outside Florida there is no single year when roof-to-wall connectors became standard, because several hurricane-coast states had no mandatory statewide residential code for decades and some still leave adoption to counties and cities. A coastal house's wind resistance depends on the local code in force when it was permitted.",
+      "installed_from": null,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "Only a few firm anchors were found. Texas: for windstorm-pool (TWIA) insurance, structures built, altered or repaired on or after January 1, 1988 in the designated catastrophe area need a certificate of compliance (WPI-8 family). Louisiana: first statewide code created by Act 12 of 2005; emergency wind/flood provisions in the 11 hardest-hit parishes first, all other parishes from January 1, 2007. Mississippi: no statewide residential code law until 2014. IBHS's 2021 Rating the States put 8 of 18 hurricane-coast states in its 'poor' group, the common factor being no mandatory statewide code; Alabama's two coastal counties (Mobile, Baldwin) adopted stricter codes on their own. Carolinas, Georgia and Virginia dates were not established.",
+      "regions": "Texas (14 first-tier coastal counties plus part of Harris County - list not fully confirmed), Louisiana, Mississippi, Alabama (Mobile and Baldwin counties), Georgia, South Carolina, North Carolina, Virginia and northward. State-specific and often county-specific.",
+      "prevalence": "possible",
+      "prevalence_basis": "No data found on the share of coastal homes without rated connectors. Reasoning only: toe-nailing was the default older practice everywhere.",
+      "how_to_identify": "Same attic check as Florida: look for metal clips or straps where trusses/rafters meet the wall top plate. In coastal Texas ask for the WPI-8 certificate for the house and for any later re-roof or addition.",
+      "risk": {
+        "safety": "Roof uplift and structural failure in hurricanes.",
+        "financial": "Higher wind premiums or deductibles; uninsurable through TWIA without certification for post-1988 work.",
+        "insurance_or_sale": "Texas: a missing WPI-8 for post-1988 construction or repairs can block TWIA coverage and derail a sale. Alabama, Mississippi, Louisiana and the Carolinas have statutory or programme-based wind-mitigation discounts (IBHS FORTIFIED) - not confirmed this session."
+      },
+      "fix": {
+        "what": "Retrofit roof-to-wall connectors and gable bracing, usually at re-roof; IBHS FORTIFIED Roof is the common retrofit standard.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "Not found."
+      },
+      "sources": [
+        { "url": "https://tdi.texas.gov/WIND/generalquestio.html", "publisher": "Texas Department of Insurance", "supports": "Windstorm inspection programme; certificates for construction on or after January 1, 1988 in the designated catastrophe area", "verified": false, "search_confirmed": true },
+        { "url": "https://www.twia.org/faqs/", "publisher": "Texas Windstorm Insurance Association", "supports": "TWIA requires a certificate of compliance (WPI-8, WPI-8-E, WPI-8-C) for work begun on or after January 1, 1988", "verified": false, "search_confirmed": true },
+        { "url": "https://www.dnr.louisiana.gov/page/residential-energy-conservation-code", "publisher": "Louisiana DNR", "supports": "Act 12 of 2005 First Extraordinary Session created the first statewide uniform construction code", "verified": false, "search_confirmed": true },
+        { "url": "https://joneswalker.com/en/insights/new-construction-codes.html", "publisher": "Jones Walker LLP", "supports": "Emergency adoption in 11 parishes; other parishes from January 1, 2007", "verified": false, "search_confirmed": true },
+        { "url": "https://www.insurancejournal.com/news/southeast/2021/06/04/617023.htm", "publisher": "Insurance Journal (reporting IBHS Rating the States 2021)", "supports": "Eight 'poor' states share lack of a mandatory statewide code; Alabama coastal counties stricter", "verified": false, "search_confirmed": true },
+        { "url": "https://ibhs.org/ibhs-news-releases/ibhs-ranks-hurricane-coast-states-on-building-code-adoption-enforcement/", "publisher": "IBHS", "supports": "2024 Rating the States across 18 states Texas to Maine", "verified": false, "search_confirmed": true },
+        { "url": "https://propertycasualty360.com/2010/08/16/gulf-coast-states-post-katrina-building-code-efforts-lacking", "publisher": "PropertyCasualty360", "supports": "Post-Katrina, only Louisiana adopted a statewide code promptly", "verified": false, "search_confirmed": true }
+      ],
+      "open_questions": "Nearly everything state-by-state: when NC, SC, GA, VA, AL and MS coastal jurisdictions first required rated roof-to-wall connectors (Standard Building Code / SSTD 10 history was not found), and which Texas counties are in the catastrophe area. IBHS Rating the States Appendix C is the document to read. This entry should NOT be shown to users as a dated claim without that second pass."
+    },
+    {
+      "id": "pre-firm-flood-construction",
+      "name": "Pre-FIRM house in a flood zone (built before the community's first flood map)",
+      "category": "code-milestone",
+      "summary": "Once a community has a FEMA Flood Insurance Rate Map (FIRM) and joins the National Flood Insurance Program, new and substantially improved buildings in the mapped flood zone must have their lowest floor at or above the base flood elevation. Houses built before that are 'pre-FIRM': they were built with no flood standard and are often below flood level.",
+      "installed_from": null,
+      "installed_to": 1974,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "The cut-off is DIFFERENT FOR EVERY COMMUNITY. FEMA's definition: pre-FIRM = built or substantially improved on or before December 31, 1974, or before the effective date of the community's initial FIRM, whichever is later. Initial FIRM dates run from the early 1970s into the 1980s and later (the range is from general knowledge; the per-community date is in FEMA's Community Status Book). 1974 is only the earliest possible cut-off. A Florida state guidance note (Dec 2024) also warns that pre/post-FIRM labels should not be used for code compliance because maps and base flood elevations are revised over time - a 'post-FIRM' house can be below today's BFE.",
+      "regions": "National, but only relevant inside mapped Special Flood Hazard Areas; date is per NFIP community (city/county), about 22,000 of them (count from memory).",
+      "prevalence": "possible",
+      "prevalence_basis": "No figure retrieved this session for the share of flood-zone homes that are pre-FIRM. Depends wholly on whether the lot is in a mapped flood zone, which year-built and state cannot tell you.",
+      "how_to_identify": "Look up the address on FEMA's Flood Map Service Center for the flood zone, find the community's initial FIRM date in the FEMA Community Status Book, and compare with the build date. Slab-on-grade or basement houses in A or V zones are the typical pre-FIRM pattern; post-FIRM houses in the same street are usually raised on fill, piers or an enclosed lower level with flood vents. An elevation certificate gives the definitive answer.",
+      "risk": {
+        "safety": "Living space below flood level.",
+        "financial": "Flood damage is excluded from homeowners policies. Under the NFIP 'substantial improvement / substantial damage' rule, work costing 50% or more of the building's market value (communities may set a lower threshold) must bring the building up to current floodplain standards, which for a low house can mean elevating it; the house also loses pre-FIRM status.",
+        "insurance_or_sale": "Flood insurance is mandatory for federally backed mortgages in SFHAs. Pre-FIRM buildings historically got subsidised NFIP rates. Under Risk Rating 2.0 (new policies from October 2021) price is based on individual risk; an elevation certificate is no longer required but can be submitted to lower the rate, and FEMA says pre-FIRM and newly-mapped discounts continue while premiums move toward full-risk rates."
+      },
+      "fix": {
+        "what": "Elevate the house, relocate utilities above flood level, add flood openings; or carry flood insurance and accept the risk.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No authoritative elevation cost found this session."
+      },
+      "sources": [
+        { "url": "https://www.fema.gov/glossary/pre-firm-building", "publisher": "FEMA", "supports": "Definition of pre-FIRM building", "verified": false, "search_confirmed": true },
+        { "url": "https://emilms.fema.gov/IS1104/groups/74.html", "publisher": "FEMA Emergency Management Institute", "supports": "Post-FIRM definition: after December 31, 1974 or on/after initial FIRM date, whichever is later", "verified": false, "search_confirmed": true },
+        { "url": "https://www.everycrsreport.com/files/20191107_R45999_d32fd685008f3314eda507ad501f52646ffc01e9.html", "publisher": "Congressional Research Service (R45999)", "supports": "Pre-FIRM subsidies and the Risk Rating 2.0 change", "verified": false, "search_confirmed": true },
+        { "url": "https://www.fema.gov/sites/default/files/documents/fema_rr-2.0_2025.pdf", "publisher": "FEMA", "supports": "Risk Rating 2.0: elevation certificate optional; pre-FIRM discounts continue", "verified": false, "search_confirmed": true },
+        { "url": "https://floridadisaster.org/globalassets/fdem-ofm-guidance_date-in-definitions_fbceb_12-2024.pdf", "publisher": "Florida Division of Emergency Management", "supports": "Caution against using pre/post-FIRM for compliance because FIRMs are revised", "verified": false, "search_confirmed": true },
+        { "url": "https://www.fl-counties.com/wp-content/uploads/2024/10/FEMAs-Commonly-Misinterpreted-50-Rule.pdf", "publisher": "Florida Association of Counties", "supports": "50% substantial improvement / damage rule", "verified": false, "search_confirmed": true }
+      ],
+      "open_questions": "The site cannot answer this from year + state. It needs the address or at least the NFIP community and its initial FIRM date (a public FEMA dataset). Number of pre-FIRM policies and elevation costs not retrieved."
+    },
+    {
+      "id": "pyrrhotite-crumbling-foundations",
+      "name": "Crumbling concrete foundations (pyrrhotite) in north-east Connecticut and central Massachusetts",
+      "category": "structure",
+      "summary": "Concrete made with aggregate from Becker's Quarry in Willington, CT, supplied through the J.J. Mottes ready-mix company, contains the iron sulphide mineral pyrrhotite, which slowly reacts with water and oxygen and makes foundation walls crack and crumble, typically 10-30 years after pouring. There is no repair: the foundation has to be replaced.",
+      "installed_from": 1983,
+      "installed_to": 2015,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "State officials use 1983 to 2015 (Mottes stopped using the quarry under a 2015-16 consent agreement). The start year is approximate ('early 1980s'), and Mottes's records were destroyed in a fire, so which pours used the aggregate cannot be reconstructed. Massachusetts investigators have reported that at least one Massachusetts quarry may also have distributed pyrrhotite-bearing aggregate, so the CT-quarry radius may not be the whole story.",
+      "regions": "Connecticut: north-east/north-central part of the state, mainly Tolland, Hartford and Windham counties (one report says homeowners in 47 towns). Massachusetts: central and western areas, mainly Hampden and Worcester counties (advocates count 43 cities and towns); the Massachusetts testing-reimbursement programme covers homes within 50 miles of the Mottes plant in Stafford Springs (extended from 20 miles in the FY22 budget).",
+      "prevalence": "possible",
+      "prevalence_basis": "Estimates differ by two orders of magnitude depending on what is counted: 'at least 400' homes with irreparable damage (CT Attorney General, 2016); up to 34,000-35,000 homes possibly built with the material (state officials); 20,704 homes built within 20 miles of the plant in 1983-2015 (Massachusetts commission). The CT captive insurer (CFSIC) had replaced over 1,100 foundations and paid $172.6M by July 2025, with 1,639 claims reported at one point. Within the affected towns the chance is real but well under half; outside them it is essentially nil.",
+      "how_to_identify": "In the basement, look for horizontal and map-pattern (spider-web) cracking, white powdery deposits, rust-brown staining and flaking, usually appearing 10-30 years after construction. Visual inspection by a licensed engineer is the first step; a core sample tested for pyrrhotite confirms it. A clean-looking wall does not rule it out.",
+      "risk": {
+        "safety": "Progressive loss of foundation strength; slow, not sudden.",
+        "financial": "Replacement costs roughly $150,000-$250,000 per house, often a large fraction of the home's value.",
+        "insurance_or_sale": "Homeowners insurers have generally denied claims and the Connecticut Supreme Court sided with insurers in 2019. Connecticut created the captive insurer CFSIC (funded partly by a surcharge on homeowners policies), paying up to $175,000 per single-family home; funding is finite and its end date has been repeatedly extended. Massachusetts reimburses testing only; a repair fund (bill S.580 and budget amendments) has been proposed but was not enacted as of the sources found. Sellers in the affected area are routinely asked for test results."
+      },
+      "fix": {
+        "what": "Lift the house, remove and replace the entire foundation.",
+        "cost_low_usd": 150000,
+        "cost_high_usd": 250000,
+        "cost_year": 2019,
+        "cost_source": "Press reports citing state officials ($150,000 or higher; $150,000-$250,000 depending on house size, as of 2019). CFSIC cap $175,000."
+      },
+      "sources": [
+        { "url": "https://www.umass.edu/geological-survey/ma-geology/pyrrhotite-and-crumbling-foundations", "publisher": "Massachusetts Geological Survey (UMass)", "supports": "Mineralogy and mechanism", "verified": false, "search_confirmed": true },
+        { "url": "https://www.mass.gov/doc/crumbling-foundation-testing-reimbursement-application-1/download", "publisher": "Commonwealth of Massachusetts, Office of Public Safety & Inspections", "supports": "Testing reimbursement programme (FY19 origin, radius extended 20 to 50 miles)", "verified": false, "search_confirmed": true },
+        { "url": "https://malegislature.gov/Bills/194/S580/PrimarySponsorSummary", "publisher": "Massachusetts Legislature", "supports": "Proposed Crumbling Concrete Assistance Fund (not enacted as found)", "verified": false, "search_confirmed": true },
+        { "url": "https://www.probuilder.com/construction/codes-standards/article/55208643/crumbling-foundations-in-conn-linked-to-presence-of-mineral-found-in-aggregate", "publisher": "Pro Builder (reporting CT Attorney General findings)", "supports": "Becker's Quarry / J.J. Mottes link; at least 400 homes", "verified": false, "search_confirmed": true },
+        { "url": "https://bankerandtradesman.com/350m-could-be-needed-to-fix-central-mass-home-foundations/", "publisher": "Banker & Tradesman", "supports": "20,704 homes within 20 miles built 1983-2015; records destroyed in fire", "verified": false, "search_confirmed": true },
+        { "url": "https://www.captive.com/news/connecticuts-crumbling-foundations-captive-enters-final-phase", "publisher": "Captive.com", "supports": "CFSIC totals: 1,100+ foundations replaced, $172.6M paid (July 2025)", "verified": false, "search_confirmed": true },
+        { "url": "https://amp.claimsjournal.com/news/east/2019/11/14/294079.htm", "publisher": "Claims Journal", "supports": "2019 Connecticut Supreme Court ruling for insurers", "verified": false, "search_confirmed": true },
+        { "url": "https://www.boston25news.com/news/local/25-investigates-tainted-concrete-aggregate-may-have-been-distributed-by-least-one-mass-quarry/4BS666G57BGWJGRNBMPFSBC6QM/?outputType=amp", "publisher": "Boston 25 News", "supports": "Possible second (Massachusetts) source quarry", "verified": false, "search_confirmed": true }
+      ],
+      "open_questions": "Official town lists for both states (the CT Department of Housing page, CFSIC site and GAO-21-120 could not be opened); current CFSIC cap and whether it is still taking claims; whether pours after 2015 or from other quarries are affected."
+    },
+    {
+      "id": "texas-expansive-clay-slab-foundations",
+      "name": "Slab foundations on expansive clay (Texas) and post-tensioned slabs",
+      "category": "structure",
+      "summary": "Much of Texas sits on clay that swells when wet and shrinks when dry, flexing slab-on-ground foundations and cracking walls and brick. From the late 1960s builders increasingly used post-tensioned slabs (steel cables tightened after the pour) to resist this; older and lightly reinforced slabs are more prone to movement, and post-tensioned slabs carry their own rule: never cut or core the slab without locating the cables.",
+      "installed_from": 1950,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "There is no cut-off year after which the problem stops. Milestones from a Post-Tensioning Institute presentation: slab-on-ground common from the early 1950s; post-tensioning introduced mid-1960s; BRAB report and HUD approval 1968; PTI-funded Texas A&M research 1975-78; first PTI design manual 1980; PTI design provisions in the 2000 IBC. So a pre-1968 Texas slab is conventionally reinforced; 1968-1980 post-tensioned slabs predate the first PTI design manual. No source gives the year post-tensioning became the majority practice in any Texas metro.",
+      "regions": "Texas, especially the Blackland Prairie belt (Dallas-Fort Worth, Austin's east side, San Antonio/Bexar County vertisols) and the Houston-area 'gumbo' clays. Expansive soils also matter in Colorado's Front Range, Oklahoma, Louisiana, Mississippi and parts of California, which this pass did not research.",
+      "prevalence": "possible",
+      "prevalence_basis": "No authoritative prevalence data found. Contractor websites quote '25% of Texas homes experience foundation movement in their first 20 years' (attributed to Texas A&M AgriLife, not located in a primary source) and 'over 60% show cosmetic evidence by age 15' - these conflict and are unverified. PTI Journal states that post-tensioned slab-on-ground is 'the most common type of residential foundation' in Texas and the Southwest, with no percentage.",
+      "how_to_identify": "Movement: diagonal cracks from door and window corners, stair-step cracks in brick veneer, doors that stick seasonally, sloping floors, gaps at the slab edge. Post-tensioned slab: a stamp in the garage floor saying 'post-tensioned slab - do not cut or core', and small round grout patches at regular spacing along the exposed slab edge where the cable ends are.",
+      "risk": {
+        "safety": "Rarely a life-safety problem; cutting a tensioned cable is hazardous.",
+        "financial": "Underpinning with piers is a five-figure repair at the high end; plumbing under the slab can break with movement.",
+        "insurance_or_sale": "Standard Texas homeowners policies generally exclude foundation movement/settling (from general knowledge). Buyers routinely commission structural engineer reports; ASCE Texas Section guidelines for evaluation and repair of residential foundations (Version 2, 2009) are the reference engineers use."
+      },
+      "fix": {
+        "what": "Drainage and consistent soil moisture first; underpinning with concrete or steel piers where movement is excessive; engineer-designed repair for post-tensioned slabs.",
+        "cost_low_usd": 3000,
+        "cost_high_usd": 15000,
+        "cost_year": 2026,
+        "cost_source": "WEAK: foundation-repair contractor / lead-generation guides only ('$3,000-$15,000 for the typical residential job'; metro averages about $4,800-$5,800). No neutral source found."
+      },
+      "sources": [
+        { "url": "https://www.post-tensioning.org/Portals/13/Files/PDFs/Events/Conventions/TechnicalSessions/2015/042815Illingworth.pdf", "publisher": "Post-Tensioning Institute (conference presentation)", "supports": "Timeline: SOG common early 1950s, PT mid-1960s, BRAB and HUD approval 1968, first PTI manual 1980", "verified": false, "search_confirmed": true },
+        { "url": "https://www.post-tensioning.org/Portals/13/Files/PDFs/Publications/Reprints/2017%20December/Illingworth-reprint.pdf", "publisher": "PTI Journal", "supports": "PT slab-on-ground is the most common residential foundation in Texas and the Southwest", "verified": false, "search_confirmed": true },
+        { "url": "https://web.mst.edu/rogersda/expansive_soils/Input%20for%20IBC%20Design%20PT%20Slabs%20on%20Expansive%20Soils.pdf", "publisher": "Missouri S&T (course material)", "supports": "2000 IBC Section 1816 PT slab provisions based on PTI", "verified": false, "search_confirmed": true },
+        { "url": "https://www.structuremag.org/wp-content/uploads/2014/08/C-BuildingBlocks-Allred-Jan101.pdf", "publisher": "STRUCTURE magazine", "supports": "First use late 1960s in Texas and California; Texas has the largest expansive soil movement", "verified": false, "search_confirmed": true },
+        { "url": "https://www.post-tensioning.org/Portals/13/Files/PDFs/Events/Conventions/TechnicalSessions/2015/042815Brumley.pdf", "publisher": "Post-Tensioning Institute / ASCE Texas Section", "supports": "Texas evaluation guidelines for slab-on-ground foundations", "verified": false, "search_confirmed": true },
+        { "url": "https://foundation-costs-v2.pages.dev/guides/foundation-repair-texas", "publisher": "Commercial cost guide (weak source)", "supports": "Repair cost range and unverified prevalence claims", "verified": false, "search_confirmed": true }
+      ],
+      "open_questions": "Any neutral prevalence figure; any neutral repair-cost figure; the year PT slabs became dominant by metro; whether this should be one national 'expansive soils' entry keyed to soil maps (USDA/USGS) rather than to Texas and a year."
+    },
+    {
+      "id": "stone-brick-rubble-foundations",
+      "name": "Stone, rubble or brick foundations with lime mortar (older houses)",
+      "category": "structure",
+      "summary": "Before poured concrete and concrete block took over in the early 20th century, houses sat on fieldstone, cut limestone or brick walls laid in soft lime mortar. They are not defective by design but leak, lose mortar, have no footing drainage or reinforcement, and are damaged by repointing with hard Portland-cement mortar.",
+      "installed_from": null,
+      "installed_to": 1940,
+      "peak_from": null,
+      "peak_to": 1910,
+      "date_confidence": "low",
+      "date_notes": "No source gives a clean transition year. The National Park Service dates US Portland cement use from the 1870s; one Minnesota city guideline says nearly every 19th-century house there has a limestone foundation and that concrete block appears after 1900. The 1940 end date reflects the assignment's 'pre-1940s' framing and general knowledge that poured concrete/block dominated by the 1920s-30s; it is not sourced. Timing varies by region and by builder.",
+      "regions": "National for pre-1940 houses; most common in the Northeast, Mid-Atlantic and Midwest, where old housing stock and basements coincide.",
+      "prevalence": "possible",
+      "prevalence_basis": "No data found. Reasoning: near-universal before about 1900, declining through the 1920s-30s.",
+      "how_to_identify": "In the basement or crawl space: irregular stones or brick with mortar joints rather than smooth formed concrete or uniform blocks. Sandy, crumbling joints, white salts, damp patches, bulging or leaning sections are the warning signs. Grey, hard, smeared mortar over the joints indicates a cement repointing.",
+      "risk": {
+        "safety": "Bulging or bowing walls can indicate structural distress; in seismic zones these foundations cannot be bolted in the normal way.",
+        "financial": "Periodic repointing; drainage work; partial rebuilds if bowed.",
+        "insurance_or_sale": "Commonly flagged in inspections; some lenders/insurers ask for a structural opinion. CEA's Brace + Bolt grants require a continuous perimeter concrete foundation, so brick/stone foundations do not qualify for the standard retrofit."
+      },
+      "fix": {
+        "what": "Manage roof and surface water first; repoint with a lime-based mortar matching the original (NPS Preservation Brief 2); rebuild or sister with concrete where failed.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "Not found."
+      },
+      "sources": [
+        { "url": "https://home.nps.gov/orgs/1739/upload/preservation-brief-02-repointing.pdf", "publisher": "National Park Service, Preservation Brief 2", "supports": "Repoint historic masonry with mortar matching the original soft lime mortar; Portland cement history", "verified": false, "search_confirmed": true },
+        { "url": "https://www.nps.gov/crps/tps/rehab-guidelines/masonry01.htm", "publisher": "National Park Service", "supports": "Masonry rehabilitation guidelines", "verified": false, "search_confirmed": true },
+        { "url": "https://hastingsmn.gov/home/showpublisheddocument/749/638549937590000000", "publisher": "City of Hastings, MN (preservation guidelines)", "supports": "19th-century houses on limestone foundations; concrete block after 1900", "verified": false, "search_confirmed": true }
+      ],
+      "open_questions": "A sourced transition date to poured concrete/block (regional); prevalence; costs. An InterNACHI or university-extension foundation-history reference should be found on a second pass."
+    },
+    {
+      "id": "permanent-wood-foundations",
+      "name": "Permanent (pressure-treated) wood foundations",
+      "category": "structure",
+      "summary": "Basement or crawl-space walls built of pressure-treated lumber and plywood on a gravel footing instead of concrete. Promoted from about 1970 as the 'All-Weather Wood Foundation'. They work when drainage and detailing are right, but many were built poorly, defects are hidden behind finishes, and some buyers, lenders and insurers are wary.",
+      "installed_from": 1971,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "A Canadian wood-preservation training document says the US National Forest Products Association issued its All-Weather Wood Foundation design guide in 1971 and FHA accepted the system for mortgage insurance. Earlier experimental houses (1960s) are mentioned in general literature but were not confirmed. Still code-permitted (IRC R402/R404 reference AWC PWF - from memory). No peak years could be established.",
+      "regions": "National but concentrated in cold-climate states where winter concrete work is difficult: upper Midwest (Minnesota, Wisconsin, Michigan, the Dakotas), Alaska and the northern Rockies (regional pattern from general knowledge and the origin of the inspector sources found; not quantified).",
+      "prevalence": "rare",
+      "prevalence_basis": "No count found this session. Industry literature has claimed several hundred thousand built in the US, which I could not confirm; even so that is a very small share of housing starts since 1971.",
+      "how_to_identify": "In an unfinished basement: wood studs and plywood where you would expect concrete, with stamps reading 'PWF' or 'FDN' on the lumber/plywood. Outside: a treated board or panel, not concrete, visible between soil and siding. Check for gutters, ground sloping away, and a sump.",
+      "risk": {
+        "safety": "Inward bowing of walls from soil pressure if under-designed or backfilled with clay; decay where the wrong treatment level or cut ends were used.",
+        "financial": "Repairs mean excavating the wall; replacement with concrete is major work.",
+        "insurance_or_sale": "Resale resistance is the main cost: some buyers and lenders balk. Lifespan claims conflict - industry sources say life of the house (one cites over 100 years); inspector sources point to 30-year treatment warranties and frequent construction errors."
+      },
+      "fix": {
+        "what": "Correct drainage (gutters, grading, footing drain, sump); engineer evaluation of bowing; replace damaged sections or the wall.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "Not found."
+      },
+      "sources": [
+        { "url": "https://onlinetraining.woodpreservation.ca/wp-content/uploads/2013/03/wpc_14.pdf", "publisher": "Wood Preservation Canada (training module)", "supports": "1971 NFPA All-Weather Wood Foundation guide; FHA acceptance", "verified": false, "search_confirmed": true },
+        { "url": "https://www.homeinspector.org/?p=13388", "publisher": "American Society of Home Inspectors", "supports": "Inspector perspective on wood foundations", "verified": false, "search_confirmed": true },
+        { "url": "https://inspectapedia.com/structure/Wood_Foundation_Inspection.php", "publisher": "InspectApedia", "supports": "Inspection concerns; exterior water management is the main cause of early deterioration", "verified": false, "search_confirmed": true },
+        { "url": "https://greenbuildingadvisor.com/article/water-and-a-permanent-wood-foundation", "publisher": "Green Building Advisor", "supports": "Moisture management for PWFs", "verified": false, "search_confirmed": true }
+      ],
+      "open_questions": "How many exist and where; peak years; an American Wood Council or APA primary source for history and expected life; actual lender/insurer positions."
+    },
+    {
+      "id": "engineered-i-joists-fire",
+      "name": "Engineered wood I-joist floors (fast failure in a basement fire)",
+      "category": "fire-safety",
+      "summary": "Wood I-joists (thin OSB web between two small flanges) are strong, straight and very common in floors of newer houses. Left exposed over a basement, they burn through and collapse much faster than solid lumber joists - about 6 minutes in UL's tests versus roughly 12-19 minutes - which matters for escape time and for firefighters. Since the 2012 IRC, new floors of this type need a protective ceiling membrane or sprinklers, where that code section was adopted.",
+      "installed_from": 1970,
+      "installed_to": null,
+      "peak_from": 1990,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "Start and peak years are from general knowledge (Trus Joist commercialised wood I-joists around 1969; rapid residential uptake from the late 1980s-1990s) and were NOT confirmed by any source this session. The code milestone is solid: 2012 IRC Section R501.3 (renumbered R302.13 in the 2015 IRC) requires 1/2-inch gypsum board, 5/8-inch wood structural panel or equivalent on the underside of floor assemblies, with exceptions for sprinklered homes, certain crawl spaces, and floors framed with 2x10 or larger solid lumber. Adoption is state-by-state and many states adopted the 2012 IRC years later or amended this section out, so there is no single year a house 'has' the protection.",
+      "regions": "National.",
+      "prevalence": "possible",
+      "prevalence_basis": "No market-share figure found this session (from memory, industry surveys have put I-joists at roughly 40-50% of new raised wood floor area since about 2000 - unverified). The hazard applies only where joists are exposed over an unfinished basement or garage without a drywall ceiling.",
+      "how_to_identify": "Look up at the basement ceiling: I-shaped joists with a thin OSB or plywood web and small 2x3 or 2x4-size flanges top and bottom, usually printed with a brand (TJI, BCI, LPI etc.). If you can see them, they are unprotected. Open-web floor trusses with metal plates are a related lightweight type.",
+      "risk": {
+        "safety": "UL/NIST tests: unprotected 12-inch I-joist floor collapsed at 6:03; dimension-lumber floors averaged 11:57 and engineered floors 7:00 in one series; NIOSH cites under 19 minutes for traditional unprotected floors versus as little as 6 minutes. Floors weaken well before collapse.",
+        "financial": "None in normal service.",
+        "insurance_or_sale": "Not an insurance issue found in any source; not a defect in an inspection sense."
+      },
+      "fix": {
+        "what": "Install 1/2-inch gypsum board (or an APA/manufacturer-listed alternative) on the underside of exposed I-joists; working smoke alarms on every level; residential sprinklers are the code alternative.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "Not found."
+      },
+      "sources": [
+        { "url": "https://fsri.org/research/structural-stability-engineered-lumber-fire-conditions", "publisher": "UL Fire Safety Research Institute", "supports": "Engineered floor systems, time to collapse and firefighter safety", "verified": false, "search_confirmed": true },
+        { "url": "https://fsri.org/sites/default/files/2021-07/NC9140-20090512-Report-Independent.pdf", "publisher": "UL (report NC9140)", "supports": "Collapse time 6:03 for unprotected I-joist floor", "verified": false, "search_confirmed": true },
+        { "url": "https://webarchive.library.unt.edu/web/20121010181747/http://www.cdc.gov/niosh/docs/wp-solutions/2009-114", "publisher": "NIOSH (archived)", "supports": "I-joist assemblies can fail in as little as 6 minutes; traditional floors under 19 minutes", "verified": false, "search_confirmed": true },
+        { "url": "https://technicalpanels.fsri.org/docs/2009_NIST_ARRA_Appendix_C.pdf", "publisher": "UL / NIST", "supports": "Average collapse times: dimension lumber 11:57, engineered 7:00", "verified": false, "search_confirmed": true },
+        { "url": "https://www.apawood.org/guides-tools-training/technical-document-library/technical-guides/fire-protective-options-for-i-joist-floor-systems/", "publisher": "APA - The Engineered Wood Association", "supports": "2012 IRC R501.3 / 2015 IRC R302.13 membrane requirement and compliant assemblies", "verified": false, "search_confirmed": true },
+        { "url": "https://sbcindustry.com/fireprotectionfloors", "publisher": "Structural Building Components Association", "supports": "Code text and exceptions for fire protection of floors", "verified": false, "search_confirmed": true }
+      ],
+      "open_questions": "Sourced introduction and market-share history; which states adopted R501.3/R302.13 and when (many amended it); retrofit cost."
+    },
+    {
+      "id": "roof-trusses-metal-plate",
+      "name": "Factory-built roof trusses (metal-plate-connected)",
+      "category": "structure",
+      "summary": "Prefabricated wood trusses joined with pressed metal plates replaced site-cut rafters in most tract housing from the late 1950s-60s. They are sound engineering, but every member is load-bearing: they must not be cut, notched or loaded with attic storage, they are part of why attics in newer homes are unusable, and like other lightweight framing they fail early in fires.",
+      "installed_from": 1952,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "medium",
+      "date_notes": "Invention is well dated: A. Carroll Sanford (Pompano Beach, Florida) introduced the metal-plate-connected truss in 1952 (patent filed March 1954); J. Calvin Jureit's Gang-Nail plate, needing no supplemental nails, was filed in September 1956. When trusses became the majority method was not sourced - the usual account is the 1960s. Site-built plywood-gusset trusses existed earlier.",
+      "regions": "National; adoption began in Florida. Rafter framing persists in custom homes, complex roofs and some regions.",
+      "prevalence": "likely",
+      "prevalence_basis": "Fine Homebuilding: about two-thirds of residential roofs in America are built with manufactured trusses (figure covers roofs generally, not a specific era; the industry often quotes higher shares for new houses, unverified).",
+      "how_to_identify": "In the attic: a web of diagonal 2x4s forming W or M shapes, joined by toothed galvanised steel plates, typically at 24-inch spacing, versus rafters, which are larger boards running from ridge to wall with open attic space between.",
+      "risk": {
+        "safety": "Cut or altered trusses can lose most of their capacity; plates can back out with moisture cycling; early collapse in attic fires.",
+        "financial": "Any alteration (attic conversion, new skylight wider than the spacing) needs an engineer's repair design.",
+        "insurance_or_sale": "Not an insurance issue in itself; damaged or modified trusses are a standard inspection write-up. Roof shape and truss-to-wall connection matter for wind credits (see Florida entry)."
+      },
+      "fix": {
+        "what": "Nothing unless damaged or altered; engineered repair if they are.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "Not applicable / not found."
+      },
+      "sources": [
+        { "url": "https://sbcindustry.com/content/1/truss-history", "publisher": "Structural Building Components Association", "supports": "Sanford 1952 invention; Jureit Gang-Nail", "verified": false, "search_confirmed": true },
+        { "url": "https://www.sbcmag.info/sites/default/files/0311%20Early%20Plates.pdf", "publisher": "SBC Magazine", "supports": "Early plate history and patent filing dates (1954, 1956)", "verified": false, "search_confirmed": true },
+        { "url": "https://finehomebuilding.com/project-guides/framing/introduction-to-roof-trusses", "publisher": "Fine Homebuilding", "supports": "About two-thirds of US residential roofs use manufactured trusses", "verified": false, "search_confirmed": true }
+      ],
+      "open_questions": "Year-by-year market share; whether this deserves to be an 'issue' on the site at all or just an era descriptor."
+    },
+    {
+      "id": "pre-1976-mobile-homes",
+      "name": "Mobile homes built before the HUD Code (June 15, 1976)",
+      "category": "code-milestone",
+      "summary": "Factory-built homes made before June 15, 1976 predate the federal Manufactured Home Construction and Safety Standards (24 CFR Part 3280) and were built to voluntary or varying state standards, with weaker fire, electrical, structural and tie-down provisions. They cannot be brought into HUD Code compliance after the fact, and FHA will not insure a mortgage on one.",
+      "installed_from": null,
+      "installed_to": 1976,
+      "peak_from": 1955,
+      "peak_to": 1976,
+      "date_confidence": "high",
+      "date_notes": "The date is exact and federal: units manufactured on or after June 15, 1976 carry a HUD certification label. It is the date of manufacture (leaving the factory), not the model year or the year sited, so a '1976' home can fall either side. Peak-from year is a rough general-knowledge figure, not sourced.",
+      "regions": "National (federal pre-emptive standard). Concentrated in the Sun Belt and rural areas.",
+      "prevalence": "likely",
+      "prevalence_basis": "Definitional: every mobile home manufactured before the date is pre-HUD. No count of surviving pre-1976 units was retrieved this session (HUD/Census American Housing Survey would have it).",
+      "how_to_identify": "HUD-Code homes have a red metal certification label (about 2 x 4 inches) riveted to the outside of each transportable section at the tail end, and a paper data plate inside (kitchen cabinet, electrical panel or bedroom closet) giving manufacture date and wind/roof-load zones. No red label and no data plate, plus a title showing a pre-1976 year, means pre-HUD. HUD will not issue labels for pre-1976 units.",
+      "risk": {
+        "safety": "Higher fire fatality risk, aluminium branch wiring in some late-1960s-70s units, weak anchoring and wind resistance (specifics from general knowledge, not sourced here).",
+        "financial": "Limited resale value; many parks and jurisdictions restrict moving or re-siting pre-HUD units.",
+        "insurance_or_sale": "HUD: FHA does not insure mortgages on manufactured homes built before June 15, 1976, and most other mortgage insurers follow FHA. Buyers are generally limited to cash, chattel or personal loans; insurance is available mainly from specialty carriers."
+      },
+      "fix": {
+        "what": "Cannot be certified retroactively. Practical options are safety upgrades (smoke alarms, wiring evaluation, tie-downs) or replacement.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "Not found."
+      },
+      "sources": [
+        { "url": "https://hud.gov/program_offices/housing/mhs/faqs", "publisher": "HUD Office of Manufactured Housing Programs", "supports": "FHA does not insure mortgages on manufactured homes built before June 15, 1976; no labels issued for earlier units", "verified": false, "search_confirmed": true },
+        { "url": "https://archives.hud.gov/offices/hsg/sfh/ref/sfhp1-9a.cfm", "publisher": "HUD (archived HOC Reference Guide)", "supports": "Pre-June 15, 1976 units cannot be accepted as compliant even with modifications", "verified": false, "search_confirmed": true },
+        { "url": "https://nlihc.org/sites/default/files/AG-2024/6-5_Manufactured-Housing.pdf", "publisher": "National Low Income Housing Coalition", "supports": "Background on the HUD Code and manufactured housing stock", "verified": false, "search_confirmed": true }
+      ],
+      "open_questions": "Number of pre-1976 units still occupied by state; sourced statements on specific pre-HUD hazards (fire death rates, wiring); state rules on relocating pre-HUD homes."
+    },
+    {
+      "id": "manufactured-homes-pre-1994-wind-zones",
+      "name": "Manufactured homes built before the July 1994 HUD wind standards",
+      "category": "code-milestone",
+      "summary": "After Hurricane Andrew destroyed most manufactured homes in its path, HUD rewrote the wind provisions of the HUD Code and created three wind zones, effective July 13, 1994. Homes built before then, even if post-1976, were built to much lower wind loads; post-1994 Zone II/III homes have performed far better in Florida hurricanes.",
+      "installed_from": 1976,
+      "installed_to": 1994,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "Final rule published in the Federal Register January 14, 1994; FEMA recovery advisories treat homes built before July 13, 1994 as 'older' manufactured homes. Date of manufacture governs.",
+      "regions": "Matters in HUD Wind Zones II and III: the hurricane coast from Texas to North Carolina and beyond, all of Florida (new homes in Florida must be Zone II or III; one source places South Florida up to St. Lucie County in Zone III), plus Hawaii and coastal Alaska (zone geography partly from memory).",
+      "prevalence": "likely",
+      "prevalence_basis": "Definitional for any unit manufactured before the date. Performance evidence: Florida DHSMV post-storm surveys (Dennis, Katrina, 2004 season) found essentially no post-1994 homes among those destroyed or seriously damaged.",
+      "how_to_identify": "The data plate inside the home shows the date of manufacture and a wind-zone map with the zone the home was designed for (Zone I, II or III). No wind-zone designation, or a pre-July-1994 date, means the older standard.",
+      "risk": {
+        "safety": "High likelihood of destruction in hurricane-force winds; anchoring is frequently deficient or corroded.",
+        "financial": "Total-loss exposure.",
+        "insurance_or_sale": "Insurers in Florida commonly restrict or surcharge older manufactured homes; specific carrier rules were not found in an authoritative source. A home sited in a zone higher than its rating may be ineligible for conventional financing (commercial-guide source only)."
+      },
+      "fix": {
+        "what": "Upgrade anchoring and tie-downs to current installation standards; replacement is the only way to obtain the post-1994 structural design.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "Not found."
+      },
+      "sources": [
+        { "url": "https://www.govinfo.gov/content/pkg/FR-1994-01-14/html/94-825.htm", "publisher": "Federal Register (HUD final rule, Jan 14, 1994)", "supports": "Amended wind standards for manufactured homes after Hurricane Andrew", "verified": false, "search_confirmed": true },
+        { "url": "https://webarchive.library.unt.edu/web/20161202194732/https://www.fema.gov/media-library-data/20130726-1604-20490-6587/ra4_older_manuf_homes.pdf", "publisher": "FEMA Recovery Advisory (archived)", "supports": "'Older' manufactured home = built before July 13, 1994", "verified": false, "search_confirmed": true },
+        { "url": "https://www.flhsmv.gov/pdf/dealerservices/mhdamage/hurricanekatrinareport.pdf", "publisher": "Florida Dept. of Highway Safety and Motor Vehicles", "supports": "No post-1994 homes among those damaged (Katrina, Florida landfall)", "verified": false, "search_confirmed": true },
+        { "url": "https://flhsmv.gov/pdf/dealerservices/mhdamage/hurricanedennisreport.pdf", "publisher": "Florida Dept. of Highway Safety and Motor Vehicles", "supports": "Only one destroyed home post-dated the 1994 amendments (Dennis)", "verified": false, "search_confirmed": true },
+        { "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir5370.pdf", "publisher": "NIST", "supports": "Technical basis for manufactured-home wind loads", "verified": false, "search_confirmed": true }
+      ],
+      "open_questions": "Exact county lists for Zones II and III; Florida insurer rules by age; Florida's 1999 installation/anchoring rule changes."
+    },
+    {
+      "id": "california-chapter-7a-wildfire",
+      "name": "California homes in fire zones built before Chapter 7A (2008 wildfire building standards)",
+      "category": "code-milestone",
+      "summary": "Since 2008 California has required new buildings in mapped Fire Hazard Severity Zones and Wildland-Urban Interface areas to use ember-resistant vents, ignition-resistant siding and decking, tempered glazing and Class A roofing (Building Code Chapter 7A, Residential Code R337). Older homes in the same zones have none of this by default and are both more likely to burn and harder to insure.",
+      "installed_from": null,
+      "installed_to": 2008,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "medium",
+      "date_notes": "The 2010 CBC Chapter 7A text applies to new buildings 'for which an application for a building permit is submitted on or after July 1, 2008' in any Fire Hazard Severity Zone or WUI Fire Area. The assignment's 'January 1, 2008' is also widely quoted: from memory the rule was phased (State Responsibility Area from January 1, 2008; local-agency Very High zones from July 1, 2008) but my search confirmed only the July 1, 2008 date, so treat the January date as unconfirmed. It is a permit-application date, so houses finished in 2008-2009 may predate it. Roofing-class requirements in fire zones are older (1990s) and were not researched. From the 2025 code cycle these provisions move to the new California Wildland-Urban Interface Code (Title 24, Part 7).",
+      "regions": "California only, and only parcels inside CAL FIRE Fire Hazard Severity Zones: all zones (Moderate, High, Very High) in the State Responsibility Area, and locally designated Very High zones in Local Responsibility Areas, plus any locally declared WUI area. Zone maps were substantially expanded in 2023-2025 (from memory), so a house can be 'in a zone' now that was not when built. Other states (e.g. Colorado, Oregon, Washington, Nevada) have partial or local WUI codes that were not researched.",
+      "prevalence": "possible",
+      "prevalence_basis": "Depends entirely on whether the parcel is in a mapped zone, which year and state cannot tell you. Inside a zone, a pre-2008 house is 'likely' to lack compliant vents and other features unless retrofitted. No statewide count retrieved.",
+      "how_to_identify": "Look up the address on CAL FIRE's Fire Hazard Severity Zone viewer. On the house: attic and crawl-space vents with ordinary 1/4-inch mesh (rather than 1/8-inch or listed ember-resistant vents), wood shake roof, single-pane or non-tempered windows, open eaves, wood deck and fencing attached to the house.",
+      "risk": {
+        "safety": "Ember entry through vents and ignition of roofs, decks and siding are the main ways houses are lost in wildfires.",
+        "financial": "Home-hardening retrofits; defensible-space compliance.",
+        "insurance_or_sale": "Non-renewals in high-fire areas commonly push owners to the California FAIR Plan. California's 'Safer from Wildfires' regulation requires insurers to give discounts for listed hardening measures, and state law (AB 38) requires sellers of pre-2010 homes in High/Very High zones to give a home-hardening disclosure and defensible-space documentation (both from memory, not confirmed this session)."
+      },
+      "fix": {
+        "what": "Ember-resistant (WUI-listed / ASTM E2886) vents, Class A roof, enclosed eaves, non-combustible zone 0-5 ft from the house, tempered glazing, ignition-resistant decking.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "Not found."
+      },
+      "sources": [
+        { "url": "https://www.hcd.ca.gov/building-standards/state-housing-law/wildland-urban-interface/docs/2010-part-2-cbc-ch7a.pdf", "publisher": "California Dept. of Housing and Community Development (2010 CBC Chapter 7A text)", "supports": "Scope: new buildings in any FHSZ or WUI Fire Area with permit application on or after July 1, 2008", "verified": false, "search_confirmed": true },
+        { "url": "https://www.pw.lacounty.gov/bsd/lib/fp/Building/Very High Fire Hazard Severity Zone/2023 Code Version/2023 VHFHSZ Notes.pdf", "publisher": "Los Angeles County Public Works", "supports": "Current vent requirements (SFM-listed WUI vents / ASTM E2886)", "verified": false, "search_confirmed": true },
+        { "url": "https://www.dgs.ca.gov/-/media/Divisions/BSC/03-Rulemaking/2024-Triennial-Cycle/CAC/2024-07-09-BFO/SFM-04-24-IET-PT2.docx", "publisher": "California Building Standards Commission / State Fire Marshal", "supports": "Relocation of Chapter 7A into Title 24 Part 7 (California WUI Code)", "verified": false, "search_confirmed": true },
+        { "url": "https://rocklin.ca.us/post/building-code-updates-high-risk-fhsz-areas", "publisher": "City of Rocklin", "supports": "Local application of code updates in FHSZ areas", "verified": false, "search_confirmed": true }
+      ],
+      "open_questions": "Confirm the January 1 vs July 1, 2008 phasing from the State Fire Marshal page (blocked); pre-2008 roofing-class history; insurer discount rules and AB 38 text; retrofit costs; WUI codes in other western states."
+    },
+    {
+      "id": "snow-load-older-roofs",
+      "name": "Older roofs and snow load (snow-country states)",
+      "category": "structure",
+      "summary": "Roofs in snow country are designed for a mapped ground snow load. Older buildings may have been designed to lower snow loads than current codes require, and rules for drifting and sliding snow only entered widely used standards in the late 1980s. In practice house-roof collapses are uncommon and usually involve low-slope roofs, additions, carports and porches.",
+      "installed_from": null,
+      "installed_to": 1988,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "The only date found is second-hand: an engineering firm's article says FEMA P-957 (Snow Load Safety Guide, January 2013) notes drift-load provisions did not enter widely adopted US structural standards until the late 1980s (1988 used here as a placeholder for the ASCE 7-88 era). Design snow loads are set locally, sometimes by case study in mountain areas, and have been revised many times; no state-by-state cut-off exists.",
+      "regions": "Northern and mountain states: New England, upstate New York, Great Lakes, upper Midwest, Rockies, Sierra Nevada, Cascades, Alaska. Loads are set county-by-county or by elevation.",
+      "prevalence": "rare",
+      "prevalence_basis": "No data on the share of houses under-designed for snow. Pitched residential roofs with conventional framing have considerable reserve; the guidance literature is aimed mainly at larger, flatter buildings.",
+      "how_to_identify": "Higher-risk shapes: low-slope or flat roofs, a lower roof below a taller one (drift and sliding snow), long-span carports and porches, roofs with added layers or solar. Warning signs under load: sagging ridge, new ceiling cracks, doors that suddenly stick, creaking.",
+      "risk": {
+        "safety": "Collapse under exceptional accumulation, drift or rain-on-snow.",
+        "financial": "Structural repair; ice-dam water damage is the far more common cost.",
+        "insurance_or_sale": "Weight of ice and snow is normally a covered peril in homeowners policies (general knowledge)."
+      },
+      "fix": {
+        "what": "Monitor and safely remove snow in extreme winters; engineer review for flat/low-slope roofs and before adding rooftop loads.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "Not found."
+      },
+      "sources": [
+        { "url": "https://basc.pnnl.gov/library/fema-p-957-snow-load-safety-guide", "publisher": "FEMA P-957 via DOE Building America Solution Center", "supports": "Snow Load Safety Guide (2013): drifting and sliding snow as collapse mechanisms; older buildings and older criteria", "verified": false, "search_confirmed": true },
+        { "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HS5_100-PURL-gpo59955/pdf/GOVPUB-HS5_100-PURL-gpo59955.pdf", "publisher": "FEMA (GovInfo copy of P-957)", "supports": "Primary text of the guide", "verified": false, "search_confirmed": true },
+        { "url": "https://rimkus.com/article/roof-snow-load-requirements-commercial-buildings/", "publisher": "Rimkus (engineering consultancy; secondary)", "supports": "Statement that drift provisions entered standards in the late 1980s, citing FEMA P-957", "verified": false, "search_confirmed": true }
+      ],
+      "open_questions": "This is not well enough documented for residential use to make a dated, state-specific claim. Recommend leaving it out of year-based reports or presenting it as generic regional advice only."
+    },
+    {
+      "id": "termite-wood-soil-contact",
+      "name": "Wood-to-soil contact, missing termite protection (termite-heavy regions)",
+      "category": "structure",
+      "summary": "Modern codes require clearance between soil and untreated wood, treated sill plates, and, in mapped termite areas, soil treatment, shields or other barriers. Older houses often have siding, posts or framing at or below grade, and the long-lasting soil termiticide chlordane that protected many mid-century houses was withdrawn in 1988. Risk tracks geography far more than year built.",
+      "installed_from": null,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "No dated code milestone could be confirmed this session. The current IRC uses a Termite Infestation Probability map with four regions (Very Heavy, Moderate to Heavy, Slight to Moderate, None to Slight) and Section R318 sets protection methods; in 'very heavy' areas foam plastic below grade is restricted (R318.4). When clearance rules, treated-sill requirements and pre-construction soil treatment entered the model codes and each state's code was not found. The 1988 end of chlordane use is from memory (EPA) and unconfirmed here.",
+      "regions": "IRC 'Very Heavy' zone: Gulf Coast and Southeast (Florida, Georgia, South Carolina, Alabama, Mississippi, Louisiana, eastern Texas) and much of California, plus Hawaii (sources conflict on Hawaii's classification). 'Moderate to Heavy' covers most of the rest of the South, lower Midwest, Mid-Atlantic and Southwest. Northern tier states are slight to none.",
+      "prevalence": "possible",
+      "prevalence_basis": "No authoritative infestation-rate data found; the map itself is the only neutral evidence and it was seen only via secondary copies. Pest-control company figures were not used.",
+      "how_to_identify": "Walk the perimeter: siding, stucco or trim running into soil or mulch; wood posts, steps or deck supports set in the ground; less than about 6-8 inches of visible foundation below the siding; mud tubes on foundation walls or piers; no visible sheet-metal shield on top of piers or foundation in older crawl-space houses.",
+      "risk": {
+        "safety": "Low directly; severe hidden structural damage is possible.",
+        "financial": "Termite damage is excluded from homeowners insurance (general knowledge).",
+        "insurance_or_sale": "Wood-destroying-insect inspection reports are customary or lender-required in sales across the South; VA loans require them in designated states (from memory)."
+      },
+      "fix": {
+        "what": "Remove wood-soil contact and lower grade to expose foundation; licensed inspection; soil treatment or bait system where warranted.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "Not found from a neutral source."
+      },
+      "sources": [
+        { "url": "https://www.woodworks.org/wp-content/uploads/wood_solution_paper-Effective-Termite-Protection.pdf", "publisher": "WoodWorks / Wood Products Council", "supports": "Termite protection strategies and code provisions", "verified": false, "search_confirmed": true },
+        { "url": "https://www.dllr.state.md.us/labor/build/doc/irc-table-princegeorges.pdf", "publisher": "Maryland Dept. of Labor (IRC Table R301.2(1) for a county)", "supports": "Jurisdictions record termite probability in the IRC climatic/geographic design table", "verified": false, "search_confirmed": true },
+        { "url": "https://www.orkin.com/pests/termites/termite-infestation-probability-zones-map", "publisher": "Orkin (commercial; weak source)", "supports": "Reproduction of the four-region TIP map", "verified": false, "search_confirmed": true }
+      ],
+      "open_questions": "Code history (UBC/SBC/BOCA/CABO and HUD Minimum Property Standards) for clearance, treated sills, shields and soil pre-treatment; EPA chlordane dates; state lists for each TIP region from the IRC figure itself; neutral prevalence data (university extension)."
+    }
+  ],
+  "feasibility_notes": "This is the hardest domain for the site's basic promise (year + state in, facts out), and the tooling made it harder: no page could be opened this session, so nothing here is verified in the brief's sense - every source is a live search hit whose quoted snippet supported the claim, and all need a second pass with real page access (FEMA, HUD, GAO, CT/MA state pages, CAL FIRE/OSFM, LADBS, CEA were all blocked). Substantively, the entries fall into three groups. (1) Firm, legally defined dates that a site can state with confidence: HUD Code June 15, 1976; HUD wind zones July 13, 1994; Florida Building Code March 1, 2002 and South Florida Building Code September 1994 (Miami-Dade and Broward only); LA and SF soft-story cut-off January 1, 1978; Texas windstorm certification January 1, 1988; Louisiana statewide code January 1, 2007; pyrrhotite 1983-2015. Even these mostly turn on permit-application or manufacture date rather than 'year built', so a house dated within a year or two of the cut-off cannot be classified from the year alone. (2) Programme screening dates that are often mistaken for code dates: California 'pre-1980' for brace-and-bolt, Seattle 'pre-1945' and Portland 'pre-1960' for URM, Utah 'pre-1975'. They are defensible if presented as 'the date the local programme uses', not as 'the year the code changed' - I could not establish the underlying code-edition years, and sources for Oregon disagree (1974 vs 1976). (3) Issues where year + state is the wrong key altogether: pre-FIRM status depends on each of roughly 22,000 NFIP communities' own initial map date (anywhere from the early 1970s on) and on whether the lot is in a flood zone; Chapter 7A depends on parcel-level fire-zone maps that have since been redrawn; pyrrhotite depends on distance from one ready-mix plant; expansive clay depends on soil series; termites and snow load are map-based, not date-based. For these the site needs an address, county or at least ZIP, or must limit itself to 'check this map' prompts. Local code adoption is the central problem: before 2002 Florida codes were county-level; Texas, Alabama and (until 2014) Mississippi had no mandatory statewide residential code, and IBHS still rates eight hurricane-coast states poor for that reason; seismic retrofit rules are city ordinances with different unit counts, storey counts and dates. A responsible site could make state-specific claims for perhaps Florida, California (with ZIP/zone caveats), the CT/MA pyrrhotite area and the federal manufactured-housing dates, and should word everything else as 'in some places' with a pointer to the local building department. Evidence is thinnest on prevalence (almost no neutral counts; the pyrrhotite estimates span 400 to 35,000 homes) and on costs (only brace-and-bolt and foundation replacement had figures from non-vendor sources; Texas foundation repair costs come only from contractors). A second pass needs: page access to verify every source; IBHS Rating the States Appendix C for state code histories; FEMA P-1100 and the UBC edition history for anchorage/cripple walls; the FEMA Community Status Book as a dataset; CAL FIRE zone data; and neutral cost data.",
+  "missed": [
+    "Hawaii single-wall (plank) construction and Hawaii hurricane-clip requirements after Iniki (1992)",
+    "Brick chimneys in seismic zones (unreinforced chimneys in pre-1960s houses, CA/WA/OR/UT)",
+    "Hillside / stilt houses and non-ductile concrete buildings under Los Angeles Ord. 183893",
+    "Expansive soils outside Texas (Colorado Front Range bentonite, Oklahoma, Mississippi Yazoo clay) and Colorado's soil-disclosure law",
+    "Sinkhole-prone areas of Florida and insurer rules",
+    "North Carolina / South Carolina / Georgia / Virginia coastal wind-code history and IBHS FORTIFIED discount statutes (Alabama, Mississippi, Louisiana, NC)",
+    "Coastal construction control lines, V-zone pile foundations and breakaway walls",
+    "Radon-resistant new construction requirements by state (may belong to hazmat domain)",
+    "Tornado / high-wind provisions (Moore, Oklahoma 2014 code; safe rooms)",
+    "Balloon framing (pre-1930s) and absence of fire-blocking",
+    "Pier-and-beam / post-and-pier foundations in the South and Pacific Northwest",
+    "Concrete block (CMU) foundation wall bowing in the Midwest",
+    "Mississippi post-Katrina coastal county codes (2006) and the 2014 statewide law details",
+    "Wildland-urban interface codes outside California (Oregon R327, Colorado 2023-2025 WUI code, Nevada, Washington)",
+    "Deck ledger attachment and lateral-load code changes (2009/2015 IRC)",
+    "FRT (fire-retardant-treated) plywood roof sheathing failures in 1980s townhouses (Mid-Atlantic)"
+  ]
+}
