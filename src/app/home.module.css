@@ -106,7 +106,7 @@
 .decades ul {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(4.6rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(4.9rem, 1fr));
   border-top: var(--hair) solid var(--rule-strong);
   border-left: var(--hair) solid var(--rule);
 }
@@ -117,7 +117,8 @@
 .decades a {
   display: block;
   padding: var(--s-3) var(--s-3) var(--s-2);
-  font-size: var(--t-lg);
+  /* fits "2000s" in a cell, so all fifteen decades sit on one row at desktop widths */
+  font-size: clamp(1.25rem, 1.05rem + 0.55vw, 1.5rem);
   text-decoration: none;
   color: var(--ink);
   transition: background-color var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);

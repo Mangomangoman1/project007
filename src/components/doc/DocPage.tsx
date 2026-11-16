@@ -57,7 +57,14 @@ export function DocPage({ kicker, title, lede, cells, stamp, path, crumb, sectio
                 <dt>{c.label}</dt>
                 <dd>
                   <span className={styles.cellValue}>{c.value}</span>
-                  {c.note ? <span className={styles.cellNote}>{c.note}</span> : null}
+                  {/* every cell keeps a note line when any has one, so values align across a row */}
+                  {c.note ? (
+                    <span className={styles.cellNote}>{c.note}</span>
+                  ) : cells.some((x) => x.note) ? (
+                    <span className={styles.cellNote} aria-hidden="true">
+                      {'\u00a0'}
+                    </span>
+                  ) : null}
                 </dd>
               </div>
             ))}

@@ -186,7 +186,7 @@ export default function PrivacyPage() {
         },
       ]}
       after={
-        <DocNote big="Nothing to sign up for. Nothing to opt out of.">
+        <DocNote big="Nothing to sign up for. No cookie banner to click.">
           <p>
             Your answers about your house never leave this browser. Clear them any time with the button above.
           </p>

@@ -11,6 +11,8 @@ export type YearInputProps = {
   onSubmit?: (year: number) => void;
   id?: string;
   label?: string;
+  /** Hint under the input; defaults to the home page's (which mentions the timeline). */
+  hint?: string;
 };
 
 /**
@@ -18,7 +20,14 @@ export type YearInputProps = {
  * a dimension line showing the house's age. Partial entries ("19") are held as a draft and only
  * committed when they form a valid year; blur reverts an invalid draft.
  */
-export function YearInput({ year, onChange, onSubmit, id = 'year-input', label = 'Year your house was built' }: YearInputProps) {
+export function YearInput({
+  year,
+  onChange,
+  onSubmit,
+  id = 'year-input',
+  label = 'Year your house was built',
+  hint = 'Type a year, use the arrow keys, or drag across the timeline',
+}: YearInputProps) {
   const [draft, setDraft] = useState(String(year));
   const [focused, setFocused] = useState(false);
 
@@ -92,7 +101,7 @@ export function YearInput({ year, onChange, onSubmit, id = 'year-input', label =
         <span className={styles.dimLine} />
       </div>
       <p id={`${id}-hint`} className={`${styles.hint} ${invalid ? styles.hintBad : ''}`} aria-live="polite">
-        {invalid ? `Enter a year from ${MIN_YEAR} to ${MAX_YEAR}` : `Type a year, use the arrow keys, or drag across the timeline`}
+        {invalid ? `Enter a year from ${MIN_YEAR} to ${MAX_YEAR}` : hint}
       </p>
     </div>
   );

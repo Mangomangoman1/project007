@@ -24,7 +24,13 @@ export function LookupYear() {
       <p className="label" id="lookup-h">
         Look up a year instead
       </p>
-      <YearInput year={year} onChange={setYear} onSubmit={(y) => router.push(`/built/${y}`)} id="nf-year" />
+      <YearInput
+        year={year}
+        onChange={setYear}
+        onSubmit={(y) => router.push(`/built/${y}`)}
+        id="nf-year"
+        hint="Type a year or use the arrow keys, then press Enter"
+      />
       <Link href={`/built/${year}`} className={`btn ${styles.cta}`} prefetch={false}>
         Open the {year} report <span className="arrow" aria-hidden="true">→</span>
       </Link>

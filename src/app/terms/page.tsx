@@ -49,8 +49,7 @@ export default function TermsPage() {
                 house, and your house may have problems the site does not mention.
               </p>
               <p>
-                It covers houses in the United States only. Apartments, manufactured-home parks and commercial buildings
-                follow different rules.
+                It covers houses in the United States only. Apartments and commercial buildings follow different rules.
               </p>
             </>
           ),
