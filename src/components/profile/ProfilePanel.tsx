@@ -27,6 +27,8 @@ export type ProfilePanelProps = {
   className?: string;
 };
 
+/** Anchor for links that should open the panel (the home page's invitation). */
+export const PANEL_ID = 'about-your-house';
 const NARROW = '(max-width: 720px)';
 function useNarrow() {
   return useSyncExternalStore(
@@ -104,6 +106,15 @@ export function ProfilePanel({ year, profile, onChange, hiddenCount, reveal, onR
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect -- restoring client-only state after hydration
     if (readStore<string | null>(STORAGE_KEYS.profileOpen, null) === '1') setOpen(true);
+    // "#about-your-house" (the home page's invitation) opens the panel.
+    const onHash = () => {
+      if (window.location.hash !== `#${PANEL_ID}`) return;
+      setOpen(true);
+      document.getElementById(PANEL_ID)?.scrollIntoView({ block: 'start' });
+    };
+    onHash();
+    window.addEventListener('hashchange', onHash);
+    return () => window.removeEventListener('hashchange', onHash);
   }, []);
 
   const toggle = () => {
@@ -132,7 +143,7 @@ export function ProfilePanel({ year, profile, onChange, hiddenCount, reveal, onR
   const bodyId = `${uid}-body`;
 
   return (
-    <section className={`${styles.panel} ${open ? styles.isOpen : ''} ${className ?? ''}`} aria-labelledby={`${uid}-h`}>
+    <section id={PANEL_ID} className={`${styles.panel} ${open ? styles.isOpen : ''} ${className ?? ''}`} aria-labelledby={`${uid}-h`}>
       <div className={styles.bar}>
         <div className={styles.barMain}>
           <h2 id={`${uid}-h`} className={styles.title}>

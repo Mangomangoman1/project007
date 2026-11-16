@@ -1,5 +1,6 @@
 /* "About your house": a row of the report's title block that unfolds into a short spec sheet. */
 .panel {
+  scroll-margin-top: var(--s-4);
   border: var(--rule-strong-w) solid var(--ink);
   border-top: 0;
   background: var(--paper);

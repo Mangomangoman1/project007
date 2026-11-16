@@ -8,6 +8,8 @@ import { issuesForYear, isCore } from '@/lib/select';
 import { DEFAULT_YEAR, STORAGE_KEYS, isValidYear } from '@/lib/site';
 import { readStore, writeStore } from '@/lib/storage';
 import { plural } from '@/lib/labels';
+import { PROFILE_KEYS, answeredCount } from '@/lib/profile';
+import { useHouseProfile } from './profile/useHouseProfile';
 import { yearsLabel } from '@/lib/timeline';
 import { Timeline } from './Timeline';
 import { TimelineLegend } from './TimelineLegend';
@@ -42,6 +44,8 @@ export function HomeExplorer({ issues }: { issues: IssueLite[] }) {
   const first = applying.filter((i) => i.priority === 1).length;
   const missing = applying.filter((i) => i.kind === 'missing').length;
   const preview = applying.slice(0, PREVIEW);
+  const [profile] = useHouseProfile();
+  const answered = answeredCount(profile);
 
   return (
     <div className={styles.root}>
@@ -69,6 +73,25 @@ export function HomeExplorer({ issues }: { issues: IssueLite[] }) {
           <Link href={`/built/${year}`} className={`btn ${styles.cta}`} prefetch={false}>
             Open the {year} report <span className="arrow" aria-hidden="true">→</span>
           </Link>
+          <p className={styles.tailor}>
+            {answered > 0 ? (
+              <>
+                Tailored to{' '}
+                <Link href={`/built/${year}#about-your-house`} prefetch={false}>
+                  your answers about your house
+                </Link>{' '}
+                ({answered} of {PROFILE_KEYS.length}).
+              </>
+            ) : (
+              <>
+                Then make it specific: in the report,{' '}
+                <Link href={`/built/${year}#about-your-house`} prefetch={false}>
+                  a few optional questions
+                </Link>{' '}
+                about your house hide what can&rsquo;t apply to it.
+              </>
+            )}
+          </p>
         </div>
       </section>
 

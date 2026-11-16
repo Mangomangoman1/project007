@@ -10,6 +10,9 @@ import { PARTS, STATES, STATE_NAME, plural } from '@/lib/labels';
 import { MAX_YEAR, MIN_YEAR, STORAGE_KEYS } from '@/lib/site';
 import { readStore, writeStore } from '@/lib/storage';
 import { yearsLabel } from '@/lib/timeline';
+import { hiddenReason, matchesProfile, splitByProfile } from '@/lib/profile';
+import { ProfilePanel, RevealButton } from '@/components/profile/ProfilePanel';
+import { useHouseProfile } from '@/components/profile/useHouseProfile';
 import { HouseCutaway } from '@/components/HouseCutaway/HouseCutaway';
 import { Timeline } from '../Timeline';
 import { TimelineLegend } from '../TimelineLegend';
@@ -49,9 +52,10 @@ function openHashTarget() {
 }
 
 /**
- * The full report for one build year. Server-rendered with no state filter (so the static HTML
- * contains everything); after hydration it restores the visitor's state and filters regional
- * issues client-side. "Check these first" is rich and open; the long tail ("Built without",
+ * The full report for one build year. Server-rendered with no state filter and no house profile
+ * (so the static HTML contains everything); after hydration it restores the visitor's state and
+ * "About your house" answers and filters client-side. Items the answers rule out leave every count
+ * (title block, headline, timeline, diagram, What's due) and can be revealed in place, marked. "Check these first" is rich and open; the long tail ("Built without",
  * "by part of the house") is compact <details> rows that expand in place.
  */
 export function Report({ year, issues, lifespans, timelineIssues }: ReportProps) {
@@ -61,6 +65,8 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
   const [scrub, setScrub] = useState(year);
   const [active, setActive] = useState<string | null>(null);
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
+  const [profile, setProfile] = useHouseProfile();
+  const [revealPref, setReveal] = useState(false);
   const tocRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -82,13 +88,34 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
     writeStore(STORAGE_KEYS.state, v);
   };
 
-  const shown = useMemo(() => issues.filter((i) => inState(i, state)), [issues, state]);
-  const hidden = issues.length - shown.length;
+  // Regional filter first (the state selector), then the house profile.
+  const regional = useMemo(() => issues.filter((i) => inState(i, state)), [issues, state]);
+  const hidden = issues.length - regional.length;
+  const { shown, hidden: ruledOut } = useMemo(() => splitByProfile(regional, profile), [regional, profile]);
+  const lifeSplit = useMemo(() => splitByProfile(lifespans, profile), [lifespans, profile]);
+  const hiddenTotal = ruledOut.length + lifeSplit.hidden.length;
+  // Nothing to reveal = not revealing (so a later answer starts hidden again).
+  const reveal = revealPref && hiddenTotal > 0;
+  const why = (i: { when?: ReportIssue['when'] }) => hiddenReason(i, profile);
+  const lifeHidden = useMemo(
+    () => lifeSplit.hidden.map((item) => ({ item, reason: hiddenReason(item, profile) ?? '' })),
+    [lifeSplit.hidden, profile],
+  );
+
   const first = shown.filter((i) => i.priority === 1);
   const missing = shown.filter((i) => i.kind === 'missing' && i.priority !== 1);
   const rest = shown.filter((i) => i.kind === 'present' && i.priority !== 1);
-  const parts = groupByPart(rest, PARTS);
   const allMissing = shown.filter((i) => i.kind === 'missing').length;
+  // The ruled-out ones, per section, for "show them".
+  const firstOut = ruledOut.filter((i) => i.priority === 1);
+  const missingOut = ruledOut.filter((i) => i.kind === 'missing' && i.priority !== 1);
+  const restOut = ruledOut.filter((i) => i.kind === 'present' && i.priority !== 1);
+  // Parts are grouped over everything in the section, so a revealed item lands in its own part.
+  const parts = groupByPart(reveal ? [...rest, ...restOut] : rest, PARTS).map((p) => ({
+    ...p,
+    shown: p.issues.filter((i) => matchesProfile(i, profile)),
+    out: p.issues.filter((i) => !matchesProfile(i, profile)),
+  }));
 
   const zoneCounts = useMemo(() => {
     const c: Partial<Record<Zone, number>> = {};
@@ -98,7 +125,7 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
 
   const newHouse = isNewHouse(shown, age);
   const lead = shown[0] ?? null;
-  const life = useMemo(() => groupLifespans(lifespans, age), [lifespans, age]);
+  const life = useMemo(() => groupLifespans(lifeSplit.shown, age), [lifeSplit.shown, age]);
   const dueNow = life.due.length;
   const dueOrSoon = life.due.length + life.past.length + life.soon.length;
   // What comes due first: anything due/past, then the soonest of the rest.
@@ -162,6 +189,10 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
     </button>
   );
 
+  /** "2 hidden by your answers · show them" under a section head. */
+  const sectionReveal = (n: number) =>
+    n > 0 ? <RevealButton hiddenCount={n} reveal={reveal} onReveal={setReveal} short className={styles.sectionReveal} /> : null;
+
   const printLink = (cls: string) => (
     <Link href={`/checklist/${year}`} className={cls} prefetch={false}>
       <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true">
@@ -182,7 +213,8 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
             : `A ${year} house is ${plural(age, 'year')} old. Here is where its parts stand against their typical life, and which ones have certainly been replaced by now.`}
         </p>
       </div>
-      <LifespanList lifespans={lifespans} year={year} age={age} />
+      {sectionReveal(lifeSplit.hidden.length)}
+      <LifespanList lifespans={lifeSplit.shown} year={year} age={age} hidden={lifeHidden} reveal={reveal} />
     </section>
   );
 
@@ -223,15 +255,24 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
             </div>
             <div>
               <dt>On record</dt>
-              <dd>{shown.length}</dd>
+              <dd>
+                {shown.length}
+                {ruledOut.length ? <small>of {regional.length}</small> : null}
+              </dd>
             </div>
             <div className={first.length ? styles.cellAccent : undefined}>
               <dt>Check first</dt>
-              <dd>{first.length}</dd>
+              <dd>
+                {first.length}
+                {firstOut.length ? <small>of {first.length + firstOut.length}</small> : null}
+              </dd>
             </div>
             <div>
               <dt>Built without</dt>
-              <dd>{allMissing}</dd>
+              <dd>
+                {allMissing}
+                {ruledOut.some((i) => i.kind === 'missing') ? <small>of {allMissing + ruledOut.filter((i) => i.kind === 'missing').length}</small> : null}
+              </dd>
             </div>
           </dl>
           <div className={styles.stateCell}>
@@ -256,6 +297,18 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
           </div>
         </div>
       </header>
+
+      {/* ---------- about your house (client only; hidden without JS) ---------- */}
+      <div className="wrap">
+        <ProfilePanel
+          year={year}
+          profile={profile}
+          onChange={setProfile}
+          hiddenCount={hiddenTotal}
+          reveal={reveal}
+          onReveal={setReveal}
+        />
+      </div>
 
       {/* ---------- headline finding ---------- */}
       <section className={`wrap ${styles.headline} ${styles.headlineSplit}`} aria-labelledby="headline-h">
@@ -338,7 +391,8 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
                 </figcaption>
               </figure>
               <p className={styles.summaryLine}>
-                {plural(shown.length, 'thing')} on record {shown.length === 1 ? 'applies' : 'apply'} to a {year} house:{' '}
+                {plural(shown.length, 'thing')} on record {shown.length === 1 ? 'applies' : 'apply'} to a {year} house
+                {ruledOut.length ? ' like yours' : ''}:{' '}
                 <a href="#check-first">
                   <strong>{first.length} to check first</strong>
                 </a>
@@ -377,7 +431,10 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
             onCommit={go}
             commitOnRelease={false}
             state={state}
-            describe={(y) => `${plural(issuesForYear(timelineIssues, y, state).length, 'thing')} on record${y !== year ? '. Press Enter to open this report.' : ''}`}
+            profile={profile}
+            describe={(y) =>
+              `${plural(issuesForYear(timelineIssues, y, state).filter((i) => matchesProfile(i, profile)).length, 'thing')} on record${y !== year ? '. Press Enter to open this report.' : ''}`
+            }
             label="Compare another build year"
             itemHref={(i, y) => (y === year ? `#i-${i.slug}` : `/issue/${i.slug}`)}
             crossingsCollapsible
@@ -408,7 +465,7 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
         <div className={styles.sections}>
           {newHouse && dueSection}
 
-          {first.length > 0 && (
+          {(first.length > 0 || (reveal && firstOut.length > 0)) && (
             <section id="check-first" className={styles.section} aria-labelledby="check-first-h">
               <div className={`section-head ${styles.headAccent}`}>
                 <h2 id="check-first-h">Check these first</h2>
@@ -416,16 +473,18 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
                   The {first.length === 1 ? 'item' : `${first.length} items`} most worth a look in a {year} house: safety
                   first, then cost.
                 </p>
+                {sectionReveal(firstOut.length)}
               </div>
               <ol className={styles.list}>
                 {first.map((i, n) => (
                   <IssueRow key={i.id} issue={i} year={year} index={n + 1} open={n === 0} />
                 ))}
+                {reveal && firstOut.map((i) => <IssueRow key={i.id} issue={i} year={year} hiddenBy={why(i)} />)}
               </ol>
             </section>
           )}
 
-          {missing.length > 0 && (
+          {(missing.length > 0 || (reveal && missingOut.length > 0)) && (
             <section id="built-without" className={styles.section} aria-labelledby="built-without-h">
               <div className={`section-head ${styles.headRow}`}>
                 <h2 id="built-without-h">Built without</h2>
@@ -434,21 +493,24 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
                   them, and many have been.
                 </p>
                 {missing.length > 1 ? expandAll('built-without', missing.length) : null}
+                {sectionReveal(missingOut.length)}
               </div>
               <ul className={styles.list}>
                 {missing.map((i) => (
                   <IssueRow key={i.id} issue={i} year={year} variant="compact" />
                 ))}
+                {reveal && missingOut.map((i) => <IssueRow key={i.id} issue={i} year={year} variant="compact" hiddenBy={why(i)} />)}
               </ul>
             </section>
           )}
 
-          {rest.length > 0 && (
+          {(rest.length > 0 || (reveal && restOut.length > 0)) && (
             <section id="by-part" className={styles.section} aria-labelledby="by-part-h">
               <div className={`section-head ${styles.headRow}`}>
                 <h2 id="by-part-h">Everything else, by part of the house</h2>
                 <p className={styles.sectionLede}>Materials and products often installed in {year}. Open any row for how to check.</p>
                 {rest.length > 1 ? expandAll('by-part', rest.length) : null}
+                {sectionReveal(restOut.length)}
               </div>
 
               <div className={styles.overview}>
@@ -465,10 +527,13 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
                 <nav className={styles.partIndex} aria-label="Parts of the house">
                   <ol>
                     {parts.map((p) => (
-                      <li key={p.id}>
+                      <li key={p.id} className={p.shown.length ? undefined : styles.partIndexOut}>
                         <a href={`#part-${p.id}`}>
                           <span>{p.label}</span>
-                          <span className={styles.partIndexN}>{p.issues.length}</span>
+                          <span className={styles.partIndexN}>
+                            {p.shown.length}
+                            {p.out.length ? <span className={styles.partOutN}> +{p.out.length}<span className="visually-hidden"> that don&rsquo;t apply</span></span> : null}
+                          </span>
                         </a>
                       </li>
                     ))}
@@ -480,11 +545,17 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
                 <div key={p.id} id={`part-${p.id}`} className={styles.part}>
                   <h3 className={styles.partHead}>
                     <span>{p.label}</span>
-                    <span className={styles.partN}>{p.issues.length}</span>
+                    <span className={styles.partN}>
+                      {p.shown.length}
+                      {p.out.length ? <span className={styles.partOutN}> +{p.out.length} not for your house</span> : null}
+                    </span>
                   </h3>
                   <ul className={styles.list}>
-                    {p.issues.map((i) => (
+                    {p.shown.map((i) => (
                       <IssueRow key={i.id} issue={i} year={year} variant="compact" />
+                    ))}
+                    {p.out.map((i) => (
+                      <IssueRow key={i.id} issue={i} year={year} variant="compact" hiddenBy={why(i)} />
                     ))}
                   </ul>
                 </div>
@@ -498,8 +569,10 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
                 <h2>Nothing on record</h2>
                 <p className={styles.sectionLede}>
                   None of the issues we track apply to houses built in {year}
-                  {state ? ` in ${STATE_NAME[state]}` : ''}.
+                  {state ? ` in ${STATE_NAME[state]}` : ''}
+                  {ruledOut.length ? ' with your answers' : ''}.
                 </p>
+                {sectionReveal(ruledOut.length)}
               </div>
             </section>
           )}

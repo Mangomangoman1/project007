@@ -554,6 +554,23 @@
   color: var(--ink-3);
 }
 
+/* ---------- house profile: what the answers rule out ---------- */
+.sectionReveal {
+  grid-column: 1;
+  padding-top: var(--s-1);
+}
+.partOutN {
+  color: var(--ink-3);
+  opacity: 0.8;
+}
+.partIndexOut a {
+  color: var(--ink-3);
+}
+.partIndexOut a > span:first-child {
+  text-decoration: line-through;
+  text-decoration-color: var(--ink-3);
+}
+
 /* ---------- pager ---------- */
 .pager {
   display: grid;

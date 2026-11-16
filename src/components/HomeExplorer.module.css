@@ -62,6 +62,26 @@
 .cta {
   justify-self: start;
 }
+/* one quiet line under the primary action: the report can be tailored (needs JS) */
+.tailor {
+  max-width: 34rem;
+  margin-top: calc(var(--s-2) * -1);
+  font-size: var(--t-sm);
+  line-height: 1.5;
+  color: var(--ink-3);
+}
+.tailor a {
+  color: var(--ink-2);
+  text-underline-offset: 0.2em;
+  text-decoration-color: var(--rule-strong);
+}
+.tailor a:hover {
+  color: var(--ink);
+  text-decoration-color: currentColor;
+}
+:global(html:not(.js)) .tailor {
+  display: none;
+}
 
 /* ---- timeline band ---- */
 .timelineWrap {
