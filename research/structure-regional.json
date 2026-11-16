@@ -1291,14 +1291,6 @@
       },
       "sources": [
         {
-          "url": "https://www.govinfo.gov/content/pkg/CFR-2010-title24-vol5/pdf/CFR-2010-title24-vol5-part3280.pdf",
-          "publisher": "24 CFR Part 3280 (2010 edition, GovInfo)",
-          "supports": "Codified Wind Zone II/III design wind loads",
-          "verified": true,
-          "tier": "primary",
-          "quote": "a design wind speed of 100 mph, as specified for Wind Zone II, or 110 mph, as specified for Wind Zone III (Basic Wind Zone Map)"
-        },
-        {
           "url": "https://www.govinfo.gov/content/pkg/FR-1994-01-14/html/94-825.htm",
           "publisher": "Federal Register, 59 FR (Jan 14, 1994), HUD final rule (GovInfo)",
           "supports": "Effective date July 13, 1994",
@@ -1347,7 +1339,7 @@
       "verification": {
         "status": "confirmed",
         "primary_verified": true,
-        "what_is_confirmed": "Rule published January 14, 1994, effective July 13, 1994, following Hurricane Andrew, with Wind Zone II (100 mph) and III (110 mph) (Federal Register and 24 CFR 3280, primary).",
+        "what_is_confirmed": "Rule published January 14, 1994, effective July 13, 1994, following Hurricane Andrew, with Wind Zone II (100 mph) and III (110 mph) (Federal Register final rule on GovInfo, primary).",
         "what_is_not": "Post-storm performance evidence (Florida DHSMV reports), the FEMA \"older home\" advisory, county lists per zone and insurer practice: not on allowed hosts or fema.gov unreachable. nvlpubs.nist.gov is not the allowed www.nist.gov host and was not opened."
       },
       "open_questions": "Exact county lists for Zones II and III; Florida insurer rules by age; Florida's 1999 installation/anchoring rule changes."
