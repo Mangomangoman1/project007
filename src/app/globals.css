@@ -9,9 +9,9 @@
 
 :root {
   /* ---- type ---- */
-  --font-display: 'Fraunces Variable', 'Iowan Old Style', Georgia, serif;
-  --font-sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  --font-display: 'Fraunces Variable', 'fraunces Fallback', 'Iowan Old Style', Georgia, serif;
+  --font-sans: 'IBM Plex Sans', 'plexSans Fallback', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', 'plexMono Fallback', ui-monospace, 'SFMono-Regular', Menlo, monospace;
 
   --t-2xs: 0.6875rem;                                   /* 11px mono micro-labels */
   --t-xs: 0.75rem;                                      /* 12px mono labels */

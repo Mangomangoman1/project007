@@ -54,6 +54,9 @@ function subscribe(notify: () => void) {
   };
 }
 
+/** Forget the remembered ZIP (used by /privacy's "Forget everything"). */
+export const forgetPlace = () => save(null);
+
 function save(next: PlacePref | null) {
   snapshot = next ? sanitize(next) : null;
   writeStore(STORAGE_KEYS.place, snapshot);

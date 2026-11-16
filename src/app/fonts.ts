@@ -4,7 +4,10 @@
  * generates a metric-matched fallback face (less layout shift when the real face arrives) and
  * preloads only what is marked `preload`: the faces that paint above the fold on every page
  * (the Fraunces numerals and headings, Plex Sans body text, Plex Mono labels).
- * The family names are kept as before, so CSS and the printed page footer can name them.
+ * The family names are kept as before, so CSS and the printed page footer can name them; the
+ * fallback faces are named after these exports ('fraunces Fallback', 'plexSans Fallback',
+ * 'plexMono Fallback') and listed second in the --font-* tokens in globals.css. Imported for its
+ * side effect (the @font-face rules and preload links) by the root layout.
  * Latin subset only: every page is US English. (Options must be literals: the loader reads them at build time.)
  */
 import localFont from 'next/font/local';
@@ -15,7 +18,6 @@ export const fraunces = localFont({
   style: 'normal',
   display: 'swap',
   adjustFontFallback: 'Times New Roman',
-  variable: '--ff-display',
   declarations: [{ prop: 'font-family', value: 'Fraunces Variable' }],
 });
 
@@ -33,7 +35,6 @@ export const frauncesItalic = localFont({
 export const plexSans = localFont({
   src: [{ path: '../../node_modules/@fontsource/ibm-plex-sans/files/ibm-plex-sans-latin-400-normal.woff2', weight: '400', style: 'normal' }],
   display: 'swap',
-  variable: '--ff-sans',
   declarations: [{ prop: 'font-family', value: 'IBM Plex Sans' }],
 });
 
@@ -51,7 +52,6 @@ export const plexSansMore = localFont({
 export const plexMono = localFont({
   src: [{ path: '../../node_modules/@fontsource/ibm-plex-mono/files/ibm-plex-mono-latin-400-normal.woff2', weight: '400', style: 'normal' }],
   display: 'swap',
-  variable: '--ff-mono',
   declarations: [{ prop: 'font-family', value: 'IBM Plex Mono' }],
 });
 
@@ -61,6 +61,3 @@ export const plexMonoMore = localFont({
   preload: false,
   declarations: [{ prop: 'font-family', value: 'IBM Plex Mono' }],
 });
-
-/** Class names for <html>: each defines its CSS variable (family + fallback). */
-export const fontVariables = [fraunces.variable, plexSans.variable, plexMono.variable].join(' ');
