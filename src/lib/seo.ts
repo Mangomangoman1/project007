@@ -15,7 +15,17 @@ import { SITE } from './site';
  * Vercel build that is not production is noindex everywhere, so preview URLs never reach an index.
  * Off Vercel (local builds, other hosts) VERCEL_ENV is unset and the site is indexable as usual.
  */
-export const IS_NON_PRODUCTION_DEPLOY = Boolean(process.env.VERCEL_ENV) && process.env.VERCEL_ENV !== 'production';
+const ON_VERCEL = Boolean(process.env.VERCEL_ENV);
+/**
+ * Vercel also sets VERCEL_PROJECT_PRODUCTION_URL to the project's production domain (no scheme).
+ * Until the real domain is attached that is a *.vercel.app address: a production build served
+ * there is kept out of search indexes too, and becomes indexable by itself once the project's
+ * production domain is the site's own (SITE.url).
+ */
+const SITE_HOST = new URL(SITE.url).host;
+const PRODUCTION_HOST = (process.env.VERCEL_PROJECT_PRODUCTION_URL ?? '').replace(/^www\./, '');
+const ON_WRONG_DOMAIN = ON_VERCEL && PRODUCTION_HOST !== '' && PRODUCTION_HOST !== SITE_HOST;
+export const IS_NON_PRODUCTION_DEPLOY = (ON_VERCEL && process.env.VERCEL_ENV !== 'production') || ON_WRONG_DOMAIN;
 
 /** robots for a page: indexable pages index + follow; utility pages (the printable checklists) noindex, follow. */
 export function robotsFor(indexable = true): NonNullable<Metadata['robots']> {
