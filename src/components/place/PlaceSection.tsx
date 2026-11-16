@@ -6,6 +6,7 @@ import {
   ACS_LAST_YEAR,
   cleanZip,
   firmContext,
+  areaUnit,
   housingFor,
   isValidZip,
   mainFuels,
@@ -249,6 +250,7 @@ function PlaceSheet({
   const s = placeStatements(place, year, sName);
   const { from, h } = housingFor(place);
   const area = from === 'county' ? place.county : 'this ZIP';
+  const unit = areaUnit(place);
   const fuels = mainFuels(h?.fuel ?? null);
   const fuelMax = Math.max(...fuels.map((f) => f.pct), 1);
 
@@ -271,8 +273,11 @@ function PlaceSheet({
             {place.state === 'CT'
               ? 'Connecticut swapped its counties for planning regions in 2022; radon, climate and flood records still use the old counties. '
               : ''}
+            {place.state === 'PR'
+              ? 'Puerto Rico is divided into municipios (municipalities), which Census and FEMA data treat like counties. '
+              : ''}
             {s.spans ??
-              'A ZIP code can cross county lines; the county facts below are for the one that holds most of its land.'}
+              `A ZIP code can cross ${unit.one} lines; the ${unit.one} facts below are for the one that holds most of its land.`}
           </p>
           <Source s={SRC.zcta} note="Land area, not addresses" />
         </div>
@@ -308,7 +313,7 @@ function PlaceSheet({
       <section className={styles.fact} aria-labelledby="place-houses-h">
         <div className={styles.factHead}>
           <h3 id="place-houses-h">Houses around you</h3>
-          <span className={styles.factScope}>{from === 'county' ? 'County figures' : from === 'zip' ? 'ZIP figures' : null}</span>
+          <span className={styles.factScope}>{from === 'county' ? `${unit.label} figures` : from === 'zip' ? 'ZIP figures' : null}</span>
         </div>
         {s.housingNote ? <p className={styles.small}>{s.housingNote}</p> : null}
         {h?.bins ? (
@@ -429,7 +434,7 @@ function PlaceSheet({
           <section className={styles.fact} aria-labelledby="place-firm-h">
             <div className={styles.factHead}>
               <h3 id="place-firm-h">First flood map</h3>
-              <span className={styles.factScope}>County context</span>
+              <span className={styles.factScope}>{unit.label} context</span>
             </div>
             <p className={styles.bigFigure}>
               {place.firm.earliest === place.firm.latest ? (
@@ -449,7 +454,7 @@ function PlaceSheet({
             <p className={styles.small}>
               FEMA calls a building &ldquo;pre-FIRM&rdquo; if it was built by the end of 1974 or before its
               community&rsquo;s first map. It was not built to the map&rsquo;s flood-elevation rules, and flood insurance
-              can treat it differently. {firmContext(place.firm, year)} None of this says whether a particular address is
+              can treat it differently. {firmContext(place.firm, year, unit.one)} None of this says whether a particular address is
               in a flood zone.
             </p>
             <p className={styles.mapLink}>
@@ -463,7 +468,7 @@ function PlaceSheet({
           <section className={styles.fact} aria-labelledby="place-firm-h">
             <div className={styles.factHead}>
               <h3 id="place-firm-h">First flood map</h3>
-              <span className={styles.factScope}>County context</span>
+              <span className={styles.factScope}>{unit.label} context</span>
             </div>
             <p className={styles.small}>
               FEMA&rsquo;s community records have no usable first-map date for {place.county}, so we leave it out rather

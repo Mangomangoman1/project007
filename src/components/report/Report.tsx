@@ -142,15 +142,16 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
     if (y !== year) router.push(`/built/${y}`);
   };
 
-  const toc = [
+  // n = item count shown beside the entry; null = no count (Your place depends on a ZIP the visitor may not give).
+  const toc: { id: string; label: string; n: number | null }[] = [
     ...(newHouse ? [{ id: 'whats-due', label: "What's due", n: dueOrSoon }] : []),
     { id: 'check-first', label: 'Check first', n: first.length },
     { id: 'built-without', label: 'Built without', n: missing.length },
     { id: 'by-part', label: 'By part of the house', n: rest.length },
     { id: 'typical-house', label: 'Typical new house', n: typicalNavCount(year) },
     ...(!newHouse ? [{ id: 'whats-due', label: "What's due", n: dueOrSoon }] : []),
-    { id: 'your-place', label: 'Your place', n: 4 }, // four ZIP/county facts
-  ].filter((t) => t.n > 0 || t.id === 'whats-due');
+    { id: 'your-place', label: 'Your place', n: null },
+  ].filter((t) => t.n === null || t.n > 0 || t.id === 'whats-due');
   const tocKey = toc.map((t) => t.id).join(',');
 
   // Which section is on screen, for the navigator.
@@ -459,7 +460,7 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
               <li key={t.id}>
                 <a href={`#${t.id}`} aria-current={active === t.id ? 'true' : undefined}>
                   <span>{t.label}</span>
-                  <span className={styles.tocN}>{t.n}</span>
+                  {t.n !== null ? <span className={styles.tocN}>{t.n}</span> : null}
                 </a>
               </li>
             ))}

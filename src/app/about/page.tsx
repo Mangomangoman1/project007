@@ -1,4 +1,3 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
@@ -10,15 +9,16 @@ import { EvidenceStamp, Prevalence, TierTag } from '@/components/Stamps';
 import { TimelineLegend } from '@/components/TimelineLegend';
 import { YearsDiagram } from '@/components/issue/YearsDiagram';
 import { JsonLd, breadcrumbs } from '@/components/seo/JsonLd';
+import { Contact } from '@/components/doc/Contact';
+import { pageMeta } from '@/lib/seo';
 import styles from './about.module.css';
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
   title: 'Method, sources and limits',
   description:
-    'Where the data comes from, what the evidence and prevalence labels mean, how years are decided, what is left out and why, and the limits of a guide based on build year.',
-  alternates: { canonical: '/about' },
-  openGraph: { title: 'Method, sources and limits', url: '/about', siteName: SITE.name, images: ['/opengraph-image'] },
-};
+    'Where the data comes from, what the evidence and prevalence labels mean, how years are decided, what is left out and why, who is behind the site, and its limits.',
+  path: '/about',
+});
 
 const AREA: Record<string, string> = {
   electrical: 'electrical',
@@ -161,6 +161,7 @@ export default function AboutPage() {
             <li><a href="#years">How years are decided</a></li>
             <li><a href="#left-out">What is left out</a></li>
             <li><a href="#limits">Limits</a></li>
+            <li><a href="#who">Who is behind this</a></li>
           </ol>
         </nav>
 
@@ -386,11 +387,33 @@ export default function AboutPage() {
             </ul>
           </section>
 
+          {/* ---------- who ---------- */}
+          <section id="who" className={styles.section} aria-labelledby="who-h">
+            <div className="section-head">
+              <h2 id="who-h">Who is behind this</h2>
+            </div>
+            <div className={styles.who}>
+              <p>
+                {SITE.name} is an independent project. It has no advertisers or sponsors, and no affiliation with any
+                manufacturer, contractor, inspector or government agency. Nobody pays to be included or left out.
+              </p>
+              <p>
+                The people behind it are not licensed home inspectors. {SITE.reviewStatus} That is why every claim links to
+                its source and quotes it: you can check each one yourself.
+              </p>
+              <p>
+                Spotted an error? See <Link href="/corrections">how corrections work</Link>. <Contact />
+              </p>
+            </div>
+          </section>
+
           <aside className={styles.disclaimer} aria-label="Disclaimer">
             <p className={styles.disclaimerBig}>{SITE.disclaimer}</p>
             <p>
               Nothing here says what a particular house has. For anything involving gas, electrical, asbestos, lead or the
-              structure, ask a licensed professional, and for a purchase, get a full inspection.
+              structure, ask a licensed professional, and for a purchase, get a full inspection. The full{' '}
+              <Link href="/terms">terms of use and disclaimer</Link> and the <Link href="/privacy">privacy page</Link> say
+              more.
             </p>
           </aside>
         </div>

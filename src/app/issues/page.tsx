@@ -1,4 +1,3 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getIssues, toLite } from '@/lib/data';
 import { PARTS, PART_OF_ZONE, plural } from '@/lib/labels';
@@ -6,14 +5,15 @@ import { MAX_YEAR, MIN_YEAR, SITE } from '@/lib/site';
 import { TimelineLegend } from '@/components/TimelineLegend';
 import { IssueIndex, type IndexIssue } from '@/components/issue/IssueIndex';
 import { JsonLd, absUrl, breadcrumbs } from '@/components/seo/JsonLd';
+import { pageMeta } from '@/lib/seo';
 import styles from './issues.module.css';
 
-export const metadata: Metadata = {
+export const metadata = pageMeta({
   title: 'Every issue on record, by part of the house',
+  shareTitle: 'Every issue on record',
   description: `All ${getIssues().length} materials, products and missing protections tracked for US houses built ${MIN_YEAR}–${MAX_YEAR}, grouped by part of the house, with the years each applies and how sure the dates are.`,
-  alternates: { canonical: '/issues' },
-  openGraph: { title: 'Every issue on record', url: '/issues', siteName: SITE.name, images: ['/opengraph-image'] },
-};
+  path: '/issues',
+});
 
 const PART_ORDER = new Map(PARTS.map((p, i) => [p.id, i]));
 
@@ -59,29 +59,30 @@ export default function IssuesPage() {
             behind it.
           </p>
         </div>
-        <dl className={styles.cells}>
-          <div>
+        {/* one <dl> per cell: the closing note is not a term/definition pair */}
+        <div className={styles.cells}>
+          <dl>
             <dt>On record</dt>
             <dd>{all.length}</dd>
-          </div>
-          <div className={styles.cellAccent}>
+          </dl>
+          <dl className={styles.cellAccent}>
             <dt>Check first</dt>
             <dd>{first}</dd>
-          </div>
-          <div>
+          </dl>
+          <dl>
             <dt>Built without</dt>
             <dd>{missing}</dd>
-          </div>
-          <div>
+          </dl>
+          <dl>
             <dt>Regional</dt>
             <dd>{regional}</dd>
-          </div>
+          </dl>
           <div className={styles.cellNote}>
             <p>
               Know the year? <Link href="/">Look it up</Link> to see only what applies to your house.
             </p>
           </div>
-        </dl>
+        </div>
       </header>
 
       <div className={`wrap ${styles.body}`}>

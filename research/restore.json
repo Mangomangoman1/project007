@@ -1,0 +1,2016 @@
+{
+ "restored": [
+  {
+   "issueId": "kidde-plastic-handle-extinguishers-2017",
+   "field": "summary",
+   "claim": "CPSC counts for the Kidde plastic-handle extinguisher recall: one death (a 2014 car fire after a crash), about 16 injuries, about 391 failure reports, about 37.8 million US units, remedy replace.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Recalls/2018/Kidde-Recalls-Fire-Extinguishers-with-Plastic-Handles-Due-to-Failure-to-Discharge-and-Nozzle-Detachment-One-Death-Reported",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "There have been approximately 391 reports of failed or limited activation or nozzle detachment, including the fatality, approximately 16 injuries, including smoke inhalation and minor burns, and approximately 91 reports of property damage.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2018/Kidde-Recalls-Fire-Extinguishers-with-Plastic-Handles-Due-to-Failure-to-Discharge-and-Nozzle-Detachment-One-Death-Reported",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "The firm is aware of a 2014 death involving a car fire following a crash.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2018/Kidde-Recalls-Fire-Extinguishers-with-Plastic-Handles-Due-to-Failure-to-Discharge-and-Nozzle-Detachment-One-Death-Reported",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "About 37.8 million (in addition, 2.7 million in Canada and 6,730 in Mexico)",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2018/Kidde-Recalls-Fire-Extinguishers-with-Plastic-Handles-Due-to-Failure-to-Discharge-and-Nozzle-Detachment-One-Death-Reported",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "The recall involves 134 models of Kidde fire extinguishers manufactured between January 1, 1973 and August 15, 2017",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "CPSC reported one death, in a 2014 car fire after a crash, about 16 injuries and about 391 reports of extinguishers that failed to discharge or lost their nozzle. About 37.8 million were recalled in the US, and the remedy is a replacement."
+  },
+  {
+   "issueId": "gree-dehumidifiers-2013-recall",
+   "field": "hook",
+   "claim": "The 2013 recall named 12 brands; the 2016 reannouncement lists 13 brand names including GE.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Recalls/2013/gree-recalls-12-brands-of-dehumidifiers",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Gree Recalls 12 Brands of Dehumidifiers Due to Serious Fire and Burn Hazards",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2017/Gree-Reannounces-Dehumidifier-Recall-Following-450-Fires-and-19-Million-in-Property-Damage-0",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "brand names Danby, De’Longhi, Fedders, Fellini, Frigidaire, GE, Gree, Kenmore, Norpole, Premiere, Seabreeze, SoleusAir and SuperClima",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "Sold under a dozen or more brand names, including Frigidaire, Kenmore, GE, Danby and SoleusAir."
+  },
+  {
+   "issueId": "gree-dehumidifiers-2013-recall",
+   "field": "summary",
+   "claim": "The 2016 reannouncement cited more than 2,000 overheating reports, about 450 fires and over $19 million in property damage; about 2.5 million units; sold January 2005 to August 2013; remedy refund.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Recalls/2017/Gree-Reannounces-Dehumidifier-Recall-Following-450-Fires-and-19-Million-in-Property-Damage-0",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "There have been more than 2,000 reported incidents of dehumidifiers overheating. About 450 fires have been reported, resulting in more than $19 million in property damage.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2017/Gree-Reannounces-Dehumidifier-Recall-Following-450-Fires-and-19-Million-in-Property-Damage-0",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "About 2.5 million (in addition, 55,000 were sold in Canada)",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2017/Gree-Reannounces-Dehumidifier-Recall-Following-450-Fires-and-19-Million-in-Property-Damage-0",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "from January 2005 through August 2013 for between $110 and $400",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "A 2016 reannouncement cited more than 2,000 overheating reports and about 450 fires, with over $19 million in property damage. The remedy is a refund."
+  },
+  {
+   "issueId": "gree-dehumidifiers-2023-recall",
+   "field": "check.2",
+   "claim": "The notice lists Kenmore 407.53530310 and GE ADEH50LPQ1 among the 42 recalled models.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Recalls/2023/Gree-Recalls-1-56-Million-Dehumidifiers-Due-to-Fire-and-Burn-Hazards-Reports-of-At-Least-23-Fires",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "This recall involves 42 models of dehumidifiers with brand names Kenmore, GE, SoleusAir, Norpole and Seabreeze, manufactured between January 2011 and February 2014.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2023/Gree-Recalls-1-56-Million-Dehumidifiers-Due-to-Fire-and-Burn-Hazards-Reports-of-At-Least-23-Fires",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Kenmore Model number Capacity 407.53530310 30-pint",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2023/Gree-Recalls-1-56-Million-Dehumidifiers-Due-to-Fire-and-Burn-Hazards-Reports-of-At-Least-23-Fires",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "GE Model number Capacity ADEH50LPQ1 50-pint",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2023/Gree-Recalls-1-56-Million-Dehumidifiers-Due-to-Fire-and-Burn-Hazards-Reports-of-At-Least-23-Fires",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Gree has received reports of at least 23 fires, 688 incidents of overheating, and $168,000 in property damage",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "The notice lists 42 models, for example Kenmore 407.53530310 and GE ADEH50LPQ1. Check the model and date code on the sticker against the list."
+  },
+  {
+   "issueId": "kidde-nighthawk-combo-alarm-2004-2010",
+   "field": "summary",
+   "claim": "About 3.6 million NightHawk KN-COSM-IB alarms; sold through electrical distributors and home centers June 2004 to December 2010; chirp can stop at 7-year end of life if batteries are replaced; 8 incident reports, no injuries.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Recalls/2017/Kidde-Recalls-Combination-Smoke-CO-Alarms",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "The combination smoke/carbon monoxide (CO) alarm can fail to continue to chirp when it reaches its 7-year end of life if the batteries are replaced, leading consumers to believe it is still working.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2017/Kidde-Recalls-Combination-Smoke-CO-Alarms",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Electrical distributors and home centers nationwide and online at Amazon.com from June 2004 through December 2010",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2017/Kidde-Recalls-Combination-Smoke-CO-Alarms",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "About 3.6 million (in addition 1.5 million were sold in Canada)",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2017/Kidde-Recalls-Combination-Smoke-CO-Alarms",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Kidde has received eight reports of incidents with the recalled alarms. No injuries have been reported.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "These hard-wired alarms were sold through electrical distributors and home centers from 2004 to 2010. CPSC said they can stop chirping at the 7-year end of life if the batteries are replaced, so an owner may think they still work."
+  },
+  {
+   "issueId": "square-d-afci-breakers-2004",
+   "field": "summary",
+   "claim": "CPSC says the recalled AFCIs still work as ordinary breakers but may not detect an arc fault; about 700,000 units sold March to September 2004; refund or replacement.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Recalls/2005/cpsc-schneider-electric-north-american-division-announce-recall-of-afcis",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Although the AFCIs will function as regular circuit breakers, they may not detect an arc fault, posing a safety risk to consumers.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2005/cpsc-schneider-electric-north-american-division-announce-recall-of-afcis",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Electrical distributors and retailers sold the AFCIs between March 2004 and September 2004",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2005/cpsc-schneider-electric-north-american-division-announce-recall-of-afcis",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "About 700,000",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "CPSC said the recalled AFCIs still work as regular circuit breakers, but they may not detect an arc fault. About 700,000 were sold between March and September 2004, with refund or replacement offered."
+  },
+  {
+   "issueId": "counterfeit-square-d-breakers-2003-2006",
+   "field": "summary",
+   "claim": "Other distributors did recall counterfeit Square D breakers sold in the same period (five CPSC notices, 2006 to 2010).",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Recalls/2008/counterfeit-circuit-breakers-recalled-by-specialty-lamp-international-due-to-fire",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Counterfeit Circuit Breakers labeled as \"Square D\" Units: About 371,000",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2008/counterfeit-circuit-breakers-recalled-by-specialty-lamp-international-due-to-fire",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Electrical product distributors nationwide from May 2005 through June 2006",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2007/north-american-breaker-co-recalls-counterfeit-circuit-breakers-due-to-fire-hazard",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "NABCO, electrical distributors, and retailers nationwide from March 2003 through April 2006",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2007/north-american-breaker-co-recalls-counterfeit-circuit-breakers-due-to-fire-hazard",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Units: About 50,000",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2007/connecticut-electric-recalls-counterfeit-square-d-circuit-breakers-due-to-fire-hazard",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Units: About 64,000",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2007/Scott-Electric-Co-Inc-Recalls-Counterfeit-Circuit-Breakers-Due-To-Fire-Hazard",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Units: About 30,000",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2010/Miami-Breaker-Recalls-Counterfeit-Square-D-Circuit-Breakers-Due-to-Fire-Hazard",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Units: About 43,600",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2008/counterfeit-circuit-breakers-recalled-by-specialty-lamp-international-due-to-fire",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "can fail to trip when they are overloaded, posing a fire hazard to consumers",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "Several distributors recalled counterfeit Square D QO breakers between 2006 and 2010, including Scott Electric (about 30,000), Connecticut Electric (about 64,000), North American Breaker (about 50,000), Specialty Lamp (about 371,000) and Miami Breaker (about 43,600). CPSC said these can fail to trip when overloaded."
+  },
+  {
+   "issueId": "counterfeit-square-d-breakers-2003-2006",
+   "field": "prevalence.note",
+   "claim": "Other recalls add more units: roughly 560,000 across the five notices (sum of the figures quoted; each notice is a separate recall).",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Recalls/2008/counterfeit-circuit-breakers-recalled-by-specialty-lamp-international-due-to-fire",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Counterfeit Circuit Breakers labeled as \"Square D\" Units: About 371,000",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2008/counterfeit-circuit-breakers-recalled-by-specialty-lamp-international-due-to-fire",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Electrical product distributors nationwide from May 2005 through June 2006",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2007/north-american-breaker-co-recalls-counterfeit-circuit-breakers-due-to-fire-hazard",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "NABCO, electrical distributors, and retailers nationwide from March 2003 through April 2006",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2007/north-american-breaker-co-recalls-counterfeit-circuit-breakers-due-to-fire-hazard",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Units: About 50,000",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2007/connecticut-electric-recalls-counterfeit-square-d-circuit-breakers-due-to-fire-hazard",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Units: About 64,000",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2007/Scott-Electric-Co-Inc-Recalls-Counterfeit-Circuit-Breakers-Due-To-Fire-Hazard",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Units: About 30,000",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2010/Miami-Breaker-Recalls-Counterfeit-Square-D-Circuit-Breakers-Due-to-Fire-Hazard",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Units: About 43,600",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "Several distributors recalled counterfeit Square D QO breakers between 2006 and 2010, including Scott Electric (about 30,000), Connecticut Electric (about 64,000), North American Breaker (about 50,000), Specialty Lamp (about 371,000) and Miami Breaker (about 43,600). CPSC said these can fail to trip when overloaded."
+  },
+  {
+   "issueId": "central-o-ring-fire-sprinklers-1989-2001",
+   "field": "prevalence.note",
+   "claim": "NIST (2011): fewer than 5 percent of US homes had fire sprinklers.",
+   "sources": [
+    {
+     "url": "https://www.nist.gov/news-events/news/2011/04/free-online-tool-aids-decisions-fire-sprinkler-systems-homes",
+     "publisher": "National Institute of Standards and Technology",
+     "tier": "primary",
+     "quote": "Fewer than 5 percent of U.S. homes are equipped with fire suppression sprinklers",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "NIST said in 2011 that fewer than 5 percent of US homes had fire sprinklers."
+  },
+  {
+   "issueId": "central-o-ring-fire-sprinklers-1989-2001",
+   "field": "summary",
+   "claim": "Recall facts: about 35 million heads, 13 reports of failure to activate, free replacement program whose claim deadline was August 31, 2007 (closed).",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Recalls/2001/cpsc-central-sprinkler-company-announce-voluntary-recall-to-replace-o-ring-fire",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Central has received 4 reports of \"wet\" sprinklers failing to activate during a fire and 9 similar reports on \"dry\" sprinklers.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2001/cpsc-central-sprinkler-company-announce-voluntary-recall-to-replace-o-ring-fire",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "The company will provide free parts and labor to replace 35 million Central fire",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/2007/August-Deadline-Set-for-End-to-Central-Sprinkler-O-Ring-Sprinkler-RecallProperty-Owners-Should-Act-Now-To-Request-Replacement-of-Sprinkler-Heads",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "property owners must submit \"Proof of Claim\" and \"Waiver and Release of Claims\" forms to Central Sprinkler Company postmarked by August 31, 2007.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "CPSC announced a free replacement program in 2001 for about 35 million Central, Gem and Star O-ring sprinkler heads. The claim deadline was August 31, 2007, so the program has ended."
+  },
+  {
+   "issueId": "bosch-siemens-dishwashers-1999-2005",
+   "field": "summary",
+   "claim": "CPSC counts: 51 incident reports including 30 fires with property damage, no injuries; about 476,500 units; made May 1999 to July 2005; free repair.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Recalls/2009/bosch-and-siemens-model-dishwashers-recalled-by-bsh-home-appliances-corporation-due-to",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "BSH Home Appliances has received 51 reports of incidents, including 30 reports of fires resulting in property damage. No injuries have been reported.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2009/bosch-and-siemens-model-dishwashers-recalled-by-bsh-home-appliances-corporation-due-to",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "certain Bosch® and Siemens® dishwashers manufactured from May 1999 through July 2005",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2009/bosch-and-siemens-model-dishwashers-recalled-by-bsh-home-appliances-corporation-due-to",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Consumers should immediately stop using the listed model dishwashers and contact the repair hotline for a free repair.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2009/bosch-and-siemens-model-dishwashers-recalled-by-bsh-home-appliances-corporation-due-to",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "About 476,500",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "CPSC reported 51 incidents, including 30 fires with property damage and no injuries. About 476,500 were recalled and the remedy is a free repair."
+  },
+  {
+   "issueId": "coaire-quietside-tankless-2008-2014",
+   "field": "summary",
+   "claim": "Daesung received 40 overheating reports (4 with wall burns, 2 fires with property damage), no injuries; about 29,000 US units sold July 2008 to August 2014; no remedy available, dispose.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Recalls/2015/Tankless-Water-Heaters-Recalled",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Daesung has received 40 reports of the units overheating, including four involving burns on the wall where the heater was mounted and two involving fires and property damage.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2015/Tankless-Water-Heaters-Recalled",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "The firm is no longer in business. A remedy is no longer available. Dispose of this recalled product.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2015/Tankless-Water-Heaters-Recalled",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "from July 2008 through August 2014",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2015/Tankless-Water-Heaters-Recalled",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "About 29,000 in the United States and 2,200 in Canada",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "CPSC reported 40 overheating reports, including two fires, and no injuries. The maker is out of business and no remedy is available, so owners are told to dispose of the heater."
+  },
+  {
+   "issueId": "lochinvar-condensing-boilers-2016-2020",
+   "field": "summary",
+   "claim": "CPSC counts: 7 reports of deteriorating flue grommets, including one report of two nonfatal CO injuries and two reports of CO emission with no injury; about 34,300 units; remedy listed as Repair.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Recalls/2020/Lochinvar-Recalls-Condensing-Residential-Boilers-Due-to-Risk-of-Carbon-Monoxide-Poisoning",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "The firm has received 7 reports of boiler’s flue grommets deteriorating, including one report of two nonfatal injuries involving carbon monoxide poisoning, and two reports of carbon monoxide emission not involving an injury.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2020/Lochinvar-Recalls-Condensing-Residential-Boilers-Due-to-Risk-of-Carbon-Monoxide-Poisoning",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Remedy: Repair",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2020/Lochinvar-Recalls-Condensing-Residential-Boilers-Due-to-Risk-of-Carbon-Monoxide-Poisoning",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "from August 2016 through June 2020",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2020/Lochinvar-Recalls-Condensing-Residential-Boilers-Due-to-Risk-of-Carbon-Monoxide-Poisoning",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "About 34,300 (In addition, about 3,642 units were sold in Canada)",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "CPSC reported 7 reports of the flue grommet deteriorating, including two nonfatal CO injuries. The listed remedy is a repair; contact Lochinvar or your installer."
+  },
+  {
+   "issueId": "lochinvar-condensing-boilers-2016-2020",
+   "field": "action",
+   "claim": "The notice lists the remedy as Repair and gives a Lochinvar hotline and a serial-number look-up.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Recalls/2020/Lochinvar-Recalls-Condensing-Residential-Boilers-Due-to-Risk-of-Carbon-Monoxide-Poisoning",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Check for the recalled boilers’ serial number at: www.waterheaterrecall.com",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2020/Lochinvar-Recalls-Condensing-Residential-Boilers-Due-to-Risk-of-Carbon-Monoxide-Poisoning",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Remedy: Repair",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "Check your boiler’s serial number on the lookup in the CPSC notice, and contact Lochinvar or your installer about the repair."
+  },
+  {
+   "issueId": "rinnai-wall-furnaces-2000-2007",
+   "field": "summary",
+   "claim": "Recall facts: about 52,000 RHFE 431 and RHFE 556 wall furnaces; 11 reports of CO leaking, no injuries; sold Feb 2000 to Dec 2007; free repair kit.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Recalls/2008/rinnai-recalls-wall-furnaces-due-to-carbon-monoxide-hazard",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Rinnai has received 11 reports of carbon monoxide leaking from the furnace. No injuries have been reported.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2008/rinnai-recalls-wall-furnaces-due-to-carbon-monoxide-hazard",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Consumers should stop using the furnace immediately and contact the firm to arrange for the installation of a free repair kit.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2008/rinnai-recalls-wall-furnaces-due-to-carbon-monoxide-hazard",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "from February 2000 through December 2007",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2008/rinnai-recalls-wall-furnaces-due-to-carbon-monoxide-hazard",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Units: About 52,000",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "About 52,000 Rinnai EnergySaver wall furnaces (models RHFE 431 and RHFE 556) were recalled in 2008 after 11 reports of carbon monoxide leaking and no injuries. A free repair kit is offered."
+  },
+  {
+   "issueId": "rheem-paloma-tankless-2004-2006",
+   "field": "summary",
+   "claim": "Recall facts: about 42,200 indoor Power Vent 199,900 BTUH tankless heaters sold May 2004 to December 2006; no incidents reported; free on-site repair.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Recalls/2007/tankless-water-heaters-recalled-for-repair-due-to-carbon-monoxide-poisoning-hazard",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Incidents/Injuries: None reported.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2007/tankless-water-heaters-recalled-for-repair-due-to-carbon-monoxide-poisoning-hazard",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "from May 2004 through December 2006 for between $800 and $1,300",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2007/tankless-water-heaters-recalled-for-repair-due-to-carbon-monoxide-poisoning-hazard",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "About 42,200",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2007/tankless-water-heaters-recalled-for-repair-due-to-carbon-monoxide-poisoning-hazard",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "to arrange for a free, on-site repair",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "About 42,200 indoor Rheem and Paloma tankless water heaters were recalled in 2007 for a free on-site repair. CPSC reported no incidents."
+  },
+  {
+   "issueId": "siemens-murray-breakers-2010-spring-clip",
+   "field": "summary",
+   "claim": "Recall facts: about 2.2 million Siemens and Murray breakers, load centers and meter combos; one report of a clip breaking during installation, no injuries; sold June to August 2010; remedy inspect and replace.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Recalls/2010/siemens-recalls-circuit-breakers-due-to-fire-hazard",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Siemens has received one report of a circuit breaker spring clip that broke during installation. No injuries have been reported.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2010/siemens-recalls-circuit-breakers-due-to-fire-hazard",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Units: About 2.2 million",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2010/siemens-recalls-circuit-breakers-due-to-fire-hazard",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "from June 2010 through August 2010",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2010/siemens-recalls-circuit-breakers-due-to-fire-hazard",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Remedy: Inspect Replace",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "About 2.2 million Siemens and Murray breakers and load centers sold in mid-2010 were recalled for a spring clip that can break. CPSC reported one incident and no injuries; the remedy is to inspect and replace."
+  },
+  {
+   "issueId": "square-d-qo-pon-recall-2020-2022",
+   "field": "caveat",
+   "claim": "Recall facts: about 1.4 million Square D QO plug-on neutral load centers made February 2020 to January 2022 (date codes 200561 to 220233); one report of a loose wire, no injuries; replace or repair.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Recalls/2022/Schneider-ElectricTM-Recalls-1-4-Million-Electrical-Panels-Due-to-Thermal-Burn-and-Fire-Hazards",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "The recalled circuit breaker boxes were manufactured between February 2020 and January 2022, with date codes between 200561 and 220233.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2022/Schneider-ElectricTM-Recalls-1-4-Million-Electrical-Panels-Due-to-Thermal-Burn-and-Fire-Hazards",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "The firm has received one report of an incident of a loose wire. No injuries have been reported.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2022/Schneider-ElectricTM-Recalls-1-4-Million-Electrical-Panels-Due-to-Thermal-Burn-and-Fire-Hazards",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "About 1.4 million (In addition, 289,000 were sold in Canada)",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "The recalled Square D QO plug-on neutral load centers were made from February 2020 to January 2022 (date codes 200561 to 220233). CPSC reported one loose-wire incident and no injuries."
+  },
+  {
+   "issueId": "challenger-panels",
+   "field": "summary",
+   "claim": "Recall facts: about 9,000 Challenger 15 and 20 amp type HAGF GFCI breakers; a mechanical part can detach and defeat the ground-fault function; no shock incidents reported; free replacement.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Recalls/1988/challenger-electrical-equipment-corp-offers-replacement-program-for-9000-gfci-circuit",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "a mechanical part may become detached and prevent the ground fault feature of the circuit breaker from functioning",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/1988/challenger-electrical-equipment-corp-offers-replacement-program-for-9000-gfci-circuit",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "No electric shock incidents have been reported by Challenger.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/1988/challenger-electrical-equipment-corp-offers-replacement-program-for-9000-gfci-circuit",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Approximately 9,000",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "In 1988 about 9,000 Challenger type HAGF GFCI breakers were recalled because a part can detach and stop the ground-fault protection from working. No shock incidents were reported."
+  },
+  {
+   "issueId": "cadet-encore-in-wall-heaters",
+   "field": "summary",
+   "claim": "1997 recall: about 190,000 heaters, 44 fire reports, installed 1985 to 1992 in six western states; 2000 recall: more than 1.9 million heaters, more than 320 reports and three deaths alleged, no remedy available.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Recalls/1997/cpsc-cadet-manufacturing-announce-recall-of-in-wall-heaters",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Cadet Manufacturing has received 44 reports of fires involving these heaters.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/1997/cpsc-cadet-manufacturing-announce-recall-of-in-wall-heaters",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "These heaters have been installed in homes from 1985 through 1992 in Oregon, Washington, California, Idaho, Montana and Wyoming.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2000/CPSC-Cadet-Recall-In-Wall-Heaters-Settle-Lawsuit",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "CPSC is aware of more than 320 reports of heaters that smoked, sparked, caught fire, emitted flames, or ejected burning particles or molten materials.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2000/CPSC-Cadet-Recall-In-Wall-Heaters-Settle-Lawsuit",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "These incidents have allegedly resulted in three deaths, two serious burn injuries and property damage claims exceeding $1.2 million",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2000/CPSC-Cadet-Recall-In-Wall-Heaters-Settle-Lawsuit",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Units: More than 1.9 million",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "CPSC and Cadet recalled about 190,000 in-wall heaters in 1997 and more than 1.9 million Cadet and Encore heaters in 2000, mostly in California, Idaho, Montana, Oregon and Washington. The 2000 notice cited more than 320 reports and three deaths."
+  },
+  {
+   "issueId": "consolidated-industries-horizontal-furnace",
+   "field": "action",
+   "claim": "CPSC advised installing an ionization-type smoke detector in the attic for early warning; also annual service. 2001 notice: 50 fire reports on 140,000 furnaces, no injuries, sold in California January 1983 to December 1992.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Recalls/2000/cpsc-warns-about-defective-furnaces-in-california",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Install an ionization-type smoke detector inside the attic to provide an early warning of smoke or fire.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2000/cpsc-warns-about-defective-furnaces-in-california",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Make sure the furnace is installed correctly and serviced at least annually.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2001/CPSC-Announces-Recall-of-Furnaces-in-California",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "CPSC has received 50 reports of fires associated with the 140,000 horizontal furnaces manufactured by Consolidated Industries Inc. No injuries have been reported.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Recalls/2001/CPSC-Announces-Recall-of-Furnaces-in-California",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "sold these furnaces in California from January 1983 through December 1992",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "In 2000 CPSC advised having the furnace serviced at least annually and installing an ionization-type smoke detector in the attic for early warning. The 2001 notice cited 50 fire reports and no injuries."
+  },
+  {
+   "issueId": "aluminum-branch-wiring",
+   "field": "action",
+   "claim": "CPSC approves three permanent repairs (full copper rewiring, COPALUM crimp connectors, AlumiConn connectors); calls CO/ALR devices at best an incomplete repair; says twist-on pigtails are not a recommended repair (usable only as an emergency, temporary measure).",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/516.pdf",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "CPSC approves of only three methods for a permanent repair.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/516.pdf",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "if the COPALUM repair is not available, the AlumiConn connector may be considered the next best alternative for a permanent repair.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/516.pdf",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "CO/ALR devices must be considered, at best, an incomplete repair.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/516.pdf",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "CPSC staff believes that this method of repair does not solve the problem of overheating present in aluminum-wired branch circuits.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/516.pdf",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "CO/ALR devices may be used as an emergency, temporary repair",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "CPSC approves three permanent repairs for aluminum branch wiring: rewiring in copper, COPALUM crimp connectors, or AlumiConn connectors. It calls CO/ALR outlets and switches at best an incomplete repair and says twist-on pigtails do not solve the overheating problem. Hire a qualified electrician; do not try it yourself."
+  },
+  {
+   "issueId": "aluminum-branch-wiring",
+   "field": "hook",
+   "claim": "CPSC survey: homes built before 1972 and wired with aluminum were 55 times more likely to have one or more outlet connections reach fire hazard conditions.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/516.pdf",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "homes built before 1972, and wired with aluminum, are 55 times more likely to have one or more wire connections at outlets reach",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "A national survey for CPSC found that homes built before 1972 and wired with aluminum were 55 times more likely to have one or more outlet connections reach fire hazard conditions than homes wired with copper."
+  },
+  {
+   "issueId": "aluminum-branch-wiring",
+   "field": "caveat",
+   "claim": "CPSC says no information was developed for aluminum-wired homes built after 1972, and that homes built before 1965 are unlikely to have aluminum branch wiring; use ran from 1965 to the mid 1970s.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/516.pdf",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "No information was developed for aluminum-wired homes built after 1972.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/516.pdf",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Homes built before 1965 are unlikely to have aluminum branch circuit wiring.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/516.pdf",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Electrical cables installed between 1965 and the mid 1970s in new homes, in additions, and as part of rewired/new circuits may contain aluminum wiring.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "CPSC developed no information on aluminum-wired homes built after 1972. It says homes built before 1965 are unlikely to have aluminum branch wiring, and that cable installed between 1965 and the mid 1970s may contain it."
+  },
+  {
+   "issueId": "aluminum-branch-wiring",
+   "field": "check.1",
+   "claim": "CPSC says cable marked CU-clad or Copper-clad uses copper-coated aluminum wire and is not covered by its repair recommendations. It does not call it lower risk.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/516.pdf",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "means that the cable uses copper-coated aluminum wire and is not covered by the repair recommendations outlined in this publication",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "Cable marked \"CU-clad\" or \"Copper-clad\" uses copper-coated aluminum wire and is not covered by CPSC’s aluminum repair recommendations."
+  },
+  {
+   "issueId": "fpe-stab-lok-panels",
+   "field": "summary",
+   "claim": "CPSC investigated from June 1980, confirmed breakers failing UL calibration tests, closed the case in March 1983 without deciding whether they are unsafe and without a recall.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Commission-Closes-Investigation-Of-FPE-Circuit-Breakers-And-Provides-Safety-Information-For-Consumers",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "The Commission investigation into Federal Pacific Electric (FPE) circuit breakers began in June 1980",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Commission-Closes-Investigation-Of-FPE-Circuit-Breakers-And-Provides-Safety-Information-For-Consumers",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Commission testing confirmed that these breakers fail certain UL calibration test requirements.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Commission-Closes-Investigation-Of-FPE-Circuit-Breakers-And-Provides-Safety-Information-For-Consumers",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "the data currently available to the Commission does not establish that the circuit breakers pose a serious risk of injury to consumers",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Commission-Closes-Investigation-Of-FPE-Circuit-Breakers-And-Provides-Safety-Information-For-Consumers",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "The Commission staff believes that it currently has insufficient data to accept or refute Reliance’s position.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "CPSC investigated Stab-Lok breakers from 1980, confirmed that some failed UL calibration tests, then closed the case in 1983 without deciding whether they are unsafe."
+  },
+  {
+   "issueId": "fpe-stab-lok-panels",
+   "field": "hook",
+   "claim": "CPSC testing found FPE breakers that failed calibration tests (the \"flagged most by inspectors\" part stays unsourced).",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Commission-Closes-Investigation-Of-FPE-Circuit-Breakers-And-Provides-Safety-Information-For-Consumers",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "The Commission investigation into Federal Pacific Electric (FPE) circuit breakers began in June 1980",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Commission-Closes-Investigation-Of-FPE-Circuit-Breakers-And-Provides-Safety-Information-For-Consumers",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Commission testing confirmed that these breakers fail certain UL calibration test requirements.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "CPSC’s own testing found Federal Pacific breakers that failed UL calibration tests."
+  },
+  {
+   "issueId": "fpe-stab-lok-panels",
+   "field": "caveat",
+   "claim": "CPSC closed without a finding either way; it said it lacked data to accept or refute the maker’s position.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Commission-Closes-Investigation-Of-FPE-Circuit-Breakers-And-Provides-Safety-Information-For-Consumers",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "the data currently available to the Commission does not establish that the circuit breakers pose a serious risk of injury to consumers",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Commission-Closes-Investigation-Of-FPE-Circuit-Breakers-And-Provides-Safety-Information-For-Consumers",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "The Commission staff believes that it currently has insufficient data to accept or refute Reliance’s position.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "CPSC closed its investigation in 1983 without a finding either way, saying it had too little data to accept or refute the maker’s position."
+  },
+  {
+   "issueId": "vermiculite-attic-insulation",
+   "field": "hook",
+   "claim": "EPA: Libby vermiculite was often sold as Zonolite; assume vermiculite contains asbestos and do not disturb it.",
+   "sources": [
+    {
+     "url": "https://www.epa.gov/asbestos/protect-your-family-asbestos-contaminated-vermiculite-insulation",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "Vermiculite from Libby was used in the majority of vermiculite insulation in the United States and was often sold under the brand name Zonolite.",
+     "verified": true
+    },
+    {
+     "url": "https://www.epa.gov/asbestos/protect-your-family-asbestos-contaminated-vermiculite-insulation",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "You should assume that vermiculite insulation is from Libby and treat the material as if it contained asbestos by not disturbing it or by using a trained professional if it needs to be removed.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "Much of the loose, pebble-like vermiculite insulation sold in the US came from a Libby, Montana mine, often under the brand name Zonolite. EPA says to treat it as if it contains asbestos and not disturb it."
+  },
+  {
+   "issueId": "vermiculite-attic-insulation",
+   "field": "action",
+   "claim": "EPA recommends leaving it undisturbed, keeping stored items and children out of the attic, not removing it yourself, and hiring a professional asbestos contractor for renovations that would disturb it.",
+   "sources": [
+    {
+     "url": "https://www.epa.gov/asbestos/protect-your-family-asbestos-contaminated-vermiculite-insulation",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "Leave vermiculite insulation undisturbed in your attic or in your walls.",
+     "verified": true
+    },
+    {
+     "url": "https://www.epa.gov/asbestos/protect-your-family-asbestos-contaminated-vermiculite-insulation",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "Do not store boxes or other items in your attic if it contains vermiculite insulation.",
+     "verified": true
+    },
+    {
+     "url": "https://www.epa.gov/asbestos/protect-your-family-asbestos-contaminated-vermiculite-insulation",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "Hire a professional asbestos contractor if you plan to remodel or conduct renovations that would disturb the vermiculite in your attic or walls",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "Leave it undisturbed, keep stored items and children out of that attic, and do not try to remove it yourself. EPA advises hiring a professional asbestos contractor before any work that would disturb it."
+  },
+  {
+   "issueId": "vermiculite-attic-insulation",
+   "field": "check.2",
+   "claim": "InterNACHI tells inspectors to watch for empty bags in the attic bearing the Zonolite name (trade source).",
+   "sources": [
+    {
+     "url": "https://www.nachi.org/vermiculite.htm",
+     "publisher": "InterNACHI",
+     "tier": "trade",
+     "quote": "Inspectors should be on guard for empty bags in the attic that bear the name Zonolite",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "Empty bags marked Zonolite left in the attic are a clue, according to home inspector guidance."
+  },
+  {
+   "issueId": "vermiculite-attic-insulation",
+   "field": "action (Trust sentence, partial)",
+   "claim": "Court record: the Zonolite Attic Insulation property-damage claims against W.R. Grace, in the U.S. and Canada, were settled in the bankruptcy. Current reimbursement terms and deadlines were NOT found.",
+   "sources": [
+    {
+     "url": "https://www.govinfo.gov/content/pkg/USCOURTS-ded-1_11-mc-00042/pdf/USCOURTS-ded-1_11-mc-00042-1.pdf",
+     "publisher": "U.S. Bankruptcy Court, D. Del. (opinion on govinfo.gov)",
+     "tier": "primary",
+     "quote": "Even the highly contested Zonolite Attic Insulation (\"ZAI\") Claims, both in the U.S. and Canada, have settled, notwithstanding prior objections.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "The Zonolite Attic Insulation claims against W.R. Grace were settled in the company’s bankruptcy. (Do not restore any reimbursement amount or claim status until the ZAI Trust site is checked.)"
+  },
+  {
+   "issueId": "asbestos-floor-tile-sheet-flooring",
+   "field": "hook",
+   "claim": "CPSC: asbestos is found in some vinyl floor tiles, the backing on vinyl sheet flooring, and adhesives; sanding tiles or scraping sheet backing can release fibers. (CPSC says some, not frequently; no 9-inch-tile rule.)",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/safety-education/safety-guides/home/asbestos-home",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Asbestos is found in some vinyl floor tiles and the backing on vinyl sheet flooring and adhesives.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/safety-education/safety-guides/home/asbestos-home",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Sanding tiles can release fibers. So may scraping or sanding the backing of sheet flooring during removal.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "CPSC says asbestos is found in some vinyl floor tiles, in the backing of some vinyl sheet flooring, and in some floor adhesives. Sanding tiles or scraping sheet backing can release fibers."
+  },
+  {
+   "issueId": "vinyl-floor",
+   "field": "note",
+   "claim": "CPSC supports the warning: asbestos can be in the backing of vinyl sheet flooring, and sanding or scraping it can release fibers.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/safety-education/safety-guides/home/asbestos-home",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "RESILIENT FLOOR TILES (vinyl asbestos, asphalt, and rubber), the backing on VINYL SHEET FLOORING, and ADHESIVES used for installing floor tile. Sanding tiles can release fibers. So may scraping or sanding the backing of sheet flooring during removal.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "Very old sheet vinyl can have an asbestos-containing backing, so do not sand or scrape it. CPSC cites this hazard."
+  },
+  {
+   "issueId": "asbestos-popcorn-ceiling",
+   "field": "hook",
+   "claim": "CPSC: you cannot tell whether a material contains asbestos by looking at it; have it sampled and analyzed by a qualified professional.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/safety-education/safety-guides/home/asbestos-home",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "You can't tell whether a material contains asbestos simply by looking at it, unless it is labeled.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/safety-education/safety-guides/home/asbestos-home",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "If in doubt, treat the material as if it contains asbestos or have it sampled and analyzed by a qualified professional.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "You cannot tell by looking whether a textured ceiling contains asbestos. CPSC says to treat it as if it does, or have a qualified professional sample and analyze it."
+  },
+  {
+   "issueId": "asbestos-pipe-boiler-duct-insulation",
+   "field": "caveat (general)",
+   "claim": "CPSC lists steam pipes, boilers and furnace ducts insulated with an asbestos blanket or asbestos paper tape, and says houses built between 1930 and 1950 may have asbestos as insulation. It gives no ordering of duct tape versus pipe wrap.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/safety-education/safety-guides/home/asbestos-home",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "STEAM PIPES, BOILERS, and FURNACE DUCTS insulated with an asbestos blanket or asbestos paper tape.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/safety-education/safety-guides/home/asbestos-home",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Houses built between 1930 and 1950 may have asbestos as insulation.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "CPSC lists steam pipes, boilers and furnace ducts wrapped in asbestos blanket or paper tape as possible sources, and says houses built between 1930 and 1950 may have asbestos insulation."
+  },
+  {
+   "issueId": "asbestos-joint-compound-texture",
+   "field": "prevalence.note",
+   "claim": "CPSC: asbestos may be present in textured paint and in patching compounds used on wall and ceiling joints; the page gives a 1977 ban date. (No source for which brands did or did not contain it.)",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/safety-education/safety-guides/home/asbestos-home",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "Asbestos may be present in textured paint and in patching compounds used on wall and ceiling joints. Their use was banned in 1977.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "CPSC says asbestos may be present in textured paint and in patching compounds used on wall and ceiling joints, which were banned in the late 1970s."
+  },
+  {
+   "issueId": "lead-based-paint",
+   "field": "action",
+   "claim": "EPA RRP rule: anyone paid to disturb paint in pre-1978 homes, childcare facilities and preschools must be certified and trained in lead-safe work practices; the rule does not generally apply to homeowners working on their own homes.",
+   "sources": [
+    {
+     "url": "https://www.epa.gov/lead/renovation-repair-and-painting-program",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "EPA's RRP Rule requires that anyone paid to perform work that disturbs painted surfaces in homes, childcare facilities and preschools built before 1978 be certified",
+     "verified": true
+    },
+    {
+     "url": "https://www.epa.gov/lead/renovation-repair-and-painting-program",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "In general, the RRP Rule does not apply to homeowners doing RRP projects in their own pre-1978 homes.",
+     "verified": true
+    },
+    {
+     "url": "https://www.epa.gov/lead/renovation-repair-and-painting-program",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "Approximately three-quarters of the homes in the United States built before 1978 still contain some lead-based paint.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "EPA's Renovation, Repair and Painting rule requires anyone paid to disturb paint in a pre-1978 home to be certified and use lead-safe work practices. The rule generally does not cover homeowners working on their own home."
+  },
+  {
+   "issueId": "lead-service-line",
+   "field": "prevalence.note",
+   "claim": "EPA states an estimated 4 million lead service lines (the 9.2 million 2023 figure is not on this page).",
+   "sources": [
+    {
+     "url": "https://www.epa.gov/ground-water-and-drinking-water/lead-service-line-replacement",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "An estimated 4 million lead service lines (LSLs) serve water to properties in communities across the United States.",
+     "verified": true
+    },
+    {
+     "url": "https://www.epa.gov/ground-water-and-drinking-water/lead-service-line-replacement",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "The most common sources of lead in drinking water are lead pipes (service lines), and brass or bronze faucets and fixtures.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "EPA estimates about 4 million lead service lines still serve US properties. Lead pipes and brass or bronze fixtures are the most common sources of lead in drinking water."
+  },
+  {
+   "issueId": "cca-treated-lumber",
+   "field": "summary",
+   "claim": "EPA: manufacturers voluntarily stopped making CCA wood for homeowner uses in December 2003; EPA does not require removing existing structures; a penetrating coating applied regularly may reduce leaching.",
+   "sources": [
+    {
+     "url": "https://www.epa.gov/ingredients-used-pesticide-products/chromated-arsenicals",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "In December 2003, chromated arsenicals manufacturers voluntarily discontinued manufacturing chromated arsenicals-treated wood products for homeowner uses.",
+     "verified": true
+    },
+    {
+     "url": "https://www.epa.gov/ingredients-used-pesticide-products/chromated-arsenicals",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "However, EPA does not require the removal of existing structures made with wood treated with chromated arsenicals or the surrounding soil.",
+     "verified": true
+    },
+    {
+     "url": "https://www.epa.gov/ingredients-used-pesticide-products/chromated-arsenicals",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "applying a penetrating protective coating (such as oil- or water-based stains) on a regular basis may reduce the leaching of chemicals",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/pdfs/blk_pdf_cca.pdf",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "To address the potential exposure to chemical residues (e.g., arsenic) from existing CCA-treated wood structures",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "Manufacturers stopped making CCA-treated wood for homeowner uses at the end of 2003. EPA does not require removing existing structures, and says regularly applying a penetrating stain or sealer may reduce leaching of chemicals."
+  },
+  {
+   "issueId": "cca-treated-lumber",
+   "field": "caveat",
+   "claim": "CPSC (citing EPA): registration for CCA in wood for most residential structures such as decks was cancelled after December 30, 2003. Old stock sales after that date are not addressed.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/pdfs/blk_pdf_cca.pdf",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "granted a request by manufacturers to cancel the registration of CCA for use in wood for most residential structures (e.g., playgrounds, decks, picnic tables, etc.) after December 30, 2003",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "EPA granted manufacturers' request to cancel CCA registration for most residential wood, including decks, after December 30, 2003."
+  },
+  {
+   "issueId": "chlordane-termiticide",
+   "field": "hook",
+   "claim": "ATSDR: chlordane used as a pesticide 1948 to 1988; over 50 million people have lived in chlordane-treated homes.",
+   "sources": [
+    {
+     "url": "https://www.atsdr.cdc.gov/ToxProfiles/tp31-c1-b.pdf",
+     "publisher": "ATSDR (CDC)",
+     "tier": "primary",
+     "quote": "Over 50 million persons have lived in chlordanetreated homes.",
+     "verified": true
+    },
+    {
+     "url": "https://www.atsdr.cdc.gov/ToxProfiles/tp31-c1-b.pdf",
+     "publisher": "ATSDR (CDC)",
+     "tier": "primary",
+     "quote": "Chlordane is a man-made chemical that was used as a pesticide in the United States from 1948 to 1988.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "ATSDR says chlordane was used as a pesticide in the US from 1948 to 1988, and that over 50 million people have lived in chlordane-treated homes."
+  },
+  {
+   "issueId": "chlordane-termiticide",
+   "field": "summary",
+   "claim": "ATSDR: from 1983 until 1988 chlordane's only approved use was termite control in homes, applied underground around the foundation; even higher indoor levels are found in basements and crawl spaces; houses built since 1988 were not treated.",
+   "sources": [
+    {
+     "url": "https://www.atsdr.cdc.gov/ToxProfiles/tp31-c1-b.pdf",
+     "publisher": "ATSDR (CDC)",
+     "tier": "primary",
+     "quote": "From 1983 until 1988, chlordane's only approved use was to control termites in homes.",
+     "verified": true
+    },
+    {
+     "url": "https://www.atsdr.cdc.gov/ToxProfiles/tp31-c1-b.pdf",
+     "publisher": "ATSDR (CDC)",
+     "tier": "primary",
+     "quote": "Even higher levels are found in basements and crawl spaces.",
+     "verified": true
+    },
+    {
+     "url": "https://www.atsdr.cdc.gov/ToxProfiles/tp31-c1-b.pdf",
+     "publisher": "ATSDR (CDC)",
+     "tier": "primary",
+     "quote": "Houses built since 1988 have not been treated with chlordane for termite control.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "From 1983 until 1988, chlordane's only approved use was termite control in homes. ATSDR says indoor levels in treated homes are higher in basements and crawl spaces, and houses built since 1988 were not treated."
+  },
+  {
+   "issueId": "pcb-caulk-light-ballasts",
+   "field": "hook",
+   "claim": "EPA: ballasts made before July 2, 1979 may contain PCBs; ballasts without PCBs made between July 1, 1978 and July 1, 1998 had to be marked \"No PCBs\".",
+   "sources": [
+    {
+     "url": "https://www.epa.gov/sites/default/files/2020-07/documents/pcb-flb-factsheet-final-july-2020.pdf",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "Any FLBs manufactured before July 2, 1979, may contain PCBs.",
+     "verified": true
+    },
+    {
+     "url": "https://www.epa.gov/sites/default/files/2020-07/documents/pcb-flb-factsheet-final-july-2020.pdf",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "between July 1, 1978 and July 1, 1998, to mark the ballasts that do not contain PCBs with the statement \"No PCBs\".",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "EPA says fluorescent ballasts made before July 2, 1979 may contain PCBs. Ballasts made between mid-1978 and mid-1998 without PCBs were required to be marked \"No PCBs\"."
+  },
+  {
+   "issueId": "urea-formaldehyde-foam-insulation",
+   "field": "prevalence.note",
+   "claim": "CPSC's 1982 release includes a commissioner's statement about some 500,000 homes already insulated with UF foam (a commissioner's figure, not a CPSC finding).",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/1982/CPSC-Bans-Urea-Formaldehyde-Foam-Insulation-UFFI",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "some 500,000 homes already insulated with U.F. foam",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "A commissioner's statement in CPSC's 1982 release put the number of homes already insulated with urea-formaldehyde foam at some 500,000."
+  },
+  {
+   "issueId": "urea-formaldehyde-foam-insulation",
+   "field": "summary",
+   "claim": "CPSC voted to ban UFFI (4-1, February 22, 1982); the Fifth Circuit vacated the ban in April 1983; the ban was lifted in August 1983 when the Solicitor General declined to appeal.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Ban-On-UFFI-Lifted",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "The U. S. Consumer Product Safety Commission's ban on urea formaldehyde foam insulation (UFFI) was lifted yesterday when the Solicitor General's office decided not to appeal the Fifth Circuit Court of Appeals' ruling which had overturned the ban.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Ban-On-UFFI-Lifted",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "CPSC had voted (4 - 1) on February 22, 1982, to ban UFFI",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "CPSC voted 4 to 1 in February 1982 to ban urea-formaldehyde foam insulation. The Fifth Circuit overturned the ban in April 1983 and it was lifted that August."
+  },
+  {
+   "issueId": "forced-air-furnace",
+   "field": "note",
+   "claim": "CPSC advises a professional inspection of all fuel-burning heating systems each year; CPSC data lists breached vents, chimneys or heat exchangers among the failure modes in CO incidents with furnaces and boilers.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/2025/Theres-a-Chill-in-the-Air-Stay-Warm-Safely-Be-Cautious-When-Using-Generators-Furnaces-and-Space-Heaters",
+     "publisher": "CPSC",
+     "tier": "primary",
+     "quote": "Have a professional inspect all fuel-burning heating systems, including furnaces, boilers, fireplaces, wood stoves, water heaters, chimneys, flues and vents each year.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/2025/Theres-a-Chill-in-the-Air-Stay-Warm-Safely-Be-Cautious-When-Using-Generators-Furnaces-and-Space-Heaters",
+     "publisher": "CPSC",
+     "tier": "primary",
+     "quote": "Fuel-burning heating systems, including furnaces and fireplaces, are a potential source of CO",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/Updated_IDI_review_CO_and_modern_furnaces_and_boilers.pdf",
+     "publisher": "CPSC",
+     "tier": "primary",
+     "quote": "Vent, Chimney, or Heat Exchanger Breach or Disconnect",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "CPSC advises having a professional inspect furnaces, boilers, chimneys, flues and vents every year, because fuel-burning heating systems are a potential source of carbon monoxide. Keep a working CO alarm nearby."
+  },
+  {
+   "issueId": "clothes-dryer",
+   "field": "note",
+   "claim": "CPSC: fires can occur when lint builds up in the dryer or exhaust duct.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/5022.pdf",
+     "publisher": "CPSC",
+     "tier": "primary",
+     "quote": "Fires can occur when lint builds up in the dryer or in the exhaust duct.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/5022.pdf",
+     "publisher": "CPSC",
+     "tier": "primary",
+     "quote": "Clean the lint screen/filter before or after drying each load of clothes.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "Lint buildup in the dryer or exhaust duct can start a fire. CPSC advises cleaning the lint screen before or after each load and cleaning the vent and exhaust duct periodically."
+  },
+  {
+   "issueId": "dryer-vent-plastic",
+   "field": "note",
+   "claim": "CPSC: replace plastic or foil accordion-type ducting with rigid or corrugated semi-rigid metal duct, since flexible plastic or foil duct more easily traps lint and is more susceptible to kinks or crushing. DOE-hosted guide: vinyl slinky hose is a fire hazard.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/5022.pdf",
+     "publisher": "CPSC",
+     "tier": "primary",
+     "quote": "Replace plastic or foil, accordion-type ducting material with rigid or corrugated semi-rigid metal duct.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/5022.pdf",
+     "publisher": "CPSC",
+     "tier": "primary",
+     "quote": "The flexible plastic or foil type duct can more easily trap lint and is more susceptible to kinks or crushing, which can greatly reduce the airflow.",
+     "verified": true
+    },
+    {
+     "url": "https://www.energy.gov/sites/prod/files/2016/06/f32/Dryer_Venting.pdf",
+     "publisher": "U.S. Department of Energy (hosted guide)",
+     "tier": "primary",
+     "quote": "The spiral ribs restrict air flow, and the resulting overheating can ignite lint in the vent or inside the dryer.",
+     "verified": true
+    },
+    {
+     "url": "https://www.energy.gov/sites/prod/files/2016/06/f32/Dryer_Venting.pdf",
+     "publisher": "U.S. Department of Energy (hosted guide)",
+     "tier": "primary",
+     "quote": "Once a fire starts, the plastic vent hose burns, spreading the fire.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "Plastic or foil accordion duct traps lint more easily and can kink or crush, which cuts airflow. CPSC advises replacing it with rigid or corrugated semi-rigid metal duct."
+  },
+  {
+   "issueId": "garage-door",
+   "field": "note",
+   "claim": "CPSC: a door that is not balanced, or that binds or sticks, should be serviced by a professional; check the springs. The injury-from-spring-tension wording comes only from a trade source.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/garage.pdf",
+     "publisher": "CPSC",
+     "tier": "primary",
+     "quote": "If doors are not \"balanced,\" or if they bind or stick, they should be serviced by a professional.",
+     "verified": true
+    },
+    {
+     "url": "https://www.nachi.org/garage-doors-openers.htm",
+     "publisher": "InterNACHI",
+     "tier": "trade",
+     "quote": "Homeowners should not attempt to adjust or repair springs themselves. The springs are held under extremely high tension and can snap suddenly and forcefully, causing serious or fatal injury.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "A door that sticks, binds or looks out of balance should be serviced by a professional. Garage door springs are under extreme tension and can snap, so do not adjust or repair them yourself."
+  },
+  {
+   "issueId": "chimney-flue-tile",
+   "field": "note",
+   "claim": "CPSC: fireplaces can cause fires if the chimney is cracked, blocked or coated with creosote; have chimneys, flues and vents inspected by a professional each year.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/2025/Theres-a-Chill-in-the-Air-Stay-Warm-Safely-Be-Cautious-When-Using-Generators-Furnaces-and-Space-Heaters",
+     "publisher": "CPSC",
+     "tier": "primary",
+     "quote": "Fireplaces can cause fires if the chimney is cracked, blocked or coated with creosote, or if sparks and embers reach flammable materials.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "A cracked chimney can let a fireplace start a house fire. CPSC advises a professional inspection of chimneys, flues and vents each year."
+  },
+  {
+   "issueId": "smoke-alarm",
+   "field": "note",
+   "claim": "CPSC: replace smoke alarms every 10 years.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/pdfs/blk_media_559.pdf",
+     "publisher": "CPSC",
+     "tier": "primary",
+     "quote": "Replace smoke alarms every 10 years",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "CPSC advises replacing smoke alarms every 10 years."
+  },
+  {
+   "issueId": "asphalt-shingle-roof-3-tab",
+   "field": "note",
+   "claim": "InterNACHI chart text: \"Hot climates drastically reduce asphalt shingle life.\"",
+   "sources": [
+    {
+     "url": "https://www.nachi.org/life-expectancy.html",
+     "publisher": "InterNACHI",
+     "tier": "trade",
+     "quote": "Hot climates drastically reduce asphalt shingle life.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "Hot climates drastically reduce asphalt shingle life, according to InterNACHI's life expectancy chart."
+  },
+  {
+   "issueId": "gfci-outlets",
+   "field": "note",
+   "claim": "InterNACHI chart text: GFCIs could last 30 years, but much less if tripped regularly.",
+   "sources": [
+    {
+     "url": "https://www.nachi.org/life-expectancy.html",
+     "publisher": "InterNACHI",
+     "tier": "trade",
+     "quote": "GFCIs could last 30 years, but much less if tripped regularly.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "GFCIs could last 30 years, but much less if they trip regularly."
+  },
+  {
+   "issueId": "exterior-doors",
+   "field": "note",
+   "claim": "InterNACHI: exterior fiberglass, steel and wood doors will last as long as the house.",
+   "sources": [
+    {
+     "url": "https://www.nachi.org/life-expectancy.html",
+     "publisher": "InterNACHI",
+     "tier": "trade",
+     "quote": "Exterior fiberglass, steel and wood doors will last as long as the house",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "Exterior fiberglass, steel and wood doors can last as long as the house, according to InterNACHI."
+  },
+  {
+   "issueId": "boiler",
+   "field": "note",
+   "claim": "InterNACHI chart lists hot-water and steam boilers at 40 years against 15 to 25 for furnaces.",
+   "sources": [
+    {
+     "url": "https://www.nachi.org/life-expectancy.html",
+     "publisher": "InterNACHI",
+     "tier": "trade",
+     "quote": "Furnace 15 to 25",
+     "verified": true
+    },
+    {
+     "url": "https://www.nachi.org/life-expectancy.html",
+     "publisher": "InterNACHI",
+     "tier": "trade",
+     "quote": "Hot-Water and Steam-Radiant Boiler 40",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "InterNACHI's chart puts boilers at about 40 years against 15 to 25 years for furnaces."
+  },
+  {
+   "issueId": "fvir-gas-water-heaters-2003",
+   "field": "summary",
+   "claim": "CPSC/GAMA: the technology is often called a flame arrestor; it prevents flashback fires by trapping and burning gas vapors inside the heater. Applies to tank-type gas water heaters made after July 1, 2003.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/2003/New-Technology-In-Gas-Water-Heaters-Can-Save-LivesCPSC-GAMA-Say-New-Heaters-Will-Prevent-Fires-from-Flammable-Vapors",
+     "publisher": "CPSC",
+     "tier": "primary",
+     "quote": "This technology, often referred to as a flame arrestor, prevents flashback fires by trapping and burning dangerous gas vapors inside of the heater, while preventing ignition of the vapors in the room.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "Gas water heaters made after July 1, 2003 have a flame arrestor that traps and burns dangerous gas vapors inside the heater, which prevents flashback fires."
+  },
+  {
+   "issueId": "r22-air-conditioner",
+   "field": "hook",
+   "claim": "EPA: neither appliances nor pre-charged components may be manufactured with R-22 as of January 1, 2010. EPA also says existing R-22 equipment may keep running (not verified on a fetched page; see notFound).",
+   "sources": [
+    {
+     "url": "https://www.epa.gov/ods-phaseout/equipment-manufacturers-importers-and-exporters-frequent-questions",
+     "publisher": "EPA",
+     "tier": "primary",
+     "quote": "neither appliances nor components pre-charged with HCFC-22 (also called R-22) or HCFC-142b may be manufactured as of January 1, 2010.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "EPA barred manufacturing new air conditioners or pre-charged components with R-22 as of January 1, 2010."
+  },
+  {
+   "issueId": "r410a-hfc-phasedown-2025",
+   "field": "prevalence.note",
+   "claim": "Same EPA FAQ supports the 2010 R-22 manufacturing cutoff.",
+   "sources": [
+    {
+     "url": "https://www.epa.gov/ods-phaseout/equipment-manufacturers-importers-and-exporters-frequent-questions",
+     "publisher": "EPA",
+     "tier": "primary",
+     "quote": "neither appliances nor components pre-charged with HCFC-22 (also called R-22) or HCFC-142b may be manufactured as of January 1, 2010.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "New equipment could no longer be manufactured with R-22 from January 1, 2010, according to EPA."
+  },
+  {
+   "issueId": "energy-code-milestones",
+   "field": "summary",
+   "claim": "DOE: states and localities are responsible for building energy code adoption and implementation (so adoption dates differ by state).",
+   "sources": [
+    {
+     "url": "https://www.energy.gov/sites/prod/files/2015/07/f24/Codes%20Fact%20Sheet%207-10-15.pdf",
+     "publisher": "U.S. Department of Energy",
+     "tier": "primary",
+     "quote": "States and localities are responsible for building energy code adoption and implementation.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "States and localities, not the federal government, adopt and enforce building energy codes, so adoption dates vary."
+  },
+  {
+   "issueId": "pre-1976-mobile-homes",
+   "field": "action",
+   "claim": "HUD FHA handbook: a manufactured home must not have been constructed before June 15, 1976 and must carry the red metallic label; a removed label cannot be reattached to make it acceptable. (FHA rule only, not a general statement that certification is impossible.)",
+   "sources": [
+    {
+     "url": "https://www.hud.gov/sites/documents/41502c8hsgh.pdf",
+     "publisher": "HUD (Handbook 4150.2 ch. 8)",
+     "tier": "primary",
+     "quote": "The manufactured home must not have been constructed before June 15, 1976.",
+     "verified": true
+    },
+    {
+     "url": "https://www.hud.gov/sites/documents/41502c8hsgh.pdf",
+     "publisher": "HUD (Handbook 4150.2 ch. 8)",
+     "tier": "primary",
+     "quote": "If it has been removed, it cannot be reattached to make it acceptable for FHA insurance.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "For FHA insurance, HUD requires a manufactured home to have been built on or after June 15, 1976 and to carry its red metal label. A removed label cannot be reattached to qualify."
+  },
+  {
+   "issueId": "polybutylene-supply",
+   "field": "caveat",
+   "claim": "Wikipedia: polybutylene was used in several million US and Canadian homes from about 1978 to 1997 (another Wikipedia page says Shell produced it 1978 to 1995), matching the stated range of mid-1995 to 1997.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Polybutylene",
+     "publisher": "Wikipedia (Polybutylene)",
+     "tier": "reference",
+     "quote": "was used in several million homes built in the United States and Canada from around 1978 to 1997.",
+     "verified": true
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Shell_USA",
+     "publisher": "Wikipedia (Shell USA)",
+     "tier": "reference",
+     "quote": "Between 1978 and 1995, Shell Oil produced polybutylene pipes, which corrode when exposed to chlorine.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "Polybutylene pipe was used in several million North American homes from about 1978 into the mid 1990s; sources put the end between 1995 and 1997."
+  },
+  {
+   "issueId": "polybutylene-supply",
+   "field": "prevalence.note",
+   "claim": "InterNACHI: pipes made from polybutylene were installed in up to 10 million US homes.",
+   "sources": [
+    {
+     "url": "https://www.nachi.org/pb.htm",
+     "publisher": "InterNACHI",
+     "tier": "trade",
+     "quote": "Pipes made from polybutylene were installed in up to 10 million homes in the Unites States during that period.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "InterNACHI estimates polybutylene pipe was installed in up to 10 million US homes."
+  },
+  {
+   "issueId": "polybutylene-supply",
+   "field": "action (settlement status, partial)",
+   "claim": "Wikipedia: the Cox v. Shell settlement covered claims filed through May 2009 (a claim-filing end date; fund exhaustion itself was not found).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Shell_USA",
+     "publisher": "Wikipedia (Shell USA)",
+     "tier": "reference",
+     "quote": "The settlement required Shell Oil to pay for the re-installation of piping for millions of houses for claims filed through May 2009.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "The Cox v. Shell settlement covered claims filed through May 2009, so there is no open claim window today."
+  },
+  {
+   "issueId": "atlas-chalet-shingles",
+   "field": "hook",
+   "claim": "Federal court (N.D. Ga., June 9, 2017) denied class certification in the Chalet shingle MDL (Makowski). The opinion does not itself say there is no settlement.",
+   "sources": [
+    {
+     "url": "https://www.govinfo.gov/content/pkg/USCOURTS-gand-1_13-md-02495/pdf/USCOURTS-gand-1_13-md-02495-18.pdf",
+     "publisher": "U.S. District Court, N.D. Georgia (opinion on govinfo.gov)",
+     "tier": "primary",
+     "quote": "For the reasons set forth below, the Plaintiff's Motion for Class Certification [Doc. 37] is DENIED.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "In 2017 a federal court in Georgia denied class certification in the Atlas Chalet shingle litigation, so no class settlement came from that case."
+  },
+  {
+   "issueId": "certainteed-organic-shingles",
+   "field": "summary",
+   "claim": "Wikipedia: a class action by end users over CertainTeed Organic Shingles was approved September 1, 2010.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/CertainTeed",
+     "publisher": "Wikipedia (CertainTeed)",
+     "tier": "reference",
+     "quote": "A class action suit brought by representatives of the end users against CertainTeed Organic Shingles was approved on September 1, 2010.",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "A class settlement over CertainTeed organic shingles was approved on September 1, 2010."
+  },
+  {
+   "issueId": "florida-pre-2002-wind-construction",
+   "field": "prevalence.note",
+   "claim": "Wikipedia: about 4.7 million Florida homes predate the modern Florida Building Code, which was adopted March 1, 2002.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Florida_Building_Code",
+     "publisher": "Wikipedia (Florida Building Code)",
+     "tier": "reference",
+     "quote": "Approximately 4.7 million homes in Florida predate the modern FBC.",
+     "verified": true
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Florida_Building_Code",
+     "publisher": "Wikipedia (Florida Building Code)",
+     "tier": "reference",
+     "quote": "the unified Florida Building Code (FBC) was adopted March 1, 2002",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "Roughly 4.7 million Florida homes predate the modern Florida Building Code, which took effect on March 1, 2002."
+  },
+  {
+   "issueId": "rheem-paloma-tankless-2004-2006",
+   "field": "prevalence.note",
+   "claim": "EIA 2020 RECS: tankless main water heaters were in 8.03 million of 123.53 million US homes in 2020 (about 6.5 percent). This supports \"a minority\" but is a 2020 figure, not a 2004-2006 one.",
+   "sources": [
+    {
+     "url": "https://www.eia.gov/consumption/residential/data/2020/hc/pdf/HC%208.1.pdf",
+     "publisher": "U.S. Energy Information Administration",
+     "tier": "primary",
+     "quote": "All homes 123.53 77.07 7.45 9.34 22.84 6.83",
+     "verified": true
+    },
+    {
+     "url": "https://www.eia.gov/consumption/residential/data/2020/hc/pdf/HC%208.1.pdf",
+     "publisher": "U.S. Energy Information Administration",
+     "tier": "primary",
+     "quote": "Tankless 8.03 5.84 0.39 0.25 1.37 0.18",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "Tankless heaters are still a minority: EIA's 2020 survey counted them as the main water heater in about 8 million of 123.5 million US homes."
+  },
+  {
+   "issueId": "urea-formaldehyde-foam-insulation",
+   "field": "summary (hazard status, Oct 1983)",
+   "claim": "CPSC said on October 21, 1983, after the court decision, that it still considered UFFI a hazardous product with purchasers at risk from elevated formaldehyde.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/1984/CPSC-Still-Concerned-About-Formaldehyde-Health-Risks",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "still considers urea formaldehyde foam insulation (UFFI) to be a hazardous product, and that purchasers of UFFI are at risk from elevated levels of formaldehyde",
+     "verified": true
+    }
+   ],
+   "suggestedCopy": "After the ban was overturned, CPSC said in October 1983 that it still considered the foam a hazardous product and that owners were at risk from elevated formaldehyde levels."
+  }
+ ],
+ "contradicted": [
+  {
+   "issueId": "asbestos-popcorn-ceiling",
+   "field": "check.2",
+   "claim": "\"Do not scrape a sample dry; many state and local air agencies publish homeowner sampling instructions.\"",
+   "whatTheSourceSays": "CPSC says a professional should take samples and that taking samples yourself is not recommended, because sampling done incorrectly can be more hazardous than leaving the material alone. The copy should not point homeowners to self-sampling instructions.",
+   "source": {
+    "url": "https://www.cpsc.gov/safety-education/safety-guides/home/asbestos-home",
+    "publisher": "U.S. Consumer Product Safety Commission",
+    "tier": "primary",
+    "quote": "Taking samples yourself is not recommended.",
+    "verified": true
+   }
+  },
+  {
+   "issueId": "fpe-stab-lok-panels",
+   "field": "summary / action",
+   "claim": "\"CPSC advises having these panels inspected by an electrician\" and \"Have a licensed electrician inspect it, as CPSC advises.\"",
+   "whatTheSourceSays": "The 1983 release gives general advice for all circuit breakers and fuses (including \"When in doubt, consult a licensed electrician\") and says the Commission made no determination about FPE breakers. It does not single out FPE panels for inspection or recommend replacing the panel.",
+   "source": {
+    "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Commission-Closes-Investigation-Of-FPE-Circuit-Breakers-And-Provides-Safety-Information-For-Consumers",
+    "publisher": "U.S. Consumer Product Safety Commission",
+    "tier": "primary",
+    "quote": "When in doubt, consult a licensed electrician.",
+    "verified": true
+   }
+  },
+  {
+   "issueId": "pcb-caulk-light-ballasts",
+   "field": "hook",
+   "claim": "\"ballasts made after that without PCBs are labeled 'No PCBs'\"",
+   "whatTheSourceSays": "EPA ties the \"No PCBs\" marking to ballasts made between July 1, 1978 and July 1, 1998 only, and says ballasts made before July 2, 1979 may contain PCBs. It does not say later ballasts carry the label.",
+   "source": {
+    "url": "https://www.epa.gov/sites/default/files/2020-07/documents/pcb-flb-factsheet-final-july-2020.pdf",
+    "publisher": "U.S. Environmental Protection Agency",
+    "tier": "primary",
+    "quote": "between July 1, 1978 and July 1, 1998, to mark the ballasts that do not contain PCBs with the statement \"No PCBs\".",
+    "verified": true
+   }
+  },
+  {
+   "issueId": "asbestos-floor-tile-sheet-flooring",
+   "field": "hook",
+   "claim": "Old 9-inch tiles and the black glue under them \"frequently contain asbestos\"",
+   "whatTheSourceSays": "CPSC says asbestos is found in \"some\" vinyl floor tiles, sheet-flooring backing and adhesives. It gives no 9-inch-tile marker and does not say frequently.",
+   "source": {
+    "url": "https://www.cpsc.gov/safety-education/safety-guides/home/asbestos-home",
+    "publisher": "U.S. Consumer Product Safety Commission",
+    "tier": "primary",
+    "quote": "Asbestos is found in some vinyl floor tiles and the backing on vinyl sheet flooring and adhesives.",
+    "verified": true
+   }
+  }
+ ],
+ "notFound": [
+  {
+   "issueId": "vermiculite-attic-insulation (action)",
+   "claim": "ZAI Trust still reimburses part of removal costs for confirmed Zonolite; amount, cap, claim status",
+   "whereItProbablyLives": "https://www.zaitrust.com (official ZAI Trust site; claim forms, reimbursement percentage and cap)",
+   "blockedHost": "www.zaitrust.com"
+  },
+  {
+   "issueId": "vermiculite-attic-insulation (action)",
+   "claim": "Sealing gaps around ceiling lights keeps dust out of the house",
+   "whereItProbablyLives": "EPA vermiculite FAQ (www.epa.gov) did not carry it on the page opened; try EPA \"Frequent questions on vermiculite\" or HUD/NIOSH guidance",
+   "blockedHost": null
+  },
+  {
+   "issueId": "polybutylene-supply (action)",
+   "claim": "Settlement funds exhausted/closed; some insurers charge more or decline",
+   "whereItProbablyLives": "Cox v. Shell Oil court orders and administrator notices (Tennessee state court); Wikipedia gives only a May 2009 claims-filed-through date",
+   "blockedHost": "www.contractormag.com / state court records"
+  },
+  {
+   "issueId": "kitec-plumbing (check.1, action)",
+   "claim": "Sister names PlumbBetter, IPEX AQUA, WarmRite, Kitec XPA; claim period closed (reported January 2020)",
+   "whereItProbablyLives": "https://www.kitecsettlement.com and IPEX/Zurn notices",
+   "blockedHost": "www.kitecsettlement.com"
+  },
+  {
+   "issueId": "zurn-f1807-brass-pex-fittings-1996-2010",
+   "claim": "Zurn class settlement claim period",
+   "whereItProbablyLives": "Zurn/Zurn PEX settlement administrator site and the Zurn class-action court order",
+   "blockedHost": "www.zurn.com / settlement site"
+  },
+  {
+   "issueId": "lp-inner-seal-osb-siding (action)",
+   "claim": "LP Inner-Seal settlement claim deadline passed in 2003",
+   "whereItProbablyLives": "L-P / class settlement notices; International Paper and Weyerhaeuser 10-K filings",
+   "blockedHost": "www.sec.gov"
+  },
+  {
+   "issueId": "masonite-hardboard-siding (prevalence.note, caveat)",
+   "claim": "Class counsel described a class of about 4 million homeowners; deadlines Jan 2005 and Jan 15, 2008",
+   "whereItProbablyLives": "International Paper 10-K (FY2004, FY2008) at SEC; Masonite settlement site",
+   "blockedHost": "www.sec.gov"
+  },
+  {
+   "issueId": "certainteed-organic-shingles (summary, check.0, prevalence.note)",
+   "claim": "Brand names Hallmark Shangle, Horizon, Independence, Custom Sealdon; about 1,857,000 structures; sold mainly in the upper Midwest",
+   "whereItProbablyLives": "CertainTeed organic shingle settlement notice (class notice) and its court order",
+   "blockedHost": "settlement administrator site / www.sec.gov (Saint-Gobain filings)"
+  },
+  {
+   "issueId": "atlas-chalet-shingles (summary, prevalence.note)",
+   "claim": "Common in the Southeast, especially Atlanta, 1999 to 2010",
+   "whereItProbablyLives": "The N.D. Ga. opinions on govinfo.gov discuss Chalet and Stratford shingles and 1999/2002 warranties but do not state Atlanta prevalence; no federal figure exists",
+   "blockedHost": null
+  },
+  {
+   "issueId": "pella-proline-windows",
+   "claim": "Pella claim period",
+   "whereItProbablyLives": "Pella class settlement administrator site",
+   "blockedHost": "settlement administrator site"
+  },
+  {
+   "issueId": "pyrrhotite-crumbling-foundations (summary)",
+   "claim": "1983 to 2015 window and 10 to 30 years to cracking; affected towns in CT and MA",
+   "whereItProbablyLives": "GAO-20-649 (Crumbling Foundations) and GAO-21-120; CT Department of Housing crumbling foundations pages; NIST TN 2336 (April 2025)",
+   "blockedHost": "www.gao.gov, portal.ct.gov, nvlpubs.nist.gov"
+  },
+  {
+   "issueId": "pyrrhotite-crumbling-foundations (prevalence.note, action)",
+   "claim": "Estimates vary by two orders of magnitude; CT and MA testing and repair programs",
+   "whereItProbablyLives": "CT Captive Insurance (CFSIC) site, mass.gov testing-reimbursement program pages",
+   "blockedHost": "portal.ct.gov, www.mass.gov"
+  },
+  {
+   "issueId": "unbolted-foundation-unbraced-cripple-wall (hook, check.1, action, caveat)",
+   "claim": "Older West Coast houses unbolted; bolt spacing; California grant program; pre-1980 screen",
+   "whereItProbablyLives": "FEMA P-1100 (Vulnerability-Based Seismic Assessment and Retrofit of One- and Two-Family Dwellings) and Earthquake Brace + Bolt program pages",
+   "blockedHost": "www.fema.gov, www.earthquakebracebolt.com"
+  },
+  {
+   "issueId": "unreinforced-masonry-urm (check.0, check.1, action, caveat)",
+   "claim": "Header-course spacing, wall thickness, Salt Lake City Fix the Bricks program",
+   "whereItProbablyLives": "FEMA P-154/P-2018 and Salt Lake City program pages",
+   "blockedHost": "www.fema.gov, www.slc.gov"
+  },
+  {
+   "issueId": "engineered-i-joists-fire (hook, check.1, action, caveat)",
+   "claim": "About half of new wood floors on I-joists by 2005; brand markings; half-inch drywall covering; model-code change around 2012",
+   "whereItProbablyLives": "IRC R302.13 (ICC) and APA/AWC technical notes",
+   "blockedHost": "codes.iccsafe.org, www.apawood.org"
+  },
+  {
+   "issueId": "smoke-alarms-by-era (action)",
+   "claim": "Many states require working alarms at sale or rental",
+   "whereItProbablyLives": "State statutes; NFPA 72 and NFPA state summaries",
+   "blockedHost": "www.nfpa.org"
+  },
+  {
+   "issueId": "zinsco-sylvania-panels (prevalence.note, check.0)",
+   "claim": "Most common in the West; Kearney brand name",
+   "whereItProbablyLives": "Inspector association pages (InterNACHI electrical-service-panels.htm opened earlier without these details); manufacturer history",
+   "blockedHost": null
+  },
+  {
+   "issueId": "fuse-box-60-amp-service (check.2)",
+   "claim": "A round meter base outside usually indicates 60 amps or less",
+   "whereItProbablyLives": "Utility meter-socket guidance; not on any allowed host",
+   "blockedHost": null
+  },
+  {
+   "issueId": "fuse-box-60-amp-service (hook)",
+   "claim": "100-amp service became the norm after 1965",
+   "whereItProbablyLives": "Census/HUD housing surveys or NEC history; not found on allowed hosts",
+   "blockedHost": null
+  },
+  {
+   "issueId": "popcorn ceiling (asbestos-popcorn-ceiling hook)",
+   "claim": "Popcorn ceilings from the 1950s sometimes contain asbestos",
+   "whereItProbablyLives": "No primary source gives the start year; EPA and CPSC pages opened give none",
+   "blockedHost": null
+  },
+  {
+   "issueId": "asbestos-floor-tile-sheet-flooring (hook)",
+   "claim": "No effective federal ban on asbestos floor tile until a 2019 rule",
+   "whereItProbablyLives": "EPA TSCA asbestos rule pages (www.epa.gov) not yet searched this session",
+   "blockedHost": null
+  },
+  {
+   "issueId": "gree-dehumidifiers-2013-recall (summary)",
+   "claim": "Many units ran unattended in basements",
+   "whereItProbablyLives": "No source; CPSC notices do not say it",
+   "blockedHost": null
+  },
+  {
+   "issueId": "bosch-siemens-dishwashers-1999-2005 (summary)",
+   "claim": "Common builder and remodel choices at the time",
+   "whereItProbablyLives": "No source; CPSC notice gives only sale window, price and units",
+   "blockedHost": null
+  },
+  {
+   "issueId": "rinnai-wall-furnaces-2000-2007 (prevalence.note)",
+   "claim": "Wall furnaces are a minority heating type",
+   "whereItProbablyLives": "EIA RECS 2020 heating-equipment tables (www.eia.gov) have a \"built-in room heater\" row that was not confirmed to include wall furnaces",
+   "blockedHost": "www.eia.gov (table opened only for water heaters)"
+  },
+  {
+   "issueId": "wood-shake-roof (note)",
+   "claim": "Wood roofs burn more readily than most",
+   "whereItProbablyLives": "InterNACHI wood shingle and shake course book (www.nachi.org Wood-Student-Book.pdf did not open) and NIST SP 1198",
+   "blockedHost": "nvlpubs.nist.gov (SP 1198); www.nachi.org file failed to fetch"
+  },
+  {
+   "issueId": "csst-gas-tubing-unbonded (hook, summary, caveat)",
+   "claim": "Bonding wire reduces lightning risk; bonding mandatory from the 2009 code; CSST in use from about 1990",
+   "whereItProbablyLives": "NFPA 54/IFGC and CSST manufacturers' installation guides; CPSC has no CSST page opened this session",
+   "blockedHost": "www.nfpa.org, www.iccsafe.org"
+  },
+  {
+   "issueId": "non-safety-glazing-pre-1977 (summary)",
+   "claim": "Later codes added hazardous locations near doors, floors, stairs and tubs",
+   "whereItProbablyLives": "IRC R308.4 (ICC)",
+   "blockedHost": "codes.iccsafe.org"
+  },
+  {
+   "issueId": "balloon-framing (prevalence.note)",
+   "claim": "Inspectors assume balloon framing in two-story houses before about 1920",
+   "whereItProbablyLives": "Not located on an allowed host",
+   "blockedHost": null
+  },
+  {
+   "issueId": "urea-formaldehyde-foam-insulation (summary)",
+   "claim": "Mostly a retrofit in the 1970s; little installed after the 1983 ruling; formaldehyde release fades within years",
+   "whereItProbablyLives": "CPSC releases opened (1982, 1983, 1984) do not say any of this; the Oct 1983 release says CPSC still considered UFFI hazardous. EPA/HUD UFFI guidance not found",
+   "blockedHost": null
+  },
+  {
+   "issueId": "lead-service-line (caveat, prevalence.note)",
+   "claim": "Chicago-style use until the 1986 ban; 9.2 million (2023) versus 4 million (2025)",
+   "whereItProbablyLives": "EPA lead-service-line inventory pages and the 1986 SDWA amendments; only the 4 million figure was confirmed on the page opened",
+   "blockedHost": null
+  },
+  {
+   "issueId": "energy-code-milestones (caveat, check.1)",
+   "claim": "1975 first voluntary standard; some states lag by a decade; a few have no statewide residential code; double-pane reflection test",
+   "whereItProbablyLives": "DOE Building Energy Codes Program state status pages (www.energy.gov); the fact sheet opened confirms only that states and localities adopt",
+   "blockedHost": null
+  },
+  {
+   "issueId": "r410a-hfc-phasedown-2025 (hook, caveat)",
+   "claim": "Central AC installed 2010 to 2025 most likely runs R-410A; EPA changed installation dates for pre-2025 equipment",
+   "whereItProbablyLives": "EPA HFC technology transitions rule pages (www.epa.gov)",
+   "blockedHost": null
+  },
+  {
+   "issueId": "iecc-2012-mandatory-air-leakage-test (summary, caveat)",
+   "claim": "Stricter duct leakage test; adoption lagging",
+   "whereItProbablyLives": "DOE/PNNL code adoption summaries; ICC IECC text",
+   "blockedHost": "codes.iccsafe.org"
+  },
+  {
+   "issueId": "composite-decking-defects (prevalence.note)",
+   "claim": "Composite was a minority of decks built in these years",
+   "whereItProbablyLives": "Census/HUD or decking industry shipment data",
+   "blockedHost": null
+  },
+  {
+   "issueId": "lifespans: garage-door (note, spring injury, federal)",
+   "claim": "Springs under tension can injure",
+   "whereItProbablyLives": "CPSC pages opened (Pub. 523) say only to have an unbalanced door serviced by a professional; the spring-injury wording is from InterNACHI (trade)",
+   "blockedHost": null
+  },
+  {
+   "issueId": "atlas-chalet-shingles (action)",
+   "claim": "With no settlement, replacement is at the owner's cost",
+   "whereItProbablyLives": "The 2017 N.D. Ga. opinions deny class certification but do not say no remedy exists; any later settlement or warranty-claim status is not on an allowed host",
+   "blockedHost": null
+  }
+ ],
+ "hostsNeeded": [
+  "www.gao.gov: GAO-20-649 and GAO-21-120 (crumbling foundations: affected years, towns, counts) - unlocks the pyrrhotite entry",
+  "portal.ct.gov: Connecticut Department of Housing crumbling foundations pages (towns, 1983 to 2015, CFSIC program status) - unlocks pyrrhotite programs",
+  "www.zaitrust.com: Zonolite Attic Insulation Trust (reimbursement percentage, cap, claim status) - unlocks the vermiculite action sentence",
+  "www.sec.gov: International Paper, Weyerhaeuser and Saint-Gobain filings (Masonite, LP Inner-Seal, CertainTeed claim periods and class sizes)",
+  "www.kitecsettlement.com and Zurn/Pella settlement administrator sites: claim periods for Kitec, Zurn, Pella",
+  "www.nfpa.org: NFPA 72 (smoke alarm replacement, state sale/rental rules), NFPA 211 (chimney inspection levels), NFPA 54 (CSST bonding)",
+  "codes.iccsafe.org: IRC sections for glazing, I-joist fire protection, CSST bonding, dryer duct",
+  "www.fema.gov: FEMA P-1100 and P-154 (cripple wall bolting, unreinforced masonry) - unlocks the West Coast and URM entries",
+  "nvlpubs.nist.gov: NIST TN 2336 (pyrrhotite) and SP 1198 (wood shake roofs in wildfires)",
+  "www.mass.gov: Massachusetts crumbling foundation testing program"
+ ]
+}

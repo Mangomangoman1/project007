@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { allYears, getIssuesForYear, getIssuesTimeline, getLifespansLite } from '@/lib/data';
-import { MAX_YEAR, SITE, isValidYear } from '@/lib/site';
+import { allYears, getIssuesForYear, getIssuesTimeline, getLifespans, getLifespansLite } from '@/lib/data';
+import { MAX_YEAR, isValidYear } from '@/lib/site';
 import { plural } from '@/lib/labels';
+import { groupLifespans, isCore } from '@/lib/select';
+import { pageMeta } from '@/lib/seo';
 import { Report } from '@/components/report/Report';
 import { toReportIssue } from '@/components/report/IssueRow';
 
@@ -19,16 +21,52 @@ function parseYear(raw: string): number | null {
   return /^\d{4}$/.test(raw) && isValidYear(y) ? y : null;
 }
 
+const listText = (xs: string[]) => (xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
+
+/**
+ * The search-result description: the report's own headline finding and counts (same rules as
+ * Report: lead issue, or for new houses the first parts to come due), never boilerplate.
+ */
+function yearDescription(year: number): string {
+  const issues = getIssuesForYear(year);
+  const age = MAX_YEAR - year;
+  const first = issues.filter((i) => i.priority === 1).length;
+  const missing = issues.filter((i) => i.kind === 'missing').length;
+  const isNew = age <= 15 && issues.filter((i) => i.priority <= 2).length <= 2;
+  const lead = issues[0];
+  if (isNew || !lead) {
+    const life = groupLifespans(getLifespans(), age);
+    const dueNow = life.due.length;
+    const firstDue = [...life.soon, ...life.later].slice(0, 3).map((f) => f.item.title.toLowerCase());
+    const upkeep =
+      dueNow > 0
+        ? `${plural(dueNow, 'part')} ${dueNow === 1 ? 'is' : 'are'} already in ${dueNow === 1 ? 'its' : 'their'} replacement window.`
+        : firstDue.length
+          ? `First to come due: ${listText(firstDue)}.`
+          : 'Nothing is due yet.';
+    const onRecord = issues.length ? ` ${plural(issues.length, 'item')} on record still ${issues.length === 1 ? 'applies' : 'apply'}.` : '';
+    return `Little is known to be wrong with US houses built in ${year}.${onRecord} ${upkeep}`;
+  }
+  const counts = [
+    first ? `${first} to check first` : null,
+    missing ? `${plural(missing, 'protection')} it was built without` : null,
+    `what is due at ${plural(age, 'year')} old`,
+  ].filter((c): c is string => c !== null);
+  const head = `${year} house report. Headline: ${lead.title}`;
+  const peak = isCore(lead, year) ? `, at its peak in ${year}` : '';
+  const n = `${plural(issues.length, 'thing')} on record`;
+  const all = `${counts.slice(0, -1).join(', ')}${counts.length > 1 ? ' and ' : ''}${counts[counts.length - 1]}`;
+  const some = counts.length > 1 ? counts.slice(0, -1).join(' and ') : counts[0];
+  // the longest version that still fits a search snippet
+  const options = [`${head}${peak}. ${n}: ${all}.`, `${head}. ${n}: ${all}.`, `${head}. ${n}: ${some}.`];
+  return options.find((o) => o.length <= 165) ?? options[options.length - 1];
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const year = parseYear((await params).year);
   if (year === null) return {};
-  const issues = getIssuesForYear(year);
-  const first = issues.filter((i) => i.priority === 1).length;
-  return {
-    title: `A house built in ${year}`,
-    description: `${plural(issues.length, 'thing')} to know about a US house built in ${year}, ${first} to check first, and what is due at ${MAX_YEAR - year} years old. ${SITE.disclaimer}`,
-    alternates: { canonical: `/built/${year}` },
-  };
+  // image: null keeps this route's own opengraph-image
+  return pageMeta({ title: `A house built in ${year}`, description: yearDescription(year), path: `/built/${year}`, image: null });
 }
 
 export default async function BuiltYearPage({ params }: Props) {

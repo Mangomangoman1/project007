@@ -3,12 +3,13 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { allYears, getIssuesForYear, getLifespans } from '@/lib/data';
 import { MAX_YEAR, SITE, isValidYear } from '@/lib/site';
+import { pageMeta } from '@/lib/seo';
 import { groupByPart } from '@/lib/select';
 import { PARTS, ZONE_LABEL, plural } from '@/lib/labels';
 import { PrintButton } from '@/components/checklist/PrintButton';
-import { ChecklistTailor, TailoredCount, TailoredCutaway, type TailorItem } from '@/components/checklist/Tailor';
+import { ChecklistTailor, TailoredAsks, TailoredCount, TailoredCutaway, type TailorItem } from '@/components/checklist/Tailor';
 import type { Issue } from '@/lib/types';
-import { oneLine, regionNote, regionTitle, sellerQuestions, splitColumns } from '@/components/checklist/sheet';
+import { ASK_LIFESPAN_IDS, oneLine, regionNote, regionTitle, splitColumns } from '@/components/checklist/sheet';
 import styles from './checklist.module.css';
 
 export const dynamicParams = false;
@@ -28,11 +29,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const year = parseYear((await params).year);
   if (year === null) return {};
   const n = getIssuesForYear(year).length;
-  return {
+  // A printable copy of the year's report: usable and shareable, but kept out of search results
+  // (noindex, follow; canonical to itself) and out of the sitemap. Shares the report's image.
+  return pageMeta({
     title: `Viewing checklist for a house built in ${year}`,
-    description: `A printable one-page sheet for viewing a US house built in ${year}: ${plural(n, 'thing')} to look for, what to check first, and what to ask the seller. ${SITE.disclaimer}`,
-    alternates: { canonical: `/checklist/${year}` },
-  };
+    description: `A printable one-page sheet for viewing a US house built in ${year}: ${plural(n, 'thing')} to look for, what to check first, and what to ask the seller.`,
+    path: `/checklist/${year}`,
+    indexable: false,
+    image: { url: `/built/${year}/opengraph-image`, width: 1200, height: 630, alt: `What a US house built in ${year} often has` },
+  });
 }
 
 /** Prompts that suit any viewing; shown when the record has little to say about a year. */
@@ -67,7 +72,11 @@ export default async function ChecklistPage({ params }: Props) {
   const columns = splitColumns(parts, (p) =>
     1.4 + p.issues.reduce((h, i) => h + 1.3 + Math.ceil(oneLine(i.check[0]).length / 62), 0),
   );
-  const asks = sellerQuestions(getLifespans(), age, issues.length > 12 && issues.length <= 26 ? 5 : 6);
+  const askLimit = issues.length > 12 && issues.length <= 26 ? 5 : 6;
+  // only the lifespans the questions use, without their sources (the island tailors on the client)
+  const askLifespans = getLifespans()
+    .filter((l) => ASK_LIFESPAN_IDS.has(l.id))
+    .map((l) => ({ ...l, note: '', sources: [] }));
   const sparse = issues.length < 10;
   /** Busy years print on two pages, so the notes can take the room page two has. */
   const busy = issues.length > 26;
@@ -268,24 +277,13 @@ export default async function ChecklistPage({ params }: Props) {
                 ? 'Everything is new; ask about warranties.'
                 : `If these are original they are ${age} years old. Typical life:`}
             </p>
-            <ol className={styles.asks}>
-              {age <= 10 && (
-                <li>
-                  <p className={styles.q}>Is the builder&rsquo;s warranty still in force, and does it transfer?</p>
-                </li>
-              )}
-              {asks.map((a) => (
-                <li key={a.zone}>
-                  <p className={styles.q}>{a.q}</p>
-                  <p className={styles.life}>
-                    {a.life}
-                    {a.status === 'past' && <span className={styles.past}> · past typical life</span>}
-                    {a.status === 'soon' && <span> · due soon</span>}
-                  </p>
-                  <span className={styles.answer} aria-hidden="true" />
-                </li>
-              ))}
-            </ol>
+            <TailoredAsks
+              lifespans={askLifespans}
+              age={age}
+              limit={askLimit}
+              warranty={age <= 10}
+              cls={{ list: styles.asks, q: styles.q, life: styles.life, past: styles.past, answer: styles.answer }}
+            />
           </section>
 
           <section className={`${styles.sec} ${styles.where2}`} aria-labelledby="wh-h nt-h">

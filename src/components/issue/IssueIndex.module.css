@@ -122,7 +122,6 @@
 .chipN {
   font-family: var(--font-mono);
   font-size: var(--t-2xs);
-  opacity: 0.75;
 }
 .status {
   font-family: var(--font-mono);

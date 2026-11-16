@@ -4,7 +4,8 @@ import type { HouseCutawayProps } from '@/components/HouseCutaway/HouseCutaway';
 import { HouseCutaway } from '@/components/HouseCutaway/HouseCutaway';
 import { hiddenReason, matchesProfile, type When } from '@/lib/profile';
 import { plural } from '@/lib/labels';
-import type { Zone } from '@/lib/types';
+import type { Lifespan, Zone } from '@/lib/types';
+import { sellerQuestions } from './sheet';
 import { useHouseProfile } from '../profile/useHouseProfile';
 
 /**
@@ -51,4 +52,49 @@ export function TailoredCutaway({ items, ...rest }: { items: TailorItem[] } & Om
   const counts: Partial<Record<Zone, number>> = {};
   for (const i of items) if (i.zone && matchesProfile(i, profile)) counts[i.zone] = (counts[i.zone] ?? 0) + 1;
   return <HouseCutaway {...rest} counts={counts} />;
+}
+
+type AskClasses = { list: string; q: string; life: string; past: string; answer: string };
+
+/**
+ * "Ask the seller", tailored like the rest of the sheet: questions about parts the answers rule
+ * out (no central air, a slab, no chimney) drop out or narrow ("How old is the furnace?"), and
+ * parts the answers name (a boiler, a well, a septic tank, a metal roof) come in. Server HTML is
+ * the untailored list (the server profile is empty).
+ */
+export function TailoredAsks({
+  lifespans,
+  age,
+  limit,
+  warranty,
+  cls,
+}: {
+  lifespans: Lifespan[];
+  age: number;
+  limit: number;
+  warranty: boolean;
+  cls: AskClasses;
+}) {
+  const [profile] = useHouseProfile();
+  const asks = sellerQuestions(lifespans, age, limit, profile);
+  return (
+    <ol className={cls.list}>
+      {warranty && (
+        <li>
+          <p className={cls.q}>Is the builder&rsquo;s warranty still in force, and does it transfer?</p>
+        </li>
+      )}
+      {asks.map((a) => (
+        <li key={a.key}>
+          <p className={cls.q}>{a.q}</p>
+          <p className={cls.life}>
+            {a.life}
+            {a.status === 'past' && <span className={cls.past}> · past typical life</span>}
+            {a.status === 'soon' && <span> · due soon</span>}
+          </p>
+          <span className={cls.answer} aria-hidden="true" />
+        </li>
+      ))}
+    </ol>
+  );
 }

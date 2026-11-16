@@ -44,6 +44,14 @@ export function SiteFooter() {
             <Link href="/issues">All issues</Link>
             <Link href="/about">Method &amp; sources</Link>
           </nav>
+          <div className={styles.strip}>
+            <nav aria-label="Policies" className={styles.policies}>
+              <Link href="/privacy">Privacy</Link>
+              <Link href="/terms">Terms &amp; disclaimer</Link>
+              <Link href="/corrections">Corrections</Link>
+            </nav>
+            <p className={styles.indie}>Independent · no ads · no cookies</p>
+          </div>
         </div>
         {meta.sample && (
           <p className={styles.sample} role="note">

@@ -106,6 +106,16 @@ export type Place = {
   firm: Firm | null;
 };
 
+/**
+ * What the county-level unit is called. Puerto Rico's county equivalents are municipios
+ * (municipalities), as the Census names them ("Adjuntas Municipio").
+ */
+export function areaUnit(p: Pick<Place, 'state'>): { one: string; many: string; label: string } {
+  return p.state === 'PR'
+    ? { one: 'municipio', many: 'municipios', label: 'Municipio' }
+    : { one: 'county', many: 'counties', label: 'County' };
+}
+
 const REGION: Record<string, string> = {
   H: 'Hot-Humid', D: 'Hot-Dry', M: 'Mixed-Humid', X: 'Mixed-Dry', N: 'Marine', C: 'Cold', V: 'Very Cold', S: 'Subarctic',
 };
@@ -129,7 +139,7 @@ export function decodePlace(zip: string, rec: ZipRecord, county: CountyRecord | 
   return {
     zip,
     fips,
-    county: c[0] || `County ${fips}`,
+    county: c[0] || `${fips.startsWith('72') ? 'Municipio' : 'County'} ${fips}`,
     state: FIPS_STATE[fips.slice(0, 2)] ?? null,
     share,
     counties,
@@ -230,12 +240,12 @@ export function firmRange(f: Firm): string {
 }
 
 /** Where a build year sits against the county's first flood maps, as county context only. */
-export function firmContext(f: Firm, year: number): string {
+export function firmContext(f: Firm, year: number, unit = 'county'): string {
   if (year <= 1974) {
     return `A house built in ${year} falls before that 1974 cut-off wherever it stands.`;
   }
-  if (year < f.earliest) return `A house built in ${year} predates every first map in this county.`;
-  if (year > f.latest) return `A house built in ${year} came after every first map in this county.`;
+  if (year < f.earliest) return `A house built in ${year} predates every first map in this ${unit}.`;
+  if (year > f.latest) return `A house built in ${year} came after every first map in this ${unit}.`;
   return `A house built in ${year} may predate its own community's first map or not: it depends on which community it is in.`;
 }
 
@@ -271,9 +281,10 @@ export function housingFor(p: Place): { from: 'zip' | 'county' | null; h: Housin
 /** Everything the section says, as plain sentences. `stateName` is the state's full name. */
 export function placeStatements(p: Place, year: number, stateName?: string | null): PlaceSummary {
   const where = `${p.zip} maps to ${p.county}${stateName ? `, ${stateName}` : ''}.`;
+  const u = areaUnit(p);
   const spans =
     p.counties > 1
-      ? `A ZIP code can cross county lines. This one touches ${p.counties} counties; about ${p.share}% of its land is in ${p.county}, the one shown here.`
+      ? `A ZIP code can cross ${u.one} lines. This one touches ${p.counties} ${u.many}; about ${p.share}% of its land is in ${p.county}, the one shown here.`
       : null;
   const { from, h, note } = housingFor(p);
   const area = from === 'county' ? p.county : 'this ZIP';

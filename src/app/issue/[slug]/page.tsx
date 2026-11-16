@@ -24,6 +24,7 @@ import {
   shortUrl,
 } from '@/components/issue/issueText';
 import { JsonLd, absUrl, breadcrumbs } from '@/components/seo/JsonLd';
+import { pageMeta } from '@/lib/seo';
 import styles from './issue.module.css';
 
 export const dynamicParams = false;
@@ -50,14 +51,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!issue) return {};
   const title = `${issue.title}: houses built ${span(issue)}`;
   const description = clip(issue.hook);
-  const url = `/issue/${issue.slug}`;
-  return {
-    title,
-    description,
-    alternates: { canonical: url },
-    openGraph: { type: 'article', title, description, url, siteName: SITE.name },
-    twitter: { card: 'summary_large_image', title, description },
-  };
+  // the share image is this route's own opengraph-image file
+  return pageMeta({ title, description, path: `/issue/${issue.slug}`, type: 'article', image: null });
 }
 
 function regionText(regions: string[]) {

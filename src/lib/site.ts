@@ -5,9 +5,25 @@ export const SITE = {
   description:
     'Enter the year your house was built and see what US houses of that era typically contain, what to check first, and what is reaching the end of its life. Every claim is sourced.',
   disclaimer: 'A guide to what to look for. Not an inspection.',
+  /**
+   * Where readers report errors (shown on /corrections, /about and /privacy). null until the
+   * address is decided: the pages then say one will be listed shortly. Set a string to show a mailto link.
+   */
+  contactEmail: null as string | null,
+  /**
+   * Review status, shown on /about under "Who is behind this". Update this one sentence when a
+   * licensed inspector has reviewed the content.
+   */
+  reviewStatus:
+    'The content has been compiled from the cited public sources and has not yet been reviewed by a licensed home inspector.',
+  /** Date the privacy, terms and corrections pages were last changed (shown at the top of each). */
+  policiesUpdated: 'November 16, 2026',
   /** Production origin, used for canonical URLs and OG images. */
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://yearbuilt.house',
 } as const;
+
+/** Page background per theme: theme-color meta, the web manifest and the app icons use these. */
+export const THEME_COLORS = { light: '#f4efe4', dark: '#0f2b4b' } as const;
 
 /** Earliest build year we generate a report for. */
 export const MIN_YEAR = 1880;

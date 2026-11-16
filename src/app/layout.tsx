@@ -1,21 +1,28 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import './fonts';
-import { SITE, STORAGE_KEYS } from '@/lib/site';
+import { SITE, STORAGE_KEYS, THEME_COLORS } from '@/lib/site';
 import { SiteHeader } from '@/components/SiteHeader';
 import { SiteFooter } from '@/components/SiteFooter';
+import { Telemetry } from '@/components/Telemetry';
+import { robotsFor } from '@/lib/seo';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: { default: `${SITE.name}: ${SITE.tagline}`, template: `%s · ${SITE.name}` },
   description: SITE.description,
   applicationName: SITE.name,
+  // Every page inherits this unless it sets its own (through robotsFor, so previews stay noindex).
+  robots: robotsFor(),
+  openGraph: { type: 'website', siteName: SITE.name, locale: 'en_US' },
+  twitter: { card: 'summary_large_image' },
+  formatDetection: { telephone: false, address: false, email: false },
 };
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#f4efe4' },
-    { media: '(prefers-color-scheme: dark)', color: '#0f2b4b' },
+    { media: '(prefers-color-scheme: light)', color: THEME_COLORS.light },
+    { media: '(prefers-color-scheme: dark)', color: THEME_COLORS.dark },
   ],
   width: 'device-width',
   initialScale: 1,
@@ -39,6 +46,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <SiteHeader />
         <main id="main">{children}</main>
         <SiteFooter />
+        {/* Vercel Web Analytics + Speed Insights: only in builds made on Vercel (VERCEL=1), so local
+            builds and other hosts render and request nothing extra. See /privacy. */}
+        {process.env.VERCEL ? <Telemetry /> : null}
       </body>
     </html>
   );

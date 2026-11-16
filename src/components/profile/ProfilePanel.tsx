@@ -72,7 +72,14 @@ export function RevealButton({
     <p className={`${styles.reveal} ${className ?? ''}`}>
       <span className={styles.revealMark} aria-hidden="true" />
       <span>
-        {reveal ? (short ? `${hiddenCount} shown that don’t apply` : `Showing ${n} that don’t apply, marked`) : short ? `${n} by your answers` : `${n} hidden by your answers`}
+        {/* revealed rows sit at the end of their own section or part: say so */}
+        {reveal
+          ? short
+            ? `${hiddenCount} that don’t apply, shown last and marked`
+            : `Showing ${n} that don’t apply: last in each section, marked`
+          : short
+            ? `${n} by your answers`
+            : `${n} hidden by your answers`}
         <span aria-hidden="true" className={styles.revealSep}>
           {'\u00a0·'}
         </span>

@@ -140,7 +140,7 @@
   font-family: var(--font-mono);
   font-size: var(--t-2xs);
   letter-spacing: 0.02em;
-  color: var(--ink-3);
+  color: var(--ink-2);
   line-height: 1.45;
 }
 .privacy svg {

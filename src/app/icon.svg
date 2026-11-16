@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><style>.t{fill:#0f2b4b}.i{stroke:#ecf2f9}.l{stroke:#9cc4ec}@media (prefers-color-scheme:dark){.t{fill:#f4efe4}.i{stroke:#1f2328}.l{stroke:#2b5d8c}}</style><rect class="t" width="32" height="32" rx="6"/><g transform="translate(0 0) scale(1)" fill="none" stroke-linecap="square">
+    <path class="i" d="M4.5 15.5 16 5.6 27.5 15.5" stroke-width="2.2" stroke-linejoin="miter"/>
+    <path class="i" d="M8.5 13.2V24H23.5V13.2" stroke-width="2.2" stroke-linejoin="miter"/>
+    <path class="i" d="M14 24V18.5H18V24" stroke-width="1.6500000000000001"/>
+    <path class="l" d="M5 28H27" stroke-width="1.4"/>
+    <path class="l" d="M5 26.3V29.7M27 26.3V29.7" stroke-width="1.4"/>
+  </g></svg>

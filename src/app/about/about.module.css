@@ -400,3 +400,17 @@
     padding: var(--s-3);
   }
 }
+
+/* who is behind this */
+.who {
+  display: grid;
+  gap: var(--s-3);
+  max-width: var(--measure);
+  padding-left: var(--s-4);
+  border-left: var(--hair) solid var(--rule-strong);
+  color: var(--ink-2);
+}
+.who a,
+.disclaimer a {
+  color: var(--line);
+}

@@ -3,6 +3,7 @@
  */
 import type { Issue, Lifespan, Zone } from '@/lib/types';
 import { lifeStatus, type LifeStatus } from '@/lib/select';
+import { matchesProfile, type HouseProfile, type When } from '@/lib/profile';
 import { STATE_NAME } from '@/lib/labels';
 
 /** First sentence of a check step, trimmed to one printed line where possible. */
@@ -24,8 +25,18 @@ export function regionTitle(regions: Issue['regions']): string | undefined {
   return `Only in ${regions.map((r) => STATE_NAME[r] ?? r).join(', ')}`;
 }
 
-/** One question per part of the house, backed by the lifespans that sit there. */
-type Ask = { zone: Zone; q: string; parts: { id: string; short: string }[] };
+/**
+ * One question per part of the house, backed by the lifespans that sit there.
+ * A part whose lifespan has a `when` (house profile) drops out when the visitor's answers rule it
+ * out, like every other row on the sheet. `alt` parts (and asks made only of them) appear only when
+ * the visitor's answers name them: a boiler, a well, a septic tank, a metal roof. With no answers
+ * the list is exactly the untailored one. `noun` lets the question name only the parts left
+ * ("How old is the furnace?"); without it the question is fixed.
+ */
+type AskPart = { id: string; short: string; noun?: string; alt?: boolean };
+type Ask = { zone: Zone; q: string | ((nouns: string[]) => string); parts: AskPart[] };
+const listText = (xs: string[]) => (xs.length < 2 ? xs.join('') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
+const howOld = (nouns: string[]) => `How old ${nouns.length > 1 ? 'are' : 'is'} ${listText(nouns)}?`;
 const ASKS: Ask[] = [
   {
     zone: 'roof',
@@ -33,14 +44,20 @@ const ASKS: Ask[] = [
     parts: [
       { id: 'asphalt-shingle-roof-3-tab', short: '3-tab shingles' },
       { id: 'asphalt-shingle-roof-architectural', short: 'Architectural shingles' },
+      { id: 'wood-shake-roof', short: 'Wood shakes', alt: true },
+      { id: 'metal-roof', short: 'Metal', alt: true },
+      { id: 'clay-concrete-tile-roof', short: 'Tile', alt: true },
+      { id: 'epdm-flat-roof', short: 'EPDM', alt: true },
+      { id: 'modified-bitumen-roof', short: 'Modified bitumen', alt: true },
     ],
   },
   {
     zone: 'heating-cooling',
-    q: 'How old are the furnace and the air conditioner?',
+    q: howOld,
     parts: [
-      { id: 'forced-air-furnace', short: 'Furnace' },
-      { id: 'central-air-conditioner', short: 'Central AC' },
+      { id: 'forced-air-furnace', short: 'Furnace', noun: 'the furnace' },
+      { id: 'boiler', short: 'Boiler', noun: 'the boiler', alt: true },
+      { id: 'central-air-conditioner', short: 'Central AC', noun: 'the air conditioner' },
     ],
   },
   { zone: 'water-heater', q: 'How old is the water heater?', parts: [{ id: 'tank-water-heater', short: 'Tank heater' }] },
@@ -48,6 +65,16 @@ const ASKS: Ask[] = [
     zone: 'electrical-panel',
     q: 'Has the electrical panel been replaced or upgraded?',
     parts: [{ id: 'service-panel', short: 'Service panel' }],
+  },
+  {
+    zone: 'drains-sewer',
+    q: 'When was the septic tank last pumped and inspected?',
+    parts: [{ id: 'septic-system', short: 'Septic system', alt: true }],
+  },
+  {
+    zone: 'plumbing-supply',
+    q: 'How old is the well pump, and when was the water last tested?',
+    parts: [{ id: 'well-pump', short: 'Well pump', alt: true }],
   },
   {
     zone: 'plumbing-supply',
@@ -107,6 +134,8 @@ const ASKS: Ask[] = [
 
 export type SellerQuestion = {
   zone: Zone;
+  /** Stable key (the zone is not unique). */
+  key: string;
   q: string;
   status: LifeStatus;
   /** "Furnace 15–25 yrs · Central AC 7–15 yrs" */
@@ -116,21 +145,38 @@ export type SellerQuestion = {
 const RANK: Record<LifeStatus, number> = { due: 0, past: 1, soon: 2, later: 3 };
 const yrs = (l: Lifespan) => (l.lifeLow === l.lifeHigh ? `${l.lifeLow} yrs` : `${l.lifeLow}–${l.lifeHigh} yrs`);
 
+/** An `alt` part shows only when every attribute its `when` names is answered, and allowed. */
+function named(when: When | undefined, profile: HouseProfile): boolean {
+  if (!when) return false;
+  return Object.entries(when).every(([k, allowed]) => {
+    const v = profile[k as keyof HouseProfile];
+    return v !== undefined && (allowed as string[]).includes(v);
+  });
+}
+
+/** The lifespans sellerQuestions() can use (what the checklist's client island needs). */
+export const ASK_LIFESPAN_IDS = new Set(ASKS.flatMap((a) => a.parts.map((p) => p.id)));
+
 /**
  * The handful of questions most worth asking at this age: parts whose original would be inside
- * (due) or past its typical life. For young houses, parts coming due soon.
+ * (due) or past its typical life. For young houses, parts coming due soon. `profile` (the house
+ * answers) drops parts that do not apply and adds the `alt` parts it names.
  */
-export function sellerQuestions(lifespans: Lifespan[], age: number, limit = 6): SellerQuestion[] {
+export function sellerQuestions(lifespans: Lifespan[], age: number, limit = 6, profile: HouseProfile = {}): SellerQuestion[] {
   const byId = new Map(lifespans.map((l) => [l.id, l]));
   const wanted: LifeStatus[] = age < 15 ? ['due', 'past', 'soon'] : ['due', 'past'];
   const out: SellerQuestion[] = [];
   for (const a of ASKS) {
-    const ls = a.parts.map((p) => ({ p, l: byId.get(p.id) })).filter((x): x is { p: Ask['parts'][number]; l: Lifespan } => !!x.l);
+    const ls = a.parts
+      .map((p) => ({ p, l: byId.get(p.id) }))
+      .filter((x): x is { p: AskPart; l: Lifespan } => !!x.l)
+      .filter(({ p, l }) => (p.alt ? named(l.when, profile) : matchesProfile(l, profile)));
     if (!ls.length) continue;
     const statuses = ls.map(({ l }) => lifeStatus(l, age));
     const best = statuses.sort((x, y) => RANK[x] - RANK[y])[0];
     if (!wanted.includes(best)) continue;
-    out.push({ zone: a.zone, q: a.q, status: best, life: ls.map(({ p, l }) => `${p.short} ${yrs(l)}`).join(' · ') });
+    const q = typeof a.q === 'string' ? a.q : a.q(ls.map(({ p }) => p.noun ?? p.short.toLowerCase()));
+    out.push({ zone: a.zone, key: `${a.zone}:${a.parts[0].id}`, q, status: best, life: ls.map(({ p, l }) => `${p.short} ${yrs(l)}`).join(' · ') });
   }
   // keep the ask order (most expensive first) but let "soon" items fall behind due/past ones
   return out.sort((x, y) => Number(x.status === 'soon') - Number(y.status === 'soon')).slice(0, limit);
