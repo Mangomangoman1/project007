@@ -32,11 +32,12 @@ export const allYears = (): number[] => Array.from({ length: MAX_YEAR - MIN_YEAR
  */
 export type IssueLite = Pick<
   Issue,
-  'id' | 'slug' | 'title' | 'category' | 'hook' | 'kind' | 'applies' | 'regions' | 'severity' | 'priority' | 'evidence' | 'prevalence'
+  'id' | 'slug' | 'title' | 'category' | 'hook' | 'kind' | 'applies' | 'regions' | 'severity' | 'priority' | 'evidence' | 'prevalence' | 'when'
 >;
 export const toLite = (i: Issue): IssueLite => ({
   id: i.id, slug: i.slug, title: i.title, category: i.category, hook: i.hook, kind: i.kind,
   applies: i.applies, regions: i.regions, severity: i.severity, priority: i.priority,
   evidence: i.evidence, prevalence: i.prevalence,
+  ...(i.when ? { when: i.when } : {}),
 });
 export const getIssuesLite = (): IssueLite[] => ISSUES.map(toLite);

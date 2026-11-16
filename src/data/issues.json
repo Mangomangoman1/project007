@@ -400,7 +400,12 @@
         "quote": "The Plaintiffs and putative class members are purchasers of Atlas Chalet and Stratford Shingles"
       }
     ],
-    "caveat": "The first year of sale is uncertain; the court says only 'in the 1990s'. Many roofs from this period have been replaced, and most houses of the era have other shingles."
+    "caveat": "The first year of sale is uncertain; the court says only 'in the 1990s'. Many roofs from this period have been replaced, and most houses of the era have other shingles.",
+    "when": {
+      "roof": [
+        "asphalt"
+      ]
+    }
   },
   {
     "id": "balloon-framing",
@@ -458,7 +463,15 @@
         "quote": "where a cavity may traverse multiple floors"
       }
     ],
-    "caveat": "The end date varies: sources put it from the late 1940s to the mid-1950s, and timing differed by region and builder. Many houses of the 1930s and 1940s are platform framed."
+    "caveat": "The end date varies: sources put it from the late 1940s to the mid-1950s, and timing differed by region and builder. Many houses of the 1930s and 1940s are platform framed.",
+    "when": {
+      "type": [
+        "site-built"
+      ],
+      "stories": [
+        "two-plus"
+      ]
+    }
   },
   {
     "id": "bosch-siemens-dishwashers-1999-2005",
@@ -866,7 +879,12 @@
         "quote": "CertainTeed denies that the shingles were faulty, but quit manufacturing that particular type in 2005."
       }
     ],
-    "caveat": "Many roofs from this period have already been replaced, and the older the house, the less likely the original roof survives. Installation could trail manufacture by a year or so."
+    "caveat": "Many roofs from this period have already been replaced, and the older the house, the less likely the original roof survives. Installation could trail manufacture by a year or so.",
+    "when": {
+      "roof": [
+        "asphalt"
+      ]
+    }
   },
   {
     "id": "challenger-panels",
@@ -1088,7 +1106,12 @@
         "quote": "The firm is no longer in business. A remedy is no longer available."
       }
     ],
-    "caveat": "Tankless heaters are often installed as replacements, so one could be in a house of any age."
+    "caveat": "Tankless heaters are often installed as replacements, so one could be in a house of any age.",
+    "when": {
+      "gas": [
+        "yes"
+      ]
+    }
   },
   {
     "id": "consolidated-industries-horizontal-furnace",
@@ -1141,7 +1164,15 @@
         "quote": "Consolidated manufactured approximately 190,000 of these furnaces from 1983 through 1994 under many different brand names."
       }
     ],
-    "caveat": "These furnaces went only to California, and most furnaces of these years are other makes. A replacement furnace installed in an older house during these years could also be one."
+    "caveat": "These furnaces went only to California, and most furnaces of these years are other makes. A replacement furnace installed in an older house during these years could also be one.",
+    "when": {
+      "heating": [
+        "forced-air"
+      ],
+      "gas": [
+        "yes"
+      ]
+    }
   },
   {
     "id": "counterfeit-square-d-breakers-2003-2006",
@@ -1242,7 +1273,12 @@
         "quote": "As of 2005, approximately 50% of all wood light framed floors used I-joists."
       }
     ],
-    "caveat": "A model-code requirement to cover them was reportedly added around 2012, but that was not confirmed and states adopted it unevenly. The hazard applies only where the joists are exposed."
+    "caveat": "A model-code requirement to cover them was reportedly added around 2012, but that was not confirmed and states adopted it unevenly. The hazard applies only where the joists are exposed.",
+    "when": {
+      "type": [
+        "site-built"
+      ]
+    }
   },
   {
     "id": "roof-trusses-metal-plate",
@@ -1620,7 +1656,12 @@
         "quote": "Residential combustion water heaters manufactured since 2003 in the United States have been redesigned to resist ignition of flammable vapors"
       }
     ],
-    "caveat": "This was a voluntary industry standard, not a federal law, and it covers standard 30, 40 and 50 gallon gas tank heaters. Water heaters are replaced often, so the heater's own date matters far more than the house's."
+    "caveat": "This was a voluntary industry standard, not a federal law, and it covers standard 30, 40 and 50 gallon gas tank heaters. Water heaters are replaced often, so the heater's own date matters far more than the house's.",
+    "when": {
+      "gas": [
+        "yes"
+      ]
+    }
   },
   {
     "id": "gravity-octopus-furnace",
@@ -1664,7 +1705,12 @@
         "quote": "These antiquated furnaces were installed from the late 1800s to the mid-20th century and are still found in use in some older buildings."
       }
     ],
-    "caveat": "The date range stands in for InterNACHI's 'late 1800s to the mid-20th century'. Most of these furnaces have long since been replaced."
+    "caveat": "The date range stands in for InterNACHI's 'late 1800s to the mid-20th century'. Most of these furnaces have long since been replaced.",
+    "when": {
+      "heating": [
+        "forced-air"
+      ]
+    }
   },
   {
     "id": "gree-dehumidifiers-2013-recall",
@@ -1826,7 +1872,13 @@
         "quote": "In 1996, International Paper (IP) lost a class action suit brought by homeowners whose Masonite siding had deteriorated. The jury found that IP's Masonite siding was defective."
       }
     ],
-    "caveat": "The 1980 to 1998 range is the reported Masonite class window, which could not be confirmed, and hardboard was used before 1980 too. Brands look alike; identifying one needs the marks on the back of a board."
+    "caveat": "The 1980 to 1998 range is the reported Masonite class window, which could not be confirmed, and hardboard was used before 1980 too. Brands look alike; identifying one needs the marks on the back of a board.",
+    "when": {
+      "exterior": [
+        "wood",
+        "fiber-cement"
+      ]
+    }
   },
   {
     "id": "pre-1994-high-flow-toilets",
@@ -1990,7 +2042,13 @@
         "quote": "in many structures built before 1950 the sill plate that sits between the concrete foundation and the floor diaphragm (perimeter foundation) or studwall (slab foundation) may not be sufficiently bolted in"
       }
     ],
-    "caveat": "There is no single code year: a reference source says many houses built before 1950 lack adequate bolting, and the pre-1980 cutoff used in California is a grant-program screen, not a code date. Many houses have already been retrofitted."
+    "caveat": "There is no single code year: a reference source says many houses built before 1950 lack adequate bolting, and the pre-1980 cutoff used in California is a grant-program screen, not a code date. Many houses have already been retrofitted.",
+    "when": {
+      "foundation": [
+        "basement",
+        "crawlspace"
+      ]
+    }
   },
   {
     "id": "kidde-pi2010-dual-sensor-2016-2017",
@@ -2530,7 +2588,12 @@
         "quote": "Lead has not been used for water service piping since around 1950; lead contaminates potability."
       }
     ],
-    "caveat": "Whether a given house has a lead line depends much more on the city than on the year: some places stopped by about 1950, while others kept using lead until the 1986 ban. EPA's national estimates have also changed sharply between surveys."
+    "caveat": "Whether a given house has a lead line depends much more on the city than on the year: some places stopped by about 1950, while others kept using lead until the 1986 ban. EPA's national estimates have also changed sharply between surveys.",
+    "when": {
+      "water": [
+        "city"
+      ]
+    }
   },
   {
     "id": "lead-solder-copper",
@@ -2669,7 +2732,15 @@
         "quote": "from August 2016 through June 2020, for between $8,000 and $25,000, including installation"
       }
     ],
-    "caveat": "Boilers are replaced in older houses too, so the label matters more than build year. Later boiler recalls from other makers exist but were not checked for this guide."
+    "caveat": "Boilers are replaced in older houses too, so the label matters more than build year. Later boiler recalls from other makers exist but were not checked for this guide.",
+    "when": {
+      "heating": [
+        "boiler"
+      ],
+      "gas": [
+        "yes"
+      ]
+    }
   },
   {
     "id": "lp-inner-seal-osb-siding",
@@ -2718,7 +2789,13 @@
         "quote": "in 1985 began to market Inner-Seal siding for the exterior of homes"
       }
     ],
-    "caveat": "The 1985 start rests on a reference source. Many installs have already been replaced, and this was one brand among many sidings of the era."
+    "caveat": "The 1985 start rests on a reference source. Many installs have already been replaced, and this was one brand among many sidings of the era.",
+    "when": {
+      "exterior": [
+        "wood",
+        "fiber-cement"
+      ]
+    }
   },
   {
     "id": "manufactured-homes-pre-1994-wind-zones",
@@ -2768,7 +2845,12 @@
         "quote": "The design wind speeds for high wind areas are designated as 100 mph for Wind Zone II and 110 mph for Wind Zone III."
       }
     ],
-    "caveat": "Date of manufacture governs, not the year the home was placed. Exactly which counties fall in each wind zone was not confirmed; the higher zones cover the hurricane coast."
+    "caveat": "Date of manufacture governs, not the year the home was placed. Exactly which counties fall in each wind zone was not confirmed; the higher zones cover the hurricane coast.",
+    "when": {
+      "type": [
+        "manufactured"
+      ]
+    }
   },
   {
     "id": "gfci-protection-milestones",
@@ -3224,7 +3306,12 @@
         "quote": "About 93,000 HTPV pipes have been replaced as of October 1, 2005."
       }
     ],
-    "caveat": "The full date range of these vents was never published; 1988 to 1994 comes from one subset. Many have already been replaced along with their furnaces."
+    "caveat": "The full date range of these vents was never published; 1988 to 1994 comes from one subset. Many have already been replaced along with their furnaces.",
+    "when": {
+      "gas": [
+        "yes"
+      ]
+    }
   },
   {
     "id": "polybutylene-supply",
@@ -3341,7 +3428,12 @@
         "quote": "The Federal Manufactured Home Construction and Safety Standards (commonly known as the HUD Code) went into effect June 15, 1976."
       }
     ],
-    "caveat": "The date is when the home left the factory, not its model year or when it was placed, so a '1976' home can fall on either side."
+    "caveat": "The date is when the home left the factory, not its model year or when it was placed, so a '1976' home can fall on either side.",
+    "when": {
+      "type": [
+        "manufactured"
+      ]
+    }
   },
   {
     "id": "problem-chinese-drywall",
@@ -3688,7 +3780,12 @@
         "quote": "May 2004 through December 2006 for between $800 and $1,300"
       }
     ],
-    "caveat": "Tankless heaters are often fitted when an older tank fails, so they turn up in houses of any age."
+    "caveat": "Tankless heaters are often fitted when an older tank fails, so they turn up in houses of any age.",
+    "when": {
+      "gas": [
+        "yes"
+      ]
+    }
   },
   {
     "id": "rinnai-wall-furnaces-2000-2007",
@@ -3739,7 +3836,12 @@
         "quote": "About 52,000"
       }
     ],
-    "caveat": "Wall heaters are often added to older houses and additions, so build year is a weak guide here. The rating plate is what tells you."
+    "caveat": "Wall heaters are often added to older houses and additions, so build year is a weak guide here. The rating plate is what tells you.",
+    "when": {
+      "gas": [
+        "yes"
+      ]
+    }
   },
   {
     "id": "siemens-murray-breakers-2010-spring-clip",
@@ -4002,7 +4104,12 @@
         "quote": "In the late 1980s problems started developing due to water leakage in EIFS-clad buildings."
       }
     ],
-    "caveat": "Start and end years are approximate; barrier EIFS was never banned nationally and continued in some places into the early 2000s. It is reported to be most common on mid- and upper-priced houses in parts of the Southeast and Mid-Atlantic."
+    "caveat": "Start and end years are approximate; barrier EIFS was never banned nationally and continued in some places into the early 2000s. It is reported to be most common on mid- and upper-priced houses in parts of the Southeast and Mid-Atlantic.",
+    "when": {
+      "exterior": [
+        "stucco"
+      ]
+    }
   },
   {
     "id": "tamper-resistant-receptacles",
@@ -4228,7 +4335,12 @@
         "quote": "Yellow-jacketed CSST should be bonded (connected to the electrical service panel's ground bus) at its entrance into a building. Many local codes require this."
       }
     ],
-    "caveat": "The start year and the code year that made bonding mandatory (reported as 2009) were not confirmed, and states adopted codes at different times. CSST is still installed today, with bonding."
+    "caveat": "The start year and the code year that made bonding mandatory (reported as 2009) were not confirmed, and states adopted codes at different times. CSST is still installed today, with bonding.",
+    "when": {
+      "gas": [
+        "yes"
+      ]
+    }
   },
   {
     "id": "uncoated-brass-gas-connector",
@@ -4280,7 +4392,12 @@
         "quote": "These gas connectors are made of brass, are uncoated, and can crack or break"
       }
     ],
-    "caveat": "CPSC gave no exact year manufacture stopped, only 'at least the past 10 years' as of 1996. The age of the appliance matters more than the age of the house."
+    "caveat": "CPSC gave no exact year manufacture stopped, only 'at least the past 10 years' as of 1996. The age of the appliance matters more than the age of the house.",
+    "when": {
+      "gas": [
+        "yes"
+      ]
+    }
   },
   {
     "id": "unlined-masonry-chimney",
@@ -4331,7 +4448,12 @@
         "quote": "Since the 1950s, building codes in many locations require newly built chimneys to have a flue liner."
       }
     ],
-    "caveat": "There is no single national date; liner rules came in locally and gradually from about the 1950s. Many older chimneys have been relined since."
+    "caveat": "There is no single national date; liner rules came in locally and gradually from about the 1950s. Many older chimneys have been relined since.",
+    "when": {
+      "chimney": [
+        "yes"
+      ]
+    }
   },
   {
     "id": "unreinforced-masonry-urm",
@@ -4404,7 +4526,16 @@
         "quote": "the 1933 Long Beach earthquake resulted in a near-immediate statewide ban on construction of new unreinforced masonry school buildings and the Field Act . A State law enacted in 1986 required seismic retrofitting of existing structures."
       }
     ],
-    "caveat": "Shown for Utah, where the 1975 date is confirmed. California, Oregon and Washington also have unreinforced brick buildings with earlier cutoffs (California's seismic codes began in the 1930s), but most of those are commercial or apartment buildings."
+    "caveat": "Shown for Utah, where the 1975 date is confirmed. California, Oregon and Washington also have unreinforced brick buildings with earlier cutoffs (California's seismic codes began in the 1930s), but most of those are commercial or apartment buildings.",
+    "when": {
+      "type": [
+        "site-built"
+      ],
+      "exterior": [
+        "brick-stone",
+        "stucco"
+      ]
+    }
   },
   {
     "id": "vermiculite-attic-insulation",

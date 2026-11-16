@@ -6,6 +6,10 @@
  *   content/editorial.json   { [researchId]: Editorial | { include: false, reason } }
  *   content/lifespans.json   Lifespan[]  |  { lifespans: Lifespan[] }  |  { [id]: Lifespan }
  *
+ * Issues and lifespans may carry `when: { attribute: [values] }` (house profile, docs/SPEC.md v1.1).
+ * It is validated against src/lib/profile.ts and passed through in a canonical attribute order;
+ * an unknown attribute or value fails the build.
+ *
  * Writes src/data/issues.json, src/data/lifespans.json and src/data/meta.json.
  * Falls back to content/sample-*.json when the real content files do not exist yet.
  * Fails loudly (exit 1, every problem listed) on invalid data: an included issue
@@ -14,6 +18,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+// The house-profile vocabulary lives in ONE place (the app's own module); Node strips its types.
+import { validateWhen, PROFILE_KEYS } from '../src/lib/profile.ts';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const rel = (p) => path.relative(ROOT, p);
@@ -141,6 +147,17 @@ const oneOf = (v, set, ctx, field, fallback) => {
   return fallback ?? [...set][0];
 };
 
+/** Validated, canonically ordered copy of a `when`, or undefined when absent/invalid. */
+function whenOf(raw, ctx) {
+  if (raw === undefined || raw === null) return undefined;
+  const problems = validateWhen(raw);
+  for (const p of problems) fail(`${ctx}: ${p}`);
+  if (problems.length) return undefined;
+  const out = {};
+  for (const k of PROFILE_KEYS) if (raw[k]) out[k] = [...raw[k]];
+  return out;
+}
+
 /* ---------- issues ---------- */
 function unwrapEditorial(data) {
   if (Array.isArray(data)) return Object.fromEntries(data.filter((d) => d && d.id).map((d) => [d.id, d]));
@@ -232,6 +249,8 @@ for (const [id, ed] of Object.entries(edMap)) {
   };
   const caveat = str(ed.caveat, ctx, 'caveat', { optional: true });
   if (caveat) issue.caveat = caveat;
+  const when = whenOf(ed.when, ctx);
+  if (when) issue.when = when;
   issues.push(issue);
 }
 issues.sort((a, b) => a.slug.localeCompare(b.slug));
@@ -270,7 +289,8 @@ for (const l of unwrapLifespans(lifespanContent.data)) {
   if (Array.isArray(l.sources)) raw.push(...l.sources.map((s) => ({ verified: true, ...s })));
   const sources = mapSources(raw, ctx);
   if (sources.length === 0) warn(`${ctx}: no verified sources`);
-  lifespans.push({ id, title: str(l.title, ctx, 'title'), zone, lifeLow, lifeHigh, note: typeof l.note === 'string' ? l.note.trim() : '', ...(l.openEnded === true ? { openEnded: true } : {}), sources });
+  const when = whenOf(l.when, ctx);
+  lifespans.push({ id, title: str(l.title, ctx, 'title'), zone, lifeLow, lifeHigh, note: typeof l.note === 'string' ? l.note.trim() : '', ...(l.openEnded === true ? { openEnded: true } : {}), ...(when ? { when } : {}), sources });
 }
 lifespans.sort((a, b) => a.lifeLow - b.lifeLow || a.lifeHigh - b.lifeHigh || a.title.localeCompare(b.title));
 
@@ -296,12 +316,15 @@ write('meta.json', {
   issueCount: issues.length,
   excludedCount: excluded,
   lifespanCount: lifespans.length,
+  conditionalIssueCount: issues.filter((i) => i.when).length,
+  conditionalLifespanCount: lifespans.filter((l) => l.when).length,
   sourceCount: new Set(issues.flatMap((i) => i.sources.map((s) => s.url))).size,
   primarySourceCount: new Set(issues.flatMap((i) => i.sources.filter((s) => s.tier === 'primary').map((s) => s.url))).size,
 });
 
 console.log(
   `[build-data] ${issues.length} issues (${excluded} excluded), ${lifespans.length} lifespans` +
+  ` (${issues.filter((i) => i.when).length} + ${lifespans.filter((l) => l.when).length} with house-profile conditions)` +
   ` from ${rel(editorial.file)} + ${rel(lifespanContent.file)}` +
   `${editorial.sample || lifespanContent.sample ? '  << SAMPLE CONTENT' : ''}`,
 );

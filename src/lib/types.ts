@@ -1,4 +1,7 @@
 /** Data contract — mirrors docs/SPEC.md. Produced by scripts/build-data.mjs. */
+import type { When } from './profile';
+
+export type { HouseProfile, When } from './profile';
 
 export type Zone =
   | 'roof' | 'attic' | 'exterior-walls' | 'windows' | 'electrical-panel' | 'wiring-outlets'
@@ -42,6 +45,8 @@ export type Issue = {
   check: string[];
   action: string;
   caveat?: string;
+  /** House-profile conditions (v1.1): the answers under which this issue can apply. */
+  when?: When;
   sources: Source[];
 };
 
@@ -54,6 +59,8 @@ export type Lifespan = {
   /** True when the source gives an open-ended life ("100+"): never shown as worn out by age alone. */
   openEnded?: boolean;
   note: string;
+  /** House-profile conditions (v1.1), e.g. { sewer: ['septic'] }. */
+  when?: When;
   sources: Source[];
 };
 
@@ -65,6 +72,9 @@ export type DataMeta = {
   issueCount: number;
   excludedCount: number;
   lifespanCount: number;
+  /** Issues / lifespans that carry house-profile conditions (`when`). */
+  conditionalIssueCount?: number;
+  conditionalLifespanCount?: number;
   sourceCount: number;
   primarySourceCount: number;
 };

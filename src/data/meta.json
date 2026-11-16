@@ -14,6 +14,8 @@
   "issueCount": 80,
   "excludedCount": 64,
   "lifespanCount": 53,
+  "conditionalIssueCount": 23,
+  "conditionalLifespanCount": 17,
   "sourceCount": 168,
   "primarySourceCount": 104
 }

@@ -27,4 +27,8 @@ export const STORAGE_KEYS = {
   replaced: (year: number) => `builtin:replaced:${year}`,
   /** { [lifespanId]: "2015" | "2010s" }: when the visitor says a part was last replaced. */
   lastReplaced: (year: number) => `builtin:last-replaced:${year}`,
+  /** HouseProfile ("About your house"): shared by every year's report and checklist. */
+  profile: 'builtin:profile',
+  /** "1" while the About your house panel is open, so it stays open from year to year. */
+  profileOpen: 'builtin:profile-open',
 } as const;

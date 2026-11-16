@@ -92,6 +92,12 @@
     "lifeLow": 7,
     "lifeHigh": 7,
     "note": "It only matters when it rains hard, so test it before storm season by pouring water in the pit. A battery backup helps if the power fails.",
+    "when": {
+      "foundation": [
+        "basement",
+        "crawlspace"
+      ]
+    },
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -124,6 +130,11 @@
     "lifeLow": 7,
     "lifeHigh": 15,
     "note": "Hot or coastal climates and neglected filters shorten life. Weak cooling, ice on the lines and frequent repairs are the signs.",
+    "when": {
+      "cooling": [
+        "central"
+      ]
+    },
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -322,6 +333,11 @@
     "lifeLow": 15,
     "lifeHigh": 15,
     "note": "Sediment and frequent cycling shorten life. Short cycling, low pressure or spitting air mean the pump or pressure tank is in trouble.",
+    "when": {
+      "water": [
+        "well"
+      ]
+    },
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -354,6 +370,11 @@
     "lifeLow": 15,
     "lifeHigh": 17,
     "note": "Burners and igniters wear first. A gas smell means shut off the gas and call the utility.",
+    "when": {
+      "gas": [
+        "yes"
+      ]
+    },
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -418,6 +439,11 @@
     "lifeLow": 15,
     "lifeHigh": 25,
     "note": "Seams, edges and penetrations leak first. Ponding water and punctures from foot traffic shorten life.",
+    "when": {
+      "roof": [
+        "flat"
+      ]
+    },
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -434,6 +460,12 @@
     "lifeLow": 15,
     "lifeHigh": 25,
     "note": "Cracks in the heat exchanger can leak carbon monoxide, so have an older furnace checked yearly and keep a working CO alarm nearby. Frequent repairs and rising bills are signs of age.",
+    "when": {
+      "heating": [
+        "forced-air",
+        "heat-pump"
+      ]
+    },
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -450,6 +482,11 @@
     "lifeLow": 15,
     "lifeHigh": 40,
     "note": "Regular pumping and inspection extend life; the drainfield usually fails first. Slow drains, odors and wet or unusually green ground over the drainfield are the warning signs.",
+    "when": {
+      "sewer": [
+        "septic"
+      ]
+    },
     "sources": [
       {
         "url": "https://www.epa.gov/sites/default/files/2017-08/documents/170803-homebuyerssepticguidebrochurelayout_508c.pdf",
@@ -466,6 +503,11 @@
     "lifeLow": 20,
     "lifeHigh": 20,
     "note": "Hot climates drastically shorten asphalt shingle life. Curling, cracked or bald shingles and granules in the gutters mean it is near the end.",
+    "when": {
+      "roof": [
+        "asphalt"
+      ]
+    },
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -482,6 +524,11 @@
     "lifeLow": 20,
     "lifeHigh": 20,
     "note": "Cracked or blistered surfaces and open seams mean water is getting in. Keep drains clear so water does not pool.",
+    "when": {
+      "roof": [
+        "flat"
+      ]
+    },
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -578,6 +625,11 @@
     "lifeLow": 25,
     "lifeHigh": 25,
     "note": "Moss, rot and splitting shorten life. Wood roofs also burn more readily than most, so check local fire rules before replacing like for like.",
+    "when": {
+      "roof": [
+        "wood"
+      ]
+    },
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -594,6 +646,11 @@
     "lifeLow": 30,
     "lifeHigh": 30,
     "note": "Thicker laminated shingles last longer, but heat, hail and severe storms can cut that short. Ask for the roof's install date.",
+    "when": {
+      "roof": [
+        "asphalt"
+      ]
+    },
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -642,6 +699,11 @@
     "lifeLow": 40,
     "lifeHigh": 40,
     "note": "Boilers can outlast furnaces by decades. Leaks around the unit, rust and rising pressure problems suggest it is wearing out.",
+    "when": {
+      "heating": [
+        "boiler"
+      ]
+    },
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -674,6 +736,11 @@
     "lifeLow": 40,
     "lifeHigh": 80,
     "note": "Life depends on the metal and coating. Loose fasteners and flashing are usually what fail first, not the panels.",
+    "when": {
+      "roof": [
+        "metal"
+      ]
+    },
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -690,6 +757,11 @@
     "lifeLow": 40,
     "lifeHigh": 120,
     "note": "A cracked liner can let heat and fumes reach the framing. Have the chimney inspected before using the fireplace in an older house.",
+    "when": {
+      "chimney": [
+        "yes"
+      ]
+    },
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -760,6 +832,11 @@
     "lifeLow": 60,
     "lifeHigh": 60,
     "note": "Siding rarely fails from age; look for cracks, warping and loose panels that let water behind it.",
+    "when": {
+      "exterior": [
+        "vinyl-aluminum"
+      ]
+    },
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -793,6 +870,11 @@
     "lifeHigh": 100,
     "note": "The tile itself can last a century or more (the chart says 100+). The underlayment beneath often wears out first, so cracked or slipped tiles are the warning sign.",
     "openEnded": true,
+    "when": {
+      "roof": [
+        "tile"
+      ]
+    },
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -833,6 +915,12 @@
     "lifeHigh": 100,
     "note": "The chart says 100+. Keep the paint sound and the bottom edges clear of soil and splashing water.",
     "openEnded": true,
+    "when": {
+      "exterior": [
+        "fiber-cement",
+        "wood"
+      ]
+    },
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
