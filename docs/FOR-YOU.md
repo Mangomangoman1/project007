@@ -10,6 +10,16 @@ Kept up to date as the build goes. Nothing here blocks tonight's work unless mar
 - [ ] **Affiliate / monetisation.** None is built into v1 (no ads, no tracking). Decide later
       whether to add test-kit and inspector referrals.
 
+## Launch status
+Everything I can do without you is done: the site builds clean (616 pages, 57 tests), the copy has
+been fact-checked against its sources, and the trust pages, indexing rules, icons and analytics
+are in. What is left needs you:
+1. Say "deploy a preview" and try it on a real phone.
+2. Give me a contact email for the corrections page.
+3. Then say "go live" and I'll attach yearbuilt.house.
+After launch: submit the sitemap in Google Search Console, switch on Speed Insights in the Vercel
+dashboard, and arrange the inspector review before promoting the site widely.
+
 ## Things only you can do
 - [ ] **Contact email.** The corrections, privacy and about pages show "a contact address will be
       listed here shortly" until you give me one (ideally at yearbuilt.house). One setting to add.
