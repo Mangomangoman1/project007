@@ -1,0 +1,880 @@
+[
+  {
+    "id": "asphalt-shingle-roof-3-tab",
+    "title": "Asphalt shingle roof (3-tab)",
+    "zone": "roof",
+    "lifeLow": 20,
+    "lifeHigh": 20,
+    "note": "Hot climates drastically shorten asphalt shingle life. Curling, cracked or bald shingles and granules in the gutters mean it is near the end.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Asphalt Shingles (3-tab) 20"
+      }
+    ]
+  },
+  {
+    "id": "asphalt-shingle-roof-architectural",
+    "title": "Asphalt shingle roof (architectural)",
+    "zone": "roof",
+    "lifeLow": 30,
+    "lifeHigh": 30,
+    "note": "Thicker laminated shingles last longer, but heat, hail and severe storms can cut that short. Ask for the roof's install date.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Asphalt (architectural) 30"
+      }
+    ]
+  },
+  {
+    "id": "metal-roof",
+    "title": "Metal roof",
+    "zone": "roof",
+    "lifeLow": 40,
+    "lifeHigh": 80,
+    "note": "Life depends on the metal and coating. Loose fasteners and flashing are usually what fail first, not the panels.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Metal 40 to 80"
+      }
+    ]
+  },
+  {
+    "id": "wood-shake-roof",
+    "title": "Wood shake roof",
+    "zone": "roof",
+    "lifeLow": 25,
+    "lifeHigh": 25,
+    "note": "Moss, rot and splitting shorten life. Wood roofs also burn more readily than most, so check local fire rules before replacing like for like.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Wood 25"
+      }
+    ]
+  },
+  {
+    "id": "clay-concrete-tile-roof",
+    "title": "Clay or concrete tile roof",
+    "zone": "roof",
+    "lifeLow": 100,
+    "lifeHigh": 100,
+    "note": "The tile itself can last a century or more (the chart says 100+). The underlayment beneath often wears out first, so cracked or slipped tiles are the warning sign.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Clay/Concrete 100+"
+      }
+    ]
+  },
+  {
+    "id": "epdm-flat-roof",
+    "title": "Flat roof (EPDM rubber)",
+    "zone": "roof",
+    "lifeLow": 15,
+    "lifeHigh": 25,
+    "note": "Seams, edges and penetrations leak first. Ponding water and punctures from foot traffic shorten life.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "EPDM (ethylene propylene diene monomer) Rubber 15 to 25"
+      }
+    ]
+  },
+  {
+    "id": "modified-bitumen-roof",
+    "title": "Flat roof (modified bitumen)",
+    "zone": "roof",
+    "lifeLow": 20,
+    "lifeHigh": 20,
+    "note": "Cracked or blistered surfaces and open seams mean water is getting in. Keep drains clear so water does not pool.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Modified Bitumen 20"
+      }
+    ]
+  },
+  {
+    "id": "aluminum-gutters",
+    "title": "Aluminum gutters and downspouts",
+    "zone": "roof",
+    "lifeLow": 20,
+    "lifeHigh": 40,
+    "note": "Sagging, leaking seams and water spilling over the edge are the signs. Failed gutters send water to the foundation.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Aluminum Gutters, Downspouts, Soffit and Fascia 20 to 40+"
+      }
+    ]
+  },
+  {
+    "id": "tank-water-heater",
+    "title": "Tank water heater",
+    "zone": "water-heater",
+    "lifeLow": 6,
+    "lifeHigh": 15,
+    "note": "Mineral-rich water shortens life. Rust at the base, moisture in the pan or rumbling mean it is failing, and a burst tank can flood the area, so replace one past its range before it leaks.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Water Heater (conventional) 6 to 12"
+      },
+      {
+        "url": "https://www.energy.gov/sites/default/files/2022-08/energy-saver-guide-2022.pdf",
+        "publisher": "US Department of Energy, Energy Saver Guide (2022)",
+        "tier": "primary",
+        "quote": "Most storage water heaters last 10-15 years, while tankless water heaters can last more than 20 years."
+      }
+    ]
+  },
+  {
+    "id": "tankless-water-heater",
+    "title": "Tankless water heater",
+    "zone": "water-heater",
+    "lifeLow": 10,
+    "lifeHigh": 20,
+    "note": "Scale buildup from hard water is the main enemy; periodic descaling helps it reach the long end. Sources differ widely, so treat the range as a guide.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Instant (on-demand) Water Heater 10"
+      },
+      {
+        "url": "https://www.energy.gov/sites/default/files/2022-08/energy-saver-guide-2022.pdf",
+        "publisher": "US Department of Energy, Energy Saver Guide (2022)",
+        "tier": "primary",
+        "quote": "Most storage water heaters last 10-15 years, while tankless water heaters can last more than 20 years."
+      }
+    ]
+  },
+  {
+    "id": "forced-air-furnace",
+    "title": "Forced-air furnace",
+    "zone": "heating-cooling",
+    "lifeLow": 15,
+    "lifeHigh": 25,
+    "note": "Cracks in the heat exchanger can leak carbon monoxide, so have an older furnace checked yearly and keep a working CO alarm nearby. Frequent repairs and rising bills are signs of age.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Furnace 15 to 25"
+      }
+    ]
+  },
+  {
+    "id": "boiler",
+    "title": "Boiler (hot-water or steam)",
+    "zone": "heating-cooling",
+    "lifeLow": 40,
+    "lifeHigh": 40,
+    "note": "Boilers can outlast furnaces by decades. Leaks around the unit, rust and rising pressure problems suggest it is wearing out.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Boiler 40"
+      }
+    ]
+  },
+  {
+    "id": "central-air-conditioner",
+    "title": "Central air conditioner",
+    "zone": "heating-cooling",
+    "lifeLow": 7,
+    "lifeHigh": 15,
+    "note": "Hot or coastal climates and neglected filters shorten life. Weak cooling, ice on the lines and frequent repairs are the signs.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Air Conditioner (central) 7 to 15"
+      }
+    ]
+  },
+  {
+    "id": "heat-pump",
+    "title": "Heat pump",
+    "zone": "heating-cooling",
+    "lifeLow": 10,
+    "lifeHigh": 15,
+    "note": "A heat pump works year-round, so it ages faster than an AC alone. Yearly service and clean coils help.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Heat Pump 10 to 15"
+      }
+    ]
+  },
+  {
+    "id": "ductwork",
+    "title": "Heating and cooling ductwork",
+    "zone": "heating-cooling",
+    "lifeLow": 60,
+    "lifeHigh": 100,
+    "note": "Ducts outlast the equipment but leak at joints over time. Dust streaks, uneven rooms and high bills point to leaks.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Ducting 60 to 100"
+      }
+    ]
+  },
+  {
+    "id": "vinyl-windows",
+    "title": "Vinyl or fiberglass windows",
+    "zone": "windows",
+    "lifeLow": 20,
+    "lifeHigh": 40,
+    "note": "Fogging between panes means the seal has failed. Warped frames and drafts are other signs.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Vinyl/Fiberglass Windows 20 to 40"
+      }
+    ]
+  },
+  {
+    "id": "wood-windows",
+    "title": "Wood windows",
+    "zone": "windows",
+    "lifeLow": 30,
+    "lifeHigh": 30,
+    "note": "The chart says 30+ years. Paint and sealant upkeep decides it: peeling paint and soft sills mean rot is starting.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Wood 30+"
+      }
+    ]
+  },
+  {
+    "id": "aluminum-windows",
+    "title": "Aluminum windows",
+    "zone": "windows",
+    "lifeLow": 15,
+    "lifeHigh": 20,
+    "note": "Corroded tracks and failed seals are common. They also conduct heat and cold, so old ones are costly to run.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Aluminum/Aluminum-Clad 15 to 20"
+      }
+    ]
+  },
+  {
+    "id": "exterior-doors",
+    "title": "Exterior doors (steel, fiberglass, wood)",
+    "zone": "whole-house",
+    "lifeLow": 100,
+    "lifeHigh": 100,
+    "note": "The door slab can last as long as the house (the chart says 100+). The weatherstripping wears out every five to eight years, so a draft means new seals, not a new door.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Fiberglass (exterior) 100+"
+      },
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "The gaskets/weatherstripping of exterior doors may have to be replaced every five to eight years."
+      }
+    ]
+  },
+  {
+    "id": "garage-door",
+    "title": "Garage door",
+    "zone": "garage",
+    "lifeLow": 20,
+    "lifeHigh": 25,
+    "note": "Springs and cables wear with every use. A door that sticks, sags or looks off-balance should be serviced by a pro, since springs under tension can injure.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Garage Doors 20 to 25"
+      }
+    ]
+  },
+  {
+    "id": "garage-door-opener",
+    "title": "Garage door opener",
+    "zone": "garage",
+    "lifeLow": 10,
+    "lifeHigh": 15,
+    "note": "Quality and how often it is used set the life. Test the auto-reverse by laying a board on the floor under the door; an opener that fails to reverse needs replacing.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Garage Door Openers 10 to 15"
+      }
+    ]
+  },
+  {
+    "id": "wood-deck-boards",
+    "title": "Wood deck boards",
+    "zone": "deck-yard",
+    "lifeLow": 15,
+    "lifeHigh": 15,
+    "note": "Sun and moisture decide it. Soft spots, splitting and loose boards are the sign.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Deck Planks 15"
+      }
+    ]
+  },
+  {
+    "id": "deck-structure",
+    "title": "Deck framing",
+    "zone": "deck-yard",
+    "lifeLow": 10,
+    "lifeHigh": 30,
+    "note": "Hidden rot where the ledger meets the house and at posts is the real danger. A deck that bounces or sways should be checked before anyone uses it.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Structural Wood 10 to 30"
+      }
+    ]
+  },
+  {
+    "id": "exterior-paint",
+    "title": "Exterior paint",
+    "zone": "exterior-walls",
+    "lifeLow": 7,
+    "lifeHigh": 10,
+    "note": "Surface preparation and paint quality matter most; sun shortens life. Peeling and chalking mean it is due before the wood underneath is exposed.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Paint (exterior) 7 to 10"
+      }
+    ]
+  },
+  {
+    "id": "caulking",
+    "title": "Caulking (interior and exterior)",
+    "zone": "exterior-walls",
+    "lifeLow": 5,
+    "lifeHigh": 10,
+    "note": "Cracked or pulled-away caulk lets water in around windows, trim and tubs. It is cheap to redo and prevents costly rot.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Caulking (interior & exterior) 5 to 10"
+      }
+    ]
+  },
+  {
+    "id": "vinyl-siding",
+    "title": "Vinyl siding",
+    "zone": "exterior-walls",
+    "lifeLow": 60,
+    "lifeHigh": 60,
+    "note": "Siding rarely fails from age; look for cracks, warping and loose panels that let water behind it.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Vinyl Siding 60"
+      }
+    ]
+  },
+  {
+    "id": "fiber-cement-siding",
+    "title": "Fiber cement siding",
+    "zone": "exterior-walls",
+    "lifeLow": 100,
+    "lifeHigh": 100,
+    "note": "The chart says 100+. Keep the paint sound and the bottom edges clear of soil and splashing water.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Fiber Cement 100+"
+      }
+    ]
+  },
+  {
+    "id": "asphalt-driveway",
+    "title": "Asphalt driveway",
+    "zone": "deck-yard",
+    "lifeLow": 15,
+    "lifeHigh": 20,
+    "note": "Cracks let water in, which freezing then widens. Sealing and crack repair extend the life.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Asphalt Driveway 15 to 20"
+      }
+    ]
+  },
+  {
+    "id": "concrete-walks",
+    "title": "Concrete walkway",
+    "zone": "deck-yard",
+    "lifeLow": 40,
+    "lifeHigh": 50,
+    "note": "The chart lists walks, not driveways. Heaved or cracked slabs are a trip hazard worth fixing.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Concrete Walks 40 to 50"
+      }
+    ]
+  },
+  {
+    "id": "service-panel",
+    "title": "Electrical service panel",
+    "zone": "electrical-panel",
+    "lifeLow": 60,
+    "lifeHigh": 60,
+    "note": "Age matters less than the brand and condition. Rust, scorch marks, buzzing or warm breakers mean call an electrician.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Service Panel 60"
+      }
+    ]
+  },
+  {
+    "id": "smoke-alarm",
+    "title": "Smoke alarm",
+    "zone": "whole-house",
+    "lifeLow": 10,
+    "lifeHigh": 10,
+    "note": "Replace every smoke alarm 10 years after its manufacture date, even if it still beeps when tested. The sensor wears out without warning. The date is printed on the back.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/smoke-alarm-inspection.htm",
+        "publisher": "InterNACHI, Smoke Alarm Inspection",
+        "tier": "trade",
+        "quote": "Smoke alarms should be replaced when they fail to respond to testing, or every 10 years, whichever is sooner."
+      }
+    ]
+  },
+  {
+    "id": "carbon-monoxide-alarm",
+    "title": "Carbon monoxide alarm",
+    "zone": "whole-house",
+    "lifeLow": 5,
+    "lifeHigh": 5,
+    "note": "The sensor wears out, and many units sound an end-of-life chirp. Check the date on the back and replace on schedule.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Carbon Monoxide Detectors* 5"
+      }
+    ]
+  },
+  {
+    "id": "gfci-outlets",
+    "title": "GFCI outlets",
+    "zone": "kitchen",
+    "lifeLow": 30,
+    "lifeHigh": 30,
+    "note": "The chart says up to 30 years, and much less if tripped often. Press the test button monthly; one that will not trip or reset must be replaced.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Ground-Fault Circuit Interrupters (GFCIs) up to 30"
+      }
+    ]
+  },
+  {
+    "id": "dishwasher",
+    "title": "Dishwasher",
+    "zone": "kitchen",
+    "lifeLow": 9,
+    "lifeHigh": 9,
+    "note": "Hard water and heavy use shorten life. Leaks at the door and rust in the tub are the signs.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Dishwasher 9"
+      }
+    ]
+  },
+  {
+    "id": "refrigerator",
+    "title": "Refrigerator",
+    "zone": "kitchen",
+    "lifeLow": 9,
+    "lifeHigh": 13,
+    "note": "Dusty coils and worn door seals shorten life. Frost, warm spots and a constantly running compressor suggest trouble.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Refrigerator 9 to 13"
+      }
+    ]
+  },
+  {
+    "id": "gas-range",
+    "title": "Gas range",
+    "zone": "kitchen",
+    "lifeLow": 15,
+    "lifeHigh": 17,
+    "note": "Burners and igniters wear first. A gas smell means shut off the gas and call the utility.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Gas Range 15 to 17"
+      }
+    ]
+  },
+  {
+    "id": "electric-range",
+    "title": "Electric range",
+    "zone": "kitchen",
+    "lifeLow": 13,
+    "lifeHigh": 15,
+    "note": "Burner elements and switches can be replaced, so age alone is not a reason to scrap it. Scorched or cracked elements should be replaced.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Electric Range 13 to 15"
+      }
+    ]
+  },
+  {
+    "id": "garbage-disposal",
+    "title": "Garbage disposal",
+    "zone": "kitchen",
+    "lifeLow": 12,
+    "lifeHigh": 12,
+    "note": "Jams, leaks under the sink and a motor that hums are the signs.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Disposal (food waste) 12"
+      }
+    ]
+  },
+  {
+    "id": "washing-machine",
+    "title": "Washing machine",
+    "zone": "bathroom",
+    "lifeLow": 5,
+    "lifeHigh": 15,
+    "note": "Wide range because use varies. Leaks, violent shaking and rust-colored water mean it is failing; check the supply hoses and drain pan.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Washing Machine 5 to 15"
+      }
+    ]
+  },
+  {
+    "id": "clothes-dryer",
+    "title": "Clothes dryer",
+    "zone": "whole-house",
+    "lifeLow": 13,
+    "lifeHigh": 13,
+    "note": "Lint buildup is a fire hazard whatever the age; clean the lint trap every load and the vent duct regularly.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Dryer (clothes) 13"
+      }
+    ]
+  },
+  {
+    "id": "dryer-vent-plastic",
+    "title": "Dryer vent (plastic)",
+    "zone": "whole-house",
+    "lifeLow": 5,
+    "lifeHigh": 5,
+    "note": "Plastic or foil flex duct traps lint and is a fire risk. Replace it with rigid or semi-rigid metal duct.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Dryer Vent (plastic) 5"
+      }
+    ]
+  },
+  {
+    "id": "sump-pump",
+    "title": "Sump pump",
+    "zone": "basement-foundation",
+    "lifeLow": 7,
+    "lifeHigh": 7,
+    "note": "It only matters when it rains hard, so test it before storm season by pouring water in the pit. A battery backup helps if the power fails.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Sump Pump 7"
+      }
+    ]
+  },
+  {
+    "id": "well-pump",
+    "title": "Well pump",
+    "zone": "plumbing-supply",
+    "lifeLow": 15,
+    "lifeHigh": 15,
+    "note": "Sediment and frequent cycling shorten life. Short cycling, low pressure or spitting air mean the pump or pressure tank is in trouble.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Well Pump 15"
+      }
+    ]
+  },
+  {
+    "id": "septic-system",
+    "title": "Septic system",
+    "zone": "drains-sewer",
+    "lifeLow": 15,
+    "lifeHigh": 40,
+    "note": "Regular pumping and inspection extend life; the drainfield usually fails first. Slow drains, odors and wet or unusually green ground over the drainfield are the warning signs.",
+    "sources": [
+      {
+        "url": "https://www.epa.gov/sites/default/files/2017-08/documents/170803-homebuyerssepticguidebrochurelayout_508c.pdf",
+        "publisher": "US EPA, New Homebuyer's Guide to Septic Systems",
+        "tier": "primary",
+        "quote": "The average lifespan of a septic system is 15 to 40 years, but it can last longer if properly maintained!"
+      }
+    ]
+  },
+  {
+    "id": "water-softener",
+    "title": "Water softener",
+    "zone": "plumbing-supply",
+    "lifeLow": 20,
+    "lifeHigh": 20,
+    "note": "Salt bridges and resin wear reduce performance. Hard-water scale returning means it needs service.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Water Softener 20"
+      }
+    ]
+  },
+  {
+    "id": "faucets",
+    "title": "Faucets and spray hose",
+    "zone": "bathroom",
+    "lifeLow": 15,
+    "lifeHigh": 20,
+    "note": "Drips and stiff handles mean worn cartridges or seals. A fix is usually cheap.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Faucets and Spray Hose 15 to 20"
+      }
+    ]
+  },
+  {
+    "id": "toilets",
+    "title": "Toilets",
+    "zone": "bathroom",
+    "lifeLow": 100,
+    "lifeHigh": 100,
+    "note": "The china bowl lasts (the chart says 100+). The tank parts wear out in about five years, so a running toilet is a cheap repair.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Toilets, Bidets and Urinals 100+"
+      },
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Toilet Tank Components 5"
+      }
+    ]
+  },
+  {
+    "id": "copper-water-lines",
+    "title": "Copper water supply lines",
+    "zone": "plumbing-supply",
+    "lifeLow": 50,
+    "lifeHigh": 70,
+    "note": "Acidic water and high pressure shorten life. Green stains and pinhole leaks are the warning signs.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Copper Water Lines 70"
+      },
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Water Line (copper) 50"
+      }
+    ]
+  },
+  {
+    "id": "cast-iron-drain-pipe",
+    "title": "Cast-iron drain pipe (below ground)",
+    "zone": "drains-sewer",
+    "lifeLow": 50,
+    "lifeHigh": 60,
+    "note": "Old cast-iron drains rust from the inside. Repeated backups and slow drains in a house of this age are worth a camera inspection.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Cast-Iron Waste Pipe (below ground) 50 to 60"
+      }
+    ]
+  },
+  {
+    "id": "chimney-flue-tile",
+    "title": "Chimney flue tile",
+    "zone": "chimney",
+    "lifeLow": 40,
+    "lifeHigh": 120,
+    "note": "A cracked liner can let heat and fumes reach the framing. Have the chimney inspected before using the fireplace in an older house.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Chimney Flue Tile 40 to 120"
+      }
+    ]
+  },
+  {
+    "id": "carpet",
+    "title": "Carpet",
+    "zone": "interior-surfaces",
+    "lifeLow": 8,
+    "lifeHigh": 10,
+    "note": "Traffic and cleaning set the life. Matting, stains that return and worn backing mean it is done.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Carpet 8 to 10"
+      }
+    ]
+  },
+  {
+    "id": "hardwood-floor",
+    "title": "Hardwood floor",
+    "zone": "interior-surfaces",
+    "lifeLow": 100,
+    "lifeHigh": 100,
+    "note": "Solid wood can be refinished several times and lasts for the life of the house (the chart says 100+). Water damage is what ends it.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "All Wood Floors 100+"
+      }
+    ]
+  },
+  {
+    "id": "vinyl-floor",
+    "title": "Vinyl floor",
+    "zone": "interior-surfaces",
+    "lifeLow": 25,
+    "lifeHigh": 25,
+    "note": "Curling seams and cracks let water reach the subfloor. Very old sheet vinyl can contain asbestos, so do not sand it.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
+        "tier": "trade",
+        "quote": "Vinyl 25"
+      }
+    ]
+  }
+]
