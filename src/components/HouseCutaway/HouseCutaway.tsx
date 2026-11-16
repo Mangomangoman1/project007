@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import { Children, Fragment, cloneElement, isValidElement, type ReactElement, type ReactNode } from 'react';
 import type { Zone } from '@/lib/types';
 import { ZONE_LABEL } from '@/lib/labels';
 import { aggregate, batt, hatch, pts, rectPoly, stipple, type Pt } from './geometry';
@@ -645,6 +645,24 @@ const CALLOUT: Record<Zone, Callout> = {
 
 const ALL: Zone[] = ORDER;
 
+/**
+ * Detail a thumbnail never shows (hatching, stipple, aggregate, fine and dashed lines are
+ * `display: none` at 'sm' in the CSS). Dropping it from the markup keeps the report's many
+ * thumbnails light (each one would otherwise carry ~30 KB of invisible paths).
+ */
+const THUMB_HIDDEN = [s.fine, s.h, s.dots, s.agg, s.dash];
+
+function pruneHidden(node: ReactNode): ReactNode {
+  if (Array.isArray(node)) return node.map(pruneHidden);
+  if (!isValidElement(node)) return node;
+  const el = node as ReactElement<{ className?: string; children?: ReactNode }>;
+  const cls = el.props.className;
+  if (cls && cls.split(' ').some((c) => THUMB_HIDDEN.includes(c))) return null;
+  if (el.props.children === undefined) return el;
+  const kids = Children.toArray(el.props.children).map(pruneHidden);
+  return el.type === Fragment ? <Fragment key={el.key}>{kids}</Fragment> : cloneElement(el, undefined, kids);
+}
+
 function listWords(items: string[]) {
   if (items.length <= 1) return items.join('');
   return `${items.slice(0, -1).join(', ')} and ${items[items.length - 1]}`;
@@ -662,7 +680,13 @@ export function HouseCutaway({ zones = [], counts, size = 'md', label, className
   const countList = counts
     ? ALL.filter((z) => (counts[z] ?? 0) > 0).map((z) => ({ z, n: counts[z] as number }))
     : [];
-  const art = drawing();
+  const thumb = size === 'sm';
+  const full = drawing();
+  const art = thumb
+    ? (Object.fromEntries(
+        ORDER.map((z) => [z, { ...full[z], art: pruneHidden(full[z].art) }]),
+      ) as Record<Zone, ZoneArt>)
+    : full;
   const hi = on.size > 0;
   const showTags = hi && countList.length === 0;
 
@@ -692,7 +716,7 @@ export function HouseCutaway({ zones = [], counts, size = 'md', label, className
       >
         {/* earth and grade */}
         <g className={s.ctx} aria-hidden="true">
-          <path className={`${s.h} ${s.earth}`} d={earth} />
+          {thumb ? null : <path className={`${s.h} ${s.earth}`} d={earth} />}
           <path className={s.o} d={`M0 ${GL}H58M568 ${GL}H840`} />
         </g>
 

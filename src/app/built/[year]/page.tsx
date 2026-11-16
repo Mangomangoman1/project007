@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { allYears, getIssuesForYear, getIssuesLite, getLifespans } from '@/lib/data';
+import { allYears, getIssuesForYear, getIssuesTimeline, getLifespansLite } from '@/lib/data';
 import { MAX_YEAR, SITE, isValidYear } from '@/lib/site';
 import { plural } from '@/lib/labels';
 import { Report } from '@/components/report/Report';
@@ -38,8 +38,8 @@ export default async function BuiltYearPage({ params }: Props) {
     <Report
       year={year}
       issues={getIssuesForYear(year).map(toReportIssue)}
-      lifespans={getLifespans()}
-      timelineIssues={getIssuesLite()}
+      lifespans={getLifespansLite()}
+      timelineIssues={getIssuesTimeline()}
     />
   );
 }

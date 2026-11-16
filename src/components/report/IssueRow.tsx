@@ -8,11 +8,12 @@ import { IssueBand } from '../IssueBand';
 import { CheckFirstTag, EvidenceStamp, Prevalence, RegionTag } from '../Stamps';
 import styles from './IssueRow.module.css';
 
-/** An issue as the report needs it: full copy, sources reduced to counts. */
-export type ReportIssue = Omit<Issue, 'sources'> & { sourceCount: number; primaryCount: number };
+/** An issue as the report needs it: the copy it shows, sources reduced to counts (no summary: the report never prints it). */
+export type ReportIssue = Omit<Issue, 'sources' | 'summary'> & { sourceCount: number; primaryCount: number };
 
 export const toReportIssue = (i: Issue): ReportIssue => {
-  const { sources, ...rest } = i;
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars -- dropped from the client payload
+  const { sources, summary, ...rest } = i;
   return { ...rest, sourceCount: sources.length, primaryCount: sources.filter((s) => s.tier === 'primary').length };
 };
 

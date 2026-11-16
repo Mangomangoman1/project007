@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { Lifespan, Zone } from '@/lib/types';
-import type { IssueLite } from '@/lib/data';
+import type { IssueTimeline } from '@/lib/data';
 import { groupByPart, groupLifespans, inState, isCore, issuesForYear } from '@/lib/select';
 import { PARTS, STATES, STATE_NAME, plural } from '@/lib/labels';
 import { MAX_YEAR, MIN_YEAR, STORAGE_KEYS } from '@/lib/site';
@@ -31,7 +31,7 @@ export type ReportProps = {
   issues: ReportIssue[];
   lifespans: Lifespan[];
   /** All issues, for the timeline. */
-  timelineIssues: IssueLite[];
+  timelineIssues: IssueTimeline[];
 };
 
 /**

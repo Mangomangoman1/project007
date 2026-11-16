@@ -1,0 +1,744 @@
+{
+  "checked": [
+    "knob-and-tube-wiring",
+    "cloth-rubber-insulated-wiring",
+    "ungrounded-two-prong-outlets",
+    "aluminum-branch-wiring",
+    "fpe-stab-lok-panels",
+    "zinsco-sylvania-panels",
+    "challenger-panels",
+    "fuse-box-60-amp-service",
+    "split-bus-panels",
+    "gfci-protection-milestones",
+    "afci-protection-milestones",
+    "tamper-resistant-receptacles",
+    "square-d-qo-pon-recall-2020-2022",
+    "lead-service-line",
+    "lead-solder-copper",
+    "galvanized-steel-supply",
+    "polybutylene-supply",
+    "kitec-plumbing",
+    "orangeburg-sewer-pipe",
+    "pre-1994-high-flow-toilets",
+    "lead-based-paint",
+    "asbestos-popcorn-ceiling",
+    "asbestos-floor-tile-sheet-flooring",
+    "asbestos-pipe-boiler-duct-insulation",
+    "asbestos-cement-siding-roofing",
+    "asbestos-joint-compound-texture",
+    "vermiculite-attic-insulation",
+    "urea-formaldehyde-foam-insulation",
+    "problem-chinese-drywall",
+    "pcb-caulk-light-ballasts",
+    "chlordane-termiticide",
+    "cca-treated-lumber"
+  ],
+  "patches": {
+    "knob-and-tube-wiring": {
+      "hook": "Many houses wired before about 1940 started out with single wires strung on porcelain knobs, no ground wire, and insulation that is now more than 80 years old.",
+      "prevalence.note": "No reliable count exists. A house wired between about 1900 and 1930 most likely started with it; how much is still live depends on later rewiring, which nobody tracks."
+    },
+    "cloth-rubber-insulated-wiring": {
+      "hook": "Between knob-and-tube and modern plastic cable, many houses were wired with rubber-insulated wire in a woven cloth jacket, and that old rubber can get brittle.",
+      "summary": "Nonmetallic sheathed cable was invented in 1922 and first listed in the National Electrical Code in 1926. For decades after, wiring commonly used rubber-insulated conductors inside a cloth or steel-armored jacket. Old rubber insulation can dry out and flake, especially at hot ceiling light boxes, and older cable often has no ground wire.",
+      "prevalence.note": "No reliable count exists. For a house built from about 1930 to 1955 that was never rewired, this was probably the normal wiring method, but that is an informed guess, not a measured figure."
+    },
+    "ungrounded-two-prong-outlets": {
+      "check.2": "If an electrician opens the panel, old cables with only two conductors and no bare ground wire are another sign. Do not remove the panel cover yourself."
+    },
+    "aluminum-branch-wiring": {
+      "hook": "From 1965 to the mid-1970s, some houses were wired with solid aluminum instead of copper, and CPSC reports that pre-1972 aluminum-wired homes were 55 times more likely to have one or more outlet connections reach fire-hazard conditions.",
+      "check.1": "'CU-clad' or 'copper-clad' aluminum is a different product; ask an electrician about it.",
+      "action": "Call a licensed electrician who uses the CPSC-recognized repairs: rewiring with copper, COPALUM crimp connectors, or AlumiConn connectors. CPSC calls CO/ALR outlets and switches an incomplete repair. If you notice warm plates or a burning smell, stop using that circuit until it is checked.",
+      "caveat": "CPSC's hazard figure covers homes built before 1972; CPSC says no information was developed for aluminum-wired homes built after that. CPSC dates use only to 'the mid 1970s', so the end year is soft."
+    },
+    "fpe-stab-lok-panels": {
+      "hook": "Federal Pacific Stab-Lok breaker panels were made from 1950 to 1980, and CPSC's own testing found breakers that failed calibration tests.",
+      "summary": "Federal Pacific Electric made Stab-Lok breakers from 1950 to 1980, and they turn up mostly in houses built before 1990. CPSC investigated from 1980 to 1983, confirmed breakers failing UL calibration tests, then closed the matter without a recall and without deciding whether they are safe.",
+      "action": "Have a licensed electrician inspect it. Replacing the whole panel is the usual fix. There was never a recall, so there is no manufacturer remedy.",
+      "caveat": "CPSC closed its investigation without a finding either way, and the widely quoted failure rates come from independent testing that could not be checked. The production years come from a reference source, not from CPSC."
+    },
+    "zinsco-sylvania-panels": {
+      "prevalence.note": "No reliable count exists, and no checked source shows where they were most common.",
+      "check.0": "Open the panel door and read the label for Zinsco, Sylvania, Sylvania-Zinsco or GTE-Sylvania."
+    },
+    "challenger-panels": {
+      "evidence": "era"
+    },
+    "fuse-box-60-amp-service": {
+      "hook": "Houses built from 1940 through 1965 commonly got a 60-amp fuse box with four screw-in fuses; after 1965, 100-amp service became common.",
+      "check.2": "If the main fuse or pull-out shows no rating, an electrician can confirm the service size."
+    },
+    "split-bus-panels": {
+      "prevalence.note": "No reliable count exists, and the share of houses of the era with one is unknown.",
+      "check.2": "Read the brand on the label too, and check it against the Federal Pacific and Zinsco entries."
+    },
+    "gfci-protection-milestones": {
+      "hook": "CPSC says houses built before 1973 have no GFCI shock protection unless it was added later, and the code then added it one area at a time: bathrooms in 1975, garages in 1978, some kitchen outlets in 1987.",
+      "check.3": "Press RESET afterwards. A GFCI that does not trip when you press TEST needs replacing."
+    },
+    "afci-protection-milestones": {
+      "action": "This is an optional upgrade: an electrician can fit AFCI or dual-function breakers where your panel supports them.",
+      "caveat": "States adopt each code edition on their own schedule, so build year is a weak guide on its own. Only the 2002 bedroom date is confirmed by a primary source."
+    },
+    "tamper-resistant-receptacles": {
+      "action": "If small children live in or visit the house, have outlets replaced with TR-listed ones.",
+      "caveat": "2008 is the model code year; states adopted it at different times. As of 2016, the rule did not apply to manufactured homes."
+    },
+    "square-d-qo-pon-recall-2020-2022": {
+      "caveat": "The recall also covers panels installed as replacements in older houses, so build year is only a rough guide. Houses finished in 2022 and 2023 may have panels from late in the window."
+    },
+    "lead-service-line": {
+      "prevalence.note": "EPA's 2025 estimate is about 4 million lead service lines nationwide, a count that includes galvanized lines EPA treats as lead; its 2023 survey estimated 9.2 million. They are concentrated in older cities, and no figure gives the share by build year.",
+      "caveat": "Whether a given house has a lead line depends much more on the city than on the year: a trade source says lead was rarely used after about 1950, but the federal ban did not come until 1986. EPA's national estimates have also changed sharply between surveys."
+    },
+    "lead-solder-copper": {
+      "summary": "The 1986 Safe Drinking Water Act amendments banned solder with more than 0.2% lead in drinking-water plumbing after June 19, 1986, and gave states 24 months to enforce it. Pipes and fittings could still contain up to 8% lead until the limit dropped to a 0.25% weighted average in January 2014. You cannot reliably tell lead solder by eye; a water test is the practical check.",
+      "prevalence.note": "No reliable count exists of how many houses built before the ban still have lead-solder joints."
+    },
+    "galvanized-steel-supply": {
+      "action": "Have a plumber assess it. Repiping the house in copper or PEX is the usual remedy. If the service line is galvanized, check the utility's inventory for lead upstream."
+    },
+    "polybutylene-supply": {
+      "prevalence.note": "InterNACHI gives an upper estimate of up to 10 million homes. No source gives the share of houses of the era.",
+      "action": "Talk to a plumber about repiping in PEX or copper, the standard recommendation. Check with your insurer, since InterNACHI notes some owners face higher premiums or are refused coverage.",
+      "caveat": "Sources put the end anywhere from mid-1995 to 1997, so a few later houses are possible. Many polybutylene systems have already been replaced."
+    },
+    "kitec-plumbing": {
+      "check.1": "Read the print on the pipe for the Kitec name."
+    },
+    "pre-1994-high-flow-toilets": {
+      "hook": "Since 1994, new toilets can use only 1.6 gallons per flush, less than half the water of most models in use before then."
+    },
+    "lead-based-paint": {
+      "action": "If young children live in the house or you plan to renovate, get a lead inspection or risk assessment. Contractors paid to disturb paint in pre-1978 homes must follow EPA's Renovation, Repair and Painting rule. Options range from stabilizing and repainting to abatement by certified firms; do not dry-sand or scrape old paint yourself."
+    },
+    "asbestos-popcorn-ceiling": {
+      "hook": "Bumpy 'popcorn' ceilings put up through the 1980s sometimes contain asbestos, and only a lab test can tell.",
+      "evidence": "era",
+      "check.2": "Do not scrape or sample it yourself; leave sampling to a trained asbestos professional."
+    },
+    "asbestos-floor-tile-sheet-flooring": {
+      "hook": "Old vinyl floor tiles frequently contain asbestos, and so can the black glue under them; there was no effective federal ban on asbestos floor tile until a 2019 rule."
+    },
+    "asbestos-pipe-boiler-duct-insulation": {
+      "caveat": "Asbestos duct tape and paper have no clear end date in the sources. Many houses of this era have had this insulation removed or sealed."
+    },
+    "asbestos-joint-compound-texture": {
+      "summary": "CPSC banned consumer patching and tape joint compounds containing asbestos, with the ban taking effect in 1978, along with textured paints that contained it. It is a concern when walls are sanded, cut or demolished.",
+      "prevalence.note": "No reliable count exists of how many houses have it."
+    },
+    "vermiculite-attic-insulation": {
+      "hook": "Loose, pebbly vermiculite insulation in the attic may contain asbestos, and EPA advises treating it as if it does.",
+      "check.2": "It is often under newer fiberglass or cellulose.",
+      "action": "Do not disturb it, and keep stored belongings out of that attic. Sealing gaps around ceiling lights and openings helps keep dust out of the house. For any attic work, hire a licensed asbestos abatement contractor."
+    },
+    "urea-formaldehyde-foam-insulation": {
+      "hook": "Some 500,000 homes already had foam insulation pumped into their walls when CPSC banned it in 1982, and a court overturned the ban the next year.",
+      "summary": "Urea-formaldehyde foam was injected into wall cavities, both in new houses and as a retrofit in existing ones. CPSC banned it for homes in 1982; a federal appeals court overturned the ban in 1983, though CPSC said afterward that it still considered the foam a hazardous product.",
+      "applies.from": null,
+      "applies.coreFrom": null,
+      "applies.coreTo": null,
+      "prevalence.note": "A commissioner's statement in CPSC's 1982 release referred to some 500,000 homes already insulated with the foam, a small share of US housing.",
+      "caveat": "It was installed in new houses and added to existing ones, so build year is a weak guide. The start years are approximate."
+    },
+    "problem-chinese-drywall": {
+      "check.2": "In the attic, look at the back of exposed drywall for Chinese manufacturer markings."
+    },
+    "pcb-caulk-light-ballasts": {
+      "hook": "Fluorescent fixtures with magnetic ballasts made before 1979 may contain PCBs; non-PCB ballasts made from July 1979 to July 1998 had to be labeled 'No PCBs'.",
+      "summary": "EPA says PCB-containing building materials may have been widely used in buildings built or renovated between about 1950 and 1979, and that magnetic ballasts made before 1979 may contain PCBs. In a house the realistic case is an original fluorescent fixture in a garage, basement, kitchen or workshop. PCB caulk is documented mainly in schools and larger buildings.",
+      "caveat": "EPA's guidance addresses schools and other buildings, not single-family homes."
+    },
+    "chlordane-termiticide": {
+      "hook": "From 1948 to 1988, chlordane was used in the US as a pesticide, including against termites around houses, and ATSDR says more than 50 million people have lived in treated homes.",
+      "summary": "Chlordane was applied to the soil around and under houses to stop termites; from 1983 that was its only approved use, and EPA banned all uses in 1988. ATSDR says houses built since 1988 have not been treated with it."
+    },
+    "cca-treated-lumber": {
+      "summary": "Wood treated with chromated copper arsenate (CCA) was used for residential decks and playsets until manufacturers stopped making it for homeowner uses at the end of 2003. Arsenic can come off the surface of the wood, which is why CPSC tested coatings to reduce it. EPA does not recommend removing existing structures.",
+      "caveat": "Old stock could still be sold after 2003, so some decks built in 2004 may have used it, and the 1975 start is approximate. Decks are often built or replaced long after the house, so the deck's age matters more than the house's."
+    }
+  },
+  "findings": [
+    {
+      "id": "knob-and-tube-wiring",
+      "field": "hook",
+      "severity": "overstated",
+      "was": "Houses wired before about 1940 started out with single wires strung on porcelain knobs, no ground wire, and insulation that is now more than 80 years old.",
+      "problem": "Says houses wired before about 1940 'started out' with knob-and-tube, i.e. all of them. Sources give an era of common use, not universal use, and the DOE treats it as pre-1930.",
+      "basis": "InterNACHI: 'in common use in North America from about 1880 to the 1940s'; what_is_not: 'Exact end year: DOE says pre-1930'.",
+      "fix": "patch: adds 'Many'."
+    },
+    {
+      "id": "knob-and-tube-wiring",
+      "field": "prevalence.note",
+      "severity": "overstated",
+      "was": "No reliable count exists. A house wired between about 1900 and 1930 almost certainly started with it; how much is still live depends on later rewiring, which nobody tracks.",
+      "problem": "'Almost certainly started with it' for 1900-1930 is the researcher's reasoning; no source gives peak years or prevalence.",
+      "basis": "what_is_not: 'Peak years are still my reading. No prevalence figure exists.'",
+      "fix": "patch: 'almost certainly' becomes 'most likely'."
+    },
+    {
+      "id": "cloth-rubber-insulated-wiring",
+      "field": "hook",
+      "severity": "unsupported",
+      "was": "Between knob-and-tube and modern plastic cable, houses were wired with rubber-insulated wire in a woven cloth jacket, and that rubber crumbles with age.",
+      "problem": "'That rubber crumbles with age' and 'houses were wired with' (all houses) have no verified source. The only verified source (Wikipedia) dates NM cable; the deterioration claim is the entry's reason to exist, so it is softened, not removed.",
+      "basis": "what_is_confirmed: 'Start of NM cable: invented 1922, in the NEC 1926 (Wikipedia, reference tier only).' what_is_not: 'any prevalence or failure data'.",
+      "fix": "patch: 'many houses' and 'can get brittle'; the deterioration claim still needs a source."
+    },
+    {
+      "id": "cloth-rubber-insulated-wiring",
+      "field": "summary",
+      "severity": "unsupported",
+      "was": "Cable of this kind was invented in 1922 and first listed in the National Electrical Code in 1926. For decades after, wiring commonly used rubber-insulated conductors inside a cloth or steel-armored jacket. The rubber dries out and flakes, worst at hot ceiling light boxes, and most of this cable has no ground wire.",
+      "problem": "'Cable of this kind was invented in 1922' applies the NM-cable dates to all cloth/armored rubber wiring (armored cable is a different product). 'The rubber dries out and flakes' and 'most of this cable has no ground wire' are stated as fact with no verified source (the UL/Dini paper was not opened).",
+      "basis": "Wikipedia quote: 'NM was first listed and described in the NEC in 1926, but it was invented a few years earlier by the Rome Wire Company in 1922'. what_is_not: 'any prevalence or failure data. No primary or trade source on an allowed host was found'.",
+      "fix": "patch: names NM cable for the dates and hedges the failure and ground claims ('can', 'often'); still needs a source."
+    },
+    {
+      "id": "cloth-rubber-insulated-wiring",
+      "field": "prevalence.note",
+      "severity": "overstated",
+      "was": "No reliable count exists. For a house built from about 1930 to 1955 that was never rewired, this was the normal wiring method.",
+      "problem": "'This was the normal wiring method' is presented as fact; the research calls it reasoning only.",
+      "basis": "prevalence_basis: 'No prevalence data exists. Reasoning only'.",
+      "fix": "patch: 'probably', and says it is reasoning."
+    },
+    {
+      "id": "ungrounded-two-prong-outlets",
+      "field": "check.2",
+      "severity": "unsafe",
+      "was": "At the panel, look for old cables with only two conductors and no bare wire.",
+      "problem": "Seeing whether cables 'at the panel' have a bare ground wire means removing the panel's inner cover (dead front), which a homeowner should not do.",
+      "basis": "Task safety rule; how_to_identify gives the clue but no source says a homeowner can see it safely.",
+      "fix": "patch: routes the panel look to an electrician and says not to remove the cover."
+    },
+    {
+      "id": "aluminum-branch-wiring",
+      "field": "hook",
+      "severity": "wrong",
+      "was": "From 1965 to the mid-1970s, some houses were wired with solid aluminum instead of copper, and CPSC found that connections in pre-1972 aluminum-wired homes were 55 times more likely to reach fire-hazard conditions.",
+      "problem": "Misstates the CPSC statistic: it is homes that are 55 times more likely to have one or more outlet connections reach fire-hazard conditions, not connections that are 55 times more likely. 'CPSC found' also overstates: the figure is from a survey CPSC reports in Pub. 516.",
+      "basis": "CPSC Pub. 516: 'homes built before 1972, and wired with aluminum, are 55 times more likely to have one or more wire connections at outlets reach “Fire Hazard Conditions”'.",
+      "fix": "patch: restates the figure as the quote has it, with 'CPSC reports'."
+    },
+    {
+      "id": "aluminum-branch-wiring",
+      "field": "check.1",
+      "severity": "unsupported",
+      "was": "'CU-clad' or 'copper-clad' aluminum is a different, lower-risk product.",
+      "problem": "'Lower-risk' is a relative-risk claim with no verified source; only identification by the 'AL'/'ALUMINUM' marking is confirmed.",
+      "basis": "what_is_confirmed: 'identification by \"Al\"/\"Aluminum\" on the cable jacket.'",
+      "fix": "patch: drops 'lower-risk'."
+    },
+    {
+      "id": "aluminum-branch-wiring",
+      "field": "action",
+      "severity": "unsupported",
+      "was": "Call a licensed electrician who uses the CPSC-recognized repairs: rewiring with copper, COPALUM crimp connectors, or AlumiConn connectors. CPSC calls CO/ALR outlets and switches an incomplete repair and twist-on pigtail connectors a temporary measure. If you notice warm plates or a burning smell, stop using that circuit until it is checked.",
+      "problem": "Credits CPSC with calling twist-on pigtail connectors 'a temporary measure'. Only the CO/ALR 'incomplete repair' wording and the three permanent repairs are confirmed; the pigtail wording is from an unverified mirror.",
+      "basis": "what_is_confirmed: 'three CPSC-approved repairs and the CO/ALR \"incomplete repair\" wording'.",
+      "fix": "patch: removes the pigtail clause."
+    },
+    {
+      "id": "aluminum-branch-wiring",
+      "field": "caveat",
+      "severity": "unsupported",
+      "was": "CPSC's hazard figure covers homes wired before 1972; later aluminum wire used an improved alloy and has less data behind it. CPSC dates use only to 'the mid 1970s', so the end year is soft. Most houses of the era were wired in copper.",
+      "problem": "'Later aluminum wire used an improved alloy' rests on the unopened 1975 NBS report and trade sources; 'Most houses of the era were wired in copper' has no source (the share-of-era estimate is an unverified calculation).",
+      "basis": "date_notes: Pub. 516 says 'No information was developed for aluminum-wired homes built after 1972.' what_is_not: 'The 10-15% share-of-era estimate is still an unverified calculation. The NBS 1975 statement about newer alloy wire ... not checked.'",
+      "fix": "patch: replaces the alloy claim with CPSC's own wording and drops the copper sentence."
+    },
+    {
+      "id": "fpe-stab-lok-panels",
+      "field": "hook",
+      "severity": "unsupported",
+      "was": "Federal Pacific Stab-Lok breaker panels, made from 1950 to 1980, are among the panels home inspectors flag most, and CPSC's own testing found breakers that failed calibration tests.",
+      "problem": "'Among the panels home inspectors flag most' has no verified source (insurer and inspector material was not opened).",
+      "basis": "what_is_confirmed lists only the CPSC investigation facts and the Wikipedia production years.",
+      "fix": "patch: removes the inspector claim."
+    },
+    {
+      "id": "fpe-stab-lok-panels",
+      "field": "summary",
+      "severity": "unsupported",
+      "was": "Federal Pacific Electric made Stab-Lok breakers from 1950 to 1980, and they turn up mostly in houses built before 1990. CPSC investigated from 1980 to 1983, confirmed breakers failing UL calibration tests, then closed the matter without a recall and without deciding whether they are safe. CPSC advises having these panels inspected by an electrician.",
+      "problem": "'CPSC advises having these panels inspected by an electrician' is not in the verified CPSC quote, its supports note or what_is_confirmed.",
+      "basis": "CPSC source supports: 'Two-year investigation closed March 3, 1983 ... with no recall; CPSC testing confirmed breakers fail certain UL calibration tests; focus on 2-pole breakers ... budget cited'.",
+      "fix": "patch: removes the CPSC-advice sentence."
+    },
+    {
+      "id": "fpe-stab-lok-panels",
+      "field": "action",
+      "severity": "unsupported",
+      "was": "Have a licensed electrician inspect it, as CPSC advises. Replacing the whole panel is the usual fix; replacement breakers of the same type are not shown to be any better. There was never a recall, so there is no manufacturer remedy.",
+      "problem": "'As CPSC advises' is the same unsupported attribution, and 'replacement breakers of the same type are not shown to be any better' has no verified source.",
+      "basis": "Same CPSC supports note as above; risk.financial claim cites no source.",
+      "fix": "patch: removes both."
+    },
+    {
+      "id": "fpe-stab-lok-panels",
+      "field": "caveat",
+      "severity": "unsupported",
+      "was": "CPSC closed its investigation without a finding either way, and the widely quoted failure rates come from independent testing that could not be checked. FPE's own production ended around 1980; later panels of this design came from successor companies.",
+      "problem": "'Later panels of this design came from successor companies' is unverified (from date_notes, not an opened page).",
+      "basis": "what_is_not: 'Start/end years rest on Wikipedia only.'",
+      "fix": "patch: replaces it with the actual limit of the dates."
+    },
+    {
+      "id": "zinsco-sylvania-panels",
+      "field": "prevalence.note",
+      "severity": "unsupported",
+      "was": "No reliable count exists. Trade sources say they were most common in the West, but no figure backs that.",
+      "problem": "Attributes a regional claim to 'trade sources' that were never verified.",
+      "basis": "what_is_not: 'The 32% failure-to-trip figure, prevalence, regional concentration and costs were not checked.'",
+      "fix": "patch: removes the regional claim."
+    },
+    {
+      "id": "zinsco-sylvania-panels",
+      "field": "check.0",
+      "severity": "unsupported",
+      "was": "Open the panel door and read the label for Zinsco, Sylvania, Sylvania-Zinsco, GTE-Sylvania or Kearney.",
+      "problem": "Brand name 'Kearney' appears in no verified quote or what_is_confirmed.",
+      "basis": "Wikipedia supports: Zinsco Electric, GTE-Sylvania, relabelled Challenger in 1978. No source mentions Kearney.",
+      "fix": "patch: drops Kearney."
+    },
+    {
+      "id": "challenger-panels",
+      "field": "evidence",
+      "severity": "wrong",
+      "was": "record",
+      "problem": "'record' requires a verified primary source for the dates. The only primary source (CPSC recall 88-095) covers breakers made 22 Feb to 29 Apr 1988; the 1978-1994 panel years rest on one under-cited Wikipedia article.",
+      "basis": "what_is_not: 'Production years rest on one under-cited Wikipedia article.'",
+      "fix": "patch: evidence becomes 'era' (edges are already soft)."
+    },
+    {
+      "id": "fuse-box-60-amp-service",
+      "field": "hook",
+      "severity": "overstated",
+      "was": "Houses built from 1940 through 1965 commonly got a 60-amp fuse box with four screw-in fuses; after 1965, 100-amp service became the norm.",
+      "problem": "'100-amp service became the norm' is stronger than the only source, which says it became common.",
+      "basis": "date_notes (Wikipedia, opened): after 1965 'the 100 A panel became common'.",
+      "fix": "patch: 'the norm' becomes 'common'."
+    },
+    {
+      "id": "fuse-box-60-amp-service",
+      "field": "check.2",
+      "severity": "unsupported",
+      "was": "A round meter base outside usually indicates 60 amps or less.",
+      "problem": "'A round meter base outside usually indicates 60 amps or less' has no verified source and could mislead readers about their service size.",
+      "basis": "Only verified source: Wikipedia quote on 1940-1965 60-amp fuse boxes. what_is_not: 'No primary or trade source'.",
+      "fix": "patch: replaces the inference with a referral."
+    },
+    {
+      "id": "split-bus-panels",
+      "field": "prevalence.note",
+      "severity": "unsupported",
+      "was": "No reliable count exists. Most manufacturers offered this style, but its share of houses of the era is unknown.",
+      "problem": "'Most manufacturers offered this style' is reasoning from prevalence_basis, not a verified source.",
+      "basis": "what_is_confirmed covers era, design, six-throw rule and 2020 NEC only.",
+      "fix": "patch: removes the claim."
+    },
+    {
+      "id": "split-bus-panels",
+      "field": "check.2",
+      "severity": "unsupported",
+      "was": "Read the brand on the label too: some split-bus panels are Federal Pacific or Zinsco.",
+      "problem": "States that some split-bus panels are Federal Pacific or Zinsco; that brand link is in risk.safety only, with no verified source.",
+      "basis": "InterNACHI quote covers era and design only.",
+      "fix": "patch: points readers to the brand entries without asserting the link."
+    },
+    {
+      "id": "gfci-protection-milestones",
+      "field": "hook",
+      "severity": "overstated",
+      "was": "Houses built before 1973 had no GFCI shock protection at all, and the rules then added it one room at a time: bathrooms in 1975, garages in 1978, kitchens in 1987.",
+      "problem": "'Kitchens in 1987' overstates CPSC's 'some kitchen receptacles since 1987'. 'Had no GFCI shock protection at all' also states it as a fact about every house, where CPSC says no protection unless added later.",
+      "basis": "CPSC 1991 release: 'some kitchen receptacles since 1987'; CPSC: 'Homes and apartment buildings constructed prior to 1973 do not have protection unless GFCIs subsequently were installed'.",
+      "fix": "patch: matches CPSC wording."
+    },
+    {
+      "id": "gfci-protection-milestones",
+      "field": "check.3",
+      "severity": "unsupported",
+      "was": "Press RESET afterwards. GFCIs wear out, and older units can fail without any sign.",
+      "problem": "'GFCIs wear out, and older units can fail without any sign' has no verified source (from how_to_identify only).",
+      "basis": "No verified quote covers GFCI failure.",
+      "fix": "patch: keeps the practical step without the claim."
+    },
+    {
+      "id": "afci-protection-milestones",
+      "field": "action",
+      "severity": "unsupported",
+      "was": "This is an optional upgrade: an electrician can fit AFCI or dual-function breakers where your panel supports them. They are not made for many older panels.",
+      "problem": "'They are not made for many older panels' has no verified source (risk.financial, unsourced).",
+      "basis": "Verified sources cover only the code dates.",
+      "fix": "patch: removes the sentence."
+    },
+    {
+      "id": "afci-protection-milestones",
+      "field": "caveat",
+      "severity": "unsupported",
+      "was": "AFCI adoption was unusually uneven: several states delayed, limited or amended out the requirement, so build year is a weak guide on its own. Only the 2002 bedroom date is confirmed by a primary source.",
+      "problem": "'Several states delayed, limited or amended out the requirement' is not supported by any verified source; the research says state adoption is not covered.",
+      "basis": "what_is_not: 'State-by-state adoption and amendments, which matter a great deal for AFCIs, are not covered.'",
+      "fix": "patch: keeps the general adoption-lag point without the specific claim."
+    },
+    {
+      "id": "tamper-resistant-receptacles",
+      "field": "action",
+      "severity": "unsupported",
+      "was": "If small children live in or visit the house, have outlets replaced with TR-listed ones. Current code requires a TR outlet whenever one is replaced anyway, and they cost little more than standard ones.",
+      "problem": "'Current code requires a TR outlet whenever one is replaced' and 'they cost little more' are both unverified (fix and risk.financial, no source).",
+      "basis": "what_is_confirmed: 2008 NEC, the 2,400 figure, 406.12 numbering and the TR marking only.",
+      "fix": "patch: removes both claims."
+    },
+    {
+      "id": "tamper-resistant-receptacles",
+      "field": "caveat",
+      "severity": "overstated",
+      "was": "2008 is the model code year; states adopted it at different times. The rule did not cover manufactured homes.",
+      "problem": "'The rule did not cover manufactured homes' is stated without the date the source gives.",
+      "basis": "date_notes (HUD record, opened): 'as of 2016 the requirement ... did not apply to manufactured homes in any state'.",
+      "fix": "patch: adds 'As of 2016'."
+    },
+    {
+      "id": "square-d-qo-pon-recall-2020-2022",
+      "field": "caveat",
+      "severity": "unsupported",
+      "was": "The recall also covers panels installed as replacements in older houses, so build year is only a rough guide. Houses finished in 2022 and 2023 may have panels from late in the window. Most houses built in these years have other brands or models.",
+      "problem": "'Most houses built in these years have other brands or models' has no source; the research says no market-share data exists.",
+      "basis": "what_is_not: 'Share of 2020-22 homes affected (no market-share data)'.",
+      "fix": "patch: removes the sentence."
+    },
+    {
+      "id": "lead-service-line",
+      "field": "prevalence.note",
+      "severity": "overstated",
+      "was": "EPA's 2025 estimate is about 4 million lead service lines nationwide, down from 9.2 million in its 2023 survey. They are concentrated in older cities, and no figure gives the share by build year.",
+      "problem": "'Down from 9.2 million' implies lead lines dropped by 5 million. The two EPA figures use different data, and the 4 million includes galvanized lines EPA treats as lead.",
+      "basis": "date_notes: the 4 million is '3 million reported LSLs and 1 million ... predicted to be LSLs' and includes galvanized-requiring-replacement lines; EPA: 'These pipes are also considered lead service lines.'",
+      "fix": "patch: states both figures without implying a decline."
+    },
+    {
+      "id": "lead-service-line",
+      "field": "caveat",
+      "severity": "unsupported",
+      "was": "Whether a given house has a lead line depends much more on the city than on the year: some places stopped by about 1950, while others kept using lead until the 1986 ban. EPA's national estimates have also changed sharply between surveys.",
+      "problem": "'Others kept using lead until the 1986 ban' rests on the Chicago figures, which were not verified.",
+      "basis": "what_is_not: 'Chicago figures ... (hosts not on the allowed list)'. Verified: InterNACHI 'not used for water service piping since around 1950'; EPA ban 'after June 1986'.",
+      "fix": "patch: keeps only the two verified anchors."
+    },
+    {
+      "id": "lead-solder-copper",
+      "field": "summary",
+      "severity": "wrong",
+      "was": "The 1986 Safe Drinking Water Act amendments banned solder with more than 0.2% lead in drinking-water plumbing after June 19, 1986, and gave states 24 months to enforce it. Faucets and fittings could still contain up to 8% lead until the limit dropped to a 0.25% weighted average in January 2014. You cannot reliably tell lead solder by eye; a water test is the practical check.",
+      "problem": "Says 'faucets and fittings' could contain up to 8% lead. The verified 8% definition is for pipes and pipe fittings; faucets are not in the quote.",
+      "basis": "EPA: 'change the SDWA’s definition of lead free for pipes and pipe-fittings from “containing not more than 8.0 percent lead”'; EPA: 'solder and flux with no more than 0.2% lead and pipes with no more than 8%'.",
+      "fix": "patch: 'Faucets and fittings' becomes 'Pipes and fittings'."
+    },
+    {
+      "id": "lead-solder-copper",
+      "field": "prevalence.note",
+      "severity": "unsupported",
+      "was": "No reliable count exists. Tin-lead solder was the normal way to join copper pipe before the ban, but no survey counts how many pre-1986 houses still have those joints.",
+      "problem": "'Tin-lead solder was the normal way to join copper pipe before the ban' is reasoning only; the 'about 50 percent lead' source was not opened.",
+      "basis": "prevalence_basis: 'No survey figure found. Reasoning only'; what_is_not (lead-solder-and-lead-pipes): 'pre-1986 solder was \"typically about 50% lead\" (host not allowed)'.",
+      "fix": "patch: removes the claim."
+    },
+    {
+      "id": "galvanized-steel-supply",
+      "field": "action",
+      "severity": "unsupported",
+      "was": "Have a plumber assess it. Repiping the house in copper or PEX is the usual remedy, because replacing sections tends not to last. If the service line is galvanized, check the utility's inventory for lead upstream.",
+      "problem": "'Because replacing sections tends not to last' comes from an unverified HOA-law reference.",
+      "basis": "risk.financial cites Davis-Stirling (unverified); what_is_not includes repipe claims.",
+      "fix": "patch: removes the clause."
+    },
+    {
+      "id": "polybutylene-supply",
+      "field": "prevalence.note",
+      "severity": "unsupported",
+      "was": "InterNACHI gives an upper estimate of up to 10 million homes. Against the tens of millions of homes built from 1978 to 1995, that is a minority of houses of the era.",
+      "problem": "'Tens of millions of homes built from 1978 to 1995' is an unsourced housing count.",
+      "basis": "Verified: InterNACHI 'up to 10 million homes' (upper estimate). No housing-start figure retrieved.",
+      "fix": "patch: removes the comparison."
+    },
+    {
+      "id": "polybutylene-supply",
+      "field": "action",
+      "severity": "unsupported",
+      "was": "Talk to a plumber about repiping in PEX or copper, the standard recommendation. The settlement money is no longer available. Check with your insurer, since some charge more or decline coverage.",
+      "problem": "'The settlement money is no longer available' is not verified (the claims-center closing date rests on a weak source).",
+      "basis": "open_questions: 'The exact date the Consumer Plumbing Recovery Center stopped taking claims (one weak source ...)'.",
+      "fix": "patch: removes the sentence and attributes the insurer point to InterNACHI. It is probably true but needs a source before it is stated."
+    },
+    {
+      "id": "polybutylene-supply",
+      "field": "caveat",
+      "severity": "unsupported",
+      "was": "Sources put the end anywhere from mid-1995 to 1997, so a few later houses are possible. Most houses of the era have copper or other plastic pipe, and many polybutylene systems have already been replaced.",
+      "problem": "'Most houses of the era have copper or other plastic pipe' has no source.",
+      "basis": "No verified source gives a share of era housing.",
+      "fix": "patch: removes the claim."
+    },
+    {
+      "id": "kitec-plumbing",
+      "field": "check.1",
+      "severity": "unsupported",
+      "was": "Read the print on the pipe for Kitec or sister names such as PlumbBetter, IPEX AQUA, WarmRite or Kitec XPA.",
+      "problem": "Sister brand names (PlumbBetter, IPEX AQUA, WarmRite, Kitec XPA) appear in no verified quote or what_is_confirmed.",
+      "basis": "Verified quotes name only Kitec and IPEX.",
+      "fix": "patch: keeps only the Kitec name."
+    },
+    {
+      "id": "pre-1994-high-flow-toilets",
+      "field": "hook",
+      "severity": "overstated",
+      "was": "Most toilets made before 1994 use more than twice the water of the 1.6-gallon models required since.",
+      "problem": "'Most toilets made before 1994 use more than twice the water' generalizes across all pre-1994 years. The source compares 1.6 gpf with 'most existing models' at the time of the rule.",
+      "basis": "date_notes (House hearing record, opened): 1.6 gpf was 'less than half the water of most existing models'.",
+      "fix": "patch: restates the comparison as the source does."
+    },
+    {
+      "id": "lead-based-paint",
+      "field": "action",
+      "severity": "unsupported",
+      "was": "If young children live in the house or you plan to renovate, get a lead inspection or risk assessment. Contractors working on pre-1978 homes must follow EPA's Renovation, Repair and Painting rule. Options range from stabilizing and repainting to abatement by certified firms; do not dry-sand or scrape old paint yourself.",
+      "problem": "The RRP rule is credited to EPA and stated for all 'contractors working on pre-1978 homes', but no verified quote covers it, and the rule applies to work that disturbs paint. Removing it would weaken important safety advice, so the patch narrows it to the research wording.",
+      "basis": "risk.financial: 'Contractors paid to disturb paint in pre-1978 homes must follow the EPA Renovation, Repair and Painting (RRP) rule' (no verified source).",
+      "fix": "patch: narrows to contractors who disturb paint. Still needs a verified source."
+    },
+    {
+      "id": "asbestos-popcorn-ceiling",
+      "field": "hook",
+      "severity": "unsupported",
+      "was": "Bumpy 'popcorn' ceilings put up from the 1950s into the 1980s sometimes contain asbestos, and only a lab test can tell.",
+      "problem": "'From the 1950s' is not supported; no opened source gives the start. Only the 1980s tail is supported (Wikipedia).",
+      "basis": "what_is_not: 'installed_from 1950, installed_to 1980 and the peak years: no primary source opened states them.' Wikipedia: 'applied through the 1980s'.",
+      "fix": "patch: keeps only the supported end."
+    },
+    {
+      "id": "asbestos-popcorn-ceiling",
+      "field": "evidence",
+      "severity": "wrong",
+      "was": "rule",
+      "problem": "'rule' needs a verified primary source for the dates. The EPA 1973 and 1978 bans do not give the 1950 to 1985 range; the range is approximate (the entry's own caveat says no primary source gives install years).",
+      "basis": "what_is_not: 'installed_from 1950, installed_to 1980 and the peak years: no primary source opened states them.'",
+      "fix": "patch: evidence becomes 'era'."
+    },
+    {
+      "id": "asbestos-popcorn-ceiling",
+      "field": "check.2",
+      "severity": "unsafe",
+      "was": "Do not scrape a sample dry; many state and local air agencies publish homeowner sampling instructions.",
+      "problem": "Effectively invites homeowners to take their own sample of a suspect asbestos ceiling ('many ... agencies publish homeowner sampling instructions'), which disturbs it.",
+      "basis": "CPSC (verified, supports): leave undamaged asbestos material alone.",
+      "fix": "patch: tells readers not to sample it themselves."
+    },
+    {
+      "id": "asbestos-floor-tile-sheet-flooring",
+      "field": "hook",
+      "severity": "unsupported",
+      "was": "Old 9-inch-square floor tiles and the black glue under them frequently contain asbestos, and there was no effective federal ban on asbestos floor tile until a 2019 rule.",
+      "problem": "'9-inch-square' tiles as the asbestos marker is an inspector rule of thumb with no verified source, and 'frequently' is stretched to the glue (CPSC lists adhesives only as a source).",
+      "basis": "Wikipedia: 'Vinyl tiles manufactured in the 20th century frequently contain asbestos fibers'; CPSC lists 'ADHESIVES used for installing floor tile'.",
+      "fix": "patch: frequency claim for tiles only, 'can' for the glue, size removed (it stays in check steps as an identifying clue)."
+    },
+    {
+      "id": "asbestos-pipe-boiler-duct-insulation",
+      "field": "caveat",
+      "severity": "unsupported",
+      "was": "Asbestos duct tape and paper were used later than pipe wrap and have no clear end date. Many houses of this era have had this insulation removed or sealed.",
+      "problem": "'Asbestos duct tape and paper were used later than pipe wrap' is from inspector accounts that were not verified.",
+      "basis": "what_is_not: 'Later use of asbestos duct tape/paper and vibration cloth into the 1970s-80s.'",
+      "fix": "patch: keeps only the lack of an end date."
+    },
+    {
+      "id": "asbestos-joint-compound-texture",
+      "field": "summary",
+      "severity": "unsupported",
+      "was": "CPSC banned consumer patching and tape joint compounds containing asbestos, effective in early 1978, along with textured paints that contained it. Before that, some major brands contained asbestos and others did not. It is a concern when walls are sanded, cut or demolished.",
+      "problem": "'Some major brands contained asbestos and others did not' comes from a legal-marketing site (unverified). 'Effective in early 1978' is also too narrow: the rule covered products introduced after January 16, 1978 and all others only after June 11, 1978.",
+      "basis": "16 CFR 1304: 'after January 16, 1978 ... banned ... after June 11, 1978'. what_is_not: 'Brand date ranges from the legal-marketing site.'",
+      "fix": "patch: 'taking effect in 1978', brand sentence removed."
+    },
+    {
+      "id": "asbestos-joint-compound-texture",
+      "field": "prevalence.note",
+      "severity": "unsupported",
+      "was": "No reliable count exists. Several major brands contained asbestos and several did not.",
+      "problem": "Same unverified brand claim.",
+      "basis": "what_is_not: 'Brand date ranges from the legal-marketing site. No prevalence data exists that was found.'",
+      "fix": "patch: removes it."
+    },
+    {
+      "id": "vermiculite-attic-insulation",
+      "field": "hook",
+      "severity": "unsupported",
+      "was": "Loose, pebbly vermiculite insulation in the attic, much of it sold as Zonolite, may contain asbestos, and EPA advises treating it as if it does.",
+      "problem": "'Much of it sold as Zonolite' names a brand that is in no verified quote or what_is_confirmed.",
+      "basis": "Verified: EPA Libby 'over 70 percent' quote; Wikipedia 35 million and 1963 Grace acquisition. No source names Zonolite.",
+      "fix": "patch: drops the brand clause."
+    },
+    {
+      "id": "vermiculite-attic-insulation",
+      "field": "check.2",
+      "severity": "unsupported",
+      "was": "It is often under newer fiberglass or cellulose; empty Zonolite bags are sometimes left in the attic.",
+      "problem": "'Empty Zonolite bags' is the same unverified brand detail.",
+      "basis": "As above.",
+      "fix": "patch: drops the bag clue."
+    },
+    {
+      "id": "vermiculite-attic-insulation",
+      "field": "action",
+      "severity": "unsupported",
+      "was": "Do not disturb it, and keep stored belongings out of that attic. Sealing gaps around ceiling lights and openings helps keep dust out of the house. For any attic work, hire a licensed asbestos abatement contractor. The Zonolite Attic Insulation Trust has reimbursed part of removal costs for confirmed Zonolite; check whether it is still accepting claims.",
+      "problem": "The Zonolite Attic Insulation Trust and its reimbursements rest on secondary sources only; none was verified.",
+      "basis": "what_is_not: 'ZAI Trust percentages and caps.' fix: 'secondary sources say it reimburses 55%'.",
+      "fix": "patch: removes the Trust sentence. Worth re-adding once a verified source exists, since it can save owners money."
+    },
+    {
+      "id": "urea-formaldehyde-foam-insulation",
+      "field": "hook",
+      "severity": "unsupported",
+      "was": "About 500,000 homes had foam insulation pumped into their walls in the 1970s, and CPSC banned it in 1982 before a court overturned the ban.",
+      "problem": "'In the 1970s' dates the 500,000 homes, but the CPSC source gives only a count of homes already insulated by 1982; install years are unverified.",
+      "basis": "CPSC 1982 release (commissioner's statement): 'some 500,000 homes already insulated with U.F. foam'. what_is_not: 'installed_from 1970 and the 1975-1980 peak'.",
+      "fix": "patch: ties the figure to the 1982 ban instead of the 1970s."
+    },
+    {
+      "id": "urea-formaldehyde-foam-insulation",
+      "field": "summary",
+      "severity": "unsupported",
+      "was": "Urea-formaldehyde foam was injected into wall cavities, mostly as a retrofit in existing houses during the 1970s energy crisis. CPSC banned it for homes in 1982; a federal appeals court overturned the ban in 1983, and little was installed after that. Its formaldehyde release fades within years, so today it is mostly a disclosure and resale question.",
+      "problem": "'Mostly as a retrofit ... during the 1970s energy crisis', 'little was installed after that' and 'its formaldehyde release fades within years, so today it is mostly a disclosure and resale question' have no verified source. The last one also plays down a hazard CPSC still called hazardous in October 1983.",
+      "basis": "CPSC Oct 1983: 'still considers urea formaldehyde foam insulation (UFFI) to be a hazardous product'. Wikipedia: 'found in homes built or retrofitted from the 1930s to the 1970s'.",
+      "fix": "patch: keeps the verified facts and adds CPSC's 1983 position."
+    },
+    {
+      "id": "urea-formaldehyde-foam-insulation",
+      "field": "applies.from",
+      "severity": "wrong",
+      "was": 1970,
+      "problem": "applies.from 1970 contradicts the verified Wikipedia statement (homes built or retrofitted from the 1930s) and the entry's own caveat that 'a 1920s house is as likely to have it'. With from 1970 the issue never appears for older houses. Other retrofit items (vermiculite) use null.",
+      "basis": "Wikipedia: 'UFFI is generally found in homes built or retrofitted from the 1930s to the 1970s'. what_is_not: 'installed_from 1970 and the 1975-1980 peak'.",
+      "fix": "patch: null (open start, like vermiculite)."
+    },
+    {
+      "id": "urea-formaldehyde-foam-insulation",
+      "field": "applies.coreFrom",
+      "severity": "wrong",
+      "was": 1975,
+      "problem": "Core build years 1975 to 1980 are unverified install years, not build years. For a retrofit product they mark the wrong houses as most likely.",
+      "basis": "what_is_not: 'installed_from 1970 and the 1975-1980 peak'.",
+      "fix": "patch: null."
+    },
+    {
+      "id": "urea-formaldehyde-foam-insulation",
+      "field": "applies.coreTo",
+      "severity": "wrong",
+      "was": 1980,
+      "problem": "Same as coreFrom.",
+      "basis": "what_is_not: 'the 1975-1980 peak'.",
+      "fix": "patch: null."
+    },
+    {
+      "id": "urea-formaldehyde-foam-insulation",
+      "field": "prevalence.note",
+      "severity": "overstated",
+      "was": "CPSC's 1982 release referred to some 500,000 homes already insulated with the foam, a small share of US housing.",
+      "problem": "The 500,000 figure is in a dissenting commissioner's statement in the release, not a CPSC finding.",
+      "basis": "Source: 'US CPSC news release, March 1, 1982 (dissenting commissioner's statement)'.",
+      "fix": "patch: corrects the attribution."
+    },
+    {
+      "id": "urea-formaldehyde-foam-insulation",
+      "field": "caveat",
+      "severity": "overstated",
+      "was": "It was mostly added to existing houses, so a 1920s house is as likely to have it as a 1975 one. The start and peak years are approximate.",
+      "problem": "'A 1920s house is as likely to have it as a 1975 one' is research reasoning with no source.",
+      "basis": "date_notes: retrofit reasoning, unverified; Wikipedia: 'built or retrofitted'.",
+      "fix": "patch: keeps the build-year warning without the specific comparison."
+    },
+    {
+      "id": "problem-chinese-drywall",
+      "field": "check.2",
+      "severity": "unsupported",
+      "was": "In the attic, look at the back of exposed drywall for Chinese manufacturer markings such as 'Knauf Tianjin'.",
+      "problem": "Brand 'Knauf Tianjin' appears in no verified quote or what_is_confirmed.",
+      "basis": "Verified CPSC identification quote lists corroborating conditions but no brand in the recorded text.",
+      "fix": "patch: keeps the clue without the brand."
+    },
+    {
+      "id": "pcb-caulk-light-ballasts",
+      "field": "hook",
+      "severity": "overstated",
+      "was": "Fluorescent fixtures with magnetic ballasts made before 1979 may contain PCBs, and ballasts made after that without PCBs are labeled 'No PCBs'.",
+      "problem": "Says non-PCB ballasts made 'after that' are labeled 'No PCBs'. EPA's labeling rule covers ballasts built from July 1, 1979 to July 1, 1998 only.",
+      "basis": "EPA: 'all FLBs built between July 1, 1979, and July 1, 1998, that do not contain PCBs must be labeled \"No PCBs.\"'",
+      "fix": "patch: adds the 1998 end date."
+    },
+    {
+      "id": "pcb-caulk-light-ballasts",
+      "field": "summary",
+      "severity": "overstated",
+      "was": "EPA says PCB-containing building materials were used in buildings built or renovated between about 1950 and 1979, and that magnetic ballasts made before 1979 may contain PCBs. In a house the realistic case is an original fluorescent fixture in a garage, basement, kitchen or workshop. PCB caulk is documented mainly in schools and larger buildings.",
+      "problem": "'Were used' drops EPA's hedge: EPA speaks of potential widespread use.",
+      "basis": "EPA: 'potential widespread use of PCB-containing building materials in schools and other buildings constructed or renovated between about 1950 and 1979'.",
+      "fix": "patch: 'may have been widely used'."
+    },
+    {
+      "id": "pcb-caulk-light-ballasts",
+      "field": "caveat",
+      "severity": "unsupported",
+      "was": "EPA's guidance addresses schools and other buildings, not single-family homes. Most original pre-1979 ballasts have long since been replaced.",
+      "problem": "'Most original pre-1979 ballasts have long since been replaced' is reasoning with no source.",
+      "basis": "what_is_not: 'Any residential prevalence'.",
+      "fix": "patch: removes it."
+    },
+    {
+      "id": "chlordane-termiticide",
+      "field": "hook",
+      "severity": "overstated",
+      "was": "From 1948 to 1988, chlordane was a standard termite treatment around foundations, and ATSDR says more than 50 million people have lived in treated homes.",
+      "problem": "'A standard termite treatment' from 1948 to 1988 is stronger than ATSDR, which says it was used as a pesticide on crops, lawns, gardens and homes over those years.",
+      "basis": "ATSDR: 'From 1948 to 1988 chlordane was used in the United States as a pesticide on agricultural crops, lawns, gardens, and homes.'",
+      "fix": "patch: matches ATSDR."
+    },
+    {
+      "id": "chlordane-termiticide",
+      "field": "summary",
+      "severity": "unsupported",
+      "was": "Chlordane was applied to the soil around and under houses to stop termites; from 1983 that was its only approved use, and EPA banned all uses in 1988. It lingers for years, with higher levels in basements and crawl spaces. ATSDR says houses built since 1988 have not been treated with it.",
+      "problem": "'It lingers for years, with higher levels in basements and crawl spaces' comes from ATSDR material the verification pass did not re-read.",
+      "basis": "what_is_not: 'Indoor air concentration figures were not re-read.'",
+      "fix": "patch: removes the sentence."
+    },
+    {
+      "id": "cca-treated-lumber",
+      "field": "summary",
+      "severity": "unsupported",
+      "was": "Wood treated with chromated copper arsenate (CCA) was used for residential decks and playsets until manufacturers stopped making it for homeowner uses at the end of 2003. Arsenic can rub off on hands and leach into the soil underneath. EPA does not recommend removing existing structures.",
+      "problem": "'Arsenic can rub off on hands and leach into the soil underneath' has no verified source. It is the reason for the entry, so the patch keeps a conservative version tied to the CPSC surface-coating study.",
+      "basis": "CPSC staff report on surface coatings for CCA wood (verified); what_is_not notes the sealant result. No verified source on soil leaching.",
+      "fix": "patch: keeps surface arsenic, drops soil leaching. Still needs a direct source."
+    },
+    {
+      "id": "cca-treated-lumber",
+      "field": "caveat",
+      "severity": "overstated",
+      "was": "Old stock could still be sold after 2003, so some 2004 decks used it, and the 1975 start is approximate. Decks are often built or replaced long after the house, so the deck's age matters more than the house's.",
+      "problem": "'Some 2004 decks used it' states as fact what the source only allows: old stock could still be sold.",
+      "basis": "Wikipedia: 'Timber treated before that date was still allowed to be sold'. date_notes: 'how long stock actually lasted is not documented'.",
+      "fix": "patch: 'may have used it'."
+    }
+  ],
+  "clean": [
+    "orangeburg-sewer-pipe",
+    "asbestos-cement-siding-roofing"
+  ]
+}

@@ -41,3 +41,15 @@ export const toLite = (i: Issue): IssueLite => ({
   ...(i.when ? { when: i.when } : {}),
 });
 export const getIssuesLite = (): IssueLite[] => ISSUES.map(toLite);
+
+/** What a timeline draws (no copy): the report's timeline gets this, not `IssueLite`. */
+export type IssueTimeline = Pick<Issue, 'id' | 'slug' | 'title' | 'category' | 'kind' | 'applies' | 'regions' | 'severity' | 'priority' | 'evidence' | 'when'>;
+export const getIssuesTimeline = (): IssueTimeline[] =>
+  ISSUES.map((i) => ({
+    id: i.id, slug: i.slug, title: i.title, category: i.category, kind: i.kind, applies: i.applies, regions: i.regions,
+    severity: i.severity, priority: i.priority, evidence: i.evidence, ...(i.when ? { when: i.when } : {}),
+  }));
+
+/** Lifespans for the client: sources keep publisher and link (the report lists them), not the quotes. */
+export const getLifespansLite = (): Lifespan[] =>
+  LIFESPANS.map((l) => ({ ...l, sources: l.sources.map(({ url, publisher, tier }) => ({ url, publisher, tier })) }));
