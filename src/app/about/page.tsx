@@ -448,7 +448,8 @@ export default function AboutPage() {
                 Every claim links to its source and quotes it, so you can check each one yourself. {SITE.reviewStatus}
               </p>
               <p>
-                Spotted an error? See <Link href="/corrections">how corrections work</Link>. <Contact />
+                Spotted an error? <Contact /> That page also explains{' '}
+                <Link href="/corrections#handling">how corrections are handled</Link>.
               </p>
             </div>
           </section>

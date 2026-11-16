@@ -101,6 +101,12 @@
 .policies a:hover {
   text-decoration: underline;
 }
+.policies a.report {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  color: var(--line);
+}
 .indie {
   color: var(--ink-2);
 }

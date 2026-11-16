@@ -24,6 +24,7 @@ import { PlaceSection } from '@/components/place/PlaceSection';
 import { TypicalHouse } from '@/components/typical/TypicalHouse';
 import { TYPICAL, typicalNavCount } from '@/components/typical/data';
 import { ReportStateContext } from '@/components/era/ReportState';
+import { ReportErrorLink } from '@/components/corrections/ReportErrorLink';
 import styles from './Report.module.css';
 
 export type ReportProps = {
@@ -663,6 +664,10 @@ export function Report({ year, issues, lifespans, timelineIssues, context }: Rep
             ) : null}
           </ReportStateContext.Provider>
         </div>
+      </div>
+
+      <div className={`wrap ${styles.reportError}`}>
+        <ReportErrorLink path={`/built/${year}`} lead={`See something in the ${year} report that looks wrong?`} />
       </div>
 
       {/* ---------- prev / next ---------- */}

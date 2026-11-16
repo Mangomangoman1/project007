@@ -519,6 +519,9 @@
 .quote p::after {
   content: '\201D';
 }
+.reportError {
+  margin-top: calc(-1 * var(--s-2));
+}
 .sourceLink {
   font-family: var(--font-mono);
   font-size: var(--t-xs);

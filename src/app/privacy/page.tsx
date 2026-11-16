@@ -46,6 +46,10 @@ export default function PrivacyPage() {
               </li>
               <li>A ZIP lookup asks this site for one static data file. It goes nowhere else.</li>
               <li>
+                If you choose to report an error with the form on the corrections page, what you type is emailed to the
+                people who maintain this site. It is not stored on the site.
+              </li>
+              <li>
                 We count page views with Vercel Web Analytics and measure page speed with Vercel Speed Insights. Both are
                 anonymous and use no cookies.
               </li>
@@ -96,7 +100,8 @@ export default function PrivacyPage() {
             <>
               <p>
                 Pages are prepared in advance and sent the same to everyone. Filtering by your state or your answers happens
-                in your browser, so the server never learns them. There are no forms that send anything to us.
+                in your browser, so the server never learns them. The only thing you can send us is an error report, if you
+                choose to (see <a href="#reports">the next section</a>).
               </p>
               <p>
                 <strong>ZIP lookups.</strong> When you enter a ZIP code, your browser asks this site for one static file named
@@ -109,6 +114,42 @@ export default function PrivacyPage() {
                 link, that site&rsquo;s own privacy terms apply.
               </p>
               <p>Fonts and scripts are served from this site, not from font or script services.</p>
+            </>
+          ),
+        },
+        {
+          id: 'reports',
+          title: 'If you report an error',
+          body: (
+            <>
+              <p>
+                The <Link href="/corrections#report">form on the corrections page</Link> is optional. When you send it,
+                what you typed (the message, the page, a source and, if you give one, your email address) is sent by email to
+                the people who maintain {SITE.name}, through <strong>Resend</strong>, an email delivery service. The email
+                also says when it was sent. Nothing else about you is added to it.
+              </p>
+              <ul>
+                <li>Reports are not stored on this site or in any database. They exist only as emails.</li>
+                <li>
+                  Your email address is optional. If you give one, it is used only to answer you about your report, never
+                  for a mailing list or anything else.
+                </li>
+                <li>
+                  Please do not include personal or sensitive information. A pointer to the problem and a source is all we
+                  need.
+                </li>
+                <li>
+                  To stop one connection sending dozens of reports, the site keeps a short-lived count per IP address in
+                  memory for ten minutes. The IP address is not put in the email and is not saved.
+                </li>
+              </ul>
+              <p>
+                Resend handles the message only to deliver it; its{' '}
+                <a href="https://resend.com/legal/privacy-policy" rel="noopener">
+                  privacy policy
+                </a>{' '}
+                applies to that delivery. If you would rather we deleted a report you sent, say so in another report.
+              </p>
             </>
           ),
         },
@@ -166,6 +207,7 @@ export default function PrivacyPage() {
               <li>We do not sell, rent or share data about visitors. We have none to share.</li>
               <li>No advertising, ad networks, social media pixels or session recording.</li>
               <li>No email list, no accounts, no tracking across other sites.</li>
+              <li>We do not keep error reports anywhere but the email they arrive in, and never publish who sent one.</li>
             </ul>
           ),
         },

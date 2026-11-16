@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { SITE, MIN_YEAR, MAX_YEAR } from '@/lib/site';
 import { getMeta } from '@/lib/data';
 import { LogoMark } from './Logo';
+import { FooterReportLink } from './corrections/FooterReportLink';
 import styles from './SiteFooter.module.css';
 
 /** Footer drawn as a drafting title block. */
@@ -49,6 +50,7 @@ export function SiteFooter() {
               <Link href="/privacy">Privacy</Link>
               <Link href="/terms">Terms &amp; disclaimer</Link>
               <Link href="/corrections">Corrections</Link>
+              <FooterReportLink className={styles.report} />
             </nav>
             <p className={styles.indie}>Independent · no ads · no cookies</p>
           </div>

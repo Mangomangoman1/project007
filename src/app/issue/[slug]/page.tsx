@@ -11,6 +11,7 @@ import { CheckFirstTag, EvidenceStamp, Prevalence, RegionTag, TierTag } from '@/
 import { HouseCutaway } from '@/components/HouseCutaway/HouseCutaway';
 import { YearsDiagram } from '@/components/issue/YearsDiagram';
 import { IssueLine } from '@/components/issue/IssueLine';
+import { ReportErrorLink } from '@/components/corrections/ReportErrorLink';
 import {
   PRIORITY_LABEL,
   coreSentence,
@@ -348,6 +349,11 @@ export default async function IssuePage({ params }: Props) {
                 </li>
               ))}
             </ol>
+            <ReportErrorLink
+              path={`/issue/${issue.slug}`}
+              lead="A source misread, out of date or missing?"
+              className={styles.reportError}
+            />
           </section>
 
           {/* ---------- representative years ---------- */}

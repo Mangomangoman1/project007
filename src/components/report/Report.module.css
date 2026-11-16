@@ -628,6 +628,14 @@
   text-decoration-color: var(--ink-3);
 }
 
+/* ---------- report an error (just above the pager) ---------- */
+.reportError {
+  margin-top: var(--s-8);
+}
+.reportError + .pager {
+  margin-top: var(--s-6);
+}
+
 /* ---------- pager ---------- */
 .pager {
   display: grid;

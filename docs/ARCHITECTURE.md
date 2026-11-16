@@ -307,8 +307,9 @@ The section navigator shows no count beside "Your place" (it depends on a ZIP th
 `/privacy`, `/terms`, `/corrections` share `components/doc/DocPage` (title block with cells and a
 "Last updated" stamp, sticky numbered index, numbered sections, `FactList`, closing `DocNote`; styles in
 `DocPage.module.css`). Linked from a policy strip at the foot of the footer title block.
-- `SITE.contactEmail` (`string | null`, null for now) drives `components/doc/Contact`: a mailto link, or
-  "A contact address will be listed here shortly." Used on /corrections, /about and /privacy.
+- `SITE.contactEmail` (`string | null`, null: the owner stays anonymous) and `SITE.contactForm` (true) drive
+  `components/doc/Contact`: a mailto link if an address is ever set, else "Use the form on the corrections page."
+  (linking to `/corrections#report`). Used on /about, /privacy and /terms.
 - `SITE.reviewStatus`: the one sentence on /about ("Who is behind this") about inspector review.
 - `SITE.policiesUpdated`: the date on the three pages.
 - `lib/corrections.ts`: `CORRECTIONS` (newest first; empty = "None yet."), rendered as a ledger.
@@ -356,3 +357,46 @@ Vercel dashboard.
 - Client props trimmed: the report's issues drop `summary`, the timeline gets `getIssuesTimeline()` (no
   copy), lifespans come from `getLifespansLite()` (no quotes). `content-visibility` on the report's lower
   sections was tried and removed: no measurable gain, and it gave Lighthouse stale rects.
+
+## Report an error (`POST /api/corrections`)
+The one server route; every page stays static. A reader's report is emailed to the maintainers through the Resend REST
+API (plain `fetch`, no SDK) and stored nowhere.
+- `src/app/api/corrections/route.ts`: `runtime = 'nodejs'`, `POST` only (shows as ƒ in the build output; everything
+  else stays ○/●). Reads the env vars and hands off to `handleCorrection`.
+- `src/lib/contact-handler.ts` (Request → Response, deps injected: env, fetch, clock, logger, limiter; tests
+  `contact-handler.test.ts` with a mocked fetch). JSON body (the enhanced form) → JSON `{ok:true}` or `{ok:false, code,
+  field?}`; `application/x-www-form-urlencoded` (JavaScript off) → 303 to `/corrections?sent=1#sent` or
+  `/corrections?error=<code>#e-<code>`. Order: foreign `Origin` / other content types → 400 `bad-request`; body over
+  32 KB (Content-Length or streamed) → 413 `too-large`; honeypot (`website`) filled or sent < 2.5 s after render (`t`,
+  set by the page's script; missing/negative values are ignored) → fake success, nothing sent, one log line; field
+  errors → 400; no key or no `CONTACT_TO` → 503 `not-configured` + one log line naming the missing variable; per-IP
+  limit (5 per 10 min, `X-Forwarded-For`; in memory, so per warm instance on serverless) → 429 `rate-limited`;
+  Resend non-2xx or unreachable (10 s timeout) → 502 `send-failed`, status logged, never the key. With JavaScript off
+  the page field is recovered from the Referer (`/corrections?page=…`).
+- `src/lib/contact.ts` (pure, tests `contact.test.ts`): `LIMITS` (message 10–4000, source ≤ 500, email ≤ 254),
+  `ERROR_TEXT`, `cleanText` (strips C0/C1, zero-width and bidi controls), `cleanPage` (a site path or a
+  https://yearbuilt.house URL → path; anything else dropped), `isValidEmail`, `checkSubmission`, `pageFromReferer`,
+  `buildEmail` (from `CONTACT_FROM` or `Year Built <corrections@yearbuilt.house>`, to `CONTACT_TO`, `reply_to` the
+  reader's address if given, subject `Correction: <page or general>`, plain text: page, source, reply address, time
+  in UTC and the message; no IP), `createRateLimiter`, `reportErrorHref(path)`.
+- `components/corrections/CorrectionForm` (client) in /corrections § "How to report an error": a drafted form sheet
+  (message with counter and fill gauge, page, email, source; required/optional tags; hints; inline validation on blur
+  and send; errors marked with heavier ink, a hatched margin and a "!" marker, not colour; one polite live region;
+  focus to the first bad field, the notice, or the thank-you heading). The page stays static: `?page=`, `?sent=1` and
+  `?error=` are read from `location` after hydration (no `useSearchParams`, so the full form is in the HTML). Without
+  JavaScript the form POSTs natively and the redirect's fragment shows the matching note with `:target` (hidden under
+  `html.js`). "not-configured" says plainly that the form is not available right now and offers to copy the text.
+- Entry points, all `/corrections?page=<path>`: `corrections/ReportErrorLink` under the Sources list on issue pages and
+  just above the year report's pager; `corrections/FooterReportLink` (client, `usePathname`) in the footer's policy
+  strip on every page except /corrections, /privacy and /terms.
+
+### Deploying
+Set these on the Vercel project (Production, and Preview if previews should send). No values belong in the repository.
+| variable | | what |
+|---|---|---|
+| `RESEND_API_KEY` | required | Resend API key with sending access for yearbuilt.house. The handler also accepts the lower-case name `resend` (`RESEND_API_KEY ?? resend`), which is how the current Vercel project has it saved. |
+| `CONTACT_TO` | required | Where reports are delivered (the maintainers' private inbox). |
+| `CONTACT_FROM` | optional | Sender; defaults to `Year Built <corrections@yearbuilt.house>` (the domain must stay verified in Resend). |
+Missing key or `CONTACT_TO` → the form says it is not available and the function logs `[corrections] not configured`.
+`RESEND_BASE_URL` is for local testing only (point it at a mock; default `https://api.resend.com`); never set it on Vercel.
+

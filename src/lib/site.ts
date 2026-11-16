@@ -6,10 +6,15 @@ export const SITE = {
     'Enter the year your house was built and see what US houses of that era typically contain, what to check first, and what is reaching the end of its life. Every claim is sourced.',
   disclaimer: 'A guide to what to look for. Not an inspection.',
   /**
-   * Where readers report errors (shown on /corrections, /about and /privacy). null until the
-   * address is decided: the pages then say one will be listed shortly. Set a string to show a mailto link.
+   * A public address for readers (shown by components/doc/Contact on /about, /privacy and /terms). null keeps
+   * the maintainers anonymous: Contact then points to the corrections form (contactForm) instead.
    */
   contactEmail: null as string | null,
+  /**
+   * true while the "Report an error" form on /corrections is the way to reach the maintainers
+   * (POST /api/corrections, emailed through Resend). Contact then points to it instead of an address.
+   */
+  contactForm: true as boolean,
   /**
    * Review status, shown on /about under "Who is behind this". Update this one sentence when a
    * licensed inspector has reviewed the content.

@@ -4,13 +4,13 @@ import { SITE } from '@/lib/site';
 import { pageMeta } from '@/lib/seo';
 import { CORRECTIONS } from '@/lib/corrections';
 import { DocPage, docStyles } from '@/components/doc/DocPage';
-import { Contact } from '@/components/doc/Contact';
+import { CorrectionForm } from '@/components/corrections/CorrectionForm';
 
 export const metadata = pageMeta({
   title: 'Corrections',
   shareTitle: `Corrections at ${SITE.name}`,
   description:
-    'How to report an error on Year Built and how corrections are handled: we check the source, fix the page, and list every material correction here with its date.',
+    'Report an error on Year Built with a short form, and see how corrections are handled: we check the source, fix the page, and list every material correction here with its date.',
   path: '/corrections',
 });
 
@@ -44,15 +44,11 @@ export default function CorrectionsPage() {
           body: (
             <>
               <p>
-                <strong>Contact:</strong> <Contact lead="Email" />
+                Use the form below. It helps most to say what you think is wrong in a sentence or two, which page it is on
+                (filled in for you when you follow a &ldquo;Report an error&rdquo; link), and a source that shows it if you
+                have one. You do not need to be an expert: a pointer to the problem is enough.
               </p>
-              <p>It helps most if you include:</p>
-              <ul>
-                <li>the page, ideally its link (for example a year report or an issue page);</li>
-                <li>what you think is wrong, in a sentence or two;</li>
-                <li>a source that shows it, if you have one: a recall notice, a code edition, an agency page.</li>
-              </ul>
-              <p>You do not need to be an expert. A pointer to the problem is enough.</p>
+              <CorrectionForm />
             </>
           ),
         },
