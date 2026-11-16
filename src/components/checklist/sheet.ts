@@ -145,3 +145,23 @@ export function zoneCounts(issues: Pick<Issue, 'where'>[]): Partial<Record<Zone,
   }
   return c;
 }
+
+/**
+ * Split groups into two reading-order columns of similar height. CSS multi-column is avoided on
+ * purpose: when a column box runs across a printed page, Chromium spills extra columns sideways
+ * and shrinks the whole sheet to fit.
+ */
+export function splitColumns<T>(groups: T[], weight: (g: T) => number): [T[], T[]] {
+  const w = groups.map(weight);
+  const total = w.reduce((a, b) => a + b, 0);
+  let best = 0;
+  let bestDiff = Infinity;
+  for (let k = 0, acc = 0; k <= groups.length; acc += w[k] ?? 0, k++) {
+    const diff = Math.abs(total - 2 * acc);
+    if (diff < bestDiff) {
+      bestDiff = diff;
+      best = k;
+    }
+  }
+  return [groups.slice(0, best), groups.slice(best)];
+}

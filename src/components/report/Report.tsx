@@ -168,7 +168,7 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
         <path d="M4 6V1.5h8V6M4 12H2V6.5h12V12h-2" fill="none" stroke="currentColor" strokeWidth="1.2" />
         <path d="M4.5 9.5h7v5h-7z" fill="none" stroke="currentColor" strokeWidth="1.2" />
       </svg>
-      Print the viewing checklist
+      <span className={styles.printText}>Print the viewing checklist</span>
     </Link>
   );
 

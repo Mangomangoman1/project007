@@ -338,8 +338,13 @@
 
 /* by part */
 .parts {
-  columns: 2;
-  column-gap: 1.6em;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 1.6em;
+  align-items: start;
+}
+.partCol {
+  min-width: 0;
 }
 .part {
   break-inside: avoid;
@@ -514,7 +519,7 @@
     grid-template-columns: minmax(0, 1fr);
   }
   .parts {
-    columns: 1;
+    grid-template-columns: minmax(0, 1fr);
   }
   .year {
     font-size: 3.4em;
@@ -568,7 +573,35 @@
     display: none;
   }
   .sec {
-    margin-top: 1.15em;
+    margin-top: 0.95em;
+    gap: 0.45em;
+  }
+  .year {
+    font-size: 3.7em;
+  }
+  .titleLead {
+    font-size: 1.5em;
+  }
+  .tbMain {
+    padding-block: 0.5em 0.45em;
+  }
+  .cells dd {
+    font-size: 2em;
+  }
+  .firstList {
+    gap: 0.6em 1.6em;
+  }
+  .line {
+    padding: 0.22em 0;
+  }
+  .part {
+    margin-bottom: 0.5em;
+  }
+  .asks {
+    gap: 0.4em;
+  }
+  .answer {
+    height: 0.9em;
   }
   .h {
     font-size: 1.38em;
@@ -581,7 +614,7 @@
     border-bottom: 0;
   }
   .ruled span {
-    height: 2.1em;
+    height: 2em;
   }
   .band {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr) minmax(0, 1fr);
@@ -590,7 +623,7 @@
     grid-column: auto;
   }
   .parts {
-    columns: 2;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .firstList {
     grid-template-columns: repeat(2, minmax(0, 1fr));

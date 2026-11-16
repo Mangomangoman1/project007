@@ -7,7 +7,7 @@ import { groupByPart } from '@/lib/select';
 import { PARTS, ZONE_LABEL, plural } from '@/lib/labels';
 import { HouseCutaway } from '@/components/HouseCutaway/HouseCutaway';
 import { PrintButton } from '@/components/checklist/PrintButton';
-import { oneLine, regionNote, regionTitle, sellerQuestions, zoneCounts } from '@/components/checklist/sheet';
+import { oneLine, regionNote, regionTitle, sellerQuestions, splitColumns, zoneCounts } from '@/components/checklist/sheet';
 import styles from './checklist.module.css';
 
 export const dynamicParams = false;
@@ -58,7 +58,11 @@ export default async function ChecklistPage({ params }: Props) {
   const missing = issues.filter((i) => i.kind === 'missing' && i.priority !== 1);
   const rest = issues.filter((i) => i.kind === 'present' && i.priority !== 1);
   const parts = groupByPart(rest, PARTS);
-  const asks = sellerQuestions(getLifespans(), age);
+  // rough printed height of a group: heading + per item a title line and wrapped text lines
+  const columns = splitColumns(parts, (p) =>
+    1.4 + p.issues.reduce((h, i) => h + 1.3 + Math.ceil(oneLine(i.check[0]).length / 62), 0),
+  );
+  const asks = sellerQuestions(getLifespans(), age, issues.length > 12 ? 5 : 6);
   const counts = zoneCounts(issues);
   const sparse = issues.length < 10;
 
@@ -168,25 +172,29 @@ export default async function ChecklistPage({ params }: Props) {
               <span className={styles.hn}>{rest.length}</span>
             </h2>
             <div className={styles.parts}>
-              {parts.map((p) => (
-                <div key={p.id} className={styles.part}>
-                  <h3 className={styles.partH}>{p.label}</h3>
-                  <ul className={styles.lines}>
-                    {p.issues.map((i) => (
-                      <li key={i.id} className={styles.line}>
-                        <Tick id={`t-${i.slug}`} />
-                        <label htmlFor={`t-${i.slug}`}>
-                          <strong>{i.title}</strong>
-                          {regionNote(i.regions) && (
-                            <span className={styles.region} title={regionTitle(i.regions)}>
-                              {regionNote(i.regions)}
-                            </span>
-                          )}
-                          <span className={styles.lineText}>{oneLine(i.check[0])}</span>
-                        </label>
-                      </li>
-                    ))}
-                  </ul>
+              {columns.map((col, c) => (
+                <div key={c} className={styles.partCol}>
+                  {col.map((p) => (
+                    <div key={p.id} className={styles.part}>
+                      <h3 className={styles.partH}>{p.label}</h3>
+                      <ul className={styles.lines}>
+                        {p.issues.map((i) => (
+                          <li key={i.id} className={styles.line}>
+                            <Tick id={`t-${i.slug}`} />
+                            <label htmlFor={`t-${i.slug}`}>
+                              <strong>{i.title}</strong>
+                              {regionNote(i.regions) && (
+                                <span className={styles.region} title={regionTitle(i.regions)}>
+                                  {regionNote(i.regions)}
+                                </span>
+                              )}
+                              <span className={styles.lineText}>{oneLine(i.check[0])}</span>
+                            </label>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
                 </div>
               ))}
             </div>
@@ -287,7 +295,7 @@ export default async function ChecklistPage({ params }: Props) {
               <span>Notes</span>
             </h2>
             <div className={styles.ruled} aria-hidden="true">
-              {[...Array(sparse ? 10 : 7)].map((_, n) => (
+              {[...Array(sparse ? 10 : 5)].map((_, n) => (
                 <span key={n} />
               ))}
             </div>

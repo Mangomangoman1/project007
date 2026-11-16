@@ -312,7 +312,7 @@
     "evidence": "rule",
     "prevalence": {
       "label": "unknown",
-      "note": "No reliable count exists. of popcorn ceilings or of how many contain asbestos."
+      "note": "No reliable count exists of popcorn ceilings or of how many contain asbestos."
     },
     "retrofit": false,
     "where": [
@@ -595,7 +595,7 @@
     "evidence": "rule",
     "prevalence": {
       "label": "unknown",
-      "note": "No reliable count exists. of how many older houses have been upgraded. A house built before 1975 was built without any energy code."
+      "note": "No reliable count exists of how many older houses have been upgraded. A house built before 1975 was built without any energy code."
     },
     "retrofit": true,
     "where": [
@@ -1266,7 +1266,7 @@
     "evidence": "era",
     "prevalence": {
       "label": "unknown",
-      "note": "No reliable count exists. for houses by year built."
+      "note": "No reliable count exists for houses by year built."
     },
     "retrofit": false,
     "where": [
@@ -1466,7 +1466,7 @@
     "evidence": "era",
     "prevalence": {
       "label": "unknown",
-      "note": "No reliable count exists. for galvanized pipe inside houses. EPA estimated about 2.8 million standalone galvanized service lines in 2023."
+      "note": "No reliable count exists for galvanized pipe inside houses. EPA estimated about 2.8 million standalone galvanized service lines in 2023."
     },
     "retrofit": false,
     "where": [
@@ -1524,7 +1524,7 @@
     "evidence": "rule",
     "prevalence": {
       "label": "unknown",
-      "note": "No reliable count exists. of pre-1993 openers still in use."
+      "note": "No reliable count exists of pre-1993 openers still in use."
     },
     "retrofit": true,
     "where": [
@@ -1644,7 +1644,7 @@
     "evidence": "era",
     "prevalence": {
       "label": "unknown",
-      "note": "No reliable count exists. of how many remain; most have been replaced."
+      "note": "No reliable count exists of how many remain; most have been replaced."
     },
     "retrofit": false,
     "where": [
@@ -2792,7 +2792,7 @@
     "evidence": "rule",
     "prevalence": {
       "label": "unknown",
-      "note": "No reliable count exists. on how many older houses have had GFCIs added. CPSC notes that houses built before 1973 have no GFCI protection unless it was installed later."
+      "note": "No reliable count exists on how many older houses have had GFCIs added. CPSC notes that houses built before 1973 have no GFCI protection unless it was installed later."
     },
     "retrofit": true,
     "where": [
@@ -2860,7 +2860,7 @@
     "evidence": "rule",
     "prevalence": {
       "label": "unknown",
-      "note": "No reliable count exists. of houses with alarms in every bedroom. NIST: the share of homes with at least one smoke alarm rose from 10% in 1975 to at least 92% by 2000."
+      "note": "No reliable count exists of houses with alarms in every bedroom. NIST: the share of homes with at least one smoke alarm rose from 10% in 1975 to at least 92% by 2000."
     },
     "retrofit": true,
     "where": [
@@ -2979,7 +2979,7 @@
     "evidence": "rule",
     "prevalence": {
       "label": "unknown",
-      "note": "No reliable count exists. of original pre-1977 glass still in place."
+      "note": "No reliable count exists of original pre-1977 glass still in place."
     },
     "retrofit": false,
     "where": [
@@ -3082,7 +3082,7 @@
     "evidence": "rule",
     "prevalence": {
       "label": "unknown",
-      "note": "No reliable count exists. for houses; EPA's material is about schools and other larger buildings."
+      "note": "No reliable count exists for houses; EPA's material is about schools and other larger buildings."
     },
     "retrofit": false,
     "where": [
@@ -3302,7 +3302,7 @@
     "evidence": "rule",
     "prevalence": {
       "label": "unknown",
-      "note": "No reliable count exists. of surviving pre-1976 units. Every mobile home made before the date predates the HUD Code by definition."
+      "note": "No reliable count exists of surviving pre-1976 units. Every mobile home made before the date predates the HUD Code by definition."
     },
     "retrofit": false,
     "where": [
@@ -3496,7 +3496,7 @@
     "evidence": "rule",
     "prevalence": {
       "label": "unknown",
-      "note": "No reliable count exists. of pre-2010 units still in service."
+      "note": "No reliable count exists of pre-2010 units still in service."
     },
     "retrofit": true,
     "where": [
