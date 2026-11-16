@@ -1,0 +1,595 @@
+{
+  "domain": "plumbing-and-sewer",
+  "web_access": "partial",
+  "web_access_detail": "WebSearch worked and returned result summaries with URLs. WebFetch and curl were blocked for every host tried (www.epa.gov, www.cpsc.gov, www.nachi.org, en.wikipedia.org: DNS failure / proxy 403 policy denial). No page was opened in this session, so under the brief's rule EVERY source below is \"verified\": false. Each source's \"supports\" text is prefixed [SEARCH] when the claim was seen in a search-result summary of that URL in this session (the URL is real and was returned by the search engine), or [MEMORY] when the URL/claim is recalled from training and was not seen at all this session. [SEARCH] is weaker than opening the page: summaries are machine-written and can misattribute.",
+  "entries": [
+    {
+      "id": "lead-service-line",
+      "name": "Lead water service line (the pipe from the street main to the house)",
+      "category": "hazmat",
+      "summary": "Many older homes are connected to the water main by a lead pipe, or by a galvanized pipe that sat downstream of lead. Lead dissolves or flakes into drinking water and there is no safe exposure level, especially for children. Federal law banned new lead pipe in 1986, and utilities are now required to inventory and replace these lines.",
+      "installed_from": 1880,
+      "installed_to": 1986,
+      "peak_from": 1900,
+      "peak_to": 1940,
+      "date_confidence": "medium",
+      "date_notes": "The END date is firm: the 1986 Safe Drinking Water Act amendments banned lead pipe in new potable installations. How long before 1986 lead was actually still being installed is highly local. Journalism sources say most major cities stopped by the 1950s, another says plumbers shifted to copper between 1960 and 1980 with some lead still installed; Chicago's code REQUIRED lead service lines until 1986. The start year and the 1900-1940 peak are my recollection of the historical literature (e.g. Troesken; Rabin 2008) and were not confirmed this session. A year-built lookup alone cannot answer this: the utility's service line inventory is the real answer.",
+      "regions": "National, but heavily concentrated in older cities of the Midwest and Northeast. Illinois (Chicago about 400,000 lines, the most of any US city), Ohio, Michigan, New York, New Jersey, Wisconsin, Missouri, Pennsylvania commonly cited. EPA's 2023 estimate ranked Florida first (1.16 million), a figure that EDF and others attributed to flawed extrapolation.",
+      "prevalence": "possible",
+      "prevalence_basis": "Real federal figures exist but they conflict. (1) EPA 7th Drinking Water Infrastructure Needs Survey (released April 2023): about 9.2 million lead service lines nationally. (2) EPA's November 2025 update to the same survey, based on the utility inventories due October 2024: about 4 million; the first national dataset of utility-reported inventories lists 1,973,932 lead lines and 969,771 galvanized-requiring-replacement lines, plus roughly 1 million unknown-material lines EPA modelled as likely lead. NRDC disputes the lower number, noting more than 24 million lines are still of unknown material and that systems with no reported data were assumed non-lead. No source gives 'percent of homes built in year X with a lead line' nationally; that only exists city by city. 'Possible' is a national average; in Chicago-type cities it is 'likely' for pre-1986 homes.",
+      "how_to_identify": "Find where the water pipe enters the house (usually basement or crawlspace near the meter). Lead is dull grey, soft, scratches to shiny silver with a coin or key, does not attract a magnet, and often has a bulbous 'wiped' joint. Galvanized steel is grey but hard and magnetic; copper is the colour of a penny. Better: look the address up in the water utility's public service line inventory (required by the federal Lead and Copper Rule Revisions, initial inventories due October 2024).",
+      "risk": {
+        "safety": "Lead exposure through drinking water; no known safe level. Greatest risk to infants, children and pregnant people. Partial replacement or street work can temporarily raise lead release.",
+        "financial": "Replacement of the private-side portion can fall on the owner unless the utility or a grant programme pays. EPA's 2019 analysis: average $4,700 per line, range $1,200 to $12,300. Chicago reports about $31,000 to $39,000 per line.",
+        "insurance_or_sale": "Not typically an insurance underwriting item. Disclosure obligations vary by state; some states and cities now require lead service line disclosure at sale or lease (not confirmed this session)."
+      },
+      "fix": {
+        "what": "Full replacement of the service line (both public and private side) with copper or approved plastic. Use a filter certified for lead (NSF/ANSI 53) and flush until replaced.",
+        "cost_low_usd": 1200,
+        "cost_high_usd": 12300,
+        "cost_year": 2019,
+        "cost_source": "EPA 2019 analysis, average $4,700, range $1,200-$12,300 per line, as quoted by Brookings and others. Seen in search summary only. Big-city costs can be far higher (Chicago about $31,000-$39,000 per Inside Climate News / WBEZ 2026)."
+      },
+      "sources": [
+        { "url": "https://www.epa.gov/system/files/documents/2025-11/fact-sheet-2025-7th-dwinsa-update.pdf", "publisher": "US EPA", "supports": "[SEARCH] EPA November 2025 update: estimated 4 million lead service lines nationally", "verified": false },
+        { "url": "https://www.nrdc.org/media/epa-now-says-there-arent-9-million-lead-pipes-there-are-4-million-be-skeptical", "publisher": "NRDC", "supports": "[SEARCH] Critique of the 4 million figure; more than 24 million lines of unknown material; update issued 25 Nov 2025", "verified": false },
+        { "url": "https://www.policyinnovation.org/insights/what-best-available-data-tells-us-about-lead-service-lines", "publisher": "Environmental Policy Innovation Center", "supports": "[SEARCH] Utility-reported inventory totals (1,973,932 lead; 969,771 galvanized requiring replacement); method caveats", "verified": false },
+        { "url": "https://www.cbsnews.com/news/epa-more-than-9-million-lead-pipes-drinking-water-us", "publisher": "CBS News", "supports": "[SEARCH] EPA 2023 estimate of 9.2 million; Florida 1.16 million, Illinois just over 1 million", "verified": false },
+        { "url": "https://blogs.edf.org/health/2023/06/29/lead-pipe-survey-flaws-reveal-that-states-may-not-be-getting-their-fair-share/", "publisher": "Environmental Defense Fund", "supports": "[SEARCH] Flaws in the 2023 EPA estimate, notably Florida and Texas", "verified": false },
+        { "url": "https://www.brookings.edu/articles/what-would-it-cost-to-replace-all-the-nations-lead-water-pipes/", "publisher": "Brookings Institution", "supports": "[SEARCH] EPA cost figure $4,700 average, $1,200-$12,300 range", "verified": false },
+        { "url": "https://www.epa.gov/sites/production/files/2019-10/documents/strategies_to_achieve_full_lead_service_line_replacement_10_09_19.pdf", "publisher": "US EPA", "supports": "[SEARCH] URL returned by search for EPA replacement cost analysis; content not read", "verified": false },
+        { "url": "https://insideclimatenews.org/news/30062026/chicago-lead-pipe-replacement-cost/", "publisher": "Inside Climate News", "supports": "[SEARCH] Chicago per-line replacement cost about $31,000-$39,000", "verified": false },
+        { "url": "https://www.npr.org/local/2020/09/21/915248028/what-we-do-and-dont-know-about-chicago-s-lead-water-problem", "publisher": "WBEZ / NPR", "supports": "[SEARCH] Chicago code required lead service lines until 1986; about 400,000 lines", "verified": false },
+        { "url": "https://www.epa.gov/ground-water-and-drinking-water/lead-service-lines", "publisher": "US EPA", "supports": "[MEMORY] General EPA lead service line page; fetch blocked", "verified": false }
+      ],
+      "open_questions": "No national distribution of lead service lines by year of construction. The 9.2M vs 4M discrepancy is unresolved and politically contested. Whether a per-state or per-utility inventory dataset could be joined to the site by ZIP/utility (EPA published one in 2025) should be investigated; that would be far better than a year-based guess. Pre-1950 installation history needs a primary historical source."
+    },
+    {
+      "id": "lead-solder-copper",
+      "name": "Lead solder on copper water pipes (and leaded brass fittings)",
+      "category": "hazmat",
+      "summary": "Until the 1986 federal lead ban, copper water pipes were routinely joined with tin-lead solder (commonly 50/50). Solder joints and older brass valves and faucets can leach lead into water, mostly when water sits in the pipes or is corrosive. Brass sold as 'lead free' could still contain up to 8% lead until January 2014.",
+      "installed_from": 1930,
+      "installed_to": 1988,
+      "peak_from": 1950,
+      "peak_to": 1986,
+      "date_confidence": "medium",
+      "date_notes": "End: the 1986 SDWA amendments defined 'lead free' as no more than 0.2% lead in solder and flux and 8% in pipes and fittings. The federal ban dates to June 1986; states had (from memory, not confirmed in search) until June 1988 to enforce it, so 1986-1988 homes are a grey zone and some sources use 'built before 1986', others 'before 1988'. The start year (1930) reflects when copper tube became a common residential supply material; that is recollection, low confidence. A second milestone: the Reduction of Lead in Drinking Water Act (2011) cut the allowed lead in wetted surfaces of pipe, fittings and fixtures from 8% to a weighted average of 0.25%, effective 4 January 2014.",
+      "regions": "National",
+      "prevalence": "likely",
+      "prevalence_basis": "No survey figure found. Reasoning only: tin-lead solder was the normal method for sweating copper joints before the ban, so a copper-plumbed house built before 1986 should be presumed to have it unless repiped. EPA's own guidance uses 'homes built before 1986' as the at-risk group (recalled, not opened).",
+      "how_to_identify": "Cannot be told reliably by eye: lead solder is dull grey, lead-free solder is brighter silver, but ageing blurs this. Inexpensive lead swab test kits on a cleaned joint, or a first-draw water test through the utility or a certified lab, are the practical methods. Year built before 1986-88 plus original copper is the main indicator.",
+      "risk": {
+        "safety": "Lead in drinking water, highest in first-draw water after stagnation and where water is corrosive or corrosion control fails (as in Flint, 2014-15).",
+        "financial": "Usually managed rather than replaced: testing, flushing, certified filter. Repipe only if combined with other problems.",
+        "insurance_or_sale": "Not an underwriting item. Federal lead disclosure rules for sales cover lead-based PAINT, not plumbing."
+      },
+      "fix": {
+        "what": "Test water; flush before use; use a filter certified to NSF/ANSI 53 for lead; replace old brass fixtures with post-2014 ones. Full repipe is rarely justified by solder alone.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found for a solder-specific remedy. Whole-house repipe figures are given under the galvanized entry."
+      },
+      "sources": [
+        { "url": "https://www.epa.gov/sites/production/files/2015-08/documents/implsdwasection1417.pdf", "publisher": "US EPA", "supports": "[SEARCH] 1986 definition: solder/flux 0.2% lead max, pipes 8% max", "verified": false },
+        { "url": "https://www.vdh.virginia.gov/drinking-water/reduction-of-lead-in-drinking-water-act/", "publisher": "Virginia Department of Health", "supports": "[SEARCH] Reduction of Lead in Drinking Water Act (PL 111-380): 8% to 0.25% weighted average, effective 4 January 2014; solder stays at 0.2%", "verified": false },
+        { "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-D/part-143/subpart-B", "publisher": "eCFR (40 CFR 143 Subpart B)", "supports": "[SEARCH] Current federal regulation on lead-free plumbing products; content not read", "verified": false },
+        { "url": "https://www.epa.gov/sdwa/use-lead-free-pipes-fittings-fixtures-solder-and-flux-drinking-water", "publisher": "US EPA", "supports": "[MEMORY] EPA summary of SDWA section 1417 including the June 1988 state enforcement deadline; fetch blocked", "verified": false }
+      ],
+      "open_questions": "The June 1988 state enforcement deadline was not confirmed by search. No data on how long non-compliant solder kept being used after the ban, nor on the share of pre-1986 homes with measurable lead from solder."
+    },
+    {
+      "id": "galvanized-steel-supply",
+      "name": "Galvanized steel water supply pipes",
+      "category": "plumbing",
+      "summary": "Zinc-coated steel pipe was the standard indoor water pipe before copper took over. It rusts from the inside, choking flow, discolouring water and eventually leaking at threads. Where it was ever downstream of a lead service line it can also hold and release lead, which is why EPA counts 'galvanized requiring replacement' lines alongside lead.",
+      "installed_from": 1900,
+      "installed_to": 1960,
+      "peak_from": 1920,
+      "peak_to": 1950,
+      "date_confidence": "low",
+      "date_notes": "Sources disagree by more than a decade on the end date: one says residential use ran 'until around 1950', a California utility treats '1960s or earlier' as the at-risk group, and trade sources report use into the 1970s-80s in some markets. All of the dated sources found were utilities, HOA references or contractors, none a code history. Start year is recollection.",
+      "regions": "National",
+      "prevalence": "likely",
+      "prevalence_basis": "No national count of homes with galvanized interior piping exists that I could find. The only hard number is for SERVICE lines: 969,771 'galvanized requiring replacement' in utility inventories reported to EPA (2025 dataset), and about 2.8 million standalone galvanized service lines mentioned alongside EPA's 2023 survey. 'Likely' applies to homes built in the peak years that have never been repiped; many have, and nobody tracks that.",
+      "how_to_identify": "Exposed pipe in basement, crawlspace or at the water heater: dull grey, threaded fittings, a magnet sticks, scratching shows silver-grey steel (not copper colour, not soft like lead). Symptoms: low pressure on upper floors, rusty water after non-use, rust stains at threaded joints.",
+      "risk": {
+        "safety": "Possible lead release if ever connected downstream of lead; otherwise mainly a water-quality nuisance.",
+        "financial": "Leaks and water damage; whole-house repipe is the usual remedy because partial replacement is 'not a permanent solution' (Davis-Stirling reference).",
+        "insurance_or_sale": "Secondhand reports (brokers, contractors, Insurance Journal feature 2013) that some insurers surcharge, decline or demand proof of replacement. No insurer filing or regulator document found."
+      },
+      "fix": {
+        "what": "Whole-house repipe in copper or PEX; replace galvanized service line where present.",
+        "cost_low_usd": 1500,
+        "cost_high_usd": 15000,
+        "cost_year": 2025,
+        "cost_source": "Angi/HomeAdvisor repipe cost guide: average about $7,500, range $1,500-$15,000 (seen in search summary; consumer cost aggregator based on member-reported jobs, not an authoritative survey)."
+      },
+      "sources": [
+        { "url": "https://acwd.org/798/Galvanized-Service-Line-Leaks", "publisher": "Alameda County Water District (CA utility)", "supports": "[SEARCH] Galvanized installed in the 1960s or earlier is nearing end of life", "verified": false },
+        { "url": "https://www.davis-stirling.com/HOME/Galvanized-Pipe", "publisher": "Adams Stirling PLC (Davis-Stirling HOA law reference)", "supports": "[SEARCH] Recommend full replacement with copper or PEX; partial replacement not permanent", "verified": false },
+        { "url": "https://www.insurancejournal.com/magazines/features/2013/03/25/285518.htm", "publisher": "Insurance Journal", "supports": "[SEARCH] Insurer concern over ageing plumbing systems; content not read in detail", "verified": false },
+        { "url": "https://pillartopost.com/wp-content/uploads/2019/01/PTP_GalvSteelWater_HR.pdf", "publisher": "Pillar To Post (home inspection franchise)", "supports": "[SEARCH] Inspector reference sheet on galvanized steel water pipe; content not read", "verified": false },
+        { "url": "https://www.homeadvisor.com/cost/plumbing/install-new-plumbing-pipes", "publisher": "HomeAdvisor / Angi", "supports": "[SEARCH] Repipe cost range", "verified": false },
+        { "url": "https://www.policyinnovation.org/insights/what-best-available-data-tells-us-about-lead-service-lines", "publisher": "Environmental Policy Innovation Center", "supports": "[SEARCH] 969,771 galvanized-requiring-replacement service lines in reported inventories", "verified": false }
+      ],
+      "open_questions": "A defensible end year. Regional variation in when copper displaced galvanized. Lifespan claims range 25-60 years and all come from commercial sources. InterNACHI's life-expectancy chart would be the obvious citation but the site was unreachable."
+    },
+    {
+      "id": "polybutylene-supply",
+      "name": "Polybutylene (PB) water pipes, usually grey plastic",
+      "category": "plumbing",
+      "summary": "Flexible grey (sometimes blue or black) plastic water pipe sold as a cheap copper substitute. Pipes and especially the acetal plastic fittings degrade and can split without warning; the leading explanation is attack by chlorine and other oxidants in treated water. It was the subject of one of the largest US product class actions, and the claims programme has long been closed.",
+      "installed_from": 1978,
+      "installed_to": 1995,
+      "peak_from": 1980,
+      "peak_to": 1994,
+      "date_confidence": "high",
+      "date_notes": "1978-1995 is consistent across sources and matches the settlement class definition reported as installations between 1 January 1978 and 31 July 1995. Some inspector sources say production continued into 1996; stock on hand means a few 1996 homes are possible. Peak years are my estimate, not sourced.",
+      "regions": "National, with heaviest use in the Sun Belt (Southeast, Texas, Southwest), the Mid-Atlantic and Pacific Northwest, and very common in manufactured (mobile) homes. Regional emphasis is from recollection of inspector literature, not confirmed this session.",
+      "prevalence": "possible",
+      "prevalence_basis": "Figures exist but are estimates that disagree and are never traced to a census: 'about 6 million homes plus about 3 million mobile homes' (Cozen O'Connor, 2000); 'about one million houses plus as many as six million mobile homes and apartments' (1995 press coverage of the settlement); '6 to 10 million' (later secondary sources, often contractors). No source gives a share of housing starts. Given tens of millions of units were built in 1978-1995, PB is a minority of homes of that era nationally, hence 'possible'; in some Sun Belt subdivisions and in mobile homes it is 'likely'.",
+      "how_to_identify": "Look at pipes entering the water heater, under sinks, at the main shut-off and at the meter. PB is flexible, 1/2 to 1 inch, usually grey (also blue for underground service, black, or silver), stamped 'PB2110'. Fittings are grey/white plastic or copper/brass with aluminium or copper crimp rings. Not to be confused with PEX (white, red, blue, stamped PEX) or CPVC (rigid, cream).",
+      "risk": {
+        "safety": "None direct; risk is sudden leaks and resulting water damage and mould.",
+        "financial": "Whole-house repipe is the standard recommendation. Settlement money is no longer available.",
+        "insurance_or_sale": "Widely reported that many insurers decline or surcharge homes with PB, and buyers' inspectors flag it. I found no insurer or regulator document this session; treat as well-known but unsourced."
+      },
+      "fix": {
+        "what": "Whole-house repipe in PEX or copper; replace PB yard service line if present.",
+        "cost_low_usd": 1500,
+        "cost_high_usd": 15000,
+        "cost_year": 2025,
+        "cost_source": "Generic repipe range from Angi/HomeAdvisor (search summary). No PB-specific authoritative figure found."
+      },
+      "sources": [
+        { "url": "https://scholar.lib.vt.edu/VA-news/VA-Pilot/issues/1995/vp951110/11100476.htm", "publisher": "The Virginian-Pilot (Virginia Tech digital archive)", "supports": "[SEARCH] Cox v. Shell: $950 million settlement approved November 1995 in Union City (Obion County), Tennessee; defendants Shell and Hoechst Celanese; earlier $850 million figure in July 1995", "verified": false },
+        { "url": "https://www.spokesman.com/stories/1995/nov/10/leaky-pipe-settlement-is-no-drop-in-the-bucket/", "publisher": "The Spokesman-Review", "supports": "[SEARCH] 1995 settlement coverage; scale of affected homes", "verified": false },
+        { "url": "https://www.publicjustice.net/?p=5874", "publisher": "Public Justice (formerly Trial Lawyers for Public Justice)", "supports": "[SEARCH] Settlement cap raised from $750 million to $950 million, later raised again", "verified": false },
+        { "url": "https://www.cozen.com/admin/files/publications/flint1307132.PDF?embed=1", "publisher": "Cozen O'Connor (law firm paper, 2000)", "supports": "[SEARCH] Estimated 6 million homes plus about 3 million mobile homes", "verified": false },
+        { "url": "https://www.lieffcabraser.com/defect/polybutylene-piping", "publisher": "Lieff Cabraser (class counsel)", "supports": "[SEARCH] Case summary by plaintiffs' counsel; content not read", "verified": false },
+        { "url": "https://www.contractormag.com/plumbing/article/20875210/polybute-settlement-money-still-available", "publisher": "Contractor magazine", "supports": "[SEARCH] Separate $120 million nationwide DuPont settlement over acetal fittings (Spencer v. DuPont, from memory)", "verified": false },
+        { "url": "https://www.classaction.org/news/class-action-revisits-settled-case-over-allegedly-defective-shell-oil-polybutylene-piping-systems", "publisher": "ClassAction.org", "supports": "[SEARCH] Cites Cox v. Shell, Obion County Chancery Court No. 18,844", "verified": false },
+        { "url": "https://www.nachi.org/pb.htm", "publisher": "InterNACHI", "supports": "[MEMORY] Inspector reference on identification and dates; fetch blocked", "verified": false }
+      ],
+      "open_questions": "A sourced count of homes (the 6-10 million range is repeated, never derived). The exact date the Consumer Plumbing Recovery Center stopped taking claims (one weak source says 1 November 2009; I recall eligibility also being limited to leaks within 10-15 years of installation). A citable insurer position. Regional distribution data."
+    },
+    {
+      "id": "kitec-plumbing",
+      "name": "Kitec plumbing (IPEX PEX-aluminium-PEX pipe with brass fittings)",
+      "category": "plumbing",
+      "summary": "A composite water pipe (aluminium layer between two plastic layers) with brass fittings, sold by IPEX for drinking water and radiant heating. The high-zinc brass fittings corrode (dezincification), clog and leak, and the pipe can also fail. A US$125 million US/Canada class settlement was approved in 2011; its claims period closed in January 2020.",
+      "installed_from": 1995,
+      "installed_to": 2007,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "medium",
+      "date_notes": "Most sources give 1995-2007 for the product line. One inspector association source says the brass fittings were produced 1995-2005, when IPEX recalled them. The 2005 'recall' is repeated widely but I could not confirm it was a formal CPSC recall rather than a manufacturer withdrawal. No peak data.",
+      "regions": "Scattered nationally but strongly clustered: Las Vegas / Clark County, Nevada and Albuquerque / Rio Rancho, New Mexico are the well-documented US hot spots; also common in parts of Canada. Other US clusters (parts of California, Pacific Northwest, Mid-Atlantic) are mentioned in inspector literature from memory only.",
+      "prevalence": "rare",
+      "prevalence_basis": "No count of affected US homes found. 'Rare' nationally by reasoning: a single manufacturer's product over about 12 years. In the documented hot-spot markets it is 'possible' to 'likely' for 1995-2007 tract homes.",
+      "how_to_identify": "Pipes are typically bright orange (hot) and bright blue (cold), sometimes other colours, printed with Kitec or a sister brand: PlumbBetter, IPEX AQUA, WarmRite, Kitec XPA, AmbioComfort, KERR Controls, Plomberie Amelioree. Fittings are brass stamped 'Kitec' or 'KTC'. Look at the water heater, under sinks, at the manifold and in the mechanical room; some homes have a warning sticker inside the electrical panel door.",
+      "risk": {
+        "safety": "None direct; leak and flood risk, reduced flow from corroded fittings.",
+        "financial": "Whole-house repipe; settlement claims closed 9 January 2020 so no compensation remains.",
+        "insurance_or_sale": "Reported by insurers and inspectors (mostly Canadian sources) as a disclosure and underwriting issue. No US regulator document found."
+      },
+      "fix": {
+        "what": "Full repipe of potable and, where used, hydronic lines.",
+        "cost_low_usd": 1500,
+        "cost_high_usd": 15000,
+        "cost_year": 2025,
+        "cost_source": "Generic repipe range from Angi/HomeAdvisor (search summary). No Kitec-specific authoritative figure found."
+      },
+      "sources": [
+        { "url": "https://prnewswire.com/news-releases/ipex-inc-and-ipex-usa-llc-settle-class-action-lawsuit-regarding-kitec-plumbing-systems-121164454.html", "publisher": "IPEX press release via PR Newswire", "supports": "[SEARCH] IPEX settled the Kitec class action (2011)", "verified": false },
+        { "url": "https://www.txnd.uscourts.gov/sites/default/files/documents/MDL2098_Doc156.pdf", "publisher": "US District Court, N.D. Texas (MDL 2098)", "supports": "[SEARCH] Court document in In re Kitec Plumbing System Products Liability Litigation; content not read", "verified": false },
+        { "url": "https://inspectapedia.com/plumbing/Kitec_Settlement_Notice.pdf", "publisher": "Court-approved settlement notice (hosted by InspectApedia)", "supports": "[SEARCH] US$125 million fund; estimated claims deadline January 2020", "verified": false },
+        { "url": "https://www.gaar.com/blog/article/does-your-client-have-a-kitec-plumbing-system-they-could-be-eligible-for-a", "publisher": "Greater Albuquerque Association of Realtors", "supports": "[SEARCH] 9 January 2020 deadline; prevalence in Albuquerque/Rio Rancho homes built 1995-2007", "verified": false },
+        { "url": "https://creia.memberclicks.net/kitec-water-supply-piping-and-brass-fittings--what-you-need-to-know", "publisher": "California Real Estate Inspection Association", "supports": "[SEARCH] Brand names, construction, fittings produced 1995-2005, dezincification", "verified": false },
+        { "url": "https://www.cbc.ca/lite/story/1.4971290", "publisher": "CBC News", "supports": "[SEARCH] Unclaimed settlement money reverts to manufacturer and insurers", "verified": false }
+      ],
+      "open_questions": "Number of US homes affected. Whether 2005 was a formal recall. A US-wide geographic distribution. US insurer treatment."
+    },
+    {
+      "id": "pex-brass-fittings-early",
+      "name": "Early PEX systems with high-zinc (yellow) brass fittings or defective tubing",
+      "category": "plumbing",
+      "summary": "PEX itself is the current mainstream water pipe, but several first-generation systems had defects: yellow brass insert fittings that dezincify and leak (Zurn, Uponor/Wirsbo) and one maker's tubing that cracked (NIBCO). These produced class settlements rather than recalls, and affected homes look like any other PEX house.",
+      "installed_from": 1996,
+      "installed_to": 2012,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "Dates are product-specific and thinly sourced. Zurn: F1807 brass crimp fittings said to be made 1996-2010 (one law-firm source); $20 million settlement fund (D. Minn., case 08-cv-05237). Uponor: $21 million settlement over high-zinc yellow brass F1960 fittings, class defined as US buildings built on or after 1 January 2002; final approval sought 2015. NIBCO: $43.5 million nationwide settlement (announced late 2018) covering PEX tubing, fittings and clamps; the 2006-2012 manufacture window is my recollection and was NOT confirmed by search.",
+      "regions": "National; dezincification is worse with aggressive water (documented clusters in Las Vegas and Minnesota, from memory).",
+      "prevalence": "rare",
+      "prevalence_basis": "No figures on number of homes. Reasoning: a few brands among many during a period when PEX was still gaining share.",
+      "how_to_identify": "Read the print line on the PEX tubing and stamps on brass fittings at the water heater, manifold and under sinks: 'Zurn' / 'Q-PEX' with yellow brass crimp fittings; 'Uponor' / 'Wirsbo' with brass fittings; 'NIBCO' on tubing marked 1006. White or green crusty deposits on brass fittings are the warning sign.",
+      "risk": {
+        "safety": "None direct; leak and water-damage risk.",
+        "financial": "Replace fittings (accessible) or repipe. Settlement claim periods have largely expired; not confirmed individually.",
+        "insurance_or_sale": "No evidence found of insurers singling out PEX."
+      },
+      "fix": {
+        "what": "Replace suspect brass fittings with low-zinc (DZR) brass or polymer fittings; repipe affected tubing.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found."
+      },
+      "sources": [
+        { "url": "https://www.gpo.gov/fdsys/pkg/USCOURTS-mnd-0_08-cv-05237/pdf/USCOURTS-mnd-0_08-cv-05237-6.pdf", "publisher": "US District Court, D. Minnesota (via GPO)", "supports": "[SEARCH] Zurn PEX litigation court document; content not read", "verified": false },
+        { "url": "https://prnewswire.com/news-releases/court-to-notify-owners-of-homes-and-other-structures-containing-plumbing-systems-with-zurn-pipe-fittings-that-they-may-be-entitled-to-payment-from-a-class-action-settlement-176938301.html", "publisher": "Court-ordered notice via PR Newswire", "supports": "[SEARCH] Zurn brass fitting class settlement notice", "verified": false },
+        { "url": "https://bergermontague.com/cases/george-v-uponor-inc/", "publisher": "Berger Montague (class counsel)", "supports": "[SEARCH] George v. Uponor: $21 million, yellow brass fittings, buildings built on or after 1 Jan 2002", "verified": false },
+        { "url": "https://bergermontague.com/cases/nibco-pex-tubing-component-parts-lawsuit", "publisher": "Berger Montague (class counsel)", "supports": "[SEARCH] NIBCO $43.5 million nationwide settlement covering PEX tubing, fittings and clamps", "verified": false }
+      ],
+      "open_questions": "Manufacture date windows for each product from the settlement agreements themselves. Any count of affected homes. Whether this is too brand-specific and low-prevalence to show on a year-based report at all."
+    },
+    {
+      "id": "cpvc-supply",
+      "name": "CPVC water pipes (rigid cream/tan plastic)",
+      "category": "plumbing",
+      "summary": "Rigid cream-coloured plastic supply pipe joined with solvent cement, common in Sun Belt homes and in residential fire sprinkler systems. It becomes brittle with age and cracks when stressed or when it contacts incompatible products (some fire caulks, spray foams, sealants, antimicrobial coatings on steel pipe). The evidence is failure-analysis and litigation, not a recall, and it is not tied to a clean date range.",
+      "installed_from": 1965,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "CPVC is still sold and code-approved. The 1960s start is recollection. I found no source that bounds a 'bad' era; the documented problem is chemical incompatibility and installation error (environmental stress cracking), and most documented cases concern fire sprinkler CPVC in multi-family buildings. Lawsuits against Lubrizol (BlazeMaster 2015, FlowGuard Gold 2020) are allegations, not findings.",
+      "regions": "National; residential supply use concentrated in Florida, the Southeast and Southwest (recollection).",
+      "prevalence": "possible",
+      "prevalence_basis": "No data found on share of homes with CPVC or on failure rate by age.",
+      "how_to_identify": "Rigid off-white, cream or tan pipe, 1/2 to 3/4 inch, printed 'CPVC' and 'ASTM D2846', with glued (not crimped) fittings. Orange CPVC is fire sprinkler pipe.",
+      "risk": {
+        "safety": "None direct; sudden cracks cause water damage.",
+        "financial": "Repairs to brittle pipe tend to cause further breaks; repipe sometimes recommended in older systems.",
+        "insurance_or_sale": "Insurer risk-engineering bulletins exist for CPVC SPRINKLER pipe (Zurich, Nationwide). Nothing found on homeowners underwriting."
+      },
+      "fix": {
+        "what": "Spot repair with compatible materials, or repipe in PEX/copper when brittle.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found."
+      },
+      "sources": [
+        { "url": "https://www.zurichna.com/-/media/project/zwp/zna/docs/kh/gl/cpvc_sprinkler_pipe_failures_rt.pdf", "publisher": "Zurich North America risk engineering", "supports": "[SEARCH] CPVC sprinkler failures linked to incompatible sealants, lubricants and building products", "verified": false },
+        { "url": "https://www.nationwide.com/business/risk-management/services-resources/resource-library/articles/cpvc-piping-in-automatic-sprinkler-systems", "publisher": "Nationwide", "supports": "[SEARCH] Incompatible fire-stopping, antimicrobial-lined steel pipe and sealant pastes as CPVC risks", "verified": false },
+        { "url": "https://www.cozen.com/news-resources/publications/2019/wet-wild-subro-understanding-common-water-losses", "publisher": "Cozen O'Connor", "supports": "[SEARCH] Improper installation is the more common CPVC failure cause", "verified": false }
+      ],
+      "open_questions": "Whether CPVC belongs in a year-based dataset at all: I could not establish an era, a prevalence figure or an age-related failure rate. Recommend treating as 'not feasible' unless a second pass finds an authoritative ageing study."
+    },
+    {
+      "id": "cast-iron-drain-pipes",
+      "name": "Cast iron drain, waste and sewer pipes",
+      "category": "lifespan",
+      "summary": "Cast iron was the standard drain and sewer pipe in houses until plastic (ABS and PVC) took over in the 1970s. It rusts through from the inside, scales, cracks along the top and bottom, and under-slab runs are expensive to reach. It is an end-of-life issue, not a defect, and it is a major insurance dispute in Florida.",
+      "installed_from": 1880,
+      "installed_to": 1980,
+      "peak_from": 1900,
+      "peak_to": 1975,
+      "date_confidence": "medium",
+      "date_notes": "'Homes built before 1975' is the figure repeated by Florida law firms and inspectors. Plastic DWV entered homes in the 1960s and by the early 1970s was common in new construction; one trade-history article says plastic DWV was not permitted in residential work in its area until the early 1970s; cast iron's decline accelerated through the 1980s. Local codes varied (some cities, e.g. Chicago and New York, kept requiring cast iron far longer, from memory). Cast iron remains code-approved and is still installed, mainly in multi-family buildings for noise and fire reasons. Start year is recollection.",
+      "regions": "National. Financial/insurance salience is highest in Florida (slab-on-grade houses, humid and coastal conditions).",
+      "prevalence": "likely",
+      "prevalence_basis": "No national count. Reasoning: it was the default DWV material before plastics. The only number found is a law-firm claim of '2.4 million homes with suspected cast iron pipe failure in Florida', which I could not trace to any study and would not publish.",
+      "how_to_identify": "Black or rust-brown heavy pipe, 2-4 inch, in basement, crawlspace or garage, with bell-and-spigot hub joints (lead and oakum) or stainless banded no-hub couplings; a magnet sticks; it rings dully when tapped. In slab houses nothing is visible and only a sewer camera inspection will tell. Signs: slow drains throughout, sewer smell, rust blisters or weeping seams on the main stack.",
+      "risk": {
+        "safety": "Sewage leaks and sewer gas; pest entry; under-slab leaks can undermine soil.",
+        "financial": "Under-slab replacement requires tunnelling or breaking floors; lining is an alternative. Lifespan estimates found range 40-100 years and all come from interested parties.",
+        "insurance_or_sale": "In Florida many insurers reportedly exclude or cap water damage from deteriorated cast iron ('limited water damage' endorsements) and deny claims as wear and tear; heavy litigation. Sources are plaintiff-side law firms and a policyholder-law blog."
+      },
+      "fix": {
+        "what": "Camera inspection first; then spot repair, cured-in-place lining, or full replacement with PVC.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible independent figure found; available numbers are contractor and law-firm marketing."
+      },
+      "sources": [
+        { "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/BSS/nbsbuildingscience111.pdf", "publisher": "National Bureau of Standards (NIST) Building Science Series 111", "supports": "[SEARCH] Returned for history of plastic DWV in residential use; content not read. Likely the best primary source for the plastics transition.", "verified": false },
+        { "url": "https://contractormag.com/management/article/55132355/from-there-to-here-plumbing-the-past-70-years", "publisher": "Contractor magazine", "supports": "[SEARCH] PVC and ABS DWV not allowed in residential use until the early 1970s (author's market)", "verified": false },
+        { "url": "https://theplumber.com/early-history-of-pvc-pipe", "publisher": "Uni-Bell PVC Pipe News, Summer 1990 (reposted)", "supports": "[SEARCH] First US PVC networks 1955; national standards early 1960s", "verified": false },
+        { "url": "https://www.propertyinsurancecoveragelaw.com/blog/limited-water-damage-endorsement-will-not-limit-the-liability-for-the-tear-out-costs/", "publisher": "Merlin Law Group blog (policyholder attorneys)", "supports": "[SEARCH] Florida limited water damage endorsements and tear-out cost disputes for cast iron", "verified": false }
+      ],
+      "open_questions": "An authoritative lifespan (InterNACHI's chart, unreachable, is the usual citation). A defensible end year by region. Any neutral data on Florida failure rates or insurer rules (Florida OIR or Citizens Property Insurance documents would be the place to look)."
+    },
+    {
+      "id": "orangeburg-sewer-pipe",
+      "name": "Orangeburg (bituminous fibre) sewer pipe",
+      "category": "plumbing",
+      "summary": "Sewer pipe made of wood pulp impregnated with coal tar pitch, used for the buried line from house to street. It softens, goes oval, blisters and collapses, and roots penetrate it easily. Any surviving Orangeburg is past its design life.",
+      "installed_from": 1945,
+      "installed_to": 1972,
+      "peak_from": 1950,
+      "peak_to": 1970,
+      "date_confidence": "medium",
+      "date_notes": "1945-1972 is the range most often quoted for house sewers, and the Orangeburg, NY plant is reported to have closed in 1972. Fibre conduit existed from the 1860s-1890s for other uses, and some sources say use ran 'into the 1970s' or cite the 1960s-70s as the common period (City of Tempe). Other manufacturers made similar pipe (e.g. 'No-Corrode'), so the plant closure does not strictly end installation; a few later installs from stock are plausible. Peak years are an estimate.",
+      "regions": "National; often said to be most common in the East and Midwest, also documented in Arizona and western Canada. No regional data.",
+      "prevalence": "possible",
+      "prevalence_basis": "No data exists that I could find. City of Tempe states explicitly that not all houses of the period were connected with it. Clay and cast iron were the competing materials in the same years.",
+      "how_to_identify": "Not visible without digging or a sewer camera. On camera: black pipe, oval/deformed, blistered inner wall, in 8-foot lengths. If a section is exposed it looks like layered tar paper and can be dented. Symptoms: recurring backups, root clogs, a sunken trench line in the lawn. City or county sewer permit records sometimes name the material.",
+      "risk": {
+        "safety": "Sewage backup into the house.",
+        "financial": "Lateral replacement is normally the homeowner's cost. Cleaning tools can destroy the pipe, so maintenance is not a real option.",
+        "insurance_or_sale": "Standard homeowners policies generally exclude buried service line failure unless a service-line endorsement is bought (general knowledge, not sourced). Sewer scope is a common buyer contingency in affected neighbourhoods."
+      },
+      "fix": {
+        "what": "Replace the lateral (open trench or pipe bursting); lining only if the pipe is still round.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "Only contractor figures found (one lists $7,500-$14,000 for trenchless pipe bursting of a 40-80 ft lateral); not adopted."
+      },
+      "sources": [
+        { "url": "https://tempe.gov/home/showpublisheddocument/65709/636676805781800000", "publisher": "City of Tempe, Arizona", "supports": "[SEARCH] Orangeburg commonly used 1960s-70s for house connections; not all houses of the era have it", "verified": false },
+        { "url": "https://www.epcor.com:443/products-services/drainage/flooding-flood-prevention/Documents/no-corrode.pdf", "publisher": "EPCOR (Edmonton utility)", "supports": "[SEARCH] Utility guidance on 'No-Corrode' bituminous fibre pipe; content not read", "verified": false },
+        { "url": "https://phcppros.com/articles/17134-everything-you-wanted-to-know-about-orangeburg-pipe-but-were-afraid-to-ask", "publisher": "PHCP Pros (plumbing trade press)", "supports": "[SEARCH] History and failure modes; content not read in detail", "verified": false }
+      ],
+      "open_questions": "Any prevalence data at all. A primary source for the 1972 plant closure (only a Scribd-hosted document surfaced). Lifespan: 'manufacturer claimed 50 years', '30-50 years' are contractor statements."
+    },
+    {
+      "id": "clay-sewer-lateral",
+      "name": "Vitrified clay sewer lateral",
+      "category": "lifespan",
+      "summary": "Short lengths of fired clay pipe with many joints, the usual buried sewer line for houses before plastic. The clay itself lasts, but the joints open up, tree roots get in, sections shift and crack. Most are now old enough that a camera inspection is prudent before buying.",
+      "installed_from": 1880,
+      "installed_to": 1980,
+      "peak_from": 1900,
+      "peak_to": 1970,
+      "date_confidence": "low",
+      "date_notes": "No authoritative national end date found. Municipal sources speak of '1960s-era clay pipe' (Bloomington, MN) and treat clay as the legacy material replaced by PVC/ABS/HDPE during the 1970s-80s. Timing is set by each sewer district's standards. Start and peak years are recollection.",
+      "regions": "National, in sewered areas.",
+      "prevalence": "likely",
+      "prevalence_basis": "No national figure. Reasoning: clay was the dominant lateral material in most cities before plastics, alongside cast iron and (1945-72) Orangeburg. Some sewer agencies publish lateral material by era for their own territory.",
+      "how_to_identify": "Not visible above ground except sometimes at the cleanout or where the line leaves the basement (reddish-brown ceramic with a bell hub). A sewer camera shows joints every 2-5 feet with roots or offsets. Symptoms: periodic backups, especially with large trees between house and street.",
+      "risk": {
+        "safety": "Sewage backup.",
+        "financial": "Owner normally responsible for the lateral to the main (e.g. Bloomington, MN code). Many California and other cities require lateral inspection or repair at point of sale (recollection, e.g. East Bay Regional Private Sewer Lateral programme).",
+        "insurance_or_sale": "Buried service lines generally not covered without an endorsement. Point-of-sale lateral ordinances exist in some jurisdictions."
+      },
+      "fix": {
+        "what": "Root cutting as maintenance; cured-in-place lining; pipe bursting or open-trench replacement with PVC or fused HDPE.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No independent figure found."
+      },
+      "sources": [
+        { "url": "https://www.slocity.org/government/department-directory/utilities-department/wastewater/wastewater-collections/sewer-lateral-pipe-material/", "publisher": "City of San Luis Obispo Utilities", "supports": "[SEARCH] Clay laterals typically last 50-60 years; lateral materials by type", "verified": false },
+        { "url": "https://www.bloomingtonmn.gov/sites/default/files/media/81csanitarysewer.pdf", "publisher": "City of Bloomington, Minnesota", "supports": "[SEARCH] Joints in 1960s-era clay pipe shrink and admit roots; owner responsible for the lateral", "verified": false },
+        { "url": "https://webarchive.library.unt.edu/web/20170106234258/https:/www3.epa.gov/region1/sso/pdfs/PrivateSewerLaterals.pdf", "publisher": "US EPA Region 1 (archived)", "supports": "[SEARCH] EPA paper on private sewer laterals; content not read", "verified": false },
+        { "url": "https://costamesaca.gov/home/showpublisheddocument/7486/637806133596300000", "publisher": "City of Costa Mesa, California", "supports": "[SEARCH] Homeowner responsibility for lateral repair", "verified": false }
+      ],
+      "open_questions": "A national transition date. Whether lateral material by era can be sourced per sewer district. Cost data from a neutral source."
+    },
+    {
+      "id": "defective-abs-drain-pipe",
+      "name": "Defective black ABS drain pipe (1984-1990, certain makers)",
+      "category": "plumbing",
+      "summary": "ABS is the ordinary black plastic drain pipe and is generally sound, but pipe from several manufacturers in the mid-to-late 1980s was made with unsuitable (reportedly regrind/recycled) resin and cracks circumferentially at glued joints. It led to roughly $70 million in class settlements approved in California in 1998; those claims are long closed.",
+      "installed_from": 1984,
+      "installed_to": 1990,
+      "peak_from": 1985,
+      "peak_to": 1988,
+      "date_confidence": "high",
+      "date_notes": "1984-1990 is the manufacture window stated by class counsel; each maker used unsuitable resin in different sub-periods, which I could not pin down this session. From memory the usually quoted windows are Centaur 1985-1986, Phoenix 1985-1986, Gable 1984-1990, Polaris 1984-1990 and Apache 1984-1988; treat these as UNVERIFIED. Installation could lag manufacture by a year. Peak years are an estimate.",
+      "regions": "Mainly California and the western US, where ABS is the dominant DWV plastic; litigation was in Contra Costa County, California.",
+      "prevalence": "rare",
+      "prevalence_basis": "No count of affected homes found. Only named manufacturers' pipe is affected; most 1980s ABS is not.",
+      "how_to_identify": "Read the print line on exposed black drain pipe (garage, crawlspace, attic vents, under sinks): maker name (Centaur, Polaris, Phoenix, Gable, Apache), ASTM D2661 and a date code. Look for a hairline crack running around the pipe right beside a fitting, sometimes with staining.",
+      "risk": {
+        "safety": "Sewage/greywater leaks inside walls and ceilings; sewer gas.",
+        "financial": "Replacement of affected sections; much is concealed.",
+        "insurance_or_sale": "California inspectors routinely report these brands; no insurer data found."
+      },
+      "fix": {
+        "what": "Replace cracked joints and, where the brand is confirmed and accessible, the affected runs.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found."
+      },
+      "sources": [
+        { "url": "https://lieffcabraser.com/defect/abs-pipes", "publisher": "Lieff Cabraser (class counsel)", "supports": "[SEARCH] About $70 million across eight class settlements, approved 1998 in Contra Costa County; makers Polaris, Gable, Centaur, Phoenix and others; pipe made 1984-1990 cracks at glue joints", "verified": false },
+        { "url": "https://www.buildinggreen.com/node/8276", "publisher": "BuildingGreen (Environmental Building News, 1994)", "supports": "[SEARCH] California banned regrind/recycled resin in ABS DWV pipe", "verified": false },
+        { "url": "https://inspectapedia.com/plumbing/ABS_Piping.php", "publisher": "InspectApedia", "supports": "[SEARCH] Identification of defective ABS; some remains in service", "verified": false },
+        { "url": "https://www.toxicdocs.org/d/3J75pp37RkBEJwbMBNBLV4RY3", "publisher": "ToxicDocs (archived 1990 engineering letter)", "supports": "[SEARCH] Regrind/recycled resin as cause, quoting attorney David Birka-White", "verified": false }
+      ],
+      "open_questions": "Per-manufacturer date windows from the settlement documents. Whether Apache is properly part of the settled group. Any CPSC involvement. Number of homes."
+    },
+    {
+      "id": "copper-pinhole-leaks",
+      "name": "Pinhole leaks in copper water pipes",
+      "category": "plumbing",
+      "summary": "Copper pipe can develop tiny pits that perforate the wall and leak inside walls and ceilings. Research ties clusters of failures to water chemistry (pH, disinfectant, loss of natural organic matter) rather than to a defective pipe era. It is a regional, utility-specific problem and not something year built predicts well.",
+      "installed_from": null,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "NOT era-bound on the evidence found. The best-documented cluster is the Washington Suburban Sanitary Commission area (Montgomery and Prince George's counties, Maryland): WSSC became aware of significant reports in 1999-2000, commissioned Marc Edwards (Virginia Tech), and Maryland convened a task force that reported in December 2004. Claims that thin-wall Type M copper or a particular decade is to blame were not supported by anything I found.",
+      "regions": "Documented clusters: suburban Maryland (WSSC). Other clusters (parts of California, Florida, Ohio) are recalled from the literature but not confirmed this session.",
+      "prevalence": "rare",
+      "prevalence_basis": "No national incidence figure found. A Virginia Tech analysis put national cost at roughly $928 million a year (as reported by Science News); household repair costs in Maryland ranged about $1,300 to over $18,000.",
+      "how_to_identify": "Blue-green stains or crusty spots on copper pipe, unexplained ceiling or wall stains, several small leaks over a few years. Ask neighbours and the water utility whether pinhole leaks are a known local problem.",
+      "risk": {
+        "safety": "None direct; hidden leaks cause mould and damage.",
+        "financial": "Repeated repairs, then repipe or epoxy lining.",
+        "insurance_or_sale": "Repeated water claims can affect insurability (general knowledge, unsourced)."
+      },
+      "fix": {
+        "what": "Spot repair, then whole-house repipe (PEX or thicker-wall copper) if leaks recur; some utilities adjusted water chemistry (WSSC added orthophosphate, from memory).",
+        "cost_low_usd": 1300,
+        "cost_high_usd": 18000,
+        "cost_year": null,
+        "cost_source": "Virginia Tech study of Maryland households as summarised in search results; year of the figures not established (mid-2000s), so do not present as current prices."
+      },
+      "sources": [
+        { "url": "https://wsscwater.com/copper-pipe-pinhole-leaks", "publisher": "WSSC Water", "supports": "[SEARCH] Utility page on pinhole leaks; aware of significant reports from 1999", "verified": false },
+        { "url": "https://www.wsscwater.com/sites/default/files/sites/wssc/files/PDFs/Study%20of%20Pinhole%20leaks%20Report_1503042.pdf", "publisher": "WSSC Water", "supports": "[SEARCH] Study of pinhole leaks report", "verified": false },
+        { "url": "https://www.wsscwater.com/files/live/sites/wssc/files/PDFs%201/MarcEdwards_Investigation%20Overview_184811.pdf", "publisher": "WSSC Water / Marc Edwards", "supports": "[SEARCH] Edwards investigation: water chemistry (corrosion control changes, NOM removal) as contributor", "verified": false },
+        { "url": "https://www.sciencenews.org/blog/science-the-public/holey-copper-pipes", "publisher": "Science News", "supports": "[SEARCH] High pH plus chlorine especially damaging; national cost about $928 million a year", "verified": false }
+      ],
+      "open_questions": "Whether to include at all in a year-based product. If kept, it should be keyed to utility/region, not year."
+    },
+    {
+      "id": "pre-1994-high-flow-toilets",
+      "name": "Pre-1994 high-flow toilets, showerheads and faucets",
+      "category": "code-milestone",
+      "summary": "The Energy Policy Act of 1992 capped toilets made after 1 January 1994 at 1.6 gallons per flush and showerheads at 2.5 gallons per minute. Houses built before that, with original fixtures, use roughly twice the water per flush or more. It is a running-cost and rebate issue, not a hazard.",
+      "installed_from": 1994,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "For this milestone, installed_from is the year the requirement began (fixtures MANUFACTURED after 1 Jan 1994), so homes completed in 1994 may still have older stock. Before 1994 the common residential toilet was 3.5 gpf (roughly 1980-1993) and 5-7 gpf earlier; those earlier figures are from memory. Several states (e.g. California, Massachusetts) required low-flow fixtures a few years before the federal rule; not confirmed this session. Faucet limits are stated inconsistently in secondary sources (2.2 vs 2.5 gpm); check the statute. EPA WaterSense (voluntary, from 2006) labels 1.28 gpf toilets and 2.0 gpm showerheads. First-generation 1.6 gpf toilets (mid-1990s) had a reputation for poor flushing; anecdotal.",
+      "regions": "National (federal manufacturing standard); some states earlier and now stricter (e.g. 1.28 gpf).",
+      "prevalence": "possible",
+      "prevalence_basis": "No data found on the share of pre-1994 homes still fitted with original toilets. Toilets are often replaced, so 'possible'.",
+      "how_to_identify": "Lift the tank lid: the gallons per flush is usually stamped or printed inside the tank or on the bowl behind the seat ('1.6 gpf / 6.0 Lpf'), along with a manufacture date. No marking and a large tank suggest pre-1994.",
+      "risk": {
+        "safety": "None.",
+        "financial": "Higher water and sewer bills; many utilities offer replacement rebates.",
+        "insurance_or_sale": "Some jurisdictions (notably California, from memory) require water-conserving fixtures to be installed or disclosed at sale or on remodel."
+      },
+      "fix": {
+        "what": "Replace with a WaterSense-labelled toilet and showerhead.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure collected."
+      },
+      "sources": [
+        { "url": "https://wbdg.org/node/2914", "publisher": "Whole Building Design Guide (National Institute of Building Sciences)", "supports": "[SEARCH] Energy Policy Act of 1992 fixture limits; content not read in detail", "verified": false },
+        { "url": "https://www.govinfo.gov/content/pkg/CHRG-106hhrg58509/html/CHRG-106hhrg58509.htm", "publisher": "US House hearing, 106th Congress (GovInfo)", "supports": "[SEARCH] Congressional hearing on the 1.6 gpf standard; primary record of the 1994 effective date", "verified": false },
+        { "url": "https://prnewswire.com/news-releases/18-trillion-gallons-of-water-saved-during-20-years-of-low-flow-toilet-regulations-251254151.html", "publisher": "Plumbing Manufacturers International via PR Newswire", "supports": "[SEARCH] 1.6 gpf requirement dating from 1994", "verified": false },
+        { "url": "https://www.buildinggreen.com/node/10826", "publisher": "BuildingGreen", "supports": "[SEARCH] EPAct 1992 limits for products made after 1 Jan 1994", "verified": false }
+      ],
+      "open_questions": "Exact statutory faucet limits. State-level earlier adoption dates. Any evidence on early 1.6 gpf performance (a 1990s NAHB or AWWA study would be the source)."
+    },
+    {
+      "id": "water-heater-expected-life",
+      "name": "Water heater age (tank type)",
+      "category": "lifespan",
+      "summary": "A storage water heater is a consumable: the steel tank corrodes and eventually leaks, sometimes suddenly. If the house is older than the heater's expected life, the question is only how old the current unit is. It applies to every house regardless of era.",
+      "installed_from": null,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "Not era-bound; driven by the unit's manufacture date. Lifespan figures vary by source: 8-12 years (InspectApedia), 10-15 years tank and 20+ years tankless (attributed to DOE / ENERGY STAR by secondary sites), and DOE rulemaking averages of about 14.4 years (gas storage), 15.1 years (electric storage/heat pump) and 20 years (tankless) as quoted by a third-party calculator. None of the DOE figures was read at source.",
+      "regions": "National; hard water shortens life.",
+      "prevalence": "likely",
+      "prevalence_basis": "Every house has one; whether it is due depends on the unit's age, not the house's. No survey of unit age found (the Census American Housing Survey or EIA RECS may have appliance age bands; not checked).",
+      "how_to_identify": "Read the rating plate on the tank: the manufacture date is printed or encoded in the serial number (often first four digits as year/week or month/year; schemes vary by brand). Look for rust at the base, moisture in the pan, corrosion at fittings.",
+      "risk": {
+        "safety": "A failed or missing temperature/pressure relief valve is a rare but serious hazard; gas units add combustion and venting risks.",
+        "financial": "Tank failure can release the full tank plus continuous supply; damage is worst for attic or upper-floor installations.",
+        "insurance_or_sale": "Some insurers ask heater age and may exclude or surcharge old units (commonly reported, unsourced here)."
+      },
+      "fix": {
+        "what": "Replace at or before end of expected life; annual flush and anode check extend life.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "Search for a 2025 replacement cost figure returned nothing usable."
+      },
+      "sources": [
+        { "url": "https://inspectapedia.com/plumbing/Water_Heater_Life.php", "publisher": "InspectApedia", "supports": "[SEARCH] Typical gas/oil water heater life 8-12 years", "verified": false },
+        { "url": "https://www.energy.gov/energysaver/selecting-new-water-heater", "publisher": "US Department of Energy, Energy Saver", "supports": "[MEMORY] DOE consumer guidance on water heater types and life expectancy (10-15 years storage, 20+ tankless); URL recalled, not seen this session", "verified": false },
+        { "url": "https://www.nachi.org/life-expectancy.htm", "publisher": "InterNACHI", "supports": "[MEMORY] Standard Estimated Life Expectancy Chart for Homes; fetch blocked", "verified": false }
+      ],
+      "open_questions": "A primary DOE lifetime figure (the appliance standards technical support documents contain them). Replacement cost."
+    },
+    {
+      "id": "no-anti-scald-shower-valve",
+      "name": "Showers without a pressure-balancing or thermostatic (anti-scald) valve",
+      "category": "code-milestone",
+      "summary": "Modern codes require shower and tub-shower valves that hold temperature when someone flushes a toilet or runs a tap, and that have a maximum-temperature limit stop. Older two-handle or non-compensating single-handle valves can swing to scalding temperatures in seconds. Risk is highest for children and older adults.",
+      "installed_from": null,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "I could NOT establish the year. Found: ASSE began developing standard 1016 in 1973; the BOCA plumbing code at some point required compensating shower valves (a Plumbing Manufacturers International timeline lists it, year not visible in the search summary); all model codes (IPC, UPC, IRC) now require valves conforming to ASSE 1016 / ASME A112.1016 / CSA B125.16. One low-authority wiki says residential requirements date to the late 1990s. My recollection is that the requirement entered the model codes between the late 1980s and mid 1990s, with state adoption trailing by years, so the practical cut-over for new houses ranges from about 1990 to the early 2000s by state. Do not publish a single national year without the code editions in hand.",
+      "regions": "National, with state-by-state adoption dates.",
+      "prevalence": "likely",
+      "prevalence_basis": "No data. Reasoning: before the requirement, compensating valves were an upgrade, so original showers in older homes generally lack them unless remodelled.",
+      "how_to_identify": "Two separate hot and cold handles for a shower almost always means no pressure balancing. For single-handle valves, run the shower and have someone flush a nearby toilet: a marked temperature jump indicates a non-compensating valve. Brand/model on the trim plate can be looked up.",
+      "risk": {
+        "safety": "Scald burns and falls from thermal shock.",
+        "financial": "Valve replacement usually means opening the wall or using a retrofit trim/cartridge.",
+        "insurance_or_sale": "None known. Existing valves are generally grandfathered until the valve is replaced or the bathroom remodelled."
+      },
+      "fix": {
+        "what": "Replace the valve with an ASSE 1016 pressure-balancing or thermostatic valve and set the limit stop (about 120 F); alternatively fit ASSE 1070 point-of-use tempering.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found."
+      },
+      "sources": [
+        { "url": "https://www.phcppros.com/articles/13878-the-continuing-scald-problem-in-plumbing-systems", "publisher": "PHCP Pros / Plumbing Engineer (Ron George)", "supports": "[SEARCH] ASSE 1016 development began 1973; history of limit stops; codes now require compensating valves", "verified": false },
+        { "url": "https://www.safeplumbing.org/files/safeplumbing.org/documents/misc/timeline.pdf", "publisher": "Plumbing Manufacturers International", "supports": "[SEARCH] Timeline listing BOCA code requirement for compensating shower valves; year not captured", "verified": false },
+        { "url": "https://law.resource.org/pub/us/cfr/ibr/002/asse.1016.1988.pdf", "publisher": "ASSE 1016-1988 (via Public.Resource.Org)", "supports": "[SEARCH] Text of the 1988 edition of the standard; shows it was incorporated by reference in federal regulation", "verified": false },
+        { "url": "https://www.pmmag.com/articles/85874-scald-protection-by-the-numbers", "publisher": "PM Magazine", "supports": "[SEARCH] Scald protection requirements overview; content not read", "verified": false }
+      ],
+      "open_questions": "The first edition of each model code (BOCA National Plumbing Code, SBCCI Standard Plumbing Code, UPC, CABO One and Two Family Dwelling Code, IRC 2000) to require compensating valves in dwellings, and state adoption dates. The PMI timeline PDF probably answers the BOCA year."
+    },
+    {
+      "id": "s-traps-and-drum-traps",
+      "name": "S-traps and drum traps under sinks and tubs",
+      "category": "plumbing",
+      "summary": "Old-style traps that current codes prohibit. An S-trap (the drain drops straight down through the floor with no vent) can siphon itself dry and let sewer gas in; a drum trap (a metal canister, usually on a bathtub) does not self-clean and is hard to service. Both are signs of original pre-war plumbing or unpermitted work.",
+      "installed_from": null,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "I could NOT establish when either was prohibited or stopped being installed. Current codes prohibit both: IRC 2021 P3201.5 (the section number moves between editions: P3201.2 area in 2018, P3201.6 in 2024); the IPC allows drum traps only as solids interceptors or on chemical waste. One low-quality source claims the Uniform Plumbing Code banned S-traps in the 1920s. My recollection: drum traps were routine on bathtubs through roughly the 1950s-60s, and vented P-traps were required by model codes from the 1930s-40s (Hoover Code 1928, National Plumbing Code 1955), but S-traps keep appearing in DIY work in houses of any age. Year built is therefore a weak predictor.",
+      "regions": "National.",
+      "prevalence": "possible",
+      "prevalence_basis": "No data exists that I could find.",
+      "how_to_identify": "S-trap: look under the sink; if the pipe makes an S and goes down into the floor (not horizontally into the wall), it is an S-trap. Drum trap: a 3-4 inch round metal cap flush with the bathroom floor near the tub, or a canister visible from the basement ceiling below the tub. Gurgling drains and intermittent sewer smell are symptoms.",
+      "risk": {
+        "safety": "Sewer gas (odour, methane, hydrogen sulphide at low levels) entering living space when the seal is lost.",
+        "financial": "Minor to moderate: re-plumbing the trap arm and adding a vent or, where allowed, an air admittance valve.",
+        "insurance_or_sale": "Flagged in home inspections; generally grandfathered until the plumbing is altered."
+      },
+      "fix": {
+        "what": "Replace with a properly vented P-trap; replace drum traps when the tub drain is accessible.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found."
+      },
+      "sources": [
+        { "url": "https://inspectapedia.com/plumbing/Illegal-Plumbing-Traps.php", "publisher": "InspectApedia", "supports": "[SEARCH] Prohibited trap types and IPC drum trap exceptions", "verified": false },
+        { "url": "https://inspectapedia.com/plumbing/Plumbing-Trap-History.php", "publisher": "InspectApedia", "supports": "[SEARCH] Trap history page exists; dates not captured", "verified": false },
+        { "url": "https://www.jaspector.com/codes/irc-2021/ch32-plumbing-traps/s-trap-prohibited-code/", "publisher": "Jaspector (code summary site, not ICC)", "supports": "[SEARCH] IRC 2021 P3201.5 lists S-traps, drum traps, bell traps among prohibited traps", "verified": false },
+        { "url": "https://forms.iapmo.org/email_marketing/codespotlight/2017/Oct12.htm", "publisher": "IAPMO (publisher of the UPC)", "supports": "[SEARCH] UPC code spotlight on traps; content not read", "verified": false }
+      ],
+      "open_questions": "The code editions in which each was first prohibited; when drum traps actually dropped out of new construction. Needs the ICC and IAPMO code texts (codes.iccsafe.org) and a plumbing-code history."
+    }
+  ],
+  "feasibility_notes": "The main obstacle was access, not the subject: only web search worked. Every direct page fetch failed (epa.gov, cpsc.gov, nachi.org, wikipedia.org all blocked by the session's network policy), so I could not open a single source and, under the brief's rule, nothing here is 'verified'. Search summaries did corroborate most headline facts and supplied real URLs, but they are machine summaries and several times contradicted each other. On substance the domain splits three ways. (1) Product defects with litigation have firm, citable windows and good primary sources once reachable: polybutylene 1978-1995, Kitec 1995-2007, defective ABS 1984-1990, the 1986 lead ban and 2014 lead-free redefinition, the 1994 fixture standard. (2) Legacy materials have soft edges that vary by city and code jurisdiction: galvanized supply, cast iron drains, clay laterals, lead service lines, Orangeburg. Sources for their end dates are mostly utilities, inspectors and contractors, and they disagree by 10-20 years. (3) Several assigned items are not really era-bound (copper pinholes, CPVC, water heater life) or have code dates I could not find (anti-scald valves, S-traps and drum traps). Prevalence is the weakest part throughout: real figures exist only for lead service lines (and those are in open dispute, 9.2 million in 2023 versus 4 million in 2025) and as loose, unsourced estimates for polybutylene (6-10 million units). For everything else no data exists that I could find, and my prevalence ratings are reasoning, labelled as such. Cost data from neutral sources is almost absent apart from EPA's lead line figure; the rest is consumer aggregators or contractors. A second pass needs: fetch access to epa.gov, cpsc.gov, nachi.org, energy.gov, codes.iccsafe.org, nist.gov and court/settlement documents; the actual model code editions for the anti-scald and trap milestones; the settlement agreements for PB, Kitec, ABS and PEX to lift exact class dates; and a decision on whether lead service lines should be answered from utility inventories by address or utility instead of by year. Facts marked [MEMORY] or described as recollection must be checked before publication.",
+  "missed": [
+    "Lead drain and waste pipes (lead closet bends, lead traps) in pre-1950s homes",
+    "Leaded brass fixtures as a separate pre-2014 entry (folded into lead solder entry)",
+    "Lead-lined or lead goosenecks/pigtails on otherwise non-lead service lines",
+    "Gas piping issues that straddle plumbing: yellow CSST bonding (lightning), uncoated brass gas connectors (CPSC warning)",
+    "Water heater code milestones: temperature/pressure relief valves, seismic strapping (California), FVIR flammable-vapour-ignition-resistant gas heaters (2003), expansion tanks",
+    "Backflow / vacuum breakers on hose bibbs and anti-siphon requirements",
+    "Septic systems and cesspools by era; steel septic tanks",
+    "Asbestos-cement (Transite) water and sewer pipe",
+    "Black iron and early plastic (PE) well and service lines",
+    "Dual-check and pressure-reducing valve requirements; thermal expansion",
+    "Qest / Vanguard and other polybutylene fitting generations (plastic vs copper/brass crimp) as separate risk tiers",
+    "Recalled water-related products: dip tubes in 1993-1997 water heaters, specific braided supply line and toilet-fill-valve class actions",
+    "State-level early low-flow fixture laws and point-of-sale retrofit ordinances",
+    "Point-of-sale sewer lateral inspection ordinances by city"
+  ]
+}

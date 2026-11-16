@@ -1,0 +1,533 @@
+{
+  "domain": "electrical",
+  "web_access": "partial",
+  "web_access_detail": "Web SEARCH worked; page FETCHING did not. Every WebFetch attempt failed with a DNS/allow-list error (tried www.cpsc.gov, www.nachi.org, iaeimagazine.org, en.wikipedia.org, inspectapedia.com). Consequently NO page was opened in this session and, under the brief's rule, every source below is marked verified:false. URLs listed are real URLs returned by the search engine (none invented); the 'supports' text says what the search-result snippet/summary showed for that URL. Treat every figure here as 'seen in a search snippet, needs a page-open check'. Anything marked '(from memory)' was not even seen in a snippet.",
+  "entries": [
+    {
+      "id": "knob-and-tube-wiring",
+      "name": "Knob-and-tube wiring",
+      "category": "electrical",
+      "summary": "The earliest standard house wiring: single insulated conductors run separately through ceramic tubes in joists and supported on ceramic knobs, with no ground wire. It matters today because the rubber/cloth insulation is 80-140 years old, it was designed to shed heat into open air (so burying it in attic or wall insulation is prohibited by the NEC), it has usually been altered by amateurs, and many insurers will not write or renew a policy on it.",
+      "installed_from": 1880,
+      "installed_to": 1940,
+      "peak_from": 1900,
+      "peak_to": 1930,
+      "date_confidence": "medium",
+      "date_notes": "Search results gave two ranges: 'about 1880 to the 1940s' (Wikipedia / InterNACHI phrasing) and '1880 to the 1930s' (EC&M / Electrical Contractor magazine). A contractor blog says 'standard before 1950'. The disagreement is about the tail: roughly 1930 vs 1940s, i.e. about 10-15 years. It lingered longest in rural and low-cost construction. Peak years 1900-1930 are my reading of the sources, not a quoted figure. 1880s installs were rare simply because few houses had electricity.",
+      "regions": "national; most common in the Northeast, Midwest and older West Coast cities because that is where pre-1940 housing is concentrated",
+      "prevalence": "likely",
+      "prevalence_basis": "No national count of homes with surviving knob-and-tube was found. 'Likely' refers to original installation: a house wired in 1900-1930 almost certainly started with it. Whether any is still live depends on later rewiring, and partial rewires that leave K&T in walls and attics are common. No data exists to put a percentage on survival.",
+      "how_to_identify": "Look in the unfinished basement ceiling and attic: white ceramic knobs nailed to joists, ceramic tubes passing through joists, and two separate cloth-covered wires running several inches apart. Push-button switches, two-prong outlets and a fuse box are supporting clues. Modern cable at the panel does not rule it out; K&T is often spliced in further along.",
+      "risk": {
+        "safety": "No equipment ground; insulation embrittles and falls off when disturbed; overheats if covered by thermal insulation (NEC Article 394 prohibits concealing it in insulated cavities; some states such as Washington allow it under conditions after inspection); frequently overfused and improperly spliced. A code-panel comment quoted on a forum claims no overheating problems have been reported from insulated K&T, so the insulation-contact hazard is contested.",
+        "financial": "Whole-house or partial rewire; blocks adding attic/wall insulation and therefore energy-retrofit programmes until removed or certified.",
+        "insurance_or_sale": "Search results say many insurers refuse new policies on active K&T, while others accept it with an electrician's inspection report. Evidence is anecdotal/trade-press; no regulator document found. InterNACHI advises inspectors to always call it out."
+      },
+      "fix": {
+        "what": "Replace the K&T circuits with modern grounded cable (full or partial rewire), usually with a panel upgrade; at minimum have an electrician evaluate, de-energise abandoned runs, and keep insulation off live runs.",
+        "cost_low_usd": 12000,
+        "cost_high_usd": 36600,
+        "cost_year": 2025,
+        "cost_source": "Angi 'How Much Does It Cost to Replace Knob and Tube Wiring?' (search snippet: range $12,000-$36,600, average $24,300; page labelled 2026 data). Consumer cost-aggregator, not an authoritative source; other aggregators quote $7,850-$29,450."
+      },
+      "sources": [
+        { "url": "https://www.nachi.org/knob-and-tube", "publisher": "InterNACHI", "supports": "Era of use, hazards, inspectors should always disclaim K&T (snippet only)", "verified": false },
+        { "url": "https://www.ecmag.com/magazine/articles/article-detail/your-business-classic-knob-and-tube-wiring-still-use-take-care-working-antiquated-system", "publisher": "Electrical Contractor Magazine", "supports": "Used 1880 to the 1930s; NEC does not permit K&T enclosed in insulation (snippet only)", "verified": false },
+        { "url": "https://lawfilesext.leg.wa.gov/Law/WAC/WAC%20296%20%20TITLE/WAC%20296%20-%2046B%20CHAPTER/WAC%20296%20-%2046B-394.htm", "publisher": "Washington State Legislature (WAC 296-46B-394)", "supports": "State rule: foam insulation not allowed with K&T; loose/rolled insulation allowed under conditions (snippet only)", "verified": false },
+        { "url": "https://www.angi.com/articles/knob-and-tube-replacement-cost.htm", "publisher": "Angi", "supports": "Replacement cost range (snippet only)", "verified": false }
+      ],
+      "open_questions": "No count of US homes still containing live K&T. Exact NEC edition that last recognised K&T for new work (it survives in Article 394 for extensions of existing installations only) not confirmed. Insurer policies are undocumented beyond anecdote."
+    },
+    {
+      "id": "cloth-rubber-insulated-wiring",
+      "name": "Cloth-covered / rubber-insulated wiring (early 'Romex' and armored cable)",
+      "category": "electrical",
+      "summary": "Between knob-and-tube and modern plastic cable, houses were wired with rubber-insulated copper conductors wrapped in a woven cloth (often tar- or varnish-impregnated) jacket, or the same conductors inside steel armor (BX). The rubber dries out and crumbles, especially at light fixtures and other hot spots, leaving bare conductor; most of this cable also has no ground wire.",
+      "installed_from": 1925,
+      "installed_to": 1965,
+      "peak_from": 1930,
+      "peak_to": 1955,
+      "date_confidence": "low",
+      "date_notes": "Search snippets of a UL/Dini history paper (hosted on InspectAPedia) say: rubber-insulated conductors are 'generally of a vintage before 1960'; cloth-braid NM jackets 'generally before 1970'; thermoplastic NM jackets 'generally after 1960'; NM with a ground wire 'generally after 1962'. So the rubber era ends c.1960 but cloth-jacketed cable with plastic (TW) conductors was sold into the late 1960s (a forum post reports a 1967 box). The start year 1925 is from memory (NM cable invented early 1920s, recognised by the NEC in the late 1920s) and was NOT confirmed in this session. Transition was gradual and by manufacturer: expect +/- 10 years at both ends.",
+      "regions": "national",
+      "prevalence": "likely",
+      "prevalence_basis": "No prevalence data exists. Reasoning only: for a house built c.1930-1955 that has not been rewired, rubber-insulated cable (NM or armored) was the normal wiring method. Share of such houses since rewired is unknown.",
+      "how_to_identify": "At the panel, basement or attic: cables with a fabric (black, silver or brown braided, sometimes tarry) outer covering instead of smooth plastic; inside boxes the individual wires have cloth over black/red rubber that cracks or flakes when bent. Check ceiling light boxes first, where heat damage is worst. Do not flex old wires to test them.",
+      "risk": {
+        "safety": "Embrittled insulation exposes conductors (shock and arcing-fire risk), worst at ceiling fixtures; usually ungrounded; early armored cable without a bonding strip is a poor ground path. No fire-incidence statistics specific to this wiring were found.",
+        "financial": "Partial or full rewire; often discovered only when a fixture or outlet is changed.",
+        "insurance_or_sale": "Some insurers (notably in Florida, per trade sources) flag 'cloth wiring' on 4-point inspections; no authoritative document found in this session."
+      },
+      "fix": {
+        "what": "Electrician evaluation; replace deteriorated runs (commonly lighting circuits) or rewire; add GFCI/AFCI protection as an interim measure.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure specific to this issue. Whole-house rewire aggregator figures (Angi, snippet: about $2.10-$4.20 per sq ft, other sites $7,850-$29,450) are indicative only."
+      },
+      "sources": [
+        { "url": "https://inspectapedia.com/electric/History_of_Residential_Wiring_Dini.pdf", "publisher": "David Dini, Underwriters Laboratories (hosted by InspectAPedia)", "supports": "Vintage rules of thumb: rubber before 1960, cloth braid before 1970, thermoplastic jacket after 1960, grounded NM after 1962 (snippet only)", "verified": false },
+        { "url": "https://inspectapedia.com/electric/Study_of_Physical_Properties_of_Wire_in_Older_Homes_Dini.pdf", "publisher": "UL / Fire Protection Research Foundation (hosted by InspectAPedia)", "supports": "Study of aged residential wiring condition (title seen only)", "verified": false },
+        { "url": "https://www.warrenforensics.com/2020/09/04/the-demise-of-insulation-on-electrical-wiring/", "publisher": "Warren Forensics (engineering firm blog - weaker source)", "supports": "Rubber insulation degradation; NM-B designation for higher-temperature cable (snippet only)", "verified": false }
+      ],
+      "open_questions": "Exact start year; the year NM-B (90C conductors) replaced older 60C NM (commonly given as 1984-85 - from memory, not found in search) which matters for overheating at modern light fixtures; any insurer documentation; any failure-rate data."
+    },
+    {
+      "id": "ungrounded-two-prong-outlets",
+      "name": "Ungrounded two-prong outlets (no ground wire)",
+      "category": "electrical",
+      "summary": "Older houses were wired with two-wire circuits and two-slot receptacles; there is no equipment ground to carry fault current, so a fault in a metal-cased appliance can energise the case. Three-prong outlets found in such houses are often 'bootleg' replacements with no ground actually connected, which is worse because it looks safe.",
+      "installed_from": 1900,
+      "installed_to": 1962,
+      "peak_from": 1920,
+      "peak_to": 1956,
+      "date_confidence": "medium",
+      "date_notes": "Grounding-type receptacles were phased in by the NEC, per forum transcriptions of old code text seen in search: 1947 laundry outlet; 1956 garages, basements, outdoors; 1959 near kitchen sinks, cellars, workshops; 1962 all 15/20A receptacle outlets plus a grounding conductor in the branch circuit. CONFLICT: an ESFI consumer guide says grounding-type receptacles were first required for all 15/20A outlets in the 1971 NEC, and a forum post says the words 'shall be of the grounding type' first appear in the 1975 NEC. So the end date is 1962 (most common in trade sources) vs 1971 (ESFI): a 9-year disagreement that needs the actual code text. Add 1-5 years for local adoption lag. The UL/Dini history says NM cable 'generally' had a ground wire after 1962, which supports 1962 as the practical cutoff. installed_from 1900 is nominal (start of widespread residential wiring).",
+      "regions": "national (adoption lag varied by state/city)",
+      "prevalence": "likely",
+      "prevalence_basis": "No survey data found. Reasoning: before 1962 the code did not require grounded general-purpose receptacles, so a pre-1960 house originally had mostly two-wire circuits. How many have been rewired is unknown.",
+      "how_to_identify": "Outlets with two slots and no round ground hole. Where three-prong outlets exist in a pre-1962 house, a plug-in outlet tester (under $15) shows 'open ground'. At the panel, old cables with only two conductors and no bare wire.",
+      "risk": {
+        "safety": "Shock hazard with grounded (three-prong) appliances; surge protectors do not work properly; cheater adapters defeat protection.",
+        "financial": "Adding grounds means new cable runs; NEC 406.4(D) allows replacing with GFCI-protected outlets labelled 'No Equipment Ground' as a cheaper accepted alternative (the text of 406.4(D) was not retrieved in this session - from memory).",
+        "insurance_or_sale": "Routinely written up by home inspectors; rarely an insurance refusal on its own."
+      },
+      "fix": {
+        "what": "Either run new grounded circuits, or protect ungrounded outlets with GFCI devices/breakers and label them (code-recognised), keeping in mind a GFCI gives shock protection but not a true ground.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found in this session."
+      },
+      "sources": [
+        { "url": "https://www.esfi.org/wp-content/uploads/2021/06/Outlets-The-Ins-and-Outs-Final-EA40.pdf", "publisher": "Electrical Safety Foundation International (ESFI)", "supports": "States grounding-type receptacles first required for all 15/20A outlets in the 1971 NEC (snippet only) - conflicts with 1962", "verified": false },
+        { "url": "https://www.electrical-contractor.net/forums/ubbthreads.php/topics/153379/Some_Historical_Electrical_Fin.html", "publisher": "ECN Electrical Forum (forum transcription of code history - weak)", "supports": "1947 laundry, 1956 garage/exterior, 1959 kitchen sinks/basements, 1962 all 15/20A outlets (snippet only)", "verified": false },
+        { "url": "https://forums.mikeholt.com/threads/when-were-ground-wires-1st-required.61410/", "publisher": "Mike Holt forum (weak)", "supports": "1962 NEC required branch circuits to include a grounding conductor (snippet only)", "verified": false },
+        { "url": "https://inspectapedia.com/electric/History_of_Residential_Wiring_Dini.pdf", "publisher": "UL (Dini)", "supports": "Until early 1960s most NM cable had no grounding conductor (snippet only)", "verified": false }
+      ],
+      "open_questions": "Resolve 1962 vs 1971 vs 1975 against the actual NEC editions (NFPA free-access archive). Undersized ground wires in 1960s NM cable (16 AWG ground in 14 AWG cable) not researched."
+    },
+    {
+      "id": "aluminum-branch-wiring",
+      "name": "Aluminum branch-circuit wiring (solid aluminum to outlets and switches)",
+      "category": "electrical",
+      "summary": "During a copper price spike, many homes were wired with solid aluminum conductors on ordinary 15- and 20-amp circuits. The connections at outlets, switches and splices loosen and oxidise over time and can overheat to fire-starting temperatures without tripping a breaker. Aluminum used for the large service and appliance feeders is a different, accepted practice and is not this issue.",
+      "installed_from": 1965,
+      "installed_to": 1973,
+      "peak_from": 1965,
+      "peak_to": 1972,
+      "date_confidence": "high",
+      "date_notes": "The 1965-1973 window is consistent across CPSC material and inspector references seen in search. The CPSC's hazard finding (Franklin Research Institute survey) specifically covers homes wired 'before 1972'; CPSC states no data were developed for homes built after 1972, when improved AA-8000-series alloy wire and CO/ALR-rated devices came in (about 1972-73 per trade sources). Some sources stretch use to the mid/late 1970s for the newer alloy; that later wire is considered less troublesome (a 1975 NBS report says so) but is not exonerated. Disagreement is small: 1-3 years at the tail.",
+      "regions": "national; anecdotally concentrated in fast-growing 1960s-70s suburbs and in mobile homes (CPSC's count includes mobile homes)",
+      "prevalence": "possible",
+      "prevalence_basis": "REAL FIGURE EXISTS. CPSC's 1974 news release estimated about 2 million homes and mobile homes had been built with aluminum wiring since 1965 (search snippet of the CPSC release). One private site says 1.5 million with no source. CPSC also reports (Franklin Research Institute survey) that homes wired with aluminum before 1972 are 55 times more likely to have one or more connections reach 'fire hazard conditions' than homes wired with copper - a relative risk for connections, not a share of homes that burn. Converting 2 million to a share of 1965-73 construction requires housing-start totals that were not retrieved here (my rough recollection of roughly 1.5-2 million starts a year would imply on the order of 10-15% of homes of that era, but that calculation is unverified).",
+      "how_to_identify": "Per CPSC Pub. 516 guidance: look at exposed cable in the attic, basement or at the panel for 'AL' or 'ALUMINUM' printed on the plastic jacket every few feet ('CU-clad' or 'copper-clad' aluminum is a different, lower-risk product). Warning signs: warm cover plates, flickering lights, smell of burning plastic at outlets. Do not open boxes yourself.",
+      "risk": {
+        "safety": "Overheating connections and fire; CPSC: 55x more likely to have connections at fire-hazard condition (pre-1972 homes).",
+        "financial": "Every connection in the house (often several hundred) needs remediation, or the branch wiring needs replacing.",
+        "insurance_or_sale": "Insurer bulletins (Hartford, State Auto technical bulletins appeared in search) treat it as an underwriting issue; many carriers want proof of an approved repair. No regulator-level statement found."
+      },
+      "fix": {
+        "what": "CPSC Publication 516 (June 2011) recognises three permanent remedies: complete rewiring with copper; COPALUM crimp connectors (special tool, certified installers); or AlumiConn lug connectors. CPSC calls CO/ALR-rated switches/outlets 'at best, an incomplete repair' and says twist-on pigtail connectors are temporary/emergency only.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure. Low-authority sites seen in search quote $1,500-$4,000 and $3,000-$10,000 for whole-house connector repair and $10-$18 material per AlumiConn connection; these conflict and should not be published without better sourcing."
+      },
+      "sources": [
+        { "url": "https://www.cpsc.gov/s3fs-public/516.pdf", "publisher": "US CPSC, Publication 516 'Repairing Aluminum Wiring' (June 2011)", "supports": "55x finding for pre-1972 homes, identification, approved repairs (host blocked for fetch; content seen via search summary and InspectAPedia mirror snippet)", "verified": false },
+        { "url": "https://www.cpsc.gov/Newsroom/News-Releases/1974/CPSC-Safety-Recommendations-For-Aluminum-Wiring-In-Homes", "publisher": "US CPSC news release, 1974", "supports": "Estimated two million homes and mobile homes built with aluminum wiring since 1965 (snippet only)", "verified": false },
+        { "url": "https://inspectapedia.com/aluminum/Aluminum-Wiring-Repair-US-CPSC-Pub-516.php", "publisher": "InspectAPedia (mirror of CPSC Pub. 516)", "supports": "Text of Pub. 516 incl. CO/ALR 'incomplete repair' wording (snippet only)", "verified": false },
+        { "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir75-723.pdf", "publisher": "National Bureau of Standards (NBSIR 75-723, 1975)", "supports": "Newer alloy wire with CO/ALR devices had 'given relatively little trouble' (snippet only)", "verified": false },
+        { "url": "https://www.cpsc.gov/Newsroom/News-Releases/1978/CPSC-Testifies-On-Residential-Aluminum-Wiring", "publisher": "US CPSC news release, 1978", "supports": "CPSC position on residential aluminum wiring (title only)", "verified": false }
+      ],
+      "open_questions": "Open the two CPSC pages to confirm exact wording and the 2 million figure; get Census housing completions 1965-73 to compute a defensible share; whether copper-clad aluminum needs its own entry; credible repair-cost data."
+    },
+    {
+      "id": "fpe-stab-lok-panels",
+      "name": "Federal Pacific Electric (FPE) Stab-Lok breaker panels",
+      "category": "electrical",
+      "summary": "A very widely installed brand of breaker panel whose Stab-Lok breakers have, in independent testing, frequently failed to trip on overload or short circuit, and can lose firm contact with the bus. A breaker that will not trip removes the main protection against wiring fires. There was never a federal recall, which is why the panels are still in service.",
+      "installed_from": 1950,
+      "installed_to": 1990,
+      "peak_from": 1955,
+      "peak_to": 1980,
+      "date_confidence": "medium",
+      "date_notes": "Sources seen: Stab-Lok line marketed from 1951 (InspectAPedia history); 'manufactured primarily by FPE from 1950 to 1980' and 'most commonly found in houses built before 1990' (Wikipedia Stab-Lok article); 'widely installed from the 1950s through 1990' (news coverage). The disagreement is the tail: 1980 vs about 1990 (successor companies sold Stab-Lok-type equipment after FPE itself withdrew). Peak years are my reading, not a quoted figure.",
+      "regions": "national (also Canada, under Federal Pioneer)",
+      "prevalence": "possible",
+      "prevalence_basis": "No authoritative count found. Advocacy/inspection documents say 'millions of homes'; a '28 million' figure appears only on low-quality pages and should not be used. No market-share data located, so the chance that a given 1955-1980 house has one cannot be stated numerically.",
+      "how_to_identify": "Open the panel door (not the cover): look for 'Federal Pacific Electric', 'FPE' or 'Federal Pioneer' on the label and 'Stab-Lok' printed on or near the breakers; breaker handles commonly have a red/orange stripe across the tip.",
+      "risk": {
+        "safety": "Breakers may fail to trip. Figures seen (all from J. Aronstein's independent testing or reports of it, not CPSC): 51% of breakers failing to trip in one test set; 'more than 25%' defective; about 2,000 fires a year attributed by Aronstein - his estimate, not a government finding. A smaller later test reported 1% (single-pole, n=345) and 12% (double-pole, n=120) failure. CPSC closed its 2-year investigation in March 1983 without a recall, stating the data did not establish a serious risk and citing budget limits; the release was revised 18 Feb 2011, and CPSC advises having the panel inspected by an electrician.",
+        "financial": "Panel replacement; breakers are not a reliable fix (replacement Stab-Lok-type breakers are not shown to be better).",
+        "insurance_or_sale": "Commonly flagged by inspectors and by insurers on 4-point inspections (insurer loss-control bulletins from AmTrust and Great American appeared in search). A New Jersey class action (Yacout v. Federal Pacific Electric, Middlesex County, docket MID-L-2904-97) found FPE violated the NJ Consumer Fraud Act regarding UL testing; sources give the ruling as 2002 or 2005 and the settlement as 2005 or 2008."
+      },
+      "fix": {
+        "what": "Replace the whole panel (and breakers) with a modern listed panel.",
+        "cost_low_usd": 1500,
+        "cost_high_usd": 4500,
+        "cost_year": 2025,
+        "cost_source": "Fixr panel replacement/upgrade range $1,500-$4,500, average $3,000 (search snippet). Angi quotes much lower ($519-$2,141, avg $1,313). Aggregators disagree by 2-3x; treat as indicative."
+      },
+      "sources": [
+        { "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Commission-Closes-Investigation-Of-FPE-Circuit-Breakers-And-Provides-Safety-Information-For-Consumers", "publisher": "US CPSC (issued 3 Mar 1983; revised 18 Feb 2011)", "supports": "Investigation closed without recall; consumer advice (snippet only; host blocked for fetch)", "verified": false },
+        { "url": "https://en.wikipedia.org/wiki/Stab-Lok", "publisher": "Wikipedia", "supports": "Manufactured primarily 1950-1980; found in houses built before 1990 (snippet only)", "verified": false },
+        { "url": "https://inspectapedia.com/fpe/FPE_History.php", "publisher": "InspectAPedia", "supports": "1951 start of Stab-Lok marketing; 2011 CPSC clarification (snippet only)", "verified": false },
+        { "url": "https://www.nbcbayarea.com/news/local/federal-pacific-circuit-breakers-investigation-finds-decades-of-danger/1930189/?amp=1", "publisher": "NBC Bay Area", "supports": "Aronstein failure rates and 2,000 fires/year estimate; 2002 NJ ruling (snippet only)", "verified": false },
+        { "url": "https://inspectapedia.com/fpe/FPE_Class_Action_Settlement.php", "publisher": "InspectAPedia", "supports": "NJ class action notice and settlement details (snippet only)", "verified": false },
+        { "url": "https://www.greatamericaninsurancegroup.com/content-hub/news-details/is-your-electric-panel-a-fire-risk", "publisher": "Great American Insurance Group", "supports": "Insurer loss-control view of FPE and Zinsco panels (title/snippet only)", "verified": false }
+      ],
+      "open_questions": "Number of panels/homes; exact last year of US installation; exact wording of CPSC's 2011 revision; correct dates of the NJ ruling and settlement; peer-reviewed status of Aronstein's figures (reportedly an IEEE paper - not located)."
+    },
+    {
+      "id": "zinsco-sylvania-panels",
+      "name": "Zinsco / Sylvania-Zinsco (GTE-Sylvania) breaker panels",
+      "category": "electrical",
+      "summary": "A panel design in which breakers clip onto aluminum bus bars; the clip-to-bus connection is prone to arcing, overheating and welding, and breakers can fail to trip or stay energised even when switched off. No recall was ever issued; most electricians recommend replacement.",
+      "installed_from": 1943,
+      "installed_to": 1975,
+      "peak_from": 1955,
+      "peak_to": 1973,
+      "date_confidence": "low",
+      "date_notes": "Sources disagree on the start: 'from the 1930s' vs 'Zinsco began manufacturing panels in 1943'. Agreed: sold to GTE-Sylvania in 1973, which 'manufactured the panels and components for a few more years'. The end is therefore mid-1970s per snippets; my recollection is that inspector references extend Sylvania-branded production to about 1981, but that was not seen in this session. Uncertainty roughly +/- 10 years at the start, 5 years at the end.",
+      "regions": "national but heavily Western US (a California company); also sold as Kearney",
+      "prevalence": "possible",
+      "prevalence_basis": "No count or market-share data found. Regional concentration in the West/Southwest is trade knowledge, not a measured figure.",
+      "how_to_identify": "Panel label reading Zinsco, Sylvania, Sylvania-Zinsco, GTE-Sylvania or Kearney. Breakers are distinctive: narrow, with brightly coloured (red, blue, green, yellow) handle tips, clipping onto vertical bus bars.",
+      "risk": {
+        "safety": "Breaker-to-bus arcing/burn-ups and failure to trip. InspectAPedia reports nearly 32% of Zinsco breakers tested failed to trip per the UL standard - a figure from that site's own collected/independent tests, not a government study.",
+        "financial": "Panel replacement.",
+        "insurance_or_sale": "Listed alongside FPE in insurer loss-control bulletins and commonly flagged on inspection reports."
+      },
+      "fix": {
+        "what": "Replace the panel; replacement breakers do not fix the bus design.",
+        "cost_low_usd": 1500,
+        "cost_high_usd": 4500,
+        "cost_year": 2025,
+        "cost_source": "Fixr panel replacement range (snippet); Angi gives $519-$2,141. Indicative only."
+      },
+      "sources": [
+        { "url": "https://inspectapedia.com/electric/Zinsco_Failures.htm", "publisher": "InspectAPedia", "supports": "Failure modes; ~32% failure-to-trip figure (snippet only)", "verified": false },
+        { "url": "https://inspectapedia.com/electric/Zinsco-Electrical-Panel-Age.php", "publisher": "InspectAPedia", "supports": "Panel age / production history (title only)", "verified": false },
+        { "url": "https://www.greatamericaninsurancegroup.com/content-hub/news-details/is-your-electric-panel-a-fire-risk", "publisher": "Great American Insurance Group", "supports": "Insurer treatment of Zinsco panels (title/snippet only)", "verified": false },
+        { "url": "https://forums.mikeholt.com/threads/zinsco-fpe-panels.149403/page-2", "publisher": "Mike Holt forum (weak)", "supports": "Electricians' replacement advice (snippet only)", "verified": false }
+      ],
+      "open_questions": "No primary/authoritative (CPSC, UL) document on Zinsco was found - the whole evidence base is inspector/trade. Start and end years; prevalence; provenance and sample size of the 32% figure."
+    },
+    {
+      "id": "challenger-panels",
+      "name": "Challenger breaker panels",
+      "category": "electrical",
+      "summary": "A common builder-grade panel brand of the 1980s and early 1990s. Inspectors report overheating at the breaker-to-bus connection, and some insurers (especially in Florida) ask for replacement, but the only official action is a narrow 1988 CPSC replacement programme for about 9,000 GFCI breakers. The evidence that ordinary Challenger panels are defective is much thinner than for FPE or Zinsco.",
+      "installed_from": 1980,
+      "installed_to": 1994,
+      "peak_from": 1984,
+      "peak_to": 1992,
+      "date_confidence": "low",
+      "date_notes": "'1980s to 1990s' is all the searchable sources say, and those are low-quality. The CPSC recall confirms Challenger equipment was being installed in new homes in 1988. Start and end years (1980, 1994) are from memory of the company's history (later absorbed into Westinghouse/Eaton) and were not confirmed.",
+      "regions": "national; insurer attention reported mainly in Florida",
+      "prevalence": "possible",
+      "prevalence_basis": "No data exists that I could find. 'Thousands of homes' on a low-quality page is the only quantity seen. The CPSC recall covered about 9,000 breakers.",
+      "how_to_identify": "Per the CPSC 1988 notice: 'Challenger' embossed on the panel door handle and/or printed on the label inside the door. The recalled breakers are 15 and 20 amp GFCI types HAGF-15 and HAGF-20 (with a test button), made 22 Feb-29 Apr 1988.",
+      "risk": {
+        "safety": "Recalled HAGF GFCI breakers may not provide ground-fault protection (CPSC recall 88-095, Nov 1988; no shock incidents reported at the time). Wider overheating claims rest on inspector reports, not on any agency finding.",
+        "financial": "Panel replacement if an insurer requires it.",
+        "insurance_or_sale": "Home-inspection sources say some Florida insurers will not insure Challenger panels; no insurer or regulator document found - anecdotal."
+      },
+      "fix": {
+        "what": "Have an electrician inspect for heat damage and check for HAGF breakers; replace the panel if damaged or if the insurer requires.",
+        "cost_low_usd": 1500,
+        "cost_high_usd": 4500,
+        "cost_year": 2025,
+        "cost_source": "Fixr panel replacement range (snippet); Angi gives $519-$2,141. Indicative only."
+      },
+      "sources": [
+        { "url": "https://www.cpsc.gov/Recalls/1988/challenger-electrical-equipment-corp-offers-replacement-program-for-9000-gfci-circuit", "publisher": "US CPSC recall 88-095 (Nov 1988)", "supports": "9,000 HAGF-15/HAGF-20 GFCI breakers, made 22 Feb-29 Apr 1988; identification by 'Challenger' on door (snippet only; host blocked for fetch)", "verified": false },
+        { "url": "https://www.lawndale.ca.gov/news/what_s_new/electrical_panel_recall", "publisher": "City of Lawndale, CA", "supports": "Municipal notice about Challenger panel hazard (snippet only)", "verified": false },
+        { "url": "https://waypointinspection.com/issues-with-challenger-panels/", "publisher": "Waypoint Property Inspection (inspector blog - weak)", "supports": "Florida insurers requiring replacement (snippet only)", "verified": false }
+      ],
+      "open_questions": "Whether this entry should be published at all without better evidence: no agency finding beyond the 1988 GFCI breaker programme. Production years; any insurer underwriting document; whether the Lawndale notice refers to a different, later recall."
+    },
+    {
+      "id": "fuse-box-60-amp-service",
+      "name": "Fuse boxes and 60-amp (or smaller) electrical service",
+      "category": "electrical",
+      "summary": "Before circuit breakers became standard, homes were protected by screw-in and cartridge fuses, typically on a 30- or 60-amp service. Fuses themselves work, but the service is too small for modern loads (air conditioning, electric cooking, EV charging), encouraging over-fusing and extension-cord use, and many insurers will not cover a 60-amp or fused service.",
+      "installed_from": 1900,
+      "installed_to": 1965,
+      "peak_from": 1930,
+      "peak_to": 1960,
+      "date_confidence": "low",
+      "date_notes": "No authoritative dated source. A Canadian insurer/education source says 60-amp fuse panels were 'widely used between 1950 and 1965'; forum electricians say a 60A service means 'not updated since the 50s or early 60s'. When the NEC first required 100A for a single-family dwelling is disputed in forum transcriptions: 1956 (a table note) vs 1959 ('100 amp where computed load is 10 kW or more'), with unconditional 100A minimum coming later. Breaker panels were available from the 1930s-40s and overtook fuses in new houses during the 1950s-60s (general knowledge, unsourced). Expect +/- 10 years.",
+      "regions": "national",
+      "prevalence": "likely",
+      "prevalence_basis": "No data. Reasoning: fused 30/60A services were the norm for pre-1950 houses and common until about 1960-65; most have since been upgraded, share unknown.",
+      "how_to_identify": "A metal box with round screw-in (Edison base) fuses and/or pull-out blocks holding cartridge fuses instead of rows of switches. Service size is printed on the main pull-out or main fuse ('60'). Round meter bases usually indicate 60A or less.",
+      "risk": {
+        "safety": "Over-fusing (30A fuse on a 15A circuit) and pennies/foil behind fuses defeat protection; undersized service runs hot under modern loads; no room for AFCI/GFCI breakers.",
+        "financial": "Service upgrade involves new panel, meter base, service conductors and utility coordination.",
+        "insurance_or_sale": "Multiple real-estate and inspector sources say many insurers decline or surcharge 60-amp and fused services; no regulator document. Lenders (FHA) historically looked for adequate service - not checked here."
+      },
+      "fix": {
+        "what": "Upgrade to a 100-200 amp breaker service (new panel, meter base and service entrance).",
+        "cost_low_usd": 1500,
+        "cost_high_usd": 4500,
+        "cost_year": 2025,
+        "cost_source": "Fixr 'replace or upgrade an electrical panel' $1,500-$4,500 (snippet). A full service upgrade is often at the top of or above this range; aggregator figure only."
+      },
+      "sources": [
+        { "url": "https://www.carsondunlop.com/inspection/?p=2960", "publisher": "Carson Dunlop (home inspection training firm)", "supports": "60-amp services, capacity and insurer attitudes (snippet only)", "verified": false },
+        { "url": "https://www.squareone.ca/?p=18982", "publisher": "Square One Insurance (Canadian insurer - regional caveat)", "supports": "60-amp panels widely used 1950-1965; insurers reluctant (snippet only)", "verified": false },
+        { "url": "https://forums.mikeholt.com/threads/100a-min-for-a-dwelling.2570155", "publisher": "Mike Holt forum (weak)", "supports": "1956 vs 1959 NEC origin of 100A minimum (snippet only)", "verified": false },
+        { "url": "https://structuretech.com/podcast-structure-talk/electric-service-size-vs-panel-size/", "publisher": "Structure Tech (inspector blog)", "supports": "Counter-view that 60A is not inherently unsafe (snippet only)", "verified": false }
+      ],
+      "open_questions": "Authoritative NEC history of minimum service size (60A -> 100A); when breakers overtook fuses in new construction; any US insurer documentation; proportion of homes still on 60A (American Housing Survey may have something - not checked)."
+    },
+    {
+      "id": "split-bus-panels",
+      "name": "Split-bus breaker panels (no single main breaker)",
+      "category": "electrical",
+      "summary": "A panel with no single main shut-off: up to six double-pole breakers in the top section act as the service disconnects, and one of them feeds the lower section holding the lighting and outlet circuits. Not a defect in itself, but these panels are now 45-70 years old, cannot be shut off with one switch, and are often overloaded or mis-modified.",
+      "installed_from": 1950,
+      "installed_to": 1981,
+      "peak_from": 1960,
+      "peak_to": 1978,
+      "date_confidence": "medium",
+      "date_notes": "Inspector sources agree on '1950s to early 1980s' (one says 1950s-1970s). The usual explanation is that the 1981 NEC changed the lighting-and-appliance panelboard rules so that split-bus designs no longer complied for new installations; this comes from forum/inspector sources and one calls 1981 partly a talking point. The six-disconnect rule itself remained in the NEC long after 1981 (reportedly tightened in 2020/2023). Peak years are my reading. Existing panels are grandfathered.",
+      "regions": "national",
+      "prevalence": "possible",
+      "prevalence_basis": "No data found. Reasoning: one of several panel styles used by most manufacturers, popular because it avoided the cost of a large main breaker; share of 1960s-70s homes unknown.",
+      "how_to_identify": "Open the panel door: no single large breaker marked 'Main'. Instead a top group of up to six double-pole breakers (one often labelled 'Lighting Main' or 'Sub Main') and a separate lower group of single-pole breakers.",
+      "risk": {
+        "safety": "No one-switch shutoff in an emergency; age-related wear; more than six throws to kill power means it no longer complies; brand may also be FPE or Zinsco, compounding the risk.",
+        "financial": "Replacement at end of life or when adding large loads (EV, heat pump, solar).",
+        "insurance_or_sale": "Flagged by inspectors mainly on age; some insurers ask about panels over about 40 years old (anecdotal)."
+      },
+      "fix": {
+        "what": "Replace with a modern main-breaker panel when capacity or condition requires; otherwise electrician inspection and clear labelling of the disconnects.",
+        "cost_low_usd": 1500,
+        "cost_high_usd": 4500,
+        "cost_year": 2025,
+        "cost_source": "Fixr panel replacement range (snippet). Indicative only."
+      },
+      "sources": [
+        { "url": "https://structuretech.com/?p=1291527", "publisher": "Structure Tech (home inspection firm)", "supports": "What split-bus panels are, era of installation (snippet only)", "verified": false },
+        { "url": "https://www.startribune.com/split-bus-electric-panels/559238532", "publisher": "Minneapolis Star Tribune (inspector column)", "supports": "Era 1950s-early 1980s, how they work (snippet only)", "verified": false },
+        { "url": "https://forums.mikeholt.com/threads/when-did-the-six-disconnect-rule-take-place.54025", "publisher": "Mike Holt forum (weak)", "supports": "Six-disconnect rule history; 1981 NEC 'did away with' split-bus (snippet only)", "verified": false }
+      ],
+      "open_questions": "The exact 1981 NEC section that ended split-bus panels (believed 384-16(a), from memory) and whether the date is edition year or UL-standard change; prevalence."
+    },
+    {
+      "id": "gfci-protection-milestones",
+      "name": "GFCI (shock-protection) outlets: when each location became required",
+      "category": "code-milestone",
+      "summary": "Ground-fault circuit interrupters cut power in a fraction of a second when current leaks to ground, preventing most electrocutions near water. The NEC required them location by location over about 50 years, so a house's build year predicts which wet locations were (not) protected when built. Older homes are not required to retrofit except when outlets are replaced, so gaps are common.",
+      "installed_from": 1971,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "medium",
+      "date_notes": "Dates are NEC EDITION years. States and cities adopt an edition anywhere from the same year to 6+ years later (and some amend it), so a house built in year X was usually built under an older edition; this is the dominant uncertainty and needs a state-adoption table. Between sources: outdoor receptacles are given as 1971 (some timelines) or 1973 (IAEI/Mike Holt - better supported); 'all' outdoor receptacles as 1993 or 1996; kitchen counters within 6 ft of sink 1987, all countertop receptacles 1996 (one source says the 6-ft limit went in 2008); dishwashers 1996 vs 2014 (2014 better supported). See 'milestones'.",
+      "milestones": [
+        { "nec_edition": 1968, "location": "underwater swimming-pool lighting", "confidence": "medium" },
+        { "nec_edition": 1971, "location": "receptacles near swimming pools; construction sites", "confidence": "medium" },
+        { "nec_edition": 1973, "location": "outdoor receptacles at dwellings", "confidence": "medium", "note": "some timelines say 1971" },
+        { "nec_edition": 1975, "location": "bathroom receptacles", "confidence": "high" },
+        { "nec_edition": 1978, "location": "garage receptacles; outdoor requirement limited to receptacles with grade-level access (exemption above 6 ft 6 in until 1996)", "confidence": "medium" },
+        { "nec_edition": 1981, "location": "spas and hot tubs", "confidence": "medium" },
+        { "nec_edition": 1987, "location": "kitchen countertop receptacles within 6 ft of the sink; basements (at least one receptacle); boathouses", "confidence": "medium" },
+        { "nec_edition": 1990, "location": "crawl spaces; 'basement' clarified as unfinished basements", "confidence": "medium" },
+        { "nec_edition": 1993, "location": "wet-bar sinks (within 6 ft)", "confidence": "medium" },
+        { "nec_edition": 1996, "location": "all kitchen countertop receptacles; all outdoor receptacles", "confidence": "medium", "note": "one source dates all-outdoor to 1993" },
+        { "nec_edition": 2005, "location": "within 6 ft of laundry and utility sinks; boat hoists", "confidence": "medium" },
+        { "nec_edition": 2014, "location": "laundry areas; dishwashers; within 6 ft of any dwelling sink, tubs/showers", "confidence": "medium" },
+        { "nec_edition": 2020, "location": "125V through 250V receptacles in the listed locations (dryers, ranges, outdoor AC/heat-pump outlets); all basements", "confidence": "medium" }
+      ],
+      "regions": "national model code; effective date varies by state/local adoption",
+      "prevalence": "likely",
+      "prevalence_basis": "Not a product prevalence question. A house built before the relevant edition was adopted locally will 'likely' lack GFCI at that location unless upgraded; no survey of retrofit rates was found.",
+      "how_to_identify": "Look for outlets with TEST/RESET buttons in bathrooms, kitchen counters, garage, exterior, basement, laundry; or breakers with a test button in the panel. One GFCI can protect ordinary-looking outlets downstream, so press TEST and see which outlets go dead. GFCI devices themselves wear out; older (pre-2006) units can fail without indication.",
+      "risk": {
+        "safety": "Electrocution risk at wet locations without GFCI. No fatality statistics were retrieved in this session.",
+        "financial": "Cheap to fix.",
+        "insurance_or_sale": "Standard home-inspection finding; rarely an insurance issue."
+      },
+      "fix": {
+        "what": "Install GFCI receptacles or GFCI breakers at the missing locations (allowed on ungrounded circuits too).",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No figure retrieved in this session."
+      },
+      "sources": [
+        { "url": "https://iaeimagazine.org/issue/2024-summer/the-history-of-gfci-protection-in-the-nec/", "publisher": "IAEI Magazine (International Association of Electrical Inspectors), 2024", "supports": "Edition-by-edition GFCI history: 1975 bathrooms, 1978 garages, 1987 kitchens/basements, 1990 crawl spaces, 1993 wet bars, 2005 laundry sinks, 2014, 2020 (snippets only)", "verified": false },
+        { "url": "https://iaeimagazine.org/electrical-safety/ground-fault-circuit-interrupters-preventing-electrocution-since-1971/", "publisher": "IAEI Magazine, 2020", "supports": "GFCI requirements began 1971 (title/snippet only)", "verified": false },
+        { "url": "https://nachi.org/gfci.htm", "publisher": "InterNACHI", "supports": "GFCI location-by-year list for inspectors (snippet only)", "verified": false },
+        { "url": "https://www.mikeholt.com/documents/nec/pdf/GFCI_requirement_page2.pdf", "publisher": "Mike Holt Enterprises", "supports": "One-page chart of GFCI requirements by NEC year (title only)", "verified": false },
+        { "url": "https://www.esfi.org/ground-fault-circuit-interrupters-preventing-electrocution-since-1973/", "publisher": "ESFI", "supports": "GFCI history; uses 1973 as the dwelling start date (title only)", "verified": false }
+      ],
+      "open_questions": "Each milestone should be checked against the NEC edition text (NFPA free access) - the brief's standard is not met by trade-press summaries. A state-by-state NEC adoption history is essential to turn edition years into build years. Electrocution statistics (CPSC) not retrieved."
+    },
+    {
+      "id": "afci-protection-milestones",
+      "name": "AFCI (arc-fault) breakers: when required",
+      "category": "code-milestone",
+      "summary": "Arc-fault circuit interrupters detect the electrical signature of arcing in damaged wires or cords and shut the circuit off before it starts a fire. They were required first for bedroom circuits and then for most living areas, so homes built before the early 2000s have none and homes from 2002-2014 have partial coverage.",
+      "installed_from": 2002,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "medium",
+      "date_notes": "Sources (NAHB, EC&M) agree: 1999 NEC introduced the bedroom requirement with an effective date of 1 January 2002; 2002 NEC extended it to all bedroom outlets (lights, smoke alarms); 2005 NEC called for combination-type AFCIs, mandatory from 1 January 2008; 2008 NEC expanded to family, dining, living rooms, dens, closets, hallways etc.; 2014 NEC added kitchens and laundry areas; NAHB says the list is unchanged in 2017-2026 editions. Minor disagreement: one source puts hallways in 2014 rather than 2008. BIG caveat: AFCI adoption was unusually uneven - several states delayed, amended out or limited AFCI requirements, so edition year is a poor predictor without state data.",
+      "milestones": [
+        { "nec_edition": 1999, "location": "bedroom receptacle circuits (effective 1 Jan 2002)", "confidence": "high" },
+        { "nec_edition": 2002, "location": "all outlets in bedrooms", "confidence": "medium" },
+        { "nec_edition": 2005, "location": "combination-type AFCI required for bedrooms (effective 1 Jan 2008)", "confidence": "medium" },
+        { "nec_edition": 2008, "location": "family rooms, dining rooms, living rooms, parlors, libraries, dens, sunrooms, recreation rooms, closets, hallways and similar", "confidence": "medium" },
+        { "nec_edition": 2014, "location": "kitchens and laundry areas added", "confidence": "medium" }
+      ],
+      "regions": "national model code; state adoption and amendments vary widely",
+      "prevalence": "likely",
+      "prevalence_basis": "Not a product prevalence question. Homes built before about 2002 will lack AFCIs unless retrofitted; no retrofit data found.",
+      "how_to_identify": "In the panel: breakers with a TEST button labelled AFCI, 'Arc Fault', 'Combination AFCI' or 'Dual Function' (AFCI+GFCI). Ordinary breakers have no test button.",
+      "risk": {
+        "safety": "Absence means no protection against arcing faults - most relevant in houses with old or damaged wiring. Fire-reduction statistics were not retrieved.",
+        "financial": "AFCI breakers cost several times a standard breaker and are not available for many obsolete panels.",
+        "insurance_or_sale": "Not normally an insurance or sale issue; nuisance tripping is a known complaint."
+      },
+      "fix": {
+        "what": "Optional upgrade: fit AFCI or dual-function breakers where the panel supports them; required by current NEC when circuits are extended or receptacles replaced in covered areas (406.4(D)(4), from memory).",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No figure retrieved."
+      },
+      "sources": [
+        { "url": "https://www.nahb.org/advocacy/top-priorities/building-codes/Arc-Fault-Circuit-Interrupters", "publisher": "National Association of Home Builders (NAHB)", "supports": "1999 NEC bedroom rule effective 1 Jan 2002; 2008 room list; 2014 kitchens and laundry; unchanged 2017-2026 (snippet only)", "verified": false },
+        { "url": "https://www.ecmweb.com/safety/article/55265078/the-apprentices-guide-to-afcis-and-the-nec", "publisher": "EC&M", "supports": "AFCI code history incl. 2005 combination-type requirement effective 2008 (snippet only)", "verified": false },
+        { "url": "https://iaeimagazine.org/electrical-safety/a-quarter-century-of-protecting-homes-occupants/", "publisher": "IAEI Magazine", "supports": "25-year history of AFCI requirements (title only)", "verified": false },
+        { "url": "https://www.ecmag.com/magazine/articles/article-detail/codes-standards-evolution-afcis-and-nec", "publisher": "Electrical Contractor Magazine", "supports": "Evolution of AFCIs in the NEC (title only)", "verified": false }
+      ],
+      "open_questions": "State-by-state AFCI adoption/amendment history; CPSC/NFPA fire data on AFCI effectiveness; exact 2008 vs 2014 room lists from code text."
+    },
+    {
+      "id": "tamper-resistant-receptacles",
+      "name": "Tamper-resistant (child-safe) outlets",
+      "category": "code-milestone",
+      "summary": "Tamper-resistant receptacles have internal shutters that open only when both blades of a plug are inserted together, stopping children from pushing objects into one slot. Required in new homes since the 2008 NEC, so houses built before roughly 2008-2011 normally have ordinary outlets.",
+      "installed_from": 2008,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "All sources agree on the 2008 NEC (section 406.11, renumbered 406.12 in 2011) for 125V 15/20A receptacles in dwelling units; later editions widened the scope (2011 edition changes; 250V per one source). Uncertainty is only local adoption lag (IAEI reported about half of states had adopted the 2008 NEC within a year or so).",
+      "regions": "national model code; adoption date varies by state",
+      "prevalence": "likely",
+      "prevalence_basis": "Homes built before local adoption of the 2008 NEC will generally lack them. Injury figure quoted by manufacturers and trade press: about 2,400 children a year treated for injuries from inserting objects into outlets (attributed to CPSC NEISS data, 24,000 over 10 years, via a Leviton bulletin); primary CPSC source not located.",
+      "how_to_identify": "'TR' embossed on the outlet face between the slots, and plastic shutters visible inside the slots.",
+      "risk": {
+        "safety": "Shock/burn risk to small children at ordinary outlets (about 2,400 ER-treated injuries a year per secondary sources).",
+        "financial": "Low; devices cost little more than standard outlets.",
+        "insurance_or_sale": "None; may be noted by inspectors as an upgrade."
+      },
+      "fix": {
+        "what": "Replace receptacles with TR-listed ones (required anyway by current code when a receptacle is replaced).",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No figure retrieved."
+      },
+      "sources": [
+        { "url": "https://www.esfi.org/tamper-resistant-receptacles-trr-white-paper/", "publisher": "ESFI", "supports": "TR receptacle background and injury statistics (title/snippet only)", "verified": false },
+        { "url": "https://nachi.org/tamper-resistant-receptacles.htm", "publisher": "InterNACHI", "supports": "2008 NEC requirement for new and renovated dwellings; 2,400 injuries/yr attributed to CPSC (snippet only)", "verified": false },
+        { "url": "https://iaeimagazine.org/2013/novemberdecember-2013/tamper-resistant-receptacles/", "publisher": "IAEI Magazine", "supports": "Code history 2008/2011 (406.11 -> 406.12) (snippet only)", "verified": false }
+      ],
+      "open_questions": "Primary CPSC/NEISS source for the injury figure; state adoption dates."
+    },
+    {
+      "id": "hardwired-interconnected-smoke-alarms",
+      "name": "Hard-wired, interconnected smoke alarms",
+      "category": "fire-safety",
+      "summary": "Newer homes have mains-powered smoke alarms with battery backup, wired together so all sound at once, and located in every bedroom. Older homes may have only stand-alone battery units or none in bedrooms. (Kept brief: the fire-safety researcher covers this.)",
+      "installed_from": 1989,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "From a smoke-alarm history site (not authoritative) seen in search: 1989 - NFPA 74 required interconnection in new construction; 1993 - NFPA 72 required alarms inside every bedroom. Mains-powered alarms in new homes were being required by model building codes from the 1970s (IEEE Spectrum snippet: codes then recognised only mains-powered detectors; NFPA 74 revised 1974 to allow battery units) - exact model-code years (UBC/BOCA/SBCCI) were not found. installed_from 1989 refers to interconnection specifically. NIST: share of homes with at least one smoke alarm rose from 10% in 1975 to at least 92% by 2000.",
+      "regions": "national standards; state and local law varies",
+      "prevalence": "likely",
+      "prevalence_basis": "NIST figure for any smoke alarm: 10% of homes in 1975, at least 92% by 2000. No data found on the share with hard-wired interconnected systems.",
+      "how_to_identify": "Twist an alarm off its base: a wiring plug means hard-wired. Press TEST on one; if all alarms sound, they are interconnected. Check the manufacture date on the back - alarms should be replaced at 10 years.",
+      "risk": {
+        "safety": "Stand-alone alarms may not wake sleepers in closed bedrooms; missing bedroom alarms in pre-1993 layouts.",
+        "financial": "Low; wireless-interconnect alarms avoid new wiring.",
+        "insurance_or_sale": "Many states require working smoke alarms at sale or rental; rules vary."
+      },
+      "fix": {
+        "what": "Add alarms in every bedroom, outside sleeping areas and on each level; use wireless-interconnected units where wiring is impractical; replace any unit over 10 years old.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No figure retrieved."
+      },
+      "sources": [
+        { "url": "https://www.nist.gov/fire/history/1970s/driving-residential-smoke-alarm-adoption-1970s", "publisher": "NIST", "supports": "Home smoke-alarm share 10% (1975) to at least 92% (2000); NFPA 74 origins (snippet only)", "verified": false },
+        { "url": "https://www.mysmokealarm.org/smoke-alarm-history/", "publisher": "mysmokealarm.org (non-authoritative history site)", "supports": "1989 interconnection (NFPA 74) and 1993 every-bedroom (NFPA 72) milestones (snippet only)", "verified": false },
+        { "url": "https://spectrum.ieee.org/the-consumer-electronics-hall-of-fame-brk-first-alert-smoke-alarm", "publisher": "IEEE Spectrum", "supports": "Early-1970s codes covered only mains-powered detectors; NFPA 74 revised 1974 for battery units (snippet only)", "verified": false }
+      ],
+      "open_questions": "Authoritative NFPA 72/74 and model-building-code edition years for hard-wiring, interconnection, bedrooms and battery backup. Defer to the fire-safety researcher."
+    },
+    {
+      "id": "square-d-qo-pon-recall-2020-2022",
+      "name": "Square D QO Plug-On Neutral load centers (2022 recall)",
+      "category": "electrical",
+      "summary": "A modern example of an era-bound panel problem: Schneider Electric recalled about 1.4 million Square D QO Plug-On Neutral breaker panels because a loose connection can overheat, creating burn and fire hazards. It matters for homes built or re-panelled in 2020-2022, and the remedy is free.",
+      "installed_from": 2020,
+      "installed_to": 2022,
+      "peak_from": 2020,
+      "peak_to": 2022,
+      "date_confidence": "high",
+      "date_notes": "CPSC recall 22-159, announced 16 June 2022: units manufactured February 2020 - January 2022 (date codes 200561 to 220233). Installation could trail manufacture by some months, so homes completed into 2022-23 may be affected.",
+      "regions": "national (plus about 289,000 units in Canada)",
+      "prevalence": "possible",
+      "prevalence_basis": "REAL FIGURE: about 1.4 million units in the US (CPSC). Square D QO is one of the most common residential lines, so a meaningful minority of 2020-22 homes are affected, but no market-share figure was retrieved; the recall also covers panels installed as replacements in older homes.",
+      "how_to_identify": "Panel labelled Square D 'QO' with 'Plug-on Neutral'; the catalogue number and date code are on the label inside the door. Compare with the recall list or call Schneider Electric (1-888-778-2733 per the recall notice).",
+      "risk": {
+        "safety": "Overheating, thermal burn and fire hazard (one incident/injury reported at recall, sources differ on wording).",
+        "financial": "None if handled under the recall - free inspection and repair/replacement.",
+        "insurance_or_sale": "An unremedied recalled panel is a disclosure item; inspectors check for it."
+      },
+      "fix": {
+        "what": "Free inspection and repair or replacement by Schneider Electric under the recall.",
+        "cost_low_usd": 0,
+        "cost_high_usd": 0,
+        "cost_year": 2022,
+        "cost_source": "CPSC recall 22-159 remedy: free replace/repair (snippet)."
+      },
+      "sources": [
+        { "url": "https://www.cpsc.gov/Recalls/2022/Schneider-ElectricTM-Recalls-1-4-Million-Electrical-Panels-Due-to-Thermal-Burn-and-Fire-Hazards", "publisher": "US CPSC recall 22-159 (16 June 2022)", "supports": "1.4 million units, manufacture dates Feb 2020-Jan 2022, hazard, remedy (snippet only; host blocked for fetch)", "verified": false },
+        { "url": "https://www.ecmweb.com/safety/article/21244556/schneider-electric-recalls-14-million-electrical-panels", "publisher": "EC&M", "supports": "Recall details, date codes (snippet only)", "verified": false },
+        { "url": "https://nahb.org/blog/2022/08/schneider-electric-recalls-1-million-electrical-panels", "publisher": "NAHB", "supports": "Recall notice to builders (title only)", "verified": false }
+      ],
+      "open_questions": "Exact catalogue numbers; share of new homes using this line; whether the recall remedy programme is still open."
+    }
+  ],
+  "feasibility_notes": "Frank assessment. (1) Access: in this session only web search worked; every page fetch failed at DNS/allow-list level (cpsc.gov, nachi.org, iaeimagazine.org, wikipedia.org, inspectapedia.com all tried), so not one source could be opened and none is marked verified. Everything here rests on search-result snippets plus background knowledge and must be re-checked with page access before publication - cpsc.gov, nachi.org, iaeimagazine.org, esfi.org, nahb.org, nist.gov and inspectapedia.com need to be allow-listed. (2) Years: good for aluminum branch wiring (1965-1973, CPSC), the Square D recall (exact manufacture dates), tamper-resistant outlets (2008 NEC) and AFCI/GFCI edition years (trade-press consensus with small conflicts). Mediocre for knob-and-tube and FPE (tails disagree by about 10 years). Poor for Zinsco, Challenger, fuse/60-amp service, cloth/rubber wiring and split-bus - these rest on inspector lore and forums with no primary document. The grounded-outlet date has a genuine source conflict (1962 trade sources vs 1971 ESFI). (3) Code milestones have a structural problem: NEC edition year is not build year. States adopt editions 0-6+ years late and amend them (AFCI especially), so the site needs a state-by-edition adoption table (NFPA and NEMA publish adoption maps; historical adoption is harder) or must present milestones as 'earliest possible' with a lag caveat. (4) Prevalence: real numbers exist for only two items - CPSC's about 2 million homes with aluminum wiring and its 55x connection-hazard ratio, and the 1.4 million recalled Square D panels. For FPE, Zinsco, Challenger, K&T, fuses and split-bus there is no credible count or market share; the FPE failure-rate and '2,000 fires a year' figures come from one independent engineer (Aronstein), not CPSC, and should be attributed that way. 'Likely/possible' values here are judgement, not data. (5) Insurance claims are almost entirely anecdotal (inspector blogs, real-estate sites, a few insurer loss-control bulletins); no regulator or filed underwriting guideline was found. Florida 4-point inspection forms (Citizens Property Insurance) would be the best primary source to pursue. (6) Costs: only consumer aggregators (Angi, Fixr) and they disagree by 2-3x for panel replacement; I left most cost fields null rather than guess. A second pass needs: page access; the NEC edition texts via NFPA free access; Census housing completions to turn counts into shares; Citizens/insurer forms; and the UL/Dini 'History of Residential Wiring' paper, which looks like the single best source for wiring-type date ranges.",
+  "missed": [
+    "Bulldog/ITE Pushmatic panels (age and stiff breakers; inspector lore)",
+    "Other panel/breaker recalls and counterfeit breakers (e.g. older Square D and Eaton/Cutler-Hammer recalls) - search returned nothing usable",
+    "Undersized (reduced-gauge) ground wire in 1960s NM cable",
+    "Pre-1985 NM cable with 60C conductors vs NM-B and overheating at modern light fixtures",
+    "Old BX armored cable without bonding strip",
+    "Backstabbed (push-in) receptacle connections, common from the 1970s",
+    "Multi-wire/shared-neutral circuits and 3-wire (ungrounded) dryer and range circuits allowed in new work until the 1996 NEC",
+    "Copper-clad aluminum branch wiring (1970s, and its recent return)",
+    "Early recessed lights not rated for insulation contact (non-IC), and Federal Pacific/other electric baseboard heater recalls",
+    "Ungrounded or absent bonding of metal water/gas piping incl. CSST bonding (overlaps plumbing/gas)",
+    "Outdoor emergency disconnect requirement (2020 NEC) and whole-house surge protection (2020 NEC)",
+    "State-by-state NEC adoption history needed to convert code edition years into build years",
+    "Electrocution and electrical-fire statistics (CPSC/NFPA) to quantify GFCI/AFCI benefit"
+  ]
+}
