@@ -268,6 +268,9 @@ function PlaceSheet({
           </p>
           <p className={styles.small}>
             {/ city$/.test(place.county) ? 'An independent city, which Census and EPA data count as a county. ' : ''}
+            {place.state === 'CT'
+              ? 'Connecticut swapped its counties for planning regions in 2022; radon, climate and flood records still use the old counties. '
+              : ''}
             {s.spans ??
               'A ZIP code can cross county lines; the county facts below are for the one that holds most of its land.'}
           </p>

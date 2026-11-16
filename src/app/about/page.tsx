@@ -376,6 +376,13 @@ export default function AboutPage() {
                 <strong>Lifespans are typical ranges.</strong> &ldquo;What&rsquo;s due&rdquo; assumes the original part, and real
                 life depends on climate, use and upkeep.
               </li>
+              <li>
+                <strong>&ldquo;Your place&rdquo; is about the area, not the house.</strong> An optional ZIP code brings in
+                Census survey estimates of the homes there (2020&ndash;2024), plus county-level facts: EPA&rsquo;s 1993 radon
+                zones, the 2015 DOE climate-zone table and FEMA&rsquo;s first flood-map dates. A ZIP can span counties (we show
+                the main one), survey figures are estimates, and none of it says what this house has: test every home for
+                radon. The ZIP stays on your device.
+              </li>
             </ul>
           </section>
 

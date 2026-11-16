@@ -189,3 +189,48 @@ grid columns on purpose: CSS multi-column that runs across a printed page makes 
 columns sideways and shrink the whole sheet.
 Verified PDFs (Playwright `page.pdf`, Letter): one page for 1996, 2010, 2022, 2026; two clean pages
 for busy years (1880–1985 and 2005), with the lower band kept whole on page 2.
+
+## "Your place" (ZIP code facts)
+Optional: the visitor types a 5-digit ZIP in the report's last section (`#your-place`, also in the
+section navigator) and gets a short drafted sheet of sourced, area-level facts.
+
+### Data: `scripts/data-prep/build-place.py` → `public/place/` (committed, ~2.9 MB raw, ~1 MB gzipped)
+`python3 -I scripts/data-prep/build-place.py [--refresh]` (needs curl and `pdftotext` from
+poppler-utils). It downloads ~135 MB with plain `curl -sL` into `scripts/data-prep/.cache/place/`
+(gitignored), then writes `public/place/zip/<3-digit prefix>.json` (896 shards, 33,791 ZCTAs, largest
+~8 KB), `public/place/counties.json` (3,230 counties) and `manifest.json` (sources, URLs, vintages,
+generation date, counts). The record layouts are documented at the top of the script and decoded
+only in `src/lib/place.ts`. The site build never runs it and never touches the network; Next serves
+`public/` as static files. The script exits non-zero if a sanity check fails (known places: 10001 →
+New York County 4A; Miami-Dade 1A, radon 2; 22301 → Alexandria city; 06105 → Hartford County; 99501
+→ Anchorage zone 7; Aroostook zone 7; 100% radon/climate coverage of the 50 states and DC...).
+- Census ACS 2020–2024 5-year B25034/B25035/B25040, table-based summary files, ZCTA and county
+  rows. Year-built shares and heating-fuel shares are integer percents (largest remainder, sum 100);
+  shares are dropped below 100 housing (or occupied) units, and the medians of those ZCTAs too.
+  Negative/blank estimates = no data. Bins are stored oldest first.
+- ZCTA → county: 2020 relationship file, dominant county by land area (+ its % and the county count).
+- County ACS fallback (`a`) only for counties that some ZCTA needs, never Connecticut (the 2024 ACS
+  uses planning regions; every other source uses the 8 old counties, as the relationship file does).
+- EPA radon zones (2024-06 JSON) joined by state + county label, with the documented fix list
+  (Alaska renames/splits, DC, La Salle, Doña Ana, Shannon; Virginia cities + " city"; Bedford,
+  Clifton Forge and South Boston skipped so they never overwrite their county; Yellowstone NP
+  dropped; Hoonah-Angoon copies Skagway).
+- DOE/PNNL 2015 climate table parsed from the PDF text (`CLIMATE_FIX` covers the wrapped/renamed
+  rows; Aroostook's blank moisture handled). Stored as a 3-char code, e.g. `4AM`.
+- FEMA NFIP Community Status Book (OpenFEMA CSV): initial-FIRM year per community, county field
+  split on `/` and `,`; years before 1968 or after the generation year are dropped (e.g. Alexandria
+  VA's 2069, so it shows "no usable date"). Per county: earliest, median, latest, count.
+- Not used: FEMA NRI and the HUD crosswalk (not reachable), 2021 climate table (not reachable).
+
+### Code
+| file | what |
+|---|---|
+| `lib/place.ts` (pure, import-free; tests `place.test.ts`, incl. checks on the committed data) | `cleanZip`, `isValidZip`, `shardPath`, `FIPS_STATE`, `decodePlace` → `Place`, `BINS`, `compareYear` (uniform within a decade; "older than about", "newer than about", "older than at least" for pre-1940, "newest" after 2024), `binIndex`, `mainFuels` (≥ 5%), `housingFor` (ZIP figures, else county fallback with the reason), `radonStatement`, `climateStatement`, `firmContext`, `placeStatements` |
+| `components/place/usePlace.ts` (client) | `usePlacePref()` = `localStorage[builtin:place]` `{zip, setState?, keep?}` via `useSyncExternalStore` (server snapshot null). `usePlaceLookup(zip)` fetches only that ZIP's shard and `counties.json` from the same origin (memoised per page); 404 or absent ZIP = `missing`. |
+| `components/place/PlaceSection` (client) | Props `year`, `state`, `onStateChange` (the report's `chooseState`). ZIP strip (numeric keypad, ZIP+4 trimmed, auto-lookup on the fifth digit, "Forget this ZIP", privacy line). Sheet: title block (ZIP numeral, county + state, multi-county / independent-city / Connecticut notes), Houses around you (comparison sentence, `HousingChart`, median, homes counted, heating-fuel rows), Radon (boxed: zone scale + EPA's own caveat quoted, prominent), Climate zone + First flood map side by side (FEMA Flood Map Service Center link). Every fact has a source line. Without JS: a one-line note (`html:not(.js)`). |
+| `components/place/HousingChart` | Decade bars on the 1880–today axis (`pctOf`), oldest bin drawn over the 1930s with a faded tail, solid = built after the year, pale = before (the year's decade split at the line), year tag, hidden data table for screen readers. |
+
+State selector: a ZIP the visitor enters sets the report's state when it is "All states" or a state
+this section set earlier (note + Undo). If the visitor picked another state, it asks "Use Idaho /
+Keep Ohio" instead; "Keep" is remembered. Restoring a remembered ZIP never changes the state.
+Puerto Rico ZIPs show housing and FIRM facts only (no radon/climate data, not in the state list).
