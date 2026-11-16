@@ -522,7 +522,12 @@
       "Look up your address in the water utility's public service line inventory."
     ],
     "action": "If you find lead, or the utility lists your line as lead or unknown, use a filter certified to NSF/ANSI 53 for lead for drinking and cooking water, and ask the utility about replacement programs. EPA puts full replacement at $1,200 to $12,300 per line, averaging $4,700. Replace the whole line, not just part of it.",
-    "caveat": "Whether a given house has a lead line depends much more on the city than on the year: some places stopped by about 1950, while others kept using lead until the 1986 ban. EPA's national estimates have also changed sharply between surveys."
+    "caveat": "Whether a given house has a lead line depends much more on the city than on the year: some places stopped by about 1950, while others kept using lead until the 1986 ban. EPA's national estimates have also changed sharply between surveys.",
+    "when": {
+      "water": [
+        "city"
+      ]
+    }
   },
   "lead-solder-copper": {
     "include": true,
@@ -1304,7 +1309,13 @@
       "Check bottom edges and around nail heads for swelling, crumbling and 'mushrooming'."
     ],
     "action": "Keep paint and caulk intact, replace failed boards, and plan to re-side if damage is widespread. The settlement claim deadline passed in 2003, so no compensation remains.",
-    "caveat": "The 1985 start rests on a reference source. Many installs have already been replaced, and this was one brand among many sidings of the era."
+    "caveat": "The 1985 start rests on a reference source. Many installs have already been replaced, and this was one brand among many sidings of the era.",
+    "when": {
+      "exterior": [
+        "wood",
+        "fiber-cement"
+      ]
+    }
   },
   "masonite-hardboard-siding": {
     "include": true,
@@ -1339,7 +1350,13 @@
       "Check bottom edges, butt joints and around nails for swelling, 'mushroomed' nail heads and soft spots."
     ],
     "action": "Keep paint and caulk in good shape, replace damaged boards, or re-side when damage spreads. No open claim program was found.",
-    "caveat": "The 1980 to 1998 range is the reported Masonite class window, which could not be confirmed, and hardboard was used before 1980 too. Brands look alike; identifying one needs the marks on the back of a board."
+    "caveat": "The 1980 to 1998 range is the reported Masonite class window, which could not be confirmed, and hardboard was used before 1980 too. Brands look alike; identifying one needs the marks on the back of a board.",
+    "when": {
+      "exterior": [
+        "wood",
+        "fiber-cement"
+      ]
+    }
   },
   "eifs-barrier-synthetic-stucco": {
     "include": true,
@@ -1376,7 +1393,12 @@
       "Look for staining below window corners and where decks or roofs meet the wall."
     ],
     "action": "Before buying, or if you see stains, get a moisture-probe inspection by a certified EIFS inspector. Dry walls may need only flashing and sealant work; wet walls may need stripping and re-cladding with a drained system.",
-    "caveat": "Start and end years are approximate; barrier EIFS was never banned nationally and continued in some places into the early 2000s. It is reported to be most common on mid- and upper-priced houses in parts of the Southeast and Mid-Atlantic."
+    "caveat": "Start and end years are approximate; barrier EIFS was never banned nationally and continued in some places into the early 2000s. It is reported to be most common on mid- and upper-priced houses in parts of the Southeast and Mid-Atlantic.",
+    "when": {
+      "exterior": [
+        "stucco"
+      ]
+    }
   },
   "certainteed-organic-shingles": {
     "include": true,
@@ -1412,7 +1434,12 @@
       "Heavy curling at tab corners and blistering on an old roof are typical of organic shingles."
     ],
     "action": "If the roof is failing, re-roof. Contact CertainTeed to ask whether claims are still possible; the claim deadline could not be confirmed.",
-    "caveat": "Many roofs from this period have already been replaced, and the older the house, the less likely the original roof survives. Installation could trail manufacture by a year or so."
+    "caveat": "Many roofs from this period have already been replaced, and the older the house, the less likely the original roof survives. Installation could trail manufacture by a year or so.",
+    "when": {
+      "roof": [
+        "asphalt"
+      ]
+    }
   },
   "atlas-chalet-shingles": {
     "include": true,
@@ -1448,7 +1475,12 @@
       "Roofers in the Southeast tend to recognize them on sight."
     ],
     "action": "Have a roofer look if you see blistering. With no settlement, replacement is at the owner's cost unless an insurer accepts a storm claim, and because they are discontinued, matching repairs is difficult.",
-    "caveat": "The first year of sale is uncertain; the court says only 'in the 1990s'. Many roofs from this period have been replaced, and most houses of the era have other shingles."
+    "caveat": "The first year of sale is uncertain; the court says only 'in the 1990s'. Many roofs from this period have been replaced, and most houses of the era have other shingles.",
+    "when": {
+      "roof": [
+        "asphalt"
+      ]
+    }
   },
   "energy-code-milestones": {
     "include": true,
@@ -1524,7 +1556,15 @@
       "At the second floor, joists nailed to the sides of studs and resting on a board let into the studs are the giveaway."
     ],
     "action": "Have a contractor add fireblocking (lumber, mineral wool or dense-packed insulation) at the basement and attic ends of each stud cavity where they can be reached.",
-    "caveat": "The end date varies: sources put it from the late 1940s to the mid-1950s, and timing differed by region and builder. Many houses of the 1930s and 1940s are platform framed."
+    "caveat": "The end date varies: sources put it from the late 1940s to the mid-1950s, and timing differed by region and builder. Many houses of the 1930s and 1940s are platform framed.",
+    "when": {
+      "type": [
+        "site-built"
+      ],
+      "stories": [
+        "two-plus"
+      ]
+    }
   },
   "composite-decking-defects": {
     "include": true,
@@ -1703,7 +1743,15 @@
       "CPSC's notice lists the affected model numbers."
     ],
     "action": "If you find one, replace the furnace; the maker is gone and no recall remedy remains. Until then, CPSC suggested an ionization smoke alarm in the attic as an interim measure.",
-    "caveat": "These furnaces went only to California, and most furnaces of these years are other makes. A replacement furnace installed in an older house during these years could also be one."
+    "caveat": "These furnaces went only to California, and most furnaces of these years are other makes. A replacement furnace installed in an older house during these years could also be one.",
+    "when": {
+      "heating": [
+        "forced-air"
+      ],
+      "gas": [
+        "yes"
+      ]
+    }
   },
   "cadet-encore-in-wall-heaters": {
     "include": true,
@@ -1784,7 +1832,12 @@
       "White PVC or CPVC pipe is not part of the recall."
     ],
     "action": "Have a heating contractor inspect it promptly. At this age, replacing the vent along with the appliance is often the realistic fix. Whether any recall remedy is still honored is unknown.",
-    "caveat": "The full date range of these vents was never published; 1988 to 1994 comes from one subset. Many have already been replaced along with their furnaces."
+    "caveat": "The full date range of these vents was never published; 1988 to 1994 comes from one subset. Many have already been replaced along with their furnaces.",
+    "when": {
+      "gas": [
+        "yes"
+      ]
+    }
   },
   "gravity-octopus-furnace": {
     "include": true,
@@ -1820,7 +1873,12 @@
       "White or gray cloth-like or corrugated-paper wrap on the ducts may be asbestos; do not disturb it."
     ],
     "action": "Plan for replacement: have any duct wrap tested and removed by a licensed asbestos abatement contractor, then install a modern furnace and ducts. InterNACHI advises buyers to negotiate the price to cover this.",
-    "caveat": "The date range stands in for InterNACHI's 'late 1800s to the mid-20th century'. Most of these furnaces have long since been replaced."
+    "caveat": "The date range stands in for InterNACHI's 'late 1800s to the mid-20th century'. Most of these furnaces have long since been replaced.",
+    "when": {
+      "heating": [
+        "forced-air"
+      ]
+    }
   },
   "r22-air-conditioner": {
     "include": true,
@@ -1892,7 +1950,12 @@
       "Cracked tiles usually need a camera inspection (an NFPA 211 Level 2 inspection)."
     ],
     "action": "Have a certified chimney sweep inspect it before using the fireplace or connecting an appliance. Fixes include a stainless-steel or cast-in-place liner, new tiles, or closing off the flue.",
-    "caveat": "There is no single national date; liner rules came in locally and gradually from about the 1950s. Many older chimneys have been relined since."
+    "caveat": "There is no single national date; liner rules came in locally and gradually from about the 1950s. Many older chimneys have been relined since.",
+    "when": {
+      "chimney": [
+        "yes"
+      ]
+    }
   },
   "csst-gas-tubing-unbonded": {
     "include": true,
@@ -1930,7 +1993,12 @@
       "Look for bonding: a clamp on a rigid gas fitting with a bare or green copper wire running to the electrical panel or grounding system."
     ],
     "action": "If you have yellow CSST and see no bonding wire, have a licensed electrician bond it following the tubing maker's instructions and current code. It is a small job.",
-    "caveat": "The start year and the code year that made bonding mandatory (reported as 2009) were not confirmed, and states adopted codes at different times. CSST is still installed today, with bonding."
+    "caveat": "The start year and the code year that made bonding mandatory (reported as 2009) were not confirmed, and states adopted codes at different times. CSST is still installed today, with bonding.",
+    "when": {
+      "gas": [
+        "yes"
+      ]
+    }
   },
   "uncoated-brass-gas-connector": {
     "include": true,
@@ -1968,7 +2036,12 @@
       "Modern connectors are stainless steel or coated."
     ],
     "action": "Have a qualified gas technician check the connectors on older appliances and replace any uncoated brass one. A connector should never be reused.",
-    "caveat": "CPSC gave no exact year manufacture stopped, only 'at least the past 10 years' as of 1996. The age of the appliance matters more than the age of the house."
+    "caveat": "CPSC gave no exact year manufacture stopped, only 'at least the past 10 years' as of 1996. The age of the appliance matters more than the age of the house.",
+    "when": {
+      "gas": [
+        "yes"
+      ]
+    }
   },
   "smoke-alarms-by-era": {
     "include": true,
@@ -2213,7 +2286,13 @@
       "Houses on a concrete slab have no cripple wall."
     ],
     "action": "A contractor can bolt the sill and brace the cripple walls following your state's or city's prescriptive retrofit plans; taller cripple walls need an engineer. In California, check whether a state grant program covers your ZIP code.",
-    "caveat": "There is no single code year: a reference source says many houses built before 1950 lack adequate bolting, and the pre-1980 cutoff used in California is a grant-program screen, not a code date. Many houses have already been retrofitted."
+    "caveat": "There is no single code year: a reference source says many houses built before 1950 lack adequate bolting, and the pre-1980 cutoff used in California is a grant-program screen, not a code date. Many houses have already been retrofitted.",
+    "when": {
+      "foundation": [
+        "basement",
+        "crawlspace"
+      ]
+    }
   },
   "unreinforced-masonry-urm": {
     "include": true,
@@ -2254,7 +2333,16 @@
       "Brick veneer over a wood frame has no header rows and is a different, lesser issue."
     ],
     "action": "Have a structural engineer assess it. Salt Lake City has run a 'Fix the Bricks' program that helps pay for roof-to-wall ties and chimney bracing; check whether it covers your house.",
-    "caveat": "Shown for Utah, where the 1975 date is confirmed. California, Oregon and Washington also have unreinforced brick buildings with earlier cutoffs (California's seismic codes began in the 1930s), but most of those are commercial or apartment buildings."
+    "caveat": "Shown for Utah, where the 1975 date is confirmed. California, Oregon and Washington also have unreinforced brick buildings with earlier cutoffs (California's seismic codes began in the 1930s), but most of those are commercial or apartment buildings.",
+    "when": {
+      "type": [
+        "site-built"
+      ],
+      "exterior": [
+        "brick-stone",
+        "stucco"
+      ]
+    }
   },
   "florida-pre-2002-wind-construction": {
     "include": true,
@@ -2371,7 +2459,12 @@
       "If you can see them, they are unprotected from below."
     ],
     "action": "Consider covering exposed I-joists with 1/2-inch drywall, and make sure working smoke alarms cover every level, including the basement.",
-    "caveat": "A model-code requirement to cover them was reportedly added around 2012, but that was not confirmed and states adopted it unevenly. The hazard applies only where the joists are exposed."
+    "caveat": "A model-code requirement to cover them was reportedly added around 2012, but that was not confirmed and states adopted it unevenly. The hazard applies only where the joists are exposed.",
+    "when": {
+      "type": [
+        "site-built"
+      ]
+    }
   },
   "roof-trusses-metal-plate": {
     "include": true,
@@ -2445,7 +2538,12 @@
       "No label and no data plate, plus a title showing a pre-1976 year, means pre-HUD Code."
     ],
     "action": "It cannot be certified after the fact. Focus on safety upgrades such as smoke alarms, a wiring evaluation and tie-downs. Expect financing limits: FHA does not insure mortgages on these homes.",
-    "caveat": "The date is when the home left the factory, not its model year or when it was placed, so a '1976' home can fall on either side."
+    "caveat": "The date is when the home left the factory, not its model year or when it was placed, so a '1976' home can fall on either side.",
+    "when": {
+      "type": [
+        "manufactured"
+      ]
+    }
   },
   "manufactured-homes-pre-1994-wind-zones": {
     "include": true,
@@ -2481,7 +2579,12 @@
       "No wind-zone designation, or a date before July 1994, means the older standard."
     ],
     "action": "Have the anchoring and tie-downs checked and brought up to current installation standards. Only replacement gets you the post-1994 structural design.",
-    "caveat": "Date of manufacture governs, not the year the home was placed. Exactly which counties fall in each wind zone was not confirmed; the higher zones cover the hurricane coast."
+    "caveat": "Date of manufacture governs, not the year the home was placed. Exactly which counties fall in each wind zone was not confirmed; the higher zones cover the hurricane coast.",
+    "when": {
+      "type": [
+        "manufactured"
+      ]
+    }
   },
   "soft-story-wood-frame-apartments": {
     "include": false,
@@ -2991,7 +3094,12 @@
       "The first four digits of the serial number, at the bottom of the plate, are the year and month made: 0002 through 0712 are in the recall window."
     ],
     "action": "If it matches, contact Rinnai about the free repair kit using the details on the recall notice, and check the notice for whether it is still offered. Make sure there is a working CO alarm nearby.",
-    "caveat": "Wall heaters are often added to older houses and additions, so build year is a weak guide here. The rating plate is what tells you."
+    "caveat": "Wall heaters are often added to older houses and additions, so build year is a weak guide here. The rating plate is what tells you.",
+    "when": {
+      "gas": [
+        "yes"
+      ]
+    }
   },
   "rheem-paloma-tankless-2004-2006": {
     "include": true,
@@ -3027,7 +3135,12 @@
       "Check that the air filter door is in place."
     ],
     "action": "If it matches, contact the installer or Rheem about the repair described in the notice, and check the notice for current details. Keep a working CO alarm nearby.",
-    "caveat": "Tankless heaters are often fitted when an older tank fails, so they turn up in houses of any age."
+    "caveat": "Tankless heaters are often fitted when an older tank fails, so they turn up in houses of any age.",
+    "when": {
+      "gas": [
+        "yes"
+      ]
+    }
   },
   "coaire-quietside-tankless-2008-2014": {
     "include": true,
@@ -3063,7 +3176,12 @@
       "Check for the brand 'Coaire' or 'Quietside' on the bottom front."
     ],
     "action": "If it matches, stop using it and have it replaced. CPSC says the firm is no longer in business and a remedy is no longer available.",
-    "caveat": "Tankless heaters are often installed as replacements, so one could be in a house of any age."
+    "caveat": "Tankless heaters are often installed as replacements, so one could be in a house of any age.",
+    "when": {
+      "gas": [
+        "yes"
+      ]
+    }
   },
   "lochinvar-condensing-boilers-2016-2020": {
     "include": true,
@@ -3099,7 +3217,15 @@
       "The notice lists serial numbers 103475818 through 115078306 and model families such as ACB, KHB, SCB and WHL. Compare yours with the full list."
     ],
     "action": "If it matches, contact the maker about the free repair described in the notice, and check the notice for whether it is still offered. Keep a working CO alarm near the boiler and bedrooms.",
-    "caveat": "Boilers are replaced in older houses too, so the label matters more than build year. Later boiler recalls from other makers exist but were not checked for this guide."
+    "caveat": "Boilers are replaced in older houses too, so the label matters more than build year. Later boiler recalls from other makers exist but were not checked for this guide.",
+    "when": {
+      "heating": [
+        "boiler"
+      ],
+      "gas": [
+        "yes"
+      ]
+    }
   },
   "fvir-gas-water-heaters-2003": {
     "include": true,
@@ -3137,7 +3263,12 @@
       "Notice whether gasoline, paint thinner or solvents are stored near it, especially in a garage."
     ],
     "action": "Keep gasoline and solvents well away from any gas appliance. If the heater predates the standard, plan to replace it with a current model.",
-    "caveat": "This was a voluntary industry standard, not a federal law, and it covers standard 30, 40 and 50 gallon gas tank heaters. Water heaters are replaced often, so the heater's own date matters far more than the house's."
+    "caveat": "This was a voluntary industry standard, not a federal law, and it covers standard 30, 40 and 50 gallon gas tank heaters. Water heaters are replaced often, so the heater's own date matters far more than the house's.",
+    "when": {
+      "gas": [
+        "yes"
+      ]
+    }
   },
   "doe-2015-water-heater-efficiency-standard": {
     "include": false,

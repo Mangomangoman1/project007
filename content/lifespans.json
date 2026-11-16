@@ -13,7 +13,12 @@
         "tier": "trade",
         "quote": "Asphalt Shingles (3-tab) 20"
       }
-    ]
+    ],
+    "when": {
+      "roof": [
+        "asphalt"
+      ]
+    }
   },
   {
     "id": "asphalt-shingle-roof-architectural",
@@ -29,7 +34,12 @@
         "tier": "trade",
         "quote": "Asphalt (architectural) 30"
       }
-    ]
+    ],
+    "when": {
+      "roof": [
+        "asphalt"
+      ]
+    }
   },
   {
     "id": "metal-roof",
@@ -45,7 +55,12 @@
         "tier": "trade",
         "quote": "Metal 40 to 80"
       }
-    ]
+    ],
+    "when": {
+      "roof": [
+        "metal"
+      ]
+    }
   },
   {
     "id": "wood-shake-roof",
@@ -61,7 +76,12 @@
         "tier": "trade",
         "quote": "Wood 25"
       }
-    ]
+    ],
+    "when": {
+      "roof": [
+        "wood"
+      ]
+    }
   },
   {
     "id": "clay-concrete-tile-roof",
@@ -78,7 +98,12 @@
         "quote": "Clay/Concrete 100+"
       }
     ],
-    "openEnded": true
+    "openEnded": true,
+    "when": {
+      "roof": [
+        "tile"
+      ]
+    }
   },
   {
     "id": "epdm-flat-roof",
@@ -94,7 +119,12 @@
         "tier": "trade",
         "quote": "EPDM (ethylene propylene diene monomer) Rubber 15 to 25"
       }
-    ]
+    ],
+    "when": {
+      "roof": [
+        "flat"
+      ]
+    }
   },
   {
     "id": "modified-bitumen-roof",
@@ -110,7 +140,12 @@
         "tier": "trade",
         "quote": "Modified Bitumen 20"
       }
-    ]
+    ],
+    "when": {
+      "roof": [
+        "flat"
+      ]
+    }
   },
   {
     "id": "aluminum-gutters",
@@ -186,7 +221,13 @@
         "tier": "trade",
         "quote": "Furnace 15 to 25"
       }
-    ]
+    ],
+    "when": {
+      "heating": [
+        "forced-air",
+        "heat-pump"
+      ]
+    }
   },
   {
     "id": "boiler",
@@ -202,7 +243,12 @@
         "tier": "trade",
         "quote": "Boiler 40"
       }
-    ]
+    ],
+    "when": {
+      "heating": [
+        "boiler"
+      ]
+    }
   },
   {
     "id": "central-air-conditioner",
@@ -218,7 +264,12 @@
         "tier": "trade",
         "quote": "Air Conditioner (central) 7 to 15"
       }
-    ]
+    ],
+    "when": {
+      "cooling": [
+        "central"
+      ]
+    }
   },
   {
     "id": "heat-pump",
@@ -433,7 +484,12 @@
         "tier": "trade",
         "quote": "Vinyl Siding 60"
       }
-    ]
+    ],
+    "when": {
+      "exterior": [
+        "vinyl-aluminum"
+      ]
+    }
   },
   {
     "id": "fiber-cement-siding",
@@ -450,7 +506,13 @@
         "quote": "Fiber Cement 100+"
       }
     ],
-    "openEnded": true
+    "openEnded": true,
+    "when": {
+      "exterior": [
+        "fiber-cement",
+        "wood"
+      ]
+    }
   },
   {
     "id": "asphalt-driveway",
@@ -594,7 +656,12 @@
         "tier": "trade",
         "quote": "Gas Range 15 to 17"
       }
-    ]
+    ],
+    "when": {
+      "gas": [
+        "yes"
+      ]
+    }
   },
   {
     "id": "electric-range",
@@ -690,7 +757,13 @@
         "tier": "trade",
         "quote": "Sump Pump 7"
       }
-    ]
+    ],
+    "when": {
+      "foundation": [
+        "basement",
+        "crawlspace"
+      ]
+    }
   },
   {
     "id": "well-pump",
@@ -706,7 +779,12 @@
         "tier": "trade",
         "quote": "Well Pump 15"
       }
-    ]
+    ],
+    "when": {
+      "water": [
+        "well"
+      ]
+    }
   },
   {
     "id": "septic-system",
@@ -722,7 +800,12 @@
         "tier": "primary",
         "quote": "The average lifespan of a septic system is 15 to 40 years, but it can last longer if properly maintained!"
       }
-    ]
+    ],
+    "when": {
+      "sewer": [
+        "septic"
+      ]
+    }
   },
   {
     "id": "water-softener",
@@ -831,7 +914,12 @@
         "tier": "trade",
         "quote": "Chimney Flue Tile 40 to 120"
       }
-    ]
+    ],
+    "when": {
+      "chimney": [
+        "yes"
+      ]
+    }
   },
   {
     "id": "carpet",
