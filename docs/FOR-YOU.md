@@ -20,6 +20,16 @@ Kept up to date as the build goes. Nothing here blocks tonight's work unless mar
 - [ ] **Usage limit.** Several agents were cut off earlier by the 5-hour limit. If tonight's
       build stops mid-way, tell me to continue once it resets and I'll resume from the saved work.
 
+## Added after v1 (all optional layers on the year report)
+- **About your house** (built): eleven optional questions that tailor the report and checklist.
+- **The typical new house of your year** (building): real Census figures by region, 1971 onward.
+  No roofing data exists, and nothing before 1971.
+- **Your place** (building): enter a ZIP for local housing age, heating fuel, radon zone, climate
+  zone and first flood-map year. FEMA's hazard ratings could not be downloaded automatically.
+- **Home styles** (not started): no dataset exists, only reference prose. Decide later.
+- **State-specific code dates** (not feasible as a download): would need compiling by hand from
+  state statutes.
+
 ## Worth a read when you have time
 - [ ] **Try it.** Read the report for your own house's year and tell me what feels wrong,
       missing or confusing. You are the target reader.
