@@ -5,7 +5,7 @@
     "zone": "roof",
     "lifeLow": 20,
     "lifeHigh": 20,
-    "note": "Hot climates drastically shorten asphalt shingle life. Curling, cracked or bald shingles and granules in the gutters mean it is near the end.",
+    "note": "Hot climates can shorten asphalt shingle life. Curling, cracked or bald shingles and granules in the gutters mean it is near the end.",
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -235,7 +235,7 @@
     "zone": "heating-cooling",
     "lifeLow": 40,
     "lifeHigh": 40,
-    "note": "Boilers can outlast furnaces by decades. Leaks around the unit, rust and rising pressure problems suggest it is wearing out.",
+    "note": "Boilers can outlast furnaces by many years. Leaks around the unit, rust and rising pressure problems suggest it is wearing out.",
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -277,7 +277,7 @@
     "zone": "heating-cooling",
     "lifeLow": 10,
     "lifeHigh": 15,
-    "note": "A heat pump works year-round, so it ages faster than an AC alone. Yearly service and clean coils help.",
+    "note": "A heat pump runs for both heating and cooling. Yearly service and clean coils help.",
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -353,11 +353,11 @@
   },
   {
     "id": "exterior-doors",
-    "title": "Exterior doors (steel, fiberglass, wood)",
+    "title": "Fiberglass exterior door",
     "zone": "whole-house",
     "lifeLow": 100,
     "lifeHigh": 100,
-    "note": "The door slab can last as long as the house (the chart says 100+). The weatherstripping wears out every five to eight years, so a draft means new seals, not a new door.",
+    "note": "The chart gives 100+ years for fiberglass doors. The weatherstripping wears out every five to eight years, so a draft means new seals, not a new door.",
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -428,7 +428,7 @@
     "zone": "deck-yard",
     "lifeLow": 10,
     "lifeHigh": 30,
-    "note": "Hidden rot where the ledger meets the house and at posts is the real danger. A deck that bounces or sways should be checked before anyone uses it.",
+    "note": "Check for hidden rot where the ledger meets the house and at the posts. A deck that bounces or sways should be checked before anyone uses it.",
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -568,7 +568,7 @@
     "zone": "whole-house",
     "lifeLow": 10,
     "lifeHigh": 10,
-    "note": "Replace every smoke alarm 10 years after its manufacture date, even if it still beeps when tested. The sensor wears out without warning. The date is printed on the back.",
+    "note": "Replace a smoke alarm when it fails to respond to testing, or every 10 years, whichever comes first. The manufacture date is printed on the back.",
     "sources": [
       {
         "url": "https://www.nachi.org/smoke-alarm-inspection.htm",
@@ -600,7 +600,7 @@
     "zone": "kitchen",
     "lifeLow": 30,
     "lifeHigh": 30,
-    "note": "The chart says up to 30 years, and much less if tripped often. Press the test button monthly; one that will not trip or reset must be replaced.",
+    "note": "The chart says up to 30 years. Press the test button monthly; one that will not trip or reset must be replaced.",
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -648,7 +648,7 @@
     "zone": "kitchen",
     "lifeLow": 15,
     "lifeHigh": 17,
-    "note": "Burners and igniters wear first. A gas smell means shut off the gas and call the utility.",
+    "note": "Burners and igniters wear first.",
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",

@@ -1,0 +1,1135 @@
+{
+  "checked": [
+    "lp-inner-seal-osb-siding",
+    "masonite-hardboard-siding",
+    "eifs-barrier-synthetic-stucco",
+    "certainteed-organic-shingles",
+    "atlas-chalet-shingles",
+    "energy-code-milestones",
+    "balloon-framing",
+    "composite-decking-defects",
+    "pella-proline-windows",
+    "consolidated-industries-horizontal-furnace",
+    "cadet-encore-in-wall-heaters",
+    "htpv-plastic-vent-pipe",
+    "gravity-octopus-furnace",
+    "r22-air-conditioner",
+    "unlined-masonry-chimney",
+    "csst-gas-tubing-unbonded",
+    "uncoated-brass-gas-connector",
+    "smoke-alarms-by-era",
+    "garage-door-opener-no-auto-reverse",
+    "non-safety-glazing-pre-1977",
+    "residential-fire-sprinklers",
+    "unbolted-foundation-unbraced-cripple-wall",
+    "unreinforced-masonry-urm",
+    "florida-pre-2002-wind-construction",
+    "pyrrhotite-crumbling-foundations",
+    "engineered-i-joists-fire",
+    "roof-trusses-metal-plate",
+    "pre-1976-mobile-homes",
+    "manufactured-homes-pre-1994-wind-zones",
+    "kidde-plastic-handle-extinguishers-2017",
+    "gree-dehumidifiers-2013-recall",
+    "gree-dehumidifiers-2023-recall",
+    "kidde-nighthawk-combo-alarm-2004-2010",
+    "kidde-hardwired-i12010s-2014",
+    "kidde-pi2010-dual-sensor-2016-2017",
+    "kidde-trusense-alarms-2019-2020",
+    "siemens-murray-breakers-2010-spring-clip",
+    "square-d-afci-breakers-2004",
+    "counterfeit-square-d-breakers-2003-2006",
+    "central-o-ring-fire-sprinklers-1989-2001",
+    "bosch-siemens-dishwashers-1999-2005",
+    "rinnai-wall-furnaces-2000-2007",
+    "rheem-paloma-tankless-2004-2006",
+    "coaire-quietside-tankless-2008-2014",
+    "lochinvar-condensing-boilers-2016-2020",
+    "fvir-gas-water-heaters-2003",
+    "r410a-hfc-phasedown-2025",
+    "iecc-2012-mandatory-air-leakage-test",
+    "asphalt-shingle-roof-3-tab",
+    "asphalt-shingle-roof-architectural",
+    "metal-roof",
+    "wood-shake-roof",
+    "clay-concrete-tile-roof",
+    "epdm-flat-roof",
+    "modified-bitumen-roof",
+    "aluminum-gutters",
+    "tank-water-heater",
+    "tankless-water-heater",
+    "forced-air-furnace",
+    "boiler",
+    "central-air-conditioner",
+    "heat-pump",
+    "ductwork",
+    "vinyl-windows",
+    "wood-windows",
+    "aluminum-windows",
+    "exterior-doors",
+    "garage-door",
+    "garage-door-opener",
+    "wood-deck-boards",
+    "deck-structure",
+    "exterior-paint",
+    "caulking",
+    "vinyl-siding",
+    "fiber-cement-siding",
+    "asphalt-driveway",
+    "concrete-walks",
+    "service-panel",
+    "smoke-alarm",
+    "carbon-monoxide-alarm",
+    "gfci-outlets",
+    "dishwasher",
+    "refrigerator",
+    "gas-range",
+    "electric-range",
+    "garbage-disposal",
+    "washing-machine",
+    "clothes-dryer",
+    "dryer-vent-plastic",
+    "sump-pump",
+    "well-pump",
+    "septic-system",
+    "water-softener",
+    "faucets",
+    "toilets",
+    "copper-water-lines",
+    "cast-iron-drain-pipe",
+    "chimney-flue-tile",
+    "carpet",
+    "hardwood-floor",
+    "vinyl-floor"
+  ],
+  "patches": {
+    "lp-inner-seal-osb-siding": {
+      "action": "Keep paint and caulk intact, replace failed boards, and plan to re-side if damage is widespread. The settlement required claims to be filed before January 1, 2003."
+    },
+    "masonite-hardboard-siding": {
+      "prevalence.note": "No reliable count exists, and no confirmed figure for the size of the Masonite class was found.",
+      "caveat": "The 1980 to 1998 range is the reported Masonite class window, which could not be confirmed, and hardboard was used before 1980 too. Brands look alike, so the maker is hard to tell from the outside."
+    },
+    "eifs-barrier-synthetic-stucco": {
+      "caveat": "Start and end years are approximate, and the move to drainable EIFS did not happen everywhere at the same time."
+    },
+    "certainteed-organic-shingles": {
+      "summary": "CertainTeed organic shingles were made from July 1987 through 2005 and covered by a 2010 class settlement. This matters only if the original roof is still on the house.",
+      "check.0": "Look for CertainTeed wrappers, invoices or warranty papers and check whether they describe an organic (felt) shingle rather than fiberglass.",
+      "prevalence.note": "CertainTeed's own estimate in court: about 1,857,000 structures were built with these shingles from 1987 to 2005, a small share of roofs laid in those years."
+    },
+    "atlas-chalet-shingles": {
+      "hook": "Atlas Chalet and Stratford shingles, sold from at least 1998 until 2010, drew a federal lawsuit, and in 2017 the court denied class certification.",
+      "summary": "Atlas developed these overlay shingles in the 1990s and discontinued them in 2010, according to a federal court. Owners sued over the shingles, and in 2017 the court denied class certification.",
+      "prevalence.note": "No reliable count exists, and no data on where they were most used was found.",
+      "action": "Have a roofer look if you see blistering. No class settlement was found, so replacement is usually at the owner's cost unless an insurer accepts a storm claim, and because they are discontinued, matching repairs is difficult."
+    },
+    "energy-code-milestones": {
+      "summary": "Before energy codes, insulation levels, window types and air sealing were up to the builder. Model codes followed from 1975, but states adopted them on their own schedules. Many older houses have had insulation added since.",
+      "caveat": "1975 is when the first standard was published, not when your state enforced one, and states adopted energy codes on their own schedules. Later code dates were not confirmed.",
+      "check.1": "Check what kind of glass the windows have: single pane or double pane."
+    },
+    "balloon-framing": {
+      "prevalence.note": "No reliable count exists. The concern is mainly in houses of two or more stories, where wall cavities can run through several floors."
+    },
+    "composite-decking-defects": {
+      "prevalence.note": "CPSC: about 48 million linear feet recalled. No count of affected houses exists."
+    },
+    "consolidated-industries-horizontal-furnace": {
+      "check.0": "Look at the furnace in the attic or crawl space for steel rods mounted above the burners (the 'NOx rods'), without removing any panels, or ask a heating contractor to check; every one of these furnaces has them.",
+      "action": "If you find one, replace the furnace; the maker is gone and no recall remedy remains. Until then, a working smoke alarm in the attic is a sensible interim step."
+    },
+    "r22-air-conditioner": {
+      "hook": "From 2010, new R-22 could be made only for air conditioners built before that year, and US production and import of the refrigerant ended in 2020."
+    },
+    "unlined-masonry-chimney": {
+      "hook": "Chimneys built before the 1950s may have no flue liner, just bare brick, which can let a chimney fire or carbon monoxide reach the house.",
+      "prevalence.note": "No reliable count exists of how many older chimneys are unlined.",
+      "check.2": "Cracked tiles usually need a camera inspection by a chimney professional."
+    },
+    "csst-gas-tubing-unbonded": {
+      "hook": "Flexible yellow stainless-steel gas tubing can be damaged by a nearby lightning strike, and older installs may lack the bonding wire that reduces the risk.",
+      "summary": "Corrugated stainless steel tubing (CSST) in a yellow jacket is a flexible gas piping used in houses. A class action against its makers covered tubing installed in homes as of September 5, 2006, and many local codes require bonding the tubing to the electrical ground. Houses built before bonding became routine may not have it.",
+      "caveat": "The start year and the code year that made bonding mandatory were not confirmed, and states adopted codes at different times. CSST is still installed today, with bonding."
+    },
+    "smoke-alarms-by-era": {
+      "evidence": "era",
+      "action": "Add alarms to every bedroom, hallway and level, using interconnected units; wireless interconnected alarms avoid new wiring. Replace any alarm over 10 years old."
+    },
+    "garage-door-opener-no-auto-reverse": {
+      "check.0": "Look for two small sensor 'eyes' near the floor on each side of the garage door opening."
+    },
+    "non-safety-glazing-pre-1977": {
+      "summary": "A federal CPSC standard made safety glazing mandatory from July 6, 1977 in doors, storm doors, sliding glass doors, and tub and shower doors and enclosures. A house built before then that still has its original glass in those places may have ordinary annealed glass."
+    },
+    "unbolted-foundation-unbraced-cripple-wall": {
+      "hook": "Many older West Coast houses on crawl spaces may not be adequately bolted to their foundations, and in a strong earthquake they can slide off.",
+      "check.1": "Bolts with nuts and washers along the sill plate mean it is bolted.",
+      "action": "A contractor can bolt the sill and brace the cripple walls with plywood. Ask your city or county whether it publishes retrofit plans or has a program that helps pay for the work.",
+      "caveat": "There is no single code year: a reference source says many structures built before 1950 may not be adequately bolted, and the 1979 end used here is an unconfirmed program screen, not a code date. Many houses have already been retrofitted."
+    },
+    "unreinforced-masonry-urm": {
+      "check.0": "Look at the outside brick walls: rows of bricks laid end-on (header courses) every few rows mean solid brick, not veneer.",
+      "check.1": "At a window opening, a wall much thicker than a single brick points to solid masonry.",
+      "action": "Have a structural engineer assess it, and ask your city whether a local program helps pay for seismic retrofits such as roof-to-wall ties and chimney bracing.",
+      "caveat": "Shown for Utah, where the 1975 date is confirmed. California also has unreinforced brick buildings; seismic code requirements began there in the 1930s."
+    },
+    "florida-pre-2002-wind-construction": {
+      "hook": "Florida homes built before the statewide Florida Building Code took effect on March 1, 2002 were built to earlier local codes; the statewide code followed Hurricane Andrew.",
+      "prevalence.note": "No confirmed count exists, but every Florida home built before March 2002 predates the statewide code.",
+      "caveat": "Houses finished around 2002 can go either way, depending on when they were approved. In South Florida's High-Velocity Hurricane Zones the stricter code dates from 1994. Some pre-2002 homes do have clips or straps."
+    },
+    "pyrrhotite-crumbling-foundations": {
+      "summary": "NIST says damage to concrete in central Connecticut has been attributed to pyrrhotite, an iron sulfide mineral in the aggregate. The years of affected pours could not be confirmed from an official source. The usual fix is replacing the foundation, which is a major job.",
+      "prevalence.note": "No reliable count exists. The problem is tied to aggregate from certain local quarries, so it is limited to parts of central Connecticut and Massachusetts.",
+      "action": "If you are in an affected area, have a licensed engineer inspect the foundation, especially before buying, and check with your state about any current testing or repair assistance."
+    },
+    "engineered-i-joists-fire": {
+      "hook": "By 2005 about half of wood light-frame floors used engineered I-joists, which perform well day to day but can fail quickly in a fire if left exposed.",
+      "check.1": "They are usually printed with the maker's brand name.",
+      "action": "Consider covering exposed I-joists with drywall, and make sure working smoke alarms cover every level, including the basement.",
+      "caveat": "Newer model codes are reported to require covering them, but that was not confirmed and code adoption varies by state. The hazard applies only where the joists are exposed."
+    },
+    "roof-trusses-metal-plate": {
+      "check.0": "In the attic, look for diagonal 2x4s forming W or M shapes, joined by toothed galvanized steel plates.",
+      "caveat": "Truss use grew over decades, and many houses still use rafters, especially custom homes and complex roofs. A reference source dates the connector plate to 1955."
+    },
+    "pre-1976-mobile-homes": {
+      "summary": "Every manufactured home built after June 15, 1976 should carry a HUD certification label and meet federal construction and safety standards. Earlier units were built before those standards and have no HUD label. This matters only if your home is a manufactured (mobile) home.",
+      "action": "Focus on safety upgrades such as smoke alarms, a wiring evaluation and tie-downs. Expect financing limits: FHA does not insure mortgages on these homes."
+    },
+    "kidde-plastic-handle-extinguishers-2017": {
+      "summary": "In 2017 Kidde recalled 134 plastic-handle extinguisher models made from 1973 to August 2017, plus eight push-button Pindicator models made from 1995 to September 2017. They can clog, need too much force to work, or lose their nozzle."
+    },
+    "gree-dehumidifiers-2013-recall": {
+      "hook": "About 2.5 million dehumidifiers sold under well-known brands from 2005 to 2013 can overheat and catch fire.",
+      "summary": "Gree made dehumidifiers sold as Danby, De'Longhi, Fedders, Frigidaire, Kenmore, SoleusAir, GE and others between 2005 and 2013. They can overheat, smoke and catch fire."
+    },
+    "gree-dehumidifiers-2023-recall": {
+      "check.2": "Read the model number on the unit's label and compare it with the 42 models on the 2023 CPSC notice."
+    },
+    "kidde-nighthawk-combo-alarm-2004-2010": {
+      "summary": "Kidde recalled about 3.6 million NightHawk talking combination smoke and carbon monoxide alarms, model KN-COSM-IB, made from June 2004 to December 2010. If the batteries are replaced near the end of the alarm's life, it can stop giving its end-of-life chirp and stop protecting the home."
+    },
+    "square-d-afci-breakers-2004": {
+      "summary": "About 700,000 Square D QO and Homeline arc-fault breakers made after March 1, 2004 and sold from March to September 2004 were recalled because they can fail to detect an arc fault. They were put in to meet the 2002 electrical code rule for bedroom circuits."
+    },
+    "counterfeit-square-d-breakers-2003-2006": {
+      "summary": "Square D determined that breakers sold as QO and QOB by some distributors were counterfeit and can fail to trip when overloaded, a fire hazard. One recall, through Specialty Lamp International, covered about 371,000 breakers sold from May 2005 to June 2006. Similar recalls by other distributors were reported but not confirmed.",
+      "prevalence.note": "About 371,000 units were recalled by one distributor; other recalls were not confirmed, and no count of affected homes exists."
+    },
+    "central-o-ring-fire-sprinklers-1989-2001": {
+      "prevalence.note": "No reliable count exists of houses with these heads; it matters only for houses that have fire sprinklers."
+    },
+    "bosch-siemens-dishwashers-1999-2005": {
+      "summary": "BSH recalled about 476,500 Bosch and Siemens dishwashers made from May 1999 to July 2005 and sold through December 2006, because an electrical component can overheat and start a fire."
+    },
+    "rinnai-wall-furnaces-2000-2007": {
+      "prevalence.note": "About 52,000 units were recalled; no count of affected homes exists."
+    },
+    "rheem-paloma-tankless-2004-2006": {
+      "prevalence.note": "About 42,200 units were recalled; no count of affected homes exists."
+    },
+    "coaire-quietside-tankless-2008-2014": {
+      "summary": "About 29,000 Coaire and Quietside S-Line condensing tankless gas water heaters sold from July 2008 to August 2014 can overheat and start a fire. The firm is out of business and no remedy is available."
+    },
+    "lochinvar-condensing-boilers-2016-2020": {
+      "summary": "About 34,300 condensing boilers, combi boilers and packaged systems sold from August 2016 to June 2020 under the Lochinvar, A. O. Smith and State Proline names were recalled. A flue grommet can deteriorate and let carbon monoxide escape.",
+      "action": "If it matches, contact the maker about the remedy described in the notice, and check the notice for whether it is still offered. Keep a working CO alarm near the boiler and bedrooms."
+    },
+    "fvir-gas-water-heaters-2003": {
+      "hook": "Standard gas tank water heaters made after July 1, 2003 are built to resist igniting gasoline fumes; older ones are not.",
+      "summary": "Under an industry standard developed with CPSC, standard gas tank water heaters made after July 1, 2003 are designed to resist igniting spilled gasoline or solvent vapors. CPSC said vapor ignition by gas water heaters was involved in nearly 800 home fires a year. An older heater still in service lacks this protection."
+    },
+    "r410a-hfc-phasedown-2025": {
+      "hook": "Central AC installed from about 2010 to 2025 may well run on R-410A, a refrigerant that new equipment is now moving away from.",
+      "summary": "From January 1, 2025, EPA restricts making or importing new home air conditioning systems that use refrigerants above its global-warming limit, which R-410A exceeds, so new equipment is moving to alternatives. EPA sets no installation deadline for systems whose parts were all made before that date.",
+      "prevalence.note": "No count of homes exists. That most systems of these years use R-410A is an inference, not a sourced figure.",
+      "caveat": "The 2010 start is approximate. EPA's installation rules depend on when a system's parts were made, so check EPA's current page before relying on a cutoff. Many older houses got an R-410A system as a replacement."
+    },
+    "iecc-2012-mandatory-air-leakage-test": {
+      "summary": "The 2012 International Energy Conservation Code added a mandatory whole-house pressure (blower-door) test, and DOE put it at about 30 percent more efficient than the 2006 code. A house built before its state adopted the 2012 code was not held to that test, so it may leak more air.",
+      "caveat": "This is a model code. States and cities adopted it at different times, so the end year here is stretched a few years and is soft. Check your state's adoption date."
+    }
+  },
+  "lifespanPatches": {
+    "asphalt-shingle-roof-3-tab": {
+      "note": "Hot climates can shorten asphalt shingle life. Curling, cracked or bald shingles and granules in the gutters mean it is near the end."
+    },
+    "heat-pump": {
+      "note": "A heat pump runs for both heating and cooling. Yearly service and clean coils help."
+    },
+    "boiler": {
+      "note": "Boilers can outlast furnaces by many years. Leaks around the unit, rust and rising pressure problems suggest it is wearing out."
+    },
+    "exterior-doors": {
+      "note": "The chart's 100+ figure is for fiberglass doors; steel and wood doors were not checked. The weatherstripping wears out every five to eight years, so a draft means new seals, not a new door."
+    },
+    "smoke-alarm": {
+      "note": "Replace a smoke alarm when it fails to respond to testing, or every 10 years, whichever comes first. The manufacture date is printed on the back."
+    },
+    "gfci-outlets": {
+      "note": "The chart says up to 30 years. Press the test button monthly; one that will not trip or reset must be replaced."
+    },
+    "gas-range": {
+      "note": "Burners and igniters wear first. If you smell gas, get out of the house and call the gas utility from outside."
+    },
+    "deck-structure": {
+      "note": "Check for hidden rot where the ledger meets the house and at the posts. A deck that bounces or sways should be checked before anyone uses it."
+    }
+  },
+  "findings": [
+    {
+      "id": "lp-inner-seal-osb-siding",
+      "field": "action",
+      "severity": "overstated",
+      "was": "The settlement claim deadline passed in 2003, so no compensation remains.",
+      "problem": "The court-verified fact is the claim cutoff (before January 1, 2003). 'No compensation remains' goes further: a later LP claimant offer program appears only in an unopened source, so the copy should not declare all compensation closed.",
+      "basis": "verification.what_is_confirmed: 'the 1 January 2003 claim cutoff, from the Oregon district court opinion itself'; LP investor release on a 2003 Claimant Offer Program is unverified.",
+      "fix": "Keeps the verified deadline, drops the unverified 'no compensation remains'."
+    },
+    {
+      "id": "masonite-hardboard-siding",
+      "field": "prevalence.note",
+      "severity": "unsupported",
+      "was": "No reliable count exists. Class counsel described a Masonite class of about 4 million homeowners, but that figure could not be confirmed.",
+      "problem": "Attributes a specific figure to class counsel's site, which was never opened (search summary only). Repeating an unverified number with a hedge still puts it in front of readers.",
+      "basis": "verification.what_is_not: 'the roughly 4 million homeowner figure ... no opened page states them ... class counsel's site is outside the allowed hosts.'",
+      "fix": "Removes the unverified figure and attribution."
+    },
+    {
+      "id": "masonite-hardboard-siding",
+      "field": "caveat",
+      "severity": "unsupported",
+      "was": "Brands look alike; identifying one needs the marks on the back of a board.",
+      "problem": "The back-of-board mark is noted in the research as 'from memory ... not confirmed'.",
+      "basis": "how_to_identify: 'From memory an AHA code and manufacturer mark can be found on the back of a board; not confirmed.'",
+      "fix": "Drops the unconfirmed identifier, keeps the point that brands look alike."
+    },
+    {
+      "id": "eifs-barrier-synthetic-stucco",
+      "field": "caveat",
+      "severity": "unsupported",
+      "was": "barrier EIFS was never banned nationally and continued in some places into the early 2000s. It is reported to be most common on mid- and upper-priced houses in parts of the Southeast and Mid-Atlantic.",
+      "problem": "The 'early 2000s' end and the regional and price-band concentration have no source at all; 'it is reported' implies one. Only the switch to drainable EIFS under building standards and late-1980s leak problems are verified.",
+      "basis": "verification.what_is_confirmed: 'barrier EIFS on houses was superseded by drainable EIFS under building standards (InterNACHI), that leak problems appeared from the late 1980s, and ... about 4 percent'; what_is_not lists the end dates; regions field has no source.",
+      "fix": "Removes the unsourced date and regional claims, keeps the approximate-dates warning."
+    },
+    {
+      "id": "certainteed-organic-shingles",
+      "field": "summary",
+      "severity": "unsupported",
+      "was": "(sold as Hallmark Shangle, Horizon, Independence, Custom Sealdon and others) ... They were sold mainly in the upper Midwest.",
+      "problem": "The brand names appear only in the research entry's name, never in a verified quote. The upper-Midwest sales claim rests on an unopened press release; the verification says it is 'supported only indirectly'.",
+      "basis": "verified quotes: court '...approximately 1,857,000 structures were built using CertainTeed organic shingles'; what_is_not: 'The upper-Midwest regional statement is supported only indirectly ... The PR Newswire release was not opened.'",
+      "fix": "Removes brand list and regional sales claim."
+    },
+    {
+      "id": "certainteed-organic-shingles",
+      "field": "check.0",
+      "severity": "unsupported",
+      "was": "Look for the brand names Hallmark Shangle, Horizon, Independence or Custom Sealdon on wrappers, invoices or warranty papers.",
+      "problem": "Brand names are not in any verified quote or in what_is_confirmed.",
+      "basis": "Sources: only the court estimate and Wikipedia 2005 end are verified; neither names product lines.",
+      "fix": "Keeps the paperwork check without the unverified brand names."
+    },
+    {
+      "id": "certainteed-organic-shingles",
+      "field": "prevalence.note",
+      "severity": "unsupported",
+      "was": "about 1,857,000 structures in the US and Canada were built with these shingles",
+      "problem": "The verified court quote gives the figure but does not say 'US and Canada'.",
+      "basis": "Quote: 'CertainTeed estimates that, from 1987 to 2005, approximately 1,857,000 structures were built using CertainTeed organic shingles.'",
+      "fix": "Drops 'in the US and Canada'."
+    },
+    {
+      "id": "atlas-chalet-shingles",
+      "field": "hook",
+      "severity": "unsupported",
+      "was": "class certification was denied, so there is no settlement.",
+      "problem": "Denial of class certification (2017) is verified; that no settlement exists is not stated by any opened source and does not follow from the denial.",
+      "basis": "what_is_confirmed: 'denial of class certification on 9 June 2017'.",
+      "fix": "States the verified denial without asserting there is no settlement."
+    },
+    {
+      "id": "atlas-chalet-shingles",
+      "field": "summary",
+      "severity": "unsupported",
+      "was": "They are reported to be common in the Southeast, especially around Atlanta.",
+      "problem": "No source supports the regional claim; 'reported' implies one.",
+      "basis": "what_is_not: 'Prevalence and the list of states remain unsourced'.",
+      "fix": "Removes the regional sentence."
+    },
+    {
+      "id": "atlas-chalet-shingles",
+      "field": "prevalence.note",
+      "severity": "unsupported",
+      "was": "They are described as common on Atlanta-area houses of 1999 to 2010 and rare elsewhere, but without data.",
+      "problem": "Anecdotal regional claim with a specific year range (1999 is a year the research itself corrected away); no source.",
+      "basis": "prevalence_basis: 'No data. Anecdotally very common ...'; what_is_not: 'Prevalence and the list of states remain unsourced'.",
+      "fix": "Removes the anecdote."
+    },
+    {
+      "id": "atlas-chalet-shingles",
+      "field": "action",
+      "severity": "unsupported",
+      "was": "With no settlement, replacement is at the owner's cost",
+      "problem": "No-settlement status is not verified.",
+      "basis": "what_is_confirmed covers only the 2017 certification denial and the 2010 discontinuation.",
+      "fix": "Re-words to 'no class settlement was found'."
+    },
+    {
+      "id": "energy-code-milestones",
+      "field": "summary",
+      "severity": "unsupported",
+      "was": "states adopted them on their own schedules, some a decade or more later.",
+      "problem": "'A decade or more' lag is not in any verified source; it comes from unopened search summaries.",
+      "basis": "what_is_confirmed: 'The 1975 starting point ... and the existence of the IECC ... from Wikipedia only'; Ohio adoption history source is unverified.",
+      "fix": "Drops the unsourced lag figure."
+    },
+    {
+      "id": "energy-code-milestones",
+      "field": "caveat",
+      "severity": "unsupported",
+      "was": "1975 is when the first voluntary standard was published ... some states lagged by a decade or more, and a few still have no statewide residential energy code.",
+      "problem": "'Voluntary', the decade-plus lag and 'a few still have no statewide code' are unverified (date_notes, no opened source).",
+      "basis": "Wikipedia quote: 'The original standard, ASHRAE 90, was published in 1975.' Nothing verified on state adoption.",
+      "fix": "Keeps the publish-vs-enforce distinction, drops the unverified specifics."
+    },
+    {
+      "id": "energy-code-milestones",
+      "field": "check.1",
+      "severity": "unsupported",
+      "was": "hold a light to the glass; one reflection means single pane, two close reflections mean double.",
+      "problem": "The reflection test is not in the research; how_to_identify says only that glazing type is a practical check.",
+      "basis": "how_to_identify: 'Insulation depth in the attic and glazing type are the practical checks.'",
+      "fix": "Keeps the glazing check without the unresearched technique."
+    },
+    {
+      "id": "balloon-framing",
+      "field": "prevalence.note",
+      "severity": "unsupported",
+      "was": "Inspectors generally assume balloon framing in two-story wood-frame houses built before about 1920; one-story houses are effectively unaffected.",
+      "problem": "Credits 'inspectors' with a rule of thumb and a 1920 cutoff that no source supports; the research says 'No survey data exists' and the peak years are 'an estimate'.",
+      "basis": "what_is_not: 'Peak years 1870-1930 and any prevalence.' Verified Wikipedia (Fire blocking): 'where a cavity may traverse multiple floors'.",
+      "fix": "Removes the unsourced attribution and cutoff year; keeps the multi-story point, which the fire-blocking quote supports."
+    },
+    {
+      "id": "composite-decking-defects",
+      "field": "prevalence.note",
+      "severity": "unsupported",
+      "was": "Composite was a minority of decks built in these years.",
+      "problem": "No source gives a share of decks; this is the researcher's inference.",
+      "basis": "prevalence_basis: 'No per-house figure.' Verified CPSC facts cover only the recall itself.",
+      "fix": "Keeps the CPSC figure, drops the unsourced market-share claim."
+    },
+    {
+      "id": "consolidated-industries-horizontal-furnace",
+      "field": "check.0",
+      "severity": "unsafe",
+      "was": "Look at the furnace in the attic or crawl space for steel rods mounted above the burners (the 'NOx rods'); every one of these furnaces has them.",
+      "problem": "Seeing the burners can mean pulling a burner access panel on a gas furnace in a cramped attic; the copy does not say not to open the unit.",
+      "basis": "how_to_identify: 'steel rods mounted above the burners (the NOx rods) identify all of them'; no research text says the reader should open the furnace.",
+      "fix": "Adds 'without removing any panels' and a contractor fallback; no new fact."
+    },
+    {
+      "id": "consolidated-industries-horizontal-furnace",
+      "field": "action",
+      "severity": "unsupported",
+      "was": "Until then, CPSC suggested an ionization smoke alarm in the attic as an interim measure.",
+      "problem": "The CPSC attribution for the smoke-alarm advice is not in any verified quote or in what_is_confirmed (it appears only in the research's unsourced risk text).",
+      "basis": "what_is_confirmed: 'manufactured 1983-1994 for California; NOx-rod identification; 50 fire reports; brands; remedy no longer available and firm out of business.'",
+      "fix": "Keeps the interim smoke-alarm advice but drops the CPSC attribution and the alarm-type detail."
+    },
+    {
+      "id": "r22-air-conditioner",
+      "field": "hook",
+      "severity": "overstated",
+      "was": "New air conditioners could not be built to use R-22 from 2010",
+      "problem": "The verified EPA rule restricts new R-22 to servicing equipment made before 2010; it is not stated as a ban on building R-22 units, and the research notes an unverified dry-charge route by which R-22 units were sold after 2010.",
+      "basis": "EPA: 'No production or import of HCFC-142b and HCFC-22, except for use in equipment manufactured before January 1, 2010'; 'U.S. production and import of HCFC-22 ended on January 1, 2020'.",
+      "fix": "Restates the rule as EPA wrote it."
+    },
+    {
+      "id": "unlined-masonry-chimney",
+      "field": "hook",
+      "severity": "overstated",
+      "was": "Many chimneys built before the 1950s have no flue liner",
+      "problem": "No verified source says how many pre-1950s chimneys are unlined; the only verified fact is that codes in many places have required liners since the 1950s.",
+      "basis": "Wikipedia: 'Since the 1950s, building codes in many locations require newly built chimneys to have a flue liner.' what_is_not: 'any prevalence figure'.",
+      "fix": "Softens 'Many ... have' to 'may have'."
+    },
+    {
+      "id": "unlined-masonry-chimney",
+      "field": "prevalence.note",
+      "severity": "unsupported",
+      "was": "Sources say only that pre-1950s houses 'often' have unlined chimneys.",
+      "problem": "The 'often' wording comes from a code-explainer site the research calls weak and never opened.",
+      "basis": "Jaspector source: 'seen only as a search-engine extract this session; page could not be opened'.",
+      "fix": "Removes the quote from an unverified source."
+    },
+    {
+      "id": "unlined-masonry-chimney",
+      "field": "check.2",
+      "severity": "unsupported",
+      "was": "Cracked tiles usually need a camera inspection (an NFPA 211 Level 2 inspection).",
+      "problem": "The NFPA 211 Level 2 reference is not in any verified source; no NFPA page was opened.",
+      "basis": "what_is_not: 'No primary source.' The NFPA detail is only in the unsourced how_to_identify text.",
+      "fix": "Drops the unverified standard citation."
+    },
+    {
+      "id": "csst-gas-tubing-unbonded",
+      "field": "hook",
+      "severity": "overstated",
+      "was": "older installs often lack the bonding wire that reduces the risk.",
+      "problem": "No verified source says how often older installs are unbonded.",
+      "basis": "Wikipedia: 'Yellow-jacketed CSST should be bonded ... Many local codes require this.' what_is_not includes 'any market-share figure'.",
+      "fix": "Softens 'often lack' to 'may lack'."
+    },
+    {
+      "id": "csst-gas-tubing-unbonded",
+      "field": "summary",
+      "severity": "unsupported",
+      "was": "came into use in houses around 1990 ... bonding the tubing to the electrical ground is now standard.",
+      "problem": "The 1990 start is listed as unverified, and 'now standard' goes beyond the verified 'Many local codes require this'.",
+      "basis": "what_is_not: 'installed_from 1990 (or NFPA 54 approval in 1988)'. Wikipedia: 'Yellow-jacketed CSST should be bonded ... Many local codes require this.'",
+      "fix": "Drops the unverified start year and matches the bonding statement to the verified wording."
+    },
+    {
+      "id": "csst-gas-tubing-unbonded",
+      "field": "caveat",
+      "severity": "unsupported",
+      "was": "the code year that made bonding mandatory (reported as 2009)",
+      "problem": "Repeats a code year that comes only from an unopened trade article.",
+      "basis": "what_is_not: 'the 2009 NFPA 54 / IFGC bonding requirement'.",
+      "fix": "Removes the unverified year, keeps the warning."
+    },
+    {
+      "id": "smoke-alarms-by-era",
+      "field": "evidence",
+      "severity": "unsupported",
+      "was": "rule",
+      "problem": "The 'rule' stamp needs a verified primary source for the dates. Every code date here (1988 model codes, 1989 NFPA 74, 1993 NFPA 72) rests on Wikipedia only; the one primary source (NIST) supports the adoption percentage, not any code date.",
+      "basis": "verification.what_is_not: 'No primary source for any code date.' (both smoke-alarms-by-era and hardwired-interconnected-smoke-alarms)",
+      "fix": "Changes the evidence label to 'era'."
+    },
+    {
+      "id": "smoke-alarms-by-era",
+      "field": "action",
+      "severity": "unsupported",
+      "was": "Many states also require working alarms at sale or rental.",
+      "problem": "No opened source supports this; the research cites only an unopened manufacturer's compliance guide.",
+      "basis": "risk.insurance_or_sale cites 'a manufacturer's compliance guide' (not among the verified sources); nothing in what_is_confirmed.",
+      "fix": "Removes the unsupported legal claim."
+    },
+    {
+      "id": "garage-door-opener-no-auto-reverse",
+      "field": "check.0",
+      "severity": "unsupported",
+      "was": "about 6 inches off the floor",
+      "problem": "The 6-inch height appears only in the research's unsourced identification notes, not in a verified quote.",
+      "basis": "Verified quotes cover only the 1991 and 1993 manufacture dates; how_to_identify is unsourced.",
+      "fix": "Drops the specific height."
+    },
+    {
+      "id": "non-safety-glazing-pre-1977",
+      "field": "summary",
+      "severity": "unsupported",
+      "was": "Building codes later added other locations near doors, floors, stairs and tubs.",
+      "problem": "The later code locations are noted in date_notes without any opened source; what_is_confirmed covers only the federal rule's date and product list.",
+      "basis": "what_is_confirmed: '16 CFR 1201.1 and 1201.7 ... effective date 6 July 1977 ... and the list of covered products.'",
+      "fix": "Removes the unsourced code-history sentence."
+    },
+    {
+      "id": "unbolted-foundation-unbraced-cripple-wall",
+      "field": "hook",
+      "severity": "overstated",
+      "was": "Many older West Coast houses on crawl spaces are not adequately bolted to their foundations",
+      "problem": "The only verified source says sills in many pre-1950 structures 'may not be sufficiently bolted'; the copy turns that into a flat statement.",
+      "basis": "Wikipedia (Seismic retrofit): 'in many structures built before 1950 the sill plate ... may not be sufficiently bolted in'.",
+      "fix": "Changes 'are not' to 'may not be'."
+    },
+    {
+      "id": "unbolted-foundation-unbraced-cripple-wall",
+      "field": "check.1",
+      "severity": "unsupported",
+      "was": "Bolts with nuts and washers every 4 to 6 feet mean it is bolted.",
+      "problem": "The 4-to-6-foot spacing is from the research's unsourced identification notes, not from any opened page.",
+      "basis": "No verified quote gives bolt spacing; what_is_confirmed covers only that bolting is often inadequate and the retrofit type.",
+      "fix": "Drops the spacing figure."
+    },
+    {
+      "id": "unbolted-foundation-unbraced-cripple-wall",
+      "field": "action",
+      "severity": "unsupported",
+      "was": "following your state's or city's prescriptive retrofit plans; taller cripple walls need an engineer. In California, check whether a state grant program covers your ZIP code.",
+      "problem": "The California grant program, its ZIP-code limits and the engineer threshold for tall cripple walls come only from CEA/CRMP pages that were never opened.",
+      "basis": "what_is_not: 'installed_to 1979 / the pre-1980 programme screen ... the 521 ZIP codes ... Their sources (CEA, CRMP, city sites) are outside the allowed hosts and were not opened'.",
+      "fix": "Keeps the verified retrofit and turns the program detail into a 'check locally' step."
+    },
+    {
+      "id": "unbolted-foundation-unbraced-cripple-wall",
+      "field": "caveat",
+      "severity": "unsupported",
+      "was": "a reference source says many houses built before 1950 lack adequate bolting, and the pre-1980 cutoff used in California is a grant-program screen, not a code date.",
+      "problem": "The California pre-1980 grant screen is unverified, and the reference source says 'may not be sufficiently bolted', not 'lack'.",
+      "basis": "what_is_not: 'installed_to 1979 / the pre-1980 programme screen'. Wikipedia: 'may not be sufficiently bolted in'.",
+      "fix": "Matches the reference wording and marks the 1979 end as unconfirmed."
+    },
+    {
+      "id": "unreinforced-masonry-urm",
+      "field": "check.0",
+      "severity": "unsupported",
+      "was": "a row of bricks laid end-on (a header course) every 5 to 7 rows",
+      "problem": "The 5-to-7-row figure is from unsourced identification notes.",
+      "basis": "No verified quote describes header-course spacing.",
+      "fix": "Drops the number."
+    },
+    {
+      "id": "unreinforced-masonry-urm",
+      "field": "check.1",
+      "severity": "unsupported",
+      "was": "walls 8 to 13 inches thick",
+      "problem": "The thickness range is unsourced.",
+      "basis": "No verified quote gives wall thickness.",
+      "fix": "Drops the number."
+    },
+    {
+      "id": "unreinforced-masonry-urm",
+      "field": "action",
+      "severity": "unsupported",
+      "was": "Salt Lake City has run a 'Fix the Bricks' program that helps pay for roof-to-wall ties and chimney bracing; check whether it covers your house.",
+      "problem": "The Fix the Bricks program and its terms were not verified; the city page was not opened.",
+      "basis": "what_is_not: 'Salt Lake City Fix the Bricks terms (75 percent, pre-1975)'.",
+      "fix": "Replaces the unverified program claim with a 'check locally' step."
+    },
+    {
+      "id": "unreinforced-masonry-urm",
+      "field": "caveat",
+      "severity": "unsupported",
+      "was": "California, Oregon and Washington also have unreinforced brick buildings with earlier cutoffs ... but most of those are commercial or apartment buildings.",
+      "problem": "Oregon and Washington cutoffs (Seattle 1945, Portland 1960) were not checked, and the 'mostly commercial or apartment' claim has no opened source. Only California's 1930s code start and its URM inventory are verified.",
+      "basis": "FEMA P-774: 'first in California in the 1930s'; '25,900 URM buildings now in loss reduction programs'. what_is_not: 'Seattle pre-1945 and Portland 1870-1960 definitions'.",
+      "fix": "Keeps only the verified California fact."
+    },
+    {
+      "id": "florida-pre-2002-wind-construction",
+      "field": "hook",
+      "severity": "unsupported",
+      "was": "Florida homes permitted before March 1, 2002 were built to local codes",
+      "problem": "The rule that the permit application date decides which code applies is explicitly unverified; the verified reference ties the March 1, 2002 date to when the unified code was adopted.",
+      "basis": "Wikipedia: 'no homes built after the unified Florida Building Code (FBC) was adopted March 1, 2002 were destroyed'. what_is_not: 'the permit-application-date rule'.",
+      "fix": "Ties the date to when the code took effect, not to permit dates."
+    },
+    {
+      "id": "florida-pre-2002-wind-construction",
+      "field": "prevalence.note",
+      "severity": "unsupported",
+      "was": "Wikipedia: about 4.7 million Florida homes predate the modern Florida Building Code.",
+      "problem": "None of the verified Wikipedia quotes contains the 4.7 million figure, and it is not in what_is_confirmed; the research notes its underlying source was not opened.",
+      "basis": "Verified quotes give only the 2002 and 1994 code dates and the post-2002 performance statement. what_is_confirmed: 'March 1, 2002 statewide Florida Building Code and the 1994 South Florida Building Code/HVHZ, from Wikipedia only'.",
+      "fix": "Removes the unverified count."
+    },
+    {
+      "id": "florida-pre-2002-wind-construction",
+      "field": "caveat",
+      "severity": "unsupported",
+      "was": "What counts is the permit application date ... In Miami-Dade and Broward the stricter code dates from 1994. Many pre-2002 homes do have clips or straps.",
+      "problem": "The permit-date rule and the naming of Miami-Dade and Broward as the HVHZ come from unopened sources; the verified quote says only that the 1994 South Florida Building Code created the HVHZ. 'Many' homes having clips is unsourced.",
+      "basis": "Wikipedia: 'The 1994 South Florida Building Code created High-Velocity Hurricane Zones (HVHZ)'. what_is_not: 'the permit-application-date rule'.",
+      "fix": "Keeps the borderline-year warning and the 1994 date without the unverified specifics."
+    },
+    {
+      "id": "pyrrhotite-crumbling-foundations",
+      "field": "summary",
+      "severity": "unsupported",
+      "was": "State officials use 1983 to 2015 as the window for affected foundations, and cracking usually appears 10 to 30 years after construction.",
+      "problem": "The 1983-2015 window is credited to state officials, but no state or other page was opened to confirm it; the 10-to-30-year onset is likewise unsourced. The research itself says date_confidence 'high' is not backed by an opened page.",
+      "basis": "what_is_not: 'installed_from 1983 and installed_to 2015 ... The verified primary source does not state the dates'.",
+      "fix": "Removes the unverified attribution and onset figure."
+    },
+    {
+      "id": "pyrrhotite-crumbling-foundations",
+      "field": "prevalence.note",
+      "severity": "unsupported",
+      "was": "Estimates of affected homes vary by two orders of magnitude, and the risk is limited to certain towns; outside them it is essentially nil.",
+      "problem": "Rests on home counts (400 to 35,000) that were never verified.",
+      "basis": "what_is_not: 'all home counts (400 to 35,000)'. Wikipedia: 'local quarries extracted insufficiently characterised aggregates'.",
+      "fix": "Keeps the local-quarry limit, drops the claims built on unverified counts."
+    },
+    {
+      "id": "pyrrhotite-crumbling-foundations",
+      "field": "action",
+      "severity": "unsupported",
+      "was": "Connecticut and Massachusetts have run programs for testing, and Connecticut for repairs",
+      "problem": "The state testing and repair programs (CFSIC, Massachusetts reimbursement) were not verified.",
+      "basis": "what_is_not: 'CFSIC figures'; Massachusetts program pages are unverified sources.",
+      "fix": "Turns the program claim into a 'check with your state' step."
+    },
+    {
+      "id": "engineered-i-joists-fire",
+      "field": "hook",
+      "severity": "overstated",
+      "was": "By 2005 about half of new wood floors were built on engineered I-joists",
+      "problem": "The reference quote says about 50% of all wood light-framed floors, not 'new' floors.",
+      "basis": "Wikipedia: 'As of 2005, approximately 50% of all wood light framed floors used I-joists.'",
+      "fix": "Matches the quoted wording."
+    },
+    {
+      "id": "engineered-i-joists-fire",
+      "field": "check.1",
+      "severity": "unsupported",
+      "was": "They are usually printed with a brand such as TJI, BCI or LPI.",
+      "problem": "The brand names are not in any verified source.",
+      "basis": "Only the Wikipedia invention date, floor share and fire weakness are verified.",
+      "fix": "Removes the brand names."
+    },
+    {
+      "id": "engineered-i-joists-fire",
+      "field": "action",
+      "severity": "unsupported",
+      "was": "covering exposed I-joists with 1/2-inch drywall",
+      "problem": "The 1/2-inch figure comes from the 2012 IRC text, which was not opened.",
+      "basis": "what_is_not: 'the 2012 IRC R501.3 / 2015 R302.13 requirement'.",
+      "fix": "Drops the unverified thickness."
+    },
+    {
+      "id": "engineered-i-joists-fire",
+      "field": "caveat",
+      "severity": "unsupported",
+      "was": "A model-code requirement to cover them was reportedly added around 2012",
+      "problem": "Repeats an unverified code year.",
+      "basis": "what_is_not: 'the 2012 IRC R501.3 / 2015 R302.13 requirement'.",
+      "fix": "Removes the year, keeps the warning."
+    },
+    {
+      "id": "roof-trusses-metal-plate",
+      "field": "check.0",
+      "severity": "unsupported",
+      "was": "usually 24 inches apart",
+      "problem": "The spacing figure is from unsourced identification notes.",
+      "basis": "No verified quote gives truss spacing.",
+      "fix": "Drops the spacing."
+    },
+    {
+      "id": "roof-trusses-metal-plate",
+      "field": "caveat",
+      "severity": "unsupported",
+      "was": "Sources date the connector plate to 1952 or 1955.",
+      "problem": "The 1952 date comes from an SBCA account that was not opened; the only verified source says 1955.",
+      "basis": "Wikipedia: 'John Calvin Jureit invented the truss connector plate and patented it in 1955.' what_is_not: 'Sanford and the 1952 date'.",
+      "fix": "Keeps only the verified date."
+    },
+    {
+      "id": "pre-1976-mobile-homes",
+      "field": "summary",
+      "severity": "wrong",
+      "was": "Earlier units were built before those standards, and HUD does not issue labels for them.",
+      "problem": "The verified HUD quote is about not REISSUING a missing label on a home; it does not say HUD declines to issue labels for pre-1976 units. The copy misstates what HUD said.",
+      "basis": "HUD labels page: 'If the certification label (also known as a HUD tag) is missing from a home, the Department does not reissue labels for manufactured homes.'",
+      "fix": "States the logical point (no HUD label) without the misattributed HUD policy."
+    },
+    {
+      "id": "pre-1976-mobile-homes",
+      "field": "action",
+      "severity": "unsupported",
+      "was": "It cannot be certified after the fact.",
+      "problem": "No opened source says a pre-1976 home cannot be certified later; the supporting HUD reference guide was not opened.",
+      "basis": "Unverified source: 'HUD (archived HOC Reference Guide) | Pre-June 15, 1976 units cannot be accepted as compliant even with modifications'. Verified: ML 2009-16 'manufactured homes produced prior to that date are ineligible for insured financing'.",
+      "fix": "Drops the unverified sentence; keeps the verified FHA point."
+    },
+    {
+      "id": "kidde-plastic-handle-extinguishers-2017",
+      "field": "summary",
+      "severity": "unsupported",
+      "was": "CPSC reported one death and about 16 injuries.",
+      "problem": "The death and injury counts are not in a verified quote or in what_is_confirmed (which lists unit count, date ranges, identification and hazard). They may well be on the CPSC notice, but the research did not record them as checked.",
+      "basis": "what_is_confirmed: 'Unit count, manufacture-date ranges, identification and hazard on the CPSC notice.'",
+      "fix": "Removes the unconfirmed casualty figures; the rest of the summary is confirmed."
+    },
+    {
+      "id": "gree-dehumidifiers-2013-recall",
+      "field": "hook",
+      "severity": "unsupported",
+      "was": "sold under a dozen familiar brands",
+      "problem": "No verified source gives the number of brands; the research names seven plus 'others'.",
+      "basis": "Verified CPSC quotes give 2.2 million units, the 2005-2013 sale window and the 350,000 GE-brand expansion; no brand count.",
+      "fix": "Drops the unverified count. (About 2.5 million is consistent with 2.2 million plus 350,000.)"
+    },
+    {
+      "id": "gree-dehumidifiers-2013-recall",
+      "field": "summary",
+      "severity": "unsupported",
+      "was": "A 2016 reannouncement cited about 450 fires, and many of these units ran unattended in basements.",
+      "problem": "The 450-fire figure is not in any verified quote or in what_is_confirmed; 'many ran unattended in basements' has no source at all.",
+      "basis": "what_is_confirmed: 'Units, sale window, identification and refund remedy from CPSC pages opened.'",
+      "fix": "Removes both unsupported claims."
+    },
+    {
+      "id": "gree-dehumidifiers-2023-recall",
+      "field": "check.2",
+      "severity": "unsupported",
+      "was": "(for example Kenmore 407.53530310 or GE ADEH50LPQ1)",
+      "problem": "Specific model numbers are not in a verified quote, and for this entry what_is_confirmed lists units, window, brands and remedy but not identification. A wrong model number here could mislead.",
+      "basis": "what_is_confirmed: 'Units, manufacture window, brands and refund remedy.'",
+      "fix": "Removes the example model numbers; readers compare against the notice itself."
+    },
+    {
+      "id": "kidde-nighthawk-combo-alarm-2004-2010",
+      "field": "summary",
+      "severity": "unsupported",
+      "was": "near the alarm's seven-year end of life ... They were sold through electrical distributors and home centers, so builders used them.",
+      "problem": "The seven-year life is not in a verified quote or in what_is_confirmed. The sales channels are unverified, and 'so builders used them' is an inference the research itself says has no data behind it.",
+      "basis": "what_is_confirmed: 'Model, manufacture window, units and sale window.' what_is_not: 'Prevalence in new homes'.",
+      "fix": "Drops the unverified life figure and the builder inference."
+    },
+    {
+      "id": "square-d-afci-breakers-2004",
+      "field": "summary",
+      "severity": "unsupported",
+      "was": "They still work as ordinary breakers.",
+      "problem": "A reassurance about remaining overload protection is a safety claim; it is not in a verified quote or in what_is_confirmed (units, dates, identification, 2002 NEC requirement).",
+      "basis": "what_is_confirmed: 'Units, dates, identification, 2002 NEC bedroom requirement.'",
+      "fix": "Removes the unverified reassurance."
+    },
+    {
+      "id": "counterfeit-square-d-breakers-2003-2006",
+      "field": "summary",
+      "severity": "unsupported",
+      "was": "Other distributors had similar recalls.",
+      "problem": "The other distributors' recalls were seen only in search summaries and never opened.",
+      "basis": "what_is_not: 'Other distributors' recall counts and dates (not opened).'",
+      "fix": "Marks the other recalls as reported but unconfirmed."
+    },
+    {
+      "id": "counterfeit-square-d-breakers-2003-2006",
+      "field": "prevalence.note",
+      "severity": "unsupported",
+      "was": "and other recalls add more",
+      "problem": "Other recalls are unverified.",
+      "basis": "what_is_not: 'Other distributors' recall counts and dates (not opened).'",
+      "fix": "Removes the unverified addition."
+    },
+    {
+      "id": "central-o-ring-fire-sprinklers-1989-2001",
+      "field": "prevalence.note",
+      "severity": "unsupported",
+      "was": "NIST said fewer than 5 percent of US homes had sprinklers in 2011",
+      "problem": "Credits NIST with a figure that no verified quote contains: this entry's verified sources are all CPSC, and the NIST abstract verified elsewhere (residential-fire-sprinklers) gives only the 2011 code date.",
+      "basis": "Verified sources here: three CPSC quotes (dates, building types, 2007 deadline). NIST quote in residential-fire-sprinklers: 'a change to the International Residential Code requiring sprinklers in all new one- and two-family homes, which became effective January 1, 2011'.",
+      "fix": "Removes the unverified NIST attribution and percentage."
+    },
+    {
+      "id": "bosch-siemens-dishwashers-1999-2005",
+      "field": "summary",
+      "severity": "unsupported",
+      "was": "CPSC had 51 reports including 30 fires. These were common builder and remodel choices at the time.",
+      "problem": "The 51/30 incident counts are not in a verified quote or in what_is_confirmed (dates, models, units, sale window). 'Common builder and remodel choices' has no source.",
+      "basis": "what_is_confirmed: 'Dates, models, units, sale window.'",
+      "fix": "Removes the unconfirmed counts and the unsourced popularity claim."
+    },
+    {
+      "id": "rinnai-wall-furnaces-2000-2007",
+      "field": "prevalence.note",
+      "severity": "unsupported",
+      "was": "and wall furnaces are a minority heating type",
+      "problem": "No source gives the share of homes heated by wall furnaces.",
+      "basis": "what_is_confirmed: 'Models, manufacture window, units, remedy.'",
+      "fix": "Removes the unsourced market claim."
+    },
+    {
+      "id": "rheem-paloma-tankless-2004-2006",
+      "field": "prevalence.note",
+      "severity": "unsupported",
+      "was": "and tankless heaters were a small share of water heaters then",
+      "problem": "No source gives the tankless market share.",
+      "basis": "what_is_confirmed: 'Units, sale window, hazard.'",
+      "fix": "Removes the unsourced market claim."
+    },
+    {
+      "id": "coaire-quietside-tankless-2008-2014",
+      "field": "summary",
+      "severity": "unsupported",
+      "was": "CPSC had 40 overheating reports.",
+      "problem": "The incident count is not in a verified quote or in what_is_confirmed (units, sale window, no remedy).",
+      "basis": "what_is_confirmed: 'Units, sale window, no remedy.'",
+      "fix": "Removes the unconfirmed count."
+    },
+    {
+      "id": "lochinvar-condensing-boilers-2016-2020",
+      "field": "summary",
+      "severity": "unsupported",
+      "was": "CPSC had 7 reports and 2 non-fatal CO injuries. A repair is the remedy.",
+      "problem": "The incident counts are not in a verified quote or in what_is_confirmed, and the remedy is listed under what_is_not ('Remedy status').",
+      "basis": "what_is_confirmed: 'Units, sale window, hazard, identification.'",
+      "fix": "Removes the unconfirmed counts and the remedy statement."
+    },
+    {
+      "id": "lochinvar-condensing-boilers-2016-2020",
+      "field": "action",
+      "severity": "unsupported",
+      "was": "contact the maker about the free repair described in the notice",
+      "problem": "That the remedy is a free repair is not confirmed.",
+      "basis": "what_is_confirmed: 'Units, sale window, hazard, identification.'; remedy not among them.",
+      "fix": "Points to the notice's remedy without characterizing it."
+    },
+    {
+      "id": "fvir-gas-water-heaters-2003",
+      "field": "hook",
+      "severity": "overstated",
+      "was": "built so gasoline fumes on the floor can't reach the flame",
+      "problem": "The sources say the heaters are designed to RESIST igniting vapors; 'can't reach the flame' is an absolute the standard does not promise, and the copy omits that it covers standard tank sizes only.",
+      "basis": "Wikipedia: 'redesigned to resist ignition of flammable vapors'. CPSC: 'calls for conventional tank-type gas water heaters manufactured after July 1, 2003, to be equipped with new safety technology'.",
+      "fix": "Uses the 'resist ignition' wording and the exact date."
+    },
+    {
+      "id": "fvir-gas-water-heaters-2003",
+      "field": "summary",
+      "severity": "overstated",
+      "was": "have a flame arrestor that stops spilled gasoline or solvent vapors from igniting.",
+      "problem": "'Stops ... from igniting' overstates 'resist ignition'; the flame-arrestor detail is not in a verified quote.",
+      "basis": "CPSC: '... to be equipped with new safety technology'; Wikipedia: 'redesigned to resist ignition of flammable vapors'.",
+      "fix": "Softens to 'designed to resist' and drops the unquoted mechanism."
+    },
+    {
+      "id": "r410a-hfc-phasedown-2025",
+      "field": "hook",
+      "severity": "overstated",
+      "was": "Central AC installed from about 2010 to 2025 most likely runs on R-410A",
+      "problem": "No opened source gives R-410A's share of systems or when it became standard; the research calls the start year inferred and the prevalence 'inferred from the R-22 end date'.",
+      "basis": "what_is_not: 'Start year of R-410A in new homes.' prevalence_basis: 'No share data opened'.",
+      "fix": "Softens 'most likely' to 'may well'."
+    },
+    {
+      "id": "r410a-hfc-phasedown-2025",
+      "field": "summary",
+      "severity": "unsupported",
+      "was": "R-410A replaced R-22 in new central air conditioners and heat pumps. ... Existing R-410A systems can keep running and be serviced.",
+      "problem": "That R-410A replaced R-22 is not in this entry's verified sources, and the 'keep running and be serviced' assurance is not in a verified quote; what EPA's quote does say is that there is no installation deadline for systems whose components were all made before 2025.",
+      "basis": "EPA: 'portable room air conditioning) 700 January 1, 2025'; 'R-410A 2,090 No'; 'No installation compliance date for systems where all specified components were manufactured or imported prior to January 1, 2025.'",
+      "fix": "Rewrites around the three verified EPA facts. This removes most of the entry's backstory; it now rests only on the 2025 rule."
+    },
+    {
+      "id": "r410a-hfc-phasedown-2025",
+      "field": "prevalence.note",
+      "severity": "unsupported",
+      "was": "New equipment could no longer use R-22 from 2010 (EPA), and R-410A was the main replacement.",
+      "problem": "This entry has no verified source for either statement (the EPA R-22 quote sits in a different entry and does not say equipment 'could no longer use' R-22), and 'main replacement' is unsourced.",
+      "basis": "what_is_not: 'Start year of R-410A in new homes.' prevalence_basis: 'No share data opened; inferred from the R-22 end date.'",
+      "fix": "States the inference honestly without the unsourced claims."
+    },
+    {
+      "id": "r410a-hfc-phasedown-2025",
+      "field": "caveat",
+      "severity": "unsupported",
+      "was": "EPA has since changed some installation dates for equipment made before 2025",
+      "problem": "The later EPA changes are mentioned only in date_notes from unopened pages; the verified EPA quote says only that there is no installation deadline for systems whose components were made before 2025.",
+      "basis": "EPA: 'No installation compliance date for systems where all specified components were manufactured or imported prior to January 1, 2025.'",
+      "fix": "Keeps the 'check EPA' advice without the unverified history."
+    },
+    {
+      "id": "iecc-2012-mandatory-air-leakage-test",
+      "field": "summary",
+      "severity": "unsupported",
+      "was": "a stricter duct leakage test and more insulation ... so it likely leaks more air.",
+      "problem": "The duct-test and insulation changes are not in a verified quote or in what_is_confirmed (only the whole-house test and the 30 percent figure). 'Likely leaks more' leans toward asserting the reader's house has a problem.",
+      "basis": "what_is_confirmed: 'Mandatory whole-house test in the 2012 IECC; 30% improvement over 2006.'",
+      "fix": "Drops the unconfirmed changes and softens 'likely' to 'may'."
+    },
+    {
+      "id": "iecc-2012-mandatory-air-leakage-test",
+      "field": "caveat",
+      "severity": "unsupported",
+      "was": "some much later or not at all",
+      "problem": "Adoption timing is listed under what_is_not; no source says some states never adopted it.",
+      "basis": "what_is_not: 'Numeric ACH limit; adoption timing.'",
+      "fix": "Removes the unverified adoption claim."
+    },
+    {
+      "id": "asphalt-shingle-roof-3-tab",
+      "field": "note",
+      "severity": "overstated",
+      "was": "Hot climates drastically shorten asphalt shingle life.",
+      "problem": "'Drastically' states a degree of effect the source does not give; the quote is only the 20-year figure.",
+      "basis": "InterNACHI Standard Estimated Life Expectancy Chart: 'Asphalt Shingles (3-tab) 20'.",
+      "fix": "Softens to 'can shorten'."
+    },
+    {
+      "id": "heat-pump",
+      "field": "note",
+      "severity": "wrong",
+      "was": "A heat pump works year-round, so it ages faster than an AC alone.",
+      "problem": "Contradicts the same chart the entries cite: heat pump 10 to 15 years versus central AC 7 to 15, so the source does not show heat pumps aging faster.",
+      "basis": "InterNACHI Standard Estimated Life Expectancy Chart: 'Heat Pump 10 to 15'; 'Air Conditioner (central) 7 to 15'.",
+      "fix": "Removes the comparative claim."
+    },
+    {
+      "id": "boiler",
+      "field": "note",
+      "severity": "overstated",
+      "was": "Boilers can outlast furnaces by decades.",
+      "problem": "The chart gives boiler 40 and furnace 15 to 25, a gap of 15 to 25 years; 'decades' overstates the low end.",
+      "basis": "InterNACHI Standard Estimated Life Expectancy Chart: 'Boiler 40'; 'Furnace 15 to 25'.",
+      "fix": "Changes 'by decades' to 'by many years'."
+    },
+    {
+      "id": "exterior-doors",
+      "field": "note",
+      "severity": "unsupported",
+      "was": "The door slab can last as long as the house (the chart says 100+).",
+      "problem": "The component is titled 'Exterior doors (steel, fiberglass, wood)' but the only life quote is for fiberglass doors. The 100-year figure is unsupported for steel and wood doors. The title is not a patchable field here; the caller may want to retitle it to fiberglass or add sources.",
+      "basis": "InterNACHI Standard Estimated Life Expectancy Chart: 'Fiberglass (exterior) 100+'; 'The gaskets/weatherstripping of exterior doors may have to be replaced every five to eight years.'",
+      "fix": "Note now says the 100+ figure is for fiberglass; title needs a separate fix."
+    },
+    {
+      "id": "smoke-alarm",
+      "field": "note",
+      "severity": "unsupported",
+      "was": "Replace every smoke alarm 10 years after its manufacture date, even if it still beeps when tested. The sensor wears out without warning.",
+      "problem": "The quote says replace when the alarm fails testing OR every 10 years, whichever is sooner; the note drops the fails-testing trigger and adds an unsourced claim that sensors fail 'without warning'.",
+      "basis": "InterNACHI: 'Smoke alarms should be replaced when they fail to respond to testing, or every 10 years, whichever is sooner.'",
+      "fix": "Aligns the note with the quote."
+    },
+    {
+      "id": "gfci-outlets",
+      "field": "note",
+      "severity": "unsupported",
+      "was": "much less if tripped often",
+      "problem": "The quote gives only 'up to 30'; the effect of frequent tripping is not in it.",
+      "basis": "InterNACHI Standard Estimated Life Expectancy Chart: 'Ground-Fault Circuit Interrupters (GFCIs) up to 30'.",
+      "fix": "Removes the unsourced qualifier."
+    },
+    {
+      "id": "gas-range",
+      "field": "note",
+      "severity": "unsafe",
+      "was": "A gas smell means shut off the gas and call the utility.",
+      "problem": "Telling readers to shut off the gas themselves when they smell gas is not in the source and can be unsafe; the usual first step is to leave and call from outside. This patch changes advice rather than a fact, so the caller may prefer to delete the sentence instead.",
+      "basis": "InterNACHI Standard Estimated Life Expectancy Chart: 'Gas Range 15 to 17' (no safety guidance in the quote).",
+      "fix": "Replaces the shut-off instruction with get-out-and-call."
+    },
+    {
+      "id": "deck-structure",
+      "field": "note",
+      "severity": "tone",
+      "was": "Hidden rot where the ledger meets the house and at posts is the real danger.",
+      "problem": "'The real danger' is an unsourced safety claim and reads as alarm; the quote is only the 10-to-30-year figure.",
+      "basis": "InterNACHI Standard Estimated Life Expectancy Chart: 'Structural Wood 10 to 30'.",
+      "fix": "Rewords as a check, keeps the bounce/sway warning."
+    },
+    {
+      "id": "wood-shake-roof",
+      "field": "note",
+      "severity": "unsupported",
+      "was": "Wood roofs also burn more readily than most",
+      "problem": "Safety claim (fire-performance claim) not in the entry's quoted source, which gives only a life figure. It is standard protective advice that steers readers toward a safer action, so removing it would make the page less safe.",
+      "basis": "Entry's only source is the InterNACHI Standard Estimated Life Expectancy Chart life figure.",
+      "fix": "none: needs a source (kept; it should get a citation before launch)"
+    },
+    {
+      "id": "forced-air-furnace",
+      "field": "note",
+      "severity": "unsupported",
+      "was": "Cracks in the heat exchanger can leak carbon monoxide",
+      "problem": "Safety claim (carbon monoxide mechanism) not in the entry's quoted source, which gives only a life figure. It is standard protective advice that steers readers toward a safer action, so removing it would make the page less safe.",
+      "basis": "Entry's only source is the InterNACHI Standard Estimated Life Expectancy Chart life figure.",
+      "fix": "none: needs a source (kept; it should get a citation before launch)"
+    },
+    {
+      "id": "clothes-dryer",
+      "field": "note",
+      "severity": "unsupported",
+      "was": "Lint buildup is a fire hazard whatever the age",
+      "problem": "Safety claim (fire-hazard claim) not in the entry's quoted source, which gives only a life figure. It is standard protective advice that steers readers toward a safer action, so removing it would make the page less safe.",
+      "basis": "Entry's only source is the InterNACHI Standard Estimated Life Expectancy Chart life figure.",
+      "fix": "none: needs a source (kept; it should get a citation before launch)"
+    },
+    {
+      "id": "dryer-vent-plastic",
+      "field": "note",
+      "severity": "unsupported",
+      "was": "Plastic or foil flex duct traps lint and is a fire risk",
+      "problem": "Safety claim (fire-risk claim) not in the entry's quoted source, which gives only a life figure. It is standard protective advice that steers readers toward a safer action, so removing it would make the page less safe.",
+      "basis": "Entry's only source is the InterNACHI Standard Estimated Life Expectancy Chart life figure.",
+      "fix": "none: needs a source (kept; it should get a citation before launch)"
+    },
+    {
+      "id": "garage-door",
+      "field": "note",
+      "severity": "unsupported",
+      "was": "springs under tension can injure",
+      "problem": "Safety claim (injury claim) not in the entry's quoted source, which gives only a life figure. It is standard protective advice that steers readers toward a safer action, so removing it would make the page less safe.",
+      "basis": "Entry's only source is the InterNACHI Standard Estimated Life Expectancy Chart life figure.",
+      "fix": "none: needs a source (kept; it should get a citation before launch)"
+    },
+    {
+      "id": "chimney-flue-tile",
+      "field": "note",
+      "severity": "unsupported",
+      "was": "A cracked liner can let heat and fumes reach the framing",
+      "problem": "Safety claim (fire and fume claim) not in the entry's quoted source, which gives only a life figure. It is standard protective advice that steers readers toward a safer action, so removing it would make the page less safe.",
+      "basis": "Entry's only source is the InterNACHI Standard Estimated Life Expectancy Chart life figure.",
+      "fix": "none: needs a source (kept; it should get a citation before launch)"
+    },
+    {
+      "id": "vinyl-floor",
+      "field": "note",
+      "severity": "unsupported",
+      "was": "Very old sheet vinyl can contain asbestos, so do not sand it.",
+      "problem": "Safety claim not in this entry's own quote. Other research does support it (CPSC in research/hazmat.json, asbestos-floor-tile-sheet-flooring), so it stands but should cite that source.",
+      "basis": "CPSC (hazmat research): 'the backing on VINYL SHEET FLOORING'. This entry: InterNACHI Standard Estimated Life Expectancy Chart 'Vinyl 25'.",
+      "fix": "none: add the CPSC source to this entry"
+    }
+  ],
+  "clean": [
+    "pella-proline-windows",
+    "cadet-encore-in-wall-heaters",
+    "htpv-plastic-vent-pipe",
+    "gravity-octopus-furnace",
+    "uncoated-brass-gas-connector",
+    "residential-fire-sprinklers",
+    "manufactured-homes-pre-1994-wind-zones",
+    "kidde-hardwired-i12010s-2014",
+    "kidde-pi2010-dual-sensor-2016-2017",
+    "kidde-trusense-alarms-2019-2020",
+    "siemens-murray-breakers-2010-spring-clip",
+    "asphalt-shingle-roof-architectural",
+    "metal-roof",
+    "clay-concrete-tile-roof",
+    "epdm-flat-roof",
+    "modified-bitumen-roof",
+    "aluminum-gutters",
+    "tank-water-heater",
+    "tankless-water-heater",
+    "central-air-conditioner",
+    "ductwork",
+    "vinyl-windows",
+    "wood-windows",
+    "aluminum-windows",
+    "garage-door-opener",
+    "wood-deck-boards",
+    "exterior-paint",
+    "caulking",
+    "vinyl-siding",
+    "fiber-cement-siding",
+    "asphalt-driveway",
+    "concrete-walks",
+    "service-panel",
+    "carbon-monoxide-alarm",
+    "dishwasher",
+    "refrigerator",
+    "electric-range",
+    "garbage-disposal",
+    "washing-machine",
+    "sump-pump",
+    "well-pump",
+    "septic-system",
+    "water-softener",
+    "faucets",
+    "toilets",
+    "copper-water-lines",
+    "cast-iron-drain-pipe",
+    "carpet",
+    "hardwood-floor"
+  ]
+}

@@ -37,6 +37,19 @@ Kept up to date as the build goes. Nothing here blocks tonight's work unless mar
   state statutes.
 
 ## Worth a read when you have time
+- [ ] **Fact-check results.** A line-by-line check of the homeowner copy against the quoted
+      sources found 153 problems across 80 issues and 53 lifespans (mostly figures and brand
+      names with no verified source; 9 wrong; 4 unsafe check steps). 146 fixes are applied. The
+      full list, with the before text and the basis for each change, is in
+      `content/factcheck/part-a.json` and `part-b.json`.
+- [ ] **Claims removed for lack of a source, probably true, worth restoring once sourced:** the
+      vermiculite (Zonolite) reimbursement trust; that polybutylene settlement money is no longer
+      available; recall incident and injury counts (Kidde, Gree, Bosch, Coaire, Lochinvar); the
+      1983-2015 window for crumbling Connecticut foundations.
+- [ ] **Seven lifespan safety warnings have no citation** (wood shake roof, furnace, clothes
+      dryer, plastic dryer vent, garage door, chimney flue tile, vinyl floor). They were kept
+      because removing protective advice would make the pages less safe. An inspector's review
+      would settle them.
 - [ ] **Six corrected Census figures.** Six percentages in the Census tables contradict their own
       counts (apparent typos at the source). The site shows the share computed from the counts;
       each correction is listed in `src/data/typical-house.json` under `corrections`.
