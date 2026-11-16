@@ -95,3 +95,47 @@ Components:
 | `seo/JsonLd` | `<JsonLd data>` (escapes `<`), `absUrl`, `breadcrumbs([[name, path]...])`. |
 | `seo/og.tsx` | OG fonts + shared drawing: `ogOptions()`, `OgFrame` (grid paper, title-block border, footer), `OgBand`, `OgScale`, `OgTimeline` (every band in packed rows, lit at a year). |
 | `seo/woff2.ts` | WOFF2 → TTF decoder with gvar instancing. Satori cannot read WOFF2 and Fontsource ships Fraunces only as a WOFF2 variable font, so the OG routes decode it from node_modules at build time (wght 330 / opsz 144 for numerals, 380 / 96 for headings). Plex Sans/Mono are read from their `.woff` files. No network. |
+
+## House cutaway and the printable checklist
+
+### `HouseCutaway` (`src/components/HouseCutaway/`)
+Props unchanged from the stub: `zones?`, `counts?`, `size?: 'sm'|'md'|'lg'`, `label?`, `className?`
+(named + default export, server-safe, no hooks, no ids). One hand-authored inline SVG (viewBox
+840×528): a section through a two-storey house cut perpendicular to the ridge. Every `Zone` is a
+`<g data-zone>`; draw order and geometry live in `drawing()`, callout positions in `CALLOUT`
+(`at` = point on the drawing, `tag` = clear space for the keynote). `geometry.ts` holds pure
+helpers: section hatching clipped to convex polygons, concrete stipple, batt insulation.
+- Line weights are true pixels at every size (`vector-effect: non-scaling-stroke`): `.o` cut
+  outline, `.m` objects, `.t` detail, `.h` hatching; dashed = hidden (pipes in walls), dash-dot =
+  wiring. Colours are tokens only (`--ink*`, `--line*`, `--paper`), so both themes and print work.
+- `zones`: wash (`--line` 17%) + heavier blue line; pipes, wiring and the whole-house outline also
+  get a soft highlighter halo; everything else recedes (opacity 0.3, 0.2 in dark). Each highlighted
+  zone gets a numbered keynote with a leader. Text labels sit beside keynotes when the drawing is
+  ≥ 760px wide; narrower, an HTML key under the drawing lists them. `whole-house` = building
+  silhouette.
+- `counts`: a numbered ink dot at each zone's `at` point (keynotes are suppressed).
+- Sizing: `sm` 160px thumbnail (fine detail, hatching, keynotes and key hidden; highlighted zones
+  get a locator ring instead), `md` up to 440px, `lg` 100%. Keynote/dot scale (`--k`) and detail
+  follow the rendered width through container queries on the figure, so `lg` on a phone still works.
+- a11y: `role="img"` + `aria-label` naming the highlighted zones (or the counts); all drawing and
+  the key are `aria-hidden`. Print block forces black on white.
+- Every zone was checked at sm/md/lg in both themes; add new parts to `drawing()`, `ORDER` and
+  `CALLOUT` together, keeping tags clear of each other so any combination can be shown.
+
+### `/checklist/[year]` (`src/app/checklist/[year]/`)
+Statically generated for MIN_YEAR..MAX_YEAR (`dynamicParams=false`), own metadata + canonical.
+Paper first: `@page` US Letter, site header/footer and toolbar hidden in print (`body:has(.page)`),
+tokens forced to black on white, running page footer via `@page` margin boxes. On screen it is a
+drafted sheet with a Print button (`components/checklist/PrintButton`, client) and working tick boxes.
+Content: title block (year, age, counts, Address/Date fill-ins, site name, URL, disclaimer); Check
+these first (priority 1: title, `check[0]`, where to look); everything else by part (`groupByPart`;
+title + first sentence of `check[0]`); Built without; Ask the seller; a counts `HouseCutaway`; ruled
+notes that stretch to fill the band. Sparse years (< 10 issues) add "On any viewing" prompts and more
+note lines; houses ≤ 10 years old get a warranty question.
+`components/checklist/sheet.ts` (pure): `oneLine`, `regionNote`, `sellerQuestions(lifespans, age)`
+(one question per part, backed by named lifespans and `lifeStatus`: due/past, or soon for houses
+under 15), `zoneCounts`, `splitColumns`. The by-part list is split server-side into two balanced
+grid columns on purpose: CSS multi-column that runs across a printed page makes Chromium spill
+columns sideways and shrink the whole sheet.
+Verified PDFs (Playwright `page.pdf`, Letter): one page for 1996, 2010, 2022, 2026; two clean pages
+for busy years (1880–1985 and 2005), with the lower band kept whole on page 2.

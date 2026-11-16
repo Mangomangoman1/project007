@@ -62,12 +62,16 @@ export default async function ChecklistPage({ params }: Props) {
   const columns = splitColumns(parts, (p) =>
     1.4 + p.issues.reduce((h, i) => h + 1.3 + Math.ceil(oneLine(i.check[0]).length / 62), 0),
   );
-  const asks = sellerQuestions(getLifespans(), age, issues.length > 12 ? 5 : 6);
+  const asks = sellerQuestions(getLifespans(), age, issues.length > 12 && issues.length <= 26 ? 5 : 6);
   const counts = zoneCounts(issues);
   const sparse = issues.length < 10;
+  /** Busy years print on two pages, so the notes can take the room page two has. */
+  const busy = issues.length > 26;
 
   return (
     <div className={styles.page}>
+      {/* running footer on every printed page (Chromium margin boxes; ignored elsewhere) */}
+      <style>{`@page{@bottom-left{content:${JSON.stringify(`${SITE.name} · Viewing checklist · built ${year}`)};font:7pt 'IBM Plex Mono',monospace;color:#555}@bottom-right{content:"Page " counter(page) " of " counter(pages);font:7pt 'IBM Plex Mono',monospace;color:#555}}`}</style>
       {/* ---------- screen-only toolbar ---------- */}
       <div className={`wrap ${styles.toolbar}`}>
         <div className={styles.toolbarText}>
@@ -76,7 +80,7 @@ export default async function ChecklistPage({ params }: Props) {
           </Link>
           <p className={styles.hint}>
             One sheet to take to a viewing. Prints on US Letter
-            {issues.length > 26 ? ' (two pages for a year this busy)' : ''}; tick boxes work on a phone too.
+            {busy ? ' (two pages for a year this busy)' : ''}; tick boxes work on a phone too.
           </p>
         </div>
         <PrintButton className={styles.print} />
@@ -288,14 +292,18 @@ export default async function ChecklistPage({ params }: Props) {
             />
             <p className={styles.note}>
               {issues.length > 0
-                ? 'Each dot counts the items above by the main place to look.'
+                ? 'Dots count the items above by where to look.'
                 : 'Nothing on record for this year, so no dots.'}
             </p>
-            <h2 id="nt-h" className={`${styles.h} ${styles.notesH}`}>
-              <span>Notes</span>
-            </h2>
-            <div className={styles.ruled} aria-hidden="true">
-              {[...Array(sparse ? 10 : 5)].map((_, n) => (
+            <h3 id="nt-h" className={`${styles.partH} ${styles.notesH}`}>
+              Notes
+            </h3>
+            <div
+              className={styles.ruled}
+              aria-hidden="true"
+              style={sparse || busy ? ({ '--min-lines': sparse ? 9 : 12 } as React.CSSProperties) : undefined}
+            >
+              {[...Array(30)].map((_, n) => (
                 <span key={n} />
               ))}
             </div>
