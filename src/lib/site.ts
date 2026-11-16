@@ -25,4 +25,6 @@ export const STORAGE_KEYS = {
   year: 'builtin:year',
   state: 'builtin:state',
   replaced: (year: number) => `builtin:replaced:${year}`,
+  /** { [lifespanId]: "2015" | "2010s" }: when the visitor says a part was last replaced. */
+  lastReplaced: (year: number) => `builtin:last-replaced:${year}`,
 } as const;

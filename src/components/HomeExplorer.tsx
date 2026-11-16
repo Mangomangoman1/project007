@@ -78,7 +78,7 @@ export function HomeExplorer({ issues }: { issues: IssueLite[] }) {
             <h2 id="tl-title" className="label">
               Every issue on record, 1880 to today
             </h2>
-            <p className={styles.tlHint}>Drag across it, or focus it and use the arrow keys</p>
+            <p className={styles.tlHint}>Point at a band to read it · drag across to change the year</p>
           </div>
           <Timeline
             issues={issues}
@@ -89,6 +89,7 @@ export function HomeExplorer({ issues }: { issues: IssueLite[] }) {
             describe={(y) => `${plural(issuesForYear(issues, y).length, 'thing')} to know. Press Enter to open the report.`}
             label="Build year timeline"
             density="compact"
+            crossingsCollapsible
           />
           <div className={styles.legend}>
             <TimelineLegend compact />

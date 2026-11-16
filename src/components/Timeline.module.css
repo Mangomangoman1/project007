@@ -44,50 +44,60 @@
   font-size: 10.5px;
   letter-spacing: 0.02em;
 }
-.tickHidden {
+.tickHidden,
+.tickOff {
   opacity: 0;
 }
+/* before hydration (no width yet): a safe phone default */
 @media (max-width: 640px) {
-  .tickMinor {
-    display: none;
+  .tickMinor,
+  .tickNearStart {
+    opacity: 0;
   }
 }
 
-/* ---- lanes ---- */
-.laneLabel {
-  fill: var(--ink-2);
+/* ---- lanes: HTML heads above the year line ---- */
+.laneHead {
+  position: absolute;
+  left: -3px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.6em;
+  padding: 0 4px 0 3px;
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  border-radius: 1px;
   font-family: var(--font-mono);
   font-size: 9.5px;
+  line-height: 14px;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.comfortable .laneHead {
+  font-size: 10.5px;
+  line-height: 16px;
+}
+.laneLabel {
+  color: var(--ink-2);
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-.comfortable .laneLabel {
-  font-size: 10.5px;
-}
 .laneCount {
-  fill: var(--ink-3);
-  font-family: var(--font-mono);
-  font-size: 9.5px;
-  letter-spacing: 0.04em;
-  transition: fill var(--dur) var(--ease);
+  color: var(--ink-3);
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+  transition: color var(--dur) var(--ease);
 }
 .laneCountOn {
-  fill: var(--ink);
-}
-.laneLabel,
-.laneCount {
-  paint-order: stroke;
-  stroke: var(--paper);
-  stroke-width: 4px;
-  stroke-linejoin: round;
+  color: var(--ink);
 }
 
 /* ---- bands ---- */
 .band {
   transform-box: fill-box;
   transform-origin: 0 50%;
-  animation: draw var(--dur-slow) var(--ease) both;
+  animation: draw var(--dur-slow) var(--ease) backwards;
   animation-delay: calc(var(--i, 0) * 18ms + 80ms);
 }
 @keyframes draw {
@@ -218,3 +228,284 @@
 .noCore.tone_lit .body,
 .noCore.tone_accent .body { fill-opacity: 0.85; }
 .noCore.tone_dim .body { fill-opacity: 0.3; }
+
+/* ---- reading a band: highlight + annotation ---- */
+.band {
+  transition: opacity var(--dur-fast) var(--ease);
+}
+.hasHot .band:not(.hot) {
+  opacity: 0.42;
+}
+.hotRing {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+  pointer-events: none;
+}
+.note {
+  position: absolute;
+  z-index: 4;
+  display: grid;
+  gap: 3px;
+  padding: 9px 12px 10px;
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  border-radius: 1px;
+  box-shadow: 3px 3px 0 0 var(--grid-major);
+  pointer-events: none;
+  cursor: default;
+  user-select: text;
+  -webkit-user-select: text;
+  animation: noteIn var(--dur-fast) var(--ease) both;
+}
+.notePinned {
+  pointer-events: auto;
+}
+@keyframes noteIn {
+  from {
+    opacity: 0;
+    transform: translateY(var(--note-from, 3px));
+  }
+}
+.noteAbove {
+  --note-from: -3px;
+}
+/* leader: a dimension line from the band to the note, with a terminator dot at the band */
+.leader {
+  position: absolute;
+  width: 0;
+  border-left: 1px solid var(--ink);
+}
+.noteBelow .leader::before,
+.noteAbove .leader::before {
+  content: '';
+  position: absolute;
+  left: -3px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--ink);
+}
+.noteBelow .leader::before {
+  top: -3px;
+}
+.noteAbove .leader::before {
+  bottom: -3px;
+}
+.noteMeta {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--s-3);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.noteTitle {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  line-height: 1.15;
+  font-weight: 420;
+  color: var(--ink);
+  font-variation-settings: 'opsz' 36, 'SOFT' 30;
+  text-wrap: balance;
+}
+.noteYears {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--ink);
+}
+.notePeak {
+  color: var(--ink-3);
+}
+.noteFoot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px var(--s-3);
+  margin-top: 3px;
+}
+.noteOn,
+.noteOff {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.02em;
+}
+.noteOn {
+  color: var(--ink);
+  font-weight: 500;
+}
+.noteOff {
+  color: var(--ink-3);
+}
+.noteLink {
+  margin-top: 4px;
+  padding-top: 6px;
+  border-top: var(--hair) solid var(--rule);
+  font-family: var(--font-mono);
+  font-size: var(--t-xs);
+  color: var(--line);
+  text-decoration: none;
+  min-height: 28px;
+  display: flex;
+  align-items: center;
+}
+
+/* ---- what the year line crosses ---- */
+.crossings {
+  margin-top: var(--s-5);
+  border-top: var(--rule-strong-w) solid var(--ink);
+  user-select: text;
+  -webkit-user-select: text;
+}
+.crossHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--s-3);
+  padding: var(--s-3) 0 var(--s-2);
+  cursor: pointer;
+  list-style: none;
+}
+.crossHead::-webkit-details-marker {
+  display: none;
+}
+.crossTitle {
+  font-family: var(--font-mono);
+  font-size: var(--t-xs);
+  font-weight: 500;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.crossYear {
+  padding: 1px 5px 0;
+  background: var(--ink);
+  color: var(--paper);
+  letter-spacing: 0.04em;
+}
+.crossCount {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  font-family: var(--font-mono);
+  font-size: var(--t-xs);
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+.crossToggle {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border: 1px solid currentColor;
+  border-radius: 1px;
+}
+.crossToggle::before,
+.crossToggle::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 6px;
+  height: 1px;
+  background: currentColor;
+  transform: translate(-50%, -50%);
+}
+.crossToggle::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+  transition: transform var(--dur) var(--ease);
+}
+.crossings[open] .crossToggle::after {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+.crossList {
+  margin: 0;
+  display: grid;
+  border-top: var(--hair) solid var(--rule);
+}
+.crossLane {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr);
+  gap: var(--s-1) var(--s-4);
+  align-items: baseline;
+  padding: 7px 0 6px;
+  border-bottom: var(--hair) solid var(--rule);
+}
+.crossLane dt {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.crossLane dd {
+  margin: 0;
+  min-width: 0;
+}
+.crossLane ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px var(--s-4);
+}
+.crossItem {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
+  padding: 1px 0;
+  font-size: var(--t-sm);
+  line-height: 1.45;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+}
+.crossItem:hover,
+.crossItemHot {
+  border-bottom-color: currentColor;
+}
+.crossItem:focus-visible {
+  outline-offset: 2px;
+}
+.sw {
+  flex: none;
+  width: 14px;
+  height: 6px;
+  align-self: center;
+  background: var(--band);
+  border-radius: 0.5px;
+}
+.swMissing {
+  background: repeating-linear-gradient(-45deg, var(--band) 0 1.4px, transparent 1.4px 3.2px);
+  box-shadow: inset 0 0 0 0.5px color-mix(in srgb, var(--band) 50%, transparent);
+}
+.swFirst {
+  background-color: var(--accent);
+}
+.swFirst.swMissing {
+  background: repeating-linear-gradient(-45deg, var(--accent) 0 1.4px, transparent 1.4px 3.2px);
+}
+.crossNone {
+  font-family: var(--font-mono);
+  font-size: var(--t-xs);
+  color: var(--ink-3);
+}
+.crossEmpty dt {
+  color: var(--ink-3);
+}
+
+@media (max-width: 720px) {
+  .crossLane {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2px;
+  }
+  .crossItem {
+    font-size: 0.8125rem;
+  }
+  .crossLane ul {
+    gap: 0 var(--s-3);
+  }
+}

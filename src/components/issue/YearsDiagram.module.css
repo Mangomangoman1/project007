@@ -1,0 +1,87 @@
+.diagram {
+  display: grid;
+  gap: var(--s-1);
+}
+
+/* dimension line: |←—— 1978 – 1997 ——→| */
+.dimRow {
+  position: relative;
+  height: 34px;
+}
+.dim {
+  position: absolute;
+  bottom: 2px;
+  height: 11px;
+  border-inline: var(--rule-strong-w) solid var(--ink);
+  background: linear-gradient(var(--ink), var(--ink)) 0 50% / 100% 1px no-repeat;
+}
+/* open ends: no tick, an arrowhead at the plot edge */
+.openStart {
+  border-left-color: transparent;
+}
+.openEnd {
+  border-right-color: transparent;
+}
+.openStart::before,
+.openEnd::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  border: solid var(--ink);
+  border-width: 0 0 1px 1px;
+}
+.openStart::before {
+  left: 0;
+  transform: translateY(-50%) rotate(45deg);
+}
+.openEnd::after {
+  right: 0;
+  transform: translateY(-50%) rotate(-135deg);
+}
+.dimLabel {
+  /* text sits above the dimension line, as on a drawing */
+  position: absolute;
+  bottom: 15px;
+  padding: 0 0.25em;
+  font-family: var(--font-mono);
+  font-size: var(--t-xs);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 15px;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.align_mid {
+  transform: translateX(-50%);
+}
+.align_start {
+  margin-left: 2px;
+}
+.align_end {
+  margin-right: 2px;
+}
+
+.plot {
+  position: relative;
+}
+.decades {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.decades span {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  line-height: 1;
+  color: var(--ink-3);
+}
+@media (max-width: 640px) {
+  .minor {
+    display: none;
+  }
+}

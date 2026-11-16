@@ -5,8 +5,8 @@
  *
  * Year Y occupies the column [Y, Y+1). The year line sits at the centre of its column.
  */
-import type { Issue } from './types';
-import { bandRange } from './select';
+import type { Issue } from './types.ts';
+import { bandRange } from './select.ts';
 
 export type Domain = { min: number; max: number };
 
@@ -114,4 +114,83 @@ export function decades(d: Domain): number[] {
   const out: number[] = [];
   for (let y = Math.ceil(d.min / 10) * 10; y <= d.max; y += 10) out.push(y);
   return out;
+}
+
+/**
+ * Lane packing for <Timeline>. "Missing"-kind bands whose start is open ("built before X") all
+ * begin at the left edge, so instead of one row each they share a single sub-lane (row 0), drawn
+ * longest first so every end cap stays visible; the rest are interval-packed below it.
+ * `order` is the draw order (shared row longest-first, then the others).
+ */
+export function packLane<T extends Pick<Issue, 'applies' | 'kind'>>(items: T[], d: Domain, gap = 1) {
+  const shared = items.filter((i) => i.kind === 'missing' && bandRange(i, d.min, d.max).openStart);
+  const others = items.filter((i) => !shared.includes(i));
+  const packed = packRows(others, d, gap);
+  const offset = shared.length > 1 ? 1 : 0;
+  const rowOf = new Map<T, number>();
+  for (const s of shared) rowOf.set(s, offset ? 0 : packed.rows);
+  for (const [o, r] of packed.rowOf) rowOf.set(o, r + offset);
+  const sharedSorted = [...shared].sort((a, b) => bandRange(b, d.min, d.max).to - bandRange(a, d.min, d.max).to);
+  const rows = packed.rows + (shared.length ? 1 : 0);
+  return { rows, rowOf, order: [...sharedSorted, ...others], sharedCount: shared.length > 1 ? shared.length : 0 };
+}
+
+/**
+ * Which decade ticks get a text label at `pxPerYear`, so labels never collide (labels are
+ * ~30px wide and need ~14px air). Picks a step of 10, 20 or 40 years; the first tick is kept
+ * only if it does not crowd the next labelled one.
+ */
+export function tickLabels(ticks: number[], pxPerYear: number, minGapPx = 46): Set<number> {
+  const step = [10, 20, 40, 50].find((s) => s * pxPerYear >= minGapPx) ?? 50;
+  const out = new Set<number>();
+  const labelled = ticks.filter((t) => t % step === 0);
+  const first = ticks[0];
+  if (first !== undefined && !labelled.includes(first)) {
+    const next = labelled[0];
+    if (next === undefined || (next - first) * pxPerYear >= minGapPx) out.add(first);
+  }
+  for (const t of labelled) out.add(t);
+  // The first label is start-anchored at the axis edge, so it is ~1.5 labels from the next centre.
+  const sorted = [...out].sort((a, b) => a - b);
+  if (sorted.length > 1 && sorted[0] === first) {
+    for (const t of sorted.slice(1)) {
+      if ((t - first) * pxPerYear < minGapPx * 1.3) out.delete(t);
+      else break;
+    }
+  }
+  return out;
+}
+
+export type HitCandidate<T> = { item: T; y: number; h: number; from: number; to: number };
+
+/**
+ * The band under a pointer at (`year`, `py` px from the plot top), or null. A band is a
+ * candidate when the pointer is within `tol` px of it vertically and inside its years (±1). The
+ * vertically nearest wins; ties (the shared "missing" row) go to the shortest band, which is the
+ * one drawn on top at that x.
+ */
+export function pickBand<T>(cands: HitCandidate<T>[], year: number, py: number, tol = 5): T | null {
+  let best: HitCandidate<T> | null = null;
+  let bestD = Infinity;
+  for (const c of cands) {
+    if (year < c.from - 1 || year > c.to + 1) continue;
+    const d = Math.max(0, Math.abs(py - (c.y + c.h / 2)) - c.h / 2);
+    if (d > tol) continue;
+    if (d < bestD || (d === bestD && best && c.to - c.from < best.to - best.from)) {
+      best = c;
+      bestD = d;
+    }
+  }
+  return best ? best.item : null;
+}
+
+/**
+ * Left edge (px) for an annotation of width `w` anchored at `x` within a container `width` wide,
+ * keeping `margin` px clear of both edges. Also returns where the leader meets the note (px from
+ * the note's left), clamped inside the note.
+ */
+export function placeNote(x: number, w: number, width: number, margin = 0) {
+  const noteW = Math.min(w, width - 2 * margin);
+  const left = Math.min(Math.max(margin, x - noteW / 2), width - margin - noteW);
+  return { left, width: noteW, pointer: Math.min(Math.max(8, x - left), noteW - 8) };
 }

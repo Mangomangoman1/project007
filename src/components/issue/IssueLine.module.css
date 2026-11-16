@@ -1,0 +1,123 @@
+.row,
+.scaleRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(14rem, 24rem) 9.5rem;
+  gap: var(--s-2) var(--s-6);
+  align-items: center;
+}
+.row {
+  position: relative;
+  padding: var(--s-3) 0;
+  border-bottom: var(--hair) solid var(--rule);
+  transition: background-color var(--dur-fast) var(--ease);
+}
+.row:hover {
+  background: linear-gradient(90deg, var(--paper-2), transparent 85%);
+}
+.main {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+.title {
+  font-family: var(--font-display);
+  font-size: var(--t-md);
+  line-height: 1.25;
+  font-weight: 420;
+  letter-spacing: -0.005em;
+  font-variation-settings: 'opsz' 36, 'SOFT' 30;
+  text-wrap: pretty;
+}
+.title a {
+  text-decoration: none;
+}
+/* stretch the link over the whole row for an easy target */
+.title a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+.title a:focus-visible {
+  outline: none;
+}
+.title a:focus-visible::after {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: var(--radius);
+}
+.row:hover .title a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-1) var(--s-4);
+  min-height: 0;
+}
+.meta:empty {
+  display: none;
+}
+.kind {
+  font-family: var(--font-mono);
+  font-size: var(--t-2xs);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.years {
+  display: grid;
+  gap: 0;
+  min-width: 0;
+}
+.yearsLabel {
+  font-family: var(--font-mono);
+  font-size: var(--t-xs);
+  color: var(--ink-2);
+  line-height: 1.3;
+}
+.band {
+  margin-top: -2px;
+}
+.stamp {
+  justify-self: start;
+  position: relative;
+}
+
+.scaleRow {
+  padding-bottom: var(--s-1);
+}
+.scale {
+  position: relative;
+  height: 14px;
+}
+.scale span {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  line-height: 14px;
+  color: var(--ink-3);
+}
+
+@media (max-width: 760px) {
+  .row {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: var(--s-1) var(--s-4);
+    align-items: end;
+  }
+  .main {
+    grid-column: 1 / -1;
+    margin-bottom: var(--s-1);
+  }
+  .stamp {
+    justify-self: end;
+    padding-bottom: 6px;
+  }
+  .scaleRow {
+    display: none;
+  }
+}

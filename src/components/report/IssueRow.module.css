@@ -104,7 +104,8 @@
 .plus::after {
   transform: translate(-50%, -50%) rotate(90deg);
 }
-.details[open] .plus::after {
+.details[open] .plus::after,
+.cdetails[open] > summary .plus::after {
   transform: translate(-50%, -50%) rotate(0deg);
 }
 .where {
@@ -200,5 +201,181 @@
   }
   .aside {
     padding-top: 0;
+  }
+}
+
+/* ---------- check steps + house diagram ---------- */
+.checkGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(9rem, 11rem);
+  gap: var(--s-3) var(--s-5);
+  align-items: start;
+}
+.checkText {
+  display: grid;
+  gap: var(--s-2);
+  min-width: 0;
+}
+.diagram {
+  min-width: 0;
+}
+.diagram > figure {
+  margin: 0;
+  width: 100%;
+}
+/* while the drawing is not there yet, the steps take the full width */
+.checkGrid:has(> .diagram > figure:empty) {
+  grid-template-columns: minmax(0, 1fr);
+}
+.checkGrid:has(> .diagram > figure:empty) > .diagram {
+  display: none;
+}
+
+/* ---------- compact rows (native details) ---------- */
+.crow {
+  border-bottom: var(--hair) solid var(--rule);
+  scroll-margin-top: calc(var(--report-sticky, 0px) + var(--s-4));
+}
+.row {
+  scroll-margin-top: calc(var(--report-sticky, 0px) + var(--s-4));
+}
+.csummary {
+  display: grid;
+  grid-template-columns: 14px minmax(0, 1fr) minmax(8rem, 15rem);
+  align-items: start;
+  gap: var(--s-1) var(--s-4);
+  padding: var(--s-4) 0 var(--s-4);
+  cursor: pointer;
+  list-style: none;
+}
+.csummary::-webkit-details-marker {
+  display: none;
+}
+.csummary .plus {
+  margin-top: 0.42rem;
+  color: var(--line);
+}
+.csummary:hover .ctitle {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+.chead {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+.ctitle {
+  font-size: var(--t-md);
+  line-height: 1.25;
+  font-weight: 450;
+  letter-spacing: -0.005em;
+}
+.cmeta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px var(--s-3);
+}
+.cyears {
+  font-family: var(--font-mono);
+  font-size: var(--t-xs);
+  color: var(--ink-2);
+}
+.cpeak {
+  color: var(--ink);
+  font-weight: 500;
+}
+.chook {
+  font-size: var(--t-sm);
+  line-height: 1.5;
+  color: var(--ink-2);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  overflow: hidden;
+  max-width: 44rem;
+}
+.cdetails[open] .chook {
+  display: none;
+}
+.cband {
+  padding-top: 0.35rem;
+  min-width: 0;
+}
+.cdetails[open] .cband {
+  visibility: hidden;
+}
+.cbody {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  grid-template-areas: 'intro aside' 'detail aside';
+  gap: var(--s-3) var(--s-7);
+  padding: 0 0 var(--s-5) calc(14px + var(--s-4));
+  animation: open var(--dur) var(--ease) both;
+}
+@keyframes open {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}
+.cintro {
+  grid-area: intro;
+  display: grid;
+  gap: var(--s-2);
+  min-width: 0;
+}
+.ctitleLink {
+  justify-self: start;
+  font-family: var(--font-mono);
+  font-size: var(--t-xs);
+  color: var(--line);
+  text-decoration: none;
+}
+.ctitleLink:hover {
+  text-decoration: underline;
+}
+.cbody .aside {
+  padding-top: 0.2rem;
+}
+.cdetail {
+  grid-area: detail;
+  min-width: 0;
+}
+.cdetail .body {
+  margin-left: 0;
+  padding-left: var(--s-4);
+}
+
+@media (max-width: 860px) {
+  .csummary {
+    grid-template-columns: 14px minmax(0, 1fr);
+    padding: var(--s-3) 0;
+    gap: var(--s-1) var(--s-3);
+  }
+  .cband {
+    display: none;
+  }
+  .cbody {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: 'intro' 'aside' 'detail';
+    padding-left: calc(14px + var(--s-3));
+    gap: var(--s-4);
+  }
+  .ctitle {
+    font-size: 1.0625rem;
+  }
+  .checkGrid {
+    grid-template-columns: minmax(0, 1fr) 7.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .checkGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .diagram {
+    max-width: 12rem;
   }
 }

@@ -1,0 +1,375 @@
+/* House cutaway: a section drawing in the site's ink and line tokens.
+   Strokes are non-scaling, so weights are true screen pixels at every size.
+   Tags and dots scale with the rendered width via container queries (--k). */
+
+.root {
+  container: cutaway / inline-size;
+  margin: 0;
+  width: 100%;
+}
+.root[data-size='sm'] {
+  width: 160px;
+  max-width: 100%;
+}
+.root[data-size='md'] {
+  max-width: 440px;
+}
+
+.svg {
+  --k: 0.72;
+  --fs: 8.4px;
+  --w-o: 1.5px;
+  --w-m: 1px;
+  --w-t: 0.65px;
+  --w-h: 0.5px;
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  color: var(--ink);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.svg * {
+  vector-effect: non-scaling-stroke;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ---- line weights ---- */
+.o {
+  stroke: var(--ink);
+  stroke-width: var(--w-o);
+  stroke-linejoin: miter;
+}
+.m {
+  stroke: var(--ink);
+  stroke-width: var(--w-m);
+}
+.t {
+  stroke: var(--ink-2);
+  stroke-width: var(--w-t);
+}
+.h {
+  stroke: var(--line-2);
+  stroke-width: var(--w-h);
+  opacity: 0.85;
+}
+.earth {
+  opacity: 0.6;
+}
+.dash {
+  stroke: var(--ink-2);
+  stroke-width: var(--w-t);
+  stroke-dasharray: 3 2.5;
+}
+.faint {
+  opacity: 0;
+}
+.dots {
+  stroke: var(--ink-3);
+  stroke-width: 1.3px;
+}
+.agg {
+  stroke: var(--ink-3);
+  stroke-width: 0.5px;
+}
+.paper {
+  fill: var(--paper);
+}
+.paper2 {
+  fill: var(--paper);
+}
+.pipe {
+  stroke: var(--ink);
+  stroke-width: 1.1px;
+}
+.pipe2 {
+  stroke: var(--ink);
+  stroke-width: var(--w-m);
+}
+.wire {
+  stroke: var(--ink-2);
+  stroke-width: 0.8px;
+  stroke-dasharray: 5 2.5 1 2.5;
+}
+.outline {
+  fill: none;
+  stroke-width: calc(var(--w-o) + 0.2px);
+}
+.sm {
+  display: none;
+}
+
+/* ---- highlighting ---- */
+.z {
+  transition: opacity var(--dur) var(--ease);
+}
+.hi .z:not(.on) {
+  opacity: var(--recede, 0.3);
+}
+@media (prefers-color-scheme: dark) {
+  :global(:root:not([data-theme='light'])) .svg {
+    --recede: 0.2;
+  }
+}
+:global(:root[data-theme='dark']) .svg {
+  --recede: 0.2;
+}
+.rings {
+  display: none;
+}
+.ring {
+  fill: none;
+  stroke: var(--line);
+  stroke-width: 1.4px;
+}
+.hi .ctx {
+  opacity: 0.45;
+}
+.washes {
+  fill: color-mix(in srgb, var(--line) 17%, transparent);
+  stroke: none;
+}
+.on .o,
+.on .m,
+.on .t,
+.on .pipe,
+.on .pipe2,
+.on .dash,
+.on .wire {
+  stroke: var(--line);
+}
+.on .o {
+  stroke-width: 2.4px;
+}
+.on .m,
+.on .pipe,
+.on .pipe2 {
+  stroke-width: 1.7px;
+}
+.on .t,
+.on .dash,
+.on .wire {
+  stroke-width: 1.1px;
+}
+.on .h {
+  stroke: var(--line);
+  opacity: 1;
+}
+.on .dots,
+.on .agg {
+  stroke: var(--line);
+}
+.halo * {
+  stroke: var(--line) !important;
+  stroke-width: 7px !important;
+  stroke-dasharray: none !important;
+  fill: none !important;
+  opacity: 0.2;
+}
+.halo .h,
+.halo .dots,
+.halo .agg,
+.halo .fine {
+  display: none;
+}
+
+/* ---- keynotes ---- */
+.k {
+  transform: scale(var(--k));
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.leader {
+  stroke: var(--line);
+  stroke-width: 0.8px;
+}
+.anchor {
+  fill: var(--line);
+}
+.tag {
+  fill: var(--paper);
+  stroke: var(--line);
+  stroke-width: 1.2px;
+}
+.tagN {
+  fill: var(--line);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 500;
+}
+.lbl {
+  fill: var(--line);
+  font-family: var(--font-mono);
+  font-size: var(--fs);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  paint-order: stroke;
+  stroke: var(--paper);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+.count {
+  fill: var(--ink);
+  stroke: var(--paper);
+  stroke-width: 1.5px;
+}
+.countN {
+  fill: var(--paper);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+}
+
+/* ---- key (shown when the drawing is too narrow for labels) ---- */
+.key {
+  display: none;
+  list-style: none;
+  margin: var(--s-3) 0 0;
+  padding: var(--s-2) 0 0;
+  border-top: var(--hair) solid var(--rule);
+  flex-wrap: wrap;
+  gap: var(--s-1) var(--s-4);
+  font-family: var(--font-mono);
+  font-size: var(--t-2xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--line);
+  line-height: 1.5;
+}
+.key li {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+}
+.keyN {
+  display: inline-grid;
+  place-items: center;
+  width: 17px;
+  height: 17px;
+  border: 1.2px solid currentColor;
+  border-radius: 50%;
+  font-size: 10px;
+  letter-spacing: 0;
+}
+
+/* ---- responsive to the rendered width ---- */
+@container cutaway (max-width: 1100px) {
+  .svg {
+    --k: 0.82;
+    --fs: 9.4px;
+  }
+}
+@container cutaway (max-width: 900px) {
+  .svg {
+    --k: 1;
+    --fs: 11px;
+  }
+}
+@container cutaway (max-width: 760px) {
+  .svg {
+    --k: 1.25;
+  }
+  .lbl {
+    display: none;
+  }
+  .key {
+    display: flex;
+  }
+}
+@container cutaway (max-width: 560px) {
+  .svg {
+    --k: 1.6;
+    --w-o: 1.3px;
+    --w-m: 0.9px;
+    --w-t: 0.6px;
+    --w-h: 0.4px;
+  }
+  .dots {
+    stroke-width: 1px;
+  }
+}
+@container cutaway (max-width: 400px) {
+  .svg {
+    --k: 2.05;
+  }
+  .agg {
+    display: none;
+  }
+}
+@container cutaway (max-width: 260px) {
+  .svg {
+    --k: 3.2;
+    --w-o: 1.1px;
+    --w-m: 0.75px;
+  }
+  .fine,
+  .h,
+  .dots,
+  .agg,
+  .dash {
+    display: none;
+  }
+  .sm {
+    display: inline;
+  }
+  .wire {
+    stroke-dasharray: 3 2;
+  }
+  .on .o {
+    stroke-width: 2px;
+  }
+  .on .m,
+  .on .pipe,
+  .on .pipe2 {
+    stroke-width: 1.4px;
+  }
+  .halo * {
+    stroke-width: 5px !important;
+    opacity: 0.28;
+  }
+  .rings {
+    display: inline;
+  }
+  .counts .k {
+    transform: scale(1.9);
+  }
+  .root:not([data-size='sm']) .counts .k {
+    transform: scale(2.9);
+  }
+}
+
+/* 'sm' is a thumbnail: never tags or a key, whatever its rendered width */
+.root[data-size='sm'] .callouts,
+.root[data-size='sm'] .key,
+.root[data-size='sm'] .fine,
+.root[data-size='sm'] .h,
+.root[data-size='sm'] .dots,
+.root[data-size='sm'] .agg {
+  display: none;
+}
+.root[data-size='sm'] .countN {
+  display: none;
+}
+.root[data-size='sm'] .rings {
+  display: inline;
+}
+
+@media print {
+  .root {
+    --paper: #fff;
+    --ink: #000;
+    --ink-2: #222;
+    --ink-3: #555;
+    --line: #000;
+    --line-2: #666;
+  }
+  .z {
+    transition: none;
+  }
+  .washes {
+    fill: rgb(0 0 0 / 0.08);
+  }
+}

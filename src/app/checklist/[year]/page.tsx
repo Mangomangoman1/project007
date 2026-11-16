@@ -1,0 +1,306 @@
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { allYears, getIssuesForYear, getLifespans } from '@/lib/data';
+import { MAX_YEAR, SITE, isValidYear } from '@/lib/site';
+import { groupByPart } from '@/lib/select';
+import { PARTS, ZONE_LABEL, plural } from '@/lib/labels';
+import { HouseCutaway } from '@/components/HouseCutaway/HouseCutaway';
+import { PrintButton } from '@/components/checklist/PrintButton';
+import { oneLine, regionNote, regionTitle, sellerQuestions, zoneCounts } from '@/components/checklist/sheet';
+import styles from './checklist.module.css';
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return allYears().map((y) => ({ year: String(y) }));
+}
+
+type Props = { params: Promise<{ year: string }> };
+
+function parseYear(raw: string): number | null {
+  const y = Number(raw);
+  return /^\d{4}$/.test(raw) && isValidYear(y) ? y : null;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const year = parseYear((await params).year);
+  if (year === null) return {};
+  const n = getIssuesForYear(year).length;
+  return {
+    title: `Viewing checklist for a house built in ${year}`,
+    description: `A printable one-page sheet for viewing a US house built in ${year}: ${plural(n, 'thing')} to look for, what to check first, and what to ask the seller. ${SITE.disclaimer}`,
+    alternates: { canonical: `/checklist/${year}` },
+  };
+}
+
+/** Prompts that suit any viewing; shown when the record has little to say about a year. */
+const EVERY_VIEWING = [
+  'Read the date labels on the water heater, furnace and AC unit',
+  'Look for water stains on ceilings, under sinks and around windows',
+  'Ask for permits for any additions or remodels',
+  "Ask for the seller's disclosure and any past inspection reports",
+];
+
+const host = SITE.url.replace(/^https?:\/\//, '').replace(/\/$/, '');
+
+function Tick({ id }: { id: string }) {
+  return <input type="checkbox" id={id} className={`check ${styles.tick}`} />;
+}
+
+export default async function ChecklistPage({ params }: Props) {
+  const year = parseYear((await params).year);
+  if (year === null) notFound();
+
+  const age = MAX_YEAR - year;
+  const issues = getIssuesForYear(year);
+  const first = issues.filter((i) => i.priority === 1);
+  const missing = issues.filter((i) => i.kind === 'missing' && i.priority !== 1);
+  const rest = issues.filter((i) => i.kind === 'present' && i.priority !== 1);
+  const parts = groupByPart(rest, PARTS);
+  const asks = sellerQuestions(getLifespans(), age);
+  const counts = zoneCounts(issues);
+  const sparse = issues.length < 10;
+
+  return (
+    <div className={styles.page}>
+      {/* ---------- screen-only toolbar ---------- */}
+      <div className={`wrap ${styles.toolbar}`}>
+        <div className={styles.toolbarText}>
+          <Link href={`/built/${year}`} className={styles.back}>
+            <span aria-hidden="true">←</span> The full {year} report
+          </Link>
+          <p className={styles.hint}>
+            One sheet to take to a viewing. Prints on US Letter
+            {issues.length > 26 ? ' (two pages for a year this busy)' : ''}; tick boxes work on a phone too.
+          </p>
+        </div>
+        <PrintButton className={styles.print} />
+      </div>
+
+      {/* ---------- the sheet ---------- */}
+      <article className={styles.sheet} aria-labelledby="sheet-title">
+        <header className={styles.tb}>
+          <div className={styles.tbMain}>
+            <p className={styles.kicker}>Viewing checklist</p>
+            <h1 id="sheet-title" className={styles.title}>
+              <span className={styles.titleLead}>A house built in</span>
+              <span className={styles.year}>{year}</span>
+            </h1>
+          </div>
+          <dl className={styles.cells}>
+            <div>
+              <dt>Age</dt>
+              <dd>
+                {age === 0 ? 'New' : age}
+                {age > 0 && <small>{age === 1 ? 'yr' : 'yrs'}</small>}
+              </dd>
+            </div>
+            <div>
+              <dt>On record</dt>
+              <dd>{issues.length}</dd>
+            </div>
+            <div className={first.length ? styles.cellAccent : undefined}>
+              <dt>Check first</dt>
+              <dd>{first.length}</dd>
+            </div>
+          </dl>
+          <div className={styles.fill}>
+            <label>
+              <span>Address</span>
+              <input type="text" autoComplete="off" />
+            </label>
+            <label>
+              <span>Date viewed</span>
+              <input type="text" autoComplete="off" />
+            </label>
+          </div>
+          <p className={styles.tbFoot}>
+            <span className={styles.brand}>{SITE.name}</span>
+            <span>
+              Sources and detail: {host}/built/{year}
+            </span>
+            <span className={styles.disclaimer}>{SITE.disclaimer}</span>
+          </p>
+        </header>
+
+        {/* ---------- check first ---------- */}
+        <section className={`${styles.sec} ${styles.secFirst}`} aria-labelledby="cf-h">
+          <h2 id="cf-h" className={styles.h}>
+            <span>Check these first</span>
+            <span className={styles.hn}>{first.length}</span>
+          </h2>
+          {first.length > 0 ? (
+            <ol className={styles.firstList}>
+              {first.map((i, n) => (
+                <li key={i.id} className={styles.firstItem}>
+                  <Tick id={`t-${i.slug}`} />
+                  <div>
+                    <label htmlFor={`t-${i.slug}`} className={styles.firstTitle}>
+                      <span className={styles.num}>{n + 1}</span>
+                      {i.title}
+                      {regionNote(i.regions) && (
+                        <span className={styles.region} title={regionTitle(i.regions)}>
+                          {regionNote(i.regions)} only
+                        </span>
+                      )}
+                    </label>
+                    <p className={styles.firstCheck}>{i.check[0]}</p>
+                    <p className={styles.where}>
+                      <span className={styles.whereK}>Look</span> {i.where.map((z) => ZONE_LABEL[z]).join(' · ')}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          ) : (
+            <p className={styles.none}>
+              Nothing on record marks a {year} house for an urgent check. Use the questions and the notes below.
+            </p>
+          )}
+        </section>
+
+        {/* ---------- by part ---------- */}
+        {parts.length > 0 && (
+          <section className={styles.sec} aria-labelledby="bp-h">
+            <h2 id="bp-h" className={styles.h}>
+              <span>Also look for, by part of the house</span>
+              <span className={styles.hn}>{rest.length}</span>
+            </h2>
+            <div className={styles.parts}>
+              {parts.map((p) => (
+                <div key={p.id} className={styles.part}>
+                  <h3 className={styles.partH}>{p.label}</h3>
+                  <ul className={styles.lines}>
+                    {p.issues.map((i) => (
+                      <li key={i.id} className={styles.line}>
+                        <Tick id={`t-${i.slug}`} />
+                        <label htmlFor={`t-${i.slug}`}>
+                          <strong>{i.title}</strong>
+                          {regionNote(i.regions) && (
+                            <span className={styles.region} title={regionTitle(i.regions)}>
+                              {regionNote(i.regions)}
+                            </span>
+                          )}
+                          <span className={styles.lineText}>{oneLine(i.check[0])}</span>
+                        </label>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* ---------- lower band ---------- */}
+        <div className={styles.band}>
+          <section className={styles.sec} aria-labelledby="bw-h">
+            <h2 id="bw-h" className={styles.h}>
+              <span>Built without</span>
+              <span className={styles.hn}>{missing.length}</span>
+            </h2>
+            {missing.length > 0 ? (
+              <>
+                <p className={styles.note}>Standard after {year}. Many houses have had them added; see if this one has.</p>
+                <ul className={styles.lines}>
+                  {missing.map((i) => (
+                    <li key={i.id} className={styles.line}>
+                      <Tick id={`t-${i.slug}`} />
+                      <label htmlFor={`t-${i.slug}`}>
+                        {i.title}
+                        {regionNote(i.regions) && (
+                          <span className={styles.region} title={regionTitle(i.regions)}>
+                            {regionNote(i.regions)}
+                          </span>
+                        )}
+                      </label>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            ) : (
+              <p className={styles.note}>
+                A {year} house was built after every protection we track became standard.
+              </p>
+            )}
+            {sparse && (
+              <>
+                <h3 className={styles.partH}>On any viewing</h3>
+                <ul className={styles.lines}>
+                  {EVERY_VIEWING.map((t, n) => (
+                    <li key={t} className={styles.line}>
+                      <Tick id={`t-any-${n}`} />
+                      <label htmlFor={`t-any-${n}`}>{t}</label>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+          </section>
+
+          <section className={styles.sec} aria-labelledby="as-h">
+            <h2 id="as-h" className={styles.h}>
+              <span>Ask the seller</span>
+            </h2>
+            <p className={styles.note}>
+              {age === 0
+                ? 'Everything is new; ask about warranties.'
+                : `If these are original they are ${age} years old. Typical life:`}
+            </p>
+            <ol className={styles.asks}>
+              {age <= 10 && (
+                <li>
+                  <p className={styles.q}>Is the builder&rsquo;s warranty still in force, and does it transfer?</p>
+                </li>
+              )}
+              {asks.map((a) => (
+                <li key={a.zone}>
+                  <p className={styles.q}>{a.q}</p>
+                  <p className={styles.life}>
+                    {a.life}
+                    {a.status === 'past' && <span className={styles.past}> · past typical life</span>}
+                    {a.status === 'soon' && <span> · due soon</span>}
+                  </p>
+                  <span className={styles.answer} aria-hidden="true" />
+                </li>
+              ))}
+            </ol>
+          </section>
+
+          <section className={`${styles.sec} ${styles.where2}`} aria-labelledby="wh-h nt-h">
+            <h2 id="wh-h" className={styles.h}>
+              <span>Where to look</span>
+            </h2>
+            <HouseCutaway
+              size="md"
+              counts={counts}
+              className={styles.cutaway}
+              label={`House cross-section showing how many items on this sheet are found in each part of the house.`}
+            />
+            <p className={styles.note}>
+              {issues.length > 0
+                ? 'Each dot counts the items above by the main place to look.'
+                : 'Nothing on record for this year, so no dots.'}
+            </p>
+            <h2 id="nt-h" className={`${styles.h} ${styles.notesH}`}>
+              <span>Notes</span>
+            </h2>
+            <div className={styles.ruled} aria-hidden="true">
+              {[...Array(sparse ? 10 : 7)].map((_, n) => (
+                <span key={n} />
+              ))}
+            </div>
+          </section>
+        </div>
+
+        <footer className={styles.sheetFoot}>
+          <span>
+            {SITE.name} · {host}/checklist/{year}
+          </span>
+          <span>{SITE.disclaimer}</span>
+        </footer>
+      </article>
+    </div>
+  );
+}
