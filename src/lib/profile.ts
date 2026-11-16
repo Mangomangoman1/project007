@@ -15,8 +15,10 @@ export type ProfileValue = {
   id: string;
   /** Chip text, e.g. 'Crawl space'. */
   label: string;
-  /** Phrase used in "Hidden because: …" and in the answers summary, e.g. 'crawl space foundation'. */
+  /** Phrase used in "Hidden because: …", e.g. 'a crawl space'. */
   fact: string;
+  /** Out-of-context text for the answers summary when the chip label needs its subject ("No" → "No gas"). */
+  summary?: string;
 };
 
 export type ProfileQuestion = {
@@ -42,15 +44,15 @@ export const PROFILE_QUESTIONS: readonly ProfileQuestion[] = [
   {
     key: 'type', name: 'Type', question: 'How was it built?',
     values: [
-      { id: 'site-built', label: 'On site', fact: 'built on site' },
-      { id: 'manufactured', label: 'Manufactured / mobile', fact: 'a manufactured home' },
+      { id: 'site-built', label: 'On site', fact: 'built on site', summary: 'Built on site' },
+      { id: 'manufactured', label: 'Manufactured / mobile', fact: 'a manufactured home', summary: 'Manufactured' },
     ],
   },
   {
     key: 'stories', name: 'Floors', question: 'How many floors?',
     values: [
-      { id: 'one', label: 'One', fact: 'one floor' },
-      { id: 'two-plus', label: 'Two or more', fact: 'two or more floors' },
+      { id: 'one', label: 'One', fact: 'one floor', summary: 'One floor' },
+      { id: 'two-plus', label: 'Two or more', fact: 'two or more floors', summary: 'Two+ floors' },
     ],
   },
   {
@@ -64,8 +66,8 @@ export const PROFILE_QUESTIONS: readonly ProfileQuestion[] = [
   {
     key: 'exterior', name: 'Walls', question: 'Outside walls',
     values: [
-      { id: 'wood', label: 'Wood', fact: 'wood siding' },
-      { id: 'vinyl-aluminum', label: 'Vinyl / aluminum', fact: 'vinyl or aluminum siding' },
+      { id: 'wood', label: 'Wood', fact: 'wood siding', summary: 'Wood siding' },
+      { id: 'vinyl-aluminum', label: 'Vinyl / aluminum', fact: 'vinyl or aluminum siding', summary: 'Vinyl / aluminum siding' },
       { id: 'brick-stone', label: 'Brick / stone', fact: 'brick or stone walls' },
       { id: 'stucco', label: 'Stucco', fact: 'stucco walls' },
       { id: 'fiber-cement', label: 'Fiber cement', fact: 'fiber cement siding' },
@@ -76,16 +78,16 @@ export const PROFILE_QUESTIONS: readonly ProfileQuestion[] = [
     values: [
       { id: 'asphalt', label: 'Asphalt shingle', fact: 'an asphalt shingle roof' },
       { id: 'wood', label: 'Wood shake', fact: 'a wood shake roof' },
-      { id: 'tile', label: 'Tile', fact: 'a tile roof' },
-      { id: 'metal', label: 'Metal', fact: 'a metal roof' },
-      { id: 'flat', label: 'Flat', fact: 'a flat roof' },
+      { id: 'tile', label: 'Tile', fact: 'a tile roof', summary: 'Tile roof' },
+      { id: 'metal', label: 'Metal', fact: 'a metal roof', summary: 'Metal roof' },
+      { id: 'flat', label: 'Flat', fact: 'a flat roof', summary: 'Flat roof' },
     ],
   },
   {
     key: 'heating', name: 'Heat', question: 'Main heat',
     values: [
-      { id: 'forced-air', label: 'Furnace & ducts', fact: 'furnace heat' },
-      { id: 'boiler', label: 'Boiler & radiators', fact: 'boiler heat' },
+      { id: 'forced-air', label: 'Furnace & ducts', fact: 'furnace heat', summary: 'Furnace' },
+      { id: 'boiler', label: 'Boiler & radiators', fact: 'boiler heat', summary: 'Boiler' },
       { id: 'electric-resistance', label: 'Electric baseboard', fact: 'electric baseboard heat' },
       { id: 'heat-pump', label: 'Heat pump', fact: 'a heat pump' },
     ],
@@ -93,36 +95,36 @@ export const PROFILE_QUESTIONS: readonly ProfileQuestion[] = [
   {
     key: 'cooling', name: 'Cooling', question: 'Central air?',
     values: [
-      { id: 'central', label: 'Yes', fact: 'central air' },
-      { id: 'none', label: 'No', fact: 'no central air' },
+      { id: 'central', label: 'Yes', fact: 'central air', summary: 'Central air' },
+      { id: 'none', label: 'No', fact: 'no central air', summary: 'No central air' },
     ],
   },
   {
     key: 'chimney', name: 'Chimney', question: 'Masonry chimney or fireplace?',
     values: [
-      { id: 'yes', label: 'Yes', fact: 'a chimney' },
-      { id: 'no', label: 'No', fact: 'no chimney' },
+      { id: 'yes', label: 'Yes', fact: 'a chimney', summary: 'Chimney' },
+      { id: 'no', label: 'No', fact: 'no chimney', summary: 'No chimney' },
     ],
   },
   {
     key: 'gas', name: 'Gas', question: 'Any gas or propane?', hint: 'Furnace, water heater, stove, dryer or fireplace',
     values: [
-      { id: 'yes', label: 'Yes', fact: 'gas' },
-      { id: 'no', label: 'No', fact: 'no gas' },
+      { id: 'yes', label: 'Yes', fact: 'gas', summary: 'Gas' },
+      { id: 'no', label: 'No', fact: 'no gas', summary: 'No gas' },
     ],
   },
   {
     key: 'water', name: 'Water', question: 'Water comes from',
     values: [
-      { id: 'city', label: 'City / utility', fact: 'city water' },
-      { id: 'well', label: 'A well', fact: 'a private well' },
+      { id: 'city', label: 'City / utility', fact: 'city water', summary: 'City water' },
+      { id: 'well', label: 'A well', fact: 'a private well', summary: 'Well water' },
     ],
   },
   {
     key: 'sewer', name: 'Sewer', question: 'Drains go to',
     values: [
       { id: 'city', label: 'City sewer', fact: 'city sewer' },
-      { id: 'septic', label: 'Septic', fact: 'a septic system' },
+      { id: 'septic', label: 'Septic', fact: 'a septic system', summary: 'Septic' },
     ],
   },
 ];

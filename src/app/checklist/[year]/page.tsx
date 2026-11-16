@@ -5,9 +5,10 @@ import { allYears, getIssuesForYear, getLifespans } from '@/lib/data';
 import { MAX_YEAR, SITE, isValidYear } from '@/lib/site';
 import { groupByPart } from '@/lib/select';
 import { PARTS, ZONE_LABEL, plural } from '@/lib/labels';
-import { HouseCutaway } from '@/components/HouseCutaway/HouseCutaway';
 import { PrintButton } from '@/components/checklist/PrintButton';
-import { oneLine, regionNote, regionTitle, sellerQuestions, splitColumns, zoneCounts } from '@/components/checklist/sheet';
+import { ChecklistTailor, TailoredCount, TailoredCutaway, type TailorItem } from '@/components/checklist/Tailor';
+import type { Issue } from '@/lib/types';
+import { oneLine, regionNote, regionTitle, sellerQuestions, splitColumns } from '@/components/checklist/sheet';
 import styles from './checklist.module.css';
 
 export const dynamicParams = false;
@@ -44,6 +45,10 @@ const EVERY_VIEWING = [
 
 const host = SITE.url.replace(/^https?:\/\//, '').replace(/\/$/, '');
 
+/** What the client islands need to tailor a row: its slug, conditions, part and main zone. */
+const tailorItem = (i: Issue, part?: string): TailorItem => ({ slug: i.slug, ...(i.when ? { when: i.when } : {}), ...(part ? { part } : {}), zone: i.where[0] });
+const whens = (xs: Issue[]) => xs.map((i) => (i.when ? { when: i.when } : {}));
+
 function Tick({ id }: { id: string }) {
   return <input type="checkbox" id={id} className={`check ${styles.tick}`} />;
 }
@@ -63,10 +68,12 @@ export default async function ChecklistPage({ params }: Props) {
     1.4 + p.issues.reduce((h, i) => h + 1.3 + Math.ceil(oneLine(i.check[0]).length / 62), 0),
   );
   const asks = sellerQuestions(getLifespans(), age, issues.length > 12 && issues.length <= 26 ? 5 : 6);
-  const counts = zoneCounts(issues);
   const sparse = issues.length < 10;
   /** Busy years print on two pages, so the notes can take the room page two has. */
   const busy = issues.length > 26;
+  const partOf = new Map(parts.flatMap((p) => p.issues.map((i) => [i.id, p.id] as const)));
+  const tailor = issues.map((i) => tailorItem(i, partOf.get(i.id)));
+  const conditional = issues.some((i) => i.when);
 
   return (
     <div className={styles.page}>
@@ -106,11 +113,11 @@ export default async function ChecklistPage({ params }: Props) {
             </div>
             <div>
               <dt>On record</dt>
-              <dd>{issues.length}</dd>
+              <dd>{conditional ? <TailoredCount items={whens(issues)} /> : issues.length}</dd>
             </div>
             <div className={first.length ? styles.cellAccent : undefined}>
               <dt>Check first</dt>
-              <dd>{first.length}</dd>
+              <dd>{conditional ? <TailoredCount items={whens(first)} /> : first.length}</dd>
             </div>
           </dl>
           <div className={styles.fill}>
@@ -129,6 +136,7 @@ export default async function ChecklistPage({ params }: Props) {
               Sources and detail: {host}/built/{year}
             </span>
             <span className={styles.disclaimer}>{SITE.disclaimer}</span>
+            {conditional ? <ChecklistTailor items={tailor} className={styles.tailored} /> : null}
           </p>
         </header>
 
@@ -136,16 +144,16 @@ export default async function ChecklistPage({ params }: Props) {
         <section className={`${styles.sec} ${styles.secFirst}`} aria-labelledby="cf-h">
           <h2 id="cf-h" className={styles.h}>
             <span>Check these first</span>
-            <span className={styles.hn}>{first.length}</span>
+            <span className={styles.hn}>{conditional ? <TailoredCount items={whens(first)} /> : first.length}</span>
           </h2>
           {first.length > 0 ? (
             <ol className={styles.firstList}>
-              {first.map((i, n) => (
-                <li key={i.id} className={styles.firstItem}>
+              {first.map((i) => (
+                <li key={i.id} className={styles.firstItem} data-item={i.slug}>
                   <Tick id={`t-${i.slug}`} />
                   <div>
                     <label htmlFor={`t-${i.slug}`} className={styles.firstTitle}>
-                      <span className={styles.num}>{n + 1}</span>
+                      <span className={styles.num} aria-hidden="true" />
                       {i.title}
                       {regionNote(i.regions) && (
                         <span className={styles.region} title={regionTitle(i.regions)}>
@@ -173,17 +181,17 @@ export default async function ChecklistPage({ params }: Props) {
           <section className={styles.sec} aria-labelledby="bp-h">
             <h2 id="bp-h" className={styles.h}>
               <span>Also look for, by part of the house</span>
-              <span className={styles.hn}>{rest.length}</span>
+              <span className={styles.hn}>{conditional ? <TailoredCount items={whens(rest)} /> : rest.length}</span>
             </h2>
             <div className={styles.parts}>
               {columns.map((col, c) => (
                 <div key={c} className={styles.partCol}>
                   {col.map((p) => (
-                    <div key={p.id} className={styles.part}>
+                    <div key={p.id} className={styles.part} data-part={p.id}>
                       <h3 className={styles.partH}>{p.label}</h3>
                       <ul className={styles.lines}>
                         {p.issues.map((i) => (
-                          <li key={i.id} className={styles.line}>
+                          <li key={i.id} className={styles.line} data-item={i.slug}>
                             <Tick id={`t-${i.slug}`} />
                             <label htmlFor={`t-${i.slug}`}>
                               <strong>{i.title}</strong>
@@ -210,14 +218,14 @@ export default async function ChecklistPage({ params }: Props) {
           <section className={styles.sec} aria-labelledby="bw-h">
             <h2 id="bw-h" className={styles.h}>
               <span>Built without</span>
-              <span className={styles.hn}>{missing.length}</span>
+              <span className={styles.hn}>{conditional ? <TailoredCount items={whens(missing)} /> : missing.length}</span>
             </h2>
             {missing.length > 0 ? (
               <>
                 <p className={styles.note}>Standard after {year}. Many houses have had them added; see if this one has.</p>
                 <ul className={styles.lines}>
                   {missing.map((i) => (
-                    <li key={i.id} className={styles.line}>
+                    <li key={i.id} className={styles.line} data-item={i.slug}>
                       <Tick id={`t-${i.slug}`} />
                       <label htmlFor={`t-${i.slug}`}>
                         {i.title}
@@ -284,9 +292,9 @@ export default async function ChecklistPage({ params }: Props) {
             <h2 id="wh-h" className={styles.h}>
               <span>Where to look</span>
             </h2>
-            <HouseCutaway
+            <TailoredCutaway
+              items={tailor}
               size="md"
-              counts={counts}
               className={styles.cutaway}
               label={`House cross-section showing how many items on this sheet are found in each part of the house.`}
             />

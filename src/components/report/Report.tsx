@@ -547,7 +547,7 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
                     <span>{p.label}</span>
                     <span className={styles.partN}>
                       {p.shown.length}
-                      {p.out.length ? <span className={styles.partOutN}> +{p.out.length} not for your house</span> : null}
+                      {p.out.length ? <span className={styles.partOutN}> +{p.out.length} ruled out</span> : null}
                     </span>
                   </h3>
                   <ul className={styles.list}>

@@ -48,9 +48,7 @@ function answersLine(profile: HouseProfile) {
   return PROFILE_KEYS.filter((k) => profile[k] !== undefined).map((k) => {
     const q = questionFor(k);
     const v = q.values.find((x) => x.id === profile[k])!;
-    // Yes/No chips need their subject to make sense out of context.
-    if (v.label === 'Yes' || v.label === 'No') return v.fact.charAt(0).toUpperCase() + v.fact.slice(1);
-    return v.label;
+    return v.summary ?? v.label;
   });
 }
 
@@ -75,13 +73,15 @@ export function RevealButton({
       <span className={styles.revealMark} aria-hidden="true" />
       <span>
         {reveal ? (short ? `${hiddenCount} shown that don’t apply` : `Showing ${n} that don’t apply, marked`) : short ? `${n} by your answers` : `${n} hidden by your answers`}
+        <span aria-hidden="true" className={styles.revealSep}>
+          {'\u00a0·'}
+        </span>
       </span>
-      <span aria-hidden="true" className={styles.revealSep}>
-        ·
+      <span className={styles.revealAct}>
+        <button type="button" className={styles.revealBtn} aria-pressed={reveal} data-reveal-hidden="" onClick={() => onReveal(!reveal)}>
+          {reveal ? 'hide them' : 'show them'}
+        </button>
       </span>
-      <button type="button" className={styles.revealBtn} aria-pressed={reveal} data-reveal-hidden="" onClick={() => onReveal(!reveal)}>
-        {reveal ? 'hide them' : 'show them'}
-      </button>
     </p>
   );
 }

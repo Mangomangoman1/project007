@@ -198,6 +198,13 @@
   outline: none;
   border-bottom: 1.5px solid var(--focus);
 }
+.tailored {
+  flex-basis: 100%;
+  color: var(--ink);
+}
+.tailored strong {
+  font-weight: 500;
+}
 .tbFoot {
   grid-area: foot;
   display: flex;
@@ -304,6 +311,16 @@
   font-weight: 600;
   line-height: 1.3;
   cursor: pointer;
+}
+.firstList {
+  counter-reset: first;
+}
+.firstItem {
+  counter-increment: first;
+}
+/* a CSS counter, so numbering stays 1, 2, 3… when tailoring hides a row */
+.num::before {
+  content: counter(first);
 }
 .num {
   font-family: var(--font-mono);

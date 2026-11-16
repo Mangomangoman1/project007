@@ -560,6 +560,7 @@
   padding-top: var(--s-1);
 }
 .partOutN {
+  white-space: nowrap;
   color: var(--ink-3);
   opacity: 0.8;
 }

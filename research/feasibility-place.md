@@ -1,177 +1,186 @@
 # Feasibility: a "your place" layer for Built In (ZIP / county facts)
 
-Researched 2026-11-16. Nothing was built. Only one file was written.
+First pass 2026-11-16 (search-based). Verification pass the same day (this version). Nothing was built. Only this file was written in the repo.
 
 ## Method and evidence labels
 
-- **VERIFIED** means I opened the page or file in this session and it says what is claimed. The URL is given. Where I downloaded and parsed a file, I say so.
-- **FROM SEARCH** means it comes from a WebSearch result summary only, so it is unverified. Search summaries sometimes contradict each other, and I flag that where it happens.
-- The fetch helper reaches only: www.cpsc.gov, www.epa.gov, www.hud.gov, www.energy.gov, www.nist.gov, www.govinfo.gov, www.atsdr.cdc.gov, www.nachi.org, en.wikipedia.org. Everything else, including census.gov, fema.gov, hazards.fema.gov, huduser.gov, usgs.gov, pnnl.gov, fs.usda.gov, energycodes.gov and ncsl.org, could not be opened. Section B lists the exact hostnames to allow.
-- No page text was treated as instructions.
+- **VERIFIED** means I opened the page, or downloaded and parsed the file, in this session. The exact URL is given.
+- **UNVERIFIED** means it comes only from a WebSearch summary, or from a host that refused or was not reachable. Search summaries are leads, not sources.
+- Downloaded data is untrusted: it was parsed with `python3 -I` scripts kept outside the data directory, and nothing in it was executed or treated as instructions. Working copies and the derived files are in `/tmp/claude-0/-home-user-project007/ee67fba6-1243-5204-8e39-de9f8945e204/scratchpad/place-data/` (not in the repo). Parsers are in `.../scratchpad/place-tools/`.
+- Hosts that refused automated requests are recorded as refused. I made no attempt to get around them.
 
-## Summary table
+## Outcome at a glance
 
-| # | Dataset | Granularity | Verdict | Evidence |
-|---|---|---|---|---|
-| 1 | EPA Map of Radon Zones | county | **ready** | VERIFIED, file downloaded and parsed |
-| 2 | FEMA National Risk Index | county, tract | needs verification | FROM SEARCH |
-| 3 | FEMA Community Status Book (initial FIRM date) | NFIP community (about county or city) | needs verification (high value) | FROM SEARCH |
-| 4 | DOE/PNNL climate zones by county | county | **ready** (2015 table verified; 2021 update needs verification) | VERIFIED (2015) |
-| 5 | State code and CO-alarm adoption years | state | not suitable as a dataset; must be hand-curated | FROM SEARCH |
-| 6 | USGS seismic, wind, USFS wildfire | point / county | wildfire: needs verification; seismic and wind: not suitable by ZIP | FROM SEARCH |
-| 7 | Termite zones, IRC tables | national map; local code tables | not suitable | FROM SEARCH |
-| 8 | Expansive soils | national map | not suitable | FROM SEARCH |
-| 9 | Lead service lines | water system | partly ready; needs verification | partly VERIFIED |
-| 10 | Water hardness | national map | not suitable | FROM SEARCH |
-| 11 | ACS housing tables | county, ZCTA, tract | needs verification, but technically straightforward and the best candidate | FROM SEARCH + VERIFIED ZCTA caveats |
-| 12 | Other finds | various | see section 12 | FROM SEARCH |
+| # | Dataset | Granularity | Status after this pass |
+|---|---|---|---|
+| A | Census ACS 5-year B25034 / B25035 / B25040 (vintage 2024, i.e. 2020-2024) | ZCTA and county | **VERIFIED and downloaded** via the table-based summary-file bulk files on www2.census.gov. The `api.census.gov` data endpoint **needs a key** (metadata works without one) |
+| B | Census ZCTA-to-county relationship file (2020) | ZCTA to county (area overlap) | **VERIFIED and downloaded** |
+| C | EPA radon zones JSON | county (no FIPS) | **VERIFIED and downloaded**; FIPS join worked: 3,094 of 3,144 rows by exact name, 3,143 after a short fix list |
+| D | Climate zones by county | county (no FIPS) | **2015 DOE/PNNL table VERIFIED**, parsed to FIPS. **2021 update NOT obtainable** from this environment (PNNL 403, OSTI and BASC blocked) |
+| E | FEMA National Risk Index county table | county | **UNVERIFIED**: `hazards.fema.gov` and `www.fema.gov` pages return 403 "Access Denied". Nothing downloaded |
+| F | NFIP Community Status Book (initial FIRM date) | NFIP community | **VERIFIED and downloaded** through the OpenFEMA API on www.fema.gov (no key). The fema.gov web pages themselves return 403 |
+| G | HUD USPS ZIP crosswalk | ZIP to county/tract (address weighted) | **UNVERIFIED**: huduser.gov pages return an empty HTTP 202; the API returns 401 without a token |
+| H | Everything else (code adoption years, seismic, wind, wildfire, termite, soils, lead lines, hardness) | various | **UNVERIFIED**, unchanged from the first pass (hosts still not reachable). Sections 5 to 10 and 12 below |
 
 ---
 
-## The join problem (applies to every item)
+## The join problem
 
 A ZIP code is a USPS delivery route, not a polygon. The Census "ZCTA" is an approximation of it.
 
-- **Wikipedia on ZCTAs. VERIFIED** (https://en.wikipedia.org/wiki/ZIP_Code_Tabulation_Area):
-  - ZCTAs "are not the same as ZIP codes".
-  - ZIPs cross county, tract and block boundaries.
-  - "Some addresses end up with a ZCTA code that is different from their ZIP code."
-  - There are about 42,000 ZIPs but about 32,000 ZCTAs.
-  - PO-box-only ZIPs have no ZCTA.
-- **HUD USPS crosswalk** (huduser.gov, FROM SEARCH):
-  - Quarterly. Built from USPS address counts, so each ZIP-to-county row carries residential, business and total address ratios.
-  - Needs a free API token (`Authorization: Bearer`) at `https://www.huduser.gov/hudapi/public/usps`.
-  - Bulk Excel downloads also exist.
-  - Third-party docs say a "not endorsed or certified by HUD User" notice is expected.
-  - 2020-census geographies appear from the 2023 Q1 release.
-  - PO-box-only ZIPs are absent.
-  - I could not open it, so unverified.
-- **Census ZCTA relationship file** (FROM SEARCH):
-  - `https://www2.census.gov/geo/docs/maps-data/data/rel2020/zcta520/tab20_zcta520_county20_natl.txt`
-  - Pipe-delimited. Reported by a package as about 46,690 rows. Its layout is documented on a census.gov record-layout page.
-  - Gives area overlap (land and water), not address counts.
-- **Recommendation:**
-  - Use the HUD crosswalk for ZIP to county, because it is address-weighted and so better reflects where homes are.
-  - Use the Census ZCTA file only as a fallback.
-  - ACS data is keyed by ZCTA, not ZIP. For a ZIP with no ZCTA, fall back to its dominant county's figures and say so.
-  - Never imply a ZIP-level fact is address-level.
-- **Wording rule:** where a ZIP touches several counties, state the county-level fact for each county covering at least about 10% of the ZIP's residential addresses. Or show the worst case with "part of this ZIP is in X County".
+- **Wikipedia on ZCTAs. VERIFIED** (https://en.wikipedia.org/wiki/ZIP_Code_Tabulation_Area): ZCTAs "are not the same as ZIP codes"; ZIPs cross county, tract and block boundaries; "Some addresses end up with a ZCTA code that is different from their ZIP code"; about 42,000 ZIPs but about 32,000 ZCTAs (so roughly 10,000 ZIPs have no ZCTA of their own); PO-box-only ZIPs have no ZCTA.
+- **Measured, 2020 ZCTAs: 33,791** (relationship file) and 33,772 (ACS 2024 tables). 10,186 of the 33,791 touch more than one county (30%).
+- **HUD USPS crosswalk (address-weighted) could not be verified.**
+  - `https://www.huduser.gov/portal/datasets/usps_crosswalk.html` and `.../portal/dataset/uspszip-api.html` both returned HTTP 202 with an empty body on every attempt. I read that as a refusal and moved on.
+  - `https://www.huduser.gov/hudapi/public/usps?type=2&query=01001` returned HTTP 401 `{"error":"Unauthenticated"}`: the API is reachable but needs a registered token. I have no token.
+  - The earlier claims about quarterly releases, the ratio columns and the notice requirement stay UNVERIFIED.
+- **Decision for v1: use the Census ZCTA file** (verified, no key, no registration). HUD stays an optional upgrade if the owner registers for a token.
+- **ZIP to ZCTA:** treat a 5-digit ZIP as its ZCTA. If the ZIP has no ZCTA (PO-box-only or similar), say "we have no data for this ZIP" or fall back to the county via a separate ZIP-to-county source. Do not guess. The Census files give no ZIP list, so a builder needs a list of valid ZIPs from somewhere else (not verified here; USPS or HUD).
+- **Wording rule:** never imply a ZIP-level fact is address-level. When a ZCTA touches several counties, say "part of this ZIP is in X County" and show the dominant county's fact, or the facts for each county covering a large share of the area.
 
 ---
 
-## 1. EPA Map of Radon Zones: **ready**
+## A. Census ACS 5-year housing tables: VERIFIED (bulk files); API needs a key
 
-- **What and who:**
-  - Published by US EPA, from 1993 work (EPA said the map "was developed in 1993").
-  - Each county is Zone 1 (highest potential, average indoor radon may be above 4 pCi/L), Zone 2 (2 to 4) or Zone 3 (below 2).
-  - VERIFIED: https://www.epa.gov/radon/epa-map-radon-zones-0 and https://www.epa.gov/radon/epa-map-radon-zones
-- **Method, per EPA. VERIFIED:** built from indoor radon measurements, geology, aerial radioactivity, soil parameters and foundation types.
-- **Granularity:** county. No ZIP, tract or address.
-- **Currency:** the map itself is 1993 and static. The text table was re-published in 2024/2025: the page says "September 2025" for the XLS, and the files are dated 2024-05 and 2024-06 in their paths. Treat the zones as 1993 science with a recent file date.
-- **Downloads. VERIFIED.** The URLs were taken from the page HTML, and both files returned HTTP 200:
-  - JSON: `https://www.epa.gov/system/files/other-files/2024-06/radon-zones-202406.json` (620,064 bytes, application/json)
-  - XLS: `https://www.epa.gov/system/files/documents/2024-05/radon_zones-spreadsheet.xls` (658,944 bytes)
-  - PDF map: linked from https://www.epa.gov/radon/epa-map-radon-zones
-- **Contents. VERIFIED, parsed locally:**
-  - Fields are `"County,State"` (e.g. "Autauga, AL"), `"COUNTY LABEL"` ("Autauga County"), `"STATE"` ("Alabama"), `"Region"` and `"Zone"`.
-  - 3,196 rows, of which 3,144 are real counties.
-  - The rest are 52 header-like rows with `"Zone": "."`: the US, plus each state or DC.
-  - Zone 1: 1,074 counties. Zone 2: 1,034. Zone 3: 1,036.
-  - Alaska and Hawaii are included.
-  - Gotcha: the JSON begins with a UTF-8 BOM, so parse with `utf-8-sig`.
-  - Gotcha: **there is no FIPS code.** Join by state name plus county label, and expect hand-fixes. Louisiana parishes, Alaska boroughs and census areas, and Virginia independent cities need care. So does Connecticut, whose planning regions replaced counties in Census geography from 2022. EPA has 8 Connecticut rows, i.e. the old counties.
-- **Licence:** US government work. EPA's site does not state a restriction. I did not find an explicit licence statement; this is the normal public-domain position for EPA data. Cite EPA anyway.
-- **Static size:** about 3,144 rows of state, county and zone. About 35 KB as minified JSON, about 10 KB gzipped.
-- **Plain-language fact:** "EPA classifies [County] as Radon Zone 1 (highest potential). Any house can have high radon. Test it."
-- **EPA's own caveats. VERIFIED (same pages):**
-  - "The Map of Radon Zones should not be used to determine if individual homes need to be tested."
-  - "Homes with elevated levels of radon have been found in all three zones. All homes should be tested for radon."
-  - EPA's action level is 4 pCi/L; "consider fixing" between 2 and 4.
-  - The map's stated purpose is to help organisations target resources and implement radon-resistant building codes.
-  - EPA recommends supplementing it with local data.
-- **Pitfalls:**
-  - Zones are predictions, not measurements.
-  - The county average hides large within-county variation.
-  - Never say "your home is safe" for Zone 3. The site must say "test anyway", and must not use the zone to skip a test.
-  - Zone 3 does not mean low risk for an individual basement.
-- **Verdict:** ready as a county line item with the mandatory EPA caveat text. It can power "radon-resistant construction was/was not likely required here" only if paired with local code adoption, which this data does not give.
+### A1. The API (api.census.gov), tested without a key
 
-## 2. FEMA National Risk Index: needs verification
+- **Metadata works without a key.**
+  - `https://api.census.gov/data.json` returns the catalog (5.3 MB). The latest ACS 5-year vintage listed is **2024** (title "ACS 5-Year Detailed Tables", modified 2025-09-02). `https://api.census.gov/data/2025/acs/acs5/...` returns 404. So the latest 5-year vintage is 2020-2024.
+  - `https://api.census.gov/data/2023/acs/acs5/variables/B25035_001E.json` returns `"label": "Estimate!!Median year structure built"`.
+  - `https://api.census.gov/data/2024/acs/acs5/groups/B25034.json` returns HTTP 200.
+  - `https://api.census.gov/data/2024/acs/acs5/geography.json` lists `zip code tabulation area` with no required parent geography, and `county` requiring `state`.
+- **Data queries fail without a key.** A single-state county request, `https://api.census.gov/data/2023/acs/acs5?get=NAME,B25035_001E&for=county:*&in=state:56`, returned HTTP 200 with an HTML page titled "Missing Key": "A valid key must be included with each data API request." The 2024 request did the same. This **settles the earlier conflict**: a key is required. I did not request a key (it needs the owner's email), so the all-ZCTA and all-county API requests were not run. I saw no rate-limit figure, because no data request succeeded.
+- A free key (https://api.census.gov/data/key_signup.html returns 200) would make the API usable. It is not needed, because the bulk files below cover everything.
 
-All FROM SEARCH. hazards.fema.gov and fema.gov are not reachable.
+### A2. The bulk route that works with no key (use this)
 
-- **What:**
-  - FEMA's NRI gives each county and census tract a relative risk score for 18 natural hazards, built from Expected Annual Loss, Social Vulnerability (CDC/ATSDR SVI) and Community Resilience (the University of South Carolina's BRIC index).
-  - It is modelled from historical frequency and loss data, not a forecast.
-- **Downloads:**
-  - https://hazards.fema.gov/nri/data-resources lists the geodatabase, shapefile and CSV downloads. CSVs are county-level (per state) and a tract-level table for all tracts.
-  - An S3 mirror page was also in the results: `nri-data-downloads.s3.amazonaws.com`.
-  - Search summaries disagree about the latest version. The archive page appears to show up to v1.18.1 (Nov 2021), and I could not confirm a v1.19 or v1.20. Verify the current version and date.
-- **Licence:** data.gov listed the US Government Works notice, i.e. public domain. Unconfirmed.
-- **Size:** tract CSV with about 85,000 tracts and 400+ columns is likely 100 to 300 MB raw. Keep only the few columns needed.
-- **Join:**
-  - By county FIPS directly.
-  - ZIP to county via the crosswalk.
-  - ZIP to tract is possible via the HUD ZIP-tract crosswalk, but the tract fact is still not address-level.
-- **Plain-language fact:** "FEMA ranks [County] 'Relatively High' for tornado risk, among the top X% of US counties." Use ratings, not dollar losses.
-- **Pitfalls:**
-  - It is a relative community-level planning tool, not a property assessment.
-  - It excludes flood-insurance zones and building-specific vulnerability.
-  - Its disclaimer says the profiles rest on average past conditions, not future predictions.
-  - I did not find the exact "not for individual property" wording in search results. Read the NRI technical documentation and disclaimer before using it.
-  - The composite Risk Index score mixes in social vulnerability and resilience, which is not what a homeowner expects from "hazard". Show per-hazard Expected Annual Loss rating or hazard-type rating instead.
-- **Verdict:** needs verification. Useful and likely high quality. Use only the per-hazard ratings, county-level.
+Census "table-based" ACS summary files, 2024 vintage, 5-year. Base: `https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/`. The page https://www.census.gov/programs-surveys/acs/data/summary-file.html ("ACS Summary File Table-Based Format") describes the format.
 
-## 3. FEMA Community Status Book / NFIP initial FIRM date: needs verification (important)
+| File | URL (under the base) | Size (bytes) | Rows |
+|---|---|---|---|
+| B25034 year built | `data/5YRData/acsdt5y2024-b25034.dat` | 50,103,592 | all geographies |
+| B25035 median year built | `data/5YRData/acsdt5y2024-b25035.dat` | 15,421,817 | 543,579 data rows (all geographies) |
+| B25040 heating fuel | `data/5YRData/acsdt5y2024-b25040.dat` | 43,870,500 | all geographies |
+| Table shells (variable labels) | `documentation/ACS20245YR_Table_Shells.txt` | 5,622,840 | |
+| Geography key | `documentation/Geos20245YR.txt` | 90,707,242 | 616,691 lines; not needed |
 
-FROM SEARCH.
+- **Format:** pipe-delimited text with a header, one file per table, **all geographies in one file** (nation, state, county, tract, block group, ZCTA and others). Key: `GEO_ID`. Estimate columns are `B25034_E001`, `_E002` and so on, margins `B25034_M001`. (Variable names are `_E001` here, not the API's `_001E`.)
+- **GEO_ID prefixes:** ZCTA `860Z200US` + 5 digits (e.g. `860Z200US00601`); county `0500000US` + 5-digit FIPS.
+- **Counts measured:** B25034 has **33,772 ZCTA rows** and **3,222 county rows** (50 states and DC, 78 Puerto Rico municipios, and 9 Connecticut planning regions, see below). B25035 and B25040 have the same counts.
+- **Variables (VERIFIED, from the table shells):**
+  - B25034 (universe: housing units): `_E001` total; `_E002` built 2020 or later; `_E003` 2010-2019; `_E004` 2000-2009; `_E005` 1990-1999; `_E006` 1980-1989; `_E007` 1970-1979; `_E008` 1960-1969; `_E009` 1950-1959; `_E010` 1940-1949; `_E011` 1939 or earlier.
+  - B25035: `_E001` median year structure built.
+  - B25040 (universe: **occupied** housing units): `_E001` total; `_E002` utility gas; `_E003` bottled/tank gas (propane); `_E004` electricity; `_E005` fuel oil, kerosene; `_E006` coal or coke; `_E007` wood; `_E008` solar; `_E009` other fuel; `_E010` no fuel used.
+- **Samples (raw, ZCTA):**
+  - `00601`: B25034 total 7570 (M 322), 2020+ 0, 2010-19 209, 2000-09 782, 1990-99 1122, 1980-89 1557, 1970-79 1814, 1960-69 1145, 1950-59 515, 1940-49 221, pre-1940 205. B25035 median 1979. B25040 total 5768; gas 0, propane 44, electricity 185, oil 0, wood 0, other 434, none 5105 (Adjuntas, Puerto Rico).
+  - `00602`: total 17610, median 1978; `00603`: total 26239, median 1982.
+  - County `01001` (Autauga AL): B25034 total 25039; B25035 median 1994; B25040 total 22917, utility gas 7748, propane 1800.
+- **Gotchas, measured:**
+  - **Suppressed values:** 811 of the 33,772 ZCTAs have no housing units (B25034 total 0) and their median is the sentinel **-666666666**. Treat any negative value as "no data". 953 ZCTAs have zero occupied units in B25040.
+  - **Small ZCTAs:** 2,883 ZCTAs have fewer than 100 housing units and 7,261 fewer than 300. Margins of error are large there. Show only coarse bands, or suppress below a threshold (suggest total below 100).
+  - **Connecticut:** the 2024 county rows use the 9 new planning regions (`09110` to `09190`), with no `09001`-style old counties. The relationship file and the radon, climate and NFIP tables all use the 8 old counties. So the **county-level ACS fallback does not join for Connecticut**. Use ZCTA-level ACS only for Connecticut, or add a Census planning-region crosswalk (not verified).
+  - ACS estimates are samples with margins of error, owner-reported year built, primary heating fuel only, 5-year smoothing.
+- **Licence:** US Census Bureau tables are public domain (UNVERIFIED as a stated licence; no restriction seen on the pages opened). Cite "U.S. Census Bureau, 2020-2024 American Community Survey 5-Year Estimates".
+- **Derived and measured:** reduced ZCTA record (total units, median year, 10 percent-share buckets, 5 heating shares, occupied units) for 32,961 ZCTAs = **2.13 MB raw JSON, 733 KB gzipped**. County version (3,222 counties) = 217 KB raw, 76 KB gzipped.
 
-- **What:**
-  - OpenFEMA dataset "NFIP Community Status Book v1" (entity `NfipCommunityStatusBook`, id FEMA-0137).
-  - Page: https://fema.gov/openfema-data-page/nfip-community-status-book-v1
-  - API: `https://www.fema.gov/api/open/v1/NfipCommunityStatusBook` (OpenFEMA REST, JSON, supports `$filter`, `$select`, `$top`, `$skip`; and a `$format=csv` option exists in OpenFEMA generally, unverified for this set).
-  - It was updated daily as of a March 2025 refresh date.
-- **Key fields, per the OpenFEMA field definitions seen in search:**
-  - Initial FIRM identified date (the "first Flood Insurance Rate Map"). FEMA describes this as the dividing line between Pre-FIRM and Post-FIRM buildings.
-  - Initial Flood Hazard Boundary Map date.
-  - Current effective map date.
-  - Regular/emergency program entry date.
-  - Community ID (CID), community name and county.
-  - If no initial-FIRM date is present, the community has no FIRM or has not adopted it.
-  - FEMA's older per-state "Community Status Book Report" PDFs show the same columns, with dates as MM/DD/YY, some with an "(M)" marker.
-- **Granularity:** NFIP community, which is a city, town, village or unincorporated county. About 22,000 communities. Not tied to ZIP.
-- **Join:**
-  - No ZIP field. Join county name or FIPS to a community, then choose a city or "unincorporated county" row.
-  - Unreliable for a ZIP that spans several communities.
-  - Fixing this properly needs a place or city layer (Census places, or HUD crosswalk to county and "city" name from USPS), plus manual matching.
-- **Plain-language fact:** "Your community's first flood map took effect in [year]. Houses built before that were built without flood-map rules: 'pre-FIRM'."
-- **Pitfalls:**
-  - The initial FIRM date is a community-level proxy. It does not say whether a given house is in a flood zone, nor what it cost to insure.
-  - Many sites were built long before or after their community's date, and the flood zone depends on the parcel (NFHL).
-  - Dates change when maps are revised.
-  - This does not bring back "flood risk for your house".
-  - Initial FIRM dates for the pre-FIRM concept are mostly 1970s to 1980s.
-- **Size:** about 22,000 rows; thin it to about 4 fields and county.
-- **Verdict:** needs verification of the live API and field names. Valuable as "pre-FIRM / post-FIRM era in your community", at community level, with county as a fallback.
+---
 
-## 4. DOE Building America / IECC climate zones by county: **ready** (2015 table verified; 2021 update needs verification)
+## B. Census ZCTA-to-county relationship file: VERIFIED
 
-- **VERIFIED.** DOE publishes the county table at https://www.energy.gov/sites/prod/files/2015/10/f27/ba_climate_region_guide_7.3.pdf (HTTP 200, PDF, about 103,000 characters of text).
-  - Title: "Building America Best Practices Series, Volume 7.3, Guide to Determining Climate Regions by County", PNNL-17211 Rev. 3, August 2015.
-  - It contains "Counties of the United States by Building America and IECC Climate Zone, Version 6, August 20, 2015", with columns State, County, BA Climate Zone, IECC Climate Zone (1-8) and Moisture Regime (A/B/C).
-  - Sample rows: Autauga AL = Hot-Humid / 3 / A. Miami-Dade FL = Hot-Humid / 1 / A. Hawaii County HI = Hot-Humid / 1 / A.
-  - Alaska and Hawaii are covered. Climate-zone boundaries follow county lines.
-  - A report disclaimer (no warranty, not an endorsement) is on the cover. A US DOE report is a federal work; cite it.
-- **The 2015 table is superseded.** FROM SEARCH: PNNL's "Guide to Determining Climate Zone by County: Building America and IECC 2021 Updates" (PNNL-33270, October 2022; also OSTI 1893981) covers every county and links GIS shapefiles. The 2021 IECC changed some county assignments. I could not open it. For an era report, either is acceptable if the year is stated, but prefer the 2021 table. The OSTI and PNNL hosts are needed.
-- **Format and size:** a PDF table of about 3,100 rows, two columns per page. Parsing needs care. The 2022 report may ship a spreadsheet at basc.pnnl.gov; unverified. Static size is about 30 KB minified JSON.
-- **Join:** county name and state, so the FIPS join has the same naming problems as radon. Use the HUD crosswalk for ZIP to county.
-- **Plain-language fact:** "[County] is in IECC Climate Zone 5A (cold, moist). Insulation, vapour-control and heating advice below is tuned to that."
-- **Pitfalls:** it tells the climate, not what the house has. It does not show state energy-code adoption. Counties merge and split over time (e.g. Connecticut planning regions, Alaska boroughs).
-- **Verdict:** ready for county-level climate zone. It drives insulation and ventilation guidance well.
+- **URL:** `https://www2.census.gov/geo/docs/maps-data/data/rel2020/zcta520/tab20_zcta520_county20_natl.txt` (HTTP 200, 6,821,287 bytes).
+- **Format:** pipe-delimited, UTF-8 with a BOM (read with `utf-8-sig`). 47,863 data rows.
+- **Columns:** `OID_ZCTA5_20|GEOID_ZCTA5_20|NAMELSAD_ZCTA5_20|AREALAND_ZCTA5_20|AREAWATER_ZCTA5_20|MTFCC_ZCTA5_20|CLASSFP_ZCTA5_20|FUNCSTAT_ZCTA5_20|OID_COUNTY_20|GEOID_COUNTY_20|NAMELSAD_COUNTY_20|AREALAND_COUNTY_20|AREAWATER_COUNTY_20|MTFCC_COUNTY_20|CLASSFP_COUNTY_20|FUNCSTAT_COUNTY_20|AREALAND_PART|AREAWATER_PART`.
+- **Key columns:** `GEOID_ZCTA5_20` (ZCTA), `GEOID_COUNTY_20` (county FIPS), `AREALAND_PART` (land area of the ZCTA inside that county, square metres).
+- **3-row sample:**
+  - `01001|ZCTA5 01001|...|25013|Hampden County|...|AREALAND_PART 29247431`
+  - `01002|...|25011|Franklin County|...|9322298`
+  - `01002|...|25015|Hampshire County|...|128609599`
+- **Gotchas:** 903 rows have an empty ZCTA (county pieces with no ZCTA): drop them. The BOM is on the header. Overlap is **land area, not people or addresses**.
+- **Picking the dominant county per ZCTA (tested):** group by `GEOID_ZCTA5_20`, take the row with the largest `AREALAND_PART`. Measured over **33,791 ZCTAs**: no ZCTA has zero land; the dominant county covers 100% in the median case; for **6,432** ZCTAs it covers less than 90% of land, and for **352** less than 50%. Also keep the secondary counties where the share is large.
+  - Examples: `10001` is entirely New York County (36061). `02138` is entirely Middlesex MA (25017). `42101` (a KY ZCTA): Warren 21227 (644 M m2), Edmonson 21061, Butler 21031. `59001`: Stillwater 30095 dominant, Carbon 30009.
+- **Join check:** all 33,772 ACS ZCTAs are in this file; 19 ZCTAs in this file have no ACS row.
+- **Connecticut:** this file uses the 8 old counties (`09001` to `09015`), which match radon, climate and NFIP.
+- Derived: `zcta_dominant_county.json` = 33,791 entries, 541 KB raw, 95 KB gzipped.
+
+---
+
+## C. EPA radon zones JSON: VERIFIED, FIPS join done
+
+- **URL (re-downloaded today):** `https://www.epa.gov/system/files/other-files/2024-06/radon-zones-202406.json`. HTTP 200, `application/json`, 620,064 bytes. Parse with `utf-8-sig` (BOM).
+- **Structure:** `{"data":[{"County,State":"Baldwin, AL","COUNTY LABEL":"Baldwin County","STATE":"Alabama","Region":"4","Zone":"3"}, ...]}`.
+- **Rows:** 3,196, of which **3,144 are real counties** (52 are header-like rows with `Zone "."`). Zone 1: 1,074; Zone 2: 1,034; Zone 3: 1,036.
+- **No FIPS.** Join to the Census county list `https://www2.census.gov/geo/docs/reference/codes2020/national_county2020.txt` (HTTP 200, 126,639 bytes, pipe-delimited: `STATE|STATEFP|COUNTYFP|COUNTYNS|COUNTYNAME|CLASSFP|FUNCSTAT`, 3,235 rows including territories).
+- **Join rule that worked:** state abbreviation (the part of `County,State` after the comma) plus the exact `COUNTY LABEL`, compared case-insensitively. **3,094 of 3,144 rows match.** **50 do not**, all fixable:
+  - **Alaska (4), renamed or split county-equivalents:** Prince of Wales-Outer Ketchikan Census Area to 02198 (Prince of Wales-Hyder); Valdez-Cordova to 02063 and 02066 (Chugach, Copper River); Wade Hampton to 02158 (Kusilvak); Wrangell-Petersburg to 02195 and 02275 (Petersburg, Wrangell). Also "Skagway Municipality" (EPA label for the Skagway-Hoonah-Angoon row) matched 02230, and **Hoonah-Angoon (02105) has no EPA row**: copy the zone from the Skagway row.
+  - **DC (1):** `District of Columbia` (EPA writes state "District of Columbia") to 11001.
+  - **Name spelling (3):** La Salle Parish LA to 22059 (LaSalle); Dona Ana NM to 35013 (Doña Ana); Shannon SD to 46102 (Oglala Lakota).
+  - **Montana (1):** "Yellowstone National Park, MT" is not a county in the 2020 list. Drop it.
+  - **Virginia independent cities (41):** EPA lists them as `Alexandria, VA` without "city". Match by adding " city" to the Census name. 38 match this way (Alexandria, Buena Vista, Charlottesville, Chesapeake, Colonial Heights, Covington, Danville, Emporia, Fairfax, Falls Church, Franklin, Fredericksburg, Galax, Hampton, Harrisonburg, Hopewell, Lexington, Lynchburg, Manassas, Manassas Park, Martinsville, Newport News, Norfolk, Norton, Petersburg, Poquoson, Portsmouth, Radford, Richmond, Roanoke, Salem, Staunton, Suffolk, Virginia Beach, Waynesboro, Williamsburg, Winchester, Bristol). Three no longer exist as cities and need a manual target: **Bedford** (city, merged into Bedford County 51019 in 2013), **Clifton Forge** (merged into Alleghany 51005), **South Boston** (merged into Halifax 51083). Do not let these overwrite the county's own row; keep the county's own zone.
+  - **No duplicates** in the EPA list. After these fixes, **3,143 of 3,144 rows resolve** and **3,142 FIPS codes** are covered; the only 2020 county-equivalent without a zone is Hoonah-Angoon (fixed as above). Connecticut: EPA has the 8 old counties and they match `09001` to `09015`.
+- Derived `radon_by_fips_fixed.json` (FIPS to zone): 3,142 entries, 37,705 bytes raw, 8,169 bytes gzipped.
+- **EPA caveats (VERIFIED earlier, pages https://www.epa.gov/radon/epa-map-radon-zones-0 and https://www.epa.gov/radon/epa-map-radon-zones):** the map "was developed in 1993"; "The Map of Radon Zones should not be used to determine if individual homes need to be tested"; "Homes with elevated levels of radon have been found in all three zones. All homes should be tested for radon." Action level 4 pCi/L. Never say "safe" for Zone 3. The zone is a county prediction, not a measurement.
+- **Licence:** US government work; EPA states no restriction on these pages (no explicit licence line seen). Cite EPA.
+
+---
+
+## D. Climate zones by county
+
+- **2021 update (PNNL-33270, Oct 2022): NOT obtained.**
+  - The DOE page https://www.energy.gov/cmei/buildings/building-america-climate-specific-guidance (VERIFIED, 200, "last updated March 5, 2026") names "Guide to Determining Climate Zones by County: Building America and IECC 2021 Updates" and links `https://www.osti.gov/servlets/purl/1893981` and `https://basc.pnnl.gov/building-assemblies`. The page also says its 2021 assemblies tool has "Climate zone look-up by county or zip code". That is the lead to a current table.
+  - `https://www.pnnl.gov/main/publications/external/technical_reports/PNNL-33270.pdf` returned **HTTP 403 "Request Rejected"** (bot refusal). `https://www.pnnl.gov/publications/guide-determining-climate-zone-county-building-america-and-iecc-2021-updates` returned 403.
+  - `basc.pnnl.gov`, `www.osti.gov` and `www.energycodes.gov` were refused by the session proxy (not on the allowed list). I did not try to get round any of this.
+  - Search results say the BASC data-files page offers GIS shapefiles for the 2021 IECC and Building America zones (UNVERIFIED). No CSV was found.
+- **2015 table: VERIFIED and parsed.**
+  - URL: `https://www.energy.gov/sites/prod/files/2015/10/f27/ba_climate_region_guide_7.3.pdf` (HTTP 200, `application/pdf`, 6,356,555 bytes). "Building America Best Practices Series Vol. 7.3", PNNL-17211 Rev. 3, Aug 2015, table "Counties of the United States by Building America and IECC Climate Zone, Version 6, August 20, 2015".
+  - Format: a PDF table in two column-pairs per page: `State | County | BA Climate Zone | IECC Climate Zone (1-8) | Moisture Regime`. **No FIPS.** Text extracts with `pdftotext -layout`.
+  - Parsed: **3,141 rows**, no duplicates; **3,113 matched to FIPS automatically** (state plus normalised county name, "(city)" mapped to " city"). 28 rows need hand fixes (a line-wrap truncated names or the name differs): AK Fairbanks North Star, Northwest Arctic, Prince of Wales-Hyder, Skagway-Hoonah-Angoon, Southeast Fairbanks, Valdez-Cordova, Wade Hampton, Wrangell-Petersburg; IL De Witt; LA La Salle, St. John the Baptist, St. Landry; NV Carson City; SD Shannon; VA Bedford, Clifton Forge and 12 independent cities (Buena Vista, Charlottesville, Chesapeake, Colonial Heights, Fredericksburg, Harrisonburg, Manassas Park, Martinsville, Newport News, Petersburg, Portsmouth, Virginia Beach).
+  - Also Aroostook ME did not parse (its moisture field is blank). After the fixes there should be about 3,143 counties; the 2015 table predates the Alaska and South Dakota renames.
+  - Alaska rows have moisture "N/A" (zones 7 and 8).
+  - 3-row sample with FIPS: `01001` Autauga AL Hot-Humid 3A; `12086` Miami-Dade FL Hot-Humid 1A; `36061` New York NY Mixed-Humid 4A; `06037` Los Angeles CA Hot-Dry 3B.
+  - Derived `climate2015_by_fips.json`: 3,113 entries, 82,898 bytes raw.
+- **Caveat:** the 2021 IECC changed some counties (search says Dallas TX 3A to 2A, Milwaukee WI 6A to 5A; UNVERIFIED). So the 2015 values are **stale for a minority of counties**. Label the data "IECC/Building America zone, 2015 DOE/PNNL county table" and show the year. Replace when the 2021 table becomes reachable.
+
+---
+
+## E. FEMA National Risk Index: UNVERIFIED
+
+- `https://hazards.fema.gov/nri/`, `.../data-resources`, `.../learn-more`, the direct file URL `https://hazards.fema.gov/nri/Content/StaticDocuments/DataDownload//NRI_Table_Counties/NRI_Table_Counties.zip`, `https://www.fema.gov/about/openfema/data-sets/national-risk-index-data`, `https://www.fema.gov/flood-maps/products-tools/national-risk-index` and the FAQ PDF `https://www.fema.gov/sites/default/files/documents/fema_national-risk-index_faq-page-documentation.pdf` all returned **HTTP 403 "Access Denied"** (an edge-server refusal of automated requests). Recorded; not worked around. **No NRI file was downloaded.**
+- **Correction to the first pass:** the `nri-data-downloads.s3.amazonaws.com` mirror does not exist (`NoSuchBucket`, HTTP 404). Drop it.
+- **OpenFEMA API does not carry NRI.** I retrieved the OpenFEMA dataset catalog (`https://www.fema.gov/api/open/v1/OpenFemaDataSets`, 44 entries returned); no risk-index dataset appeared (only Hazard Mitigation entries).
+- **What search says (UNVERIFIED):** the latest release is v1.20 (December 2025); the county CSV is "All Counties - Table"; the technical documentation PDF is `https://www.fema.gov/sites/default/files/documents/fema_national-risk-index_technical-documentation.pdf`; the county layer on an ArcGIS service has `RISK_RATNG` (composite rating) and `RISK_SCORE`, and per-hazard fields following the pattern `HRCN_RISKS` (hurricane score) and `HRCN_RISKR` (rating). Per-hazard rating columns were therefore **not confirmed** for the downloadable CSV. FEMA's appropriate-use guidance could **not be quoted**: it must be read from the technical documentation before use.
+- **Verdict:** keep out of v1. If the owner wants it, they must download "All Counties - Table" in a normal browser and the builder verifies columns then.
+
+---
+
+## F. NFIP Community Status Book (initial FIRM date): VERIFIED via the OpenFEMA API
+
+- **fema.gov web pages return 403** ("Access Denied"), e.g. https://www.fema.gov/openfema-data-page/nfip-community-status-book-v1. **The OpenFEMA API on the same host works with no key.**
+- **Working URLs:**
+  - JSON page: `https://www.fema.gov/api/open/v1/NfipCommunityStatusBook?$top=3` (HTTP 200). With `&$inlinecount=allpages` the metadata reports `"count":25132`.
+  - Whole file as CSV: `https://www.fema.gov/api/open/v1/NfipCommunityStatusBook.csv` (HTTP 200, `text/csv`, **3,772,519 bytes, 25,133 data rows**). `lastRefresh` on the rows is 2026-08-25.
+- **Columns:** `communityIdNumber, communityName, county, state, initialFloodHazardBoundaryMap, initialFloodInsuranceRateMap, currentlyEffectiveMapDate, regularEmergencyProgramDate, tribal, participatingInNFIP, originalEntryDate, classRatingEffectiveDate, classRating, sfhaDiscount, nonSfhaDiscount, sanction, sanctionDate, lastRefresh`.
+- **3-row sample:**
+  - `010001`, AUTAUGAVILLE, TOWN OF; AUTAUGA COUNTY; AL; initial FHBM 1974-06-07; **initial FIRM 1985-12-18**; effective 09/03/14; participating.
+  - `010002`, PRATTVILLE, CITY OF; ELMORE COUNTY/AUTAUGA COUNTY; AL; FHBM 1974-05-03; **FIRM 1978-08-15**; class rating 7.
+  - `010004`, BAY MINETTE, CITY OF; BALDWIN COUNTY; AL; FHBM 1975-10-24; **FIRM 1981-12-01**; effective 04/19/19.
+- **Measured:** 23,983 of 25,133 rows have an initial FIRM date; 22,792 participate; median FIRM year 1986; decades: 1970s 4,074; 1980s 11,915; 1990s 1,941; 2000s 2,484; 2010s 3,021; 2020s 545. **Data errors:** the maximum is 2069 and three rows have years in the 2060s (two-digit-year errors): discard any year above 2026.
+- **Join to county:**
+  - No FIPS and no ZIP. `communityIdNumber` starts with the 2-digit state FIPS. `county` is a county name, or several separated by `/` or `,` (e.g. `ELMORE COUNTY/AUTAUGA COUNTY`).
+  - Split on `/` and `,`, match state abbreviation plus normalised name to `national_county2020.txt`. Of **25,957** community-county pairs, **25,877 match (99.7%)**. The 57 distinct leftovers are La Salle (IL and LA), renamed Alaska areas, three Virgin Islands names, and some strings joined with a comma instead of a slash (e.g. `WALKER COUNTY,JEFFERSON COUNTY`; my splitter used only `/`, so the builder should split on both `/` and `,` and will match more).
+  - Result: 3,035 counties have at least one community with an initial FIRM date.
+  - Per-county summary computed: earliest, median and latest initial-FIRM year and the number of communities. Example: `12086` (Miami-Dade) earliest/median/latest 1972, 35 communities; `36061` (New York) 1983, 1 community; `01001` (Autauga) 1978 / 1985 / 2009, 5 communities. Derived `nfip_by_county.json`: 82,667 bytes raw.
+- **Caveat:** this is a community-level proxy. The ZIP-to-community link does not exist, so use only the county summary ("flood maps in this county began between 1978 and 2009"). It says nothing about whether a house is in a flood zone.
+
+---
+
+
+## Sections not re-verified in this pass (5 to 10 and 12)
+
+These are unchanged from the first pass. Every UNVERIFIED (search only) label below now reads UNVERIFIED: it rests on search summaries only, the hosts were not retested, and nothing here was downloaded. Items marked VERIFIED in them were verified in the first pass (EPA and DOE pages).
 
 ## 5. State code adoption histories: not suitable as a dataset (hand-curate)
 
-FROM SEARCH. None of energycodes.gov, ncsl.org, nahb.org or iccsafe.org was reachable.
+UNVERIFIED (search only). None of energycodes.gov, ncsl.org, nahb.org or iccsafe.org was reachable.
 
 - **DOE Building Energy Codes Program, energycodes.gov:**
   - It has per-state status pages (e.g. `/status/states/florida`) showing the current residential code and effective dates.
@@ -203,7 +212,7 @@ FROM SEARCH. None of energycodes.gov, ncsl.org, nahb.org or iccsafe.org was reac
 
 ## 6. Seismic, wind and wildfire
 
-### 6a. USGS seismic design (FROM SEARCH)
+### 6a. USGS seismic design (UNVERIFIED (search only))
 - The USGS design-maps web service (`https://earthquake.usgs.gov/ws/designmaps/`, e.g. `asce7-22.html`) takes latitude and longitude plus risk category and site class, and returns SDS, SD1 and Seismic Design Category.
 - No ZIP or county product. USGS says the services are mostly consumed through third-party tools such as the ASCE Hazard Tool.
 - Pitfalls: SDC depends on site class, so a lat/lon with unknown soil is not a house answer. The docs say values are subject to revision.
@@ -211,11 +220,11 @@ FROM SEARCH. None of energycodes.gov, ncsl.org, nahb.org or iccsafe.org was reac
 - **Verdict:** not suitable by ZIP unless we run our own build-time batch with labelled assumptions. Prefer the NRI earthquake rating for a simple county fact.
 
 ### 6b. Wind and hurricane design zones
-- Basic design wind speeds come from ASCE 7 maps. They are tied to location and risk category, and public programmatic access is via ATC or ASCE tools, not via a free national county table (FROM SEARCH, weak; I did not find a specific source).
+- Basic design wind speeds come from ASCE 7 maps. They are tied to location and risk category, and public programmatic access is via ATC or ASCE tools, not via a free national county table (UNVERIFIED (search only), weak; I did not find a specific source).
 - Wind-borne debris regions and the 2000-era Florida code changes are local.
 - **Verdict:** not suitable. Use the NRI hurricane or tornado ratings as the proxy.
 
-### 6c. USFS Wildfire Risk to Communities (FROM SEARCH)
+### 6c. USFS Wildfire Risk to Communities (UNVERIFIED (search only))
 - Publisher: USDA Forest Service (Fire Lab). Site: wildfirerisk.org. Archive IDs RDS-2020-0016(-2) and RDS-2020-0060, with a 2024 entry RDS-2024-0030.
 - Tabular summaries are provided by state, county and community ("Download Spreadsheet"), including Risk to Homes, Wildfire Likelihood and Risk Reduction Zones. The Research Data Archive hosts the files at `fs.usda.gov/rds/archive`.
 - Built on LANDFIRE 2014 vegetation, so conditions are as of end-2014 (as the search summary states), and burn probability was modelled with FSim at 270 m.
@@ -229,7 +238,7 @@ FROM SEARCH. None of energycodes.gov, ncsl.org, nahb.org or iccsafe.org was reac
 
 ## 7. Termite zones and IRC regional tables: not suitable
 
-FROM SEARCH.
+UNVERIFIED (search only).
 
 - The IRC Table R301.2(1) is filled in **by each adopting jurisdiction**: climate zone, frost depth, snow load, wind speed, seismic category, weathering, termite, decay, winter design temperature, flood hazards. Examples seen in search: Cheatham County TN lists "MOD TO HVY", Wiggins CO "Slight to Moderate", Island County WA "Slight to Moderate". Those are local and not a national table.
 - The termite infestation probability map (very heavy, moderate to heavy, slight to moderate, none to slight) is a coarse regional map attributed to the Forest Service. Sources disagree on whether the code requires it (WoodWorks calls it a guide; Orkin says officials must use it). I found no county table.
@@ -238,7 +247,7 @@ FROM SEARCH.
 
 ## 8. Expansive soils: not suitable
 
-FROM SEARCH.
+UNVERIFIED (search only).
 
 - USGS "Swelling clays map of the conterminous United States" is Map I-1940 (1989), 1:7,500,000, by Olive and others. Page: https://www.usgs.gov/maps/swelling-clays-map-conterminous-united-states. (The search found no "Hart 1974" source, so that attribution is unconfirmed.)
 - It is a national overview built from bedrock geology, not county boundaries, and is too coarse for any parcel or ZIP.
@@ -253,7 +262,7 @@ FROM SEARCH.
   - The inventory is in the "service line inventory report" in EPA's SDWIS Federal Reporting Services.
   - **Caveat in EPA's own methodology:** "if a state did not report any data for a water system's inventory, EPA assumed that all its service connections were non-lead." So gaps count as zero lead.
 - **VERIFIED:** EPA's LCRR page confirms the initial-inventory requirement (compliance date 16 Oct 2024) and EPA's inventory guidance (4 Aug 2022). URL: https://www.epa.gov/ground-water-and-drinking-water/revised-lead-and-copper-rule
-- **FROM SEARCH:**
+- **UNVERIFIED (search only):**
   - EPA's inventory dashboard is at `sdwis.epa.gov/ords/sfdw_pub/r/sfdw/sdwis_fed_reports_public/service-line-inventory`, with about 56,982 systems in the dashboard versus about 3,520 in the survey.
   - Other analyses (Policy Innovation Lab, NRDC, Rockefeller Institute) restate it. Rockefeller reports about 494,007 in New York.
   - Systems publish their own inventories, often with address-level lookup maps. Those are state- or utility-specific and not a single national file.
@@ -265,7 +274,7 @@ FROM SEARCH.
 
 ## 10. Water hardness: not suitable
 
-FROM SEARCH.
+UNVERIFIED (search only).
 
 - The USGS pages give classes: soft 0 to 60 mg/L as CaCO3, moderately hard 61 to 120, hard 121 to 180, very hard above 180 (https://www.usgs.gov/faqs/do-you-have-information-about-water-hardness-united-states and the Water Science School page).
 - The national map is old: it is based on a 1975 river survey and describes surface water. A newer NAWQA domestic-well study exists.
@@ -273,44 +282,9 @@ FROM SEARCH.
 - Actual hardness depends on the utility's source and treatment, which can change street to street.
 - **Verdict:** not suitable. Use regional wording ("hard water is common across the Midwest, Plains and Southwest") and send the reader to the utility's annual Consumer Confidence Report. It is relevant to water-heater and pipe lifespan, so a regional note is nice-to-have only.
 
-## 11. Census ACS housing tables: needs verification, best candidate
-
-FROM SEARCH, plus VERIFIED ZCTA caveats (see the join section).
-
-- **Publisher:** US Census Bureau, American Community Survey, 5-year estimates (rolling; a new vintage each December).
-- **Tables:**
-  - **B25034** Year Structure Built (counts per bucket: 2020 or later, 2010-2019, 2000-2009, 1990-1999, 1980-1989, 1970-1979, 1960-1969, 1950-1959, 1940-1949, 1939 or earlier. Bucket edges are those used by recent ACS vintages; check the current vintage's variable list).
-  - **B25035** Median Year Structure Built.
-  - **B25040** House Heating Fuel (utility gas, bottled gas, electricity, fuel oil/kerosene, coal, wood, solar, other, none).
-  - **B25024** Units in Structure.
-  - **B25003** Tenure (owner/renter) could be added.
-  - Variable codes follow the pattern `B25034_001E` (total) and `B25034_002E` onward, with `M` for margin of error.
-- **Geography:** nation, state, county, place, tract, block group, and **ZCTA** (`zip code tabulation area`). Not all tables exist for every geography in every vintage; verify ZCTA availability for 5-year ACS.
-- **API (FROM SEARCH):**
-  - Pattern: `https://api.census.gov/data/2023/acs/acs5?get=NAME,B25034_001E,...&for=zip%20code%20tabulation%20area:*&key=KEY`
-  - County: `for=county:*&in=state:*`.
-  - Census's guide says up to 500 queries per IP per day work without a key, and more needs a free key. Another page says a key is now required for all data queries. **Conflicting; assume a free key is needed.**
-  - The 2023 page warns that older geography syntax from 2020 or earlier will not work.
-  - Bulk alternatives: the ACS summary-file FTP at `www2.census.gov/programs-surveys/acs/data/` and `data.census.gov`.
-  - I could not open any of these.
-- **Licence:** US Census Bureau data is public domain (Title 13 confidentiality applies to microdata only; tables are open). Attribution is customary.
-- **Size:** about 33,000 ZCTAs. Raw ACS 5-year CSV for these 4 tables with margins is tens of MB. After reducing to about 15 derived numbers per ZCTA, plan for about 0.8 to 1.5 MB total, about 250 to 400 KB gzipped. County table: 3,200 rows, about 100 KB.
-- **Plain-language facts:**
-  - "About 38% of homes in your ZIP were built before 1960. The median home was built in 1974." (B25034 and B25035.)
-  - "Most homes here heat with natural gas (62%); 21% use electricity; 9% fuel oil." (B25040.) Fuel oil share is a good lead-in to the oil-tank issue.
-  - "Your house is older than most of its neighbours." (compare the visitor's year to the median or to the percentile in the ZCTA's distribution.) This is the most distinctive item.
-  - "Pre-1978 share" can be built from B25034 buckets. The 1970-1979 bucket straddles 1978, so say "before 1980" or use "1970 and earlier" to avoid false precision. ACS has no 1978 break.
-- **Pitfalls:**
-  - These are **sample estimates with margins of error**, large for small ZCTAs. Suppress or flag ZCTAs with small totals, or show only coarse bands ("about a third").
-  - ACS "year built" is the owner's or occupant's report, with a known tendency to round and to be wrong. B25034 covers all housing units, including apartments.
-  - ZCTA is not ZIP (see the join section). Heating fuel is the **primary** fuel only.
-  - 5-year vintages blur time.
-  - Block groups would be finer, but have worse margins.
-- **Verdict:** needs verification of the endpoint, variable names and ZCTA availability, but it is the best candidate: free, public domain, ZIP-level, and directly about the housing stock.
-
 ## 12. Other things worth considering
 
-All FROM SEARCH.
+All UNVERIFIED (search only).
 
 - **EPA EJScreen "lead paint" indicator:**
   - It is the share of housing built before 1960, from ACS block-group data, and it is nearly the same as what we can build from B25034.
@@ -326,121 +300,136 @@ All FROM SEARCH.
 
 ---
 
-# (a) Recommended v1 place layer (4 to 6 datasets)
+# Recommended v1 place layer (updated to what actually works)
 
-Build these, in order of value and reliability:
+Build these five, in this order. All are VERIFIED downloadable today from reachable hosts, with no key.
 
-1. **ACS B25034 / B25035 by ZCTA, with county fallback** (item 11).
-   - Facts: share of homes built before 1960, median year built, where the visitor's house sits in the local range.
-   - This is the star of the layer.
-   - Needs verification of the API or bulk file first.
-2. **ACS B25040 heating fuel, same geography.**
-   - Fact: the common local heating fuel. Flags oil-tank and gas-appliance sections.
-3. **EPA radon zone by county** (item 1).
-   - The only dataset fully VERIFIED and downloaded.
-   - Shown with EPA's required "test anyway" caveat.
-4. **DOE/PNNL climate zone by county** (item 4).
-   - Drives envelope, moisture and HVAC guidance.
-   - Use the 2021 table once verified; fall back to the verified 2015 table.
-5. **HUD USPS ZIP-to-county crosswalk** (join table).
-   - Not a fact in itself; it feeds items 3, 4 and 6. Use the Census ZCTA relationship file as a fallback.
-6. **FEMA NFIP initial FIRM date by community or county** (item 3).
-   - Optional for v1 and conditional on a good join.
-   - Fact: when flood maps began locally.
-   - If the join to ZIP is not reliable, defer it.
+1. **ACS 2024 5-year B25034 + B25035, by ZCTA** (A). Facts: share of homes built before 1960 (and by decade), median year built, and how the visitor's house compares. The star of the layer.
+2. **ACS 2024 5-year B25040 heating fuel, by ZCTA** (A). Facts: the common local heating fuel, with oil and propane shares (leads into oil-tank and gas-appliance sections).
+3. **ZCTA to dominant county** (B). The join key to the county facts.
+4. **EPA radon zone by county FIPS** (C), always with EPA's "test anyway" caveat.
+5. **Climate zone by county FIPS** (D), from the verified 2015 DOE/PNNL table, labelled with its year. Swap in the 2021 table if it becomes reachable.
 
-Optional sixth: **FEMA NRI per-hazard ratings by county** (item 2), shown as "FEMA rates your county 'Relatively High' for [hazard]".
+Optional sixth: **NFIP initial-FIRM-year range by county** (F). Verified, but only a county-level proxy. Include only as "flood maps in this county began between YYYY and YYYY".
 
-**Join strategy**
+Dropped from v1: FEMA NRI (E, not downloadable here) and the HUD address-weighted crosswalk (G, token and bot refusal). ACS county fallback is verified but does not work for Connecticut.
 
-- Pipeline at build time, not in the browser:
-  1. ZIP → ZCTA (identity for most; drop PO-box-only ZIPs).
-  2. ZIP → county list via the HUD crosswalk, keeping rows with at least 10% of residential addresses, plus the dominant county.
-  3. County FIPS as the single key for radon, climate, NRI, wildfire and NFIP. The radon and PNNL tables have no FIPS, so match by name once, hand-fix exceptions, and commit a reviewed mapping file.
-  4. ACS tables joined by ZCTA, with the county row as a fallback.
-- Ship data as sharded static JSON keyed by the first 3 digits of the ZIP (about 900 shards), fetched on demand. This fits a static export and avoids 33,000 pages.
-- Include a vintage and source field in every record, and print "as of" dates in the report.
+## Join strategy (concrete)
 
-**Size estimate (static data)**
+1. **ZIP to ZCTA:** identity. If the ZIP is not in the ACS ZCTA table, show no ZIP-level fact.
+2. **ZCTA to county:** `tab20_zcta520_county20_natl.txt`. For each ZCTA keep the county with the largest `AREALAND_PART` (dominant), plus any other county with at least about 10% of the ZCTA's land area, if the UI wants to name them. Drop rows with an empty ZCTA.
+3. **County key:** 5-digit FIPS from `GEOID_COUNTY_20`. These are the 2020 counties (Connecticut's 8 old counties).
+4. **Radon:** match state abbreviation plus exact `COUNTY LABEL` to `national_county2020.txt`, then apply the fix list in section C (Alaska, DC, 3 spellings, 38 Virginia cities by adding " city", 3 merged Virginia cities to their counties; drop Yellowstone; copy Skagway's zone to Hoonah-Angoon `02105`). Never let a merged city overwrite the county's own zone.
+5. **Climate:** parse the PDF table, match state plus normalised county name, hand-fix the 28 rows listed in section D, plus Aroostook ME. Commit the reviewed result as a FIPS-keyed file.
+6. **NFIP:** split `county` on `/` and `,`, match to FIPS, then per county take min, median, max of valid initial-FIRM years (ignore years above 2026) and the community count.
+7. **ACS:** key by ZCTA (`860Z200US` prefix removed). Treat any negative estimate as null. Skip or flag ZCTAs with fewer than 100 housing units. County ACS (`0500000US`) is a fallback for ZCTAs with null data, except Connecticut.
+8. **Packaging:** shard by the first 3 digits of the ZIP (889 shards) so a static export serves one small file per lookup. Put the county facts in a single file. Every record carries source and vintage, and the report prints "as of" dates.
+
+## Measured data size (derived from the real files)
 
 | Piece | Rows | Raw JSON | Gzipped |
 |---|---|---|---|
-| ZIP → county (dominant plus others) | about 33,000 | about 0.5 MB | about 0.15 MB |
-| Radon + climate + (NRI, NFIP optional) by county | about 3,150 | about 0.1 to 0.4 MB | about 0.03 to 0.1 MB |
-| ACS reduced (about 15 values) by ZCTA | about 33,000 | about 1.0 to 1.5 MB | about 0.25 to 0.4 MB |
-| ACS reduced by county (fallback) | about 3,150 | about 0.1 MB | about 0.03 MB |
-| **Total for v1** | | **about 2 to 3 MB** | **about 0.5 to 0.8 MB** |
+| ZCTA shards (dominant county FIPS, ACS reduced record) | 32,961 ZCTAs in 889 shards | 2.40 MB total (largest shard 7.1 KB) | 0.92 MB total; median shard 1.0 KB, largest 2.5 KB |
+| County facts (radon, climate 2015, NFIP range) | 3,150 counties | 161 KB | 27 KB |
+| County ACS fallback | 3,222 counties | 217 KB | 76 KB |
+| **Total v1** | | **about 2.8 MB** | **about 1.0 MB** |
 
-Per ZIP shard (about 900 shards): roughly 3 to 5 KB gzipped each. These are my estimates, not measurements, except the radon files (measured: 620 KB JSON source with bulk, about 35 KB after trimming to three fields).
+Single-file alternative (all of it in one JSON): 2.77 MB raw, 894 KB gzipped, but sharding is better for page weight.
+
+Reduced ACS record per ZCTA (this is what was measured): `[total_units, median_year, [10 percent shares by build era], [gas%, propane%, electricity%, oil%, wood%], occupied_units]`.
 
 ---
 
-# (b) Hostnames that must be allowed to download and verify
+# Ready to build: what to download and what to keep
 
-Already reachable: `www.epa.gov` (radon verified), `www.energy.gov` (2015 climate table verified), `en.wikipedia.org`.
+All downloads are plain `curl -sL` with no headers or key.
 
-To be added:
+| File | Exact URL | Size |
+|---|---|---|
+| Year built (B25034) | `https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25034.dat` | 50,103,592 B |
+| Median year built (B25035) | `.../data/5YRData/acsdt5y2024-b25035.dat` (same folder) | 15,421,817 B |
+| Heating fuel (B25040) | `.../data/5YRData/acsdt5y2024-b25040.dat` | 43,870,500 B |
+| Table shells (labels) | `https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/documentation/ACS20245YR_Table_Shells.txt` | 5,622,840 B |
+| ZCTA to county | `https://www2.census.gov/geo/docs/maps-data/data/rel2020/zcta520/tab20_zcta520_county20_natl.txt` | 6,821,287 B |
+| County names and FIPS | `https://www2.census.gov/geo/docs/reference/codes2020/national_county2020.txt` | 126,639 B |
+| Radon zones | `https://www.epa.gov/system/files/other-files/2024-06/radon-zones-202406.json` | 620,064 B |
+| Climate zones (2015) | `https://www.energy.gov/sites/prod/files/2015/10/f27/ba_climate_region_guide_7.3.pdf` | 6,356,555 B |
+| NFIP community status | `https://www.fema.gov/api/open/v1/NfipCommunityStatusBook.csv` | 3,772,519 B |
 
-| Host | Needed for |
+Total download is about 133 MB, built once. Nothing here goes into the repo except the derived JSON.
+
+**Fields to keep**
+
+- **Per ZCTA (key: 5-digit ZCTA):**
+  - From B25034: `E001` total units; `E002` to `E011` each as a percent of `E001`.
+  - From B25035: `E001` median year (null if negative).
+  - From B25040: `E001` occupied units; `E002` utility gas, `E003` propane, `E004` electricity, `E005` oil, `E007` wood, each as a percent of `E001`.
+  - Margins (`M001` of B25034) only if the UI shows uncertainty.
+  - From the relationship file: dominant county FIPS (and optional secondary counties with their share).
+- **Per county (key: 5-digit FIPS):**
+  - Radon: `Zone` (1, 2 or 3).
+  - Climate: IECC zone number, moisture letter (A, B, C or none), Building America zone name, and the table year (2015).
+  - NFIP: earliest, median and latest initial-FIRM year, community count, and the data date (`lastRefresh`).
+  - Optional: county name from `national_county2020.txt`.
+- **Always:** source name, vintage and date for each field group.
+
+---
+
+# Hostnames: what is reachable now
+
+| Host | Result |
 |---|---|
-| `www.census.gov` | Documentation: ACS, ZCTA relationship record layouts, API user guide |
-| `api.census.gov` | ACS API (B25034, B25035, B25040, B25024) |
-| `www2.census.gov` | ZCTA-county relationship files (`rel2020/zcta520/...`) and ACS bulk files |
-| `data.census.gov` | Optional table browser |
-| `geocoding.geo.census.gov` | Optional: address geocoder (not needed for v1) |
-| `www.huduser.gov` | HUD USPS ZIP crosswalk page, bulk files and API (`/hudapi/public/usps`) |
-| `www.fema.gov` | OpenFEMA API (`/api/open/v1/NfipCommunityStatusBook`), NRI documents, dataset pages |
-| `hazards.fema.gov` | NRI data-resources and downloads, NFHL service (not for v1) |
-| `nri-data-downloads.s3.amazonaws.com` | NRI download mirror, if used |
-| `www.pnnl.gov` and `basc.pnnl.gov` | 2021/2022 climate-zone guide and data files |
-| `www.osti.gov` | OSTI copy of PNNL-33270 |
-| `www.energycodes.gov` | State energy-code status pages |
-| `www.ncsl.org` | CO and smoke-alarm statute tables |
-| `www.iccsafe.org` | ICC Master I-Code Adoption Chart PDFs |
-| `www.nahb.org` | NEC, energy-code and sprinkler adoption PDFs |
-| `www.nema.org` | NEC adoption map |
-| `www.fs.usda.gov` and `research.fs.usda.gov` | Wildfire Risk to Communities archive pages |
-| `wildfirerisk.org` | Wildfire spreadsheets |
-| `earthquake.usgs.gov` and `www.usgs.gov` | Design-maps web service, hardness and swelling-clay pages |
-| `sdwis.epa.gov` | Lead service line inventory dashboard and export (not `www.epa.gov`) |
+| `www2.census.gov` | OK. ACS table-based files and the relationship and FIPS files |
+| `api.census.gov` | Metadata OK; **data queries need a key** |
+| `www.census.gov` | OK (documentation pages) |
+| `www.epa.gov`, `www.energy.gov` | OK |
+| `www.fema.gov` | **API paths OK** (`/api/open/v1/...`); web pages and PDFs 403 |
+| `hazards.fema.gov` | 403 "Access Denied" for every path tried |
+| `www.huduser.gov` | Empty HTTP 202 for pages; API 401 (token needed) |
+| `www.pnnl.gov` | 403 "Request Rejected" for the PDF and the publication page |
+| `basc.pnnl.gov`, `www.osti.gov`, `www.energycodes.gov` | Refused by the session proxy (not allowed) |
+| `nri-data-downloads.s3.amazonaws.com` | Bucket does not exist |
 
-Priority for v1 verification: `api.census.gov`, `www2.census.gov`, `www.huduser.gov`, `www.fema.gov` (OpenFEMA), `www.pnnl.gov` / `www.osti.gov`, `hazards.fema.gov`. Those cover items 11, 5/crosswalk, 3, 4 and 2.
+If the owner wants the 2021 climate table, they would need to allow `www.osti.gov` (the OSTI copy of PNNL-33270) or `basc.pnnl.gov`, or download the PDF in a browser. For NRI they would download "All Counties - Table" in a browser. Hosts for sections 5 to 10 and 12 are unchanged from the first pass (energycodes.gov, ncsl.org, iccsafe.org, nahb.org, nema.org, fs.usda.gov, wildfirerisk.org, earthquake.usgs.gov, www.usgs.gov, sdwis.epa.gov); none was tested this time.
 
 ---
 
-# (c) Which excluded address-dependent issues each dataset lets us responsibly bring back
+# Which excluded address-dependent issues each dataset lets us responsibly bring back
 
 | Issue | Dataset | What can be said, at what granularity | Not allowed |
 |---|---|---|---|
-| Flood / pre-FIRM | NFIP Community Status Book initial FIRM date (item 3), needs verification | "Your community's first flood map was in YYYY; homes built earlier were not built to flood-map rules." Community or county level. | Anything about this house's flood zone or insurance cost. That needs the parcel (NFHL plus elevation certificate). |
-| Radon | EPA zones (item 1), verified | "EPA predicts county average radon potential: Zone N." County level, always with "test every home". | Skipping a test or a "safe" claim for Zone 3. |
-| Wildfire code / exposure | USFS WRC (item 6c), needs verification | County-level "wildfire risk to homes" band, noting 2014 fuel data. Pair with era facts such as wood shake roofs. | Wildfire-code compliance. There is no dataset of when wildfire codes (e.g. WUI codes) took effect; that remains local and hand-curated. |
-| Expansive soil | none suitable (item 8) | Only a region-level note citing the 1989 USGS map. | Any county or ZIP claim. |
-| Lead service lines | EPA inventory (item 9), needs `sdwis.epa.gov` | State-level counts, and "ask your utility for its inventory". Possibly water-system level if a ZIP-to-system join is found. | Saying a given ZIP or house has lead lines. Missing data is counted as non-lead by EPA. |
-| Hazard setting (earthquake, hurricane, tornado, hail, winter weather) | NRI (item 2), needs verification | County or tract relative rating per hazard. | Design categories, wind speeds or any building-code requirement. |
-| Local housing stock | ACS (item 11) | ZIP/ZCTA-level distributions and heating-fuel share, with margin-of-error rules. | Claims about a specific neighbour or street. |
-| Energy and insulation expectations | PNNL climate zone (item 4) | County level. | What the house actually has. |
+| Flood / pre-FIRM | NFIP Community Status Book (F), VERIFIED | "Flood maps in this county began between YYYY and YYYY." County range only. | Anything about this house's flood zone or insurance cost. That needs the parcel (NFHL plus elevation certificate). |
+| Radon | EPA zones (C), VERIFIED | "EPA predicts county average radon potential: Zone N." Always with "test every home". | Skipping a test, or any "safe" claim for Zone 3. |
+| Local housing stock and heating fuel | ACS (A), VERIFIED | ZCTA distributions with the margin-of-error rule; compare the visitor's year with the local median. | Claims about a specific neighbour or street. |
+| Energy and insulation expectations | Climate zones (D), 2015 table VERIFIED | County level, with the table year. | What the house actually has. |
+| Hazard setting (earthquake, hurricane, tornado, hail, winter weather) | NRI (E), UNVERIFIED | Not available yet. | Design categories, wind speeds or any code requirement. |
+| Wildfire exposure | USFS WRC (6c), UNVERIFIED | Not available yet. | Wildfire-code compliance. |
+| Expansive soil | none suitable (section 8) | Region-level note only. | Any county or ZIP claim. |
+| Lead service lines | EPA inventory (section 9), UNVERIFIED | State-level counts and "ask your utility". | Saying a ZIP or house has lead lines. |
 
-# (d) What stays infeasible without paid property data
+# What stays infeasible without paid property data
 
-- Whether this specific house is in a flood zone, its elevation, or its flood insurance history. That needs a geocoded parcel against NFHL (the free service exists, but it needs an address and a runtime call), plus elevation certificates.
-- The actual build year, renovation history, roof age, panel and wiring type, heating and water-heater age, and permit history. Those are assessor, MLS or permit records, available commercially (CoreLogic, ATTOM and similar) or county by county.
-- Whether a lead service line serves this house: only the utility's own record, or a customer-side check.
+- Whether this specific house is in a flood zone, its elevation, or its flood insurance history. That needs a geocoded parcel against NFHL plus elevation certificates.
+- The actual build year, renovation history, roof age, panel and wiring type, heating and water-heater age, and permit history. Those are assessor, MLS or permit records, available commercially or county by county.
+- Whether a lead service line serves this house: only the utility's own record.
 - Soil type under this lot, lot-level wildfire defensible space, termite history, and actual radon level. Each needs a site test or a parcel dataset.
-- Which edition of the code applied to this house when it was built, where adoption was local (county or city). There is no national dataset. A paid code-adoption history service might exist but I did not find one.
+- Which edition of the code applied to this house when it was built, where adoption was local. There is no national dataset.
 - Anything keyed to the address, such as insurance claims, recall or class-action eligibility, or neighbourhood sales.
 
-All of these should remain "ask your inspector, utility or local building department", worded as such.
+All of these stay "ask your inspector, utility or local building department".
 
 ---
 
-# Risks and open verification items
+# Risks and open items
 
-1. ACS API details (key requirement, ZCTA availability for B25034/B25035/B25040 in the current vintage) are FROM SEARCH only. The search results conflicted on whether a key is required.
-2. The ZIP to county step is approximate in every case. Wikipedia (verified) and HUD (search) both say so. Wording in the UI must reflect that.
-3. The radon and PNNL tables lack FIPS, so a one-off name-matching and review step is needed (Connecticut, Louisiana, Alaska, Virginia).
-4. The NRI version and licence are unconfirmed (search suggests v1.18.1 at Nov 2021 as the latest listed; the current version is unknown).
-5. The EPA radon map is 1993 science. The caveat text is mandatory.
-6. The state-specific code years (item 5) have no ready dataset. Only hand-verified entries should replace the "earliest possible" model-code years.
-7. The lead service line inventory is incomplete and treats missing data as non-lead.
-8. The search tool's summaries are not primary sources. Treat every FROM SEARCH line as a lead to check.
+1. **api.census.gov data needs a key.** The bulk files avoid it. If the owner prefers the API, a free key is needed. Rate limits were not seen.
+2. **ZIP is not ZCTA.** About 10,000 ZIPs have no ZCTA, and 30% of ZCTAs touch more than one county. Area-based county overlap is not address-based. The HUD crosswalk could not be opened.
+3. **Connecticut:** the ACS 2024 county table uses planning regions; the relationship file and the radon, climate and NFIP tables use old counties. County ACS fallback fails there.
+4. **Climate zones are the 2015 table.** The 2021 revision is not reachable here and changed some counties. Label the year.
+5. **FEMA NRI is unverified:** no file, no column list, and FEMA's appropriate-use wording could not be quoted. It is not in v1.
+6. **NFIP data has errors** (initial FIRM years in the 2060s) and is community-level. Filter and use ranges only.
+7. **The EPA radon map is 1993 science.** The caveat text is mandatory.
+8. **State-specific code years** (section 5) have no ready dataset. Only hand-verified entries should replace "earliest possible" model-code years.
+9. **The lead service line inventory** is incomplete and treats missing data as non-lead.
+10. **ACS reliability:** small ZCTAs have large margins; 811 ZCTAs have no housing units and a sentinel median of -666666666.
+11. Sections 5 to 10 and 12 below still rest on search summaries only.
