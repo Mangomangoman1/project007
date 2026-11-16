@@ -1,0 +1,43 @@
+.legend {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2) var(--s-5);
+  font-family: var(--font-mono);
+  font-size: var(--t-2xs);
+  letter-spacing: 0.04em;
+  color: var(--ink-2);
+}
+.legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+}
+.legend svg {
+  flex: none;
+}
+.tint {
+  fill: var(--band);
+  fill-opacity: 0.45;
+}
+.solid {
+  fill: var(--band);
+}
+.cap {
+  stroke: var(--band);
+  stroke-width: 1.5;
+}
+.accent {
+  fill: var(--accent);
+}
+.stop0 {
+  stop-color: var(--band);
+  stop-opacity: 0;
+}
+.stop1 {
+  stop-color: var(--band);
+  stop-opacity: 1;
+}
+.compact {
+  gap: var(--s-2) var(--s-4);
+}

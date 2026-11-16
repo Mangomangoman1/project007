@@ -1,0 +1,2522 @@
+{
+  "knob-and-tube-wiring": {
+    "include": true,
+    "slug": "knob-and-tube-wiring",
+    "title": "Knob-and-tube wiring",
+    "category": "electrical",
+    "hook": "Houses wired before about 1940 started out with single wires strung on porcelain knobs, no ground wire, and insulation that is now more than 80 years old.",
+    "summary": "Knob-and-tube was the standard way to wire a house from about 1880 into the 1940s: separate cloth-covered wires run on ceramic knobs and through ceramic tubes, with no ground. The insulation gets brittle with age, and the US Department of Energy says active knob-and-tube should be replaced before insulation is added around it. Many houses were only partly rewired, so old runs can survive in walls and attics.",
+    "kind": "present",
+    "applies": {
+      "from": null,
+      "to": 1945,
+      "coreFrom": 1900,
+      "coreTo": 1930,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 1,
+    "evidence": "era",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. A house wired between about 1900 and 1930 almost certainly started with it; how much is still live depends on later rewiring, which nobody tracks."
+    },
+    "retrofit": false,
+    "where": [
+      "attic",
+      "basement-foundation",
+      "wiring-outlets",
+      "electrical-panel"
+    ],
+    "check": [
+      "In the unfinished basement ceiling or the attic, look for white ceramic knobs nailed to the joists and ceramic tubes passing through them.",
+      "Look for two separate cloth-covered wires running several inches apart, rather than one plastic-sheathed cable.",
+      "Supporting clues: push-button light switches, two-slot outlets and a fuse box.",
+      "Modern cable at the panel does not rule it out, because knob-and-tube is often spliced in further along the circuit."
+    ],
+    "action": "Have a licensed electrician find out which circuits are still live, especially before adding insulation, and keep insulation off any live runs. Replacing those circuits is the usual fix. Talk to your insurer early: InterNACHI notes that many insurers refuse to cover active knob-and-tube.",
+    "caveat": "Sources put the end of new installs anywhere from about 1930 (DOE) to the 1940s (trade and reference sources), so the end date is soft. Many houses of this age have been fully or partly rewired."
+  },
+  "cloth-rubber-insulated-wiring": {
+    "include": true,
+    "slug": "cloth-covered-wiring",
+    "title": "Cloth-covered rubber-insulated wiring",
+    "category": "electrical",
+    "hook": "Between knob-and-tube and modern plastic cable, houses were wired with rubber-insulated wire in a woven cloth jacket, and that rubber crumbles with age.",
+    "summary": "Cable of this kind was invented in 1922 and first listed in the National Electrical Code in 1926. For decades after, wiring commonly used rubber-insulated conductors inside a cloth or steel-armored jacket. The rubber dries out and flakes, worst at hot ceiling light boxes, and most of this cable has no ground wire.",
+    "kind": "present",
+    "applies": {
+      "from": 1925,
+      "to": 1965,
+      "coreFrom": 1930,
+      "coreTo": 1955,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "era",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. For a house built from about 1930 to 1955 that was never rewired, this was the normal wiring method."
+    },
+    "retrofit": false,
+    "where": [
+      "wiring-outlets",
+      "electrical-panel",
+      "basement-foundation",
+      "attic"
+    ],
+    "check": [
+      "At the panel, in the basement or in the attic, look for cables with a braided fabric outer covering (black, silver or brown, sometimes tarry) instead of smooth plastic.",
+      "Inside boxes, the individual wires have cloth over black or red rubber that cracks or flakes. Ceiling light boxes, where heat damage is worst, are the place for an electrician to look first.",
+      "Do not bend or flex old wires to test them."
+    ],
+    "action": "Have an electrician check the lighting circuits and any brittle runs. Replacing the worst runs, or rewiring, is the usual fix; GFCI or AFCI protection can be added in the meantime.",
+    "caveat": "The start is anchored by the 1926 code listing, but the end year is a rule of thumb, not a confirmed date: plastic-insulated cable took over gradually, roughly by the 1960s. Many houses of this era have since been rewired."
+  },
+  "ungrounded-two-prong-outlets": {
+    "include": true,
+    "slug": "two-prong-outlets",
+    "title": "Two-prong outlets with no ground",
+    "category": "electrical",
+    "hook": "Outlets with only two slots were normal until 1962, when grounded outlets became required in new houses.",
+    "summary": "Before the early 1960s, house circuits usually had two wires and no ground. Three-prong appliances and surge protectors rely on a ground, and plug adapters defeat that protection. One reference source dates the rule for every new outlet later still, to January 1, 1974.",
+    "kind": "present",
+    "applies": {
+      "from": null,
+      "to": 1966,
+      "coreFrom": null,
+      "coreTo": 1961,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. Before 1962 the code did not require grounded outlets, so a house of that age started with mostly two-wire circuits; how many have been rewired is unknown."
+    },
+    "retrofit": false,
+    "where": [
+      "wiring-outlets",
+      "electrical-panel"
+    ],
+    "check": [
+      "Look at the outlets: two slots and no round ground hole means an ungrounded outlet.",
+      "Where an older house has three-prong outlets, a plug-in outlet tester from a hardware store will show 'open ground' if no ground is connected.",
+      "At the panel, look for old cables with only two conductors and no bare wire."
+    ],
+    "action": "An electrician can run new grounded circuits, or protect ungrounded outlets with GFCI devices labeled 'No Equipment Ground', an accepted fix according to InterNACHI. A GFCI gives shock protection but is not a true ground.",
+    "caveat": "1962 is the year trade and reference sources give for new construction; the 1974 date and local adoption lag mean some later houses may have two-wire circuits too. Many older houses have been partly rewired, or had three-prong outlets swapped in with no ground behind them."
+  },
+  "aluminum-branch-wiring": {
+    "include": true,
+    "slug": "aluminum-branch-wiring",
+    "title": "Aluminum branch wiring",
+    "category": "electrical",
+    "hook": "From 1965 to the mid-1970s, some houses were wired with solid aluminum instead of copper, and CPSC found that connections in pre-1972 aluminum-wired homes were 55 times more likely to reach fire-hazard conditions.",
+    "summary": "Single-strand aluminum wire was used for ordinary outlet and light circuits in an estimated two million homes and mobile homes built from 1965 on, according to CPSC. The risk is at the connections, at outlets, switches and splices, which can loosen and overheat. CPSC recognizes specific permanent repairs.",
+    "kind": "present",
+    "applies": {
+      "from": 1965,
+      "to": 1975,
+      "coreFrom": 1965,
+      "coreTo": 1972,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 1,
+    "evidence": "era",
+    "prevalence": {
+      "label": "possible",
+      "note": "CPSC estimated in 1974 that about two million homes and mobile homes had been built with aluminum wiring since 1965. No figure gives the share of houses of the era."
+    },
+    "retrofit": false,
+    "where": [
+      "wiring-outlets",
+      "electrical-panel",
+      "attic",
+      "basement-foundation"
+    ],
+    "check": [
+      "Look at any exposed cable in the attic, basement or near the panel for 'AL' or 'ALUMINUM' printed on the plastic jacket every few feet.",
+      "'CU-clad' or 'copper-clad' aluminum is a different, lower-risk product.",
+      "Warning signs: cover plates that feel warm, flickering lights, or a smell of burning plastic at an outlet.",
+      "Do not open outlet or switch boxes yourself."
+    ],
+    "action": "Call a licensed electrician who uses the CPSC-recognized repairs: rewiring with copper, COPALUM crimp connectors, or AlumiConn connectors. CPSC calls CO/ALR outlets and switches an incomplete repair and twist-on pigtail connectors a temporary measure. If you notice warm plates or a burning smell, stop using that circuit until it is checked.",
+    "caveat": "CPSC's hazard figure covers homes wired before 1972; later aluminum wire used an improved alloy and has less data behind it. CPSC dates use only to 'the mid 1970s', so the end year is soft. Most houses of the era were wired in copper."
+  },
+  "fpe-stab-lok-panels": {
+    "include": true,
+    "slug": "federal-pacific-stab-lok-panels",
+    "title": "Federal Pacific Stab-Lok panels",
+    "category": "electrical",
+    "hook": "Federal Pacific Stab-Lok breaker panels, made from 1950 to 1980, are among the panels home inspectors flag most, and CPSC's own testing found breakers that failed calibration tests.",
+    "summary": "Federal Pacific Electric made Stab-Lok breakers from 1950 to 1980, and they turn up mostly in houses built before 1990. CPSC investigated from 1980 to 1983, confirmed breakers failing UL calibration tests, then closed the matter without a recall and without deciding whether they are safe. CPSC advises having these panels inspected by an electrician.",
+    "kind": "present",
+    "applies": {
+      "from": 1950,
+      "to": 1990,
+      "coreFrom": 1955,
+      "coreTo": 1980,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 1,
+    "evidence": "era",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. Claims of 'millions of homes' come from advocacy sources, and no market-share data was found."
+    },
+    "retrofit": false,
+    "where": [
+      "electrical-panel"
+    ],
+    "check": [
+      "Open the panel door (not the inner cover) and read the label for 'Federal Pacific Electric', 'FPE' or 'Federal Pioneer'.",
+      "Look for 'Stab-Lok' printed on or near the breakers.",
+      "Breaker handles often have a red or orange stripe across the tip."
+    ],
+    "action": "Have a licensed electrician inspect it, as CPSC advises. Replacing the whole panel is the usual fix; replacement breakers of the same type are not shown to be any better. There was never a recall, so there is no manufacturer remedy.",
+    "caveat": "CPSC closed its investigation without a finding either way, and the widely quoted failure rates come from independent testing that could not be checked. FPE's own production ended around 1980; later panels of this design came from successor companies."
+  },
+  "zinsco-sylvania-panels": {
+    "include": true,
+    "slug": "zinsco-panels",
+    "title": "Zinsco and Sylvania-Zinsco panels",
+    "category": "electrical",
+    "hook": "Zinsco panels, made from 1943 until about 1981 and later sold under the Sylvania name, have narrow breakers with brightly colored tips, and inspectors treat them as a problem panel.",
+    "summary": "Zinsco made panels from 1943, sold the business to GTE-Sylvania in 1973, and production of Zinsco-design panels ended around 1981. InterNACHI says these panels have a reputation for being problematic and recommends evaluation by an electrician. The aluminum bus bars tied to the failures came in during the early 1960s.",
+    "kind": "present",
+    "applies": {
+      "from": 1943,
+      "to": 1981,
+      "coreFrom": 1963,
+      "coreTo": 1980,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "era",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. Trade sources say they were most common in the West, but no figure backs that."
+    },
+    "retrofit": false,
+    "where": [
+      "electrical-panel"
+    ],
+    "check": [
+      "Open the panel door and read the label for Zinsco, Sylvania, Sylvania-Zinsco, GTE-Sylvania or Kearney.",
+      "The breakers are distinctive: narrow, with brightly colored handle tips (red, blue, green or yellow), clipped onto vertical bus bars."
+    ],
+    "action": "Have a licensed electrician evaluate the panel. Replacing the whole panel is the usual fix, because new breakers do not change the bus design.",
+    "caveat": "The dates rest mainly on one reference article, and the failure rates that circulate come from non-government testing. Plenty of these panels are still working, but InterNACHI treats the brand as one to have checked."
+  },
+  "challenger-panels": {
+    "include": true,
+    "slug": "challenger-panels",
+    "title": "Challenger breaker panels",
+    "category": "electrical",
+    "hook": "Challenger panels, the successor to the Zinsco line, were sold from 1978 to 1994, and one batch of their GFCI breakers was recalled in 1988.",
+    "summary": "The Zinsco product line was relabeled Challenger in 1978, and the business passed to Eaton in 1994. In 1988 CPSC announced a recall of about 9,000 Challenger GFCI breakers, types HAGF-15 and HAGF-20, made between February 22 and April 29, 1988, which might not provide ground-fault protection. Broader overheating claims about Challenger panels rest on inspector reports, not an agency finding.",
+    "kind": "present",
+    "applies": {
+      "from": 1978,
+      "to": 1994,
+      "coreFrom": 1984,
+      "coreTo": 1992,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 3,
+    "evidence": "record",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. The 1988 recall covered about 9,000 breakers."
+    },
+    "retrofit": false,
+    "where": [
+      "electrical-panel"
+    ],
+    "check": [
+      "Look for 'Challenger' embossed on the panel door handle or printed on the label inside the door.",
+      "Look for 15- or 20-amp breakers with a test button marked HAGF-15 or HAGF-20; those are the recalled types."
+    ],
+    "action": "Have an electrician check the panel for heat damage and for HAGF breakers. If either turns up, or your insurer asks, replacing the panel is the usual route.",
+    "caveat": "Panels labeled Challenger from 1978 to about 1981 are Zinsco-design panels. Production years come from one reference article, and the recall covered only breakers made in a two-month window in 1988."
+  },
+  "fuse-box-60-amp-service": {
+    "include": true,
+    "slug": "fuse-box-60-amp-service",
+    "title": "Fuse box and 60-amp service",
+    "category": "electrical",
+    "hook": "Houses built from 1940 through 1965 commonly got a 60-amp fuse box with four screw-in fuses; after 1965, 100-amp service became the norm.",
+    "summary": "A 60-amp fuse box was typical in houses built from 1940 through 1965, after which 100-amp panels became common. The risks are over-fusing (a bigger fuse on a small circuit, which defeats the protection) and a service too small for modern loads. Many have been upgraded, but nobody counts how many.",
+    "kind": "present",
+    "applies": {
+      "from": null,
+      "to": 1965,
+      "coreFrom": 1940,
+      "coreTo": 1960,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "era",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. Most fused services of this era have probably been upgraded, but no data shows the share."
+    },
+    "retrofit": false,
+    "where": [
+      "electrical-panel"
+    ],
+    "check": [
+      "Find the main panel: round screw-in fuses, or pull-out blocks holding cartridge fuses, instead of rows of switches mean a fuse box.",
+      "The service size is printed on the main pull-out or main fuse; look for '60'.",
+      "A round meter base outside usually indicates 60 amps or less."
+    ],
+    "action": "Have a licensed electrician check that each fuse matches its wire size and assess the service. Upgrading to a 100- to 200-amp breaker service, which involves the utility, is the usual long-term fix. Never fit a larger fuse to stop one blowing.",
+    "caveat": "The 1940 to 1965 range comes from one reference source, and the code history of the 100-amp minimum was not confirmed. Many houses of this era have had their service upgraded."
+  },
+  "split-bus-panels": {
+    "include": true,
+    "slug": "split-bus-panels",
+    "title": "Split-bus panels with no main breaker",
+    "category": "electrical",
+    "hook": "Between the 1950s and the mid-1980s, many houses got a split-bus panel, which has no single main breaker: shutting off all the power can take up to six switches.",
+    "summary": "A split-bus panel puts up to six large breakers in an upper group, one of which feeds a lower group of smaller breakers. Existing ones are allowed to stay, but there is no one-switch shutoff in an emergency and the panels are now decades old. Since the 2020 National Electrical Code, new services must have one main disconnect.",
+    "kind": "present",
+    "applies": {
+      "from": 1950,
+      "to": 1985,
+      "coreFrom": 1960,
+      "coreTo": 1978,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 3,
+    "evidence": "era",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. Most manufacturers offered this style, but its share of houses of the era is unknown."
+    },
+    "retrofit": false,
+    "where": [
+      "electrical-panel"
+    ],
+    "check": [
+      "Open the panel door: there is no single large breaker marked 'Main'.",
+      "Instead you see a top group of up to six double-pole breakers, one often labeled 'Lighting Main' or 'Sub Main', and a separate lower group of single-pole breakers.",
+      "Read the brand on the label too: some split-bus panels are Federal Pacific or Zinsco."
+    ],
+    "action": "Make sure the breakers that shut off the house are clearly labeled. Have an electrician inspect it, and plan to replace it with a main-breaker panel when its condition calls for it or you add big loads such as an EV charger or heat pump.",
+    "caveat": "The end date comes from one trade source ('mid-1980s'); the claim that a 1981 code change ended the design was not confirmed. Many of these panels have already been replaced."
+  },
+  "gfci-protection-milestones": {
+    "include": true,
+    "slug": "missing-gfci-protection",
+    "title": "Missing GFCI shock protection",
+    "category": "electrical",
+    "hook": "Houses built before 1973 had no GFCI shock protection at all, and the rules then added it one room at a time: bathrooms in 1975, garages in 1978, kitchens in 1987.",
+    "summary": "A GFCI cuts the power in a fraction of a second when current leaks to ground, the kind of fault that electrocutes people near water. CPSC dates the requirements: outdoor outlets 1973, bathrooms 1975, garages 1978, some kitchen outlets 1987, unfinished basements and crawl spaces 1990. A house built before a given year was not required to have protection there unless it was added later.",
+    "kind": "missing",
+    "applies": {
+      "from": null,
+      "to": 1992,
+      "coreFrom": null,
+      "coreTo": 1972,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. on how many older houses have had GFCIs added. CPSC notes that houses built before 1973 have no GFCI protection unless it was installed later."
+    },
+    "retrofit": true,
+    "where": [
+      "bathroom",
+      "kitchen",
+      "garage",
+      "exterior-walls",
+      "basement-foundation",
+      "electrical-panel"
+    ],
+    "check": [
+      "Look for outlets with TEST and RESET buttons in bathrooms, at kitchen counters, in the garage, outdoors, in the basement and in the laundry.",
+      "Check the panel for breakers with a test button; a GFCI breaker protects a whole circuit.",
+      "One GFCI can protect ordinary-looking outlets further along the circuit: press TEST and see which outlets go dead.",
+      "Press RESET afterwards. GFCIs wear out, and older units can fail without any sign."
+    ],
+    "action": "An electrician can add GFCI outlets or breakers where they are missing; they are allowed on ungrounded circuits too. Replace any GFCI that does not trip when tested.",
+    "caveat": "These are national code edition years. States and cities adopted each edition anywhere from the same year to several years later, so a house built just after a milestone may not have that protection. Many older houses have had GFCIs added since, so build year is only a rough guide."
+  },
+  "afci-protection-milestones": {
+    "include": true,
+    "slug": "no-arc-fault-breakers",
+    "title": "No arc-fault (AFCI) breakers",
+    "category": "electrical",
+    "hook": "Arc-fault breakers, which detect the sparking that can start wiring fires, were first required in bedrooms of new houses in 2002.",
+    "summary": "The 1999 National Electrical Code required AFCIs on bedroom circuits from 2002, for new construction only. Later editions widened the list: living areas, closets and hallways in 2008, kitchens and laundry areas in 2014. Houses built earlier usually have none, which matters most where wiring is old or damaged.",
+    "kind": "missing",
+    "applies": {
+      "from": null,
+      "to": 2004,
+      "coreFrom": null,
+      "coreTo": 2001,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 3,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. Houses built before about 2002 will lack AFCIs unless they were added later."
+    },
+    "retrofit": false,
+    "where": [
+      "electrical-panel",
+      "wiring-outlets"
+    ],
+    "check": [
+      "Open the panel door and look for breakers with a TEST button labeled AFCI, 'Arc Fault', 'Combination AFCI' or 'Dual Function'.",
+      "Ordinary breakers have no test button."
+    ],
+    "action": "This is an optional upgrade: an electrician can fit AFCI or dual-function breakers where your panel supports them. They are not made for many older panels.",
+    "caveat": "AFCI adoption was unusually uneven: several states delayed, limited or amended out the requirement, so build year is a weak guide on its own. Only the 2002 bedroom date is confirmed by a primary source."
+  },
+  "tamper-resistant-receptacles": {
+    "include": true,
+    "slug": "tamper-resistant-outlets",
+    "title": "Outlets without child-safety shutters",
+    "category": "electrical",
+    "hook": "Since the 2008 electrical code, new houses get outlets with built-in shutters that stop a child pushing a key or hairpin into the slot.",
+    "summary": "Tamper-resistant outlets have spring-loaded shutters that open only when both prongs of a plug push in together. They were first required by the 2008 National Electrical Code, and by 2016 that applied to new houses in all but five states. A figure cited by the electrical manufacturers' association and InterNACHI is about 2,400 children a year hurt by pushing objects into outlets.",
+    "kind": "missing",
+    "applies": {
+      "from": null,
+      "to": 2010,
+      "coreFrom": null,
+      "coreTo": 2007,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 3,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. Houses built before their state adopted the 2008 code will generally lack them unless outlets were replaced."
+    },
+    "retrofit": false,
+    "where": [
+      "wiring-outlets"
+    ],
+    "check": [
+      "Look closely at an outlet: 'TR' embossed on the face between the slots means tamper-resistant.",
+      "You can see plastic shutters inside the slots."
+    ],
+    "action": "If small children live in or visit the house, have outlets replaced with TR-listed ones. Current code requires a TR outlet whenever one is replaced anyway, and they cost little more than standard ones.",
+    "caveat": "2008 is the model code year; states adopted it at different times. The rule did not cover manufactured homes."
+  },
+  "square-d-qo-pon-recall-2020-2022": {
+    "include": true,
+    "slug": "square-d-qo-plug-on-neutral-recall",
+    "title": "Square D QO Plug-On Neutral panel recall",
+    "category": "electrical",
+    "hook": "About 1.4 million Square D QO Plug-On Neutral panels made between February 2020 and January 2022 were recalled for an overheating and fire hazard.",
+    "summary": "In June 2022, CPSC announced the recall of Square D QO Plug-On Neutral load centers made February 2020 through January 2022, date codes 200561 to 220233. At the time the firm had one report of a loose wire and no injuries. The remedy offered was a free inspection and repair or replacement.",
+    "kind": "present",
+    "applies": {
+      "from": 2020,
+      "to": 2023,
+      "coreFrom": 2020,
+      "coreTo": 2022,
+      "startEdge": "sharp",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 1,
+    "evidence": "record",
+    "prevalence": {
+      "label": "possible",
+      "note": "CPSC: about 1.4 million units in the US. No figure gives the share of houses built in these years."
+    },
+    "retrofit": true,
+    "where": [
+      "electrical-panel"
+    ],
+    "check": [
+      "Open the panel door and look for 'Square D', 'QO' and 'Plug-On Neutral' on the label.",
+      "Find the catalog number and date code on the label inside the door; recalled units have date codes from 200561 to 220233.",
+      "Compare with the recall notice, or call Schneider Electric at 888-778-2733."
+    ],
+    "action": "If yours is in the recall range, contact Schneider Electric for the free inspection and repair or replacement under CPSC recall 22-159. It was not confirmed whether the program is still running, so call to check.",
+    "caveat": "The recall also covers panels installed as replacements in older houses, so build year is only a rough guide. Houses finished in 2022 and 2023 may have panels from late in the window. Most houses built in these years have other brands or models."
+  },
+  "hardwired-interconnected-smoke-alarms": {
+    "include": false,
+    "reason": "Duplicate of smoke-alarms-by-era, which covers the same milestones; its sources are pulled in there via sourceIds."
+  },
+  "lead-service-line": {
+    "include": true,
+    "slug": "lead-service-line",
+    "title": "Lead water service line",
+    "category": "hazmat",
+    "hook": "The pipe that brings water from the street into many older houses is made of lead, and EPA estimates about 4 million of these lines are still in use.",
+    "summary": "Lead service lines were common in older cities and were banned for new installations in June 1986. EPA says lead pipes are more likely in older cities and in homes built before 1986, though a trade source says lead was rarely used for service pipe after about 1950. Your water utility's public service line inventory is the best way to find out.",
+    "kind": "present",
+    "applies": {
+      "from": null,
+      "to": 1986,
+      "coreFrom": null,
+      "coreTo": 1950,
+      "startEdge": "soft",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 1,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "possible",
+      "note": "EPA's 2025 estimate is about 4 million lead service lines nationwide, down from 9.2 million in its 2023 survey. They are concentrated in older cities, and no figure gives the share by build year."
+    },
+    "retrofit": false,
+    "where": [
+      "plumbing-supply",
+      "basement-foundation"
+    ],
+    "check": [
+      "Find where the water pipe enters the house, usually in the basement or crawl space near the meter.",
+      "Lead is dull gray and soft: scratch it gently with a coin or key and it shows shiny silver. A magnet will not stick, and joints often have a bulging 'wiped' shape.",
+      "Galvanized steel is gray but hard and magnetic; copper is the color of a penny.",
+      "Look up your address in the water utility's public service line inventory."
+    ],
+    "action": "If you find lead, or the utility lists your line as lead or unknown, use a filter certified to NSF/ANSI 53 for lead for drinking and cooking water, and ask the utility about replacement programs. EPA puts full replacement at $1,200 to $12,300 per line, averaging $4,700. Replace the whole line, not just part of it.",
+    "caveat": "Whether a given house has a lead line depends much more on the city than on the year: some places stopped by about 1950, while others kept using lead until the 1986 ban. EPA's national estimates have also changed sharply between surveys."
+  },
+  "lead-solder-copper": {
+    "include": true,
+    "slug": "lead-solder-copper-pipes",
+    "title": "Lead solder in copper water pipes",
+    "category": "hazmat",
+    "hook": "Copper water pipes installed before mid-1986 were commonly joined with lead solder, and EPA says solder and old brass fixtures are the most common lead source in homes without a lead service line.",
+    "summary": "The 1986 Safe Drinking Water Act amendments banned solder with more than 0.2% lead in drinking-water plumbing after June 19, 1986, and gave states 24 months to enforce it. Faucets and fittings could still contain up to 8% lead until the limit dropped to a 0.25% weighted average in January 2014. You cannot reliably tell lead solder by eye; a water test is the practical check.",
+    "kind": "present",
+    "applies": {
+      "from": 1930,
+      "to": 1988,
+      "coreFrom": null,
+      "coreTo": 1986,
+      "startEdge": "soft",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. Tin-lead solder was the normal way to join copper pipe before the ban, but no survey counts how many pre-1986 houses still have those joints."
+    },
+    "retrofit": false,
+    "where": [
+      "plumbing-supply",
+      "kitchen",
+      "bathroom",
+      "water-heater"
+    ],
+    "check": [
+      "Look at exposed copper pipe joints in the basement, at the water heater or under sinks. Old lead solder is dull gray and lead-free solder is brighter silver, but age blurs the difference.",
+      "A lead swab test kit on a cleaned joint gives a better answer.",
+      "The most reliable check is a first-draw water test through your utility or a certified lab."
+    ],
+    "action": "Test your water. If lead shows up, run the cold tap before drinking, use cold water for cooking, and use a filter certified to NSF/ANSI 53 for lead. Replacing old brass faucets with post-2014 ones helps; repiping for solder alone is rarely needed.",
+    "caveat": "The federal ban took effect in June 1986, but states had until June 1988 to enforce it, so houses built from 1986 to 1988 are a gray zone. Copper has been used since the 1930s, and many older houses have been partly or fully repiped.",
+    "sourceIds": [
+      "lead-solder-and-lead-pipes"
+    ]
+  },
+  "galvanized-steel-supply": {
+    "include": true,
+    "slug": "galvanized-water-pipes",
+    "title": "Galvanized steel water pipes",
+    "category": "plumbing",
+    "hook": "Gray, threaded galvanized steel was common for water pipes until the 1950s, and it rusts from the inside, slowly choking the flow.",
+    "summary": "Galvanized steel supply pipe was common in houses until the 1950s. It corrodes inside, which brings low pressure, rusty water and leaks at threaded joints. EPA counts galvanized service lines that could have picked up lead from upstream pipe as lead service lines.",
+    "kind": "present",
+    "applies": {
+      "from": null,
+      "to": 1960,
+      "coreFrom": null,
+      "coreTo": 1950,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "money",
+    "priority": 2,
+    "evidence": "era",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. for galvanized pipe inside houses. EPA estimated about 2.8 million standalone galvanized service lines in 2023."
+    },
+    "retrofit": false,
+    "where": [
+      "plumbing-supply",
+      "basement-foundation",
+      "water-heater"
+    ],
+    "check": [
+      "Look at exposed pipe in the basement, crawl space or at the water heater: dull gray, with threaded fittings.",
+      "A magnet sticks to it, and a scratch shows silver-gray steel, not copper color.",
+      "Symptoms: low pressure on upper floors, rusty water after the taps sit unused, rust stains at joints."
+    ],
+    "action": "Have a plumber assess it. Repiping the house in copper or PEX is the usual remedy, because replacing sections tends not to last. If the service line is galvanized, check the utility's inventory for lead upstream.",
+    "caveat": "Sources disagree by more than a decade on when galvanized stopped being used, and none is a code history. Many houses of this age have been repiped."
+  },
+  "polybutylene-supply": {
+    "include": true,
+    "slug": "polybutylene-pipes",
+    "title": "Polybutylene water pipes",
+    "category": "plumbing",
+    "hook": "Gray plastic polybutylene pipe, stamped PB2110, went into houses from 1978 to the mid-1990s, and its failures led to a class action settled for about $1 billion.",
+    "summary": "Polybutylene was made for home plumbing from 1978 until mid-1995, and its leaks led to the Cox v. Shell Oil class action. InterNACHI notes that owners can face higher insurance premiums or be refused coverage.",
+    "kind": "present",
+    "applies": {
+      "from": 1978,
+      "to": 1997,
+      "coreFrom": 1980,
+      "coreTo": 1995,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "money",
+    "priority": 1,
+    "evidence": "record",
+    "prevalence": {
+      "label": "possible",
+      "note": "InterNACHI gives an upper estimate of up to 10 million homes. Against the tens of millions of homes built from 1978 to 1995, that is a minority of houses of the era."
+    },
+    "retrofit": false,
+    "where": [
+      "plumbing-supply",
+      "water-heater",
+      "kitchen",
+      "bathroom"
+    ],
+    "check": [
+      "Look at the pipes entering the water heater, under sinks, at the main shut-off and at the meter.",
+      "Polybutylene is flexible, 1/2 to 1 inch across, usually gray (sometimes blue outdoors, black or silver), and stamped 'PB2110'.",
+      "Fittings are gray or white plastic, or copper or brass with aluminum or copper crimp rings.",
+      "Do not confuse it with PEX (white, red or blue, stamped PEX) or CPVC (rigid and cream-colored)."
+    ],
+    "action": "Talk to a plumber about repiping in PEX or copper, the standard recommendation. The settlement money is no longer available. Check with your insurer, since some charge more or decline coverage.",
+    "caveat": "Sources put the end anywhere from mid-1995 to 1997, so a few later houses are possible. Most houses of the era have copper or other plastic pipe, and many polybutylene systems have already been replaced."
+  },
+  "kitec-plumbing": {
+    "include": true,
+    "slug": "kitec-plumbing",
+    "title": "Kitec plumbing",
+    "category": "plumbing",
+    "hook": "Kitec plumbing, often bright orange and blue pipe with brass fittings, was recalled by its maker in 2005 because the fittings corrode quickly.",
+    "summary": "Kitec is a PEX-aluminum-PEX pipe system from IPEX, widely installed in the western US from the early 1990s. Its high-zinc brass fittings lose zinc and corrode, causing leaks and reduced flow. IPEX recalled the fittings in 2005.",
+    "kind": "present",
+    "applies": {
+      "from": 1992,
+      "to": 2007,
+      "coreFrom": 1995,
+      "coreTo": 2005,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "money",
+    "priority": 2,
+    "evidence": "era",
+    "prevalence": {
+      "label": "rare",
+      "note": "InterNACHI counts at least 60,000 homes in southern Nevada and New Mexico from lawsuits filed, and says tens of thousands more are likely in parts of Arizona, California and Texas. Nationally it is rare."
+    },
+    "retrofit": false,
+    "where": [
+      "plumbing-supply",
+      "water-heater",
+      "kitchen",
+      "bathroom",
+      "electrical-panel"
+    ],
+    "check": [
+      "Look at the water heater, under sinks and at any manifold: Kitec pipe is usually bright orange (hot) and bright blue (cold).",
+      "Read the print on the pipe for Kitec or sister names such as PlumbBetter, IPEX AQUA, WarmRite or Kitec XPA.",
+      "Brass fittings are stamped 'Kitec' or 'KTC'.",
+      "Some houses have a warning sticker inside the electrical panel door."
+    ],
+    "action": "If you find it, talk to a plumber about replacing it; a full repipe is the usual fix. No open compensation program was found.",
+    "caveat": "The 1995 to 2007 window is the commonly quoted one; InterNACHI says it was in use from the early 1990s, and the end year is unconfirmed. It is concentrated in a few western markets, and most houses of the era never had it."
+  },
+  "orangeburg-sewer-pipe": {
+    "include": true,
+    "slug": "orangeburg-sewer-pipe",
+    "title": "Orangeburg sewer pipe",
+    "category": "plumbing",
+    "hook": "After World War II, many houses were connected to the sewer with Orangeburg pipe, a tar-soaked fiber pipe that slowly deforms underground.",
+    "summary": "Orangeburg is a bituminous fiber pipe used for house sewer lines from the postwar building boom until PVC and ABS replaced it in the 1970s. Over time it goes oval and blisters, causing backups. It also contains asbestos fibers, which matters when it is dug up.",
+    "kind": "present",
+    "applies": {
+      "from": 1945,
+      "to": 1974,
+      "coreFrom": 1950,
+      "coreTo": 1970,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "money",
+    "priority": 2,
+    "evidence": "era",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. Clay and cast iron were used in the same years, and not every house of the era got Orangeburg."
+    },
+    "retrofit": false,
+    "where": [
+      "drains-sewer",
+      "deck-yard"
+    ],
+    "check": [
+      "You cannot see it without digging; a sewer camera inspection by a plumber is the practical check.",
+      "On camera it shows as black pipe that has gone oval or blistered inside, in 8-foot lengths.",
+      "Symptoms: repeated backups, root clogs, or a sunken line across the lawn.",
+      "Your city or county sewer permit records sometimes name the pipe material."
+    ],
+    "action": "Have a plumber run a camera down the line, especially before buying. If it is Orangeburg, plan to replace the line; lining works only while the pipe is still round.",
+    "caveat": "Dates come from a reference article that is short on citations; the original maker closed by 1974, and others made similar pipe. Many houses of this era have clay or cast-iron sewer lines instead."
+  },
+  "pre-1994-high-flow-toilets": {
+    "include": true,
+    "slug": "high-flow-toilets",
+    "title": "High-flow toilets and showerheads",
+    "category": "plumbing",
+    "hook": "Most toilets made before 1994 use more than twice the water of the 1.6-gallon models required since.",
+    "summary": "Under the Energy Policy Act of 1992, toilets made from 1994 can use no more than 1.6 gallons per flush, and showerheads no more than 2.5 gallons per minute. A house built before 1994 that still has its original fixtures uses more water. Nothing here is unsafe; it is a water bill question.",
+    "kind": "present",
+    "applies": {
+      "from": null,
+      "to": 1993,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "money",
+    "priority": 3,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. Toilets and showerheads are replaced often, so many older houses already have newer ones."
+    },
+    "retrofit": false,
+    "where": [
+      "bathroom"
+    ],
+    "check": [
+      "Lift the toilet tank lid: the gallons per flush is usually stamped or printed inside the tank, or on the bowl behind the seat, with a manufacture date.",
+      "'1.6 gpf / 6.0 Lpf' or lower means it meets the 1994 rule.",
+      "No marking and a large tank suggest a pre-1994 toilet."
+    ],
+    "action": "If you want lower water bills, replace with a WaterSense-labeled toilet and showerhead, and check whether your utility offers a rebate.",
+    "caveat": "The rule applied to fixtures made from January 1, 1994, so houses finished in 1994 may still have older stock. Fixtures are swapped so often that build year predicts this poorly."
+  },
+  "pex-brass-fittings-early": {
+    "include": false,
+    "reason": "Too weak: only the existence of the Zurn litigation is verified; no date window (1996-2012 or any brand's) could be confirmed, so build year cannot place it."
+  },
+  "cpvc-supply": {
+    "include": false,
+    "reason": "No bounded problem era: CPVC is still installed, and failures depend on installation and chemical contact rather than build year."
+  },
+  "cast-iron-drain-pipes": {
+    "include": false,
+    "reason": "lifespan"
+  },
+  "clay-sewer-lateral": {
+    "include": false,
+    "reason": "lifespan"
+  },
+  "defective-abs-drain-pipe": {
+    "include": false,
+    "reason": "Unconfirmed: the 1984-1990 window and manufacturer list rest on unopened plaintiff-side sources; no verified source supports the defect."
+  },
+  "copper-pinhole-leaks": {
+    "include": false,
+    "reason": "Not era-bound: driven by local water chemistry, which depends on the exact address and utility rather than year built."
+  },
+  "water-heater-expected-life": {
+    "include": false,
+    "reason": "lifespan"
+  },
+  "no-anti-scald-shower-valve": {
+    "include": false,
+    "reason": "Unconfirmed: no year for the anti-scald valve requirement could be verified in any code or state."
+  },
+  "s-traps-and-drum-traps": {
+    "include": false,
+    "reason": "No historical date verified, and S-traps appear in DIY work in houses of any age, so build year predicts it poorly."
+  },
+  "lead-based-paint": {
+    "include": true,
+    "slug": "lead-paint",
+    "title": "Lead paint",
+    "category": "hazmat",
+    "hook": "EPA says 87% of homes built before 1940 have some lead-based paint, and lead paint for homes was banned only in 1978.",
+    "summary": "Paint made after February 27, 1978 for homes is limited to 0.06% lead. Lead paint is mainly a hazard when it chips or chalks, or is disturbed by sanding and renovation, which makes dust that harms young children. Federal law requires sellers of pre-1978 homes to disclose known lead paint and give buyers a 10-day window to test.",
+    "kind": "present",
+    "applies": {
+      "from": null,
+      "to": 1978,
+      "coreFrom": null,
+      "coreTo": 1939,
+      "startEdge": "soft",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 1,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "likely",
+      "note": "EPA: 87% of homes built before 1940 and 24% of homes built from 1960 to 1978 have some lead-based paint. HUD's national survey found it in 34.6 million homes, 29.4% of all US housing."
+    },
+    "retrofit": false,
+    "where": [
+      "interior-surfaces",
+      "windows",
+      "exterior-walls",
+      "whole-house"
+    ],
+    "check": [
+      "You cannot identify lead paint by sight; it takes an XRF test by a certified inspector or a lab paint-chip test.",
+      "The most likely places are original windows, doors, trim, porches and exterior siding.",
+      "Warning signs are many layers of old paint, a cracked 'alligator' pattern, or chalking."
+    ],
+    "action": "If young children live in the house or you plan to renovate, get a lead inspection or risk assessment. Contractors working on pre-1978 homes must follow EPA's Renovation, Repair and Painting rule. Options range from stabilizing and repainting to abatement by certified firms; do not dry-sand or scrape old paint yourself.",
+    "caveat": "Paint made before the ban could still be applied in 1978 and a little later. Most houses built from 1960 to 1978 do not have lead paint; the share is far higher in older houses."
+  },
+  "asbestos-popcorn-ceiling": {
+    "include": true,
+    "slug": "asbestos-popcorn-ceilings",
+    "title": "Asbestos in popcorn ceilings",
+    "category": "hazmat",
+    "hook": "Bumpy 'popcorn' ceilings put up from the 1950s into the 1980s sometimes contain asbestos, and only a lab test can tell.",
+    "summary": "EPA banned spray-applied asbestos for insulation in 1973 and for other uses in 1978, which reached decorative ceiling texture. Existing stock was exempt, so asbestos texture may be found in ceilings applied through the 1980s. Not every popcorn ceiling contains asbestos; it is a concern mainly when scraped, sanded or water-damaged.",
+    "kind": "present",
+    "applies": {
+      "from": 1950,
+      "to": 1985,
+      "coreFrom": 1960,
+      "coreTo": 1978,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. of popcorn ceilings or of how many contain asbestos."
+    },
+    "retrofit": false,
+    "where": [
+      "interior-surfaces"
+    ],
+    "check": [
+      "Look up: a bumpy, cottage-cheese-like sprayed texture, sometimes with glitter, is the type to ask about.",
+      "You cannot see asbestos. A small sample has to go to an accredited lab (PLM analysis).",
+      "Do not scrape a sample dry; many state and local air agencies publish homeowner sampling instructions."
+    ],
+    "action": "If it is intact, leaving it alone is usually best, as CPSC advises for asbestos in good condition. Test before you remove or disturb it; if it is positive, it can be sealed, covered with new drywall, or removed wet by a licensed abatement contractor.",
+    "caveat": "The 1950 start and the 1980s tail are approximate; no primary source gives residential install years. A ceiling re-textured later may differ from the age of the house."
+  },
+  "asbestos-floor-tile-sheet-flooring": {
+    "include": true,
+    "slug": "asbestos-floor-tile",
+    "title": "Asbestos floor tile and sheet flooring",
+    "category": "hazmat",
+    "hook": "Old 9-inch-square floor tiles and the black glue under them frequently contain asbestos, and there was no effective federal ban on asbestos floor tile until a 2019 rule.",
+    "summary": "Vinyl and asphalt floor tiles, the backing on sheet vinyl, and the adhesive used to lay them frequently contained asbestos through much of the 20th century. EPA's 1989 ban was overturned in 1991, leaving vinyl-asbestos tile unbanned until a 2019 rule. Intact flooring is low risk; sanding, grinding or breaking it up releases fibers.",
+    "kind": "present",
+    "applies": {
+      "from": 1920,
+      "to": 1986,
+      "coreFrom": 1950,
+      "coreTo": 1980,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "era",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. Resilient flooring was very common in mid-century kitchens, baths and basements, and many but not all products contained asbestos."
+    },
+    "retrofit": false,
+    "where": [
+      "kitchen",
+      "bathroom",
+      "basement-foundation",
+      "interior-surfaces"
+    ],
+    "check": [
+      "Look under carpet, in basements and closets, and under newer floor layers for old tiles. 9 by 9 inch tiles are the strongest clue; 12 by 12 also occur.",
+      "Black, tar-like 'cutback' adhesive under old tile often contains asbestos too.",
+      "Sheet flooring with a gray or white felt-like backing from before the mid-1980s is suspect.",
+      "Only a lab test confirms it."
+    ],
+    "action": "The most common approach is to leave it in place and cover it with new flooring. Never sand it. If it has to come up, test first and use a licensed abatement contractor.",
+    "caveat": "Install years come from inspector references, not an agency, and manufacturers stopped at different times. Many tiles of the era contain no asbestos."
+  },
+  "asbestos-pipe-boiler-duct-insulation": {
+    "include": true,
+    "slug": "asbestos-pipe-insulation",
+    "title": "Asbestos pipe and boiler insulation",
+    "category": "hazmat",
+    "hook": "CPSC says houses built between 1930 and 1950 may have asbestos insulation, often as white wrap on heating pipes and boilers in the basement.",
+    "summary": "Asbestos was widely used to insulate steam and hot-water pipes, boilers and ducts. EPA banned installing asbestos pipe and block insulation on boilers, tanks and pipes in 1975. Damaged wrap can shed fibers into the basement and, through ducts, into living space.",
+    "kind": "present",
+    "applies": {
+      "from": null,
+      "to": 1975,
+      "coreFrom": 1930,
+      "coreTo": 1950,
+      "startEdge": "soft",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. It depends on whether the house still has an original steam or hot-water system, and much of this insulation has already been removed or sealed."
+    },
+    "retrofit": false,
+    "where": [
+      "basement-foundation",
+      "heating-cooling"
+    ],
+    "check": [
+      "In the basement or crawl space, look for white or gray wrap on pipes that looks like corrugated cardboard in cross-section.",
+      "Look for a hard white plaster-like coating on pipe elbows, boilers and tanks.",
+      "Check duct seams and the edges of registers for white paper or cloth tape.",
+      "Do not touch frayed material; only a lab test confirms asbestos."
+    ],
+    "action": "If it is in good condition, a professional can seal and wrap it. If it is damaged, or before you replace a boiler or finish a basement, have it tested and handled by a licensed abatement contractor.",
+    "caveat": "Asbestos duct tape and paper were used later than pipe wrap and have no clear end date. Many houses of this era have had this insulation removed or sealed."
+  },
+  "asbestos-cement-siding-roofing": {
+    "include": true,
+    "slug": "asbestos-cement-siding",
+    "title": "Asbestos-cement siding and shingles",
+    "category": "hazmat",
+    "hook": "Hard, thin cement shingles with a wood-grain or dimpled face were a popular siding for much of the 20th century, and many contain asbestos.",
+    "summary": "Asbestos-cement siding and roof shingles came into use soon after 1907, and CPSC lists them as a household asbestos source. They are low risk when intact and painted, and release fibers when sawn, drilled or broken.",
+    "kind": "present",
+    "applies": {
+      "from": 1907,
+      "to": 1980,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 3,
+    "evidence": "era",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. It was one of several competing sidings, and many installs were re-siding jobs on older houses."
+    },
+    "retrofit": true,
+    "where": [
+      "exterior-walls",
+      "roof"
+    ],
+    "check": [
+      "Look at the siding: hard, thin shingles, often 12 by 24 inches, with a wavy or straight bottom edge and a pressed wood-grain or dimpled surface.",
+      "They crack or chip rather than dent, and show nail heads at the bottom corners.",
+      "Check under later vinyl or aluminum siding, where they are often hidden.",
+      "Some look-alikes were made without asbestos, so only a lab test confirms it."
+    ],
+    "action": "Keep them painted and intact. Replace broken pieces with non-asbestos fiber-cement look-alikes, or side over them. Full removal should follow asbestos work rules.",
+    "caveat": "No source gives a firm end year; manufacturers stopped at different times. Many installs were re-siding jobs on older houses, so build year predicts this poorly."
+  },
+  "asbestos-joint-compound-texture": {
+    "include": true,
+    "slug": "asbestos-joint-compound",
+    "title": "Asbestos in drywall joint compound",
+    "category": "hazmat",
+    "hook": "Drywall joint and patching compound could contain asbestos until CPSC banned it in 1978, and you cannot tell by looking.",
+    "summary": "CPSC banned consumer patching and tape joint compounds containing asbestos, effective in early 1978, along with textured paints that contained it. Before that, some major brands contained asbestos and others did not. It is a concern when walls are sanded, cut or demolished.",
+    "kind": "present",
+    "applies": {
+      "from": 1945,
+      "to": 1978,
+      "coreFrom": 1955,
+      "coreTo": 1977,
+      "startEdge": "soft",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. Several major brands contained asbestos and several did not."
+    },
+    "retrofit": false,
+    "where": [
+      "interior-surfaces"
+    ],
+    "check": [
+      "This cannot be seen. Any drywalled or refinished wall or ceiling from before about 1980 is a candidate.",
+      "Before sanding or demolition, have a lab test the joint compound layer itself, not just the board."
+    ],
+    "action": "Leave intact walls alone. Test before renovating; if it is positive, use a licensed abatement contractor or your state's approved wet methods for the affected areas.",
+    "caveat": "The ban covered consumer products, so contractor stock and already-purchased material may have been used for a while after 1978. The start year is approximate, tied to the spread of drywall after World War II."
+  },
+  "vermiculite-attic-insulation": {
+    "include": true,
+    "slug": "vermiculite-insulation",
+    "title": "Vermiculite attic insulation",
+    "category": "hazmat",
+    "hook": "Loose, pebbly vermiculite insulation in the attic, much of it sold as Zonolite, may contain asbestos, and EPA advises treating it as if it does.",
+    "summary": "A mine near Libby, Montana, supplied over 70% of US vermiculite from 1919 to 1990, and its ore was contaminated with asbestos. The insulation was often poured into the attics of existing houses, so any house standing before about 1990 could have it. It is a risk mainly when disturbed by attic storage, wiring or remodeling.",
+    "kind": "present",
+    "applies": {
+      "from": null,
+      "to": 1990,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 1,
+    "evidence": "era",
+    "prevalence": {
+      "label": "possible",
+      "note": "Wikipedia reports a US government estimate that vermiculite was used in more than 35 million homes; other estimates are far lower. Even the high figure is a minority of houses."
+    },
+    "retrofit": true,
+    "where": [
+      "attic"
+    ],
+    "check": [
+      "Look into the attic from the hatch without stepping in or disturbing anything.",
+      "Vermiculite is loose, lightweight granules about 1/8 to 1/2 inch, shiny and accordion-like, gray-brown to silver-gold, lying between the joists.",
+      "It is often under newer fiberglass or cellulose; empty Zonolite bags are sometimes left in the attic.",
+      "EPA advises against relying on a negative lab test."
+    ],
+    "action": "Do not disturb it, and keep stored belongings out of that attic. Sealing gaps around ceiling lights and openings helps keep dust out of the house. For any attic work, hire a licensed asbestos abatement contractor. The Zonolite Attic Insulation Trust has reimbursed part of removal costs for confirmed Zonolite; check whether it is still accepting claims.",
+    "caveat": "This was largely a do-it-yourself product added to existing houses, so build year is a weak guide. Most houses do not have it, and estimates of how many do disagree widely."
+  },
+  "urea-formaldehyde-foam-insulation": {
+    "include": true,
+    "slug": "uffi-foam-insulation",
+    "title": "Urea-formaldehyde foam insulation (UFFI)",
+    "category": "hazmat",
+    "hook": "About 500,000 homes had foam insulation pumped into their walls in the 1970s, and CPSC banned it in 1982 before a court overturned the ban.",
+    "summary": "Urea-formaldehyde foam was injected into wall cavities, mostly as a retrofit in existing houses during the 1970s energy crisis. CPSC banned it for homes in 1982; a federal appeals court overturned the ban in 1983, and little was installed after that. Its formaldehyde release fades within years, so today it is mostly a disclosure and resale question.",
+    "kind": "present",
+    "applies": {
+      "from": 1970,
+      "to": 1982,
+      "coreFrom": 1975,
+      "coreTo": 1980,
+      "startEdge": "soft",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "money",
+    "priority": 3,
+    "evidence": "record",
+    "prevalence": {
+      "label": "rare",
+      "note": "CPSC's 1982 release referred to some 500,000 homes already insulated with the foam, a small share of US housing."
+    },
+    "retrofit": true,
+    "where": [
+      "exterior-walls",
+      "interior-surfaces"
+    ],
+    "check": [
+      "Look on the outside walls for rows of patched 1- to 2-inch plugs in siding or mortar joints, where foam was injected.",
+      "In the basement at the sill, or behind an outlet cover on an outside wall (power off first), look for dry, crumbly, off-white to tan foam that powders when touched."
+    ],
+    "action": "Usually nothing needs doing. If anyone has symptoms, an indoor air test for formaldehyde is the next step. Removal means opening the walls and is rarely justified on health grounds. Some state disclosure forms ask about UFFI, so keep a note.",
+    "caveat": "It was mostly added to existing houses, so a 1920s house is as likely to have it as a 1975 one. The start and peak years are approximate."
+  },
+  "problem-chinese-drywall": {
+    "include": true,
+    "slug": "problem-chinese-drywall",
+    "title": "Problem drywall (Chinese drywall)",
+    "category": "hazmat",
+    "hook": "Some houses built or renovated from 2001 to 2009, mostly in Florida and the Gulf states, got imported drywall that gives off sulfur gases and blackens copper.",
+    "summary": "CPSC has about 4,051 reports of problem drywall from 44 states, and early reports came overwhelmingly from Florida, Louisiana, Mississippi, Alabama and Virginia. The gases corrode air-conditioner coils, wiring and gas fittings. Federal remediation guidance amounts to a gut renovation: remove the drywall and replace wiring components, alarms and some gas piping.",
+    "kind": "present",
+    "applies": {
+      "from": 2001,
+      "to": 2009,
+      "coreFrom": 2005,
+      "coreTo": 2008,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": [
+      "FL",
+      "LA",
+      "MS",
+      "AL",
+      "VA"
+    ],
+    "severity": "safety",
+    "priority": 1,
+    "evidence": "record",
+    "prevalence": {
+      "label": "rare",
+      "note": "CPSC has about 4,051 reports. In March 2010, over 90% came from Florida (59%), Louisiana (20%), Mississippi (6%), Alabama (5%) and Virginia (4%). Even there it is a small share of houses built in these years."
+    },
+    "retrofit": false,
+    "where": [
+      "interior-surfaces",
+      "heating-cooling",
+      "wiring-outlets",
+      "attic"
+    ],
+    "check": [
+      "Look at the copper tubing on the air conditioner's indoor coil: blackened copper, not green, is CPSC's warning sign. An electrician can check the bare ground wires in outlet and switch boxes for the same thing.",
+      "Note any sulfur or rotten-egg smell, or repeated air-conditioner coil failures.",
+      "In the attic, look at the back of exposed drywall for Chinese manufacturer markings such as 'Knauf Tianjin'.",
+      "A lab test of the drywall or the copper corrosion confirms it."
+    ],
+    "action": "If the signs line up, follow CPSC and HUD's identification and remediation guidance and get a specialist inspection. A Senate hearing record described the Louisiana court remediation protocol at about $86 per square foot, more than $200,000 for a 2,400-square-foot home. No open settlement program was found.",
+    "caveat": "CPSC asks for more corroborating evidence for 2001 to 2004 installs than for 2005 to 2009, which shows where the problem concentrates. Renovations in this period could have brought it into older houses, and reports came from 44 states, not only the five listed."
+  },
+  "pcb-caulk-light-ballasts": {
+    "include": true,
+    "slug": "pcb-light-ballasts",
+    "title": "PCBs in old fluorescent light ballasts",
+    "category": "hazmat",
+    "hook": "Fluorescent fixtures with magnetic ballasts made before 1979 may contain PCBs, and ballasts made after that without PCBs are labeled 'No PCBs'.",
+    "summary": "EPA says PCB-containing building materials were used in buildings built or renovated between about 1950 and 1979, and that magnetic ballasts made before 1979 may contain PCBs. In a house the realistic case is an original fluorescent fixture in a garage, basement, kitchen or workshop. PCB caulk is documented mainly in schools and larger buildings.",
+    "kind": "present",
+    "applies": {
+      "from": 1950,
+      "to": 1979,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 3,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. for houses; EPA's material is about schools and other larger buildings."
+    },
+    "retrofit": false,
+    "where": [
+      "garage",
+      "basement-foundation",
+      "kitchen"
+    ],
+    "check": [
+      "Turn the power off, open the fluorescent fixture cover and read the ballast label.",
+      "Ballasts marked 'No PCBs' were made after July 1, 1979.",
+      "An unlabeled magnetic ballast, or oily or tarry leakage, suggests a PCB ballast. Only magnetic T12 ballasts may contain PCBs."
+    ],
+    "action": "Replace the old fixture or ballast, and take a PCB ballast to a hazardous-waste collection rather than the trash. Before renovating a 1950 to 1979 masonry apartment building, have suspect caulk tested.",
+    "caveat": "EPA's guidance addresses schools and other buildings, not single-family homes. Most original pre-1979 ballasts have long since been replaced."
+  },
+  "chlordane-termiticide": {
+    "include": true,
+    "slug": "chlordane-termite-treatment",
+    "title": "Chlordane termite treatment",
+    "category": "hazmat",
+    "hook": "From 1948 to 1988, chlordane was a standard termite treatment around foundations, and ATSDR says more than 50 million people have lived in treated homes.",
+    "summary": "Chlordane was applied to the soil around and under houses to stop termites; from 1983 that was its only approved use, and EPA banned all uses in 1988. It lingers for years, with higher levels in basements and crawl spaces. ATSDR says houses built since 1988 have not been treated with it.",
+    "kind": "present",
+    "applies": {
+      "from": 1948,
+      "to": 1988,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 3,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "possible",
+      "note": "ATSDR: over 50 million people have lived in chlordane-treated homes; Wikipedia puts it at about 30 million homes. Use was heaviest in the deep South and Southwest."
+    },
+    "retrofit": true,
+    "where": [
+      "basement-foundation",
+      "deck-yard",
+      "heating-cooling"
+    ],
+    "check": [
+      "There is no visible sign. Look for old termite-treatment records or pest-control stickers.",
+      "Look for patched drill holes in the slab, garage floor or along the foundation walls.",
+      "Only an indoor air or soil lab test confirms it."
+    ],
+    "action": "If you are concerned, test the indoor air. Seal slab cracks and crawl-space and duct leaks, ventilate basements and crawl spaces, and avoid growing food crops right beside the foundation.",
+    "caveat": "Treatment was done both during construction and later on existing houses, so any house standing before 1988 in termite country may have been treated. Many houses never were."
+  },
+  "cca-treated-lumber": {
+    "include": true,
+    "slug": "cca-arsenic-treated-wood",
+    "title": "Arsenic-treated (CCA) deck lumber",
+    "category": "hazmat",
+    "hook": "Pressure-treated wood in decks and play sets built before 2004 was commonly treated with an arsenic compound, and EPA says never to burn it.",
+    "summary": "Wood treated with chromated copper arsenate (CCA) was used for residential decks and playsets until manufacturers stopped making it for homeowner uses at the end of 2003. Arsenic can rub off on hands and leach into the soil underneath. EPA does not recommend removing existing structures.",
+    "kind": "present",
+    "applies": {
+      "from": 1975,
+      "to": 2004,
+      "coreFrom": 1980,
+      "coreTo": 2003,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 3,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. EPA says CCA-treated wood was used in decks and playsets before 2004, but no market-share figure was found."
+    },
+    "retrofit": true,
+    "where": [
+      "deck-yard"
+    ],
+    "check": [
+      "Look at decks, play sets, fences and garden edging built of pressure-treated wood before 2004.",
+      "End tags or ink stamps may read 'CCA' with a number such as 0.40; newer wood reads ACQ, CA or MCA.",
+      "Arsenic swab test kits and lab tests exist."
+    ],
+    "action": "Wash hands after contact, never burn the wood or use it for garden beds, and wear a mask when cutting it. Sealants may reduce surface arsenic, but CPSC testing found few held up after two years. Replace with alternative-treated wood or composite when the deck is due.",
+    "caveat": "Old stock could still be sold after 2003, so some 2004 decks used it, and the 1975 start is approximate. Decks are often built or replaced long after the house, so the deck's age matters more than the house's.",
+    "sourceIds": [
+      "cca-treated-deck-lumber"
+    ]
+  },
+  "formaldehyde-pressed-wood": {
+    "include": false,
+    "reason": "Too weak to predict by year: pressed wood is in virtually every house since the 1960s, the start year is unsourced, and emissions depend on product age and conditions."
+  },
+  "radon": {
+    "include": false,
+    "reason": "Not era-bound: radon depends on location and soil, so every house should be tested regardless of build year."
+  },
+  "mercury-thermostats": {
+    "include": false,
+    "reason": "Unconfirmed: no opened source gives install years, and thermostats are replaced independently of the house."
+  },
+  "lead-solder-and-lead-pipes": {
+    "include": false,
+    "reason": "Duplicate of lead-service-line and lead-solder-copper; its statute source (1988 state enforcement) is pulled into lead-solder-copper via sourceIds."
+  },
+  "lp-inner-seal-osb-siding": {
+    "include": true,
+    "slug": "lp-inner-seal-siding",
+    "title": "LP Inner-Seal siding",
+    "category": "envelope",
+    "hook": "Louisiana-Pacific's Inner-Seal siding, marketed from 1985, swelled and rotted on enough houses to bring a class settlement covering everything installed before 1996.",
+    "summary": "Inner-Seal is an oriented strand board (OSB) siding with a pressed wood-grain face. A federal class settlement covered siding installed before January 1, 1996, with claims due before January 1, 2003. Failing boards swell and crumble at the bottom edges, and rot can spread into the wall behind.",
+    "kind": "present",
+    "applies": {
+      "from": 1985,
+      "to": 1995,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "money",
+    "priority": 2,
+    "evidence": "record",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. The often-repeated figure of 800,000 homes could not be confirmed."
+    },
+    "retrofit": false,
+    "where": [
+      "exterior-walls"
+    ],
+    "check": [
+      "Look at a cut end or the bottom drip edge of the siding: visible wood flakes or strands mean OSB (hardboard shows uniform fiber instead).",
+      "Check bottom edges and around nail heads for swelling, crumbling and 'mushrooming'."
+    ],
+    "action": "Keep paint and caulk intact, replace failed boards, and plan to re-side if damage is widespread. The settlement claim deadline passed in 2003, so no compensation remains.",
+    "caveat": "The 1985 start rests on a reference source. Many installs have already been replaced, and this was one brand among many sidings of the era."
+  },
+  "masonite-hardboard-siding": {
+    "include": true,
+    "slug": "hardboard-siding",
+    "title": "Hardboard siding (Masonite and others)",
+    "category": "envelope",
+    "hook": "Hardboard siding swells and rots when water gets in, and in 1996 a jury found Masonite's siding defective.",
+    "summary": "Hardboard is a pressed wood-fiber siding, smooth or embossed, that was common on houses of the 1980s and 1990s. InterNACHI notes it can rot and swells more than natural wood when wet. In 1996 International Paper lost a class action brought by owners whose Masonite siding had deteriorated.",
+    "kind": "present",
+    "applies": {
+      "from": 1980,
+      "to": 1998,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "money",
+    "priority": 2,
+    "evidence": "record",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. Class counsel described a Masonite class of about 4 million homeowners, but that figure could not be confirmed."
+    },
+    "retrofit": false,
+    "where": [
+      "exterior-walls"
+    ],
+    "check": [
+      "Look at cut ends or where paint has failed: smooth or embossed board of uniform brown fiber, with no visible strands or plies.",
+      "Check bottom edges, butt joints and around nails for swelling, 'mushroomed' nail heads and soft spots."
+    ],
+    "action": "Keep paint and caulk in good shape, replace damaged boards, or re-side when damage spreads. No open claim program was found.",
+    "caveat": "The 1980 to 1998 range is the reported Masonite class window, which could not be confirmed, and hardboard was used before 1980 too. Brands look alike; identifying one needs the marks on the back of a board."
+  },
+  "eifs-barrier-synthetic-stucco": {
+    "include": true,
+    "slug": "synthetic-stucco-eifs",
+    "title": "Synthetic stucco (barrier EIFS)",
+    "category": "envelope",
+    "hook": "Synthetic stucco over wood framing sounds hollow when you knock on it, and the early 'barrier' kind could trap water and rot the wall behind.",
+    "summary": "EIFS is foam board with a thin stucco-like finish. Leak problems showed up from the late 1980s, and building standards moved houses to drainable EIFS with a drainage cavity. In 1997 EIFS was about 4% of the residential siding market.",
+    "kind": "present",
+    "applies": {
+      "from": 1980,
+      "to": 1999,
+      "coreFrom": 1988,
+      "coreTo": 1996,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "money",
+    "priority": 2,
+    "evidence": "era",
+    "prevalence": {
+      "label": "rare",
+      "note": "EIFS was about 4% of the US residential siding market in 1997 (Wikipedia, citing a trade source)."
+    },
+    "retrofit": false,
+    "where": [
+      "exterior-walls",
+      "windows"
+    ],
+    "check": [
+      "Knock on or press the wall: synthetic stucco sounds hollow and gives slightly, while traditional stucco is hard.",
+      "Look for foam showing at a damaged spot or at the bottom edge, and for finish running right down to or below the ground.",
+      "Look for staining below window corners and where decks or roofs meet the wall."
+    ],
+    "action": "Before buying, or if you see stains, get a moisture-probe inspection by a certified EIFS inspector. Dry walls may need only flashing and sealant work; wet walls may need stripping and re-cladding with a drained system.",
+    "caveat": "Start and end years are approximate; barrier EIFS was never banned nationally and continued in some places into the early 2000s. It is reported to be most common on mid- and upper-priced houses in parts of the Southeast and Mid-Atlantic."
+  },
+  "certainteed-organic-shingles": {
+    "include": true,
+    "slug": "certainteed-organic-shingles",
+    "title": "CertainTeed organic shingles",
+    "category": "envelope",
+    "hook": "CertainTeed estimated that about 1.86 million buildings got its felt-based organic shingles between 1987 and 2005, and a class settlement followed.",
+    "summary": "CertainTeed organic shingles (sold as Hallmark Shangle, Horizon, Independence, Custom Sealdon and others) were made from July 1987 through 2005 and covered by a 2010 class settlement. They were sold mainly in the upper Midwest. This matters only if the original roof is still on the house.",
+    "kind": "present",
+    "applies": {
+      "from": 1987,
+      "to": 2006,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "sharp",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "money",
+    "priority": 3,
+    "evidence": "record",
+    "prevalence": {
+      "label": "rare",
+      "note": "CertainTeed's own estimate in court: about 1,857,000 structures in the US and Canada were built with these shingles from 1987 to 2005, a small share of roofs laid in those years."
+    },
+    "retrofit": false,
+    "where": [
+      "roof"
+    ],
+    "check": [
+      "Look for the brand names Hallmark Shangle, Horizon, Independence or Custom Sealdon on wrappers, invoices or warranty papers.",
+      "A torn shingle shows a brown or black felt core rather than white glass fibers.",
+      "Heavy curling at tab corners and blistering on an old roof are typical of organic shingles."
+    ],
+    "action": "If the roof is failing, re-roof. Contact CertainTeed to ask whether claims are still possible; the claim deadline could not be confirmed.",
+    "caveat": "Many roofs from this period have already been replaced, and the older the house, the less likely the original roof survives. Installation could trail manufacture by a year or so."
+  },
+  "atlas-chalet-shingles": {
+    "include": true,
+    "slug": "atlas-chalet-shingles",
+    "title": "Atlas Chalet and Stratford shingles",
+    "category": "envelope",
+    "hook": "Atlas Chalet and Stratford shingles, sold from at least 1998 until 2010, drew a federal lawsuit, but class certification was denied, so there is no settlement.",
+    "summary": "Atlas developed these overlay shingles in the 1990s and discontinued them in 2010, according to a federal court. Owners sued over the shingles, and in 2017 the court denied class certification. They are reported to be common in the Southeast, especially around Atlanta.",
+    "kind": "present",
+    "applies": {
+      "from": 1998,
+      "to": 2010,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "money",
+    "priority": 3,
+    "evidence": "record",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. They are described as common on Atlanta-area houses of 1999 to 2010 and rare elsewhere, but without data."
+    },
+    "retrofit": false,
+    "where": [
+      "roof"
+    ],
+    "check": [
+      "Look at the roof from the ground: they resemble three-tab shingles with a darker printed shadow band across each tab.",
+      "Look for small pock-like blisters and bald spots.",
+      "Roofers in the Southeast tend to recognize them on sight."
+    ],
+    "action": "Have a roofer look if you see blistering. With no settlement, replacement is at the owner's cost unless an insurer accepts a storm claim, and because they are discontinued, matching repairs is difficult.",
+    "caveat": "The first year of sale is uncertain; the court says only 'in the 1990s'. Many roofs from this period have been replaced, and most houses of the era have other shingles."
+  },
+  "energy-code-milestones": {
+    "include": true,
+    "slug": "built-before-energy-codes",
+    "title": "Built before energy codes",
+    "category": "envelope",
+    "hook": "The first US energy standard for buildings, ASHRAE 90, was published in 1975, so a house built before then was not built to any energy code.",
+    "summary": "Before energy codes, insulation levels, window types and air sealing were up to the builder. Model codes followed from 1975, but states adopted them on their own schedules, some a decade or more later. Many older houses have had insulation added since.",
+    "kind": "missing",
+    "applies": {
+      "from": null,
+      "to": 1979,
+      "coreFrom": null,
+      "coreTo": 1974,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "comfort",
+    "priority": 3,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. of how many older houses have been upgraded. A house built before 1975 was built without any energy code."
+    },
+    "retrofit": true,
+    "where": [
+      "attic",
+      "exterior-walls",
+      "windows",
+      "whole-house"
+    ],
+    "check": [
+      "Look in the attic at the depth of insulation between and over the joists.",
+      "Check the windows: hold a light to the glass; one reflection means single pane, two close reflections mean double."
+    ],
+    "action": "An energy audit shows where the house loses heat. Air sealing and attic insulation usually come first, then wall insulation.",
+    "caveat": "1975 is when the first voluntary standard was published, not when your state enforced one; some states lagged by a decade or more, and a few still have no statewide residential energy code. Later code dates were not confirmed."
+  },
+  "balloon-framing": {
+    "include": true,
+    "slug": "balloon-framing",
+    "title": "Balloon framing",
+    "category": "fire-safety",
+    "hook": "In many older two-story houses the wall cavities run unbroken from the basement to the attic, which lets a fire climb inside the walls.",
+    "summary": "Balloon framing, with studs running the full height of the house and floors hung from them, was common until the late 1940s, when platform framing took over. The open cavities act like chimneys in a fire. Adding fireblocking at the top and bottom of each cavity is the usual fix.",
+    "kind": "present",
+    "applies": {
+      "from": null,
+      "to": 1950,
+      "coreFrom": null,
+      "coreTo": 1930,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "era",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. Inspectors generally assume balloon framing in two-story wood-frame houses built before about 1920; one-story houses are effectively unaffected."
+    },
+    "retrofit": false,
+    "where": [
+      "basement-foundation",
+      "attic",
+      "exterior-walls"
+    ],
+    "check": [
+      "In the basement, look up where the floor joists meet the outside wall: open stud cavities rising past the joists, with no flat wooden plate on top, mean balloon framing.",
+      "In the attic, look down between the studs at the eaves for open cavities.",
+      "At the second floor, joists nailed to the sides of studs and resting on a board let into the studs are the giveaway."
+    ],
+    "action": "Have a contractor add fireblocking (lumber, mineral wool or dense-packed insulation) at the basement and attic ends of each stud cavity where they can be reached.",
+    "caveat": "The end date varies: sources put it from the late 1940s to the mid-1950s, and timing differed by region and builder. Many houses of the 1930s and 1940s are platform framed."
+  },
+  "composite-decking-defects": {
+    "include": true,
+    "slug": "recalled-lp-composite-decking",
+    "title": "Recalled LP composite decking",
+    "category": "structure",
+    "hook": "About 48 million linear feet of LP WeatherBest, ABTCo and Veranda composite decking sold from 2005 to 2008 was recalled because boards could break underfoot.",
+    "summary": "In May 2009, CPSC announced Louisiana-Pacific's recall of composite decking and railing sold from January 2005 to August 2008, after 37 reports of breakage and 14 injuries. LP offered free inspection and replacement. Separately, Trex settled a class action over surface flaking and mold spotting on early boards.",
+    "kind": "present",
+    "applies": {
+      "from": 2005,
+      "to": 2008,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "sharp",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 3,
+    "evidence": "record",
+    "prevalence": {
+      "label": "rare",
+      "note": "CPSC: about 48 million linear feet recalled. Composite was a minority of decks built in these years."
+    },
+    "retrofit": true,
+    "where": [
+      "deck-yard"
+    ],
+    "check": [
+      "Look at the deck boards: uncapped composite is the same color and texture all the way through, with no plastic shell.",
+      "Recalled LP boards may be soft, swollen, flaking or cracked, especially in damp shade.",
+      "Look for a brand name printed on the underside or end of a board."
+    ],
+    "action": "Check CPSC recall 09-217 and contact Louisiana-Pacific about the free inspection and replacement; it was not confirmed whether that remedy is still honored. Replace any soft or cracked boards.",
+    "caveat": "These are sale dates, and decks are often added long after a house is built, so build year predicts this poorly. Most decks of this period are wood or other brands."
+  },
+  "pella-proline-windows": {
+    "include": true,
+    "slug": "pella-proline-windows",
+    "title": "Pella ProLine casement windows",
+    "category": "envelope",
+    "hook": "Pella ProLine aluminum-clad wood casement, awning and transom windows made from 1991 to 2009 were the subject of a class settlement over claims that water could get in and rot the wood.",
+    "summary": "A federal class settlement, finally approved in 2019, covered ProLine casement, awning and transom windows made from January 1, 1991 to December 31, 2009. The claim was a design defect that let water get behind the aluminum cladding. Soft or stained wood at the bottom of the sash is the sign to look for.",
+    "kind": "present",
+    "applies": {
+      "from": 1991,
+      "to": 2009,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "sharp",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "money",
+    "priority": 3,
+    "evidence": "record",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. This is one product line from one maker."
+    },
+    "retrofit": false,
+    "where": [
+      "windows"
+    ],
+    "check": [
+      "Look for the Pella name etched in a corner of the glass or on the hardware.",
+      "These windows have aluminum cladding outside and wood inside.",
+      "Check the bottom of each sash for soft or stained wood."
+    ],
+    "action": "Replace rotted sashes or whole units. The settlement's claim deadline could not be confirmed, so contact Pella or the settlement administrator to ask whether claims are still open.",
+    "caveat": "Only casement, awning and transom windows in this line were covered. Windows are often replaced, so these can also turn up in older houses."
+  },
+  "weyerhaeuser-hardboard-siding": {
+    "include": false,
+    "reason": "Unconfirmed: the 1981-1999 class window rests only on SEC filing summaries that could not be opened. Hardboard generally is covered by masonite-hardboard-siding."
+  },
+  "other-hardboard-siding-gp-abtco": {
+    "include": false,
+    "reason": "Unconfirmed: every date and brand claim is unverified. Hardboard generally is covered by masonite-hardboard-siding."
+  },
+  "frt-plywood-roof-sheathing": {
+    "include": false,
+    "reason": "Unconfirmed: no verified source for any date or claim."
+  },
+  "organic-mat-asphalt-shingles": {
+    "include": false,
+    "reason": "Too weak: only the original roof would have them, and on houses of the relevant age it has almost certainly been replaced; dates rest on reference sources only. The verified brand case is covered by certainteed-organic-shingles."
+  },
+  "iko-organic-shingles": {
+    "include": false,
+    "reason": "Too weak: only a 1979 sales start is verified; end years and settlement terms are not, and roofs of the era have mostly been replaced."
+  },
+  "gaf-timberline-cracking-shingles": {
+    "include": false,
+    "reason": "Unconfirmed: no verified source on the cracking litigation or its class windows."
+  },
+  "wood-shake-shingle-roofs": {
+    "include": false,
+    "reason": "Unconfirmed: no verified dates or ban years."
+  },
+  "single-pane-windows": {
+    "include": false,
+    "reason": "Unconfirmed: no verified date or prevalence; years are judgement calls."
+  },
+  "failed-seal-insulated-glass": {
+    "include": false,
+    "reason": "lifespan"
+  },
+  "aluminum-single-pane-windows": {
+    "include": false,
+    "reason": "Unconfirmed: all years are from general knowledge."
+  },
+  "little-or-no-wall-insulation": {
+    "include": false,
+    "reason": "Unconfirmed: no verified date or prevalence. Partly covered by energy-code-milestones."
+  },
+  "deck-ledger-attachment": {
+    "include": false,
+    "reason": "Too weak: the code dates (2009 IRC ledger rules) are unverified, and decks are built and replaced independently of the house, so build year predicts poorly."
+  },
+  "stucco-over-wood-frame-no-drainage": {
+    "include": false,
+    "reason": "Unconfirmed: all years and regional clusters are unverified."
+  },
+  "adhered-manufactured-stone-veneer": {
+    "include": false,
+    "reason": "Unconfirmed: no verified source."
+  },
+  "house-wrap-adoption": {
+    "include": false,
+    "reason": "Too weak: only Tyvek product history is verified; the headline code date (2006 IRC) is not."
+  },
+  "roof-life-expectancy": {
+    "include": false,
+    "reason": "lifespan"
+  },
+  "cca-treated-deck-lumber": {
+    "include": false,
+    "reason": "Duplicate of cca-treated-lumber; its EPA and Federal Register sources are pulled in there via sourceIds."
+  },
+  "consolidated-industries-horizontal-furnace": {
+    "include": true,
+    "slug": "consolidated-attic-furnaces",
+    "title": "Consolidated (Premier) attic furnaces",
+    "category": "hvac",
+    "hook": "Between 1983 and 1994, Consolidated Industries built well over 100,000 horizontal furnaces for California homes under many brand names, and CPSC tied them to about 50 fires.",
+    "summary": "Consolidated Industries built horizontal gas furnaces with 'NOx rods' to meet California air rules and sold them under many brand names. CPSC warned about them in 2000 and announced a recall in 2001, citing about 50 fires. The company is out of business, so there is no remedy today.",
+    "kind": "present",
+    "applies": {
+      "from": 1983,
+      "to": 1994,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "sharp",
+      "endEdge": "sharp"
+    },
+    "regions": [
+      "CA"
+    ],
+    "severity": "safety",
+    "priority": 1,
+    "evidence": "record",
+    "prevalence": {
+      "label": "rare",
+      "note": "CPSC put production at about 140,000 units (2001) or 190,000 (2000), all for California, with about 50 fires reported. Most are now past normal furnace life, and no count of survivors exists."
+    },
+    "retrofit": false,
+    "where": [
+      "attic",
+      "heating-cooling"
+    ],
+    "check": [
+      "Look at the furnace in the attic or crawl space for steel rods mounted above the burners (the 'NOx rods'); every one of these furnaces has them.",
+      "Check the label for Consolidated, Premier, Addison or Weatherking, or private labels including Amana, Bard, Carrier, Goettl, Goodman, Janitrol, Comfort-Aire, Trane and American Standard.",
+      "CPSC's notice lists the affected model numbers."
+    ],
+    "action": "If you find one, replace the furnace; the maker is gone and no recall remedy remains. Until then, CPSC suggested an ionization smoke alarm in the attic as an interim measure.",
+    "caveat": "These furnaces went only to California, and most furnaces of these years are other makes. A replacement furnace installed in an older house during these years could also be one."
+  },
+  "cadet-encore-in-wall-heaters": {
+    "include": true,
+    "slug": "cadet-encore-wall-heaters",
+    "title": "Cadet and Encore wall heaters",
+    "category": "hvac",
+    "hook": "More than 1.9 million Cadet and Encore in-wall electric heaters, sold mainly in the Northwest and California from about 1978 to 2000, were recalled as a fire hazard.",
+    "summary": "CPSC announced the recall in 2000; a later reminder cited four deaths, two serious burn injuries and six house fires. The heaters were sold mainly in California, Idaho, Montana, Oregon and Washington. Houses heated with electric wall heaters often have several.",
+    "kind": "present",
+    "applies": {
+      "from": 1978,
+      "to": 2000,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": [
+      "CA",
+      "ID",
+      "MT",
+      "OR",
+      "WA"
+    ],
+    "severity": "safety",
+    "priority": 1,
+    "evidence": "record",
+    "prevalence": {
+      "label": "possible",
+      "note": "CPSC: more than 1.9 million units, concentrated in five states. No figure gives the share of houses; it applies mainly to houses with electric wall heat."
+    },
+    "retrofit": false,
+    "where": [
+      "interior-surfaces",
+      "heating-cooling"
+    ],
+    "check": [
+      "Look through the grille of each electric wall heater for the label on the front of the heater assembly; do not take anything apart.",
+      "Recalled models start with FW, FX, LX, TK, ZA, Z, RA, RK, RLX, RX, RW or ZC followed by three digits.",
+      "The brand will be Cadet or Encore."
+    ],
+    "action": "Stop using any recalled heater and replace it with a current model. The recall remedy was not found to be still running, so contact Cadet to ask before paying for replacements.",
+    "caveat": "CPSC gives the sale years only as 'about' 1978 through 2000, and only the listed model prefixes are affected. Heaters were also fitted as replacements in older houses."
+  },
+  "htpv-plastic-vent-pipe": {
+    "include": true,
+    "slug": "plexvent-ultravent-flue-pipe",
+    "title": "Plexvent and Ultravent plastic flue pipe",
+    "category": "hvac",
+    "hook": "About 250,000 gas furnaces and boilers were vented through gray or black plastic pipe printed Plexvent or Ultravent, which was recalled because joints can crack or separate and leak carbon monoxide.",
+    "summary": "In 1998 CPSC announced a program to replace this high-temperature plastic vent (HTPV) pipe free of charge on about 250,000 systems; about 93,000 had been replaced by October 2005. The danger is carbon monoxide escaping from cracked or separated joints. CPSC gives dates only for a subset on Goodman furnaces, made October 1988 to July 1994.",
+    "kind": "present",
+    "applies": {
+      "from": 1988,
+      "to": 1994,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "record",
+    "prevalence": {
+      "label": "rare",
+      "note": "CPSC: about 250,000 systems nationally, about 93,000 of them replaced by October 2005."
+    },
+    "retrofit": false,
+    "where": [
+      "heating-cooling",
+      "basement-foundation",
+      "exterior-walls"
+    ],
+    "check": [
+      "Follow the flue pipe from the furnace or boiler to where it leaves the house, usually through a side wall.",
+      "Gray or black plastic pipe printed 'Plexvent', 'Plexvent II' or 'Ultravent' is the recalled type.",
+      "White PVC or CPVC pipe is not part of the recall."
+    ],
+    "action": "Have a heating contractor inspect it promptly. At this age, replacing the vent along with the appliance is often the realistic fix. Whether any recall remedy is still honored is unknown.",
+    "caveat": "The full date range of these vents was never published; 1988 to 1994 comes from one subset. Many have already been replaced along with their furnaces."
+  },
+  "gravity-octopus-furnace": {
+    "include": true,
+    "slug": "gravity-octopus-furnace",
+    "title": "Gravity ('octopus') furnace",
+    "category": "hvac",
+    "hook": "Some older basements still hold a huge round 'octopus' furnace with fat ducts reaching upward, and its duct wrap may contain asbestos.",
+    "summary": "Gravity furnaces, installed from the late 1800s to the mid-20th century, move heat without a blower through large sloping ducts. InterNACHI says only about half their heat reaches the house. The ducts were often wrapped in material that may contain asbestos.",
+    "kind": "present",
+    "applies": {
+      "from": null,
+      "to": 1950,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "money",
+    "priority": 3,
+    "evidence": "era",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. of how many remain; most have been replaced."
+    },
+    "retrofit": false,
+    "where": [
+      "basement-foundation",
+      "heating-cooling"
+    ],
+    "check": [
+      "In the basement, look for a very large round or boxy furnace with several large sheet-metal ducts sloping up from the top and no blower compartment.",
+      "White or gray cloth-like or corrugated-paper wrap on the ducts may be asbestos; do not disturb it."
+    ],
+    "action": "Plan for replacement: have any duct wrap tested and removed by a licensed asbestos abatement contractor, then install a modern furnace and ducts. InterNACHI advises buyers to negotiate the price to cover this.",
+    "caveat": "The date range stands in for InterNACHI's 'late 1800s to the mid-20th century'. Most of these furnaces have long since been replaced."
+  },
+  "r22-air-conditioner": {
+    "include": true,
+    "slug": "r22-air-conditioner",
+    "title": "R-22 (Freon) air conditioner",
+    "category": "hvac",
+    "hook": "New air conditioners could not be built to use R-22 from 2010, and US production of the refrigerant ended in 2020.",
+    "summary": "Air conditioners and heat pumps made before January 1, 2010 commonly use R-22 (HCFC-22). EPA says you can keep running one as long as you like, but with R-22 no longer produced, a leak can make repair uneconomic. Replacing it usually means a new outdoor unit and indoor coil together.",
+    "kind": "present",
+    "applies": {
+      "from": null,
+      "to": 2009,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "money",
+    "priority": 3,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. of pre-2010 units still in service."
+    },
+    "retrofit": true,
+    "where": [
+      "heating-cooling"
+    ],
+    "check": [
+      "Read the data plate on the outdoor unit: 'R-22' or 'HCFC-22' means the old refrigerant; newer units say R-410A, R-454B or R-32.",
+      "The manufacture date is usually on the same plate."
+    ],
+    "action": "Nothing to do while it works. Budget for replacing the outdoor unit and indoor coil together when it fails.",
+    "caveat": "Air conditioning is often added or replaced long after a house is built, so the unit's age matters far more than the house's."
+  },
+  "unlined-masonry-chimney": {
+    "include": true,
+    "slug": "unlined-chimney",
+    "title": "Unlined masonry chimney",
+    "category": "fire-safety",
+    "hook": "Many chimneys built before the 1950s have no flue liner, just bare brick, which can let a chimney fire or carbon monoxide reach the house.",
+    "summary": "Since the 1950s, building codes in many places have required new chimneys to have a flue liner, usually square clay tiles. Older chimneys may have none, and lined chimneys of any age can have cracked tiles. A chimney inspection is the way to know.",
+    "kind": "present",
+    "applies": {
+      "from": null,
+      "to": 1955,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "era",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. Sources say only that pre-1950s houses 'often' have unlined chimneys."
+    },
+    "retrofit": false,
+    "where": [
+      "chimney",
+      "roof"
+    ],
+    "check": [
+      "With the fire out and cold, look up from the fireplace or down from the clean-out with a flashlight.",
+      "Bare brick and mortar means unlined; square orange or buff clay tiles mean lined.",
+      "Cracked tiles usually need a camera inspection (an NFPA 211 Level 2 inspection)."
+    ],
+    "action": "Have a certified chimney sweep inspect it before using the fireplace or connecting an appliance. Fixes include a stainless-steel or cast-in-place liner, new tiles, or closing off the flue.",
+    "caveat": "There is no single national date; liner rules came in locally and gradually from about the 1950s. Many older chimneys have been relined since."
+  },
+  "csst-gas-tubing-unbonded": {
+    "include": true,
+    "slug": "unbonded-csst-gas-tubing",
+    "title": "Yellow CSST gas tubing without bonding",
+    "category": "fire-safety",
+    "hook": "Flexible yellow stainless-steel gas tubing can be damaged by a nearby lightning strike, and older installs often lack the bonding wire that reduces the risk.",
+    "summary": "Corrugated stainless steel tubing (CSST) in a yellow jacket came into use in houses around 1990. A class action against its makers covered tubing installed in homes as of September 5, 2006, and bonding the tubing to the electrical ground is now standard. Houses built before bonding became routine may not have it.",
+    "kind": "present",
+    "applies": {
+      "from": 1990,
+      "to": 2011,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "era",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. It applies only to houses with gas service."
+    },
+    "retrofit": false,
+    "where": [
+      "basement-foundation",
+      "attic",
+      "heating-cooling",
+      "water-heater"
+    ],
+    "check": [
+      "Look at exposed gas piping in the basement, attic, crawl space or at the furnace and water heater: flexible corrugated tubing in a yellow jacket is CSST (black-jacketed tubing is a newer type).",
+      "Look for bonding: a clamp on a rigid gas fitting with a bare or green copper wire running to the electrical panel or grounding system."
+    ],
+    "action": "If you have yellow CSST and see no bonding wire, have a licensed electrician bond it following the tubing maker's instructions and current code. It is a small job.",
+    "caveat": "The start year and the code year that made bonding mandatory (reported as 2009) were not confirmed, and states adopted codes at different times. CSST is still installed today, with bonding."
+  },
+  "uncoated-brass-gas-connector": {
+    "include": true,
+    "slug": "uncoated-brass-gas-connectors",
+    "title": "Uncoated brass gas appliance connectors",
+    "category": "fire-safety",
+    "hook": "Old flexible brass gas connectors behind stoves, dryers and water heaters can crack, and CPSC linked them to 35 deaths.",
+    "summary": "CPSC warned in 1996 that uncoated brass connectors, not made for at least the previous 10 years, can crack or break, citing 200 failures associated with 35 deaths and 59 injuries. A connector is usually replaced along with its appliance, so they survive mainly with very old gas appliances. Modern connectors are stainless steel or plastic-coated.",
+    "kind": "present",
+    "applies": {
+      "from": null,
+      "to": 1986,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "record",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. Connectors are usually replaced with the appliance."
+    },
+    "retrofit": false,
+    "where": [
+      "kitchen",
+      "water-heater",
+      "heating-cooling"
+    ],
+    "check": [
+      "CPSC says not to move a gas appliance to look; check only where the connector is already visible.",
+      "An old connector is a dull brass-colored corrugated tube with no gray or yellow plastic coating.",
+      "Modern connectors are stainless steel or coated."
+    ],
+    "action": "Have a qualified gas technician check the connectors on older appliances and replace any uncoated brass one. A connector should never be reused.",
+    "caveat": "CPSC gave no exact year manufacture stopped, only 'at least the past 10 years' as of 1996. The age of the appliance matters more than the age of the house."
+  },
+  "smoke-alarms-by-era": {
+    "include": true,
+    "slug": "missing-or-outdated-smoke-alarms",
+    "title": "Missing or outdated smoke alarms",
+    "category": "fire-safety",
+    "hook": "Model building codes began requiring smoke alarms in every bedroom, linked so one sets off the rest, in 1988, so many older houses were built with far fewer.",
+    "summary": "Smoke alarms went from 10% of US homes in 1975 to at least 92% by 2000, according to NIST. Codes then raised the bar: interconnected alarms in all sleeping rooms under the 1988 model codes, and alarms in all bedrooms under NFPA 72 from 1993. Alarms also wear out and should be replaced every 10 years.",
+    "kind": "missing",
+    "applies": {
+      "from": null,
+      "to": 1995,
+      "coreFrom": null,
+      "coreTo": 1987,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 1,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. of houses with alarms in every bedroom. NIST: the share of homes with at least one smoke alarm rose from 10% in 1975 to at least 92% by 2000."
+    },
+    "retrofit": true,
+    "where": [
+      "whole-house"
+    ],
+    "check": [
+      "Count them: one in each bedroom, one outside each sleeping area, and one on every level including the basement.",
+      "Press TEST on one: if all of them sound, they are interconnected.",
+      "Twist one off its base: a wiring plug behind it means hard-wired; none means battery-only.",
+      "Check the manufacture date on the back; over 10 years old means replace it."
+    ],
+    "action": "Add alarms to every bedroom, hallway and level, using interconnected units; wireless interconnected alarms avoid new wiring. Replace any alarm over 10 years old. Many states also require working alarms at sale or rental.",
+    "caveat": "The code dates come from reference sources and varied by code family and local adoption, so 1988 to 1993 is a transition and later is possible. Many older houses have been upgraded since.",
+    "sourceIds": [
+      "hardwired-interconnected-smoke-alarms"
+    ]
+  },
+  "garage-door-opener-no-auto-reverse": {
+    "include": true,
+    "slug": "garage-door-opener-auto-reverse",
+    "title": "Garage door opener without auto-reverse",
+    "category": "electrical",
+    "hook": "Garage door openers made before 1991 did not have to reverse when they hit something, and photo-eyes or similar protection became required on openers made from 1993.",
+    "summary": "CPSC reported 54 children killed since 1982 after being trapped under doors with automatic openers. Federal law required openers made from January 1, 1991 to reverse on contact, and openers made from January 1, 1993 to add protection such as photo-eye sensors. It is the opener's age that matters, not the house's.",
+    "kind": "missing",
+    "applies": {
+      "from": null,
+      "to": 1992,
+      "coreFrom": null,
+      "coreTo": 1990,
+      "startEdge": "soft",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. of pre-1993 openers still in use."
+    },
+    "retrofit": true,
+    "where": [
+      "garage"
+    ],
+    "check": [
+      "Look for two small sensor 'eyes' about 6 inches off the floor on each side of the garage door opening.",
+      "Check the date on the opener's label.",
+      "Test it: lay a 2x4 flat on the floor under the door; the door should reverse when it touches the board."
+    ],
+    "action": "If the opener does not reverse or has no sensors, replace it with a current UL 325-compliant unit rather than trying to retrofit it. Until then, keep children clear of the door while it moves.",
+    "caveat": "The 1993 rule can be met by a constant-contact wall button instead of photo-eyes, so a newer opener without eyes is possible. Openers are often added or replaced long after a house is built."
+  },
+  "non-safety-glazing-pre-1977": {
+    "include": true,
+    "slug": "non-tempered-glass",
+    "title": "Non-tempered glass in doors and showers",
+    "category": "envelope",
+    "hook": "Glass in doors, sliding patio doors and shower enclosures has had to be safety glass since July 1977, so older original glass may be ordinary glass that can cause serious cuts if someone falls through it.",
+    "summary": "A federal CPSC standard made safety glazing mandatory from July 6, 1977 in doors, storm doors, sliding glass doors, and tub and shower doors and enclosures. A house built before then that still has its original glass in those places may have ordinary annealed glass. Building codes later added other locations near doors, floors, stairs and tubs.",
+    "kind": "missing",
+    "applies": {
+      "from": null,
+      "to": 1977,
+      "coreFrom": null,
+      "coreTo": 1976,
+      "startEdge": "soft",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. of original pre-1977 glass still in place."
+    },
+    "retrofit": false,
+    "where": [
+      "windows",
+      "bathroom"
+    ],
+    "check": [
+      "Look in each corner of the glass in doors, sliding doors and shower panels for a small etched or sandblasted mark naming the maker.",
+      "A mark reading 'tempered', '16 CFR 1201' or 'ANSI Z97.1' means safety glass.",
+      "No mark on a door or shower panel in an older house suggests ordinary glass."
+    ],
+    "action": "Replace unmarked glass in doors and showers with tempered or laminated safety glass, starting with the places people are most likely to fall against.",
+    "caveat": "Some states may have had their own safety-glazing laws earlier; that was not confirmed. Many doors and shower enclosures have been replaced since 1977."
+  },
+  "residential-fire-sprinklers": {
+    "include": true,
+    "slug": "home-fire-sprinklers",
+    "title": "Home fire sprinklers",
+    "category": "fire-safety",
+    "hook": "California has required fire sprinklers in new one- and two-family homes since 2011, so newer California houses generally have small sprinkler heads in the ceilings.",
+    "summary": "A model code change requiring sprinklers in new one- and two-family homes took effect January 1, 2011. California adopted it statewide; Pennsylvania adopted it and repealed it the same year. Sprinklers need little care, but painted or blocked heads must be replaced and the control valve must stay open.",
+    "kind": "present",
+    "applies": {
+      "from": 2011,
+      "to": null,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "sharp",
+      "endEdge": "soft"
+    },
+    "regions": [
+      "CA"
+    ],
+    "severity": "safety",
+    "priority": 3,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "likely",
+      "note": "California has required sprinklers in all new residential construction since 2011 (Wikipedia). Outside places that require them, they are uncommon in houses."
+    },
+    "retrofit": false,
+    "where": [
+      "whole-house",
+      "plumbing-supply",
+      "garage"
+    ],
+    "check": [
+      "Look up: small sprinkler heads, often under flat white cover plates, in the ceiling of every room.",
+      "Find the riser, a pipe with a gauge and flow switch, near the water main or in the garage."
+    ],
+    "action": "Keep the control valve open and never paint over a sprinkler head. Replace any head that has been painted or blocked.",
+    "caveat": "Some cities outside California also require sprinklers by local ordinance. Houses permitted before 2011 but finished later may not have them."
+  },
+  "buried-heating-oil-tank": {
+    "include": false,
+    "reason": "Depends on the exact address (whether the property was ever on oil heat), and no source dates residential installation."
+  },
+  "carbon-monoxide-alarms": {
+    "include": false,
+    "reason": "Unconfirmed: the 2009 IRC requirement could not be verified."
+  },
+  "bedroom-egress-windows": {
+    "include": false,
+    "reason": "Unconfirmed: no verified source for any code date."
+  },
+  "guard-baluster-spacing": {
+    "include": false,
+    "reason": "Unconfirmed: every historical date is unverified."
+  },
+  "lifespan-asphalt-shingle-roof": {
+    "include": false,
+    "reason": "lifespan"
+  },
+  "lifespan-water-heater-tank": {
+    "include": false,
+    "reason": "lifespan"
+  },
+  "lifespan-furnace": {
+    "include": false,
+    "reason": "lifespan"
+  },
+  "lifespan-central-ac-heat-pump": {
+    "include": false,
+    "reason": "lifespan"
+  },
+  "lifespan-windows": {
+    "include": false,
+    "reason": "lifespan"
+  },
+  "lifespan-garage-door-opener": {
+    "include": false,
+    "reason": "lifespan"
+  },
+  "lifespan-electrical-panel": {
+    "include": false,
+    "reason": "lifespan"
+  },
+  "lifespan-well-pump": {
+    "include": false,
+    "reason": "lifespan"
+  },
+  "lifespan-septic-system": {
+    "include": false,
+    "reason": "lifespan"
+  },
+  "unbolted-foundation-unbraced-cripple-wall": {
+    "include": true,
+    "slug": "house-not-bolted-to-foundation",
+    "title": "House not bolted to its foundation",
+    "category": "structure",
+    "hook": "Many older West Coast houses on crawl spaces are not adequately bolted to their foundations, and in a strong earthquake they can slide off.",
+    "summary": "Older wood-frame houses on raised foundations often have the wooden sill plate sitting on the concrete without enough anchor bolts, and short 'cripple' walls with no bracing. In strong shaking the house can shift off its foundation. Bolting the sill and sheathing the cripple walls with plywood is the standard retrofit.",
+    "kind": "present",
+    "applies": {
+      "from": null,
+      "to": 1979,
+      "coreFrom": null,
+      "coreTo": 1949,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": [
+      "CA",
+      "OR",
+      "WA"
+    ],
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "era",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. Only houses on raised foundations with crawl spaces are affected; slab houses are not."
+    },
+    "retrofit": false,
+    "where": [
+      "basement-foundation"
+    ],
+    "check": [
+      "Go into the crawl space and look along the top of the concrete foundation at the wooden sill plate.",
+      "Bolts with nuts and washers every 4 to 6 feet mean it is bolted.",
+      "If there is a short wood-stud wall between the foundation and the floor, check whether plywood or OSB is nailed to its inside face.",
+      "Houses on a concrete slab have no cripple wall."
+    ],
+    "action": "A contractor can bolt the sill and brace the cripple walls following your state's or city's prescriptive retrofit plans; taller cripple walls need an engineer. In California, check whether a state grant program covers your ZIP code.",
+    "caveat": "There is no single code year: a reference source says many houses built before 1950 lack adequate bolting, and the pre-1980 cutoff used in California is a grant-program screen, not a code date. Many houses have already been retrofitted."
+  },
+  "unreinforced-masonry-urm": {
+    "include": true,
+    "slug": "unreinforced-brick-houses",
+    "title": "Unreinforced brick (URM) houses",
+    "category": "structure",
+    "hook": "Along Utah's Wasatch Front, many solid-brick houses built before 1975 have no steel reinforcement, and FEMA counts over 185,000 such buildings in the Salt Lake Valley alone.",
+    "summary": "Unreinforced masonry walls can crack and fall in an earthquake, and parapets and chimneys tend to go first. In Utah, codes for new buildings began addressing this in 1975, and many unreinforced buildings there are single-family houses. Tying walls to floors and roof and bracing chimneys are the usual retrofits.",
+    "kind": "present",
+    "applies": {
+      "from": null,
+      "to": 1975,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": [
+      "UT"
+    ],
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "possible",
+      "note": "FEMA P-774: over 185,000 unreinforced masonry buildings in the Salt Lake Valley alone, many of them single-family homes."
+    },
+    "retrofit": false,
+    "where": [
+      "exterior-walls",
+      "chimney",
+      "roof"
+    ],
+    "check": [
+      "Look at the outside brick walls: a row of bricks laid end-on (a header course) every 5 to 7 rows means solid brick, not veneer.",
+      "At a window opening, walls 8 to 13 inches thick point to solid masonry.",
+      "Star-shaped or square metal plates on the outside wall show past retrofit ties.",
+      "Brick veneer over a wood frame has no header rows and is a different, lesser issue."
+    ],
+    "action": "Have a structural engineer assess it. Salt Lake City has run a 'Fix the Bricks' program that helps pay for roof-to-wall ties and chimney bracing; check whether it covers your house.",
+    "caveat": "Shown for Utah, where the 1975 date is confirmed. California, Oregon and Washington also have unreinforced brick buildings with earlier cutoffs (California's seismic codes began in the 1930s), but most of those are commercial or apartment buildings."
+  },
+  "florida-pre-2002-wind-construction": {
+    "include": true,
+    "slug": "florida-pre-2002-wind-code",
+    "title": "Florida home built before the statewide wind code",
+    "category": "structure",
+    "hook": "Florida homes permitted before March 1, 2002 were built to local codes rather than the statewide Florida Building Code that followed Hurricane Andrew.",
+    "summary": "After Hurricane Andrew, South Florida created High-Velocity Hurricane Zones in its 1994 code, and the statewide Florida Building Code took effect March 1, 2002. Older homes may have roofs held to the walls only by nails rather than metal straps, and no protection over windows and doors. A wind-mitigation inspection documents what a house actually has.",
+    "kind": "missing",
+    "applies": {
+      "from": null,
+      "to": 2002,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "sharp"
+    },
+    "regions": [
+      "FL"
+    ],
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "likely",
+      "note": "Wikipedia: about 4.7 million Florida homes predate the modern Florida Building Code."
+    },
+    "retrofit": false,
+    "where": [
+      "attic",
+      "roof",
+      "windows"
+    ],
+    "check": [
+      "In the attic at the eaves, look where each truss or rafter meets the top of the wall.",
+      "Only angled nails means toe-nailed; a small metal bracket is a clip; a metal strap wrapping over the truss is a wrap, and two straps a double wrap.",
+      "Check windows and doors for impact-rated labels or shutter hardware.",
+      "Your county permit record gives the original permit date."
+    ],
+    "action": "Get a wind-mitigation inspection by a licensed inspector; it records these features for your insurer. Upgrades such as roof-to-wall straps, re-nailing the roof deck and shutters are usually done at re-roofing time.",
+    "caveat": "What counts is the permit application date, not the year the house was finished, so 2002 houses can go either way. In Miami-Dade and Broward the stricter code dates from 1994. Many pre-2002 homes do have clips or straps."
+  },
+  "pyrrhotite-crumbling-foundations": {
+    "include": true,
+    "slug": "pyrrhotite-crumbling-foundations",
+    "title": "Crumbling concrete foundations (pyrrhotite)",
+    "category": "structure",
+    "hook": "In parts of north-central Connecticut and central Massachusetts, some foundations poured with local quarry stone are crumbling because of a mineral called pyrrhotite.",
+    "summary": "NIST says damage to concrete in central Connecticut has been attributed to pyrrhotite, an iron sulfide mineral in the aggregate. State officials use 1983 to 2015 as the window for affected foundations, and cracking usually appears 10 to 30 years after construction. The fix is replacing the foundation, which is a major job.",
+    "kind": "present",
+    "applies": {
+      "from": 1983,
+      "to": 2015,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": [
+      "CT",
+      "MA"
+    ],
+    "severity": "money",
+    "priority": 2,
+    "evidence": "era",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. Estimates of affected homes vary by two orders of magnitude, and the risk is limited to certain towns; outside them it is essentially nil."
+    },
+    "retrofit": false,
+    "where": [
+      "basement-foundation"
+    ],
+    "check": [
+      "In the basement, look at the foundation walls for horizontal cracks and map-pattern (spider-web) cracking.",
+      "Look for white powdery deposits, rust-brown staining and flaking.",
+      "A clean-looking wall does not rule it out; a licensed engineer's visual inspection and a core sample tested for pyrrhotite confirm it."
+    ],
+    "action": "If you are in an affected town, have a licensed engineer inspect the foundation, especially before buying. Connecticut and Massachusetts have run programs for testing, and Connecticut for repairs; check what is currently available.",
+    "caveat": "The 1983 to 2015 window comes from state officials' figures that could not be independently confirmed, and only towns near the source quarries are affected. Most houses in Connecticut and Massachusetts are not at risk."
+  },
+  "engineered-i-joists-fire": {
+    "include": true,
+    "slug": "engineered-i-joist-floors",
+    "title": "Engineered I-joist floors",
+    "category": "fire-safety",
+    "hook": "By 2005 about half of new wood floors were built on engineered I-joists, which perform well day to day but can fail quickly in a fire if left exposed.",
+    "summary": "I-joists, invented in 1969, have a thin OSB or plywood web between small top and bottom flanges. Their known drawback is very rapid failure when directly exposed to fire, which matters over an unfinished basement or garage with no ceiling. Covering the underside with drywall is the usual protection.",
+    "kind": "present",
+    "applies": {
+      "from": 1970,
+      "to": null,
+      "coreFrom": 2000,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 3,
+    "evidence": "era",
+    "prevalence": {
+      "label": "possible",
+      "note": "Wikipedia: about 50% of wood light-frame floors used I-joists as of 2005."
+    },
+    "retrofit": false,
+    "where": [
+      "basement-foundation",
+      "garage"
+    ],
+    "check": [
+      "Look up at the basement or garage ceiling for I-shaped joists: a thin OSB or plywood web with small lumber flanges top and bottom.",
+      "They are usually printed with a brand such as TJI, BCI or LPI.",
+      "If you can see them, they are unprotected from below."
+    ],
+    "action": "Consider covering exposed I-joists with 1/2-inch drywall, and make sure working smoke alarms cover every level, including the basement.",
+    "caveat": "A model-code requirement to cover them was reportedly added around 2012, but that was not confirmed and states adopted it unevenly. The hazard applies only where the joists are exposed."
+  },
+  "roof-trusses-metal-plate": {
+    "include": true,
+    "slug": "factory-roof-trusses",
+    "title": "Factory-built roof trusses",
+    "category": "structure",
+    "hook": "If your attic is a web of diagonal 2x4s joined by toothed metal plates, the roof is built from factory trusses, and cutting even one can badly weaken it.",
+    "summary": "Metal-plate-connected roof trusses date from the mid-1950s and became a common way to frame roofs. They are efficient, but every piece carries load. Cutting or altering a truss, for attic storage, a skylight or ductwork, needs an engineer's repair design.",
+    "kind": "present",
+    "applies": {
+      "from": 1955,
+      "to": null,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "money",
+    "priority": 3,
+    "evidence": "era",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. for houses by year built."
+    },
+    "retrofit": false,
+    "where": [
+      "attic",
+      "roof"
+    ],
+    "check": [
+      "In the attic, look for diagonal 2x4s forming W or M shapes, joined by toothed galvanized steel plates, usually 24 inches apart.",
+      "Rafters, by contrast, are larger boards running from the ridge to the wall with open space between.",
+      "Look for cut or notched members and plates that have backed out of the wood."
+    ],
+    "action": "Nothing is needed unless trusses are damaged or altered. Before any attic conversion, skylight or other change that touches a truss, get an engineer's design.",
+    "caveat": "Truss use grew over decades, and many houses still use rafters, especially custom homes and complex roofs. Sources date the connector plate to 1952 or 1955."
+  },
+  "pre-1976-mobile-homes": {
+    "include": true,
+    "slug": "pre-hud-code-mobile-homes",
+    "title": "Mobile home built before the HUD Code",
+    "category": "structure",
+    "hook": "Mobile homes made before June 15, 1976 predate the federal HUD Code and cannot get FHA-insured mortgages.",
+    "summary": "Every manufactured home built after June 15, 1976 carries a HUD certification label and meets federal construction and safety standards. Earlier units were built before those standards, and HUD does not issue labels for them. This matters only if your home is a manufactured (mobile) home.",
+    "kind": "missing",
+    "applies": {
+      "from": null,
+      "to": 1976,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "money",
+    "priority": 2,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. of surviving pre-1976 units. Every mobile home made before the date predates the HUD Code by definition."
+    },
+    "retrofit": false,
+    "where": [
+      "exterior-walls",
+      "whole-house"
+    ],
+    "check": [
+      "Look for a metal certification label, about 2 by 4 inches, riveted to the outside at the tail end of each section.",
+      "Look for a paper data plate inside, often in a kitchen cabinet, the electrical panel or a bedroom closet, giving the manufacture date.",
+      "No label and no data plate, plus a title showing a pre-1976 year, means pre-HUD Code."
+    ],
+    "action": "It cannot be certified after the fact. Focus on safety upgrades such as smoke alarms, a wiring evaluation and tie-downs. Expect financing limits: FHA does not insure mortgages on these homes.",
+    "caveat": "The date is when the home left the factory, not its model year or when it was placed, so a '1976' home can fall on either side."
+  },
+  "manufactured-homes-pre-1994-wind-zones": {
+    "include": true,
+    "slug": "manufactured-homes-pre-1994-wind",
+    "title": "Manufactured home built before 1994 wind standards",
+    "category": "structure",
+    "hook": "After Hurricane Andrew, HUD raised the wind standards for manufactured homes made from July 13, 1994, with zones designed for 100 and 110 mph winds.",
+    "summary": "Manufactured homes made before July 13, 1994 were built to the older wind standard. The newer rule created Wind Zones II and III for hurricane-prone areas. This matters only for manufactured homes, and most of all on the hurricane coast.",
+    "kind": "missing",
+    "applies": {
+      "from": null,
+      "to": 1994,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 3,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists. Every manufactured home made before the date was built to the older standard."
+    },
+    "retrofit": false,
+    "where": [
+      "whole-house"
+    ],
+    "check": [
+      "Find the data plate inside the home, often in a kitchen cabinet, the electrical panel or a bedroom closet.",
+      "Read the manufacture date and the wind-zone map showing which zone (I, II or III) the home was designed for.",
+      "No wind-zone designation, or a date before July 1994, means the older standard."
+    ],
+    "action": "Have the anchoring and tie-downs checked and brought up to current installation standards. Only replacement gets you the post-1994 structural design.",
+    "caveat": "Date of manufacture governs, not the year the home was placed. Exactly which counties fall in each wind zone was not confirmed; the higher zones cover the hurricane coast."
+  },
+  "soft-story-wood-frame-apartments": {
+    "include": false,
+    "reason": "Depends on the exact address and building type: applies to multi-unit apartment buildings covered by specific California city ordinances, not to houses by year and state."
+  },
+  "hurricane-straps-gulf-atlantic": {
+    "include": false,
+    "reason": "Unconfirmed: no verified source for any state date."
+  },
+  "pre-firm-flood-construction": {
+    "include": false,
+    "reason": "Depends on the exact address: whether the lot is in a mapped flood zone and the date of that community's first flood map."
+  },
+  "texas-expansive-clay-slab-foundations": {
+    "include": false,
+    "reason": "Unconfirmed, and there is no cut-off year; soil, not build year, drives it."
+  },
+  "stone-brick-rubble-foundations": {
+    "include": false,
+    "reason": "Unconfirmed: the 1940 end year and all prevalence are unsourced."
+  },
+  "permanent-wood-foundations": {
+    "include": false,
+    "reason": "Too weak: rare (over 300,000 structures, trade source) and build year only rules out houses before about 1971."
+  },
+  "california-chapter-7a-wildfire": {
+    "include": false,
+    "reason": "Unconfirmed (the 2008 date could not be verified), and it depends on whether the exact parcel is in a mapped fire hazard zone."
+  },
+  "snow-load-older-roofs": {
+    "include": false,
+    "reason": "Too weak: no cut-off year exists (codes changed across the 1970s and 1980s) and the guidance targets larger, flatter buildings."
+  },
+  "termite-wood-soil-contact": {
+    "include": false,
+    "reason": "No dated code milestone verified; build year does not predict it."
+  }
+}

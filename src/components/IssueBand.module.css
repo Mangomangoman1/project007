@@ -1,0 +1,52 @@
+.band {
+  display: block;
+  overflow: visible;
+  max-width: none;
+}
+.base {
+  stroke: var(--rule-strong);
+  stroke-opacity: 0.45;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+.tickLine {
+  stroke: var(--ink-3);
+  stroke-opacity: 0.6;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+.axisText {
+  fill: var(--ink-3);
+  font-family: var(--font-mono);
+  font-size: 10px;
+}
+.cap {
+  stroke-width: 1.5;
+  shape-rendering: crispEdges;
+}
+.marker line {
+  stroke: var(--ink);
+  stroke-width: 1.5;
+  shape-rendering: crispEdges;
+}
+.tone_lit .body { fill: var(--band); fill-opacity: 0.45; }
+.tone_lit .core { fill: var(--band); }
+.tone_lit .cap { stroke: var(--band); }
+.tone_lit .hatch { fill: var(--band); }
+
+.tone_accent .body { fill: var(--accent); fill-opacity: 0.45; }
+.tone_accent .core { fill: var(--accent); }
+.tone_accent .cap { stroke: var(--accent); }
+.tone_accent .hatch { fill: var(--accent); }
+
+.tone_dim .body { fill: var(--band); fill-opacity: 0.2; }
+.tone_dim .core { fill: var(--band); fill-opacity: 0.4; }
+.tone_dim .cap { stroke: var(--band); stroke-opacity: 0.5; }
+.tone_dim .hatch { fill: var(--band); fill-opacity: 0.45; }
+
+.missing .body {
+  fill-opacity: 1;
+}
+.missing .core {
+  fill-opacity: 0.85;
+}

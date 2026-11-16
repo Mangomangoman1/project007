@@ -1,0 +1,215 @@
+.timeline {
+  position: relative;
+  width: 100%;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.plot {
+  position: relative;
+  width: 100%;
+  touch-action: pan-y;
+  border-radius: var(--radius);
+}
+.interactive .plot {
+  cursor: ew-resize;
+}
+.plot:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 6px;
+}
+
+.svg {
+  overflow: visible;
+  max-width: none;
+}
+
+/* ---- grid & axis ---- */
+.grid line {
+  stroke: var(--grid-major);
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+.grid line.gridMajor {
+  stroke: var(--rule);
+}
+.axis line {
+  stroke: var(--ink-3);
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+.tick {
+  fill: var(--ink-3);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.02em;
+}
+@media (max-width: 640px) {
+  .tickMinor {
+    display: none;
+  }
+}
+
+/* ---- lanes ---- */
+.laneLabel {
+  fill: var(--ink-2);
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.comfortable .laneLabel {
+  font-size: 10.5px;
+}
+.laneCount {
+  fill: var(--ink-3);
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: 0.04em;
+  transition: fill var(--dur) var(--ease);
+}
+.laneCountOn {
+  fill: var(--ink);
+}
+.laneLabel,
+.laneCount {
+  paint-order: stroke;
+  stroke: var(--paper);
+  stroke-width: 4px;
+  stroke-linejoin: round;
+}
+
+/* ---- bands ---- */
+.band {
+  transform-box: fill-box;
+  transform-origin: 0 50%;
+  animation: draw var(--dur-slow) var(--ease) both;
+  animation-delay: calc(var(--i, 0) * 18ms + 80ms);
+}
+@keyframes draw {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+.body,
+.core,
+.cap {
+  transition: fill var(--dur) var(--ease), fill-opacity var(--dur) var(--ease), stroke var(--dur) var(--ease),
+    stroke-opacity var(--dur) var(--ease);
+}
+.cap {
+  stroke-width: 1.5;
+  shape-rendering: crispEdges;
+}
+
+.tone_dim .body { fill: var(--band); fill-opacity: 0.2; }
+.tone_dim .core { fill: var(--band); fill-opacity: 0.42; }
+.tone_dim .cap { stroke: var(--band); stroke-opacity: 0.55; }
+
+.tone_lit .body { fill: var(--band); fill-opacity: 0.5; }
+.tone_lit .core { fill: var(--band); fill-opacity: 1; }
+.tone_lit .cap { stroke: var(--band); }
+
+.tone_accent .body { fill: var(--accent); fill-opacity: 0.5; }
+.tone_accent .core { fill: var(--accent); fill-opacity: 1; }
+.tone_accent .cap { stroke: var(--accent); }
+
+.tone_ghost .body { fill: var(--band); fill-opacity: 0.07; }
+.tone_ghost .core { fill: var(--band); fill-opacity: 0.12; }
+.tone_ghost .cap { stroke: var(--band); stroke-opacity: 0.2; }
+
+/* missing protections: hatched body (fill set inline to the matching pattern), outlined */
+.missing .body {
+  fill-opacity: 1;
+  stroke-width: 1;
+}
+.tone_dim.missing .body { fill-opacity: 1; }
+.tone_dim.missing .core { fill-opacity: 0.3; }
+.tone_lit.missing .core { fill-opacity: 0.9; }
+
+.hatch_dim { fill: var(--band); fill-opacity: 0.45; }
+.hatch_lit { fill: var(--band); }
+.hatch_accent { fill: var(--accent); }
+.hatch_ghost { fill: var(--band); fill-opacity: 0.15; }
+
+/* ---- the year line ---- */
+.yearLine {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  border-left: 1.5px solid var(--ink);
+  transform: translateX(-0.75px);
+  transition: left 160ms var(--ease);
+  pointer-events: none;
+}
+.dragging .yearLine {
+  transition-duration: 40ms;
+}
+.yearLine::after {
+  /* small foot: a dimension terminator */
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: -4.75px;
+  width: 8px;
+  border-top: 1.5px solid var(--ink);
+}
+.yearTag {
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 1px;
+  padding: 2px 6px 1px;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.35;
+  white-space: nowrap;
+  border-radius: 1px;
+  transition: transform var(--dur-fast) var(--ease);
+}
+.align_center {
+  left: 0;
+  transform: translateX(-50%);
+}
+.align_start {
+  left: -1px;
+}
+.align_end {
+  right: 0;
+}
+.yearTag::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -3.5px;
+  border: 3.5px solid transparent;
+  border-top-color: var(--ink);
+}
+.align_start::after {
+  left: -2.5px;
+  margin-left: 0;
+}
+.align_end::after {
+  left: auto;
+  right: -3.5px;
+}
+.interactive .plot:hover .yearTag,
+.dragging .yearTag,
+.plot:focus-visible .yearTag {
+  background: var(--line);
+}
+.interactive .plot:hover .yearTag::after,
+.dragging .yearTag::after,
+.plot:focus-visible .yearTag::after {
+  border-top-color: var(--line);
+}

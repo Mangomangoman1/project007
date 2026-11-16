@@ -30,8 +30,10 @@ export function inState(issue: Pick<Issue, 'regions'>, state: string | null | un
 
 const SEVERITY_RANK: Record<Severity, number> = { safety: 0, money: 1, comfort: 2 };
 
+type Sortable = Pick<Issue, 'applies' | 'priority' | 'severity' | 'title'>;
+
 /** Sort by priority, then core-ness at `year`, then severity, then title. Returns a new array. */
-export function sortIssues<T extends Issue>(issues: T[], year: number): T[] {
+export function sortIssues<T extends Sortable>(issues: T[], year: number): T[] {
   return [...issues].sort(
     (a, b) =>
       a.priority - b.priority ||
@@ -42,12 +44,12 @@ export function sortIssues<T extends Issue>(issues: T[], year: number): T[] {
 }
 
 /** Issues that apply to `year` (and `state`, if given), sorted. */
-export function issuesForYear<T extends Issue>(issues: T[], year: number, state?: string | null): T[] {
+export function issuesForYear<T extends Sortable & Pick<Issue, 'regions'>>(issues: T[], year: number, state?: string | null): T[] {
   return sortIssues(issues.filter((i) => appliesTo(i, year) && inState(i, state)), year);
 }
 
 /** Group issues by the first matching "part of the house", preserving the input order. */
-export function groupByPart<T extends Issue>(
+export function groupByPart<T extends Pick<Issue, 'where'>>(
   issues: T[],
   parts: { id: string; label: string; zones: Zone[] }[],
 ): { id: string; label: string; issues: T[] }[] {
@@ -76,7 +78,7 @@ export function lifeStatus(l: Pick<Lifespan, 'lifeLow' | 'lifeHigh'>, age: numbe
 }
 
 /** One-line headline for a report, from the sorted issue list. */
-export function headlineFor(sorted: Issue[], year: number): { lead: Issue | null; isCoreYear: boolean } {
+export function headlineFor<T extends Pick<Issue, 'applies'>>(sorted: T[], year: number): { lead: T | null; isCoreYear: boolean } {
   const lead = sorted[0] ?? null;
   return { lead, isCoreYear: lead ? isCore(lead, year) : false };
 }
