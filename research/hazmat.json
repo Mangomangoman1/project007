@@ -31,13 +31,49 @@
         "cost_source": "No authoritative cost figure found in this session."
       },
       "sources": [
-        { "url": "https://epa.gov/lead/protect-your-family-sources-lead", "publisher": "US EPA", "supports": "87% / 69% / 24% share of homes with lead paint by construction era", "verified": false, "snippet_corroborated": true },
-        { "url": "https://epa.gov/lead/how-can-i-tell-if-my-home-contains-lead-based-paint", "publisher": "US EPA", "supports": "Era-based likelihood and need for testing", "verified": false, "snippet_corroborated": true },
-        { "url": "https://hud.gov/sites/dfiles/HH/documents/AHHS%20II_Lead_Findings_Report_Final_29oct21.pdf", "publisher": "HUD Office of Lead Hazard Control and Healthy Homes", "supports": "34.6 million homes (29.4%) with lead-based paint; 18.2 million (15.4%) with significantly deteriorated LBP", "verified": false, "snippet_corroborated": true },
-        { "url": "https://www.cpsc.gov/recalls/1977/cpsc-announces-final-ban-on-lead-containing-paint", "publisher": "US CPSC", "supports": "1977 final ban, lead limit lowered from 0.5% to 0.06%", "verified": false, "snippet_corroborated": true },
-        { "url": "https://www.ecfr.gov/current/title-16/chapter-II/subchapter-B/part-1303", "publisher": "eCFR (16 CFR 1303)", "supports": "Ban applies to products manufactured after February 27, 1978", "verified": false, "snippet_corroborated": true }
+        {
+          "url": "https://epa.gov/lead/protect-your-family-sources-lead",
+          "publisher": "US EPA",
+          "supports": "87% / 69% / 24% share of homes with lead paint by construction era",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://epa.gov/lead/how-can-i-tell-if-my-home-contains-lead-based-paint",
+          "publisher": "US EPA",
+          "supports": "Era-based likelihood and need for testing",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://hud.gov/sites/dfiles/HH/documents/AHHS%20II_Lead_Findings_Report_Final_29oct21.pdf",
+          "publisher": "HUD Office of Lead Hazard Control and Healthy Homes",
+          "supports": "34.6 million homes (29.4%) with lead-based paint; 18.2 million (15.4%) with significantly deteriorated LBP",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://www.cpsc.gov/recalls/1977/cpsc-announces-final-ban-on-lead-containing-paint",
+          "publisher": "US CPSC",
+          "supports": "1977 final ban, lead limit lowered from 0.5% to 0.06%",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://www.ecfr.gov/current/title-16/chapter-II/subchapter-B/part-1303",
+          "publisher": "eCFR (16 CFR 1303)",
+          "supports": "Ban applies to products manufactured after February 27, 1978",
+          "verified": false,
+          "snippet_corroborated": true
+        }
       ],
-      "open_questions": "AHHS II prevalence by year-built bracket (the most current numbers) was not retrieved. Sources disagree on what share of homes with lead paint were built before 1978 (89% vs 93%) and one snippet claims 85.4% were pre-1940, which looks garbled. No cost data. State/local bans earlier than 1978 (e.g. some cities in the 1950s-60s) not researched."
+      "open_questions": "AHHS II prevalence by year-built bracket (the most current numbers) was not retrieved. Sources disagree on what share of homes with lead paint were built before 1978 (89% vs 93%) and one snippet claims 85.4% were pre-1940, which looks garbled. No cost data. State/local bans earlier than 1978 (e.g. some cities in the 1950s-60s) not researched.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing in this pass: no page could be opened (all allowed hosts failed DNS resolution in the session). Claims rest on the first pass's search snippets (see snippet_corroborated on each source) and on memory where date_notes says so.",
+        "what_is_not": "installed_from/installed_to years, the ban/rule/code dates in date_notes, and any prevalence figure; all remain unverified against an opened source."
+      }
     },
     {
       "id": "asbestos-popcorn-ceiling",
@@ -67,12 +103,42 @@
         "cost_source": "Only contractor-marketing figures found; not used."
       },
       "sources": [
-        { "url": "https://19january2021snapshot.epa.gov/asbestos/epa-actions-protect-public-exposure-asbestos_.html", "publisher": "US EPA (archived snapshot)", "supports": "1973 ban on spray-applied surfacing ACM for fireproofing/insulating; 1978 ban on spray-applied surfacing for purposes not already banned", "verified": false, "snippet_corroborated": true },
-        { "url": "https://cpsc.gov/safety-education/safety-guides/home/asbestos-home", "publisher": "US CPSC", "supports": "Leave undamaged asbestos material alone; general household asbestos locations", "verified": false, "snippet_corroborated": true },
-        { "url": "https://www.yakimacleanair.org/site/files/file_manager/page/shared/Homeowner%20Ceiling%20Removal.pdf", "publisher": "Yakima Regional Clean Air Agency (WA)", "supports": "Homeowner guidance on testing and removal of popcorn ceilings", "verified": false, "snippet_corroborated": false },
-        { "url": "https://inspectandtest.net/guides/popcorn-ceiling-asbestos/", "publisher": "inspectandtest.net (commercial, weak source)", "supports": "Installed 1950s through about 1980; existing stock used after ban", "verified": false, "snippet_corroborated": true }
+        {
+          "url": "https://19january2021snapshot.epa.gov/asbestos/epa-actions-protect-public-exposure-asbestos_.html",
+          "publisher": "US EPA (archived snapshot)",
+          "supports": "1973 ban on spray-applied surfacing ACM for fireproofing/insulating; 1978 ban on spray-applied surfacing for purposes not already banned",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://cpsc.gov/safety-education/safety-guides/home/asbestos-home",
+          "publisher": "US CPSC",
+          "supports": "Leave undamaged asbestos material alone; general household asbestos locations",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://www.yakimacleanair.org/site/files/file_manager/page/shared/Homeowner%20Ceiling%20Removal.pdf",
+          "publisher": "Yakima Regional Clean Air Agency (WA)",
+          "supports": "Homeowner guidance on testing and removal of popcorn ceilings",
+          "verified": false,
+          "snippet_corroborated": false
+        },
+        {
+          "url": "https://inspectandtest.net/guides/popcorn-ceiling-asbestos/",
+          "publisher": "inspectandtest.net (commercial, weak source)",
+          "supports": "Installed 1950s through about 1980; existing stock used after ban",
+          "verified": false,
+          "snippet_corroborated": true
+        }
       ],
-      "open_questions": "The real last-installed year (stock sold after 1978) is unsourced; a second pass should look for state air-agency guidance that names a cutoff year (several Western agencies do). No prevalence data. No cost data."
+      "open_questions": "The real last-installed year (stock sold after 1978) is unsourced; a second pass should look for state air-agency guidance that names a cutoff year (several Western agencies do). No prevalence data. No cost data.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing in this pass: no page could be opened (all allowed hosts failed DNS resolution in the session). Claims rest on the first pass's search snippets (see snippet_corroborated on each source) and on memory where date_notes says so.",
+        "what_is_not": "installed_from/installed_to years, the ban/rule/code dates in date_notes, and any prevalence figure; all remain unverified against an opened source."
+      }
     },
     {
       "id": "asbestos-floor-tile-sheet-flooring",
@@ -102,12 +168,42 @@
         "cost_source": "No authoritative figure found."
       },
       "sources": [
-        { "url": "https://inspectapedia.com/interiors/Floor_Tile_History.php", "publisher": "InspectAPedia (inspector reference)", "supports": "Asphalt-asbestos tile c.1917-1960; vinyl-asbestos tile c.1952-1986; Armstrong end dates 1981/1982", "verified": false, "snippet_corroborated": true },
-        { "url": "https://asbestos.com/products/flooring", "publisher": "asbestos.com (Mesothelioma Center; advocacy/legal-marketing site, weak)", "supports": "Armstrong, Flintkote, Kentile made asbestos tile into the 1980s", "verified": false, "snippet_corroborated": true },
-        { "url": "https://19january2017snapshot.epa.gov/asbestos/us-federal-bans-asbestos_.html", "publisher": "US EPA (archived snapshot)", "supports": "1989 ban listed vinyl-asbestos floor tile; ban largely overturned 1991", "verified": false, "snippet_corroborated": true },
-        { "url": "https://cpsc.gov/safety-education/safety-guides/home/asbestos-home", "publisher": "US CPSC", "supports": "Resilient floor tiles, sheet flooring backing and adhesives listed as household asbestos sources (from memory of the document)", "verified": false, "snippet_corroborated": false }
+        {
+          "url": "https://inspectapedia.com/interiors/Floor_Tile_History.php",
+          "publisher": "InspectAPedia (inspector reference)",
+          "supports": "Asphalt-asbestos tile c.1917-1960; vinyl-asbestos tile c.1952-1986; Armstrong end dates 1981/1982",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://asbestos.com/products/flooring",
+          "publisher": "asbestos.com (Mesothelioma Center; advocacy/legal-marketing site, weak)",
+          "supports": "Armstrong, Flintkote, Kentile made asbestos tile into the 1980s",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://19january2017snapshot.epa.gov/asbestos/us-federal-bans-asbestos_.html",
+          "publisher": "US EPA (archived snapshot)",
+          "supports": "1989 ban listed vinyl-asbestos floor tile; ban largely overturned 1991",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://cpsc.gov/safety-education/safety-guides/home/asbestos-home",
+          "publisher": "US CPSC",
+          "supports": "Resilient floor tiles, sheet flooring backing and adhesives listed as household asbestos sources (from memory of the document)",
+          "verified": false,
+          "snippet_corroborated": false
+        }
       ],
-      "open_questions": "No agency source for the end year; manufacturer-by-manufacturer end dates differ (1981-1986). No prevalence survey. Whether imported asbestos flooring was sold after 1986 is unknown."
+      "open_questions": "No agency source for the end year; manufacturer-by-manufacturer end dates differ (1981-1986). No prevalence survey. Whether imported asbestos flooring was sold after 1986 is unknown.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing in this pass: no page could be opened (all allowed hosts failed DNS resolution in the session). Claims rest on the first pass's search snippets (see snippet_corroborated on each source) and on memory where date_notes says so.",
+        "what_is_not": "installed_from/installed_to years, the ban/rule/code dates in date_notes, and any prevalence figure; all remain unverified against an opened source."
+      }
     },
     {
       "id": "asbestos-pipe-boiler-duct-insulation",
@@ -137,11 +233,35 @@
         "cost_source": "No authoritative figure found."
       },
       "sources": [
-        { "url": "https://cpsc.gov/safety-education/safety-guides/home/asbestos-home", "publisher": "US CPSC", "supports": "Houses built between 1930 and 1950 may have asbestos as insulation; leave intact material alone", "verified": false, "snippet_corroborated": true },
-        { "url": "https://19january2021snapshot.epa.gov/asbestos/epa-actions-protect-public-exposure-asbestos_.html", "publisher": "US EPA (archived snapshot)", "supports": "1975 ban on installing friable asbestos pipe and block insulation (claim from memory; snippet did not show it)", "verified": false, "snippet_corroborated": false },
-        { "url": "https://www.cpsc.gov/Newsroom/News-Releases/1980/Commission-Authorizes-Ban-On-Asbestos-Paper-Direct-Sales-To-Consumers-And-Home-Contractors", "publisher": "US CPSC", "supports": "1980 action on asbestos paper sales to consumers and home contractors (title only seen)", "verified": false, "snippet_corroborated": false }
+        {
+          "url": "https://cpsc.gov/safety-education/safety-guides/home/asbestos-home",
+          "publisher": "US CPSC",
+          "supports": "Houses built between 1930 and 1950 may have asbestos as insulation; leave intact material alone",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://19january2021snapshot.epa.gov/asbestos/epa-actions-protect-public-exposure-asbestos_.html",
+          "publisher": "US EPA (archived snapshot)",
+          "supports": "1975 ban on installing friable asbestos pipe and block insulation (claim from memory; snippet did not show it)",
+          "verified": false,
+          "snippet_corroborated": false
+        },
+        {
+          "url": "https://www.cpsc.gov/Newsroom/News-Releases/1980/Commission-Authorizes-Ban-On-Asbestos-Paper-Direct-Sales-To-Consumers-And-Home-Contractors",
+          "publisher": "US CPSC",
+          "supports": "1980 action on asbestos paper sales to consumers and home contractors (title only seen)",
+          "verified": false,
+          "snippet_corroborated": false
+        }
       ],
-      "open_questions": "Start year, real end year for residential installs, and separate dates for duct wrap/tape vs pipe lagging are all unsourced. The 1975 ban wording needs to be read from the EPA page."
+      "open_questions": "Start year, real end year for residential installs, and separate dates for duct wrap/tape vs pipe lagging are all unsourced. The 1975 ban wording needs to be read from the EPA page.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing in this pass: no page could be opened (all allowed hosts failed DNS resolution in the session). Claims rest on the first pass's search snippets (see snippet_corroborated on each source) and on memory where date_notes says so.",
+        "what_is_not": "installed_from/installed_to years, the ban/rule/code dates in date_notes, and any prevalence figure; all remain unverified against an opened source."
+      }
     },
     {
       "id": "asbestos-cement-siding-roofing",
@@ -171,12 +291,42 @@
         "cost_source": "No authoritative figure found."
       },
       "sources": [
-        { "url": "https://inspectapedia.com/exterior/Asbestos_Cement_Siding_Roofing_History.php", "publisher": "InspectAPedia (inspector reference)", "supports": "Used on homes built 1906-1980 in North America", "verified": false, "snippet_corroborated": true },
-        { "url": "https://inspectapedia.com/exterior/Asbestos_Cement_Shingles_NPS.pdf", "publisher": "National Park Service document hosted by InspectAPedia", "supports": "History of asbestos-cement shingles (not read)", "verified": false, "snippet_corroborated": false },
-        { "url": "https://cpsc.gov/safety-education/safety-guides/home/asbestos-home", "publisher": "US CPSC", "supports": "Asbestos cement roofing, shingles and siding listed as household sources", "verified": false, "snippet_corroborated": true },
-        { "url": "https://www.mesothelioma.com/asbestos-exposure/products/flooring", "publisher": "mesothelioma.com (legal-marketing site, weak)", "supports": "Transite siding 1906-1975; Flexboard 1927-1983", "verified": false, "snippet_corroborated": true }
+        {
+          "url": "https://inspectapedia.com/exterior/Asbestos_Cement_Siding_Roofing_History.php",
+          "publisher": "InspectAPedia (inspector reference)",
+          "supports": "Used on homes built 1906-1980 in North America",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://inspectapedia.com/exterior/Asbestos_Cement_Shingles_NPS.pdf",
+          "publisher": "National Park Service document hosted by InspectAPedia",
+          "supports": "History of asbestos-cement shingles (not read)",
+          "verified": false,
+          "snippet_corroborated": false
+        },
+        {
+          "url": "https://cpsc.gov/safety-education/safety-guides/home/asbestos-home",
+          "publisher": "US CPSC",
+          "supports": "Asbestos cement roofing, shingles and siding listed as household sources",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://www.mesothelioma.com/asbestos-exposure/products/flooring",
+          "publisher": "mesothelioma.com (legal-marketing site, weak)",
+          "supports": "Transite siding 1906-1975; Flexboard 1927-1983",
+          "verified": false,
+          "snippet_corroborated": true
+        }
       ],
-      "open_questions": "Peak years and any market-share data. An NPS Preservation Brief or NIST/NBS report would be the authoritative history. Also not covered: asbestos-cement (Transite) flue pipe and HVAC ducts in slabs."
+      "open_questions": "Peak years and any market-share data. An NPS Preservation Brief or NIST/NBS report would be the authoritative history. Also not covered: asbestos-cement (Transite) flue pipe and HVAC ducts in slabs.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing in this pass: no page could be opened (all allowed hosts failed DNS resolution in the session). Claims rest on the first pass's search snippets (see snippet_corroborated on each source) and on memory where date_notes says so.",
+        "what_is_not": "installed_from/installed_to years, the ban/rule/code dates in date_notes, and any prevalence figure; all remain unverified against an opened source."
+      }
     },
     {
       "id": "asbestos-joint-compound-texture",
@@ -206,11 +356,35 @@
         "cost_source": "No authoritative figure found."
       },
       "sources": [
-        { "url": "https://www.law.cornell.edu/cfr/text/16/1304.1", "publisher": "Cornell LII (16 CFR 1304)", "supports": "CPSC ban of consumer patching compounds with respirable free-form asbestos; January 16, 1978 and June 11, 1978 dates", "verified": false, "snippet_corroborated": true },
-        { "url": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Asbestos", "publisher": "US CPSC", "supports": "1977 ban covers drywall spackling and tape joint compounds", "verified": false, "snippet_corroborated": true },
-        { "url": "https://www.mesothelioma.com/asbestos-exposure/products/asbestos-drywall", "publisher": "mesothelioma.com (legal-marketing site, weak)", "supports": "Example product date ranges (1956-1971, 1960-1978)", "verified": false, "snippet_corroborated": true }
+        {
+          "url": "https://www.law.cornell.edu/cfr/text/16/1304.1",
+          "publisher": "Cornell LII (16 CFR 1304)",
+          "supports": "CPSC ban of consumer patching compounds with respirable free-form asbestos; January 16, 1978 and June 11, 1978 dates",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Business--Manufacturing/Business-Education/Business-Guidance/Asbestos",
+          "publisher": "US CPSC",
+          "supports": "1977 ban covers drywall spackling and tape joint compounds",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://www.mesothelioma.com/asbestos-exposure/products/asbestos-drywall",
+          "publisher": "mesothelioma.com (legal-marketing site, weak)",
+          "supports": "Example product date ranges (1956-1971, 1960-1978)",
+          "verified": false,
+          "snippet_corroborated": true
+        }
       ],
-      "open_questions": "Start year; how long pre-ban stock was applied; prevalence. Textured wall paints were covered by the same CPSC action per the CPSC homeowner guide (from memory) but that wording was not confirmed."
+      "open_questions": "Start year; how long pre-ban stock was applied; prevalence. Textured wall paints were covered by the same CPSC action per the CPSC homeowner guide (from memory) but that wording was not confirmed.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing in this pass: no page could be opened (all allowed hosts failed DNS resolution in the session). Claims rest on the first pass's search snippets (see snippet_corroborated on each source) and on memory where date_notes says so.",
+        "what_is_not": "installed_from/installed_to years, the ban/rule/code dates in date_notes, and any prevalence figure; all remain unverified against an opened source."
+      }
     },
     {
       "id": "vermiculite-attic-insulation",
@@ -240,13 +414,49 @@
         "cost_source": "No authoritative removal-cost figure found; ZAI Trust cap figures are from secondary sites and conflict, so check the Trust directly."
       },
       "sources": [
-        { "url": "https://19january2021snapshot.epa.gov/asbestos/protect-your-family-asbestos-contaminated-vermiculite-insulation_.html", "publisher": "US EPA (archived snapshot)", "supports": "Libby mine 1919-1990, over 70% of US vermiculite, assume it contains asbestos, leave undisturbed (figures from memory; snippet confirmed only the leave-undisturbed advice)", "verified": false, "snippet_corroborated": false },
-        { "url": "https://www.murray.senate.gov/murray-questions-why-our-government-isnt-warning-homeowners-and-protecting-workers-from-dangerous-insulation/", "publisher": "Office of US Senator Patty Murray", "supports": "As many as 35 million homes and businesses may contain the material", "verified": false, "snippet_corroborated": true },
-        { "url": "https://www.homeinspector.org/organizations/zonolite-attic-insulation-trust", "publisher": "American Society of Home Inspectors (ASHI)", "supports": "Existence and purpose of the ZAI Trust", "verified": false, "snippet_corroborated": false },
-        { "url": "https://inspectandtest.net/guides/vermiculite-insulation/", "publisher": "inspectandtest.net (commercial, weak)", "supports": "940,000-1.3 million homes estimate; 55% reimbursement", "verified": false, "snippet_corroborated": true },
-        { "url": "https://inspectapedia.com/insulation/Zonolite_ZAI_Vermiculite_Insulation.php", "publisher": "InspectAPedia (inspector reference)", "supports": "Zonolite history, identification, Trust cap figures", "verified": false, "snippet_corroborated": true }
+        {
+          "url": "https://19january2021snapshot.epa.gov/asbestos/protect-your-family-asbestos-contaminated-vermiculite-insulation_.html",
+          "publisher": "US EPA (archived snapshot)",
+          "supports": "Libby mine 1919-1990, over 70% of US vermiculite, assume it contains asbestos, leave undisturbed (figures from memory; snippet confirmed only the leave-undisturbed advice)",
+          "verified": false,
+          "snippet_corroborated": false
+        },
+        {
+          "url": "https://www.murray.senate.gov/murray-questions-why-our-government-isnt-warning-homeowners-and-protecting-workers-from-dangerous-insulation/",
+          "publisher": "Office of US Senator Patty Murray",
+          "supports": "As many as 35 million homes and businesses may contain the material",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://www.homeinspector.org/organizations/zonolite-attic-insulation-trust",
+          "publisher": "American Society of Home Inspectors (ASHI)",
+          "supports": "Existence and purpose of the ZAI Trust",
+          "verified": false,
+          "snippet_corroborated": false
+        },
+        {
+          "url": "https://inspectandtest.net/guides/vermiculite-insulation/",
+          "publisher": "inspectandtest.net (commercial, weak)",
+          "supports": "940,000-1.3 million homes estimate; 55% reimbursement",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://inspectapedia.com/insulation/Zonolite_ZAI_Vermiculite_Insulation.php",
+          "publisher": "InspectAPedia (inspector reference)",
+          "supports": "Zonolite history, identification, Trust cap figures",
+          "verified": false,
+          "snippet_corroborated": true
+        }
       ],
-      "open_questions": "Which home-count estimate is right (the 35 million figure is widely repeated and widely doubted). Last year of retail sale (1984 vs 1990). Share installed in new construction vs retrofit. Current ZAI Trust cap."
+      "open_questions": "Which home-count estimate is right (the 35 million figure is widely repeated and widely doubted). Last year of retail sale (1984 vs 1990). Share installed in new construction vs retrofit. Current ZAI Trust cap.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing in this pass: no page could be opened (all allowed hosts failed DNS resolution in the session). Claims rest on the first pass's search snippets (see snippet_corroborated on each source) and on memory where date_notes says so.",
+        "what_is_not": "installed_from/installed_to years, the ban/rule/code dates in date_notes, and any prevalence figure; all remain unverified against an opened source."
+      }
     },
     {
       "id": "urea-formaldehyde-foam-insulation",
@@ -276,12 +486,42 @@
         "cost_source": "No authoritative figure found."
       },
       "sources": [
-        { "url": "https://www.cpsc.gov/Newsroom/News-Releases/1982/CPSC-Bans-Urea-Formaldehyde-Foam-Insulation-UFFI", "publisher": "US CPSC", "supports": "1982 ban in residences and schools", "verified": false, "snippet_corroborated": true },
-        { "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Ban-On-UFFI-Lifted", "publisher": "US CPSC", "supports": "Ban lifted August 1983 after Fifth Circuit ruling", "verified": false, "snippet_corroborated": true },
-        { "url": "https://law.justia.com/cases/federal/appellate-courts/F2/701/1137/444299/", "publisher": "Justia (Gulf South Insulation v. CPSC, 701 F.2d 1137, 5th Cir. 1983)", "supports": "Court vacated the ban as unsupported by substantial evidence", "verified": false, "snippet_corroborated": true },
-        { "url": "https://www.cpsc.gov/Newsroom/News-Releases/1984/CPSC-Still-Concerned-About-Formaldehyde-Health-Risks", "publisher": "US CPSC", "supports": "CPSC continued to regard UFFI as hazardous in 1984", "verified": false, "snippet_corroborated": true }
+        {
+          "url": "https://www.cpsc.gov/Newsroom/News-Releases/1982/CPSC-Bans-Urea-Formaldehyde-Foam-Insulation-UFFI",
+          "publisher": "US CPSC",
+          "supports": "1982 ban in residences and schools",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Ban-On-UFFI-Lifted",
+          "publisher": "US CPSC",
+          "supports": "Ban lifted August 1983 after Fifth Circuit ruling",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://law.justia.com/cases/federal/appellate-courts/F2/701/1137/444299/",
+          "publisher": "Justia (Gulf South Insulation v. CPSC, 701 F.2d 1137, 5th Cir. 1983)",
+          "supports": "Court vacated the ban as unsupported by substantial evidence",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Newsroom/News-Releases/1984/CPSC-Still-Concerned-About-Formaldehyde-Health-Risks",
+          "publisher": "US CPSC",
+          "supports": "CPSC continued to regard UFFI as hazardous in 1984",
+          "verified": false,
+          "snippet_corroborated": true
+        }
       ],
-      "open_questions": "Number of homes insulated (the 500,000 figure needs a primary citation; the 1982 CPSC release probably contains it). First year of meaningful US use. Which states still require UFFI disclosure."
+      "open_questions": "Number of homes insulated (the 500,000 figure needs a primary citation; the 1982 CPSC release probably contains it). First year of meaningful US use. Which states still require UFFI disclosure.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing in this pass: no page could be opened (all allowed hosts failed DNS resolution in the session). Claims rest on the first pass's search snippets (see snippet_corroborated on each source) and on memory where date_notes says so.",
+        "what_is_not": "installed_from/installed_to years, the ban/rule/code dates in date_notes, and any prevalence figure; all remain unverified against an opened source."
+      }
     },
     {
       "id": "formaldehyde-pressed-wood",
@@ -311,13 +551,49 @@
         "cost_source": "No figure sought; highly variable."
       },
       "sources": [
-        { "url": "https://www.federalregister.gov/documents/2016/12/12/2016-27987/formaldehyde-emission-standards-for-composite-wood-products", "publisher": "Federal Register / US EPA final rule", "supports": "TSCA Title VI final rule and emission limits", "verified": false, "snippet_corroborated": true },
-        { "url": "https://epa.gov/formaldehyde/frequent-questions-consumers-about-formaldehyde-standards-composite-wood-products-act", "publisher": "US EPA", "supports": "June 1, 2018 labelling date; March 22, 2019 certification date; 2010 Act", "verified": false, "snippet_corroborated": true },
-        { "url": "https://www.law.cornell.edu/cfr/text/24/3280.308", "publisher": "Cornell LII (24 CFR 3280.308)", "supports": "HUD manufactured-home formaldehyde emission controls", "verified": false, "snippet_corroborated": true },
-        { "url": "https://www.govinfo.gov/content/pkg/FR-2020-01-31/html/2020-01474.htm", "publisher": "Federal Register / HUD", "supports": "HUD's original August 9, 1984 amendment and its January 31, 2020 rule aligning with TSCA Title VI", "verified": false, "snippet_corroborated": true },
-        { "url": "https://www.hud.gov/sites/dfiles/HH/documents/AHHS_II_Additional_Environmental_Findings.pdf", "publisher": "HUD", "supports": "Possible source of measured formaldehyde prevalence (not read)", "verified": false, "snippet_corroborated": false }
+        {
+          "url": "https://www.federalregister.gov/documents/2016/12/12/2016-27987/formaldehyde-emission-standards-for-composite-wood-products",
+          "publisher": "Federal Register / US EPA final rule",
+          "supports": "TSCA Title VI final rule and emission limits",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://epa.gov/formaldehyde/frequent-questions-consumers-about-formaldehyde-standards-composite-wood-products-act",
+          "publisher": "US EPA",
+          "supports": "June 1, 2018 labelling date; March 22, 2019 certification date; 2010 Act",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://www.law.cornell.edu/cfr/text/24/3280.308",
+          "publisher": "Cornell LII (24 CFR 3280.308)",
+          "supports": "HUD manufactured-home formaldehyde emission controls",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-2020-01-31/html/2020-01474.htm",
+          "publisher": "Federal Register / HUD",
+          "supports": "HUD's original August 9, 1984 amendment and its January 31, 2020 rule aligning with TSCA Title VI",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://www.hud.gov/sites/dfiles/HH/documents/AHHS_II_Additional_Environmental_Findings.pdf",
+          "publisher": "HUD",
+          "supports": "Possible source of measured formaldehyde prevalence (not read)",
+          "verified": false,
+          "snippet_corroborated": false
+        }
       ],
-      "open_questions": "CARB phase dates need confirming. No measured indoor formaldehyde data by house age retrieved. Start and peak years unsourced."
+      "open_questions": "CARB phase dates need confirming. No measured indoor formaldehyde data by house age retrieved. Start and peak years unsourced.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing in this pass: no page could be opened (all allowed hosts failed DNS resolution in the session). Claims rest on the first pass's search snippets (see snippet_corroborated on each source) and on memory where date_notes says so.",
+        "what_is_not": "installed_from/installed_to years, the ban/rule/code dates in date_notes, and any prevalence figure; all remain unverified against an opened source."
+      }
     },
     {
       "id": "problem-chinese-drywall",
@@ -347,13 +623,49 @@
         "cost_source": "Only a per-case court figure found ($81.13 per sq ft, about 2010 dollars, MDL 2047 findings); not a national range, so cost fields left null."
       },
       "sources": [
-        { "url": "https://www.cpsc.gov/safety-education/safety-education-centers/drywall-information-center/where-has-problem-drywall-been-reported", "publisher": "US CPSC Drywall Information Center", "supports": "State distribution of reports", "verified": false, "snippet_corroborated": true },
-        { "url": "https://www.cpsc.gov/s3fs-public/pdfs/blk_media_mar2010status.pdf", "publisher": "US CPSC status report, March 2010", "supports": "3,031 reports from 37 states, DC and Puerto Rico; Florida 59%, Louisiana 20%, Mississippi 6%, Alabama 5%, Virginia 4%", "verified": false, "snippet_corroborated": true },
-        { "url": "https://www.govinfo.gov/content/pkg/CHRG-112shrg73876/html/CHRG-112shrg73876.htm", "publisher": "US Senate hearing record (112th Congress)", "supports": "CPSC/HUD identification guidance: 2001-2009 window, corroborating-evidence rules, remediation scope", "verified": false, "snippet_corroborated": true },
-        { "url": "https://www.laed.uscourts.gov/sites/default/files/drywall/FOFCOL_ClassDamages_Hearing.pdf", "publisher": "US District Court, E.D. Louisiana (MDL 2047)", "supports": "Remediation damages of $81.13 per square foot", "verified": false, "snippet_corroborated": true },
-        { "url": "https://www.laed.uscourts.gov/sites/default/files/Drywall/12-21-11.kpt.global.settlement.pdf", "publisher": "US District Court, E.D. Louisiana (MDL 2047)", "supports": "December 2011 Knauf class settlement providing remediation", "verified": false, "snippet_corroborated": true }
+        {
+          "url": "https://www.cpsc.gov/safety-education/safety-education-centers/drywall-information-center/where-has-problem-drywall-been-reported",
+          "publisher": "US CPSC Drywall Information Center",
+          "supports": "State distribution of reports",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://www.cpsc.gov/s3fs-public/pdfs/blk_media_mar2010status.pdf",
+          "publisher": "US CPSC status report, March 2010",
+          "supports": "3,031 reports from 37 states, DC and Puerto Rico; Florida 59%, Louisiana 20%, Mississippi 6%, Alabama 5%, Virginia 4%",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CHRG-112shrg73876/html/CHRG-112shrg73876.htm",
+          "publisher": "US Senate hearing record (112th Congress)",
+          "supports": "CPSC/HUD identification guidance: 2001-2009 window, corroborating-evidence rules, remediation scope",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://www.laed.uscourts.gov/sites/default/files/drywall/FOFCOL_ClassDamages_Hearing.pdf",
+          "publisher": "US District Court, E.D. Louisiana (MDL 2047)",
+          "supports": "Remediation damages of $81.13 per square foot",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://www.laed.uscourts.gov/sites/default/files/Drywall/12-21-11.kpt.global.settlement.pdf",
+          "publisher": "US District Court, E.D. Louisiana (MDL 2047)",
+          "supports": "December 2011 Knauf class settlement providing remediation",
+          "verified": false,
+          "snippet_corroborated": true
+        }
       ],
-      "open_questions": "Total homes actually affected (reports ~4,000 vs estimates up to 100,000). Final CPSC report count and state count. Some problem drywall was domestically made; share unknown. Whether any remediation funding remains open."
+      "open_questions": "Total homes actually affected (reports ~4,000 vs estimates up to 100,000). Final CPSC report count and state count. Some problem drywall was domestically made; share unknown. Whether any remediation funding remains open.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing in this pass: no page could be opened (all allowed hosts failed DNS resolution in the session). Claims rest on the first pass's search snippets (see snippet_corroborated on each source) and on memory where date_notes says so.",
+        "what_is_not": "installed_from/installed_to years, the ban/rule/code dates in date_notes, and any prevalence figure; all remain unverified against an opened source."
+      }
     },
     {
       "id": "radon",
@@ -383,13 +695,49 @@
         "cost_source": "Consumer article (Angi, archived) attributing the range to EPA; year of figure unclear and likely over a decade old. Treat as indicative only; EPA's own guide says only 'about the same as other common home repairs'."
       },
       "sources": [
-        { "url": "https://www.epa.gov/system/files/documents/2024-11/2016-a-citizens-guide-to-radon.pdf", "publisher": "US EPA, A Citizen's Guide to Radon", "supports": "About 1 in 15 homes elevated; 4 pCi/L action level; 21,000 deaths per year", "verified": false, "snippet_corroborated": true },
-        { "url": "https://19january2017snapshot.epa.gov/radon/building-codes-radon-resistant-new-construction-rrnc_.html", "publisher": "US EPA (archived snapshot)", "supports": "State and local RRNC code adoptions, including Decatur adopting IRC Appendix F in 2002", "verified": false, "snippet_corroborated": true },
-        { "url": "https://www.eli.org/buildings/radon-control-new-home-construction", "publisher": "Environmental Law Institute", "supports": "Appendix is optional; list of states with mandatory RRNC requirements", "verified": false, "snippet_corroborated": true },
-        { "url": "https://aarst.org/wp-content/uploads/2026/07/RRNC-Code-Adoption-Data-by-State-and-Locality.pdf", "publisher": "AARST (radon industry standards body)", "supports": "Current state/local RRNC adoption data (not read)", "verified": false, "snippet_corroborated": false },
-        { "url": "https://webcf.waybackmachine.org/web/20220515044104/https://www.angi.com/articles/homeowners-face-risk-radon.htm", "publisher": "Angi (consumer site, weak)", "supports": "$800-$2,500 mitigation cost attributed to EPA", "verified": false, "snippet_corroborated": true }
+        {
+          "url": "https://www.epa.gov/system/files/documents/2024-11/2016-a-citizens-guide-to-radon.pdf",
+          "publisher": "US EPA, A Citizen's Guide to Radon",
+          "supports": "About 1 in 15 homes elevated; 4 pCi/L action level; 21,000 deaths per year",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://19january2017snapshot.epa.gov/radon/building-codes-radon-resistant-new-construction-rrnc_.html",
+          "publisher": "US EPA (archived snapshot)",
+          "supports": "State and local RRNC code adoptions, including Decatur adopting IRC Appendix F in 2002",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://www.eli.org/buildings/radon-control-new-home-construction",
+          "publisher": "Environmental Law Institute",
+          "supports": "Appendix is optional; list of states with mandatory RRNC requirements",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://aarst.org/wp-content/uploads/2026/07/RRNC-Code-Adoption-Data-by-State-and-Locality.pdf",
+          "publisher": "AARST (radon industry standards body)",
+          "supports": "Current state/local RRNC adoption data (not read)",
+          "verified": false,
+          "snippet_corroborated": false
+        },
+        {
+          "url": "https://webcf.waybackmachine.org/web/20220515044104/https://www.angi.com/articles/homeowners-face-risk-radon.htm",
+          "publisher": "Angi (consumer site, weak)",
+          "supports": "$800-$2,500 mitigation cost attributed to EPA",
+          "verified": false,
+          "snippet_corroborated": true
+        }
       ],
-      "open_questions": "First code edition containing the radon appendix (1995 CABO vs 2000 IRC). A per-state table of RRNC mandate dates is needed for the site (ELI and AARST publish one). Current mitigation cost from an authoritative source."
+      "open_questions": "First code edition containing the radon appendix (1995 CABO vs 2000 IRC). A per-state table of RRNC mandate dates is needed for the site (ELI and AARST publish one). Current mitigation cost from an authoritative source.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing in this pass: no page could be opened (all allowed hosts failed DNS resolution in the session). Claims rest on the first pass's search snippets (see snippet_corroborated on each source) and on memory where date_notes says so.",
+        "what_is_not": "installed_from/installed_to years, the ban/rule/code dates in date_notes, and any prevalence figure; all remain unverified against an opened source."
+      }
     },
     {
       "id": "pcb-caulk-light-ballasts",
@@ -419,10 +767,28 @@
         "cost_source": "No figure found."
       },
       "sources": [
-        { "url": "https://epa.gov/pcbs/polychlorinated-biphenyls-pcbs-building-materials", "publisher": "US EPA", "supports": "1950-1979 window; caulk up to 40% PCBs; pre-1979 ballasts; 'No PCBs' label rule", "verified": false, "snippet_corroborated": true },
-        { "url": "https://19january2017snapshot.epa.gov/sites/production/files/2016-03/documents/pcbs_in_building_materials_questions_and_answers.pdf", "publisher": "US EPA (archived snapshot)", "supports": "Q&A on PCBs in building materials (not read)", "verified": false, "snippet_corroborated": false }
+        {
+          "url": "https://epa.gov/pcbs/polychlorinated-biphenyls-pcbs-building-materials",
+          "publisher": "US EPA",
+          "supports": "1950-1979 window; caulk up to 40% PCBs; pre-1979 ballasts; 'No PCBs' label rule",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://19january2017snapshot.epa.gov/sites/production/files/2016-03/documents/pcbs_in_building_materials_questions_and_answers.pdf",
+          "publisher": "US EPA (archived snapshot)",
+          "supports": "Q&A on PCBs in building materials (not read)",
+          "verified": false,
+          "snippet_corroborated": false
+        }
       ],
-      "open_questions": "Whether this belongs on a single-family report at all; I would show only the ballast item, and the caulk item only for multi-family buildings. No residential prevalence data exists that I could find."
+      "open_questions": "Whether this belongs on a single-family report at all; I would show only the ballast item, and the caulk item only for multi-family buildings. No residential prevalence data exists that I could find.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing in this pass: no page could be opened (all allowed hosts failed DNS resolution in the session). Claims rest on the first pass's search snippets (see snippet_corroborated on each source) and on memory where date_notes says so.",
+        "what_is_not": "installed_from/installed_to years, the ban/rule/code dates in date_notes, and any prevalence figure; all remain unverified against an opened source."
+      }
     },
     {
       "id": "chlordane-termiticide",
@@ -452,11 +818,35 @@
         "cost_source": "No figure found."
       },
       "sources": [
-        { "url": "https://webarchive.library.unt.edu/eot2008/20080916053651/http:/www.atsdr.cdc.gov/toxprofiles/phs31.html", "publisher": "ATSDR Public Health Statement for Chlordane (archived)", "supports": "Used 1948-1988; indoor air levels in treated homes; persistence; no treatment since 1988", "verified": false, "snippet_corroborated": true },
-        { "url": "https://ncbi.nlm.nih.gov/books/n/tpchlordane/ch1", "publisher": "ATSDR Toxicological Profile for Chlordane (NCBI Bookshelf)", "supports": "Over 50 million persons have lived in chlordane-treated homes", "verified": false, "snippet_corroborated": true },
-        { "url": "https://en.wikipedia.org/wiki/Chlordane", "publisher": "Wikipedia (secondary)", "supports": "EPA figure of over 30 million homes treated; 1983 restriction and 1988 ban", "verified": false, "snippet_corroborated": true }
+        {
+          "url": "https://webarchive.library.unt.edu/eot2008/20080916053651/http:/www.atsdr.cdc.gov/toxprofiles/phs31.html",
+          "publisher": "ATSDR Public Health Statement for Chlordane (archived)",
+          "supports": "Used 1948-1988; indoor air levels in treated homes; persistence; no treatment since 1988",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://ncbi.nlm.nih.gov/books/n/tpchlordane/ch1",
+          "publisher": "ATSDR Toxicological Profile for Chlordane (NCBI Bookshelf)",
+          "supports": "Over 50 million persons have lived in chlordane-treated homes",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Chlordane",
+          "publisher": "Wikipedia (secondary)",
+          "supports": "EPA figure of over 30 million homes treated; 1983 restriction and 1988 ban",
+          "verified": false,
+          "snippet_corroborated": true
+        }
       ],
-      "open_questions": "Primary EPA citation for the 30 million figure. Exact cancellation date and how long existing stocks were applied. Regional prevalence. Dates for heptachlor, aldrin and dieldrin termiticides."
+      "open_questions": "Primary EPA citation for the 30 million figure. Exact cancellation date and how long existing stocks were applied. Regional prevalence. Dates for heptachlor, aldrin and dieldrin termiticides.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing in this pass: no page could be opened (all allowed hosts failed DNS resolution in the session). Claims rest on the first pass's search snippets (see snippet_corroborated on each source) and on memory where date_notes says so.",
+        "what_is_not": "installed_from/installed_to years, the ban/rule/code dates in date_notes, and any prevalence figure; all remain unverified against an opened source."
+      }
     },
     {
       "id": "cca-treated-lumber",
@@ -486,12 +876,42 @@
         "cost_source": "No figure sought; deck replacement costs belong to the envelope/structure domain."
       },
       "sources": [
-        { "url": "https://webharvest.gov/peth04/20041015011512/http://www.epa.gov/pesticides/factsheets/chemicals/residential_use_cancellation.htm", "publisher": "US EPA (archived 2004)", "supports": "December 31, 2003 end of CCA treatment for residential uses; list of affected uses", "verified": false, "snippet_corroborated": true },
-        { "url": "https://www.everycrsreport.com/reports/RL32412.html", "publisher": "Congressional Research Service, Arsenic-Treated Wood: Background and Overview", "supports": "Existing structures and previously treated wood not affected by the cancellation", "verified": false, "snippet_corroborated": true },
-        { "url": "https://www.cpsc.gov/s3fs-public/pdfs/blk_pdf_cca.pdf", "publisher": "US CPSC", "supports": "CPSC guidance on CCA decks and playgrounds (not read)", "verified": false, "snippet_corroborated": false },
-        { "url": "https://clu-in.org/contaminantfocus/default2.focus/sec/Chromated_Copper_Arsenate/cat/Overview/", "publisher": "US EPA CLU-IN", "supports": "From the 1970s through 2003 most outdoor residential wood was CCA-treated", "verified": false, "snippet_corroborated": true }
+        {
+          "url": "https://webharvest.gov/peth04/20041015011512/http://www.epa.gov/pesticides/factsheets/chemicals/residential_use_cancellation.htm",
+          "publisher": "US EPA (archived 2004)",
+          "supports": "December 31, 2003 end of CCA treatment for residential uses; list of affected uses",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://www.everycrsreport.com/reports/RL32412.html",
+          "publisher": "Congressional Research Service, Arsenic-Treated Wood: Background and Overview",
+          "supports": "Existing structures and previously treated wood not affected by the cancellation",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://www.cpsc.gov/s3fs-public/pdfs/blk_pdf_cca.pdf",
+          "publisher": "US CPSC",
+          "supports": "CPSC guidance on CCA decks and playgrounds (not read)",
+          "verified": false,
+          "snippet_corroborated": false
+        },
+        {
+          "url": "https://clu-in.org/contaminantfocus/default2.focus/sec/Chromated_Copper_Arsenate/cat/Overview/",
+          "publisher": "US EPA CLU-IN",
+          "supports": "From the 1970s through 2003 most outdoor residential wood was CCA-treated",
+          "verified": false,
+          "snippet_corroborated": true
+        }
       ],
-      "open_questions": "Market share figure. How long pre-2004 stock was sold. Exact sealant recommendation wording. Note the early ACQ replacements (2004 onward) were more corrosive to fasteners, a separate deck-safety issue for the structure domain."
+      "open_questions": "Market share figure. How long pre-2004 stock was sold. Exact sealant recommendation wording. Note the early ACQ replacements (2004 onward) were more corrosive to fasteners, a separate deck-safety issue for the structure domain.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing in this pass: no page could be opened (all allowed hosts failed DNS resolution in the session). Claims rest on the first pass's search snippets (see snippet_corroborated on each source) and on memory where date_notes says so.",
+        "what_is_not": "installed_from/installed_to years, the ban/rule/code dates in date_notes, and any prevalence figure; all remain unverified against an opened source."
+      }
     },
     {
       "id": "mercury-thermostats",
@@ -521,13 +941,49 @@
         "cost_source": "No figure sought; recycling through TRC is free to the homeowner."
       },
       "sources": [
-        { "url": "https://epa.illinois.gov/topics/waste-management/materials-management/mercury/state-programs/thermostats.html", "publisher": "Illinois EPA", "supports": "Illinois sales ban effective July 1, 2008; recycling program", "verified": false, "snippet_corroborated": true },
-        { "url": "https://dec.ny.gov/environmental-protection/mercury/managing-mercury-thermostats", "publisher": "New York State DEC", "supports": "Disposal ban since 2005; management guidance", "verified": false, "snippet_corroborated": true },
-        { "url": "https://thermostat-recycle.org/program-info/recycling-by-state/california/", "publisher": "Thermostat Recycling Corporation (industry program)", "supports": "TRC collection program and state laws", "verified": false, "snippet_corroborated": true },
-        { "url": "https://www.nrcm.org/documents/TurningUptheHeat2013.pdf", "publisher": "NRDC / Natural Resources Council of Maine and partners, Turning Up the Heat (2013)", "supports": "State sales bans led Honeywell, White-Rodgers and GE to end mercury thermostat production", "verified": false, "snippet_corroborated": true },
-        { "url": "https://www.nbcconnecticut.com/news/national-international/pennsylvania_debuts_thermostat_recycling_to_lower_mercury_risk/1846661/", "publisher": "NBC / Associated Press quoting Pennsylvania DEP", "supports": "3-5 grams of mercury per thermostat; Pennsylvania ban December 8, 2009", "verified": false, "snippet_corroborated": true }
+        {
+          "url": "https://epa.illinois.gov/topics/waste-management/materials-management/mercury/state-programs/thermostats.html",
+          "publisher": "Illinois EPA",
+          "supports": "Illinois sales ban effective July 1, 2008; recycling program",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://dec.ny.gov/environmental-protection/mercury/managing-mercury-thermostats",
+          "publisher": "New York State DEC",
+          "supports": "Disposal ban since 2005; management guidance",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://thermostat-recycle.org/program-info/recycling-by-state/california/",
+          "publisher": "Thermostat Recycling Corporation (industry program)",
+          "supports": "TRC collection program and state laws",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://www.nrcm.org/documents/TurningUptheHeat2013.pdf",
+          "publisher": "NRDC / Natural Resources Council of Maine and partners, Turning Up the Heat (2013)",
+          "supports": "State sales bans led Honeywell, White-Rodgers and GE to end mercury thermostat production",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://www.nbcconnecticut.com/news/national-international/pennsylvania_debuts_thermostat_recycling_to_lower_mercury_risk/1846661/",
+          "publisher": "NBC / Associated Press quoting Pennsylvania DEP",
+          "supports": "3-5 grams of mercury per thermostat; Pennsylvania ban December 8, 2009",
+          "verified": false,
+          "snippet_corroborated": true
+        }
       ],
-      "open_questions": "Year manufacturers stopped production; EPA's own figure for mercury per unit (EPA page not reachable); estimate of units still on walls. Low priority for the site: a disposal note more than a hazard."
+      "open_questions": "Year manufacturers stopped production; EPA's own figure for mercury per unit (EPA page not reachable); estimate of units still on walls. Low priority for the site: a disposal note more than a hazard.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing in this pass: no page could be opened (all allowed hosts failed DNS resolution in the session). Claims rest on the first pass's search snippets (see snippet_corroborated on each source) and on memory where date_notes says so.",
+        "what_is_not": "installed_from/installed_to years, the ban/rule/code dates in date_notes, and any prevalence figure; all remain unverified against an opened source."
+      }
     },
     {
       "id": "lead-solder-and-lead-pipes",
@@ -557,11 +1013,35 @@
         "cost_source": "No authoritative figure found."
       },
       "sources": [
-        { "url": "https://epa.gov/sdwa/use-lead-free-pipes-fittings-fixtures-solder-and-flux-drinking-water", "publisher": "US EPA", "supports": "1986 SDWA prohibition; lead-free definitions (0.2% solder/flux, 8% pipe, later 0.25%)", "verified": false, "snippet_corroborated": true },
-        { "url": "https://deq.nd.gov/publications/mf/HistoryOfLeadRegulationInDrinkingWaterSupplies.pdf", "publisher": "North Dakota Department of Environmental Quality", "supports": "Ban effective June 19, 1986; earlier solder typically about 50% lead", "verified": false, "snippet_corroborated": true },
-        { "url": "https://govinfo.gov/content/pkg/USCODE-2010-title42/pdf/USCODE-2010-title42-chap6A-subchapXII-partB-sec300g-6.pdf", "publisher": "US Code, 42 USC 300g-6", "supports": "Statutory prohibition on lead pipes, solder and flux", "verified": false, "snippet_corroborated": true }
+        {
+          "url": "https://epa.gov/sdwa/use-lead-free-pipes-fittings-fixtures-solder-and-flux-drinking-water",
+          "publisher": "US EPA",
+          "supports": "1986 SDWA prohibition; lead-free definitions (0.2% solder/flux, 8% pipe, later 0.25%)",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://deq.nd.gov/publications/mf/HistoryOfLeadRegulationInDrinkingWaterSupplies.pdf",
+          "publisher": "North Dakota Department of Environmental Quality",
+          "supports": "Ban effective June 19, 1986; earlier solder typically about 50% lead",
+          "verified": false,
+          "snippet_corroborated": true
+        },
+        {
+          "url": "https://govinfo.gov/content/pkg/USCODE-2010-title42/pdf/USCODE-2010-title42-chap6A-subchapXII-partB-sec300g-6.pdf",
+          "publisher": "US Code, 42 USC 300g-6",
+          "supports": "Statutory prohibition on lead pipes, solder and flux",
+          "verified": false,
+          "snippet_corroborated": true
+        }
       ],
-      "open_questions": "Coordinate with the plumbing-domain researcher to avoid a duplicate entry. EPA lead-service-line count and typical last-installed years by city not retrieved."
+      "open_questions": "Coordinate with the plumbing-domain researcher to avoid a duplicate entry. EPA lead-service-line count and typical last-installed years by city not retrieved.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing in this pass: no page could be opened (all allowed hosts failed DNS resolution in the session). Claims rest on the first pass's search snippets (see snippet_corroborated on each source) and on memory where date_notes says so.",
+        "what_is_not": "installed_from/installed_to years, the ban/rule/code dates in date_notes, and any prevalence figure; all remain unverified against an opened source."
+      }
     }
   ],
   "feasibility_notes": "The decisive limitation this round was access, not evidence: the session could run web searches but every page fetch was blocked by network policy, so nothing could be opened and, under the brief's rule, zero sources are marked verified. I have instead flagged each source with snippet_corroborated (the search engine's summary of that result stated the claim) and said in the text wherever a figure rests only on my memory. A second pass with epa.gov, cpsc.gov, hud.gov, atsdr.cdc.gov, govinfo.gov, ecfr.gov and laed.uscourts.gov allowed should be able to verify most of the regulatory dates in an hour or two, because for this domain the authoritative pages exist and are stable. On substance: (1) Ban and cancellation dates are easy and solid (lead paint 1978, CPSC patching compounds 1978, UFFI 1982-83, chlordane 1988, CCA end-2003, SDWA lead solder 1986, TSCA Title VI 2018-19, problem drywall 2001-2009). (2) What the site actually needs, the real last-installed year in new houses, is much weaker: for asbestos products the federal 1989 ban was vacated in 1991, so floor tile, cement siding and many other products ended by manufacturer decision at different years (about 1973-1986), and the only sources that give those years are inspector references (InspectAPedia) and legal-marketing sites, not agencies. Popcorn-ceiling and pipe-insulation end years are especially soft. (3) Start years are almost never documented by agencies. (4) Era-specific prevalence exists in good form for exactly one item, lead paint (EPA 87/69/24% and HUD AHHS II). Chlordane (30 million homes), vermiculite (anywhere from about 1 million to 35 million homes, sources flatly disagree), radon (1 in 15, not era-bound) and problem drywall (about 4,000 reports vs estimates up to 100,000 homes) have national counts only, with wide uncertainty; asbestos materials, UFFI, PCBs and mercury thermostats have no usable prevalence data that I could find. The prevalence labels for those are judgement, and say so. (5) Several items are mainly retrofits (UFFI, vermiculite, chlordane re-treatments, thermostats, re-siding with asbestos cement), so build year predicts them poorly; the site should word these as 'a house standing before year X may have had this added' rather than tying them to the construction year. (6) Radon and PCB caulk do not fit the build-year model well: radon should be a universal 'test' item plus a state-level radon-resistant-construction lookup, and PCB caulk is essentially a schools/large-building issue. (7) Credible cost figures were almost entirely absent from authoritative sources; nearly all cost fields are null rather than filled from contractor marketing pages.",
@@ -579,5 +1059,27 @@
     "Radium or uranium mill tailings used as fill (Colorado, Utah) and phosphate-slag/phosphogypsum building materials (Florida, Idaho, Montana) as regional radiation issues",
     "State-by-state table of radon-resistant new construction mandates and dates",
     "AHHS II lead prevalence by construction-year bracket and any AHHS II formaldehyde findings"
-  ]
+  ],
+  "verification_pass": {
+    "date": "2026-11-16",
+    "result": "no pages opened",
+    "detail": "Every WebFetch in this pass failed with 'getaddrinfo ENOTFOUND <host>' (host not resolvable from this session, i.e. still outside the session's network allowlist). All 14 hosts named in VERIFY.md were tried once each and all failed: www.cpsc.gov, www.epa.gov, www.hud.gov, www.fema.gov, www.energy.gov, www.ecfr.gov, www.federalregister.gov, www.govinfo.gov, www.nist.gov, www.sec.gov, www.atsdr.cdc.gov, www.nachi.org, codes.iccsafe.org, en.wikipedia.org. Per VERIFY.md no other route to the pages was attempted. No source was opened, so no source is marked verified, no quote was added, and no entry field was changed. Each entry carries a verification object with status 'unconfirmed'.",
+    "hosts_failed": [
+      "www.cpsc.gov",
+      "www.epa.gov",
+      "www.hud.gov",
+      "www.fema.gov",
+      "www.energy.gov",
+      "www.ecfr.gov",
+      "www.federalregister.gov",
+      "www.govinfo.gov",
+      "www.nist.gov",
+      "www.sec.gov",
+      "www.atsdr.cdc.gov",
+      "www.nachi.org",
+      "codes.iccsafe.org",
+      "en.wikipedia.org"
+    ],
+    "sources_verified": 0
+  }
 }

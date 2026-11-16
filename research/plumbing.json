@@ -31,18 +31,74 @@
         "cost_source": "EPA 2019 analysis, average $4,700, range $1,200-$12,300 per line, as quoted by Brookings and others. Seen in search summary only. Big-city costs can be far higher (Chicago about $31,000-$39,000 per Inside Climate News / WBEZ 2026)."
       },
       "sources": [
-        { "url": "https://www.epa.gov/system/files/documents/2025-11/fact-sheet-2025-7th-dwinsa-update.pdf", "publisher": "US EPA", "supports": "[SEARCH] EPA November 2025 update: estimated 4 million lead service lines nationally", "verified": false },
-        { "url": "https://www.nrdc.org/media/epa-now-says-there-arent-9-million-lead-pipes-there-are-4-million-be-skeptical", "publisher": "NRDC", "supports": "[SEARCH] Critique of the 4 million figure; more than 24 million lines of unknown material; update issued 25 Nov 2025", "verified": false },
-        { "url": "https://www.policyinnovation.org/insights/what-best-available-data-tells-us-about-lead-service-lines", "publisher": "Environmental Policy Innovation Center", "supports": "[SEARCH] Utility-reported inventory totals (1,973,932 lead; 969,771 galvanized requiring replacement); method caveats", "verified": false },
-        { "url": "https://www.cbsnews.com/news/epa-more-than-9-million-lead-pipes-drinking-water-us", "publisher": "CBS News", "supports": "[SEARCH] EPA 2023 estimate of 9.2 million; Florida 1.16 million, Illinois just over 1 million", "verified": false },
-        { "url": "https://blogs.edf.org/health/2023/06/29/lead-pipe-survey-flaws-reveal-that-states-may-not-be-getting-their-fair-share/", "publisher": "Environmental Defense Fund", "supports": "[SEARCH] Flaws in the 2023 EPA estimate, notably Florida and Texas", "verified": false },
-        { "url": "https://www.brookings.edu/articles/what-would-it-cost-to-replace-all-the-nations-lead-water-pipes/", "publisher": "Brookings Institution", "supports": "[SEARCH] EPA cost figure $4,700 average, $1,200-$12,300 range", "verified": false },
-        { "url": "https://www.epa.gov/sites/production/files/2019-10/documents/strategies_to_achieve_full_lead_service_line_replacement_10_09_19.pdf", "publisher": "US EPA", "supports": "[SEARCH] URL returned by search for EPA replacement cost analysis; content not read", "verified": false },
-        { "url": "https://insideclimatenews.org/news/30062026/chicago-lead-pipe-replacement-cost/", "publisher": "Inside Climate News", "supports": "[SEARCH] Chicago per-line replacement cost about $31,000-$39,000", "verified": false },
-        { "url": "https://www.npr.org/local/2020/09/21/915248028/what-we-do-and-dont-know-about-chicago-s-lead-water-problem", "publisher": "WBEZ / NPR", "supports": "[SEARCH] Chicago code required lead service lines until 1986; about 400,000 lines", "verified": false },
-        { "url": "https://www.epa.gov/ground-water-and-drinking-water/lead-service-lines", "publisher": "US EPA", "supports": "[MEMORY] General EPA lead service line page; fetch blocked", "verified": false }
+        {
+          "url": "https://www.epa.gov/system/files/documents/2025-11/fact-sheet-2025-7th-dwinsa-update.pdf",
+          "publisher": "US EPA",
+          "supports": "[SEARCH] EPA November 2025 update: estimated 4 million lead service lines nationally",
+          "verified": false
+        },
+        {
+          "url": "https://www.nrdc.org/media/epa-now-says-there-arent-9-million-lead-pipes-there-are-4-million-be-skeptical",
+          "publisher": "NRDC",
+          "supports": "[SEARCH] Critique of the 4 million figure; more than 24 million lines of unknown material; update issued 25 Nov 2025",
+          "verified": false
+        },
+        {
+          "url": "https://www.policyinnovation.org/insights/what-best-available-data-tells-us-about-lead-service-lines",
+          "publisher": "Environmental Policy Innovation Center",
+          "supports": "[SEARCH] Utility-reported inventory totals (1,973,932 lead; 969,771 galvanized requiring replacement); method caveats",
+          "verified": false
+        },
+        {
+          "url": "https://www.cbsnews.com/news/epa-more-than-9-million-lead-pipes-drinking-water-us",
+          "publisher": "CBS News",
+          "supports": "[SEARCH] EPA 2023 estimate of 9.2 million; Florida 1.16 million, Illinois just over 1 million",
+          "verified": false
+        },
+        {
+          "url": "https://blogs.edf.org/health/2023/06/29/lead-pipe-survey-flaws-reveal-that-states-may-not-be-getting-their-fair-share/",
+          "publisher": "Environmental Defense Fund",
+          "supports": "[SEARCH] Flaws in the 2023 EPA estimate, notably Florida and Texas",
+          "verified": false
+        },
+        {
+          "url": "https://www.brookings.edu/articles/what-would-it-cost-to-replace-all-the-nations-lead-water-pipes/",
+          "publisher": "Brookings Institution",
+          "supports": "[SEARCH] EPA cost figure $4,700 average, $1,200-$12,300 range",
+          "verified": false
+        },
+        {
+          "url": "https://www.epa.gov/sites/production/files/2019-10/documents/strategies_to_achieve_full_lead_service_line_replacement_10_09_19.pdf",
+          "publisher": "US EPA",
+          "supports": "[SEARCH] URL returned by search for EPA replacement cost analysis; content not read",
+          "verified": false
+        },
+        {
+          "url": "https://insideclimatenews.org/news/30062026/chicago-lead-pipe-replacement-cost/",
+          "publisher": "Inside Climate News",
+          "supports": "[SEARCH] Chicago per-line replacement cost about $31,000-$39,000",
+          "verified": false
+        },
+        {
+          "url": "https://www.npr.org/local/2020/09/21/915248028/what-we-do-and-dont-know-about-chicago-s-lead-water-problem",
+          "publisher": "WBEZ / NPR",
+          "supports": "[SEARCH] Chicago code required lead service lines until 1986; about 400,000 lines",
+          "verified": false
+        },
+        {
+          "url": "https://www.epa.gov/ground-water-and-drinking-water/lead-service-lines",
+          "publisher": "US EPA",
+          "supports": "[MEMORY] General EPA lead service line page; fetch blocked",
+          "verified": false
+        }
       ],
-      "open_questions": "No national distribution of lead service lines by year of construction. The 9.2M vs 4M discrepancy is unresolved and politically contested. Whether a per-state or per-utility inventory dataset could be joined to the site by ZIP/utility (EPA published one in 2025) should be investigated; that would be far better than a year-based guess. Pre-1950 installation history needs a primary historical source."
+      "open_questions": "No national distribution of lead service lines by year of construction. The 9.2M vs 4M discrepancy is unresolved and politically contested. Whether a per-state or per-utility inventory dataset could be joined to the site by ZIP/utility (EPA published one in 2025) should be investigated; that would be far better than a year-based guess. Pre-1950 installation history needs a primary historical source.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page could be opened in the verification pass (all 14 allowed hosts failed DNS resolution), so no source was marked verified and no quote was added. Entry fields are unchanged from the first pass.",
+        "what_is_not": "1986 SDWA ban as end date; 1880 start and 1900-1940 peak; the 9.2M (2023) and 4M (2025) EPA counts; EPA $1,200-$12,300 cost range. Intended pages on www.epa.gov could not be opened."
+      }
     },
     {
       "id": "lead-solder-copper",
@@ -72,12 +128,38 @@
         "cost_source": "No credible figure found for a solder-specific remedy. Whole-house repipe figures are given under the galvanized entry."
       },
       "sources": [
-        { "url": "https://www.epa.gov/sites/production/files/2015-08/documents/implsdwasection1417.pdf", "publisher": "US EPA", "supports": "[SEARCH] 1986 definition: solder/flux 0.2% lead max, pipes 8% max", "verified": false },
-        { "url": "https://www.vdh.virginia.gov/drinking-water/reduction-of-lead-in-drinking-water-act/", "publisher": "Virginia Department of Health", "supports": "[SEARCH] Reduction of Lead in Drinking Water Act (PL 111-380): 8% to 0.25% weighted average, effective 4 January 2014; solder stays at 0.2%", "verified": false },
-        { "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-D/part-143/subpart-B", "publisher": "eCFR (40 CFR 143 Subpart B)", "supports": "[SEARCH] Current federal regulation on lead-free plumbing products; content not read", "verified": false },
-        { "url": "https://www.epa.gov/sdwa/use-lead-free-pipes-fittings-fixtures-solder-and-flux-drinking-water", "publisher": "US EPA", "supports": "[MEMORY] EPA summary of SDWA section 1417 including the June 1988 state enforcement deadline; fetch blocked", "verified": false }
+        {
+          "url": "https://www.epa.gov/sites/production/files/2015-08/documents/implsdwasection1417.pdf",
+          "publisher": "US EPA",
+          "supports": "[SEARCH] 1986 definition: solder/flux 0.2% lead max, pipes 8% max",
+          "verified": false
+        },
+        {
+          "url": "https://www.vdh.virginia.gov/drinking-water/reduction-of-lead-in-drinking-water-act/",
+          "publisher": "Virginia Department of Health",
+          "supports": "[SEARCH] Reduction of Lead in Drinking Water Act (PL 111-380): 8% to 0.25% weighted average, effective 4 January 2014; solder stays at 0.2%",
+          "verified": false
+        },
+        {
+          "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-D/part-143/subpart-B",
+          "publisher": "eCFR (40 CFR 143 Subpart B)",
+          "supports": "[SEARCH] Current federal regulation on lead-free plumbing products; content not read",
+          "verified": false
+        },
+        {
+          "url": "https://www.epa.gov/sdwa/use-lead-free-pipes-fittings-fixtures-solder-and-flux-drinking-water",
+          "publisher": "US EPA",
+          "supports": "[MEMORY] EPA summary of SDWA section 1417 including the June 1988 state enforcement deadline; fetch blocked",
+          "verified": false
+        }
       ],
-      "open_questions": "The June 1988 state enforcement deadline was not confirmed by search. No data on how long non-compliant solder kept being used after the ban, nor on the share of pre-1986 homes with measurable lead from solder."
+      "open_questions": "The June 1988 state enforcement deadline was not confirmed by search. No data on how long non-compliant solder kept being used after the ban, nor on the share of pre-1986 homes with measurable lead from solder.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page could be opened in the verification pass (all 14 allowed hosts failed DNS resolution), so no source was marked verified and no quote was added. Entry fields are unchanged from the first pass.",
+        "what_is_not": "1986 lead-free definition (0.2% solder/flux, 8% pipe), the June 1988 state enforcement deadline behind installed_to 1988, the 4 Jan 2014 0.25% change, and the 1930 start. Intended pages on www.epa.gov, www.ecfr.gov and www.federalregister.gov could not be opened."
+      }
     },
     {
       "id": "galvanized-steel-supply",
@@ -107,14 +189,50 @@
         "cost_source": "Angi/HomeAdvisor repipe cost guide: average about $7,500, range $1,500-$15,000 (seen in search summary; consumer cost aggregator based on member-reported jobs, not an authoritative survey)."
       },
       "sources": [
-        { "url": "https://acwd.org/798/Galvanized-Service-Line-Leaks", "publisher": "Alameda County Water District (CA utility)", "supports": "[SEARCH] Galvanized installed in the 1960s or earlier is nearing end of life", "verified": false },
-        { "url": "https://www.davis-stirling.com/HOME/Galvanized-Pipe", "publisher": "Adams Stirling PLC (Davis-Stirling HOA law reference)", "supports": "[SEARCH] Recommend full replacement with copper or PEX; partial replacement not permanent", "verified": false },
-        { "url": "https://www.insurancejournal.com/magazines/features/2013/03/25/285518.htm", "publisher": "Insurance Journal", "supports": "[SEARCH] Insurer concern over ageing plumbing systems; content not read in detail", "verified": false },
-        { "url": "https://pillartopost.com/wp-content/uploads/2019/01/PTP_GalvSteelWater_HR.pdf", "publisher": "Pillar To Post (home inspection franchise)", "supports": "[SEARCH] Inspector reference sheet on galvanized steel water pipe; content not read", "verified": false },
-        { "url": "https://www.homeadvisor.com/cost/plumbing/install-new-plumbing-pipes", "publisher": "HomeAdvisor / Angi", "supports": "[SEARCH] Repipe cost range", "verified": false },
-        { "url": "https://www.policyinnovation.org/insights/what-best-available-data-tells-us-about-lead-service-lines", "publisher": "Environmental Policy Innovation Center", "supports": "[SEARCH] 969,771 galvanized-requiring-replacement service lines in reported inventories", "verified": false }
+        {
+          "url": "https://acwd.org/798/Galvanized-Service-Line-Leaks",
+          "publisher": "Alameda County Water District (CA utility)",
+          "supports": "[SEARCH] Galvanized installed in the 1960s or earlier is nearing end of life",
+          "verified": false
+        },
+        {
+          "url": "https://www.davis-stirling.com/HOME/Galvanized-Pipe",
+          "publisher": "Adams Stirling PLC (Davis-Stirling HOA law reference)",
+          "supports": "[SEARCH] Recommend full replacement with copper or PEX; partial replacement not permanent",
+          "verified": false
+        },
+        {
+          "url": "https://www.insurancejournal.com/magazines/features/2013/03/25/285518.htm",
+          "publisher": "Insurance Journal",
+          "supports": "[SEARCH] Insurer concern over ageing plumbing systems; content not read in detail",
+          "verified": false
+        },
+        {
+          "url": "https://pillartopost.com/wp-content/uploads/2019/01/PTP_GalvSteelWater_HR.pdf",
+          "publisher": "Pillar To Post (home inspection franchise)",
+          "supports": "[SEARCH] Inspector reference sheet on galvanized steel water pipe; content not read",
+          "verified": false
+        },
+        {
+          "url": "https://www.homeadvisor.com/cost/plumbing/install-new-plumbing-pipes",
+          "publisher": "HomeAdvisor / Angi",
+          "supports": "[SEARCH] Repipe cost range",
+          "verified": false
+        },
+        {
+          "url": "https://www.policyinnovation.org/insights/what-best-available-data-tells-us-about-lead-service-lines",
+          "publisher": "Environmental Policy Innovation Center",
+          "supports": "[SEARCH] 969,771 galvanized-requiring-replacement service lines in reported inventories",
+          "verified": false
+        }
       ],
-      "open_questions": "A defensible end year. Regional variation in when copper displaced galvanized. Lifespan claims range 25-60 years and all come from commercial sources. InterNACHI's life-expectancy chart would be the obvious citation but the site was unreachable."
+      "open_questions": "A defensible end year. Regional variation in when copper displaced galvanized. Lifespan claims range 25-60 years and all come from commercial sources. InterNACHI's life-expectancy chart would be the obvious citation but the site was unreachable.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page could be opened in the verification pass (all 14 allowed hosts failed DNS resolution), so no source was marked verified and no quote was added. Entry fields are unchanged from the first pass.",
+        "what_is_not": "Start, end (1960) and peak years; lifespan; service-line counts. Intended InterNACHI life-expectancy chart (www.nachi.org) and EPA pages could not be opened."
+      }
     },
     {
       "id": "polybutylene-supply",
@@ -144,16 +262,62 @@
         "cost_source": "Generic repipe range from Angi/HomeAdvisor (search summary). No PB-specific authoritative figure found."
       },
       "sources": [
-        { "url": "https://scholar.lib.vt.edu/VA-news/VA-Pilot/issues/1995/vp951110/11100476.htm", "publisher": "The Virginian-Pilot (Virginia Tech digital archive)", "supports": "[SEARCH] Cox v. Shell: $950 million settlement approved November 1995 in Union City (Obion County), Tennessee; defendants Shell and Hoechst Celanese; earlier $850 million figure in July 1995", "verified": false },
-        { "url": "https://www.spokesman.com/stories/1995/nov/10/leaky-pipe-settlement-is-no-drop-in-the-bucket/", "publisher": "The Spokesman-Review", "supports": "[SEARCH] 1995 settlement coverage; scale of affected homes", "verified": false },
-        { "url": "https://www.publicjustice.net/?p=5874", "publisher": "Public Justice (formerly Trial Lawyers for Public Justice)", "supports": "[SEARCH] Settlement cap raised from $750 million to $950 million, later raised again", "verified": false },
-        { "url": "https://www.cozen.com/admin/files/publications/flint1307132.PDF?embed=1", "publisher": "Cozen O'Connor (law firm paper, 2000)", "supports": "[SEARCH] Estimated 6 million homes plus about 3 million mobile homes", "verified": false },
-        { "url": "https://www.lieffcabraser.com/defect/polybutylene-piping", "publisher": "Lieff Cabraser (class counsel)", "supports": "[SEARCH] Case summary by plaintiffs' counsel; content not read", "verified": false },
-        { "url": "https://www.contractormag.com/plumbing/article/20875210/polybute-settlement-money-still-available", "publisher": "Contractor magazine", "supports": "[SEARCH] Separate $120 million nationwide DuPont settlement over acetal fittings (Spencer v. DuPont, from memory)", "verified": false },
-        { "url": "https://www.classaction.org/news/class-action-revisits-settled-case-over-allegedly-defective-shell-oil-polybutylene-piping-systems", "publisher": "ClassAction.org", "supports": "[SEARCH] Cites Cox v. Shell, Obion County Chancery Court No. 18,844", "verified": false },
-        { "url": "https://www.nachi.org/pb.htm", "publisher": "InterNACHI", "supports": "[MEMORY] Inspector reference on identification and dates; fetch blocked", "verified": false }
+        {
+          "url": "https://scholar.lib.vt.edu/VA-news/VA-Pilot/issues/1995/vp951110/11100476.htm",
+          "publisher": "The Virginian-Pilot (Virginia Tech digital archive)",
+          "supports": "[SEARCH] Cox v. Shell: $950 million settlement approved November 1995 in Union City (Obion County), Tennessee; defendants Shell and Hoechst Celanese; earlier $850 million figure in July 1995",
+          "verified": false
+        },
+        {
+          "url": "https://www.spokesman.com/stories/1995/nov/10/leaky-pipe-settlement-is-no-drop-in-the-bucket/",
+          "publisher": "The Spokesman-Review",
+          "supports": "[SEARCH] 1995 settlement coverage; scale of affected homes",
+          "verified": false
+        },
+        {
+          "url": "https://www.publicjustice.net/?p=5874",
+          "publisher": "Public Justice (formerly Trial Lawyers for Public Justice)",
+          "supports": "[SEARCH] Settlement cap raised from $750 million to $950 million, later raised again",
+          "verified": false
+        },
+        {
+          "url": "https://www.cozen.com/admin/files/publications/flint1307132.PDF?embed=1",
+          "publisher": "Cozen O'Connor (law firm paper, 2000)",
+          "supports": "[SEARCH] Estimated 6 million homes plus about 3 million mobile homes",
+          "verified": false
+        },
+        {
+          "url": "https://www.lieffcabraser.com/defect/polybutylene-piping",
+          "publisher": "Lieff Cabraser (class counsel)",
+          "supports": "[SEARCH] Case summary by plaintiffs' counsel; content not read",
+          "verified": false
+        },
+        {
+          "url": "https://www.contractormag.com/plumbing/article/20875210/polybute-settlement-money-still-available",
+          "publisher": "Contractor magazine",
+          "supports": "[SEARCH] Separate $120 million nationwide DuPont settlement over acetal fittings (Spencer v. DuPont, from memory)",
+          "verified": false
+        },
+        {
+          "url": "https://www.classaction.org/news/class-action-revisits-settled-case-over-allegedly-defective-shell-oil-polybutylene-piping-systems",
+          "publisher": "ClassAction.org",
+          "supports": "[SEARCH] Cites Cox v. Shell, Obion County Chancery Court No. 18,844",
+          "verified": false
+        },
+        {
+          "url": "https://www.nachi.org/pb.htm",
+          "publisher": "InterNACHI",
+          "supports": "[MEMORY] Inspector reference on identification and dates; fetch blocked",
+          "verified": false
+        }
       ],
-      "open_questions": "A sourced count of homes (the 6-10 million range is repeated, never derived). The exact date the Consumer Plumbing Recovery Center stopped taking claims (one weak source says 1 November 2009; I recall eligibility also being limited to leaks within 10-15 years of installation). A citable insurer position. Regional distribution data."
+      "open_questions": "A sourced count of homes (the 6-10 million range is repeated, never derived). The exact date the Consumer Plumbing Recovery Center stopped taking claims (one weak source says 1 November 2009; I recall eligibility also being limited to leaks within 10-15 years of installation). A citable insurer position. Regional distribution data.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page could be opened in the verification pass (all 14 allowed hosts failed DNS resolution), so no source was marked verified and no quote was added. Entry fields are unchanged from the first pass.",
+        "what_is_not": "1978-1995 window, Cox v. Shell settlement details, 6-10 million homes estimate, regional pattern. Intended pages on www.nachi.org and en.wikipedia.org could not be opened."
+      }
     },
     {
       "id": "kitec-plumbing",
@@ -183,14 +347,50 @@
         "cost_source": "Generic repipe range from Angi/HomeAdvisor (search summary). No Kitec-specific authoritative figure found."
       },
       "sources": [
-        { "url": "https://prnewswire.com/news-releases/ipex-inc-and-ipex-usa-llc-settle-class-action-lawsuit-regarding-kitec-plumbing-systems-121164454.html", "publisher": "IPEX press release via PR Newswire", "supports": "[SEARCH] IPEX settled the Kitec class action (2011)", "verified": false },
-        { "url": "https://www.txnd.uscourts.gov/sites/default/files/documents/MDL2098_Doc156.pdf", "publisher": "US District Court, N.D. Texas (MDL 2098)", "supports": "[SEARCH] Court document in In re Kitec Plumbing System Products Liability Litigation; content not read", "verified": false },
-        { "url": "https://inspectapedia.com/plumbing/Kitec_Settlement_Notice.pdf", "publisher": "Court-approved settlement notice (hosted by InspectApedia)", "supports": "[SEARCH] US$125 million fund; estimated claims deadline January 2020", "verified": false },
-        { "url": "https://www.gaar.com/blog/article/does-your-client-have-a-kitec-plumbing-system-they-could-be-eligible-for-a", "publisher": "Greater Albuquerque Association of Realtors", "supports": "[SEARCH] 9 January 2020 deadline; prevalence in Albuquerque/Rio Rancho homes built 1995-2007", "verified": false },
-        { "url": "https://creia.memberclicks.net/kitec-water-supply-piping-and-brass-fittings--what-you-need-to-know", "publisher": "California Real Estate Inspection Association", "supports": "[SEARCH] Brand names, construction, fittings produced 1995-2005, dezincification", "verified": false },
-        { "url": "https://www.cbc.ca/lite/story/1.4971290", "publisher": "CBC News", "supports": "[SEARCH] Unclaimed settlement money reverts to manufacturer and insurers", "verified": false }
+        {
+          "url": "https://prnewswire.com/news-releases/ipex-inc-and-ipex-usa-llc-settle-class-action-lawsuit-regarding-kitec-plumbing-systems-121164454.html",
+          "publisher": "IPEX press release via PR Newswire",
+          "supports": "[SEARCH] IPEX settled the Kitec class action (2011)",
+          "verified": false
+        },
+        {
+          "url": "https://www.txnd.uscourts.gov/sites/default/files/documents/MDL2098_Doc156.pdf",
+          "publisher": "US District Court, N.D. Texas (MDL 2098)",
+          "supports": "[SEARCH] Court document in In re Kitec Plumbing System Products Liability Litigation; content not read",
+          "verified": false
+        },
+        {
+          "url": "https://inspectapedia.com/plumbing/Kitec_Settlement_Notice.pdf",
+          "publisher": "Court-approved settlement notice (hosted by InspectApedia)",
+          "supports": "[SEARCH] US$125 million fund; estimated claims deadline January 2020",
+          "verified": false
+        },
+        {
+          "url": "https://www.gaar.com/blog/article/does-your-client-have-a-kitec-plumbing-system-they-could-be-eligible-for-a",
+          "publisher": "Greater Albuquerque Association of Realtors",
+          "supports": "[SEARCH] 9 January 2020 deadline; prevalence in Albuquerque/Rio Rancho homes built 1995-2007",
+          "verified": false
+        },
+        {
+          "url": "https://creia.memberclicks.net/kitec-water-supply-piping-and-brass-fittings--what-you-need-to-know",
+          "publisher": "California Real Estate Inspection Association",
+          "supports": "[SEARCH] Brand names, construction, fittings produced 1995-2005, dezincification",
+          "verified": false
+        },
+        {
+          "url": "https://www.cbc.ca/lite/story/1.4971290",
+          "publisher": "CBC News",
+          "supports": "[SEARCH] Unclaimed settlement money reverts to manufacturer and insurers",
+          "verified": false
+        }
       ],
-      "open_questions": "Number of US homes affected. Whether 2005 was a formal recall. A US-wide geographic distribution. US insurer treatment."
+      "open_questions": "Number of US homes affected. Whether 2005 was a formal recall. A US-wide geographic distribution. US insurer treatment.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page could be opened in the verification pass (all 14 allowed hosts failed DNS resolution), so no source was marked verified and no quote was added. Entry fields are unchanged from the first pass.",
+        "what_is_not": "1995-2007 window, 2005 recall status (CPSC check not possible), $125M settlement and January 2020 claims deadline. www.cpsc.gov and en.wikipedia.org could not be opened."
+      }
     },
     {
       "id": "pex-brass-fittings-early",
@@ -220,12 +420,38 @@
         "cost_source": "No credible figure found."
       },
       "sources": [
-        { "url": "https://www.gpo.gov/fdsys/pkg/USCOURTS-mnd-0_08-cv-05237/pdf/USCOURTS-mnd-0_08-cv-05237-6.pdf", "publisher": "US District Court, D. Minnesota (via GPO)", "supports": "[SEARCH] Zurn PEX litigation court document; content not read", "verified": false },
-        { "url": "https://prnewswire.com/news-releases/court-to-notify-owners-of-homes-and-other-structures-containing-plumbing-systems-with-zurn-pipe-fittings-that-they-may-be-entitled-to-payment-from-a-class-action-settlement-176938301.html", "publisher": "Court-ordered notice via PR Newswire", "supports": "[SEARCH] Zurn brass fitting class settlement notice", "verified": false },
-        { "url": "https://bergermontague.com/cases/george-v-uponor-inc/", "publisher": "Berger Montague (class counsel)", "supports": "[SEARCH] George v. Uponor: $21 million, yellow brass fittings, buildings built on or after 1 Jan 2002", "verified": false },
-        { "url": "https://bergermontague.com/cases/nibco-pex-tubing-component-parts-lawsuit", "publisher": "Berger Montague (class counsel)", "supports": "[SEARCH] NIBCO $43.5 million nationwide settlement covering PEX tubing, fittings and clamps", "verified": false }
+        {
+          "url": "https://www.gpo.gov/fdsys/pkg/USCOURTS-mnd-0_08-cv-05237/pdf/USCOURTS-mnd-0_08-cv-05237-6.pdf",
+          "publisher": "US District Court, D. Minnesota (via GPO)",
+          "supports": "[SEARCH] Zurn PEX litigation court document; content not read",
+          "verified": false
+        },
+        {
+          "url": "https://prnewswire.com/news-releases/court-to-notify-owners-of-homes-and-other-structures-containing-plumbing-systems-with-zurn-pipe-fittings-that-they-may-be-entitled-to-payment-from-a-class-action-settlement-176938301.html",
+          "publisher": "Court-ordered notice via PR Newswire",
+          "supports": "[SEARCH] Zurn brass fitting class settlement notice",
+          "verified": false
+        },
+        {
+          "url": "https://bergermontague.com/cases/george-v-uponor-inc/",
+          "publisher": "Berger Montague (class counsel)",
+          "supports": "[SEARCH] George v. Uponor: $21 million, yellow brass fittings, buildings built on or after 1 Jan 2002",
+          "verified": false
+        },
+        {
+          "url": "https://bergermontague.com/cases/nibco-pex-tubing-component-parts-lawsuit",
+          "publisher": "Berger Montague (class counsel)",
+          "supports": "[SEARCH] NIBCO $43.5 million nationwide settlement covering PEX tubing, fittings and clamps",
+          "verified": false
+        }
       ],
-      "open_questions": "Manufacture date windows for each product from the settlement agreements themselves. Any count of affected homes. Whether this is too brand-specific and low-prevalence to show on a year-based report at all."
+      "open_questions": "Manufacture date windows for each product from the settlement agreements themselves. Any count of affected homes. Whether this is too brand-specific and low-prevalence to show on a year-based report at all.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page could be opened in the verification pass (all 14 allowed hosts failed DNS resolution), so no source was marked verified and no quote was added. Entry fields are unchanged from the first pass.",
+        "what_is_not": "All product date windows and settlement amounts (Zurn, Uponor, NIBCO). No allowed host could be opened."
+      }
     },
     {
       "id": "cpvc-supply",
@@ -255,11 +481,32 @@
         "cost_source": "No credible figure found."
       },
       "sources": [
-        { "url": "https://www.zurichna.com/-/media/project/zwp/zna/docs/kh/gl/cpvc_sprinkler_pipe_failures_rt.pdf", "publisher": "Zurich North America risk engineering", "supports": "[SEARCH] CPVC sprinkler failures linked to incompatible sealants, lubricants and building products", "verified": false },
-        { "url": "https://www.nationwide.com/business/risk-management/services-resources/resource-library/articles/cpvc-piping-in-automatic-sprinkler-systems", "publisher": "Nationwide", "supports": "[SEARCH] Incompatible fire-stopping, antimicrobial-lined steel pipe and sealant pastes as CPVC risks", "verified": false },
-        { "url": "https://www.cozen.com/news-resources/publications/2019/wet-wild-subro-understanding-common-water-losses", "publisher": "Cozen O'Connor", "supports": "[SEARCH] Improper installation is the more common CPVC failure cause", "verified": false }
+        {
+          "url": "https://www.zurichna.com/-/media/project/zwp/zna/docs/kh/gl/cpvc_sprinkler_pipe_failures_rt.pdf",
+          "publisher": "Zurich North America risk engineering",
+          "supports": "[SEARCH] CPVC sprinkler failures linked to incompatible sealants, lubricants and building products",
+          "verified": false
+        },
+        {
+          "url": "https://www.nationwide.com/business/risk-management/services-resources/resource-library/articles/cpvc-piping-in-automatic-sprinkler-systems",
+          "publisher": "Nationwide",
+          "supports": "[SEARCH] Incompatible fire-stopping, antimicrobial-lined steel pipe and sealant pastes as CPVC risks",
+          "verified": false
+        },
+        {
+          "url": "https://www.cozen.com/news-resources/publications/2019/wet-wild-subro-understanding-common-water-losses",
+          "publisher": "Cozen O'Connor",
+          "supports": "[SEARCH] Improper installation is the more common CPVC failure cause",
+          "verified": false
+        }
       ],
-      "open_questions": "Whether CPVC belongs in a year-based dataset at all: I could not establish an era, a prevalence figure or an age-related failure rate. Recommend treating as 'not feasible' unless a second pass finds an authoritative ageing study."
+      "open_questions": "Whether CPVC belongs in a year-based dataset at all: I could not establish an era, a prevalence figure or an age-related failure rate. Recommend treating as 'not feasible' unless a second pass finds an authoritative ageing study.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page could be opened in the verification pass (all 14 allowed hosts failed DNS resolution), so no source was marked verified and no quote was added. Entry fields are unchanged from the first pass.",
+        "what_is_not": "Start year, any failure era, prevalence. No allowed host could be opened."
+      }
     },
     {
       "id": "cast-iron-drain-pipes",
@@ -289,12 +536,38 @@
         "cost_source": "No credible independent figure found; available numbers are contractor and law-firm marketing."
       },
       "sources": [
-        { "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/BSS/nbsbuildingscience111.pdf", "publisher": "National Bureau of Standards (NIST) Building Science Series 111", "supports": "[SEARCH] Returned for history of plastic DWV in residential use; content not read. Likely the best primary source for the plastics transition.", "verified": false },
-        { "url": "https://contractormag.com/management/article/55132355/from-there-to-here-plumbing-the-past-70-years", "publisher": "Contractor magazine", "supports": "[SEARCH] PVC and ABS DWV not allowed in residential use until the early 1970s (author's market)", "verified": false },
-        { "url": "https://theplumber.com/early-history-of-pvc-pipe", "publisher": "Uni-Bell PVC Pipe News, Summer 1990 (reposted)", "supports": "[SEARCH] First US PVC networks 1955; national standards early 1960s", "verified": false },
-        { "url": "https://www.propertyinsurancecoveragelaw.com/blog/limited-water-damage-endorsement-will-not-limit-the-liability-for-the-tear-out-costs/", "publisher": "Merlin Law Group blog (policyholder attorneys)", "supports": "[SEARCH] Florida limited water damage endorsements and tear-out cost disputes for cast iron", "verified": false }
+        {
+          "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/BSS/nbsbuildingscience111.pdf",
+          "publisher": "National Bureau of Standards (NIST) Building Science Series 111",
+          "supports": "[SEARCH] Returned for history of plastic DWV in residential use; content not read. Likely the best primary source for the plastics transition.",
+          "verified": false
+        },
+        {
+          "url": "https://contractormag.com/management/article/55132355/from-there-to-here-plumbing-the-past-70-years",
+          "publisher": "Contractor magazine",
+          "supports": "[SEARCH] PVC and ABS DWV not allowed in residential use until the early 1970s (author's market)",
+          "verified": false
+        },
+        {
+          "url": "https://theplumber.com/early-history-of-pvc-pipe",
+          "publisher": "Uni-Bell PVC Pipe News, Summer 1990 (reposted)",
+          "supports": "[SEARCH] First US PVC networks 1955; national standards early 1960s",
+          "verified": false
+        },
+        {
+          "url": "https://www.propertyinsurancecoveragelaw.com/blog/limited-water-damage-endorsement-will-not-limit-the-liability-for-the-tear-out-costs/",
+          "publisher": "Merlin Law Group blog (policyholder attorneys)",
+          "supports": "[SEARCH] Florida limited water damage endorsements and tear-out cost disputes for cast iron",
+          "verified": false
+        }
       ],
-      "open_questions": "An authoritative lifespan (InterNACHI's chart, unreachable, is the usual citation). A defensible end year by region. Any neutral data on Florida failure rates or insurer rules (Florida OIR or Citizens Property Insurance documents would be the place to look)."
+      "open_questions": "An authoritative lifespan (InterNACHI's chart, unreachable, is the usual citation). A defensible end year by region. Any neutral data on Florida failure rates or insurer rules (Florida OIR or Citizens Property Insurance documents would be the place to look).",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page could be opened in the verification pass (all 14 allowed hosts failed DNS resolution), so no source was marked verified and no quote was added. Entry fields are unchanged from the first pass.",
+        "what_is_not": "1880-1980 range, 'before 1975' rule of thumb, plastic DWV transition timing (NBS BSS 111 is on nvlpubs.nist.gov, not on the allowed list; www.nist.gov unreachable), lifespan (www.nachi.org unreachable)."
+      }
     },
     {
       "id": "orangeburg-sewer-pipe",
@@ -324,11 +597,32 @@
         "cost_source": "Only contractor figures found (one lists $7,500-$14,000 for trenchless pipe bursting of a 40-80 ft lateral); not adopted."
       },
       "sources": [
-        { "url": "https://tempe.gov/home/showpublisheddocument/65709/636676805781800000", "publisher": "City of Tempe, Arizona", "supports": "[SEARCH] Orangeburg commonly used 1960s-70s for house connections; not all houses of the era have it", "verified": false },
-        { "url": "https://www.epcor.com:443/products-services/drainage/flooding-flood-prevention/Documents/no-corrode.pdf", "publisher": "EPCOR (Edmonton utility)", "supports": "[SEARCH] Utility guidance on 'No-Corrode' bituminous fibre pipe; content not read", "verified": false },
-        { "url": "https://phcppros.com/articles/17134-everything-you-wanted-to-know-about-orangeburg-pipe-but-were-afraid-to-ask", "publisher": "PHCP Pros (plumbing trade press)", "supports": "[SEARCH] History and failure modes; content not read in detail", "verified": false }
+        {
+          "url": "https://tempe.gov/home/showpublisheddocument/65709/636676805781800000",
+          "publisher": "City of Tempe, Arizona",
+          "supports": "[SEARCH] Orangeburg commonly used 1960s-70s for house connections; not all houses of the era have it",
+          "verified": false
+        },
+        {
+          "url": "https://www.epcor.com:443/products-services/drainage/flooding-flood-prevention/Documents/no-corrode.pdf",
+          "publisher": "EPCOR (Edmonton utility)",
+          "supports": "[SEARCH] Utility guidance on 'No-Corrode' bituminous fibre pipe; content not read",
+          "verified": false
+        },
+        {
+          "url": "https://phcppros.com/articles/17134-everything-you-wanted-to-know-about-orangeburg-pipe-but-were-afraid-to-ask",
+          "publisher": "PHCP Pros (plumbing trade press)",
+          "supports": "[SEARCH] History and failure modes; content not read in detail",
+          "verified": false
+        }
       ],
-      "open_questions": "Any prevalence data at all. A primary source for the 1972 plant closure (only a Scribd-hosted document surfaced). Lifespan: 'manufacturer claimed 50 years', '30-50 years' are contractor statements."
+      "open_questions": "Any prevalence data at all. A primary source for the 1972 plant closure (only a Scribd-hosted document surfaced). Lifespan: 'manufacturer claimed 50 years', '30-50 years' are contractor statements.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page could be opened in the verification pass (all 14 allowed hosts failed DNS resolution), so no source was marked verified and no quote was added. Entry fields are unchanged from the first pass.",
+        "what_is_not": "1945-1972 range and 1972 plant closure; prevalence. en.wikipedia.org and www.nachi.org could not be opened."
+      }
     },
     {
       "id": "clay-sewer-lateral",
@@ -358,12 +652,38 @@
         "cost_source": "No independent figure found."
       },
       "sources": [
-        { "url": "https://www.slocity.org/government/department-directory/utilities-department/wastewater/wastewater-collections/sewer-lateral-pipe-material/", "publisher": "City of San Luis Obispo Utilities", "supports": "[SEARCH] Clay laterals typically last 50-60 years; lateral materials by type", "verified": false },
-        { "url": "https://www.bloomingtonmn.gov/sites/default/files/media/81csanitarysewer.pdf", "publisher": "City of Bloomington, Minnesota", "supports": "[SEARCH] Joints in 1960s-era clay pipe shrink and admit roots; owner responsible for the lateral", "verified": false },
-        { "url": "https://webarchive.library.unt.edu/web/20170106234258/https:/www3.epa.gov/region1/sso/pdfs/PrivateSewerLaterals.pdf", "publisher": "US EPA Region 1 (archived)", "supports": "[SEARCH] EPA paper on private sewer laterals; content not read", "verified": false },
-        { "url": "https://costamesaca.gov/home/showpublisheddocument/7486/637806133596300000", "publisher": "City of Costa Mesa, California", "supports": "[SEARCH] Homeowner responsibility for lateral repair", "verified": false }
+        {
+          "url": "https://www.slocity.org/government/department-directory/utilities-department/wastewater/wastewater-collections/sewer-lateral-pipe-material/",
+          "publisher": "City of San Luis Obispo Utilities",
+          "supports": "[SEARCH] Clay laterals typically last 50-60 years; lateral materials by type",
+          "verified": false
+        },
+        {
+          "url": "https://www.bloomingtonmn.gov/sites/default/files/media/81csanitarysewer.pdf",
+          "publisher": "City of Bloomington, Minnesota",
+          "supports": "[SEARCH] Joints in 1960s-era clay pipe shrink and admit roots; owner responsible for the lateral",
+          "verified": false
+        },
+        {
+          "url": "https://webarchive.library.unt.edu/web/20170106234258/https:/www3.epa.gov/region1/sso/pdfs/PrivateSewerLaterals.pdf",
+          "publisher": "US EPA Region 1 (archived)",
+          "supports": "[SEARCH] EPA paper on private sewer laterals; content not read",
+          "verified": false
+        },
+        {
+          "url": "https://costamesaca.gov/home/showpublisheddocument/7486/637806133596300000",
+          "publisher": "City of Costa Mesa, California",
+          "supports": "[SEARCH] Homeowner responsibility for lateral repair",
+          "verified": false
+        }
       ],
-      "open_questions": "A national transition date. Whether lateral material by era can be sourced per sewer district. Cost data from a neutral source."
+      "open_questions": "A national transition date. Whether lateral material by era can be sourced per sewer district. Cost data from a neutral source.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page could be opened in the verification pass (all 14 allowed hosts failed DNS resolution), so no source was marked verified and no quote was added. Entry fields are unchanged from the first pass.",
+        "what_is_not": "All dates and lifespan. www.epa.gov and www.nachi.org could not be opened."
+      }
     },
     {
       "id": "defective-abs-drain-pipe",
@@ -393,12 +713,38 @@
         "cost_source": "No credible figure found."
       },
       "sources": [
-        { "url": "https://lieffcabraser.com/defect/abs-pipes", "publisher": "Lieff Cabraser (class counsel)", "supports": "[SEARCH] About $70 million across eight class settlements, approved 1998 in Contra Costa County; makers Polaris, Gable, Centaur, Phoenix and others; pipe made 1984-1990 cracks at glue joints", "verified": false },
-        { "url": "https://www.buildinggreen.com/node/8276", "publisher": "BuildingGreen (Environmental Building News, 1994)", "supports": "[SEARCH] California banned regrind/recycled resin in ABS DWV pipe", "verified": false },
-        { "url": "https://inspectapedia.com/plumbing/ABS_Piping.php", "publisher": "InspectApedia", "supports": "[SEARCH] Identification of defective ABS; some remains in service", "verified": false },
-        { "url": "https://www.toxicdocs.org/d/3J75pp37RkBEJwbMBNBLV4RY3", "publisher": "ToxicDocs (archived 1990 engineering letter)", "supports": "[SEARCH] Regrind/recycled resin as cause, quoting attorney David Birka-White", "verified": false }
+        {
+          "url": "https://lieffcabraser.com/defect/abs-pipes",
+          "publisher": "Lieff Cabraser (class counsel)",
+          "supports": "[SEARCH] About $70 million across eight class settlements, approved 1998 in Contra Costa County; makers Polaris, Gable, Centaur, Phoenix and others; pipe made 1984-1990 cracks at glue joints",
+          "verified": false
+        },
+        {
+          "url": "https://www.buildinggreen.com/node/8276",
+          "publisher": "BuildingGreen (Environmental Building News, 1994)",
+          "supports": "[SEARCH] California banned regrind/recycled resin in ABS DWV pipe",
+          "verified": false
+        },
+        {
+          "url": "https://inspectapedia.com/plumbing/ABS_Piping.php",
+          "publisher": "InspectApedia",
+          "supports": "[SEARCH] Identification of defective ABS; some remains in service",
+          "verified": false
+        },
+        {
+          "url": "https://www.toxicdocs.org/d/3J75pp37RkBEJwbMBNBLV4RY3",
+          "publisher": "ToxicDocs (archived 1990 engineering letter)",
+          "supports": "[SEARCH] Regrind/recycled resin as cause, quoting attorney David Birka-White",
+          "verified": false
+        }
       ],
-      "open_questions": "Per-manufacturer date windows from the settlement documents. Whether Apache is properly part of the settled group. Any CPSC involvement. Number of homes."
+      "open_questions": "Per-manufacturer date windows from the settlement documents. Whether Apache is properly part of the settled group. Any CPSC involvement. Number of homes.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page could be opened in the verification pass (all 14 allowed hosts failed DNS resolution), so no source was marked verified and no quote was added. Entry fields are unchanged from the first pass.",
+        "what_is_not": "1984-1990 manufacture window, per-manufacturer windows, ~$70M settlements, any CPSC involvement. www.cpsc.gov, www.nachi.org and en.wikipedia.org could not be opened."
+      }
     },
     {
       "id": "copper-pinhole-leaks",
@@ -428,12 +774,38 @@
         "cost_source": "Virginia Tech study of Maryland households as summarised in search results; year of the figures not established (mid-2000s), so do not present as current prices."
       },
       "sources": [
-        { "url": "https://wsscwater.com/copper-pipe-pinhole-leaks", "publisher": "WSSC Water", "supports": "[SEARCH] Utility page on pinhole leaks; aware of significant reports from 1999", "verified": false },
-        { "url": "https://www.wsscwater.com/sites/default/files/sites/wssc/files/PDFs/Study%20of%20Pinhole%20leaks%20Report_1503042.pdf", "publisher": "WSSC Water", "supports": "[SEARCH] Study of pinhole leaks report", "verified": false },
-        { "url": "https://www.wsscwater.com/files/live/sites/wssc/files/PDFs%201/MarcEdwards_Investigation%20Overview_184811.pdf", "publisher": "WSSC Water / Marc Edwards", "supports": "[SEARCH] Edwards investigation: water chemistry (corrosion control changes, NOM removal) as contributor", "verified": false },
-        { "url": "https://www.sciencenews.org/blog/science-the-public/holey-copper-pipes", "publisher": "Science News", "supports": "[SEARCH] High pH plus chlorine especially damaging; national cost about $928 million a year", "verified": false }
+        {
+          "url": "https://wsscwater.com/copper-pipe-pinhole-leaks",
+          "publisher": "WSSC Water",
+          "supports": "[SEARCH] Utility page on pinhole leaks; aware of significant reports from 1999",
+          "verified": false
+        },
+        {
+          "url": "https://www.wsscwater.com/sites/default/files/sites/wssc/files/PDFs/Study%20of%20Pinhole%20leaks%20Report_1503042.pdf",
+          "publisher": "WSSC Water",
+          "supports": "[SEARCH] Study of pinhole leaks report",
+          "verified": false
+        },
+        {
+          "url": "https://www.wsscwater.com/files/live/sites/wssc/files/PDFs%201/MarcEdwards_Investigation%20Overview_184811.pdf",
+          "publisher": "WSSC Water / Marc Edwards",
+          "supports": "[SEARCH] Edwards investigation: water chemistry (corrosion control changes, NOM removal) as contributor",
+          "verified": false
+        },
+        {
+          "url": "https://www.sciencenews.org/blog/science-the-public/holey-copper-pipes",
+          "publisher": "Science News",
+          "supports": "[SEARCH] High pH plus chlorine especially damaging; national cost about $928 million a year",
+          "verified": false
+        }
       ],
-      "open_questions": "Whether to include at all in a year-based product. If kept, it should be keyed to utility/region, not year."
+      "open_questions": "Whether to include at all in a year-based product. If kept, it should be keyed to utility/region, not year.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page could be opened in the verification pass (all 14 allowed hosts failed DNS resolution), so no source was marked verified and no quote was added. Entry fields are unchanged from the first pass.",
+        "what_is_not": "WSSC timeline, cost figures, absence of an era. No allowed host could be opened."
+      }
     },
     {
       "id": "pre-1994-high-flow-toilets",
@@ -463,12 +835,38 @@
         "cost_source": "No credible figure collected."
       },
       "sources": [
-        { "url": "https://wbdg.org/node/2914", "publisher": "Whole Building Design Guide (National Institute of Building Sciences)", "supports": "[SEARCH] Energy Policy Act of 1992 fixture limits; content not read in detail", "verified": false },
-        { "url": "https://www.govinfo.gov/content/pkg/CHRG-106hhrg58509/html/CHRG-106hhrg58509.htm", "publisher": "US House hearing, 106th Congress (GovInfo)", "supports": "[SEARCH] Congressional hearing on the 1.6 gpf standard; primary record of the 1994 effective date", "verified": false },
-        { "url": "https://prnewswire.com/news-releases/18-trillion-gallons-of-water-saved-during-20-years-of-low-flow-toilet-regulations-251254151.html", "publisher": "Plumbing Manufacturers International via PR Newswire", "supports": "[SEARCH] 1.6 gpf requirement dating from 1994", "verified": false },
-        { "url": "https://www.buildinggreen.com/node/10826", "publisher": "BuildingGreen", "supports": "[SEARCH] EPAct 1992 limits for products made after 1 Jan 1994", "verified": false }
+        {
+          "url": "https://wbdg.org/node/2914",
+          "publisher": "Whole Building Design Guide (National Institute of Building Sciences)",
+          "supports": "[SEARCH] Energy Policy Act of 1992 fixture limits; content not read in detail",
+          "verified": false
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/CHRG-106hhrg58509/html/CHRG-106hhrg58509.htm",
+          "publisher": "US House hearing, 106th Congress (GovInfo)",
+          "supports": "[SEARCH] Congressional hearing on the 1.6 gpf standard; primary record of the 1994 effective date",
+          "verified": false
+        },
+        {
+          "url": "https://prnewswire.com/news-releases/18-trillion-gallons-of-water-saved-during-20-years-of-low-flow-toilet-regulations-251254151.html",
+          "publisher": "Plumbing Manufacturers International via PR Newswire",
+          "supports": "[SEARCH] 1.6 gpf requirement dating from 1994",
+          "verified": false
+        },
+        {
+          "url": "https://www.buildinggreen.com/node/10826",
+          "publisher": "BuildingGreen",
+          "supports": "[SEARCH] EPAct 1992 limits for products made after 1 Jan 1994",
+          "verified": false
+        }
       ],
-      "open_questions": "Exact statutory faucet limits. State-level earlier adoption dates. Any evidence on early 1.6 gpf performance (a 1990s NAHB or AWWA study would be the source)."
+      "open_questions": "Exact statutory faucet limits. State-level earlier adoption dates. Any evidence on early 1.6 gpf performance (a 1990s NAHB or AWWA study would be the source).",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page could be opened in the verification pass (all 14 allowed hosts failed DNS resolution), so no source was marked verified and no quote was added. Entry fields are unchanged from the first pass.",
+        "what_is_not": "1 Jan 1994 effective date, 1.6 gpf / 2.5 gpm limits, faucet limits, pre-1994 flush volumes. Intended pages on www.govinfo.gov, www.ecfr.gov, www.energy.gov and www.epa.gov could not be opened."
+      }
     },
     {
       "id": "water-heater-expected-life",
@@ -498,11 +896,32 @@
         "cost_source": "Search for a 2025 replacement cost figure returned nothing usable."
       },
       "sources": [
-        { "url": "https://inspectapedia.com/plumbing/Water_Heater_Life.php", "publisher": "InspectApedia", "supports": "[SEARCH] Typical gas/oil water heater life 8-12 years", "verified": false },
-        { "url": "https://www.energy.gov/energysaver/selecting-new-water-heater", "publisher": "US Department of Energy, Energy Saver", "supports": "[MEMORY] DOE consumer guidance on water heater types and life expectancy (10-15 years storage, 20+ tankless); URL recalled, not seen this session", "verified": false },
-        { "url": "https://www.nachi.org/life-expectancy.htm", "publisher": "InterNACHI", "supports": "[MEMORY] Standard Estimated Life Expectancy Chart for Homes; fetch blocked", "verified": false }
+        {
+          "url": "https://inspectapedia.com/plumbing/Water_Heater_Life.php",
+          "publisher": "InspectApedia",
+          "supports": "[SEARCH] Typical gas/oil water heater life 8-12 years",
+          "verified": false
+        },
+        {
+          "url": "https://www.energy.gov/energysaver/selecting-new-water-heater",
+          "publisher": "US Department of Energy, Energy Saver",
+          "supports": "[MEMORY] DOE consumer guidance on water heater types and life expectancy (10-15 years storage, 20+ tankless); URL recalled, not seen this session",
+          "verified": false
+        },
+        {
+          "url": "https://www.nachi.org/life-expectancy.htm",
+          "publisher": "InterNACHI",
+          "supports": "[MEMORY] Standard Estimated Life Expectancy Chart for Homes; fetch blocked",
+          "verified": false
+        }
       ],
-      "open_questions": "A primary DOE lifetime figure (the appliance standards technical support documents contain them). Replacement cost."
+      "open_questions": "A primary DOE lifetime figure (the appliance standards technical support documents contain them). Replacement cost.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page could be opened in the verification pass (all 14 allowed hosts failed DNS resolution), so no source was marked verified and no quote was added. Entry fields are unchanged from the first pass.",
+        "what_is_not": "All lifespan figures (DOE 10-15 / 20+ years, rulemaking averages, InterNACHI chart). www.energy.gov and www.nachi.org could not be opened."
+      }
     },
     {
       "id": "no-anti-scald-shower-valve",
@@ -532,12 +951,38 @@
         "cost_source": "No credible figure found."
       },
       "sources": [
-        { "url": "https://www.phcppros.com/articles/13878-the-continuing-scald-problem-in-plumbing-systems", "publisher": "PHCP Pros / Plumbing Engineer (Ron George)", "supports": "[SEARCH] ASSE 1016 development began 1973; history of limit stops; codes now require compensating valves", "verified": false },
-        { "url": "https://www.safeplumbing.org/files/safeplumbing.org/documents/misc/timeline.pdf", "publisher": "Plumbing Manufacturers International", "supports": "[SEARCH] Timeline listing BOCA code requirement for compensating shower valves; year not captured", "verified": false },
-        { "url": "https://law.resource.org/pub/us/cfr/ibr/002/asse.1016.1988.pdf", "publisher": "ASSE 1016-1988 (via Public.Resource.Org)", "supports": "[SEARCH] Text of the 1988 edition of the standard; shows it was incorporated by reference in federal regulation", "verified": false },
-        { "url": "https://www.pmmag.com/articles/85874-scald-protection-by-the-numbers", "publisher": "PM Magazine", "supports": "[SEARCH] Scald protection requirements overview; content not read", "verified": false }
+        {
+          "url": "https://www.phcppros.com/articles/13878-the-continuing-scald-problem-in-plumbing-systems",
+          "publisher": "PHCP Pros / Plumbing Engineer (Ron George)",
+          "supports": "[SEARCH] ASSE 1016 development began 1973; history of limit stops; codes now require compensating valves",
+          "verified": false
+        },
+        {
+          "url": "https://www.safeplumbing.org/files/safeplumbing.org/documents/misc/timeline.pdf",
+          "publisher": "Plumbing Manufacturers International",
+          "supports": "[SEARCH] Timeline listing BOCA code requirement for compensating shower valves; year not captured",
+          "verified": false
+        },
+        {
+          "url": "https://law.resource.org/pub/us/cfr/ibr/002/asse.1016.1988.pdf",
+          "publisher": "ASSE 1016-1988 (via Public.Resource.Org)",
+          "supports": "[SEARCH] Text of the 1988 edition of the standard; shows it was incorporated by reference in federal regulation",
+          "verified": false
+        },
+        {
+          "url": "https://www.pmmag.com/articles/85874-scald-protection-by-the-numbers",
+          "publisher": "PM Magazine",
+          "supports": "[SEARCH] Scald protection requirements overview; content not read",
+          "verified": false
+        }
       ],
-      "open_questions": "The first edition of each model code (BOCA National Plumbing Code, SBCCI Standard Plumbing Code, UPC, CABO One and Two Family Dwelling Code, IRC 2000) to require compensating valves in dwellings, and state adoption dates. The PMI timeline PDF probably answers the BOCA year."
+      "open_questions": "The first edition of each model code (BOCA National Plumbing Code, SBCCI Standard Plumbing Code, UPC, CABO One and Two Family Dwelling Code, IRC 2000) to require compensating valves in dwellings, and state adoption dates. The PMI timeline PDF probably answers the BOCA year.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page could be opened in the verification pass (all 14 allowed hosts failed DNS resolution), so no source was marked verified and no quote was added. Entry fields are unchanged from the first pass.",
+        "what_is_not": "The year the requirement entered any model code; current code text. codes.iccsafe.org could not be opened."
+      }
     },
     {
       "id": "s-traps-and-drum-traps",
@@ -567,12 +1012,38 @@
         "cost_source": "No credible figure found."
       },
       "sources": [
-        { "url": "https://inspectapedia.com/plumbing/Illegal-Plumbing-Traps.php", "publisher": "InspectApedia", "supports": "[SEARCH] Prohibited trap types and IPC drum trap exceptions", "verified": false },
-        { "url": "https://inspectapedia.com/plumbing/Plumbing-Trap-History.php", "publisher": "InspectApedia", "supports": "[SEARCH] Trap history page exists; dates not captured", "verified": false },
-        { "url": "https://www.jaspector.com/codes/irc-2021/ch32-plumbing-traps/s-trap-prohibited-code/", "publisher": "Jaspector (code summary site, not ICC)", "supports": "[SEARCH] IRC 2021 P3201.5 lists S-traps, drum traps, bell traps among prohibited traps", "verified": false },
-        { "url": "https://forms.iapmo.org/email_marketing/codespotlight/2017/Oct12.htm", "publisher": "IAPMO (publisher of the UPC)", "supports": "[SEARCH] UPC code spotlight on traps; content not read", "verified": false }
+        {
+          "url": "https://inspectapedia.com/plumbing/Illegal-Plumbing-Traps.php",
+          "publisher": "InspectApedia",
+          "supports": "[SEARCH] Prohibited trap types and IPC drum trap exceptions",
+          "verified": false
+        },
+        {
+          "url": "https://inspectapedia.com/plumbing/Plumbing-Trap-History.php",
+          "publisher": "InspectApedia",
+          "supports": "[SEARCH] Trap history page exists; dates not captured",
+          "verified": false
+        },
+        {
+          "url": "https://www.jaspector.com/codes/irc-2021/ch32-plumbing-traps/s-trap-prohibited-code/",
+          "publisher": "Jaspector (code summary site, not ICC)",
+          "supports": "[SEARCH] IRC 2021 P3201.5 lists S-traps, drum traps, bell traps among prohibited traps",
+          "verified": false
+        },
+        {
+          "url": "https://forms.iapmo.org/email_marketing/codespotlight/2017/Oct12.htm",
+          "publisher": "IAPMO (publisher of the UPC)",
+          "supports": "[SEARCH] UPC code spotlight on traps; content not read",
+          "verified": false
+        }
       ],
-      "open_questions": "The code editions in which each was first prohibited; when drum traps actually dropped out of new construction. Needs the ICC and IAPMO code texts (codes.iccsafe.org) and a plumbing-code history."
+      "open_questions": "The code editions in which each was first prohibited; when drum traps actually dropped out of new construction. Needs the ICC and IAPMO code texts (codes.iccsafe.org) and a plumbing-code history.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page could be opened in the verification pass (all 14 allowed hosts failed DNS resolution), so no source was marked verified and no quote was added. Entry fields are unchanged from the first pass.",
+        "what_is_not": "Current prohibition text (IRC P3201.5) and any historical prohibition date. codes.iccsafe.org could not be opened."
+      }
     }
   ],
   "feasibility_notes": "The main obstacle was access, not the subject: only web search worked. Every direct page fetch failed (epa.gov, cpsc.gov, nachi.org, wikipedia.org all blocked by the session's network policy), so I could not open a single source and, under the brief's rule, nothing here is 'verified'. Search summaries did corroborate most headline facts and supplied real URLs, but they are machine summaries and several times contradicted each other. On substance the domain splits three ways. (1) Product defects with litigation have firm, citable windows and good primary sources once reachable: polybutylene 1978-1995, Kitec 1995-2007, defective ABS 1984-1990, the 1986 lead ban and 2014 lead-free redefinition, the 1994 fixture standard. (2) Legacy materials have soft edges that vary by city and code jurisdiction: galvanized supply, cast iron drains, clay laterals, lead service lines, Orangeburg. Sources for their end dates are mostly utilities, inspectors and contractors, and they disagree by 10-20 years. (3) Several assigned items are not really era-bound (copper pinholes, CPVC, water heater life) or have code dates I could not find (anti-scald valves, S-traps and drum traps). Prevalence is the weakest part throughout: real figures exist only for lead service lines (and those are in open dispute, 9.2 million in 2023 versus 4 million in 2025) and as loose, unsourced estimates for polybutylene (6-10 million units). For everything else no data exists that I could find, and my prevalence ratings are reasoning, labelled as such. Cost data from neutral sources is almost absent apart from EPA's lead line figure; the rest is consumer aggregators or contractors. A second pass needs: fetch access to epa.gov, cpsc.gov, nachi.org, energy.gov, codes.iccsafe.org, nist.gov and court/settlement documents; the actual model code editions for the anti-scald and trap milestones; the settlement agreements for PB, Kitec, ABS and PEX to lift exact class dates; and a decision on whether lead service lines should be answered from utility inventories by address or utility instead of by year. Facts marked [MEMORY] or described as recollection must be checked before publication.",
@@ -591,5 +1062,9 @@
     "Recalled water-related products: dip tubes in 1993-1997 water heaters, specific braided supply line and toilet-fill-valve class actions",
     "State-level early low-flow fixture laws and point-of-sale retrofit ordinances",
     "Point-of-sale sewer lateral inspection ordinances by city"
-  ]
+  ],
+  "verification_pass": {
+    "date": "2026-11-16",
+    "result": "No source verified. WebFetch returned 'getaddrinfo ENOTFOUND' for every host on the allowed list, one or two attempts each: www.cpsc.gov, www.epa.gov, www.hud.gov, www.fema.gov, www.energy.gov, www.ecfr.gov, www.federalregister.gov, www.govinfo.gov, www.nist.gov, www.sec.gov, www.atsdr.cdc.gov, www.nachi.org, codes.iccsafe.org, en.wikipedia.org. Per VERIFY.md no other route was tried. No entry field, source flag or date was changed; only 'verification' objects were added. The hosts appear not to be in the session's network allowlist yet."
+  }
 }

@@ -1,7 +1,7 @@
 {
   "domain": "Structure, foundations and regional / natural-hazard code milestones",
   "web_access": "partial",
-  "web_access_detail": "Search only. Every direct page fetch failed (fema.gov, hud.gov, gao.gov, portal.ct.gov, mass.gov, osfm.fire.ca.gov, dbs.lacity.gov, earthquakebracebolt.com, wikipedia, ecfr.gov were all refused by the session's network policy). WebSearch worked and returned result lists plus machine-written summaries with quoted snippets. Because no page was actually opened, EVERY source below is marked verified:false, as the brief requires. The extra field search_confirmed:true means the URL appeared in a live search result this session and the search summary quoted text from it supporting the claim; it is weaker than opening the page and must be re-checked. No URL in this file was written from memory: all came from search results.",
+  "web_access_detail": "Search only. Every direct page fetch failed (fema.gov, hud.gov, gao.gov, portal.ct.gov, mass.gov, osfm.fire.ca.gov, dbs.lacity.gov, earthquakebracebolt.com, wikipedia, ecfr.gov were all refused by the session's network policy). WebSearch worked and returned result lists plus machine-written summaries with quoted snippets. Because no page was actually opened, EVERY source below is marked verified:false, as the brief requires. The extra field search_confirmed:true means the URL appeared in a live search result this session and the search summary quoted text from it supporting the claim; it is weaker than opening the page and must be re-checked. VERIFICATION PASS 2026-11-16: the allowed hosts were still unreachable from this session - WebFetch returned getaddrinfo ENOTFOUND for www.fema.gov, www.hud.gov, www.ecfr.gov, www.govinfo.gov, www.federalregister.gov, www.nist.gov, www.epa.gov, www.atsdr.cdc.gov, www.energy.gov, www.nachi.org, codes.iccsafe.org and en.wikipedia.org (www.cpsc.gov and www.sec.gov were not tried; no entry in this domain needs them). No page was opened, so no source was changed to verified, no quotes were added and no entry fields were corrected; every entry carries verification.status unconfirmed. No URL in this file was written from memory: all came from search results.",
   "entries": [
     {
       "id": "unbolted-foundation-unbraced-cripple-wall",
@@ -42,6 +42,12 @@
         { "url": "https://www.portland.gov/ppd/residential-permitting/home-projects/residential-seismic-strengthening", "publisher": "City of Portland", "supports": "Portland prescriptive residential seismic strengthening standard", "verified": false, "search_confirmed": true },
         { "url": "https://www.Oregon.Gov/ccb/Documents/Earthquake%20Retrofitting.pdf", "publisher": "Oregon Construction Contractors Board", "supports": "Oregon cut-off year for bolting (sources conflict 1974 vs 1976)", "verified": false, "search_confirmed": true }
       ],
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing by page read. Verification pass of 2026-11-16 could not open any page: every allowed host tried was refused at DNS level by the session network policy. Claims rest only on first-pass search snippets (search_confirmed).",
+        "what_is_not": "All dates, prevalence figures and cost figures in this entry; no source was opened, so no source is marked verified and no quote was added."
+      },
       "open_questions": "The actual UBC edition years in which anchor bolts and cripple-wall sheathing became mandatory (and when each state/city adopted them) were not established; FEMA P-1100 and the CEA/PEER cripple-wall study should settle it. No statewide prevalence count. Whether the 1980 screen should be shown as 1979 or 1980."
     },
     {
@@ -78,6 +84,12 @@
         { "url": "https://www.spur.org/news/2013-04-24/san-francisco-passes-landmark-earthquake-retrofit-law", "publisher": "SPUR", "supports": "Describes SF law as 3+ storeys, 5+ units, pre-1978 (conflicts with city on storeys)", "verified": false, "search_confirmed": true },
         { "url": "https://www.culvercity.org/files/assets/public/v/1/documents/planning-amp-development/seismic-retrofit/handout-swof-design-guidelines-060623-final.pdf", "publisher": "City of Culver City", "supports": "Different local cut-off date (October 23, 1978)", "verified": false, "search_confirmed": true }
       ],
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing by page read. Verification pass of 2026-11-16 could not open any page: every allowed host tried was refused at DNS level by the session network policy. Claims rest only on first-pass search snippets (search_confirmed).",
+        "what_is_not": "All dates, prevalence figures and cost figures in this entry; no source was opened, so no source is marked verified and no quote was added."
+      },
       "open_questions": "Full list of cities with mandatory ordinances and each one's unit/storey thresholds; LA building count; retrofit cost ranges. The SF storey threshold (2+ vs 3+) needs reading the ordinance."
     },
     {
@@ -118,6 +130,12 @@
         { "url": "https://www.slc.gov/housingstability/?p=1150", "publisher": "Salt Lake City", "supports": "Fix the Bricks: URM home built before 1975, up to 75% of retrofit cost", "verified": false, "search_confirmed": true },
         { "url": "https://www.fema.gov/sites/default/files/documents/fema_wasatch-front-urm-risk-reduction-strategy.pdf", "publisher": "FEMA", "supports": "Wasatch Front URM risk reduction strategy", "verified": false, "search_confirmed": true }
       ],
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing by page read. Verification pass of 2026-11-16 could not open any page: every allowed host tried was refused at DNS level by the session network policy. Claims rest only on first-pass search snippets (search_confirmed).",
+        "what_is_not": "All dates, prevalence figures and cost figures in this entry; no source was opened, so no source is marked verified and no quote was added."
+      },
       "open_questions": "Whether and when URM was actually prohibited for new construction in each state (the 'banned in 1933' claim is widely repeated but unconfirmed here); why Utah's cut-off is the mid-1970s (seismic code adoption date); retrofit costs; final terms of Seattle's 2024 URM legislation."
     },
     {
@@ -158,6 +176,12 @@
         { "url": "https://www.flsenate.gov/Laws/statutes/2007/553.844", "publisher": "Florida Statutes s. 553.844", "supports": "Retrofit triggers at re-roof ($300,000 value, 15% cap)", "verified": false, "search_confirmed": true },
         { "url": "https://www.floridabuilding.org/fbc/commission/FBC_0815/Commission_Education_POC/365/365-2-MATERIAL-Course_Narration_with_Figures.pdf", "publisher": "Florida Building Commission course material", "supports": "Retrofit provisions aimed at homes built before the 2002 code changes", "verified": false, "search_confirmed": true }
       ],
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing by page read. Verification pass of 2026-11-16 could not open any page: every allowed host tried was refused at DNS level by the session network policy. Claims rest only on first-pass search snippets (search_confirmed).",
+        "what_is_not": "All dates, prevalence figures and cost figures in this entry; no source was opened, so no source is marked verified and no quote was added."
+      },
       "open_questions": "Actual discount percentages (insurer-specific); retrofit costs; what the pre-1994 South Florida code and the Standard Building Code versions used elsewhere in Florida actually required for roof-to-wall connections by year; statute 627.0629 text was not retrieved."
     },
     {
@@ -196,6 +220,12 @@
         { "url": "https://ibhs.org/ibhs-news-releases/ibhs-ranks-hurricane-coast-states-on-building-code-adoption-enforcement/", "publisher": "IBHS", "supports": "2024 Rating the States across 18 states Texas to Maine", "verified": false, "search_confirmed": true },
         { "url": "https://propertycasualty360.com/2010/08/16/gulf-coast-states-post-katrina-building-code-efforts-lacking", "publisher": "PropertyCasualty360", "supports": "Post-Katrina, only Louisiana adopted a statewide code promptly", "verified": false, "search_confirmed": true }
       ],
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing by page read. Verification pass of 2026-11-16 could not open any page: every allowed host tried was refused at DNS level by the session network policy. Claims rest only on first-pass search snippets (search_confirmed).",
+        "what_is_not": "All dates, prevalence figures and cost figures in this entry; no source was opened, so no source is marked verified and no quote was added."
+      },
       "open_questions": "Nearly everything state-by-state: when NC, SC, GA, VA, AL and MS coastal jurisdictions first required rated roof-to-wall connectors (Standard Building Code / SSTD 10 history was not found), and which Texas counties are in the catastrophe area. IBHS Rating the States Appendix C is the document to read. This entry should NOT be shown to users as a dated claim without that second pass."
     },
     {
@@ -233,6 +263,12 @@
         { "url": "https://floridadisaster.org/globalassets/fdem-ofm-guidance_date-in-definitions_fbceb_12-2024.pdf", "publisher": "Florida Division of Emergency Management", "supports": "Caution against using pre/post-FIRM for compliance because FIRMs are revised", "verified": false, "search_confirmed": true },
         { "url": "https://www.fl-counties.com/wp-content/uploads/2024/10/FEMAs-Commonly-Misinterpreted-50-Rule.pdf", "publisher": "Florida Association of Counties", "supports": "50% substantial improvement / damage rule", "verified": false, "search_confirmed": true }
       ],
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing by page read. Verification pass of 2026-11-16 could not open any page: every allowed host tried was refused at DNS level by the session network policy. Claims rest only on first-pass search snippets (search_confirmed).",
+        "what_is_not": "All dates, prevalence figures and cost figures in this entry; no source was opened, so no source is marked verified and no quote was added."
+      },
       "open_questions": "The site cannot answer this from year + state. It needs the address or at least the NFIP community and its initial FIRM date (a public FEMA dataset). Number of pre-FIRM policies and elevation costs not retrieved."
     },
     {
@@ -272,6 +308,12 @@
         { "url": "https://amp.claimsjournal.com/news/east/2019/11/14/294079.htm", "publisher": "Claims Journal", "supports": "2019 Connecticut Supreme Court ruling for insurers", "verified": false, "search_confirmed": true },
         { "url": "https://www.boston25news.com/news/local/25-investigates-tainted-concrete-aggregate-may-have-been-distributed-by-least-one-mass-quarry/4BS666G57BGWJGRNBMPFSBC6QM/?outputType=amp", "publisher": "Boston 25 News", "supports": "Possible second (Massachusetts) source quarry", "verified": false, "search_confirmed": true }
       ],
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing by page read. Verification pass of 2026-11-16 could not open any page: every allowed host tried was refused at DNS level by the session network policy. Claims rest only on first-pass search snippets (search_confirmed).",
+        "what_is_not": "All dates, prevalence figures and cost figures in this entry; no source was opened, so no source is marked verified and no quote was added."
+      },
       "open_questions": "Official town lists for both states (the CT Department of Housing page, CFSIC site and GAO-21-120 could not be opened); current CFSIC cap and whether it is still taking claims; whether pours after 2015 or from other quarries are affected."
     },
     {
@@ -309,6 +351,12 @@
         { "url": "https://www.post-tensioning.org/Portals/13/Files/PDFs/Events/Conventions/TechnicalSessions/2015/042815Brumley.pdf", "publisher": "Post-Tensioning Institute / ASCE Texas Section", "supports": "Texas evaluation guidelines for slab-on-ground foundations", "verified": false, "search_confirmed": true },
         { "url": "https://foundation-costs-v2.pages.dev/guides/foundation-repair-texas", "publisher": "Commercial cost guide (weak source)", "supports": "Repair cost range and unverified prevalence claims", "verified": false, "search_confirmed": true }
       ],
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing by page read. Verification pass of 2026-11-16 could not open any page: every allowed host tried was refused at DNS level by the session network policy. Claims rest only on first-pass search snippets (search_confirmed).",
+        "what_is_not": "All dates, prevalence figures and cost figures in this entry; no source was opened, so no source is marked verified and no quote was added."
+      },
       "open_questions": "Any neutral prevalence figure; any neutral repair-cost figure; the year PT slabs became dominant by metro; whether this should be one national 'expansive soils' entry keyed to soil maps (USDA/USGS) rather than to Texas and a year."
     },
     {
@@ -343,6 +391,12 @@
         { "url": "https://www.nps.gov/crps/tps/rehab-guidelines/masonry01.htm", "publisher": "National Park Service", "supports": "Masonry rehabilitation guidelines", "verified": false, "search_confirmed": true },
         { "url": "https://hastingsmn.gov/home/showpublisheddocument/749/638549937590000000", "publisher": "City of Hastings, MN (preservation guidelines)", "supports": "19th-century houses on limestone foundations; concrete block after 1900", "verified": false, "search_confirmed": true }
       ],
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing by page read. Verification pass of 2026-11-16 could not open any page: every allowed host tried was refused at DNS level by the session network policy. Claims rest only on first-pass search snippets (search_confirmed).",
+        "what_is_not": "All dates, prevalence figures and cost figures in this entry; no source was opened, so no source is marked verified and no quote was added."
+      },
       "open_questions": "A sourced transition date to poured concrete/block (regional); prevalence; costs. An InterNACHI or university-extension foundation-history reference should be found on a second pass."
     },
     {
@@ -378,6 +432,12 @@
         { "url": "https://inspectapedia.com/structure/Wood_Foundation_Inspection.php", "publisher": "InspectApedia", "supports": "Inspection concerns; exterior water management is the main cause of early deterioration", "verified": false, "search_confirmed": true },
         { "url": "https://greenbuildingadvisor.com/article/water-and-a-permanent-wood-foundation", "publisher": "Green Building Advisor", "supports": "Moisture management for PWFs", "verified": false, "search_confirmed": true }
       ],
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing by page read. Verification pass of 2026-11-16 could not open any page: every allowed host tried was refused at DNS level by the session network policy. Claims rest only on first-pass search snippets (search_confirmed).",
+        "what_is_not": "All dates, prevalence figures and cost figures in this entry; no source was opened, so no source is marked verified and no quote was added."
+      },
       "open_questions": "How many exist and where; peak years; an American Wood Council or APA primary source for history and expected life; actual lender/insurer positions."
     },
     {
@@ -415,6 +475,12 @@
         { "url": "https://www.apawood.org/guides-tools-training/technical-document-library/technical-guides/fire-protective-options-for-i-joist-floor-systems/", "publisher": "APA - The Engineered Wood Association", "supports": "2012 IRC R501.3 / 2015 IRC R302.13 membrane requirement and compliant assemblies", "verified": false, "search_confirmed": true },
         { "url": "https://sbcindustry.com/fireprotectionfloors", "publisher": "Structural Building Components Association", "supports": "Code text and exceptions for fire protection of floors", "verified": false, "search_confirmed": true }
       ],
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing by page read. Verification pass of 2026-11-16 could not open any page: every allowed host tried was refused at DNS level by the session network policy. Claims rest only on first-pass search snippets (search_confirmed).",
+        "what_is_not": "All dates, prevalence figures and cost figures in this entry; no source was opened, so no source is marked verified and no quote was added."
+      },
       "open_questions": "Sourced introduction and market-share history; which states adopted R501.3/R302.13 and when (many amended it); retrofit cost."
     },
     {
@@ -449,6 +515,12 @@
         { "url": "https://www.sbcmag.info/sites/default/files/0311%20Early%20Plates.pdf", "publisher": "SBC Magazine", "supports": "Early plate history and patent filing dates (1954, 1956)", "verified": false, "search_confirmed": true },
         { "url": "https://finehomebuilding.com/project-guides/framing/introduction-to-roof-trusses", "publisher": "Fine Homebuilding", "supports": "About two-thirds of US residential roofs use manufactured trusses", "verified": false, "search_confirmed": true }
       ],
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing by page read. Verification pass of 2026-11-16 could not open any page: every allowed host tried was refused at DNS level by the session network policy. Claims rest only on first-pass search snippets (search_confirmed).",
+        "what_is_not": "All dates, prevalence figures and cost figures in this entry; no source was opened, so no source is marked verified and no quote was added."
+      },
       "open_questions": "Year-by-year market share; whether this deserves to be an 'issue' on the site at all or just an era descriptor."
     },
     {
@@ -483,6 +555,12 @@
         { "url": "https://archives.hud.gov/offices/hsg/sfh/ref/sfhp1-9a.cfm", "publisher": "HUD (archived HOC Reference Guide)", "supports": "Pre-June 15, 1976 units cannot be accepted as compliant even with modifications", "verified": false, "search_confirmed": true },
         { "url": "https://nlihc.org/sites/default/files/AG-2024/6-5_Manufactured-Housing.pdf", "publisher": "National Low Income Housing Coalition", "supports": "Background on the HUD Code and manufactured housing stock", "verified": false, "search_confirmed": true }
       ],
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing by page read. Verification pass of 2026-11-16 could not open any page: every allowed host tried was refused at DNS level by the session network policy. Claims rest only on first-pass search snippets (search_confirmed).",
+        "what_is_not": "All dates, prevalence figures and cost figures in this entry; no source was opened, so no source is marked verified and no quote was added."
+      },
       "open_questions": "Number of pre-1976 units still occupied by state; sourced statements on specific pre-HUD hazards (fire death rates, wiring); state rules on relocating pre-HUD homes."
     },
     {
@@ -519,6 +597,12 @@
         { "url": "https://flhsmv.gov/pdf/dealerservices/mhdamage/hurricanedennisreport.pdf", "publisher": "Florida Dept. of Highway Safety and Motor Vehicles", "supports": "Only one destroyed home post-dated the 1994 amendments (Dennis)", "verified": false, "search_confirmed": true },
         { "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir5370.pdf", "publisher": "NIST", "supports": "Technical basis for manufactured-home wind loads", "verified": false, "search_confirmed": true }
       ],
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing by page read. Verification pass of 2026-11-16 could not open any page: every allowed host tried was refused at DNS level by the session network policy. Claims rest only on first-pass search snippets (search_confirmed).",
+        "what_is_not": "All dates, prevalence figures and cost figures in this entry; no source was opened, so no source is marked verified and no quote was added."
+      },
       "open_questions": "Exact county lists for Zones II and III; Florida insurer rules by age; Florida's 1999 installation/anchoring rule changes."
     },
     {
@@ -554,6 +638,12 @@
         { "url": "https://www.dgs.ca.gov/-/media/Divisions/BSC/03-Rulemaking/2024-Triennial-Cycle/CAC/2024-07-09-BFO/SFM-04-24-IET-PT2.docx", "publisher": "California Building Standards Commission / State Fire Marshal", "supports": "Relocation of Chapter 7A into Title 24 Part 7 (California WUI Code)", "verified": false, "search_confirmed": true },
         { "url": "https://rocklin.ca.us/post/building-code-updates-high-risk-fhsz-areas", "publisher": "City of Rocklin", "supports": "Local application of code updates in FHSZ areas", "verified": false, "search_confirmed": true }
       ],
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing by page read. Verification pass of 2026-11-16 could not open any page: every allowed host tried was refused at DNS level by the session network policy. Claims rest only on first-pass search snippets (search_confirmed).",
+        "what_is_not": "All dates, prevalence figures and cost figures in this entry; no source was opened, so no source is marked verified and no quote was added."
+      },
       "open_questions": "Confirm the January 1 vs July 1, 2008 phasing from the State Fire Marshal page (blocked); pre-2008 roofing-class history; insurer discount rules and AB 38 text; retrofit costs; WUI codes in other western states."
     },
     {
@@ -588,6 +678,12 @@
         { "url": "https://www.govinfo.gov/content/pkg/GOVPUB-HS5_100-PURL-gpo59955/pdf/GOVPUB-HS5_100-PURL-gpo59955.pdf", "publisher": "FEMA (GovInfo copy of P-957)", "supports": "Primary text of the guide", "verified": false, "search_confirmed": true },
         { "url": "https://rimkus.com/article/roof-snow-load-requirements-commercial-buildings/", "publisher": "Rimkus (engineering consultancy; secondary)", "supports": "Statement that drift provisions entered standards in the late 1980s, citing FEMA P-957", "verified": false, "search_confirmed": true }
       ],
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing by page read. Verification pass of 2026-11-16 could not open any page: every allowed host tried was refused at DNS level by the session network policy. Claims rest only on first-pass search snippets (search_confirmed).",
+        "what_is_not": "All dates, prevalence figures and cost figures in this entry; no source was opened, so no source is marked verified and no quote was added."
+      },
       "open_questions": "This is not well enough documented for residential use to make a dated, state-specific claim. Recommend leaving it out of year-based reports or presenting it as generic regional advice only."
     },
     {
@@ -622,6 +718,12 @@
         { "url": "https://www.dllr.state.md.us/labor/build/doc/irc-table-princegeorges.pdf", "publisher": "Maryland Dept. of Labor (IRC Table R301.2(1) for a county)", "supports": "Jurisdictions record termite probability in the IRC climatic/geographic design table", "verified": false, "search_confirmed": true },
         { "url": "https://www.orkin.com/pests/termites/termite-infestation-probability-zones-map", "publisher": "Orkin (commercial; weak source)", "supports": "Reproduction of the four-region TIP map", "verified": false, "search_confirmed": true }
       ],
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing by page read. Verification pass of 2026-11-16 could not open any page: every allowed host tried was refused at DNS level by the session network policy. Claims rest only on first-pass search snippets (search_confirmed).",
+        "what_is_not": "All dates, prevalence figures and cost figures in this entry; no source was opened, so no source is marked verified and no quote was added."
+      },
       "open_questions": "Code history (UBC/SBC/BOCA/CABO and HUD Minimum Property Standards) for clearance, treated sills, shields and soil pre-treatment; EPA chlordane dates; state lists for each TIP region from the IRC figure itself; neutral prevalence data (university extension)."
     }
   ],

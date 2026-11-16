@@ -29,6 +29,7 @@
         { "url": "https://www.spokesman.com/stories/1995/nov/17/refunds-for-siding-under-way-louisiana-pacific", "publisher": "The Spokesman-Review", "supports": "Siding first marketed in 1985; siding installed after 1 January 1996 not covered. Search-result summary only.", "verified": false },
         { "url": "https://investor.lpcorp.com/news-releases/news-release-details/lp-announces-inner-seal-siding-claimant-offer-program", "publisher": "Louisiana-Pacific investor relations", "supports": "2003 Claimant Offer Program; product installed prior to 1 January 1996. Search-result summary only.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "Number of homes; regional distribution; whether LP still honours the reinstated 25-year warranty for any late installations (the last would have expired around 2020)."
     },
     {
@@ -55,6 +56,7 @@
       "sources": [
         { "url": "https://lieffcabraser.com/defect/masonite", "publisher": "Lieff Cabraser Heimann & Bernstein (co-lead class counsel, Naef v. Masonite)", "supports": "Install window 1 Jan 1980 - 15 Jan 1998; ~4 million homeowners; 1996 jury finding; settlement approved 1998; claims programme ran through 2008. Search-result summary only; host blocked.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "Exact claim deadlines by installation year (from memory: January 2005 for 1980-89 installs, January 2008 for 1990-98); year Masonite ceased production; share already replaced."
     },
     {
@@ -82,6 +84,7 @@
         { "url": "https://www.sec.gov/Archives/edgar/data/0000106535/000119312507044292/d10k.htm", "publisher": "Weyerhaeuser Co, Form 10-K FY2006 (SEC EDGAR)", "supports": "Class installed 1 Jan 1981 - 31 Dec 1999; San Francisco Superior Court approval December 2000; nine-year claims programme; 1994-99 claims expire 2009. Search-result summary only; host blocked.", "verified": false },
         { "url": "https://www.sec.gov/Archives/edgar/data/0000106535/000119312505041798/d10k.htm", "publisher": "Weyerhaeuser Co, Form 10-K FY2004 (SEC EDGAR)", "supports": "Deadline for 1981-87 installs fell in December 2003. Search-result summary only.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "Number of structures; regional sales pattern."
     },
     {
@@ -111,6 +114,7 @@
         { "url": "https://www.sec.gov/Archives/edgar/data/0000012978/000001297800500014/ss01113a.htm", "publisher": "Boise Cascade Corp, Form 10-Q 2000 (SEC EDGAR)", "supports": "Five putative hardboard-siding class actions 1998-99; dismissals. Search-result summary only.", "verified": false },
         { "url": "https://inspectapedia.com/exterior/abatibi.htm", "publisher": "InspectAPedia (secondary reference)", "supports": "Abitibi/ABTco Roaring River manufacture dates. Search-result summary only; weak secondary source.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "ABTco class dates need the settlement agreement itself; Georgia-Pacific final deadline; other makers (Forestex/Stimson, Temple-Inland, Champion) not researched."
     },
     {
@@ -141,6 +145,7 @@
         { "url": "https://law.counselstack.com/opinion/ruff-v-parex-inc-ncbizct-1999", "publisher": "North Carolina Business Court, Ruff v. Parex, 1999 NCBC 6", "supports": "NC class action certified 18 September 1996 against EIFS manufacturers. Search-result summary only.", "verified": false },
         { "url": "https://www.wconline.com/articles/84340-off-the-wall-br-beyond-the-storm", "publisher": "Walls & Ceilings (trade press)", "supports": "Proposed national Dryvit settlement (Posey v. Dryvit), up to $7,500 per home. Search-result summary only.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "Posey v. Dryvit class dates and claim deadline (from memory: homes clad after 1 January 1989, approved 2002-03, claims long closed) were not confirmed. No national prevalence figure. Start year is soft."
     },
     {
@@ -171,6 +176,7 @@
         { "url": "https://www.fireengineering.com/fire-safety/frt-plwood-not-as-safe-as-it-sounds/", "publisher": "Fire Engineering (trade press)", "supports": "BOCA code change in 1978 permitting FRT roof sheathing; townhouse concentration. Search-result summary only.", "verified": false },
         { "url": "https://inspectapedia.com/structure/Fire_Retardant_Treated_FRT_Plywood.php", "publisher": "InspectAPedia (secondary reference)", "supports": "First found in New Jersey about 1987; identification by attic inspection near fire walls; do not walk on roof. Search-result summary only.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "Hard end year; which treatment brands; number of units; whether the other model codes (SBCCI, ICBO) permitted the same substitution and when."
     },
     {
@@ -199,6 +205,7 @@
         { "url": "https://www.iko.com/blog/the-history-of-asphalt-shingles/", "publisher": "IKO (manufacturer)", "supports": "Organic phase-out between 2000 and 2012. Search-result summary only.", "verified": false },
         { "url": "https://www.nps.gov/crps/tps/roofingexhibit/asphalt.htm", "publisher": "National Park Service, Technical Preservation Services", "supports": "History of asphalt shingles. Appeared in search results; content not seen.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "Market share by year; a primary ARMA source for the crossover date."
     },
     {
@@ -226,6 +233,7 @@
         { "url": "https://www.prnewswire.com/news-releases/certainteed-corporation-settles-class-action-lawsuit-regarding-organic-roofing-shingles-83796042.html", "publisher": "CertainTeed press release via PR Newswire (2010)", "supports": "Organic shingles made 1 July 1987 through 2005; sold mainly upper Midwest; claim deadlines range from 90 days to 25 years depending on circumstances. Search-result summary only.", "verified": false },
         { "url": "https://www.claimdepot.com/settlements/certainteed-organic-shingles", "publisher": "ClaimDepot (settlement aggregator, weak)", "supports": "Lists a 2 March 2030 final claim date tied to warranty period. Search-result summary only; not confirmed against the administrator.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "CLAIMS STATUS IS NOT SETTLED: the 2010 release says deadlines vary up to 25 years, and aggregators list 2 March 2030, so some claims may still be open. This must be confirmed with the claims administrator before the site says either 'open' or 'closed'."
     },
     {
@@ -253,6 +261,7 @@
         { "url": "https://www.prnewswire.com/news-releases/iko-settles-class-action-lawsuit-regarding-organic-asphalt-shingles-300742840.html", "publisher": "IKO press release via PR Newswire (2018)", "supports": "US settlement, C.D. Illinois; shingles installed primarily 1978-2008; warranty extensions of up to five years. Search-result summary only.", "verified": false },
         { "url": "https://www.siskinds.com/class-action/iko-roofing-shingles-2", "publisher": "Siskinds LLP (Canadian class counsel)", "supports": "Organic shingles not made since 2008, not sold since 2010; Canadian claims no later than 31 December 2023. Search-result summary only.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "US claim deadline (assumed closed; not confirmed)."
     },
     {
@@ -280,6 +289,7 @@
         { "url": "https://law.justia.com/cases/federal/district-courts/south-carolina/scdce/3:2011cv02784/185692/86", "publisher": "US District Court, D. South Carolina (In re Building Materials Corp. of America Asphalt Roofing Shingle Products Liability Litigation), via Justia", "supports": "Final approval order 22 April 2015; class definitions. Search-result summary only.", "verified": false },
         { "url": "https://topclassactions.com/lawsuit-settlements/closed-settlements/gaf-timberline-shingles-class-action-settlement/", "publisher": "Top Class Actions (aggregator, weak)", "supports": "Mobile class 1999-2007; claim deadline the earlier of 7 years from effective date (about April 2022) or warranty expiry; listed as closed. Search-result summary only.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "Exact end date of the non-Mobile class; exact final claim date (2022 vs 2023 in different sources, both past)."
     },
     {
@@ -307,6 +317,7 @@
         { "url": "https://docs.justia.com/cases/federal/district-courts/georgia/gandce/1:2013cv02195/195884/64", "publisher": "US District Court, N.D. Georgia (Dishman v. Atlas Roofing), via Justia", "supports": "Sales discontinued 2010; class certification denied. Search-result summary only.", "verified": false },
         { "url": "https://www.lexislegalnews.com/mealeys/articles/1625734", "publisher": "Mealey's / LexisNexis Legal News", "supports": "June 2017 refusal to certify a class. Search-result summary only.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "First year of manufacture; any later settlement; states where sold."
     },
     {
@@ -335,6 +346,7 @@
         { "url": "https://insurancebusinessmag.com/us/news/property/california-insurers-tighten-roof-coverage-rules-576538.aspx", "publisher": "Insurance Business (trade press)", "supports": "California insurers tightening roof eligibility, wood shake commonly ineligible. Search-result summary only.", "verified": false },
         { "url": "https://www.cedur.com/wood-roof-bans", "publisher": "CeDUR (synthetic-shake vendor; weak, commercial interest)", "supports": "List of local wood-roof bans including Los Angeles County 1989. Search-result summary only.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "Era prevalence by state; Texas rules; an authoritative list of bans with dates (state fire marshal or code text)."
     },
     {
@@ -363,6 +375,7 @@
         { "url": "https://www.eia.gov/consumption/residential/data/2024/hc/pdf/HC2.3_2024.pdf", "publisher": "US Energy Information Administration, RECS 2024", "supports": "Counts of units by glass type (single 43.83M, double 86.08M, triple 2.63M); table identity inferred from search listing. Search-result summary only.", "verified": false },
         { "url": "https://www.eia.gov/consumption/residential/data/2015/hc/php/hc2.3.php", "publisher": "US Energy Information Administration, RECS 2015", "supports": "2015 counts: single 48.7M, double 68.3M, triple 1.2M, with year-of-construction columns. Search-result summary only.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "RECS glass type by year built (exists; needs eia.gov access). State energy-code dates that effectively ended single glazing."
     },
     {
@@ -390,6 +403,7 @@
         { "url": "https://web.ornl.gov/sci/buildings/conf-archive/2007%20B10%20papers/066_Lingnell.pdf", "publisher": "Buildings X conference paper (Lingnell), hosted by Oak Ridge National Laboratory", "supports": "25-year field correlation study; about 1.0-1.2 percent failures at 15 years; single-seal vs dual-seal. Search-result summary only.", "verified": false },
         { "url": "https://www.constructionspecifier.com/visually-obscured-glass-units/", "publisher": "The Construction Specifier", "supports": "Prolonged water at the edge seal is the main cause of early failure. Search-result summary only.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "Hurd 'Heat Mirror' and other product-specific IG failures were searched for and nothing was found; they remain unverified. No era-specific failure rates for uncertified units."
     },
     {
@@ -416,6 +430,7 @@
       "sources": [
         { "url": "https://efficientwindows.org/ftypes-metal/", "publisher": "Efficient Windows Collaborative", "supports": "Thermal behaviour of aluminium frames with and without thermal break. Appeared in search results; content not seen.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "Everything about dates and prevalence. Needs window-industry (AAMA/FGIA) history or Census characteristics data."
     },
     {
@@ -444,6 +459,7 @@
         { "url": "https://www.eia.gov/consumption/residential/data/2020/hc/pdf/HC%202.3.pdf", "publisher": "US Energy Information Administration, RECS 2020 Table HC2.3", "supports": "Self-reported adequacy of insulation by year of construction. Search-result summary only; figures not extracted.", "verified": false },
         { "url": "https://www.pnnl.gov/main/publications/external/technical_reports/PNNL-32231.pdf", "publisher": "Pacific Northwest National Laboratory", "supports": "Wall-upgrade retrofit study; likely contains stock estimates of uninsulated walls. Appeared in search results; content not seen.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "A sourced share of uninsulated walls by decade; FHA Minimum Property Standards insulation requirements by year."
     },
     {
@@ -472,6 +488,7 @@
         { "url": "https://dam.assets.ohio.gov/image/upload/com.ohio.gov/documents/HistoryofEnergyCodeAdoptioninOhio-Fall2020.pdf", "publisher": "Ohio Department of Commerce", "supports": "State-level adoption history illustrating lag behind model codes. Search-result summary only.", "verified": false },
         { "url": "https://www.aceee.org/files/proceedings/1992/data/papers/SS92_Panel6_Paper29.pdf", "publisher": "ACEEE Summer Study 1992", "supports": "MEC lineage and DOE role. Search-result summary only.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "State-by-state first-adoption years (needed if the site is to key on state); what each edition actually required for walls, ceilings and windows by climate zone."
     },
     {
@@ -499,6 +516,7 @@
         { "url": "https://en.wikipedia.org/wiki/Fire_blocking", "publisher": "Wikipedia (tertiary)", "supports": "Fireblocking purpose and materials; platform framing interrupts cavities at each floor. Search-result summary only.", "verified": false },
         { "url": "https://www.finehomebuilding.com/project-guides/framing/evolution-of-the-house-frame", "publisher": "Fine Homebuilding", "supports": "Evolution from balloon to platform framing. Appeared in search results; content not seen.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "An authoritative transition date (NFPA, USFA or FPL Wood Frame House Construction editions would do); no prevalence data."
     },
     {
@@ -528,6 +546,7 @@
         { "url": "https://www.jlconline.com/deck-builder/we-dont-know-what-causes-most-deck-collapses_o/", "publisher": "Journal of Light Construction", "supports": "Critique of collapse statistics; CPSC data limits; about 15 percent of 2003-2007 deck injuries from structural failure; lateral hardware since 2009. Search-result summary only.", "verified": false },
         { "url": "https://www.jlconline.com/deck-builder/nailed-ledgers-the-cause-of-most-deck-collapses_o", "publisher": "Journal of Light Construction", "supports": "Woeste estimate that about 90 percent of collapses involve a failed, usually nailed, ledger. Search-result summary only.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "CPSC primary injury counts; pre-2000 model code (CABO One and Two Family Dwelling Code) wording; any data on fastening practice by decade."
     },
     {
@@ -556,6 +575,7 @@
         { "url": "https://www.sec.gov/Archives/edgar/data/0001069878/000119312513410895/d591245d10q.htm", "publisher": "Trex Co, Form 10-Q 2013 (SEC EDGAR)", "supports": "Mould class settlement, purchases from August 2004; preliminary approval 19 August 2013. Search-result summary only.", "verified": false },
         { "url": "https://www.sec.gov/Archives/edgar/data/0000849706/000117184309000284/f10k_033009.htm", "publisher": "Advanced Environmental Recycling Technologies, Form 10-K FY2008 (SEC EDGAR)", "supports": "ChoiceDek settlement approved 9 January 2009; 2004-2007 purchases; mould inhibitor added October 2006. Search-result summary only.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "Whether the LP recall remedy is still honoured in 2026; Trex and AERT claim deadlines (assumed closed); other brands not confirmed."
     },
     {
@@ -583,6 +603,7 @@
         { "url": "https://buildingscience.com/documents/insights/bsi-029-stucco-woes-the-perfect-storm", "publisher": "Building Science Corporation (Lstiburek), BSI-029", "supports": "Mechanism: single layer bonds to stucco, OSB concentrates moisture, need for second layer or drainage gap. Search-result summary only; host blocked.", "verified": false },
         { "url": "https://www.constructionspecifier.com/rethinking-stucco-wall-design-under-changing-codes/", "publisher": "The Construction Specifier", "supports": "Changing code requirements for WRB and drainage behind stucco. Search-result summary only.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "Code edition and year for the two-layer rule; regional failure rates; any state studies (Minnesota, Pennsylvania)."
     },
     {
@@ -611,6 +632,7 @@
         { "url": "https://www.constructionspecifier.com/ensuring-moisture-protection-for-manufactured-stone/", "publisher": "The Construction Specifier", "supports": "Water absorption, vapour drive, single WRB may be inadequate. Search-result summary only.", "verified": false },
         { "url": "https://www.startribune.com/stone-siding-installation-defects/573025851", "publisher": "Star Tribune (home-inspector column)", "supports": "Common installation defects and reference standards. Search-result summary only.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "Dates; any prevalence or failure-rate study."
     },
     {
@@ -640,6 +662,7 @@
         { "url": "https://issuu.com/building-products/docs/bpd_08011992/s/28678859", "publisher": "Building Products Digest, August 1992 (trade press)", "supports": "Early-1980s introduction to builders; regional adoption estimates (South 5-10 percent, Chicago 70-80 percent). Search-result summary only.", "verified": false },
         { "url": "https://www.homeinnovation.com/insights/trends_data/the-year-ahead-in-residential-housewrap/43861", "publisher": "Home Innovation Research Labs", "supports": "Mechanically attached house wrap on about two thirds of new homes. Search-result summary only.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "Annual adoption data (Home Innovation's Builder Practices Survey has it, paywalled); legacy-code (BOCA/SBC/UBC) WRB requirements before 2000."
     },
     {
@@ -668,6 +691,7 @@
         { "url": "https://standards.nsf.org/higherlogic/ws/public/download/348/NAHB%202007%20StudyUseful%20Life%20of%20Home%20Components.pdf", "publisher": "NAHB / Bank of America Home Equity, Study of Life Expectancy of Home Components (2007)", "supports": "Existence, method (2006 survey of manufacturers and trade bodies) and the general-guideline disclaimer seen in search summary; roofing numbers recalled from memory, not seen.", "verified": false },
         { "url": "https://nachi.org/florida-life-expectancy.htm", "publisher": "InterNACHI, Florida life expectancy chart", "supports": "Shorter lives in hot climates. Appeared in search results; content not seen.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "Exact figures from both primary tables; insurer roof-age rules by state."
     },
     {
@@ -694,6 +718,7 @@
       "sources": [
         { "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/1a8cfb4970823b3885256b5e006ffd67.html", "publisher": "US EPA press release, February 2002 (archive)", "supports": "Voluntary phase-out of residential CCA uses by end of 2003; EPA not recommending removal of existing structures. Search-result summary only; host blocked.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "Market share of CCA by year; start year. Also unresearched: post-2003 copper-rich preservatives corroding ordinary deck fasteners and hangers (2004 onward)."
     },
     {
@@ -721,9 +746,11 @@
         { "url": "https://www.prnewswire.com/news-releases/court-to-notify-current-or-former-owners-of-homes-or-other-structures-containing-pella-proline-casement-windows-that-they-may-qualify-for-benefits-from-a-class-action-settlement-182520591.html", "publisher": "Court-ordered notice via PR Newswire", "supports": "First settlement, 1991-2006 ProLine casement windows. Search-result summary only.", "verified": false },
         { "url": "https://topclassactions.com/lawsuit-settlements/closed-settlements/pella-proline-windows-defect-class-action-settlement/", "publisher": "Top Class Actions (aggregator, weak)", "supports": "Second settlement, windows made 1 Jan 1991 - 31 Dec 2009; final approval 15 March 2019; listed as closed. Search-result summary only.", "verified": false }
       ],
+      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
       "open_questions": "Claim deadline of the second settlement; other window class actions (Andersen, Marvin, Hurd, Weather Shield, MI Windows) not researched."
     }
   ],
+  "verification_pass": "2026-11-16: attempted. WebFetch to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org each failed with getaddrinfo ENOTFOUND (host outside the session's allowed network domains). The remaining listed hosts (www.hud.gov, www.fema.gov, www.energy.gov, www.ecfr.gov, www.federalregister.gov, www.govinfo.gov, www.nist.gov, www.atsdr.cdc.gov, codes.iccsafe.org) were not attempted. No page was opened, so no source is marked verified, no quotes were added and no entry fields were changed; every entry carries verification.status unconfirmed.",
   "feasibility_notes": "Web access was search-only. Every attempt to open a page (WebFetch, and curl through the session proxy) was refused: sec.gov, lieffcabraser.com, research.fs.usda.gov, nachi.org, wconline.com, energy.gov and en.wikipedia.org all failed, and the proxy log shows epa.gov and cpsc.gov refused as well, so the block is general rather than host-specific. WebSearch did work and returned short summaries with URLs. Under the brief's rule, nothing here is marked verified, because no page was opened; each source says whether the claim was at least seen in a search summary this session or is recalled from memory only. Those hosts need to be allowed in the session's network settings for a second pass. On substance, the domain splits in three. (1) Class-action and recall products are the most feasible: settlement class definitions give exact install or manufacture windows (LP Inner-Seal before 1 Jan 1996; Masonite 1980-Jan 1998; Weyerhaeuser 1981-1999; CertainTeed organic July 1987-2005; LP decking sold Jan 2005-Aug 2008), and SEC filings, court orders and CPSC notices are authoritative. Their weaknesses are that a class window is a legal window, not the product's real life; start-of-manufacture dates are often missing (Atlas Chalet, Masonite before 1980); and almost none have a count of affected homes, so prevalence is reasoning from class size at best. Claim status is closed for all siding and deck cases, but CertainTeed organic may still have open claims to 2030 and needs checking before publication. (2) Practice-era items (single glazing, no wall insulation, aluminium windows, balloon framing, house wrap, nailed ledgers, undrained stucco) have no sharp dates. They are gradual regional transitions, and the honest output is a curve, not a range; the best data (EIA RECS glass type and insulation by year built, NREL ResStock, Home Innovation builder surveys) exists but could not be opened. For these, date_confidence is low and several installed_from values are null on purpose. (3) Regional failure clusters (EIFS, FRT plywood, stucco, manufactured stone) are well documented qualitatively by FPL, Building Science Corporation, state reports and trade press, but have no denominators; the dramatic percentages (98 percent of EIFS houses wet, 90 percent of deck collapses at the ledger) are samples of problem houses or expert estimates and should not be presented as prevalence. No cost figure is given anywhere because no credible source could be opened; all cost fields are null. A second pass needs page access, the primary settlement documents, RECS year-built cross-tabs, and code text for the stucco two-layer rule and legacy-code WRB and deck provisions.",
   "missed": [
     "T1-11 and other plywood panel siding (delamination, 1960s-1980s)",

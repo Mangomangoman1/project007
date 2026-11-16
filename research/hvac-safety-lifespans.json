@@ -50,7 +50,13 @@
           "verified": false
         }
       ],
-      "open_questions": "Exact production window (1983-1992 vs 1983-1994); complete list of private-label brand names; surviving population."
+      "open_questions": "Exact production window (1983-1992 vs 1983-1994); complete list of private-label brand names; surviving population.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     },
     {
       "id": "cadet-encore-in-wall-heaters",
@@ -105,7 +111,13 @@
           "verified": false
         }
       ],
-      "open_questions": "Authoritative per-model date table; whether any replacement programme still exists via the current brand owner (Glen Dimplex)."
+      "open_questions": "Authoritative per-model date table; whether any replacement programme still exists via the current brand owner (Glen Dimplex).",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     },
     {
       "id": "htpv-plastic-vent-pipe",
@@ -154,7 +166,13 @@
           "verified": false
         }
       ],
-      "open_questions": "Full installation year range; whether the remedy programme is still open."
+      "open_questions": "Full installation year range; whether the remedy programme is still open.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     },
     {
       "id": "gravity-octopus-furnace",
@@ -191,7 +209,13 @@
           "verified": false
         }
       ],
-      "open_questions": "Any dated end of production; survival rate; cost of abatement plus replacement."
+      "open_questions": "Any dated end of production; survival rate; cost of abatement plus replacement.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     },
     {
       "id": "buried-heating-oil-tank",
@@ -252,7 +276,13 @@
           "verified": false
         }
       ],
-      "open_questions": "Documented installation era by region; current removal and remediation costs; share of homes affected."
+      "open_questions": "Documented installation era by region; current removal and remediation costs; share of homes affected.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     },
     {
       "id": "r22-air-conditioner",
@@ -301,7 +331,13 @@
           "verified": false
         }
       ],
-      "open_questions": "Year the dry-charge loophole closed; current recharge cost; share of pre-2010 units still in service."
+      "open_questions": "Year the dry-charge loophole closed; current recharge cost; share of pre-2010 units still in service.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     },
     {
       "id": "unlined-masonry-chimney",
@@ -350,7 +386,13 @@
           "verified": false
         }
       ],
-      "open_questions": "The first model-code edition (NBFU National Building Code, UBC, BOCA) to mandate flue liners; any prevalence figure."
+      "open_questions": "The first model-code edition (NBFU National Building Code, UBC, BOCA) to mandate flue liners; any prevalence figure.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     },
     {
       "id": "csst-gas-tubing-unbonded",
@@ -411,7 +453,13 @@
           "verified": false
         }
       ],
-      "open_questions": "Whether the 2007 class is 'installed as of' or 'installed after' 5 Sept 2006 (trade press is inconsistent); case caption and court; first year of arc-resistant black-jacket CSST and whether it is exempt from separate bonding; market share by year."
+      "open_questions": "Whether the 2007 class is 'installed as of' or 'installed after' 5 Sept 2006 (trade press is inconsistent); case caption and court; first year of arc-resistant black-jacket CSST and whether it is exempt from separate bonding; market share by year.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     },
     {
       "id": "uncoated-brass-gas-connector",
@@ -460,7 +508,13 @@
           "verified": false
         }
       ],
-      "open_questions": "Actual year manufacture stopped; incident counts; whether any formal recall (as opposed to warning) applied to particular brands."
+      "open_questions": "Actual year manufacture stopped; incident counts; whether any formal recall (as opposed to warning) applied to particular brands.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     },
     {
       "id": "smoke-alarms-by-era",
@@ -527,7 +581,13 @@
           "verified": false
         }
       ],
-      "open_questions": "The actual text of each UBC/BOCA/SBC/CABO edition for: hard-wiring, each-level, each-bedroom, interconnection and battery backup. Needs primary code books; this is the single most date-sensitive item I could not pin."
+      "open_questions": "The actual text of each UBC/BOCA/SBC/CABO edition for: hard-wiring, each-level, each-bedroom, interconnection and battery backup. Needs primary code books; this is the single most date-sensitive item I could not pin.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     },
     {
       "id": "carbon-monoxide-alarms",
@@ -576,7 +636,13 @@
           "verified": false
         }
       ],
-      "open_questions": "2009 IRC R315 wording from the primary text; a state-by-state effective-date table."
+      "open_questions": "2009 IRC R315 wording from the primary text; a state-by-state effective-date table.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     },
     {
       "id": "bedroom-egress-windows",
@@ -637,7 +703,13 @@
           "verified": false
         }
       ],
-      "open_questions": "BOCA, SBC and CABO histories; intermediate UBC editions (1967-1973)."
+      "open_questions": "BOCA, SBC and CABO histories; intermediate UBC editions (1967-1973).",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     },
     {
       "id": "garage-door-opener-no-auto-reverse",
@@ -692,7 +764,13 @@
           "verified": false
         }
       ],
-      "open_questions": "CPSC death counts; exact wording of what the 1991 tier required versus the 1982 voluntary standard."
+      "open_questions": "CPSC death counts; exact wording of what the 1991 tier required versus the 1982 voluntary standard.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     },
     {
       "id": "non-safety-glazing-pre-1977",
@@ -741,7 +819,13 @@
           "verified": false
         }
       ],
-      "open_questions": "The 1201.1(a) product list from the primary text; state safety-glazing statute dates before 1977; code-edition history of 'hazardous locations'."
+      "open_questions": "The 1201.1(a) product list from the primary text; state safety-glazing statute dates before 1977; code-edition history of 'hazardous locations'.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     },
     {
       "id": "guard-baluster-spacing",
@@ -796,7 +880,13 @@
           "verified": false
         }
       ],
-      "open_questions": "Edition-by-edition text for UBC, BOCA, SBC and CABO. Needs the legacy code books; evidence here is the weakest of the code milestones."
+      "open_questions": "Edition-by-edition text for UBC, BOCA, SBC and CABO. Needs the legacy code books; evidence here is the weakest of the code milestones.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     },
     {
       "id": "residential-fire-sprinklers",
@@ -851,7 +941,13 @@
           "verified": false
         }
       ],
-      "open_questions": "Current state-by-state status as of 2026; list of local ordinances with dates."
+      "open_questions": "Current state-by-state status as of 2026; list of local ordinances with dates.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     },
     {
       "id": "lifespan-asphalt-shingle-roof",
@@ -900,7 +996,13 @@
           "verified": false
         }
       ],
-      "open_questions": "Primary-chart confirmation of the 20/30 figures; a climate-zone adjustment table."
+      "open_questions": "Primary-chart confirmation of the 20/30 figures; a climate-zone adjustment table.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     },
     {
       "id": "lifespan-water-heater-tank",
@@ -955,7 +1057,13 @@
           "verified": false
         }
       ],
-      "open_questions": "Which exact energy.gov page carries the 10-15 figure; gas versus electric difference."
+      "open_questions": "Which exact energy.gov page carries the 10-15 figure; gas versus electric difference.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     },
     {
       "id": "lifespan-furnace",
@@ -1004,7 +1112,13 @@
           "verified": false
         }
       ],
-      "open_questions": "The DOE TSD lifetime distribution itself (not opened); boilers and oil furnaces separately."
+      "open_questions": "The DOE TSD lifetime distribution itself (not opened); boilers and oil furnaces separately.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     },
     {
       "id": "lifespan-central-ac-heat-pump",
@@ -1053,7 +1167,13 @@
           "verified": false
         }
       ],
-      "open_questions": "US DOE central AC/heat pump TSD lifetime (not found); climate-zone breakdown."
+      "open_questions": "US DOE central AC/heat pump TSD lifetime (not found); climate-zone breakdown.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     },
     {
       "id": "lifespan-windows",
@@ -1096,7 +1216,13 @@
           "verified": false
         }
       ],
-      "open_questions": "All actual figures by frame type; insulating-glass seal life as a separate number."
+      "open_questions": "All actual figures by frame type; insulating-glass seal life as a separate number.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     },
     {
       "id": "lifespan-garage-door-opener",
@@ -1133,7 +1259,13 @@
           "verified": false
         }
       ],
-      "open_questions": "A second independent source (NAHB figure not seen)."
+      "open_questions": "A second independent source (NAHB figure not seen).",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     },
     {
       "id": "lifespan-electrical-panel",
@@ -1182,7 +1314,13 @@
           "verified": false
         }
       ],
-      "open_questions": "Any standards-body or manufacturer figure in years; the InterNACHI chart's electrical rows."
+      "open_questions": "Any standards-body or manufacturer figure in years; the InterNACHI chart's electrical rows.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     },
     {
       "id": "lifespan-well-pump",
@@ -1225,7 +1363,13 @@
           "verified": false
         }
       ],
-      "open_questions": "Any authoritative figure (NGWA, extension service, manufacturer warranty data); jet pumps versus submersibles."
+      "open_questions": "Any authoritative figure (NGWA, extension service, manufacturer warranty data); jet pumps versus submersibles.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     },
     {
       "id": "lifespan-septic-system",
@@ -1268,7 +1412,13 @@
           "verified": false
         }
       ],
-      "open_questions": "Separate lives for tank (by material) and drainfield; regional cost variation."
+      "open_questions": "Separate lives for tank (by material) and drainfield; regional cost variation.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No page on any allowed host could be opened in the verification pass (all 14 hosts failed DNS resolution, ENOTFOUND).",
+        "what_is_not": "All key claims: installed_from/installed_to or rule/recall dates, prevalence figures and every source remain as in the first pass (search-engine extracts or memory only)."
+      }
     }
   ],
   "feasibility_notes": "Mixed. (1) Recalls and federal rules are highly feasible: CPSC notices and the CFR give exact dates, unit counts and identification marks (Consolidated furnaces 1983-1994, Cadet heaters, HTPV vent pipe, garage door openers 1 Jan 1991 / 1 Jan 1993, safety glazing 6 July 1977, R-22 1 Jan 2010 / 1 Jan 2020, sprinklers 1 Jan 2011). Even so, CPSC's own releases disagree with each other on year ranges and counts, so a second pass must read the notices, not summaries. (2) Building-code milestones are the hard part: smoke alarms, egress windows, baluster spacing and chimney liners changed edition by edition in three or four competing model codes (UBC, BOCA, SBC, CABO) and then took effect locally years later. Free online evidence is mostly municipal handouts (good, but UBC-only) and practitioner forum recollections (weak). A reliable product needs the legacy code books or ICC's archive, and should present these as 'model code year, your jurisdiction may be later' rather than a single year. Baluster spacing and chimney liners have the thinnest evidence; I could not pin a liner date at all. (3) Prevalence is almost never quantified: recalls give unit counts but no surviving population; code items have no survey of actual presence. Nearly all prevalence values here are reasoning, and say so. (4) Lifespans: EPA (septic) and DOE (water heater) give usable figures; furnace and AC are reasonably triangulated (InterNACHI, NYSERDA/DOE, contractor data); windows, electrical panels and well pumps have no authoritative figure I could find. The two obvious sources, InterNACHI's chart and the NAHB 2007 study, were visible only in fragments. (5) Costs: almost nothing credible; left null except EPA's septic range, a 2011 newspaper oil-tank figure and 2007 settlement voucher values. (6) The decisive limitation of this pass is that page fetching was blocked by the session network policy, so zero sources are verified. A second pass needs cpsc.gov, epa.gov, ecfr.gov, energy.gov, nachi.org, iccsafe.org, ncsl.org, nist.gov, govinfo.gov and state .gov hosts allowed, after which most of the recall/federal-rule entries could be verified in an hour.",
@@ -1286,5 +1436,28 @@
     "AFCI/GFCI milestones (electrical domain)",
     "Lifespans for boilers, tankless water heaters, architectural versus other roof types, pressure tanks, garage doors",
     "State-by-state CO alarm and sealed-battery smoke alarm statute dates"
-  ]
+  ],
+  "verification_pass": {
+    "date": "2026-11-16",
+    "result": "blocked",
+    "pages_opened": 0,
+    "hosts_failed": [
+      "www.cpsc.gov",
+      "www.epa.gov",
+      "www.hud.gov",
+      "www.fema.gov",
+      "www.energy.gov",
+      "www.ecfr.gov",
+      "www.federalregister.gov",
+      "www.govinfo.gov",
+      "www.nist.gov",
+      "www.sec.gov",
+      "www.atsdr.cdc.gov",
+      "www.nachi.org",
+      "codes.iccsafe.org",
+      "en.wikipedia.org"
+    ],
+    "error": "getaddrinfo ENOTFOUND (host not on session network allowlist)",
+    "detail": "Verification pass 2026-11-16: no page could be opened. WebFetch returned 'getaddrinfo ENOTFOUND' for every one of the 14 hosts named in VERIFY.md (www.cpsc.gov, www.epa.gov, www.hud.gov, www.fema.gov, www.energy.gov, www.ecfr.gov, www.federalregister.gov, www.govinfo.gov, www.nist.gov, www.sec.gov, www.atsdr.cdc.gov, www.nachi.org, codes.iccsafe.org, en.wikipedia.org), each tried at least once; they are still outside this session's network allowlist. No other route was attempted, per VERIFY.md. No source was marked verified, no quote added and no entry field changed."
+  }
 }
