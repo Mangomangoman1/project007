@@ -532,3 +532,51 @@
     display: none;
   }
 }
+
+/* ---------- parts the house-profile answers rule out (shown on request) ---------- */
+.naFold .foldHead {
+  cursor: default;
+}
+.naFold .foldHead:hover .foldTitle {
+  text-decoration: none;
+}
+.naMark {
+  width: 14px;
+  height: 9px;
+  flex: none;
+  border: var(--hair) dashed var(--ink-3);
+  border-radius: 1px;
+}
+.naRow {
+  grid-template-areas: 'name why' 'meta why';
+  background-image: repeating-linear-gradient(135deg, transparent 0 7px, var(--grid-major) 7px 8px);
+}
+.naRow .title {
+  opacity: 0.62;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--ink-3);
+}
+.naWhy {
+  grid-area: why;
+  justify-self: end;
+  padding: 1px 7px;
+  border: var(--hair) dashed var(--ink-3);
+  border-radius: 1px;
+  background: var(--paper-2);
+  font-family: var(--font-mono);
+  font-size: var(--t-2xs);
+  line-height: 1.6;
+  color: var(--ink-2);
+  text-align: right;
+}
+@media (max-width: 480px) {
+  .naRow {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: 'name' 'meta' 'why';
+    row-gap: 4px;
+  }
+  .naWhy {
+    justify-self: start;
+  }
+}

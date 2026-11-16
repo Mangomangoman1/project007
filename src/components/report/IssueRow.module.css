@@ -379,3 +379,51 @@
     max-width: 12rem;
   }
 }
+
+/* ---------- not for this house (revealed from "hidden by your answers") ---------- */
+.na {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px var(--s-2);
+  justify-self: start;
+  padding: 1px 7px;
+  border: var(--hair) dashed var(--ink-3);
+  border-radius: 1px;
+  background: var(--paper-2);
+  font-family: var(--font-mono);
+  font-size: var(--t-2xs);
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: var(--ink-2);
+}
+.naWord {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+}
+.naWord::after {
+  content: ' ·';
+  color: var(--ink-3);
+}
+.isNa {
+  background-image: repeating-linear-gradient(135deg, transparent 0 7px, var(--grid-major) 7px 8px);
+}
+.isNa .ctitle,
+.isNa .title,
+.isNa .hook,
+.isNa .chook,
+.isNa .cband,
+.isNa .aside,
+.isNa .index {
+  opacity: 0.62;
+}
+.isNa .ctitle,
+.isNa .title a {
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--ink-3);
+}
+.isNa .csummary:hover .ctitle {
+  text-decoration: line-through underline;
+}

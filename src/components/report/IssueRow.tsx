@@ -29,7 +29,22 @@ export type IssueRowProps = {
    * detail; works without JS, keyboard accessible, and `data-row` lets "Expand all" find it.
    */
   variant?: 'full' | 'compact';
+  /**
+   * Set when the visitor's house-profile answers rule this issue out ("no gas"): the row is shown
+   * only on request, marked as not applying and why. It keeps its #i- anchor.
+   */
+  hiddenBy?: string | null;
 };
+
+/** "Doesn't apply · Hidden because: no gas" */
+function NotApplying({ reason }: { reason: string }) {
+  return (
+    <span className={styles.na}>
+      <span className={styles.naWord}>Not for your house</span>
+      <span className={styles.naWhy}>Hidden because: {reason}</span>
+    </span>
+  );
+}
 
 /** Check steps with the house diagram beside them (the diagram column collapses while empty). */
 function CheckBody({ issue, label = false }: { issue: ReportIssue; label?: boolean }) {
@@ -96,16 +111,17 @@ function BandAside({ issue, year }: { issue: ReportIssue; year: number }) {
 }
 
 /** One issue in a report list. */
-export function IssueRow({ issue, year, index, open = false, variant = 'full' }: IssueRowProps) {
+export function IssueRow({ issue, year, index, open = false, variant = 'full', hiddenBy = null }: IssueRowProps) {
   if (variant === 'compact') {
     const core = isCore(issue, year);
     return (
-      <li className={styles.crow} id={`i-${issue.slug}`}>
+      <li className={`${styles.crow} ${hiddenBy ? styles.isNa : ''}`} id={`i-${issue.slug}`} data-hidden-by={hiddenBy ?? undefined}>
         <details className={styles.cdetails} data-row="" open={open}>
           <summary className={styles.csummary}>
             <span className={styles.plus} aria-hidden="true" />
             <span className={styles.chead}>
               <h3 className={styles.ctitle}>{issue.title}</h3>
+              {hiddenBy ? <NotApplying reason={hiddenBy} /> : null}
               <span className={styles.cmeta}>
                 <span className={styles.cyears}>
                   {yearsLabel(issue)}
@@ -137,7 +153,11 @@ export function IssueRow({ issue, year, index, open = false, variant = 'full' }:
   }
 
   return (
-    <li className={`${styles.row} ${index ? styles.first : ''}`} id={`i-${issue.slug}`}>
+    <li
+      className={`${styles.row} ${index ? styles.first : ''} ${hiddenBy ? styles.isNa : ''}`}
+      id={`i-${issue.slug}`}
+      data-hidden-by={hiddenBy ?? undefined}
+    >
       {index ? (
         <span className={styles.index} aria-hidden="true">
           {String(index).padStart(2, '0')}
@@ -148,6 +168,7 @@ export function IssueRow({ issue, year, index, open = false, variant = 'full' }:
           {issue.priority === 1 ? <CheckFirstTag /> : null}
           <span className={styles.kind}>{issue.kind === 'missing' ? 'Built without' : 'Often present'}</span>
           <RegionTag regions={issue.regions} />
+          {hiddenBy ? <NotApplying reason={hiddenBy} /> : null}
         </div>
         <h3 className={styles.title}>
           <Link href={`/issue/${issue.slug}`}>{issue.title}</Link>

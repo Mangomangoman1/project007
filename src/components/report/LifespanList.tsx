@@ -9,9 +9,13 @@ import { readStore, writeStore } from '@/lib/storage';
 import styles from './LifespanList.module.css';
 
 export type LifespanListProps = {
+  /** The parts that apply to this house (all of them when there are no house-profile answers). */
   lifespans: Lifespan[];
   year: number;
   age: number;
+  /** Parts the visitor's answers rule out, with why ("no central air"); listed only when `reveal`. */
+  hidden?: { item: Lifespan; reason: string }[];
+  reveal?: boolean;
 };
 
 type Entry = { item: Lifespan; standing: LifeStanding };
@@ -38,7 +42,7 @@ const lives = (l: Lifespan, age: number) => Math.max(1, Math.floor(age / ((l.lif
  *    parts past their life but plausibly original, and what comes due in the next five years.
  * Ranges are drawn on one shared age axis with the house's age through every row.
  */
-export function LifespanList({ lifespans, year, age }: LifespanListProps) {
+export function LifespanList({ lifespans, year, age, hidden = [], reveal = false }: LifespanListProps) {
   const [replaced, setReplaced] = useState<Record<string, string>>({});
   const [announce, setAnnounce] = useState('');
   const key = STORAGE_KEYS.lastReplaced(year);
@@ -279,6 +283,29 @@ export function LifespanList({ lifespans, year, age }: LifespanListProps) {
             ))}
           </ul>
         </details>
+      )}
+
+      {reveal && hidden.length > 0 && (
+        <div className={`${styles.fold} ${styles.naFold}`}>
+          <div className={styles.foldHead}>
+            <span className={styles.naMark} aria-hidden="true" />
+            <span className={styles.foldTitle}>Not for your house</span>
+            <span className={styles.groupCount}>{hidden.length}</span>
+          </div>
+          <p className={styles.blurb}>Parts your answers rule out. They are left out of the counts above.</p>
+          <ul className={styles.compactRows}>
+            {hidden.map(({ item: l, reason }) => (
+              <li key={l.id} className={`${styles.compactRow} ${styles.naRow}`}>
+                <span className={styles.name}>
+                  <span className={styles.title}>{l.title}</span>
+                  <span className={styles.zone}>{ZONE_LABEL[l.zone]}</span>
+                </span>
+                <span className={styles.life}>lasts {range(l)}</span>
+                <span className={styles.naWhy}>Hidden because: {reason}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
 
       {publishers.length > 0 && (

@@ -19,12 +19,13 @@ import {
   type HitCandidate,
 } from '@/lib/timeline';
 import { MAX_YEAR, MIN_YEAR } from '@/lib/site';
+import { hiddenReason, matchesProfile, type HouseProfile } from '@/lib/profile';
 import { CheckFirstTag, EvidenceStamp } from './Stamps';
 import styles from './Timeline.module.css';
 
 /** The fields the timeline needs. IssueLite (src/lib/data.ts) satisfies this. */
 export type TimelineIssue = Pick<Issue, 'id' | 'slug' | 'title' | 'category' | 'kind' | 'applies' | 'priority' | 'regions' | 'severity'> &
-  Partial<Pick<Issue, 'evidence'>>;
+  Partial<Pick<Issue, 'evidence' | 'when'>>;
 
 export type TimelineProps = {
   issues: TimelineIssue[];
@@ -38,6 +39,8 @@ export type TimelineProps = {
   commitOnRelease?: boolean;
   /** When set, regional issues outside this state are drawn ghosted. */
   state?: string | null;
+  /** When set, issues the house-profile answers rule out are drawn ghosted, like other states'. */
+  profile?: HouseProfile | null;
   /** compact = home/overview (thin bands); comfortable = taller bands and lane labels. */
   density?: 'compact' | 'comfortable';
   min?: number;
@@ -89,6 +92,7 @@ export function Timeline({
   onCommit,
   commitOnRelease = true,
   state = null,
+  profile = null,
   density = 'compact',
   min = MIN_YEAR,
   max = MAX_YEAR,
@@ -172,7 +176,9 @@ export function Timeline({
   }, [issues, domain, dims]);
 
   const ticks = useMemo(() => decades(domain), [domain]);
-  const crossed = useMemo(() => sortIssues(issues.filter((i) => appliesTo(i, year) && inState(i, state)), year), [issues, year, state]);
+  /** In scope for this visitor: their state (if chosen) and their house-profile answers. */
+  const inScope = useCallback((i: TimelineIssue) => inState(i, state) && matchesProfile(i, profile), [state, profile]);
+  const crossed = useMemo(() => sortIssues(issues.filter((i) => appliesTo(i, year) && inScope(i)), year), [issues, year, inScope]);
   const litCount = crossed.length;
 
   /* ---- interaction ---- */
@@ -305,6 +311,7 @@ export function Timeline({
     const below = by < layout.height * 0.55;
     const gapPx = 14;
     const peak = coreLabel(issue);
+    const why = on ? hiddenReason(issue, profile) : null;
     note = (
       <div
         className={`${styles.note} ${below ? styles.noteBelow : styles.noteAbove} ${hot.source === 'pin' ? styles.notePinned : ''}`}
@@ -335,7 +342,9 @@ export function Timeline({
         <span className={styles.noteFoot}>
           {issue.evidence ? <EvidenceStamp evidence={issue.evidence} size="sm" /> : null}
           {issue.priority === 1 && on ? <CheckFirstTag /> : null}
-          <span className={on ? styles.noteOn : styles.noteOff}>{on ? `Applies to ${year}` : `Not ${year}`}</span>
+          <span className={on && !why ? styles.noteOn : styles.noteOff}>
+            {why ? `Not for your house: ${why}` : on ? `Applies to ${year}` : `Not ${year}`}
+          </span>
         </span>
         {hot.source === 'pin' ? (
           <ItemLink href={itemHref(issue, year)} className={styles.noteLink}>
@@ -436,7 +445,7 @@ export function Timeline({
             <g key={lane.cat.id} className={styles.lane}>
               {lane.bands.map(({ issue, geom, y }, i) => {
                 const on = appliesTo(issue, year);
-                const ghost = !inState(issue, state);
+                const ghost = !inScope(issue);
                 const tone = ghost ? 'ghost' : on ? (issue.priority === 1 ? 'accent' : 'lit') : 'dim';
                 const isHot = hot?.id === issue.id;
                 const cls = [
@@ -498,7 +507,7 @@ export function Timeline({
 
         {/* lane heads sit above the year line, so it never runs through them */}
         {layout.lanes.map((lane) => {
-          const lit = lane.bands.filter(({ issue }) => appliesTo(issue, year) && inState(issue, state)).length;
+          const lit = lane.bands.filter(({ issue }) => appliesTo(issue, year) && inScope(issue)).length;
           return (
             <span key={lane.cat.id} className={styles.laneHead} style={{ top: lane.top + 1 }} aria-hidden="true">
               <span className={styles.laneLabel}>{lane.cat.label}</span>
