@@ -1,0 +1,13 @@
+{
+  "_note": "SAMPLE content used only when content/lifespans.json is missing. Sources resolve from the research entry named by researchId.",
+  "lifespans": [
+    { "id": "water-heater", "researchId": "lifespan-water-heater-tank", "title": "Tank water heater", "zone": "water-heater", "lifeLow": 8, "lifeHigh": 15, "note": "Leaks are the usual end, and they can soak a finished room or attic." },
+    { "id": "central-ac", "researchId": "lifespan-central-ac-heat-pump", "title": "Central air or heat pump", "zone": "heating-cooling", "lifeLow": 10, "lifeHigh": 15, "note": "Shorter in hot or coastal climates where it runs most of the year." },
+    { "id": "garage-door-opener", "researchId": "lifespan-garage-door-opener", "title": "Garage door opener", "zone": "garage", "lifeLow": 10, "lifeHigh": 15, "note": "Openers made before 1993 also lack the auto-reverse sensors now required." },
+    { "id": "furnace", "researchId": "lifespan-furnace", "title": "Gas furnace", "zone": "heating-cooling", "lifeLow": 15, "lifeHigh": 25, "note": "Past this age, cracked heat exchangers and scarce parts become more likely." },
+    { "id": "asphalt-roof", "researchId": "lifespan-asphalt-shingle-roof", "title": "Asphalt shingle roof", "zone": "roof", "lifeLow": 20, "lifeHigh": 30, "note": "About 20 years for flat three-tab shingles, 30 for thicker architectural ones; less in hot, humid places." },
+    { "id": "windows", "researchId": "lifespan-windows", "title": "Windows", "zone": "windows", "lifeLow": 15, "lifeHigh": 40, "note": "Aluminum frames last least, wood the longest. Fogging between panes often comes first." },
+    { "id": "septic", "researchId": "lifespan-septic-system", "title": "Septic system", "zone": "deck-yard", "lifeLow": 15, "lifeHigh": 40, "note": "Only if the house is not on a city sewer. The drainfield is usually what fails." },
+    { "id": "electrical-panel", "researchId": "lifespan-electrical-panel", "title": "Electrical panel", "zone": "electrical-panel", "lifeLow": 25, "lifeHigh": 60, "note": "No authoritative service life exists; this range spans contractor rules of thumb and InterNACHI's 60 years." }
+  ]
+}

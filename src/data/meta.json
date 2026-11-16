@@ -1,0 +1,18 @@
+{
+  "sample": true,
+  "editorialFile": "content/sample-editorial.json",
+  "lifespansFile": "content/lifespans.json",
+  "researchFiles": [
+    "electrical",
+    "plumbing",
+    "hazmat",
+    "envelope",
+    "hvac-safety-lifespans",
+    "structure-regional"
+  ],
+  "issueCount": 15,
+  "excludedCount": 1,
+  "lifespanCount": 53,
+  "sourceCount": 46,
+  "primarySourceCount": 29
+}

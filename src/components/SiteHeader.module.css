@@ -1,0 +1,52 @@
+.header {
+  border-bottom: var(--hair) solid var(--rule);
+}
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-4);
+  min-height: 64px;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-3);
+  text-decoration: none;
+  color: var(--ink);
+}
+.brand svg {
+  color: var(--line);
+  transition: transform var(--dur) var(--ease);
+}
+.brand:hover svg {
+  transform: translateY(-1px);
+}
+.name {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  font-variation-settings: 'opsz' 48, 'SOFT' 50;
+  font-weight: 500;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(var(--s-3), 2vw, var(--s-6));
+  font-family: var(--font-mono);
+  font-size: var(--t-xs);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+.nav a {
+  text-decoration: none;
+  color: var(--ink-2);
+  padding: var(--s-2) 0;
+  background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat;
+  transition: background-size var(--dur) var(--ease), color var(--dur-fast) var(--ease);
+}
+.nav a:hover {
+  color: var(--ink);
+  background-size: 100% 1px;
+}

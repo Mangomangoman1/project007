@@ -1,0 +1,472 @@
+/* ==========================================================================
+   Built In — design tokens and base styles
+   Light: "drafting paper" (warm paper, graphite ink, blueprint-blue linework,
+          one red-oxide accent reserved for "check first").
+   Dark:  "blueprint" (deep blue ground, pale linework).
+   Theme: prefers-color-scheme by default; [data-theme] on <html> overrides
+          (set before paint by the inline script in layout.tsx).
+   ========================================================================== */
+
+:root {
+  /* ---- type ---- */
+  --font-display: 'Fraunces Variable', 'Iowan Old Style', Georgia, serif;
+  --font-sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  --t-2xs: 0.6875rem;                                   /* 11px mono micro-labels */
+  --t-xs: 0.75rem;                                      /* 12px mono labels */
+  --t-sm: 0.875rem;                                     /* 14px */
+  --t-base: 1.0625rem;                                  /* 17px reading text */
+  --t-md: 1.1875rem;                                    /* 19px */
+  --t-lg: clamp(1.375rem, 1.15rem + 0.9vw, 1.75rem);    /* row titles */
+  --t-xl: clamp(1.75rem, 1.35rem + 1.8vw, 2.75rem);     /* section heads */
+  --t-2xl: clamp(2.25rem, 1.5rem + 3.4vw, 4.25rem);     /* page statements */
+  --t-hero: clamp(7.5rem, 3.5rem + 20vw, 19rem);        /* THE year */
+
+  --lh-tight: 1.04;
+  --lh-snug: 1.22;
+  --lh-body: 1.6;
+  --tracking-label: 0.08em;
+
+  /* ---- space (4px base) ---- */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4rem;
+  --s-9: 6rem;
+  --s-10: 8rem;
+
+  /* ---- layout ---- */
+  --page-max: 78rem;
+  --measure: 40rem;          /* ~68ch at body size */
+  --gutter: clamp(1rem, 0.4rem + 3vw, 3rem);
+  --radius: 2px;             /* drafting: almost square */
+
+  /* ---- rules ---- */
+  --hair: 1px;
+  --rule-w: 1px;
+  --rule-strong-w: 1.5px;
+
+  /* ---- motion ---- */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --dur-fast: 140ms;
+  --dur: 260ms;
+  --dur-slow: 700ms;
+
+  /* ---- colour: drafting paper (light) ---- */
+  color-scheme: light;
+  --paper: #f4efe4;
+  --paper-2: #ece5d6;          /* inset panels, title-block cells */
+  --paper-3: #e1d8c4;          /* pressed / tracks */
+  --ink: #1f2328;              /* graphite */
+  --ink-2: #474c54;            /* secondary text   (≈7.6:1 on paper) */
+  --ink-3: #686c72;            /* tertiary labels  (≈4.9:1 on paper) */
+  --line: #2b5d8c;             /* blueprint-blue linework (≈5.9:1) */
+  --line-2: #5a83aa;           /* lighter linework */
+  --rule: rgb(31 35 40 / 0.14);
+  --rule-strong: rgb(31 35 40 / 0.62);
+  --grid: rgb(43 93 140 / 0.075);
+  --grid-major: rgb(43 93 140 / 0.13);
+  --accent: #a83c22;           /* red-oxide: check first only (≈5.6:1) */
+  --accent-ink: #fff8f2;       /* text on accent */
+  --accent-wash: rgb(168 60 34 / 0.08);
+  --focus: #1b4f86;
+  --select: rgb(43 93 140 / 0.18);
+
+  /* timeline */
+  --band: var(--line);
+  --band-lit: #1f2328;
+  --band-dim-alpha: 0.2;
+  --yearline: var(--accent);
+}
+
+/* ---- blueprint (dark): declared twice so both the media query and the toggle can use it ---- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+    --paper: #0f2b4b;
+    --paper-2: #13365c;
+    --paper-3: #1a4470;
+    --ink: #ecf2f9;
+    --ink-2: #bfd0e3;
+    --ink-3: #93adc9;
+    --line: #9cc4ec;
+    --line-2: #7aa5d1;
+    --rule: rgb(214 230 248 / 0.17);
+    --rule-strong: rgb(214 230 248 / 0.6);
+    --grid: rgb(156 196 236 / 0.075);
+    --grid-major: rgb(156 196 236 / 0.14);
+    --accent: #ff9a72;
+    --accent-ink: #1a1410;
+    --accent-wash: rgb(255 154 114 / 0.1);
+    --focus: #ffe08a;
+    --select: rgb(156 196 236 / 0.25);
+    --band-lit: #f4f8fc;
+  }
+}
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --paper: #0f2b4b;
+  --paper-2: #13365c;
+  --paper-3: #1a4470;
+  --ink: #ecf2f9;
+  --ink-2: #bfd0e3;
+  --ink-3: #93adc9;
+  --line: #9cc4ec;
+  --line-2: #7aa5d1;
+  --rule: rgb(214 230 248 / 0.17);
+  --rule-strong: rgb(214 230 248 / 0.6);
+  --grid: rgb(156 196 236 / 0.075);
+  --grid-major: rgb(156 196 236 / 0.14);
+  --accent: #ff9a72;
+  --accent-ink: #1a1410;
+  --accent-wash: rgb(255 154 114 / 0.1);
+  --focus: #ffe08a;
+  --select: rgb(156 196 236 / 0.25);
+  --band-lit: #f4f8fc;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: var(--s-6);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: var(--t-base);
+  line-height: var(--lh-body);
+  font-feature-settings: 'kern', 'liga';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+  transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+
+main {
+  flex: 1;
+}
+
+::selection {
+  background: var(--select);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: var(--lh-snug);
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+  font-variation-settings: 'SOFT' 30, 'WONK' 0;
+}
+
+p {
+  margin: 0;
+  text-wrap: pretty;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+  text-underline-offset: 0.2em;
+  transition: text-decoration-color var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+}
+a:hover {
+  text-decoration-color: currentColor;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+/* Visible, consistent focus everywhere */
+:focus {
+  outline: none;
+}
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: var(--radius);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--s-4);
+  top: -100px;
+  z-index: 100;
+  padding: var(--s-2) var(--s-4);
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-mono);
+  font-size: var(--t-sm);
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: var(--s-4);
+}
+
+/* ==========================================================================
+   Layout primitives
+   ========================================================================== */
+.wrap {
+  width: 100%;
+  max-width: calc(var(--page-max) + 2 * var(--gutter));
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.measure {
+  max-width: var(--measure);
+}
+
+/* Drafting grid paper: used sparingly (hero, title blocks) */
+.grid-paper {
+  background-image:
+    linear-gradient(var(--grid-major) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-major) 1px, transparent 1px),
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px;
+  background-position: -1px -1px;
+}
+
+/* ==========================================================================
+   Typographic roles
+   ========================================================================== */
+.label {
+  font-family: var(--font-mono);
+  font-size: var(--t-xs);
+  font-weight: 500;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--ink-3);
+  line-height: 1.4;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-feature-settings: 'zero' 0;
+}
+
+.numeral {
+  font-family: var(--font-display);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-variation-settings: 'opsz' 144, 'SOFT' 0, 'WONK' 0;
+}
+
+.lede {
+  font-size: var(--t-md);
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+
+/* Section heading with a dimension-line rule:  |—— Check these first ——— 4 */
+.section-head {
+  display: grid;
+  gap: var(--s-2);
+  padding-top: var(--s-4);
+  border-top: var(--rule-strong-w) solid var(--ink);
+  position: relative;
+}
+.section-head::before,
+.section-head::after {
+  content: '';
+  position: absolute;
+  top: -6px;
+  width: var(--rule-strong-w);
+  height: 11px;
+  background: var(--ink);
+}
+.section-head::before {
+  left: 0;
+}
+.section-head::after {
+  right: 0;
+}
+.section-head h2 {
+  font-size: var(--t-xl);
+  line-height: 1.1;
+}
+
+/* ==========================================================================
+   Buttons and inputs
+   ========================================================================== */
+.btn {
+  --btn-bg: var(--ink);
+  --btn-fg: var(--paper);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-3);
+  min-height: 48px;
+  padding: var(--s-3) var(--s-5);
+  border: var(--rule-strong-w) solid var(--btn-bg);
+  border-radius: var(--radius);
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  font-family: var(--font-sans);
+  font-size: var(--t-base);
+  font-weight: 500;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease),
+    transform var(--dur-fast) var(--ease);
+}
+.btn:hover {
+  --btn-bg: var(--line);
+  text-decoration: none;
+}
+.btn:active {
+  transform: translateY(1px);
+}
+.btn .arrow {
+  transition: transform var(--dur) var(--ease);
+}
+.btn:hover .arrow {
+  transform: translateX(4px);
+}
+.btn--ghost {
+  --btn-fg: var(--ink);
+  background: transparent;
+  border-color: var(--rule-strong);
+}
+.btn--ghost:hover {
+  border-color: var(--ink);
+  background: var(--paper-2);
+  color: var(--ink);
+}
+
+.select {
+  appearance: none;
+  min-height: 44px;
+  padding: var(--s-2) calc(var(--s-6) + 4px) var(--s-2) var(--s-3);
+  border: var(--hair) solid var(--rule-strong);
+  border-radius: var(--radius);
+  background-color: var(--paper);
+  background-image: linear-gradient(45deg, transparent 50%, var(--ink) 50%),
+    linear-gradient(135deg, var(--ink) 50%, transparent 50%);
+  background-position: calc(100% - 17px) 52%, calc(100% - 12px) 52%;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  font-size: var(--t-sm);
+  cursor: pointer;
+}
+.select:hover {
+  border-color: var(--ink);
+}
+
+/* Drafting checkbox */
+.check {
+  appearance: none;
+  flex: none;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  border: var(--rule-strong-w) solid var(--rule-strong);
+  border-radius: 1px;
+  background: var(--paper);
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  transition: border-color var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease);
+}
+.check::after {
+  content: '';
+  width: 11px;
+  height: 6px;
+  border-left: 2px solid var(--paper);
+  border-bottom: 2px solid var(--paper);
+  transform: translateY(-1px) rotate(-45deg) scale(0);
+  transition: transform var(--dur-fast) var(--ease);
+}
+.check:checked {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+.check:checked::after {
+  transform: translateY(-1px) rotate(-45deg) scale(1);
+}
+.check:hover {
+  border-color: var(--ink);
+}
+
+/* Native disclosure, restyled */
+details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+}

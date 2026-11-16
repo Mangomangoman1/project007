@@ -1,0 +1,865 @@
+[
+  {
+    "id": "aluminum-branch-wiring",
+    "slug": "aluminum-branch-wiring",
+    "title": "Aluminum branch wiring",
+    "category": "electrical",
+    "hook": "For about eight years, many houses were wired with aluminum instead of copper, and its connections can overheat.",
+    "summary": "When copper prices spiked in the mid-1960s, builders wired outlets and switches with aluminum. At ordinary devices the connections loosen and oxidize over time and can get hot enough to start a fire. Repairs are well understood and far cheaper than rewiring.",
+    "kind": "present",
+    "applies": {
+      "from": 1965,
+      "to": 1973,
+      "coreFrom": 1965,
+      "coreTo": 1972,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 1,
+    "evidence": "era",
+    "prevalence": {
+      "label": "possible",
+      "note": "CPSC estimated about two million homes were wired with it. Most houses of these years used copper."
+    },
+    "retrofit": false,
+    "where": [
+      "wiring-outlets",
+      "electrical-panel"
+    ],
+    "check": [
+      "In the basement, attic or garage, read the printing on exposed cable: look for \"AL\" or \"Aluminum\".",
+      "At the panel, see whether the thin branch wires are silver rather than copper colored.",
+      "Warm or discolored outlet covers and flickering lights are warning signs."
+    ],
+    "action": "Ask an electrician about repairing the connections with approved connectors. Do not swap outlets yourself.",
+    "sources": [
+      {
+        "url": "https://www.cpsc.gov/s3fs-public/516.pdf",
+        "publisher": "US CPSC, Publication 516 'Repairing Aluminum Wiring' (June 2011)",
+        "tier": "primary",
+        "quote": "homes built before 1972, and wired with aluminum, are 55 times more likely to have one or more wire connections at outlets reach “Fire Hazard Conditions”"
+      },
+      {
+        "url": "https://www.cpsc.gov/Newsroom/News-Releases/1974/CPSC-Safety-Recommendations-For-Aluminum-Wiring-In-Homes",
+        "publisher": "US CPSC news release, 1974",
+        "tier": "primary",
+        "quote": "An estimated two million homes and mobile homes have been constructed using aluminum wiring since 1965."
+      },
+      {
+        "url": "https://www.nachi.org/aluminum-wiring.htm",
+        "publisher": "InterNACHI",
+        "tier": "trade",
+        "quote": "Between approximately 1965 and 1973, single-strand (solid) aluminum wiring was sometimes substituted for copper branch-circuit wiring in residential electrical systems"
+      }
+    ],
+    "caveat": "Large aluminum feeder cables to the panel and to big appliances are normal and are a different matter."
+  },
+  {
+    "id": "asbestos-popcorn-ceiling",
+    "slug": "asbestos-popcorn-ceiling",
+    "title": "Asbestos in popcorn ceilings",
+    "category": "hazmat",
+    "hook": "That bumpy ceiling texture may contain asbestos; leave it alone until it's tested.",
+    "summary": "Spray-on acoustic ceiling texture often contained asbestos until the late 1970s. Undisturbed, it is a low risk. Scraping, drilling or water damage releases fibers.",
+    "kind": "present",
+    "applies": {
+      "from": 1950,
+      "to": 1980,
+      "coreFrom": 1960,
+      "coreTo": 1978,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "era",
+    "prevalence": {
+      "label": "unknown",
+      "note": "No reliable count exists of how many textured ceilings contain asbestos."
+    },
+    "retrofit": false,
+    "where": [
+      "interior-surfaces"
+    ],
+    "check": [
+      "Look for a white, cottage-cheese-like texture on ceilings.",
+      "Note any water stains or crumbling.",
+      "Only a lab test of a sample can tell you."
+    ],
+    "action": "Do not scrape it. If you plan to remodel, have a sample tested by an accredited lab first.",
+    "sources": [
+      {
+        "url": "https://www.epa.gov/asbestos/epa-actions-protect-public-exposure-asbestos",
+        "publisher": "US EPA, EPA Actions to Protect the Public from Exposure to Asbestos",
+        "tier": "primary",
+        "quote": "In 1978, EPA banned spray-applied surfacing materials for purposes not already banned."
+      },
+      {
+        "url": "https://www.cpsc.gov/safety-education/safety-guides/home/asbestos-home",
+        "publisher": "US CPSC, Asbestos In The Home",
+        "tier": "primary",
+        "quote": "SOUNDPROOFING OR DECORATIVE MATERIAL sprayed on walls and ceilings. Loose, crumbly, or water-damaged material may release fibers."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Popcorn_ceiling",
+        "publisher": "Wikipedia, Popcorn ceiling (secondary)",
+        "tier": "reference",
+        "quote": "existing inventories of asbestos-bearing texturing materials were exempt from the ban, so it is possible to find asbestos in popcorn ceilings that were applied through the 1980s"
+      }
+    ]
+  },
+  {
+    "id": "fpe-stab-lok-panels",
+    "slug": "federal-pacific-stab-lok-panels",
+    "title": "Federal Pacific Stab-Lok panels",
+    "category": "electrical",
+    "hook": "A common breaker panel of the period has breakers that, in testing, often failed to trip.",
+    "summary": "Federal Pacific Electric sold millions of Stab-Lok panels. Independent testing found many of its breakers did not trip under overload, which is the one job a breaker has. The company is gone, so replacement is the owner's cost.",
+    "kind": "present",
+    "applies": {
+      "from": 1950,
+      "to": 1990,
+      "coreFrom": 1955,
+      "coreTo": 1980,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 1,
+    "evidence": "record",
+    "prevalence": {
+      "label": "possible",
+      "note": "Sold in very large numbers, but no count exists of how many remain in service."
+    },
+    "retrofit": true,
+    "where": [
+      "electrical-panel"
+    ],
+    "check": [
+      "Open the panel door and look for \"Federal Pacific\", \"FPE\" or \"Stab-Lok\" on the label.",
+      "Stab-Lok breakers are thin with a red or orange stripe across the handle.",
+      "Do not remove the inner cover yourself."
+    ],
+    "action": "Get a quote from a licensed electrician to replace the panel. Many inspectors and insurers flag it.",
+    "sources": [
+      {
+        "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Commission-Closes-Investigation-Of-FPE-Circuit-Breakers-And-Provides-Safety-Information-For-Consumers",
+        "publisher": "US CPSC (issued 3 Mar 1983; revised 18 Feb 2011)",
+        "tier": "primary",
+        "quote": "the Commission closed the matter without making a determination as to the safety of FPE circuit breakers or the accuracy of the manufacturer’s position on the matter"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Stab-Lok",
+        "publisher": "Wikipedia",
+        "tier": "reference",
+        "quote": "Stab-Lok is a brand name of electrical circuit breakers that were manufactured primarily by Federal Pacific Electric from 1950 to 1980."
+      }
+    ]
+  },
+  {
+    "id": "kitec-plumbing",
+    "slug": "kitec-plumbing",
+    "title": "Kitec plumbing",
+    "category": "plumbing",
+    "hook": "Bright orange and blue water pipe from the late 1990s can corrode at its brass fittings.",
+    "summary": "Kitec was an aluminum-plastic composite pipe with brass fittings. The fittings can lose zinc and clog or break, causing leaks. A class settlement covered replacements; its claim period has ended.",
+    "kind": "present",
+    "applies": {
+      "from": 1995,
+      "to": 2007,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "money",
+    "priority": 2,
+    "evidence": "record",
+    "prevalence": {
+      "label": "rare",
+      "note": "Used in a minority of houses, more often in the Southwest and in multi-family buildings."
+    },
+    "retrofit": false,
+    "where": [
+      "plumbing-supply",
+      "water-heater"
+    ],
+    "check": [
+      "At the water heater and main shutoff, look for orange (hot) and blue (cold) pipe.",
+      "Look for \"Kitec\", \"PlumbBetter\" or \"XPA\" printed on the pipe.",
+      "Look for green or white crust on brass fittings."
+    ],
+    "action": "Have a plumber assess the fittings and quote a repipe.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/kitec-fittings.htm",
+        "publisher": "InterNACHI",
+        "tier": "trade",
+        "quote": "Kitec® is a brand of brass plumbing fitting that was recalled in 2005 by its manufacturer, IPEX, due to its tendency to quickly corrode. The fitting was widely installed throughout the western United States since the early 1990s."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Cross-linked_polyethylene",
+        "publisher": "Wikipedia",
+        "tier": "reference",
+        "quote": "The Kitec system, a PEX-Aluminum-PEX composite pipe product formerly sold in Canada, was discontinued following widespread premature failures primarily caused by the dezincification of its brass fittings, leading to leaks and property damage."
+      }
+    ]
+  },
+  {
+    "id": "knob-and-tube-wiring",
+    "slug": "knob-and-tube-wiring",
+    "title": "Knob-and-tube wiring",
+    "category": "electrical",
+    "hook": "The original wiring in many pre-war houses has no ground wire, and plenty of insurers won't cover it.",
+    "summary": "The earliest standard house wiring ran single cloth-covered wires through ceramic knobs and tubes. Its insulation is now 80 to 140 years old, it has no ground, and it was never meant to be buried in insulation. Many houses were rewired in part, which can leave live sections hidden in walls and attics.",
+    "kind": "present",
+    "applies": {
+      "from": 1880,
+      "to": 1940,
+      "coreFrom": 1900,
+      "coreTo": 1930,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 1,
+    "evidence": "era",
+    "prevalence": {
+      "label": "likely",
+      "note": "A house wired between 1900 and 1930 almost certainly started with it. No count exists of how many still have live sections."
+    },
+    "retrofit": false,
+    "where": [
+      "wiring-outlets",
+      "attic",
+      "basement-foundation"
+    ],
+    "check": [
+      "Look at the basement ceiling and in the attic for white ceramic knobs nailed to joists and ceramic tubes through them.",
+      "Look for pairs of separate cloth-covered wires running a few inches apart.",
+      "Two-prong outlets, push-button switches and a fuse box are supporting clues.",
+      "Modern cable at the panel does not rule it out: it is often spliced in further along."
+    ],
+    "action": "Have a licensed electrician trace which circuits are still live and quote replacing them. Call your insurer before you buy.",
+    "sources": [
+      {
+        "url": "https://www.energy.gov/sites/prod/files/2013/11/f5/insulation_guide.pdf",
+        "publisher": "US Department of Energy, Building Technologies Program, \"Energy Renovations: Insulation\" guide",
+        "tier": "primary",
+        "quote": "For fire safety, active knob-and-tube wiring should be replaced before your contractor begins the insulation project."
+      },
+      {
+        "url": "https://www.nachi.org/knob-and-tube",
+        "publisher": "InterNACHI",
+        "tier": "trade",
+        "quote": "in common use in North America from about 1880 to the 1940s"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Knob-and-tube_wiring",
+        "publisher": "Wikipedia",
+        "tier": "reference",
+        "quote": "It was common in North America and Japan starting in the 1880s, remaining prevalent until the 1940s in North America"
+      }
+    ],
+    "caveat": "The end date is soft. Most builders had moved on by about 1930; some rural and low-cost houses used it into the 1940s."
+  },
+  {
+    "id": "lead-based-paint",
+    "slug": "lead-based-paint",
+    "title": "Lead-based paint",
+    "category": "hazmat",
+    "hook": "Most houses built before 1940 have some lead paint, and sanding it is the dangerous part.",
+    "summary": "Lead paint was used inside and out until it was banned for homes in 1978. Intact paint is a low risk. Peeling paint, windows and doors that rub, and any sanding or demolition create lead dust, which is a serious hazard for young children.",
+    "kind": "present",
+    "applies": {
+      "from": null,
+      "to": 1978,
+      "coreFrom": null,
+      "coreTo": 1959,
+      "startEdge": "soft",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 1,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "likely",
+      "note": "EPA: 87% of homes built before 1940 and 24% of homes built 1960 to 1978 have some lead-based paint."
+    },
+    "retrofit": false,
+    "where": [
+      "interior-surfaces",
+      "windows",
+      "exterior-walls"
+    ],
+    "check": [
+      "Look at original windows, doors, trim and porch paint for chipping or a cracked, scaly pattern.",
+      "Ask the seller for the federal lead disclosure form, which is required for pre-1978 houses.",
+      "Only a lab test or a certified inspector's XRF reading can confirm it."
+    ],
+    "action": "Before any sanding or demolition, test first and hire a lead-safe certified contractor.",
+    "sources": [
+      {
+        "url": "https://www.epa.gov/system/files/documents/2026-01/508-lbp_program-fqs_1.21.2026.pdf",
+        "publisher": "US EPA, Lead-Based Paint Program Frequent Questions (January 12, 2026)",
+        "tier": "primary",
+        "quote": "87% of homes built before 1940 have some lead- based paint, while 24% of homes built between 1960 and 1978 have some lead-based paint."
+      },
+      {
+        "url": "https://www.epa.gov/system/files/documents/2026-01/508-lbp_program-fqs_1.21.2026.pdf",
+        "publisher": "US EPA, Lead-Based Paint Program Frequent Questions (January 12, 2026), citing HUD AHHS II",
+        "tier": "primary",
+        "quote": "estimated that 34.6 million homes (29.4% of all housing units) in the United States contain lead-based paint that was applied before the residential use of lead-based paint was banned in 1978."
+      },
+      {
+        "url": "https://www.govinfo.gov/content/pkg/CFR-2023-title16-vol2/pdf/CFR-2023-title16-vol2-part1303.pdf",
+        "publisher": "16 CFR Part 1303 (govinfo, 2023 edition)",
+        "tier": "primary",
+        "quote": "manufactured after February 27, 1978,"
+      },
+      {
+        "url": "https://www.cpsc.gov/recalls/1977/cpsc-announces-final-ban-on-lead-containing-paint",
+        "publisher": "US CPSC",
+        "tier": "primary",
+        "quote": "Until now, the maximum level of lead allowed in consumer paints has been 0.5 percent. CPSC has lowered this amount to 0.06 percent"
+      },
+      {
+        "url": "https://www.epa.gov/lead/protect-your-family-sources-lead",
+        "publisher": "US EPA",
+        "tier": "primary",
+        "quote": "In 1978, the federal government banned the sale of lead-based paint for use in homes and childcare facilities."
+      },
+      {
+        "url": "https://www.epa.gov/lead/real-estate-disclosures-about-potential-lead-hazards",
+        "publisher": "US EPA",
+        "tier": "primary",
+        "quote": "Provide homebuyers a 10-day period to conduct a paint inspection or risk assessment for lead-based paint or lead-based paint hazards."
+      }
+    ],
+    "caveat": "Paint made before the ban could still be applied in 1978 and a little later."
+  },
+  {
+    "id": "afci-protection-milestones",
+    "slug": "no-afci-protection",
+    "title": "No arc-fault breakers",
+    "category": "electrical",
+    "hook": "Houses built before the early 2000s have no breakers that catch the sparking that starts wiring fires.",
+    "summary": "Arc-fault breakers sense the electrical signature of damaged wires or cords and shut the circuit off before a fire starts. They were required for bedrooms from 2002 and for most living areas from 2008.",
+    "kind": "missing",
+    "applies": {
+      "from": null,
+      "to": 2001,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 3,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "likely",
+      "note": "Almost no houses were built with them before the code required it."
+    },
+    "retrofit": true,
+    "where": [
+      "electrical-panel"
+    ],
+    "check": [
+      "At the panel, look for breakers with a TEST button labeled AFCI or Arc Fault.",
+      "Ordinary breakers have no test button."
+    ],
+    "action": "Ask an electrician whether adding arc-fault breakers to bedroom circuits is practical in your panel.",
+    "sources": [
+      {
+        "url": "https://www.cpsc.gov/s3fs-public/AFCIFireTechnology.pdf",
+        "publisher": "US CPSC staff paper \"New Technology for Preventing Residential Electrical Fires: Arc-Fault Circuit Interrupters (AFCIs)\"",
+        "tier": "primary",
+        "quote": "The 1999 National Electrical Code (NEC) requires AFCIs on bedroom branch circuits effective in the year 2002."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Arc-fault_circuit_interrupter",
+        "publisher": "Wikipedia",
+        "tier": "reference",
+        "quote": "The 2014 NEC adds kitchens and laundry rooms to the list of rooms requiring AFCI circuitry, as well as any devices (such as lighting) requiring protection."
+      }
+    ],
+    "caveat": "Some states delayed or amended the requirement."
+  },
+  {
+    "id": "carbon-monoxide-alarms",
+    "slug": "no-carbon-monoxide-alarms",
+    "title": "No carbon monoxide alarms",
+    "category": "fire-safety",
+    "hook": "Houses built before CO alarms were required often have none, even with gas appliances.",
+    "summary": "Model codes added carbon monoxide alarms for new homes with fuel-burning appliances or an attached garage in 2009. Older houses often have none unless a state law required them later.",
+    "kind": "missing",
+    "applies": {
+      "from": null,
+      "to": 2009,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "likely",
+      "note": "No national count exists; many states now require them at sale."
+    },
+    "retrofit": true,
+    "where": [
+      "whole-house"
+    ],
+    "check": [
+      "Look outside each sleeping area for a unit labeled carbon monoxide.",
+      "Check the date on any alarm: they expire after 5 to 10 years."
+    ],
+    "action": "Add CO alarms outside bedrooms and on each level. They cost little.",
+    "sources": [
+      {
+        "url": "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center/Carbon-Monoxide-Questions-and-Answers",
+        "publisher": "CPSC, Carbon Monoxide Questions and Answers",
+        "tier": "primary",
+        "quote": "Install battery-operated CO alarms or CO alarms with battery backup on every level of the home and outside sleeping areas."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Carbon_monoxide_detector",
+        "publisher": "Wikipedia, Carbon monoxide detector",
+        "tier": "reference",
+        "quote": "House builders in Colorado are required to install carbon monoxide detectors in new homes by a bill signed into law in March 2009."
+      }
+    ]
+  },
+  {
+    "id": "gfci-protection-milestones",
+    "slug": "no-gfci-protection",
+    "title": "No shock protection at wet outlets (GFCI)",
+    "category": "electrical",
+    "hook": "Outlets near water in older houses usually lack the test-and-reset protection that prevents electrocution.",
+    "summary": "Ground-fault outlets cut power in a fraction of a second when current leaks, preventing most electrocutions near water. The electrical code added them room by room: outdoors and in bathrooms in the 1970s, kitchens in 1987, and more since. A house keeps whatever it was built with unless someone added them.",
+    "kind": "missing",
+    "applies": {
+      "from": null,
+      "to": 1986,
+      "coreFrom": null,
+      "coreTo": 1974,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 1,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "likely",
+      "note": "Original wiring of this age had none at kitchen counters. Many owners have added them since."
+    },
+    "retrofit": true,
+    "where": [
+      "kitchen",
+      "bathroom",
+      "garage",
+      "deck-yard"
+    ],
+    "check": [
+      "Look for outlets with TEST and RESET buttons in the kitchen, bathrooms, garage and outside.",
+      "Press TEST: the outlet, and any outlets downstream of it, should go dead.",
+      "Check the panel for breakers with a test button."
+    ],
+    "action": "Adding GFCI outlets or breakers is cheap. Have an electrician do it if you are unsure.",
+    "sources": [
+      {
+        "url": "https://www.cpsc.gov/s3fs-public/099_0.pdf",
+        "publisher": "US CPSC Fact Sheet \"What is a GFCI?\"",
+        "tier": "primary",
+        "quote": "Outdoors (since 1973)"
+      },
+      {
+        "url": "https://www.cpsc.gov/Newsroom/News-Releases/1991/Electrical-Safety-Month-Inexpensive-Device-Protects-Consumers-Against-Shock-Electrocution",
+        "publisher": "US CPSC news release, May 21, 1991",
+        "tier": "primary",
+        "quote": "GFCIs were first required in outdoor receptacle circuits in 1973, bathrooms in 1975, garage wall outlets in 1978, some kitchen receptacles since 1987, and all receptacle outlets in unfinished basements and crawl spaces since 1990."
+      },
+      {
+        "url": "https://nachi.org/gfci.htm",
+        "publisher": "InterNACHI",
+        "tier": "trade",
+        "quote": "Throughout the 1970s, GFCI installation requirements were gradually added for 120-volt receptacles in areas prone to possible water contact, including bathrooms, garages, and any receptacles located outdoors."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Residual-current_device",
+        "publisher": "Wikipedia",
+        "tier": "reference",
+        "quote": "garages (1978), areas near hot tubs or spas (1981), hotel bathrooms (1984), kitchen counter sockets (1987), crawl spaces and unfinished basements (1990), near wet bar sinks (1993), near laundry sinks (2005)"
+      }
+    ],
+    "caveat": "Dates are electrical code editions. States adopted each edition at different times, often years later."
+  },
+  {
+    "id": "polybutylene-supply",
+    "slug": "polybutylene-water-pipes",
+    "title": "Polybutylene water pipes",
+    "category": "plumbing",
+    "hook": "Gray plastic water pipe from these years can fail without warning, and some insurers won't cover it.",
+    "summary": "Polybutylene was a cheap plastic supply pipe used widely from the late 1970s to the mid-1990s. Its fittings and the pipe itself can crack from the inside, leading to sudden leaks. A national settlement covered some replacements; that program has closed.",
+    "kind": "present",
+    "applies": {
+      "from": 1978,
+      "to": 1995,
+      "coreFrom": 1980,
+      "coreTo": 1994,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "money",
+    "priority": 2,
+    "evidence": "record",
+    "prevalence": {
+      "label": "possible",
+      "note": "Estimates of 6 to 10 million homes are often repeated, but no figure was confirmed at a primary source."
+    },
+    "retrofit": false,
+    "where": [
+      "plumbing-supply",
+      "water-heater"
+    ],
+    "check": [
+      "At the water heater, under sinks and at the main shutoff, look for flexible gray (sometimes blue or black) pipe.",
+      "Look for the letters \"PB2110\" printed on the pipe.",
+      "Check for crimp rings of copper or aluminum at fittings."
+    ],
+    "action": "Get a repipe quote and ask your insurer whether they will cover it.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/pb.htm",
+        "publisher": "InterNACHI",
+        "tier": "trade",
+        "quote": "Polybutylene (PB) was a plastic manufactured between 1978 and mid-1995 for use as piping in home plumbing systems."
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Polybutylene",
+        "publisher": "Wikipedia",
+        "tier": "reference",
+        "quote": "Polybutylene plumbing (marketed as Poly-B ) was used in several million homes built in the United States and Canada from around 1978 to 1997."
+      }
+    ]
+  },
+  {
+    "id": "problem-chinese-drywall",
+    "slug": "problem-chinese-drywall",
+    "title": "Problem drywall from China",
+    "category": "hazmat",
+    "hook": "Drywall imported during the mid-2000s housing boom gave off sulfur gases that corroded wiring and AC coils.",
+    "summary": "Some drywall imported between about 2001 and 2009 emitted sulfur gases. Homes reported a rotten-egg smell, blackened copper wiring and repeated air-conditioner coil failures. Federal agencies issued a remediation protocol.",
+    "kind": "present",
+    "applies": {
+      "from": 2001,
+      "to": 2009,
+      "coreFrom": 2005,
+      "coreTo": 2008,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": [
+      "FL",
+      "LA",
+      "VA",
+      "AL",
+      "MS",
+      "TX"
+    ],
+    "severity": "money",
+    "priority": 1,
+    "evidence": "record",
+    "prevalence": {
+      "label": "rare",
+      "note": "CPSC received about 4,000 reports, concentrated in Florida, Louisiana and Virginia."
+    },
+    "retrofit": false,
+    "where": [
+      "interior-surfaces",
+      "heating-cooling",
+      "wiring-outlets"
+    ],
+    "check": [
+      "Notice any persistent sulfur or rotten-egg smell.",
+      "Look at bare copper ground wires behind an outlet cover: black and sooty instead of shiny.",
+      "Ask about repeated air-conditioner coil replacements."
+    ],
+    "action": "If you see the signs, have it assessed using the CPSC and HUD identification guidance before buying.",
+    "sources": [
+      {
+        "url": "https://www.cpsc.gov/safety-education/safety-education-centers/drywall-information-center/how-can-i-tell-if-my-home-has-problem-drywall",
+        "publisher": "US CPSC Drywall Information Center",
+        "tier": "primary",
+        "quote": "(if drywall was installed between 2005 and 2009, must have at least two of the below. For installations between 2001 and 2004, at least four of the following conditions must be met:)"
+      },
+      {
+        "url": "https://www.cpsc.gov/safety-education/safety-education-centers/drywall-information-center/where-has-problem-drywall-been-reported",
+        "publisher": "US CPSC Drywall Information Center",
+        "tier": "primary",
+        "quote": "the CPSC has received about 4,051 reports from residents in 44 states, the District of Columbia, American Samoa, and Puerto Rico"
+      },
+      {
+        "url": "https://www.cpsc.gov/s3fs-public/pdfs/blk_media_mar2010status.pdf",
+        "publisher": "US CPSC status report, March 2010",
+        "tier": "primary",
+        "quote": "More than 90% of reports are from Florida (59%), Louisiana (20%), Mississippi (6%) and Alabama (5%) and Virginia (4%)."
+      },
+      {
+        "url": "https://www.govinfo.gov/content/pkg/CHRG-112shrg73876/html/CHRG-112shrg73876.htm",
+        "publisher": "US Senate hearing record, S. Hrg. 112-348 (December 6, 2011)",
+        "tier": "primary",
+        "quote": "pegged at $86 per square foot. That would amount to more than $200,000 for a 2,400 square foot home"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Chinese_drywall",
+        "publisher": "Wikipedia, Chinese drywall (secondary)",
+        "tier": "reference",
+        "quote": "Sources estimated that from 60,000 to 100,000 homes could be affected."
+      }
+    ]
+  },
+  {
+    "id": "r22-air-conditioner",
+    "slug": "r22-air-conditioner",
+    "title": "Air conditioner using R-22",
+    "category": "hvac",
+    "hook": "An original AC from before 2010 runs on a refrigerant that is no longer made.",
+    "summary": "Central air conditioners and heat pumps made before 2010 use R-22. US production ended in 2020, so a leak means expensive recovered refrigerant. Units this old are also at or past their normal life.",
+    "kind": "present",
+    "applies": {
+      "from": 1960,
+      "to": 2009,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "money",
+    "priority": 3,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "likely",
+      "note": "Nearly all central AC made before 2010 used it, but most original units have since been replaced."
+    },
+    "retrofit": true,
+    "where": [
+      "heating-cooling"
+    ],
+    "check": [
+      "Read the data plate on the outdoor unit for \"R-22\" or \"HCFC-22\".",
+      "The manufacture date is usually on the same plate."
+    ],
+    "action": "Budget for replacement rather than repeated recharges.",
+    "sources": [
+      {
+        "url": "https://www.epa.gov/sites/production/files/2020-03/documents/residential_air_conditioning_and_the_phaseout_of_hcfc-22_what_you_need_to_know_final_508.pdf",
+        "publisher": "US EPA",
+        "tier": "primary",
+        "quote": "U.S. production and import of HCFC-22 ended on January 1, 2020, but you may continue to use HCFC-22 in your existing system for as long as necessary."
+      },
+      {
+        "url": "https://www.epa.gov/sites/production/files/2015-07/documents/what_technicians_and_contractors_need_to_know_about_phasing_out_hcfc_refrigerants_to_protect_the_ozone_layer.pdf",
+        "publisher": "US EPA",
+        "tier": "primary",
+        "quote": "Ban on production, import and use of HCFC-22 and HCFC-142b except for on-going servicing needs of existing equipment"
+      },
+      {
+        "url": "https://www.epa.gov/ods-phaseout/phaseout-class-ii-ozone-depleting-substances",
+        "publisher": "US EPA, Phaseout of Class II Ozone-Depleting Substances",
+        "tier": "primary",
+        "quote": "No production or import of HCFC-142b and HCFC-22, except for use in equipment manufactured before January 1, 2010"
+      },
+      {
+        "url": "https://www.epa.gov/ods-phaseout/homeowners-and-consumers-frequently-asked-questions",
+        "publisher": "US EPA, Homeowners and Consumers FAQ",
+        "tier": "primary",
+        "quote": "You can no longer purchase a central AC unit that uses HCFC-22."
+      }
+    ]
+  },
+  {
+    "id": "radon",
+    "slug": "radon",
+    "title": "Radon",
+    "category": "hazmat",
+    "hook": "Any house of any age can have radon; a cheap test is the only way to know.",
+    "summary": "Radon is a radioactive soil gas that seeps in through foundations and is the leading cause of lung cancer in non-smokers. It is not tied to an era. Fixes are well established.",
+    "kind": "present",
+    "applies": {
+      "from": null,
+      "to": null,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "possible",
+      "note": "EPA estimates about 1 in 15 homes has elevated radon."
+    },
+    "retrofit": false,
+    "where": [
+      "basement-foundation",
+      "whole-house"
+    ],
+    "check": [
+      "Test with a short-term kit in the lowest lived-in level.",
+      "A PVC pipe from the slab up through the roof with a small gauge means a system is already installed."
+    ],
+    "action": "If the test is high, get quotes from a certified radon mitigator.",
+    "sources": [
+      {
+        "url": "https://www.epa.gov/sites/default/files/2016-12/documents/2016_a_citizens_guide_to_radon.pdf",
+        "publisher": "US EPA, A Citizen's Guide to Radon (EPA 402/K-12/002)",
+        "tier": "primary",
+        "quote": "Nearly 1 out of every 15 homes in the U.S. is estimated to have elevated radon levels."
+      },
+      {
+        "url": "https://www.epa.gov/radon/health-risk-radon",
+        "publisher": "US EPA, Health Risk of Radon",
+        "tier": "primary",
+        "quote": "Radon is responsible for about 21,000 lung cancer deaths every year."
+      },
+      {
+        "url": "https://www.epa.gov/radon/epa-map-radon-zones",
+        "publisher": "US EPA, Map of Radon Zones",
+        "tier": "primary",
+        "quote": "Fix your home if your radon level is 4 picocuries per liter (pCi/L) (150 becquerels per meter cubed (Bq/m 3 )) or higher."
+      },
+      {
+        "url": "https://www.epa.gov/radon/building-codes-radon-resistant-new-construction-rrnc",
+        "publisher": "US EPA, Building Codes and Standards for RRNC",
+        "tier": "primary",
+        "quote": "Appendix F of the 2015 International Residential Code (IRC): Radon Control Methods"
+      },
+      {
+        "url": "https://www.epa.gov/radon/radon-resistant-construction-basics-and-techniques",
+        "publisher": "US EPA, Radon-Resistant Construction Basics and Techniques",
+        "tier": "primary",
+        "quote": "More than 1.5 million new homes have been constructed since 1990 with radon-resistant features"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Radon_mitigation",
+        "publisher": "Wikipedia, Radon mitigation (secondary)",
+        "tier": "reference",
+        "quote": "The average cost for an ASD radon mitigation system in Minnesota is $1500."
+      }
+    ]
+  },
+  {
+    "id": "square-d-qo-pon-recall-2020-2022",
+    "slug": "square-d-qo-plug-on-neutral-recall",
+    "title": "Recalled Square D QO plug-on neutral panels",
+    "category": "electrical",
+    "hook": "About 1.4 million panels made from 2020 to early 2022 were recalled, and the fix is free.",
+    "summary": "Schneider Electric recalled Square D QO plug-on neutral load centers because a loose connection can overheat. It matters for houses built or re-paneled in 2020 to 2022.",
+    "kind": "present",
+    "applies": {
+      "from": 2020,
+      "to": 2022,
+      "coreFrom": 2020,
+      "coreTo": 2022,
+      "startEdge": "sharp",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 1,
+    "evidence": "record",
+    "prevalence": {
+      "label": "possible",
+      "note": "About 1.4 million units were sold, out of a much larger market."
+    },
+    "retrofit": true,
+    "where": [
+      "electrical-panel"
+    ],
+    "check": [
+      "Open the panel door and look for \"Square D\", \"QO\" and \"Plug-on Neutral\" on the label.",
+      "Note the catalog number and date code and compare them with the recall list."
+    ],
+    "action": "Contact Schneider Electric for the free inspection and repair.",
+    "sources": [
+      {
+        "url": "https://www.cpsc.gov/Recalls/2022/Schneider-ElectricTM-Recalls-1-4-Million-Electrical-Panels-Due-to-Thermal-Burn-and-Fire-Hazards",
+        "publisher": "US CPSC recall 22-159 (16 June 2022)",
+        "tier": "primary",
+        "quote": "The recalled circuit breaker boxes were manufactured between February 2020 and January 2022, with date codes between 200561 and 220233."
+      }
+    ],
+    "caveat": "Installation can trail manufacture by months, so houses finished in 2023 may also be affected."
+  },
+  {
+    "id": "unbolted-foundation-unbraced-cripple-wall",
+    "slug": "unbolted-foundation",
+    "title": "House not bolted to its foundation",
+    "category": "structure",
+    "hook": "In earthquake country, older houses on raised foundations were often never bolted down.",
+    "summary": "Many older wood houses on crawl spaces sit on the foundation without anchor bolts, and the short walls under the floor have no bracing. In a strong earthquake the house can slide off. The retrofit is well understood and relatively cheap.",
+    "kind": "missing",
+    "applies": {
+      "from": null,
+      "to": 1979,
+      "coreFrom": null,
+      "coreTo": 1940,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": [
+      "CA",
+      "OR",
+      "WA"
+    ],
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "era",
+    "prevalence": {
+      "label": "possible",
+      "note": "Only houses on raised foundations are affected, and many have been retrofitted. No statewide count exists."
+    },
+    "retrofit": true,
+    "where": [
+      "basement-foundation"
+    ],
+    "check": [
+      "In the crawl space, look along the top of the concrete for bolts with nuts every 4 to 6 feet.",
+      "If there is a short stud wall under the floor, see whether plywood is nailed to it.",
+      "Houses on a concrete slab do not have this problem."
+    ],
+    "action": "Ask a contractor about a brace-and-bolt retrofit. California runs a grant program for eligible ZIP codes.",
+    "sources": [
+      {
+        "url": "https://www.nachi.org/foundation-anchor-bolts-sill-plate.htm",
+        "publisher": "InterNACHI",
+        "tier": "trade",
+        "quote": "additional requirements that were developed following observations from earthquakes, particularly the 1994 Northridge earthquake in California, where extensive sill plate splitting led to significant structural damage"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Seismic_retrofit",
+        "publisher": "Wikipedia (Seismic retrofit)",
+        "tier": "reference",
+        "quote": "in many structures built before 1950 the sill plate that sits between the concrete foundation and the floor diaphragm (perimeter foundation) or studwall (slab foundation) may not be sufficiently bolted in"
+      }
+    ]
+  }
+]

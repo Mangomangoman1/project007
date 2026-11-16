@@ -1,0 +1,1762 @@
+{
+  "domain": "newer-homes (houses built about 2000-2025)",
+  "web_access": "partial",
+  "entries": [
+    {
+      "id": "kidde-plastic-handle-extinguishers-2017",
+      "name": "Kidde plastic-handle and Pindicator fire extinguishers (2017 recall)",
+      "category": "fire-safety",
+      "summary": "Kidde recalled about 37.8 million US fire extinguishers (134 plastic-handle models made 1973 to 2017, plus eight push-button Pindicator models made 1995 to 2017) because they can clog or need excessive force and may not discharge in a fire. Many sit in kitchens, garages and utility rooms of homes of every era, including 2000s-2020s houses.",
+      "installed_from": 1973,
+      "installed_to": 2017,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "Dates are manufacture dates from the CPSC notice (plastic handle: Jan 1, 1973 to Aug 15, 2017; Pindicator: Aug 11, 1995 to Sep 22, 2017). Extinguishers are purchased, not built in, so presence in a house is by owner purchase or builder supply, not by construction year. Recall announced Nov 2, 2017 (the CPSC page sits under a /Recalls/2018/ path).",
+      "regions": "national",
+      "prevalence": "possible",
+      "prevalence_basis": "CPSC: about 37.8 million units in the US (plus 2.7 million Canada, 6,730 Mexico). No data on the share in homes or in homes built 2000-2025; 37.8 million units against roughly 140 million US housing units suggests many but not most homes, which is my rough inference, not a sourced figure.",
+      "how_to_identify": "Model number is printed on the extinguisher label; for units made 2007 and later a 10-digit date code is printed on the side of the cylinder near the bottom (digits 5-9 are day and year, DDDYY). Plastic handle, sold in red, white and silver; Pindicator is a push-button style. Check the CPSC model list.",
+      "risk": {
+        "safety": "May fail to discharge or discharge only with excessive force in a fire; nozzle can detach with impact force. CPSC reports about 391 failed-activation or nozzle-detachment reports, one death (2014) and about 16 injuries.",
+        "financial": "Replacement unit; no structural cost.",
+        "insurance_or_sale": "Not normally an insurance or sale issue; an inspector may note a recalled extinguisher."
+      },
+      "fix": {
+        "what": "Replace under the recall; contact Kidde (800-880-6788 or the product-safety-recall page on kidde.com). Whether the replacement program is still open in 2026 was not confirmed.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Recalls/2018/Kidde-Recalls-Fire-Extinguishers-with-Plastic-Handles-Due-to-Failure-to-Discharge-and-Nozzle-Detachment-One-Death-Reported",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "units, manufacture date range, identification, hazard, remedy",
+          "verified": true,
+          "tier": "primary",
+          "quote": "The recall involves 134 models of Kidde fire extinguishers manufactured between January 1, 1973 and August 15, 2017"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2018/Kidde-Recalls-Fire-Extinguishers-with-Plastic-Handles-Due-to-Failure-to-Discharge-and-Nozzle-Detachment-One-Death-Reported",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "unit count",
+          "verified": true,
+          "tier": "primary",
+          "quote": "About 37.8 million (in addition, 2.7 million in Canada and 6,730 in Mexico)"
+        }
+      ],
+      "open_questions": "Share of homes holding one; whether the Kidde replacement offer is still open; brand-name private-label units (Sears, Home, ADT etc.) are in the model list but I did not check that every one is sold in homes.",
+      "verification": {
+        "status": "confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Unit count, manufacture-date ranges, identification and hazard on the CPSC notice.",
+        "what_is_not": "Prevalence in homes; current status of the remedy."
+      }
+    },
+    {
+      "id": "gree-dehumidifiers-2013-recall",
+      "name": "Gree-made dehumidifiers: 2013 recall (12 brands, sold 2005-2013)",
+      "category": "hvac",
+      "summary": "About 2.2 million dehumidifiers (later about 2.5 million with the GE brand added) sold under Danby, De'Longhi, Fedders, Frigidaire, Kenmore, SoleusAir and others can overheat and catch fire. Many were run in basements and crawlspaces of houses built in the 2000s.",
+      "installed_from": 2005,
+      "installed_to": 2013,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "Sales dates from the CPSC notice: Jan 2005 through Aug 2013. Date-code ranges differ by model (e.g. Kenmore 2012-04 to 2012-09; many Gree and SoleusAir models listed as 'All units'). GE-brand units (350,000) were added on Jan 30, 2014. A Nov 2016 reannouncement put the total at about 2.5 million US units. Portable appliance, not built in; presence depends on owner purchase.",
+      "regions": "national",
+      "prevalence": "possible",
+      "prevalence_basis": "CPSC: about 2.2 million US units in 2013, about 2.5 million after expansion (Nov 2016 notice). No data on how many remain in use or are in 2000s homes.",
+      "how_to_identify": "Brand name and pint capacity are printed on the front; model number and date code are on a sticker on the back, front or side. White, beige, gray or black plastic, 19-24 in tall, 13-15 in wide, 9-11 in deep. Compare to the model and date-code tables on the CPSC notice.",
+      "risk": {
+        "safety": "Can overheat, smoke and catch fire. The original 2013 notice cites 325 incidents including 71 fires and $2.725 million in damage; the Nov 2016 notice cites about 450 fires and $19 million in property damage.",
+        "financial": "Fire loss is the main cost; the unit itself is $110-$400.",
+        "insurance_or_sale": "Insurers can deny or contest a claim if a recalled appliance was left running; no sale impact expected."
+      },
+      "fix": {
+        "what": "Unplug, stop using, and contact Gree for a full refund (remedy is refund, not a repair). Whether the refund program is still open was not confirmed.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Recalls/2013/gree-recalls-12-brands-of-dehumidifiers",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "units and sale dates",
+          "verified": true,
+          "tier": "primary",
+          "quote": "About 2.2 million in the United States and 52,500 in Canada"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2013/gree-recalls-12-brands-of-dehumidifiers",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "sale period",
+          "verified": true,
+          "tier": "primary",
+          "quote": "from January 2005 through August 2013 for between $110 and $400"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2013/gree-recalls-12-brands-of-dehumidifiers",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "GE expansion",
+          "verified": true,
+          "tier": "primary",
+          "quote": "This recall was expanded on January 30, 2014 to include 350,000 GE-brand dehumidifiers made by Gree."
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2017/Gree-Reannounces-Dehumidifier-Recall-Following-450-Fires-and-19-Million-in-Property-Damage-0",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "identification and 2016 total",
+          "verified": true,
+          "tier": "primary",
+          "quote": "The model number and date code are printed on a sticker on the back, front or side of the unit."
+        }
+      ],
+      "open_questions": "Remaining stock in use; whether refunds are still honoured; the Gree 2023 recall is a separate entry.",
+      "verification": {
+        "status": "confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Units, sale window, identification and refund remedy from CPSC pages opened.",
+        "what_is_not": "Prevalence among 2000s homes; current remedy status."
+      }
+    },
+    {
+      "id": "gree-dehumidifiers-2023-recall",
+      "name": "Gree-made Kenmore, GE, SoleusAir, Norpole, Seabreeze dehumidifiers (2023 recall, made 2011-2014)",
+      "category": "hvac",
+      "summary": "A second Gree recall in Aug 2023 covered 1.56 million dehumidifiers from 42 models made Jan 2011 to Feb 2014 that can overheat and ignite. It is separate from the 2013 recall, so a unit can be missed if an owner checked only the earlier model list.",
+      "installed_from": 2011,
+      "installed_to": 2014,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "Manufactured Jan 2011 to Feb 2014; sold starting in 2011 through 2014 per the CPSC notice.",
+      "regions": "national",
+      "prevalence": "possible",
+      "prevalence_basis": "CPSC: about 1.56 million units. No data on how many remain in service or sit in homes built 2000-2025.",
+      "how_to_identify": "Brand (Kenmore, GE, SoleusAir, Norpole, Seabreeze) plus a model number from the CPSC list (e.g. Kenmore 407.53530310, GE ADEH50LPQ1); labels are on the unit. Check the model list on the notice.",
+      "risk": {
+        "safety": "Can overheat, smoke and catch fire; CPSC cites at least 23 fires in the notice title. A separate CPSC warning cites four deaths possibly tied to recalled Gree dehumidifiers (search summary, page not opened).",
+        "financial": "Fire damage; unit value $110-$400.",
+        "insurance_or_sale": "Same as other recalled appliances."
+      },
+      "fix": {
+        "what": "Refund; contact Gree per the notice.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Recalls/2023/Gree-Recalls-1-56-Million-Dehumidifiers-Due-to-Fire-and-Burn-Hazards-Reports-of-At-Least-23-Fires",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "units, manufacture dates",
+          "verified": true,
+          "tier": "primary",
+          "quote": "This recall involves 42 models of dehumidifiers with brand names Kenmore, GE, SoleusAir, Norpole and Seabreeze, manufactured between January 2011 and February 2014."
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2023/Gree-Recalls-1-56-Million-Dehumidifiers-Due-to-Fire-and-Burn-Hazards-Reports-of-At-Least-23-Fires",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "sale period",
+          "verified": true,
+          "tier": "primary",
+          "quote": "starting in 2011 through 2014 for between $110 and $400."
+        }
+      ],
+      "open_questions": "Current remedy status; overlap with the 2013 recall's model lists.",
+      "verification": {
+        "status": "confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Units, manufacture window, brands and refund remedy.",
+        "what_is_not": "Prevalence; four-death warning (not opened)."
+      }
+    },
+    {
+      "id": "kidde-nighthawk-combo-alarm-2004-2010",
+      "name": "Kidde NightHawk hard-wired talking smoke/CO combo alarm KN-COSM-IB (made 2004-2010)",
+      "category": "fire-safety",
+      "summary": "About 3.6 million hard-wired Kidde NightHawk combination smoke/CO alarms made June 2004 to Dec 2010 were recalled because they can stop chirping at the 7-year end of life if batteries are replaced, so owners think they work. They were sold to electricians and home centers and are common in 2004-2010 builds.",
+      "installed_from": 2004,
+      "installed_to": 2010,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "Manufacture dates June 1, 2004 to Dec 31, 2010; sold June 2004 through Dec 2010 (CPSC). Recall date Nov 10, 2016.",
+      "regions": "national",
+      "prevalence": "possible",
+      "prevalence_basis": "CPSC: about 3.6 million US units (plus 1.5 million Canada). No data on how many were installed in new houses versus replacements; sold through electrical distributors and home centers.",
+      "how_to_identify": "White round hard-wired alarm 5-6 in across with 'Kidde' engraved on the front; model KN-COSM-IB and manufacture date on a label on the back (you must remove the alarm to read it); compartment on the back for a 9V backup battery.",
+      "risk": {
+        "safety": "Alarm may stop warning at end of life while appearing silent, leaving the home unprotected from fire or CO.",
+        "financial": "Alarm replacement.",
+        "insurance_or_sale": "Some home inspectors flag alarms past their 7-10 year life; no standing sale rule."
+      },
+      "fix": {
+        "what": "Contact Kidde for a replacement alarm; replace any hard-wired alarm older than its stated life. Status of the 2016 offer not confirmed.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Recalls/2017/Kidde-Recalls-Combination-Smoke-CO-Alarms",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "model, dates, hazard",
+          "verified": true,
+          "tier": "primary",
+          "quote": "Kidde NightHawk talking combo smoke/CO alarm with model number KN-COSM-IB and manufacture dates between June 1, 2004 and December 31, 2010."
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2017/Kidde-Recalls-Combination-Smoke-CO-Alarms",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "units and sale window",
+          "verified": true,
+          "tier": "primary",
+          "quote": "from June 2004 through December 2010 for between $40 and $65"
+        }
+      ],
+      "open_questions": "Share in new construction; whether the replacement offer is still open.",
+      "verification": {
+        "status": "confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Model, manufacture window, units and sale window.",
+        "what_is_not": "Prevalence in new homes; remedy status."
+      }
+    },
+    {
+      "id": "kidde-hardwired-i12010s-2014",
+      "name": "Kidde hard-wired smoke and smoke/CO alarms i12010S, i12010SCO, KN-COSM-IBA (made Oct 2013-May 2014)",
+      "category": "fire-safety",
+      "summary": "About 1.2 million hard-wired Kidde alarms made between late 2013 and May 2014 were recalled because they could fail to alert after a power outage. Sold Jan to July 2014, they sit in houses built or renovated around 2014.",
+      "installed_from": 2013,
+      "installed_to": 2014,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "Manufacture windows: i12010S Dec 18, 2013 to May 13, 2014; i12010SCO Dec 30, 2013 to May 13, 2014; KN-COSM-IBA Oct 22, 2013 to May 13, 2014. Sold Jan to Jul 2014. Recall Sep 11, 2014.",
+      "regions": "national",
+      "prevalence": "possible",
+      "prevalence_basis": "CPSC: about 1.2 million US units. No per-home data.",
+      "how_to_identify": "White round hard-wired alarm 5-6 in across with 'Kidde' engraved on the front; model number and manufacture date are on the back. i12010S and i12010SCO have sealed 10-year batteries; KN-COSM-IBA has a compartment on the front for AA backup batteries.",
+      "risk": {
+        "safety": "May fail to alert to fire or CO following a power outage.",
+        "financial": "Alarm replacement.",
+        "insurance_or_sale": "None specific."
+      },
+      "fix": {
+        "what": "Replace with a free replacement from Kidde per the 2014 notice (remedy listed as Replace; current status not confirmed).",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Recalls/2014/Kidde-Recalls-Smoke-and-Combination-SmokeCO-Alarms",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "units, models, dates",
+          "verified": true,
+          "tier": "primary",
+          "quote": "Kidde residential smoke alarm model i12010S with manufacture dates between December 18, 2013 and May 13, 2014"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2014/Kidde-Recalls-Smoke-and-Combination-SmokeCO-Alarms",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "units",
+          "verified": true,
+          "tier": "primary",
+          "quote": "About 1.2 million in the United States and about 112,000 in Canada"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2014/Kidde-Recalls-Smoke-and-Combination-SmokeCO-Alarms",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "sale window",
+          "verified": true,
+          "tier": "primary",
+          "quote": "from January 2014 through July 2014 for between $30 and $50"
+        }
+      ],
+      "open_questions": "Remedy status; share in new construction.",
+      "verification": {
+        "status": "confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Models, manufacture and sale windows, units.",
+        "what_is_not": "Prevalence; remedy status."
+      }
+    },
+    {
+      "id": "kidde-pi2010-dual-sensor-2016-2017",
+      "name": "Kidde dual-sensor smoke alarms PI2010 and PI9010 with yellow cap left on (made Sep 2016-Oct 2017)",
+      "category": "fire-safety",
+      "summary": "A yellow cap left on during manufacture can cover one of the two sensors in about 452,000 recalled Kidde alarms. Owners can look through a side opening to see the cap.",
+      "installed_from": 2016,
+      "installed_to": 2018,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "Date codes 2016 Sep. 10 through 2017 Oct. 13 (both models). Sold Sep 2016 through Jan 2018. Recall Mar 21, 2018.",
+      "regions": "national",
+      "prevalence": "rare",
+      "prevalence_basis": "CPSC: about 452,000 in the US (plus 40,000 Canada); small share of homes.",
+      "how_to_identify": "'KIDDE' printed on front; model number and date code on the back; PI9010 is battery/DC, PI2010 is hard-wired AC. Remove from ceiling and look through the side opening for a yellow cap.",
+      "risk": {
+        "safety": "Alarm may not detect smoke properly.",
+        "financial": "Alarm replacement.",
+        "insurance_or_sale": "None specific."
+      },
+      "fix": {
+        "what": "Contact Kidde for a free replacement per the notice (remedy listed as Replace).",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Recalls/2018/Kidde-Recalls-Dual-Sensor-Smoke-Alarms-Due-to-Risk-of-Failure-to-Alert-Consumers-to-a-Fire",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "hazard",
+          "verified": true,
+          "tier": "primary",
+          "quote": "A yellow cap left on during the manufacturing process can cover one of the two smoke sensors"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2018/Kidde-Recalls-Dual-Sensor-Smoke-Alarms-Due-to-Risk-of-Failure-to-Alert-Consumers-to-a-Fire",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "units",
+          "verified": true,
+          "tier": "primary",
+          "quote": "About 452,000 in the U.S."
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2018/Kidde-Recalls-Dual-Sensor-Smoke-Alarms-Due-to-Risk-of-Failure-to-Alert-Consumers-to-a-Fire",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "sale window",
+          "verified": true,
+          "tier": "primary",
+          "quote": "from September 2016 through January 2018 for between $20 and $40"
+        }
+      ],
+      "open_questions": "Remedy status.",
+      "verification": {
+        "status": "confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Models, date codes, units, sale window.",
+        "what_is_not": "Remedy status; prevalence in new homes."
+      }
+    },
+    {
+      "id": "kidde-trusense-alarms-2019-2020",
+      "name": "Kidde TruSense smoke and smoke/CO alarms, series 2040/2050/2060/2070 (sold 2019-2020)",
+      "category": "fire-safety",
+      "summary": "About 226,000 Kidde TruSense alarms sold May 2019 to Sep 2020 can fail to alert to fire. Recall May 2021; owners were told to keep using them until replacements arrived.",
+      "installed_from": 2019,
+      "installed_to": 2020,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "Sale dates May 2019 through Sep 2020 (CPSC).",
+      "regions": "national",
+      "prevalence": "rare",
+      "prevalence_basis": "CPSC: about 226,000 units.",
+      "how_to_identify": "TruSense logo or 'AMBER=FAULT' printed on the front; model number on the back (2040-DSR, 2050-DS10, 2060-ASR, 2070-VDSCR, 2070-VASCR, 2070-VDSR, 2070-VASR).",
+      "risk": {
+        "safety": "Alarm may not alert in a fire.",
+        "financial": "Free replacement.",
+        "insurance_or_sale": "None."
+      },
+      "fix": {
+        "what": "Contact Kidde for a free replacement alarm.",
+        "cost_low_usd": 0,
+        "cost_high_usd": 0,
+        "cost_year": 2025,
+        "cost_source": "CPSC notice states free replacement"
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Recalls/2021/Kidde-Recalls-TruSense-Smoke-and-Combination-Smoke-Carbon-Monoxide-Alarms-Due-to-Risk-of-Failure-to-Alert-Consumers-to-a-Fire",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "models, units",
+          "verified": true,
+          "tier": "primary",
+          "quote": "Only alarms with the TruSense logo"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2021/Kidde-Recalls-TruSense-Smoke-and-Combination-Smoke-Carbon-Monoxide-Alarms-Due-to-Risk-of-Failure-to-Alert-Consumers-to-a-Fire",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "sale window",
+          "verified": true,
+          "tier": "primary",
+          "quote": "from May 2019 through September 2020 for between $10 and $70"
+        }
+      ],
+      "open_questions": "Remedy status.",
+      "verification": {
+        "status": "confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Models, units, sale window.",
+        "what_is_not": "Remedy status."
+      }
+    },
+    {
+      "id": "siemens-murray-breakers-2010-spring-clip",
+      "name": "Siemens and Murray circuit breakers, load centers and meter combos with breaking spring clip (sold June-Aug 2010)",
+      "category": "electrical",
+      "summary": "About 2.2 million Siemens and Murray 15-50 amp breakers and related load centers and meter combos sold in summer 2010 have a spring clip that can break, loosening the panel connection and risking overheating and fire. Hits houses built or re-panelled around 2010.",
+      "installed_from": 2010,
+      "installed_to": 2010,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "Sold June 2010 through Aug 2010 per CPSC; meter combos list date codes Jun 23 2010 - Aug 25 2010. Recall Sep 23, 2010. Unit count is the recall total across breakers, load centers and meter combos, not breakers alone.",
+      "regions": "national",
+      "prevalence": "possible",
+      "prevalence_basis": "CPSC: about 2.2 million units sold at Home Depot, Lowe's and electrical distributors in a three-month window. No per-house data; likely scattered across 2010 builds and panel replacements.",
+      "how_to_identify": "Siemens or Murray label on the panel and breakers; date codes (e.g. 0610 or 0710) on a label on the side of the breaker per the notice; verify against the CPSC list. Requires removing the panel cover: have an electrician do it.",
+      "risk": {
+        "safety": "Broken clip can cause excessive temperature, arcing, thermal damage and fire in the panelboard.",
+        "financial": "Free inspection and replacement under the recall if still open.",
+        "insurance_or_sale": "Panel defects may be flagged by inspectors."
+      },
+      "fix": {
+        "what": "Contact Siemens for a free electrician inspection and free replacement product (per 2010 notice; current status not confirmed).",
+        "cost_low_usd": 0,
+        "cost_high_usd": 0,
+        "cost_year": 2025,
+        "cost_source": "CPSC notice: free inspection and replacement"
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Recalls/2010/siemens-recalls-circuit-breakers-due-to-fire-hazard",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "hazard",
+          "verified": true,
+          "tier": "primary",
+          "quote": "The recalled circuit breakers have a spring clip that can break during normal use"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2010/siemens-recalls-circuit-breakers-due-to-fire-hazard",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "units",
+          "verified": true,
+          "tier": "primary",
+          "quote": "About 2.2 million"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2010/siemens-recalls-circuit-breakers-due-to-fire-hazard",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "sale window",
+          "verified": true,
+          "tier": "primary",
+          "quote": "from June 2010 through August 2010 for between $2.50 to $235"
+        }
+      ],
+      "open_questions": "Whether the free inspection program remains open; the date-code format was taken from a search summary and should be checked against the notice list.",
+      "verification": {
+        "status": "confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Defect, units, sale window, remedy.",
+        "what_is_not": "Current remedy status; exact breaker date-code format."
+      }
+    },
+    {
+      "id": "square-d-afci-breakers-2004",
+      "name": "Square D QO and Homeline AFCI breakers made after March 2004 (blue test button)",
+      "category": "electrical",
+      "summary": "About 700,000 Square D AFCI breakers made in Mexico after March 1, 2004 and sold Mar-Sep 2004 can fail to detect an arc fault, though they still work as ordinary breakers. They were installed to meet the 2002 NEC bedroom requirement.",
+      "installed_from": 2004,
+      "installed_to": 2004,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "Manufactured after March 1, 2004; sold March to September 2004. Recall date Nov 3, 2004 (page filed under /Recalls/2005/).",
+      "regions": "national",
+      "prevalence": "rare",
+      "prevalence_basis": "CPSC: about 700,000 units; limited to a seven-month sales window.",
+      "how_to_identify": "Blue test button; one of date codes CN, DN, EN, FN, GN, HN or JN stamped in red on the breaker label; Square D QO or Homeline 15/20 amp AFCI. Panel cover must be removed (electrician).",
+      "risk": {
+        "safety": "May not detect arcing that could start a fire.",
+        "financial": "Breaker replacement.",
+        "insurance_or_sale": "None specific."
+      },
+      "fix": {
+        "what": "Replace or refund through Schneider Electric per the notice; a later CPSC 'clarifying statement' (listed in a search result, not opened) is said to say Schneider agreed to replace all breakers involved.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Recalls/2005/cpsc-schneider-electric-north-american-division-announce-recall-of-afcis",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "units, identification, code requirement",
+          "verified": true,
+          "tier": "primary",
+          "quote": "The recalled units were manufactured after March 1, 2004, and have a blue test button."
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2005/cpsc-schneider-electric-north-american-division-announce-recall-of-afcis",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "units",
+          "verified": true,
+          "tier": "primary",
+          "quote": "About 700,000"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2005/cpsc-schneider-electric-north-american-division-announce-recall-of-afcis",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "2002 NEC bedroom requirement",
+          "verified": true,
+          "tier": "primary",
+          "quote": "They are required to be installed in bedroom circuits in accordance with the 2002 National Electrical Code."
+        }
+      ],
+      "open_questions": "Clarifying statement not opened; current remedy status.",
+      "verification": {
+        "status": "confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Units, dates, identification, 2002 NEC bedroom requirement.",
+        "what_is_not": "Later clarifying statement; remedy status."
+      }
+    },
+    {
+      "id": "counterfeit-square-d-breakers-2003-2006",
+      "name": "Counterfeit 'Square D' circuit breakers (sold about 2003-2006)",
+      "category": "electrical",
+      "summary": "Several distributors sold counterfeit breakers labeled Square D QO and QOB that can fail to trip when overloaded. The Specialty Lamp International recall alone covers about 371,000 units sold May 2005 to June 2006.",
+      "installed_from": 2005,
+      "installed_to": 2006,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "medium",
+      "date_notes": "Specialty Lamp: sold May 2005 through June 2006 (opened). Other recalls of the same counterfeit kind (North American Breaker Co. Dec 2007, about 50,000 sold Mar 2003-Apr 2006; Miami Breaker 2010; Connecticut Electric 2007; Scott Electric 2006) appeared in search summaries but I did not open them, so installed_from could be earlier (2003).",
+      "regions": "national",
+      "prevalence": "rare",
+      "prevalence_basis": "CPSC: about 371,000 units in the Specialty Lamp recall; other recalls add tens of thousands. No data on how many are in houses.",
+      "how_to_identify": "CPSC says genuine Square D breakers have the amp rating written in white paint on the handle (not pre-2003 ones), the Square D insignia molded on the side, and a yellow chromate mounting clip with half the top visible; a breaker that doesn't match may be counterfeit. Black, labeled QO or QOB models. Needs an electrician to open the panel.",
+      "risk": {
+        "safety": "Can fail to trip on overload: fire hazard.",
+        "financial": "Breaker replacement.",
+        "insurance_or_sale": "Counterfeit components in a panel can complicate claims."
+      },
+      "fix": {
+        "what": "Contact the distributor named in the notice for inspection and replacement or refund; or have an electrician replace suspect breakers.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Recalls/2008/counterfeit-circuit-breakers-recalled-by-specialty-lamp-international-due-to-fire",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "hazard and units",
+          "verified": true,
+          "tier": "primary",
+          "quote": "have been determined by Square D to be counterfeit and can fail to trip when they are overloaded, posing a fire hazard to consumers"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2008/counterfeit-circuit-breakers-recalled-by-specialty-lamp-international-due-to-fire",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "sale window",
+          "verified": true,
+          "tier": "primary",
+          "quote": "May 2005 through June 2006 for between $3 and $23"
+        }
+      ],
+      "open_questions": "Other counterfeit-breaker recalls not opened; total counterfeit population unknown.",
+      "verification": {
+        "status": "partly-confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Specialty Lamp recall: units, hazard, identification, sale dates.",
+        "what_is_not": "Other distributors' recall counts and dates (not opened)."
+      }
+    },
+    {
+      "id": "central-o-ring-fire-sprinklers-1989-2001",
+      "name": "Central, Gem and Star O-ring fire sprinkler heads (made 1989-2001)",
+      "category": "fire-safety",
+      "summary": "About 35 million O-ring sprinkler heads (33 million 'wet' made 1989-2000) were recalled because corrosion or water contaminants can stop them operating. They were installed in houses, apartments and other buildings. The replacement program closed Aug 31, 2007, so there is no free remedy now.",
+      "installed_from": 1989,
+      "installed_to": 2001,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "Wet O-ring heads made 1989 until 2000; dry heads from the mid-1970s to June 2001; Gem and Star O-ring heads 1995-2001. Recall July 2001; claims deadline Aug 31, 2007. Only overlaps the 2000-2025 window at its start; included for houses built about 1999-2001.",
+      "regions": "national",
+      "prevalence": "rare",
+      "prevalence_basis": "CPSC: 35 million heads in a wide variety of buildings including houses. Residential sprinklers were uncommon (NIST: fewer than 5 percent of US homes have sprinklers, 2011), so the chance that a given 2000-era house has these heads is low.",
+      "how_to_identify": "Words 'CENTRAL' or 'STAR', letters 'CSC', a 'G' in a triangle, or a star-shaped symbol stamped on the sprinkler frame or deflector; model and date may also be stamped. Check the CPSC model list.",
+      "risk": {
+        "safety": "Heads may not activate in a fire.",
+        "financial": "Head replacement by a sprinkler contractor.",
+        "insurance_or_sale": "Sprinkler discounts may depend on working heads."
+      },
+      "fix": {
+        "what": "Replace affected heads using a sprinkler contractor; the free replacement program ended Aug 31, 2007.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Recalls/2001/cpsc-central-sprinkler-company-announce-voluntary-recall-to-replace-o-ring-fire",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "manufacture dates and building types",
+          "verified": true,
+          "tier": "primary",
+          "quote": "with O-rings from 1989 until 2000 that are covered by this program"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2001/cpsc-central-sprinkler-company-announce-voluntary-recall-to-replace-o-ring-fire",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "installed in houses",
+          "verified": true,
+          "tier": "primary",
+          "quote": "The sprinklers were installed nationwide in a wide variety of buildings, including houses, apartments, hospitals"
+        },
+        {
+          "url": "https://www.cpsc.gov/Newsroom/News-Releases/2007/August-Deadline-Set-for-End-to-Central-Sprinkler-O-Ring-Sprinkler-RecallProperty-Owners-Should-Act-Now-To-Request-Replacement-of-Sprinkler-Heads",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "claims deadline",
+          "verified": true,
+          "tier": "primary",
+          "quote": "postmarked by August 31, 2007"
+        }
+      ],
+      "open_questions": "Share installed in single-family homes.",
+      "verification": {
+        "status": "confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Manufacture dates, building types, heads count, deadline.",
+        "what_is_not": "Single-family share."
+      }
+    },
+    {
+      "id": "bosch-siemens-dishwashers-1999-2005",
+      "name": "Bosch and Siemens dishwashers made May 1999 to July 2005 (overheating component)",
+      "category": "electrical",
+      "summary": "About 476,500 Bosch and Siemens built-in dishwashers made 1999-2005 have an electrical component that can overheat and cause a fire. Common builder or remodel dishwashers in houses of that era.",
+      "installed_from": 1999,
+      "installed_to": 2006,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "Manufactured May 1999 through July 2005; sold May 1999 through Dec 2006 (CPSC). Recall Jan 15, 2009. A GE dishwasher recall (2.5 million units, sold Sep 1997 to Dec 2001) was opened but falls mostly before 2000, so not given its own entry.",
+      "regions": "national",
+      "prevalence": "possible",
+      "prevalence_basis": "CPSC: about 476,500 units. 51 incident reports including 30 fires. No per-home data.",
+      "how_to_identify": "Brand name on the front control panel; model (SHE43C, SHE44C, SHE46C, SHE56C, SHU33, SHU42, SHU432, SHU43C, SHU53A for Bosch; SL34A for Siemens) and serial number inside the door on the upper right with serial in FD range per notice.",
+      "risk": {
+        "safety": "Overheating electrical component, fire.",
+        "financial": "Repair was free under the 2009 recall.",
+        "insurance_or_sale": "None specific."
+      },
+      "fix": {
+        "what": "Free repair via BSH hotline per the 2009 notice (status now unknown); replace if the dishwasher is that old.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Recalls/2009/bosch-and-siemens-model-dishwashers-recalled-by-bsh-home-appliances-corporation-due-to",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "dates",
+          "verified": true,
+          "tier": "primary",
+          "quote": "certain Bosch® and Siemens® dishwashers manufactured from May 1999 through July 2005"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2009/bosch-and-siemens-model-dishwashers-recalled-by-bsh-home-appliances-corporation-due-to",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "units",
+          "verified": true,
+          "tier": "primary",
+          "quote": "About 476,500"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2009/bosch-and-siemens-model-dishwashers-recalled-by-bsh-home-appliances-corporation-due-to",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "sale window",
+          "verified": true,
+          "tier": "primary",
+          "quote": "from May 1999 through December 2006 for between $550 and $1,100"
+        }
+      ],
+      "open_questions": "Whether a 20-year-old unit is still in service; remedy status.",
+      "verification": {
+        "status": "confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Dates, models, units, sale window.",
+        "what_is_not": "Remedy status."
+      }
+    },
+    {
+      "id": "rinnai-wall-furnaces-2000-2007",
+      "name": "Rinnai EnergySaver direct-vent wall furnaces RHFE 431 and 556 (made Feb 2000-Dec 2007)",
+      "category": "hvac",
+      "summary": "About 52,000 Rinnai direct-vent wall furnaces made 2000-2007 have a gasket that can fail and leak carbon monoxide into the home. CPSC reports 11 CO leaks.",
+      "installed_from": 2000,
+      "installed_to": 2007,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "Units manufactured Feb 2000 through Dec 2007 (the first four digits of the serial number are YY MM). Recall 2008.",
+      "regions": "national, mainly where wall furnaces are used",
+      "prevalence": "rare",
+      "prevalence_basis": "CPSC: about 52,000 units; wall furnaces are a minority heating type.",
+      "how_to_identify": "Model number printed on top of the rating plate on the right side of the unit; manufacture date is the first four digits of the serial number (YY MM) at the bottom of the rating plate. Models RHFE-431 and RHFE-556 with FAIII, WTA and WTA-72B/76B suffixes.",
+      "risk": {
+        "safety": "Carbon monoxide leak.",
+        "financial": "Free repair kit under the recall if still offered.",
+        "insurance_or_sale": "CO alarm advisable regardless."
+      },
+      "fix": {
+        "what": "Contact Rinnai (866-746-8344 per notice) for a free repair kit; status unconfirmed.",
+        "cost_low_usd": 0,
+        "cost_high_usd": 0,
+        "cost_year": 2025,
+        "cost_source": "CPSC notice: free repair kit"
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Recalls/2008/rinnai-recalls-wall-furnaces-due-to-carbon-monoxide-hazard",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "manufacture dates",
+          "verified": true,
+          "tier": "primary",
+          "quote": "The recall includes only those units manufactured from February 2000 through December 2007."
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2008/rinnai-recalls-wall-furnaces-due-to-carbon-monoxide-hazard",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "units",
+          "verified": true,
+          "tier": "primary",
+          "quote": "About 52,000"
+        }
+      ],
+      "open_questions": "Remedy status.",
+      "verification": {
+        "status": "confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Models, manufacture window, units, remedy.",
+        "what_is_not": "Remedy status."
+      }
+    },
+    {
+      "id": "rheem-paloma-tankless-2004-2006",
+      "name": "Rheem and Paloma Power Vent tankless water heaters (sold May 2004-Dec 2006)",
+      "category": "hvac",
+      "summary": "About 42,200 tankless gas water heaters sold 2004-2006 could have a misplaced filter-door switch leading to dust build-up and carbon monoxide. Repaired under a 2007 recall.",
+      "installed_from": 2004,
+      "installed_to": 2006,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "Sold May 2004 through Dec 2006. Recall Feb 21, 2007.",
+      "regions": "national",
+      "prevalence": "rare",
+      "prevalence_basis": "CPSC: about 42,200 units. Tankless were a small share of 2004-2006 water heaters.",
+      "how_to_identify": "Rheem or Paloma power-vent tankless; model numbers are on the notice; check the filter door sits in place.",
+      "risk": {
+        "safety": "CO poisoning risk if the air-filter door switch fails.",
+        "financial": "Repair.",
+        "insurance_or_sale": "None specific."
+      },
+      "fix": {
+        "what": "Contact installer or Rheem Manufacturing for repair per the notice.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Recalls/2007/tankless-water-heaters-recalled-for-repair-due-to-carbon-monoxide-poisoning-hazard",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "units",
+          "verified": true,
+          "tier": "primary",
+          "quote": "About 42,200"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2007/tankless-water-heaters-recalled-for-repair-due-to-carbon-monoxide-poisoning-hazard",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "sale window",
+          "verified": true,
+          "tier": "primary",
+          "quote": "May 2004 through December 2006 for between $800 and $1,300"
+        }
+      ],
+      "open_questions": "Remedy status.",
+      "verification": {
+        "status": "confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Units, sale window, hazard.",
+        "what_is_not": "Remedy status."
+      }
+    },
+    {
+      "id": "coaire-quietside-tankless-2008-2014",
+      "name": "Coaire and Quietside S-Line condensing tankless gas water heaters (sold 2008-2014, no remedy)",
+      "category": "hvac",
+      "summary": "About 29,000 tankless water heaters sold July 2008 to Aug 2014 can overheat and start a fire. The maker is out of business and CPSC says to dispose of them.",
+      "installed_from": 2008,
+      "installed_to": 2014,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "Sold July 2008 through Aug 2014. Recall Nov 13, 2014 (page under /Recalls/2015/).",
+      "regions": "national",
+      "prevalence": "rare",
+      "prevalence_basis": "CPSC: about 29,000 US units. 40 overheating reports.",
+      "how_to_identify": "White tankless heaters 25-28 in tall, 15-19 in wide, 8-14 in deep with 'S-Line Condensing' on the top front and the brand 'Coaire' or 'Quietside' on the bottom front.",
+      "risk": {
+        "safety": "Overheating and fire; four burn cases on the wall.",
+        "financial": "No manufacturer remedy: owner pays to replace.",
+        "insurance_or_sale": "A recalled unit with no remedy may be flagged on inspection."
+      },
+      "fix": {
+        "what": "Stop using and dispose; replace with a current tankless or tank heater. No cost source found.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Recalls/2015/Tankless-Water-Heaters-Recalled",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "units",
+          "verified": true,
+          "tier": "primary",
+          "quote": "About 29,000 in the United States and 2,200 in Canada"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2015/Tankless-Water-Heaters-Recalled",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "sale window",
+          "verified": true,
+          "tier": "primary",
+          "quote": "from July 2008 through August 2014 for between $500 and $2,000"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2015/Tankless-Water-Heaters-Recalled",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "no remedy",
+          "verified": true,
+          "tier": "primary",
+          "quote": "The firm is no longer in business. A remedy is no longer available."
+        }
+      ],
+      "open_questions": "Replacement cost.",
+      "verification": {
+        "status": "confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Units, sale window, no remedy.",
+        "what_is_not": "Replacement cost."
+      }
+    },
+    {
+      "id": "lochinvar-condensing-boilers-2016-2020",
+      "name": "Lochinvar, A. O. Smith and State Proline condensing residential boilers sold Aug 2016-Jun 2020",
+      "category": "hvac",
+      "summary": "About 34,300 condensing boilers, combi boilers and packaged systems sold 2016-2020 have a flue grommet that can deteriorate and let carbon monoxide escape. Repair is offered.",
+      "installed_from": 2016,
+      "installed_to": 2020,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "Sold after Aug 2016 through June 2020; serial range 103475818 through 115078306. Recall June 18, 2020. More recent boiler recalls (Crown, U.S. Boiler, Lochinvar 2024, HTP 2025) appeared in searches but were not opened.",
+      "regions": "national",
+      "prevalence": "rare",
+      "prevalence_basis": "CPSC: about 34,300 US units.",
+      "how_to_identify": "Data plate on the rating plate (outer jacket or underside of the front plate) shows model and serial number; brands Lochinvar, A. O. Smith, State Proline; check models (ACB, KHB, SCB, WHL ...) and serial range on the notice.",
+      "risk": {
+        "safety": "CO poisoning risk; CPSC cites 7 grommet reports and 2 non-fatal CO injuries.",
+        "financial": "Repair is the remedy.",
+        "insurance_or_sale": "CO alarm advisable."
+      },
+      "fix": {
+        "what": "Free repair per the notice (status of current offer not confirmed).",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Recalls/2020/Lochinvar-Recalls-Condensing-Residential-Boilers-Due-to-Risk-of-Carbon-Monoxide-Poisoning",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "units",
+          "verified": true,
+          "tier": "primary",
+          "quote": "About 34,300 (In addition, about 3,642 units were sold in Canada)"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2020/Lochinvar-Recalls-Condensing-Residential-Boilers-Due-to-Risk-of-Carbon-Monoxide-Poisoning",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "sale window",
+          "verified": true,
+          "tier": "primary",
+          "quote": "from August 2016 through June 2020, for between $8,000 and $25,000, including installation"
+        }
+      ],
+      "open_questions": "Other 2020s boiler recalls not opened.",
+      "verification": {
+        "status": "confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Units, sale window, hazard, identification.",
+        "what_is_not": "Remedy status; other boiler recalls."
+      }
+    },
+    {
+      "id": "fvir-gas-water-heaters-2003",
+      "name": "Flammable-vapor-ignition-resistant (FVIR) gas water heaters (standard effective July 1, 2003)",
+      "category": "fire-safety",
+      "summary": "Tank-type gas water heaters made after July 1, 2003 are built with a flame arrestor so spilled gasoline vapors do not ignite in the room. A house built 2003 or later with a standard gas tank heater likely has one; one built 2000-2002 likely does not. CPSC estimated nearly 800 residential fires a year from vapor ignition.",
+      "installed_from": 2003,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "Voluntary ANSI Z21.10.1a standard: vapor-resistance part approved Feb 2000, lint/dust part Nov 2002, effective July 1, 2003 for heaters manufactured after that date (CPSC/GAMA release July 8, 2003). It was a voluntary standard in cooperation with CPSC, not a federal rule. Heaters made before are still in service.",
+      "regions": "national",
+      "prevalence": "likely",
+      "prevalence_basis": "CPSC says all 30, 40 and 50-gallon gas storage water heaters manufactured after July 1, 2003 are 'expected to comply'. No compliance statistics found; homes built 2003-2025 with gas tank heaters are likely to have one unless a pre-2003 unit was reinstalled.",
+      "how_to_identify": "Look at the water heater label for 'Flammable Vapor Ignition Resistant' or FVIR and the manufacture date in the serial number; a flame-arrestor plate or screen covers the burner air intake at the bottom.",
+      "risk": {
+        "safety": "Pre-2003 gas heaters (in homes built before about 2003) can flash back when vapors from gasoline or solvents reach the burner.",
+        "financial": "None for a compliant unit.",
+        "insurance_or_sale": "Inspectors may flag non-FVIR heaters in garages."
+      },
+      "fix": {
+        "what": "Replace a pre-2003 gas tank water heater with an FVIR unit; do not store gasoline or solvents near any gas appliance. No cost source opened.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Newsroom/News-Releases/2003/New-Technology-In-Gas-Water-Heaters-Can-Save-LivesCPSC-GAMA-Say-New-Heaters-Will-Prevent-Fires-from-Flammable-Vapors",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "2003 effective date, scope",
+          "verified": true,
+          "tier": "primary",
+          "quote": "calls for conventional tank-type gas water heaters manufactured after July 1, 2003, to be equipped with new safety technology"
+        },
+        {
+          "url": "https://www.cpsc.gov/Newsroom/News-Releases/2003/New-Technology-In-Gas-Water-Heaters-Can-Save-LivesCPSC-GAMA-Say-New-Heaters-Will-Prevent-Fires-from-Flammable-Vapors",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "fires prevented",
+          "verified": true,
+          "tier": "primary",
+          "quote": "Gas water heater ignition of flammable vapors is involved in nearly 800 residential fires"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Water_heating",
+          "publisher": "Wikipedia",
+          "supports": "secondary confirmation of 2003",
+          "verified": true,
+          "tier": "reference",
+          "quote": "Residential combustion water heaters manufactured since 2003 in the United States have been redesigned to resist ignition of flammable vapors"
+        }
+      ],
+      "open_questions": "Compliance rate; whether electric ignition or tankless products are covered; installation heights in garages.",
+      "verification": {
+        "status": "confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Effective date July 1, 2003, voluntary status, scope (30/40/50-gallon storage), fire figures.",
+        "what_is_not": "How many units complied in practice."
+      }
+    },
+    {
+      "id": "doe-2015-water-heater-efficiency-standard",
+      "name": "2015 federal water heater efficiency standard (compliance April 16, 2015)",
+      "category": "code-milestone",
+      "summary": "Federal efficiency standards for residential water heaters took effect April 16, 2015. A tank water heater installed before 2015 may not be available as an exact like-for-like replacement today. Commentary often says compliant tanks are larger or taller; I did not verify that in a primary source.",
+      "installed_from": 2015,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "April 2010 final rule set EF-based standards with compliance starting April 16, 2015. DOE adopted a new uniform-energy-factor (UEF) standard in April 2024 with compliance in 2029 (energy.gov news release).",
+      "regions": "national",
+      "prevalence": "likely",
+      "prevalence_basis": "Applies to all new water heaters made or imported after April 16, 2015; no sizing data opened.",
+      "how_to_identify": "Yellow EnergyGuide label and manufacture date on the nameplate; units made after April 2015 meet it.",
+      "risk": {
+        "safety": "None directly.",
+        "financial": "Replacement may need a different footprint, venting or electrical work.",
+        "insurance_or_sale": "None."
+      },
+      "fix": {
+        "what": "None required for existing units; plan replacement-space checks.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.energy.gov/sites/default/files/2024-04/cwh_fr1.pdf",
+          "publisher": "U.S. Department of Energy",
+          "supports": "2015 compliance date",
+          "verified": true,
+          "tier": "primary",
+          "quote": "with a requirement for compliance starting on April 16, 2015"
+        },
+        {
+          "url": "https://www.energy.gov/articles/doe-finalizes-efficiency-standards-water-heaters-save-americans-over-7-billion-household",
+          "publisher": "U.S. Department of Energy",
+          "supports": "2024 follow-on rule",
+          "verified": true,
+          "tier": "primary",
+          "quote": "Compliance will be required starting in 2029"
+        }
+      ],
+      "open_questions": "Whether 2015 compliant tank size increases are documented by DOE; typical dimensions.",
+      "verification": {
+        "status": "partly-confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Compliance date April 16, 2015 and 2029 follow-on.",
+        "what_is_not": "Claim that tanks got physically larger."
+      }
+    },
+    {
+      "id": "r22-hcfc-22-central-ac-2000-2009",
+      "name": "R-22 (HCFC-22) refrigerant central air conditioners and heat pumps (new equipment made until Jan 1, 2010)",
+      "category": "hvac",
+      "summary": "Central AC and heat pumps in houses built about 2000-2009 almost certainly use R-22. EPA ended US production and import of new R-22 on Jan 1, 2020, so refrigerant for repairs now comes from reclaimed or stockpiled supply and costs more. EPA does not require owners to replace working R-22 systems.",
+      "installed_from": 2000,
+      "installed_to": 2010,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "medium",
+      "date_notes": "EPA schedule: from Jan 1, 2010 no production or import of HCFC-22 except for use in equipment manufactured before Jan 1, 2010; from Jan 1, 2020 no production or import. R-22 was used before 2000 too (not researched). Systems installed from existing inventory after 2010 may still use R-22.",
+      "regions": "national",
+      "prevalence": "likely",
+      "prevalence_basis": "No share statistic opened. EPA says you can no longer purchase a central AC unit that uses HCFC-22, implying R-22 was the standard for central equipment until about 2010; the share of 2000-2009 homes with R-22 is an inference.",
+      "how_to_identify": "The outdoor unit's nameplate shows the refrigerant (R-22 or HCFC-22); R-410A units show R-410A.",
+      "risk": {
+        "safety": "Low; refrigerant leaks are an environmental and cost issue.",
+        "financial": "Repair costs rise as reclaimed R-22 supply declines; compressor failure often tips toward full replacement.",
+        "insurance_or_sale": "Buyers may price in replacement."
+      },
+      "fix": {
+        "what": "Replace the system with current-refrigerant equipment, or keep servicing with reclaimed R-22. No cost figure opened.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/ods-phaseout/phaseout-class-ii-ozone-depleting-substances",
+          "publisher": "U.S. Environmental Protection Agency",
+          "supports": "2010 and 2020 milestones",
+          "verified": true,
+          "tier": "primary",
+          "quote": "No production or import of HCFC-142b and HCFC-22, except for use in equipment manufactured before January 1, 2010"
+        },
+        {
+          "url": "https://www.epa.gov/ods-phaseout/homeowners-and-consumers-frequently-asked-questions",
+          "publisher": "U.S. Environmental Protection Agency",
+          "supports": "cannot buy new",
+          "verified": true,
+          "tier": "primary",
+          "quote": "You can no longer purchase a central AC unit that uses HCFC-22."
+        },
+        {
+          "url": "https://www.epa.gov/ods-phaseout/phaseout-class-ii-ozone-depleting-substances",
+          "publisher": "U.S. Environmental Protection Agency",
+          "supports": "2020 end of production",
+          "verified": true,
+          "tier": "primary",
+          "quote": "2020 No production or import of HCFC-142b and HCFC-22"
+        }
+      ],
+      "open_questions": "Price trends for reclaimed R-22; share of 2000-2009 homes still on original systems.",
+      "verification": {
+        "status": "confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "EPA phaseout dates 2010 and 2020; continued servicing allowed.",
+        "what_is_not": "Prevalence share; repair cost figures."
+      }
+    },
+    {
+      "id": "r410a-hfc-phasedown-2025",
+      "name": "R-410A central AC and heat pumps (HFC restrictions starting Jan 1, 2025)",
+      "category": "hvac",
+      "summary": "Most central AC and heat pumps installed in houses built after about 2010 use R-410A. Under EPA's Technology Transitions rule, manufacture and import of new residential AC and heat pump systems using high-GWP refrigerants (limit 700) is restricted from Jan 1, 2025, so new equipment moves to R-454B or R-32. Existing R-410A systems can keep running and be serviced.",
+      "installed_from": 2010,
+      "installed_to": 2025,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "Start year is inferred: R-410A is an EPA-listed new-equipment alternative to R-22 (GWP 2,090) but I did not open a source for when it became standard. End: manufacture/import limit Jan 1, 2025. Installation cutoff dates were changed by later EPA actions (2026-2028 variants and a 2025 reconsideration proposal); check EPA's current page.",
+      "regions": "national",
+      "prevalence": "likely",
+      "prevalence_basis": "No share data opened; inferred from the R-22 end date.",
+      "how_to_identify": "Outdoor unit nameplate says R-410A (or R-410a).",
+      "risk": {
+        "safety": "None specific.",
+        "financial": "Servicing parts for legacy R-410A systems is still allowed; refrigerant cost may rise in future.",
+        "insurance_or_sale": "None."
+      },
+      "fix": {
+        "what": "No action required for working systems.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/hfcs/technology-transitions-hfc-restrictions-sector",
+          "publisher": "U.S. Environmental Protection Agency",
+          "supports": "2025 date and GWP limit",
+          "verified": true,
+          "tier": "primary",
+          "quote": "portable room air conditioning) 700 January 1, 2025"
+        },
+        {
+          "url": "https://www.epa.gov/hfcs/technology-transitions-hfc-restrictions-sector",
+          "publisher": "U.S. Environmental Protection Agency",
+          "supports": "no installation compliance date for existing components",
+          "verified": true,
+          "tier": "primary",
+          "quote": "No installation compliance date for systems where all specified components were manufactured or imported prior to January 1, 2025."
+        },
+        {
+          "url": "https://www.epa.gov/sites/default/files/2018-08/documents/residential_air_conditioning_and_the_phaseout_of_hcfc-22_what_you_need_to_know.pdf",
+          "publisher": "U.S. Environmental Protection Agency",
+          "supports": "R-410A as acceptable R-22 alternative (GWP 2,090)",
+          "verified": true,
+          "tier": "primary",
+          "quote": "R-410A 2,090 No"
+        }
+      ],
+      "open_questions": "When R-410A became the default in new homes; current EPA installation cutoff after the 2025 reconsideration.",
+      "verification": {
+        "status": "partly-confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "January 1, 2025 manufacture/import date, 700 GWP limit and R-410A GWP 2,090.",
+        "what_is_not": "Start year of R-410A in new homes."
+      }
+    },
+    {
+      "id": "problem-drywall-2001-2009",
+      "name": "Problem (Chinese) drywall installed 2001-2009",
+      "category": "hazmat",
+      "summary": "Drywall imported from China (mostly 2006-2007) emitted sulfur gases that blackened copper wiring and air-conditioning coils and corroded metal in thousands of homes, mainly in the Gulf and Southeast. CPSC and HUD guidance calls for removing the drywall and replacing electrical components and smoke/CO alarms.",
+      "installed_from": 2001,
+      "installed_to": 2009,
+      "peak_from": 2005,
+      "peak_to": 2008,
+      "date_confidence": "medium",
+      "date_notes": "CPSC/HUD March 2011 identification guidance uses installation between 2001 and 2009. Footnote: the 2009 installs used drywall imported in 2006-2007; CPSC earlier thought all installs ended in 2008. Peak years 2005-2008 are from CPSC guidance requiring fewer corroborating conditions for 2005-2009 installs; I did not open an import-by-year source.",
+      "regions": "Florida (59%), Louisiana (20%), Mississippi (6%), Alabama (5%), Virginia (4%) account for over 90% of 3,244 reports to April 2010",
+      "prevalence": "rare",
+      "prevalence_basis": "CPSC: 3,244 incident reports from 37 states as of April 27, 2010. These are complaints, not a count of affected homes; total number of homes with problem drywall was not found.",
+      "how_to_identify": "Per CPSC: blackening of copper wiring and/or AC evaporator coils plus new drywall installed 2001-2009 and corroborating evidence (e.g. markings of Chinese origin on drywall back, elevated sulfur, corrosion on test coupons). Needs a professional assessment.",
+      "risk": {
+        "safety": "Hydrogen sulfide odors; corrosion of wiring, alarms and AC coils; health complaints reported (headaches, respiratory irritation) though CPSC studies found corrosion not a fire/gas hazard in NIST tests of gas piping, sprinkler heads and alarms.",
+        "financial": "Remediation can be very large (strip-out of drywall, wiring, coils).",
+        "insurance_or_sale": "Hard to insure or sell; stigma and disclosure obligations."
+      },
+      "fix": {
+        "what": "Remove problem drywall; replace smoke and CO alarms and electrical distribution components (receptacles, switches, breakers) per CPSC/HUD Sept 2011 guidance. No cost figure opened.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/s3fs-public/Identification-Guidance-for-Homes-with-Corrosion-from-Problem-Drywall-03-18-2011.pdf",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "2001-2009 installation window",
+          "verified": true,
+          "tier": "primary",
+          "quote": "The installation of new drywall (for new construction or renovations) between 2001 and 2009."
+        },
+        {
+          "url": "https://www.cpsc.gov/s3fs-public/Identification-Guidance-for-Homes-with-Corrosion-from-Problem-Drywall-03-18-2011.pdf",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "import years",
+          "verified": true,
+          "tier": "primary",
+          "quote": "had been previously imported during the years 2006-2007"
+        },
+        {
+          "url": "https://www.cpsc.gov/s3fs-public/pdfs/blk_media_apr2010status.pdf",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "reports by state",
+          "verified": true,
+          "tier": "primary",
+          "quote": "had received 3,244 incident reports related to drywall from 37 states"
+        },
+        {
+          "url": "https://www.cpsc.gov/content/cpsc-completes-final-studies-to-help-affected-homeowners-remediate-problem-drywall",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "remediation guidance",
+          "verified": true,
+          "tier": "primary",
+          "quote": "The guidance calls for the replacement of all: problem drywall; smoke and carbon monoxide (CO) alarms; electrical distribution components"
+        }
+      ],
+      "open_questions": "Count of affected homes; costs; whether litigation settlements remain open; domestic drywall differences.",
+      "verification": {
+        "status": "confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Installation window, import years, complaint count and regional concentration, remediation guidance.",
+        "what_is_not": "Total homes affected; remediation cost; peak years."
+      }
+    },
+    {
+      "id": "zurn-f1807-brass-pex-fittings-1996-2010",
+      "name": "Zurn brass crimp fittings on PEX plumbing (ASTM F1807), sold 1996-2010",
+      "category": "plumbing",
+      "summary": "Brass fittings sold by Zurn on PEX plumbing from 1996 to 2010 were the subject of a multidistrict class action alleging dezincification and leaks. A 2013 court-approved settlement paid up to $20 million; claims ran seven years from 2013. Other makers' brass PEX fittings (Uponor, NIBCO) were not researched here.",
+      "installed_from": 1996,
+      "installed_to": 2010,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "Court opinion: fittings sold 'throughout the United States from 1996 to 2010'. Final approval Feb 27, 2013. Claims period seven years suggests closing around 2020 (inference, not stated as a date).",
+      "regions": "national",
+      "prevalence": "possible",
+      "prevalence_basis": "Court record: Zurn defendants did not know how many homes contain the fittings; evidence suggests 'hundreds of thousands' of owners. No share of 2000s homes.",
+      "how_to_identify": "Yellow-brass crimp fittings with copper crimp rings on PEX pipe, stamped 'ZURN' or 'ASTM F1807'; look at manifolds and joints at water heater, in crawlspace or basement.",
+      "risk": {
+        "safety": "Leaks, water damage, mold.",
+        "financial": "Settlement paid up to 60% of leak damage (cap $100,000 per leak) and replumb benefit up to $7,000 for structures under 20,000 sq ft with two or more leaks.",
+        "insurance_or_sale": "Repeated leaks can lead to claim history and non-renewal; buyers may require replumb."
+      },
+      "fix": {
+        "what": "Replumb or replace failing fittings; settlement claims period likely closed.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.govinfo.gov/content/pkg/USCOURTS-mnd-0_08-cv-05037/pdf/USCOURTS-mnd-0_08-cv-05037-9.pdf",
+          "publisher": "U.S. District Court, District of Minnesota (via govinfo.gov)",
+          "supports": "sale years",
+          "verified": true,
+          "tier": "primary",
+          "quote": "throughout the United States from 1996 to 2010"
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/USCOURTS-mnd-0_08-cv-05037/pdf/USCOURTS-mnd-0_08-cv-05037-9.pdf",
+          "publisher": "U.S. District Court, District of Minnesota (via govinfo.gov)",
+          "supports": "settlement size",
+          "verified": true,
+          "tier": "primary",
+          "quote": "The Zurn Defendants will pay up to $20 million to fund the payment of damage and repair claims made by class members."
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/USCOURTS-mnd-0_08-cv-05037/pdf/USCOURTS-mnd-0_08-cv-05037-9.pdf",
+          "publisher": "U.S. District Court, District of Minnesota (via govinfo.gov)",
+          "supports": "prevalence",
+          "verified": true,
+          "tier": "primary",
+          "quote": "hundreds of thousands of individuals and entities who own systems containing F1807 Fittings"
+        }
+      ],
+      "open_questions": "Other manufacturers' brass fitting failure cases; actual claim-period end date; whether Zurn's red-brass vs yellow-brass fittings differ.",
+      "verification": {
+        "status": "confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Sale years, settlement amount and terms, evidence of scale.",
+        "what_is_not": "Other manufacturers; claim-period end date."
+      }
+    },
+    {
+      "id": "csst-gas-tubing-bonding-lightning",
+      "name": "Corrugated stainless steel tubing (CSST) gas piping without proper bonding; yellow jacket",
+      "category": "plumbing",
+      "summary": "Flexible stainless gas tubing is common in new homes and can be punctured by lightning energy if not bonded to the electrical grounding system. Yellow-jacketed CSST is non-conductive; black-jacketed CSST is conductive and sold as more lightning resistant. Bonding at the building entrance is the usual mitigation. This entry rests on secondary sources only.",
+      "installed_from": 1990,
+      "installed_to": null,
+      "peak_from": 2000,
+      "peak_to": 2025,
+      "date_confidence": "low",
+      "date_notes": "No opened source gives the year CSST entered US housing; 1990 is from my background knowledge (flagged, unverified). Wikipedia: yellow-jacketed CSST was developed first and is the most common; black-jacketed is 'relatively new'. Bonding requirements vary by code edition, jurisdiction and manufacturer (InterNACHI forum posts, not opened as evidence).",
+      "regions": "national; gas homes",
+      "prevalence": "possible",
+      "prevalence_basis": "No data found on share of homes with CSST; the claim that it is common in new gas homes rests on Wikipedia (secondary).",
+      "how_to_identify": "Flexible, corrugated metal gas pipe with a yellow (or black) plastic jacket running to appliances, often in attics or basements. Check whether a green or bare bonding wire runs from the pipe (or its clamp) to the electrical panel ground.",
+      "risk": {
+        "safety": "Lightning-induced puncture can cause gas leaks and fires (alleged risk; opinions differ).",
+        "financial": "Electrician bonding is a modest cost; no source opened for the figure.",
+        "insurance_or_sale": "Some insurers and states require bonding; inspectors often refer yellow CSST to an electrician."
+      },
+      "fix": {
+        "what": "Have a licensed electrician bond the CSST per manufacturer instructions and current code.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Corrugated_stainless_steel_tubing",
+          "publisher": "Wikipedia",
+          "supports": "jacket types, risk and bonding advice",
+          "verified": true,
+          "tier": "reference",
+          "quote": "Yellow-jacketed CSST should be bonded (connected to the electrical service panel's ground bus) at its entrance into a building."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Corrugated_stainless_steel_tubing",
+          "publisher": "Wikipedia",
+          "supports": "yellow is most common",
+          "verified": true,
+          "tier": "reference",
+          "quote": "Yellow-jacketed CSST was developed first and is the most common."
+        }
+      ],
+      "open_questions": "Primary sources (NIST, NFPA 54, manufacturer instructions) not reachable; introduction year; prevalence; bonding rules by state; litigation record.",
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Jacket types and bonding advice from Wikipedia only.",
+        "what_is_not": "Dates, prevalence, code requirements (no primary source opened)."
+      }
+    },
+    {
+      "id": "radon-resistant-new-construction",
+      "name": "Radon-resistant new construction (passive vent pipe) features",
+      "category": "code-milestone",
+      "summary": "EPA reports more than 3 million US homes built since 1990 using radon-resistant techniques (gravel layer, plastic sheeting, sealed slab, vent pipe, junction box). A passive system can be activated with a fan if radon tests high; all homes should still be tested.",
+      "installed_from": 1990,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "medium",
+      "date_notes": "EPA gives 'since 1990' for the survey count. Model-code appendix: Appendix F of the 2015 IRC covers radon control methods; which earlier IRC edition first had it was not confirmed. Local code adoption in radon zones varies.",
+      "regions": "national, concentrated in EPA Zone 1 counties and states with RRNC rules",
+      "prevalence": "possible",
+      "prevalence_basis": "EPA: more than 3 million homes since 1990 (Home Innovation Research Labs survey of builders). Divided by roughly 1.5 million new homes a year over 35 years this is a small share nationally, but is higher in high-radon areas; the share is my inference.",
+      "how_to_identify": "A 3- or 4-inch PVC vent pipe rising from the basement slab or crawlspace through the roof, often labeled 'Radon', sometimes with an electrical junction box in the attic or basement ceiling.",
+      "risk": {
+        "safety": "If not activated and tested, a passive system gives only partial protection; radon is the leading cause of lung cancer among non-smokers per EPA.",
+        "financial": "EPA: RRNC typically costs a builder $250-$750; retrofit mitigation costs more (not sourced).",
+        "insurance_or_sale": "Radon test is a common sale contingency."
+      },
+      "fix": {
+        "what": "Test for radon; add a fan to the passive pipe if levels are 4 pCi/L or more.",
+        "cost_low_usd": 250,
+        "cost_high_usd": 750,
+        "cost_year": 2025,
+        "cost_source": "EPA: builder cost for RRNC, not owner cost"
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/radon/radon-resistant-new-construction-home-buyers",
+          "publisher": "U.S. Environmental Protection Agency",
+          "supports": "homes built, cost",
+          "verified": true,
+          "tier": "primary",
+          "quote": "More than 3 million homes have been built since 1990 using radon-resistant techniques"
+        },
+        {
+          "url": "https://www.epa.gov/radon/radon-resistant-new-construction-home-buyers",
+          "publisher": "U.S. Environmental Protection Agency",
+          "supports": "builder cost",
+          "verified": true,
+          "tier": "primary",
+          "quote": "Radon-resistant new construction (RRNC) typically costs a builder between $250 and $750."
+        },
+        {
+          "url": "https://www.epa.gov/radon/building-codes-and-standards-radon-resistant-new-construction-rrnc",
+          "publisher": "U.S. Environmental Protection Agency",
+          "supports": "model code appendix",
+          "verified": true,
+          "tier": "primary",
+          "quote": "Appendix F of the 2015 International Residential Code (IRC): Radon Control Methods"
+        }
+      ],
+      "open_questions": "Which code editions required it; owner retrofit cost; local adoption.",
+      "verification": {
+        "status": "partly-confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Count since 1990, builder cost, model-code reference.",
+        "what_is_not": "Earliest IRC edition; share by county."
+      }
+    },
+    {
+      "id": "irc-2009-residential-sprinklers-2011",
+      "name": "Residential fire sprinklers required by the model International Residential Code (from Jan 1, 2011)",
+      "category": "code-milestone",
+      "summary": "The 2009 IRC called for sprinklers in new one- and two-family homes and townhouses from Jan 1, 2011, but adoption was patchy and some states and cities amended it out. NIST said fewer than 5 percent of US homes had sprinklers in 2011, so a house built after 2011 probably lacks them unless local rules required them.",
+      "installed_from": 2011,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "medium",
+      "date_notes": "NIST (Apr 2011): the latest IRC calls for sprinklers starting Jan 1, 2011; more than 200 communities and a handful of states (California, Maryland, South Carolina) had adopted it; Pennsylvania adopted it but its House voted to repeal. Later state amendments were not researched.",
+      "regions": "only jurisdictions that adopted the requirement (e.g. California, Maryland, South Carolina in 2011)",
+      "prevalence": "rare",
+      "prevalence_basis": "NIST: fewer than 5 percent of US homes were equipped with sprinklers (2011). No data on post-2011 builds.",
+      "how_to_identify": "Small white or brass sprinkler heads on ceilings or high on walls in each room, a flow switch or shut-off valve near the water entry, and an inspector's tag.",
+      "risk": {
+        "safety": "A house without sprinklers has no automatic suppression.",
+        "financial": "Retrofit is costly; insurance discounts may apply for existing systems.",
+        "insurance_or_sale": "Possible premium credit."
+      },
+      "fix": {
+        "what": "None required; retrofit optional.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.nist.gov/news-events/news/2011/04/free-online-tool-aids-decisions-fire-sprinkler-systems-homes",
+          "publisher": "National Institute of Standards and Technology",
+          "supports": "IRC date and adoption",
+          "verified": true,
+          "tier": "primary",
+          "quote": "The latest version of the International Residential Code calls for fire sprinklers to be installed in new one and two-family residential dwellings and townhouses, starting Jan. 1, 2011."
+        },
+        {
+          "url": "https://www.nist.gov/news-events/news/2011/04/free-online-tool-aids-decisions-fire-sprinkler-systems-homes",
+          "publisher": "National Institute of Standards and Technology",
+          "supports": "prevalence",
+          "verified": true,
+          "tier": "primary",
+          "quote": "Fewer than 5 percent of U.S. homes are equipped with fire suppression sprinklers"
+        }
+      ],
+      "open_questions": "Current state-level adoption; the specific IRC edition number (2009) was not stated on the NIST page; retrofit cost.",
+      "verification": {
+        "status": "partly-confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Model-code date Jan 1, 2011, initial adoption, <5% of homes.",
+        "what_is_not": "Edition label '2009 IRC' and current adoption."
+      }
+    },
+    {
+      "id": "afci-protection-nec-2002-2014",
+      "name": "Arc-fault (AFCI) breaker protection in new homes: bedrooms from 2002, living areas 2008, kitchens/laundry 2014",
+      "category": "code-milestone",
+      "summary": "AFCI breakers entered the National Electrical Code for bedroom circuits (1999 NEC, widely enforced from the 2002 NEC); the 2008 NEC extended them to most living areas; the 2014 NEC added kitchens and laundry. A house built 2002-2007 may have AFCI only in bedrooms; a house built before 2008-2014 often lacks it elsewhere.",
+      "installed_from": 2002,
+      "installed_to": null,
+      "peak_from": 2008,
+      "peak_to": 2025,
+      "date_confidence": "medium",
+      "date_notes": "Wikipedia says the 1999 NEC required AFCI on bedroom circuits, with 2008 and 2014 expansions. CPSC's 2004 AFCI recall says AFCIs 'are required to be installed in bedroom circuits in accordance with the 2002 National Electrical Code'. Actual requirement in a given house depends on the state or city's adopted NEC edition and its adoption date, which can lag by several years.",
+      "regions": "national; depends on adopted NEC edition",
+      "prevalence": "likely",
+      "prevalence_basis": "No data on adoption rates opened; inference from code dates.",
+      "how_to_identify": "Panel breakers with a TEST button and 'AFCI' or 'Arc Fault' on the face. Count which circuits (bedrooms, living areas, kitchen) have one.",
+      "risk": {
+        "safety": "Missing AFCI means arcing faults in wiring can start a fire undetected (CPSC: ordinary breakers do not respond to early arcing).",
+        "financial": "AFCI breakers cost more than standard ones; retrofit cost not sourced.",
+        "insurance_or_sale": "Inspectors note missing AFCI in newer homes."
+      },
+      "fix": {
+        "what": "Electrician can swap standard breakers for AFCI or AFCI/GFCI breakers where the panel supports it.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Recalls/2005/cpsc-schneider-electric-north-american-division-announce-recall-of-afcis",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "2002 NEC bedroom requirement",
+          "verified": true,
+          "tier": "primary",
+          "quote": "They are required to be installed in bedroom circuits in accordance with the 2002 National Electrical Code."
+        },
+        {
+          "url": "https://www.cpsc.gov/s3fs-public/5133.pdf",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "what AFCIs do",
+          "verified": true,
+          "tier": "primary",
+          "quote": "Typical household fuses and circuit breakers do not respond to early arcing and sparking"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Arc-fault_circuit_interrupter",
+          "publisher": "Wikipedia",
+          "supports": "1999, 2008, 2014 milestones",
+          "verified": true,
+          "tier": "reference",
+          "quote": "Starting with the 1999 version of the National Electrical Code in the United States"
+        },
+        {
+          "url": "https://www.nachi.org/arc-fault-circuit-interrupters.htm",
+          "publisher": "InterNACHI",
+          "supports": "IRC 2006 bedroom rule",
+          "verified": true,
+          "tier": "trade",
+          "quote": "The 2006 International Residential Code (IRC) requires that AFCIs be installed within bedrooms in the following manner:"
+        }
+      ],
+      "open_questions": "NEC text itself not reachable; state adoption dates; 2020 and 2023 NEC changes.",
+      "verification": {
+        "status": "partly-confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "2002 NEC bedroom requirement (CPSC), AFCI function (CPSC). 2008 and 2014 steps confirmed only in Wikipedia.",
+        "what_is_not": "Primary text of 2008 and 2014 NEC; state adoption."
+      }
+    },
+    {
+      "id": "iecc-2012-mandatory-air-leakage-test",
+      "name": "2012 IECC mandatory whole-house air leakage (blower-door) test",
+      "category": "code-milestone",
+      "summary": "DOE's code program summarized the 2012 IECC as about 30 percent more efficient than the 2006 IECC, with a mandatory whole-house pressure test, a stricter duct leakage test and higher insulation. A house built before the state adopted the 2012 IECC (many states adopted between 2012 and 2016) was built to looser air-sealing rules.",
+      "installed_from": 2012,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "DOE slide deck: 2012 IECC major changes include a 'mandatory whole-house pressure test'. Adoption dates vary by state and city; the numeric limit (3 ACH50 in some zones) was not verified in a primary source.",
+      "regions": "national; adoption varies by state",
+      "prevalence": "possible",
+      "prevalence_basis": "No adoption data opened.",
+      "how_to_identify": "Energy-code certificate or blower-door test result posted near the panel (required by the IECC); airtightness from the builder file.",
+      "risk": {
+        "safety": "Tight homes need mechanical ventilation and combustion air (see ventilation entry).",
+        "financial": "Higher efficiency; older houses leak more.",
+        "insurance_or_sale": "HERS or blower-door results can be marketing."
+      },
+      "fix": {
+        "what": "Not a defect; air sealing retrofit is optional.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.energy.gov/sites/prod/files/2013/12/f6/iecc_overview.pdf",
+          "publisher": "U.S. Department of Energy",
+          "supports": "2012 IECC major changes",
+          "verified": true,
+          "tier": "primary",
+          "quote": "Mandatory whole-house pressure test"
+        },
+        {
+          "url": "https://www.energy.gov/sites/prod/files/2013/12/f6/iecc_overview.pdf",
+          "publisher": "U.S. Department of Energy",
+          "supports": "2012 vs 2006",
+          "verified": true,
+          "tier": "primary",
+          "quote": "~30% better than 2006 IECC"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Building_airtightness",
+          "publisher": "Wikipedia",
+          "supports": "secondary confirmation",
+          "verified": true,
+          "tier": "reference",
+          "quote": "In the US, the IECC of 2012 adopted whole building airtightness requirements, including mandatory testing."
+        }
+      ],
+      "open_questions": "ACH50 limits by climate zone; state adoption dates.",
+      "verification": {
+        "status": "partly-confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Mandatory whole-house test in the 2012 IECC; 30% improvement over 2006.",
+        "what_is_not": "Numeric ACH limit; adoption timing."
+      }
+    },
+    {
+      "id": "mechanical-ventilation-tight-homes",
+      "name": "Whole-house mechanical ventilation (ASHRAE 62.2) in airtight homes",
+      "category": "code-milestone",
+      "summary": "Airtight modern homes can trap indoor pollutants unless a mechanical ventilation system is installed. DOE's Building America says tight construction depends on whole-house and spot ventilation per ASHRAE 62.2. A house built with a tight envelope but no designed ventilation may have stale air, moisture or combustion-appliance backdrafting risk.",
+      "installed_from": 2010,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "No opened source says when ventilation became required in model codes; the start year is a placeholder tied to 2009-2012 energy code tightening. Adoption of ASHRAE 62.2 by states is described only in an NIH article that I did not open.",
+      "regions": "national; adoption varies",
+      "prevalence": "possible",
+      "prevalence_basis": "No data opened.",
+      "how_to_identify": "Bathroom/kitchen fans on timers, a dedicated exhaust fan running continuously, or an ERV/HRV unit in the basement or attic with ducts to the HVAC.",
+      "risk": {
+        "safety": "Poor ventilation raises indoor pollutant and moisture levels; combustion appliances may backdraft in tight homes.",
+        "financial": "Fan operating costs.",
+        "insurance_or_sale": "None."
+      },
+      "fix": {
+        "what": "Check that installed ventilation fans work and run; add an ERV/HRV if absent.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.energy.gov/cmei/buildings/articles/ashrae-standard-622-ventilation-and-acceptable-indoor-air-quality-low-rise",
+          "publisher": "U.S. Department of Energy",
+          "supports": "need for ventilation in tight homes",
+          "verified": true,
+          "tier": "primary",
+          "quote": "Tight construction is one of the most important cornerstones of high-performance homes, but is only possible with ensured dilution of indoor contaminants."
+        }
+      ],
+      "open_questions": "Code adoption history; share of new homes with designed ventilation.",
+      "verification": {
+        "status": "partly-confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "DOE's statement of the principle.",
+        "what_is_not": "Dates and adoption."
+      }
+    },
+    {
+      "id": "spray-polyurethane-foam-insulation",
+      "name": "Spray polyurethane foam (SPF) insulation: off-gassing and health concerns",
+      "category": "hazmat",
+      "summary": "SPF is used in new and retrofit homes; EPA says diisocyanates in SPF can cause asthma and respiratory problems, and vapors can persist for a period after installation. Poorly mixed or cured foam can cause odor complaints; EPA advises caution about re-occupancy.",
+      "installed_from": 2000,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "No opened source gives the year SPF became common in homes. EPA postcard is dated April 2012. The 2000 start is a placeholder for this study period.",
+      "regions": "national",
+      "prevalence": "rare",
+      "prevalence_basis": "No share data opened; SPF is a minority insulation in houses.",
+      "how_to_identify": "Foam sprayed on attic roof deck, rim joists, wall cavities or crawlspace; hard, tan-yellow (closed-cell) or spongy (open-cell) foam.",
+      "risk": {
+        "safety": "EPA: exposure to diisocyanates can cause asthma, sensitization, lung damage, irritation; vapors can be present during and after installation.",
+        "financial": "Remediation of off-gassing can mean removal; cost not sourced.",
+        "insurance_or_sale": "Odor or chemical sensitivity complaints can affect sale; roof-deck SPF can complicate roof repair and some insurer roof warranties (not sourced)."
+      },
+      "fix": {
+        "what": "Ventilate; consult installer; remove foam in affected areas if odor persists.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/sites/default/files/2015-09/documents/spf_postcard.pdf",
+          "publisher": "U.S. Environmental Protection Agency",
+          "supports": "hazard, re-occupancy",
+          "verified": true,
+          "tier": "primary",
+          "quote": "Exercise caution when determining a safe re-occupancy time for unprotected workers and occupants."
+        },
+        {
+          "url": "https://www.epa.gov/sites/default/files/2015-09/documents/spf_postcard.pdf",
+          "publisher": "U.S. Environmental Protection Agency",
+          "supports": "health effects",
+          "verified": true,
+          "tier": "primary",
+          "quote": "Skin, eye, nose, or throat irritation"
+        }
+      ],
+      "open_questions": "Year SPF became common; frequency of odor complaints; what EPA says about homeowner remediation.",
+      "verification": {
+        "status": "partly-confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "EPA health warnings and re-occupancy caution.",
+        "what_is_not": "Era and prevalence."
+      }
+    },
+    {
+      "id": "range-anti-tip-brackets-unsecured",
+      "name": "Free-standing ranges without a secured anti-tip bracket",
+      "category": "fire-safety",
+      "summary": "Free-standing and slide-in ranges can tip forward if weight is placed on an open oven door and the anti-tip bracket was not installed. CPSC staff reviewed 33 tip-over incidents 1980-2006 and 13 related fatalities 2000-2008. A 2021 GE recall covered ranges where the bracket was not secured. Bracket use depends on the installer, not the range's age.",
+      "installed_from": 2000,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "The stability requirement already existed in UL 858 (2005 edition cited) and ANSI Z21.1 (2000 edition cited). Brackets are part of the installation, so the start year is a placeholder.",
+      "regions": "national",
+      "prevalence": "possible",
+      "prevalence_basis": "CPSC staff estimate 1,700 appliance-related ED-treated injuries a year from instability and tipover; no share of ranges lacking brackets was found.",
+      "how_to_identify": "Pull the range forward slightly (carefully) or look in the lower drawer or behind the unit for a metal bracket screwed to the floor or wall that engages a rear leveling leg.",
+      "risk": {
+        "safety": "Tip-over can scald or crush; children and older adults are the main victims in CPSC incident review.",
+        "financial": "Bracket costs little.",
+        "insurance_or_sale": "Inspectors flag missing brackets."
+      },
+      "fix": {
+        "what": "Install the manufacturer's anti-tip bracket; test that the range does not tip forward with a 75 lb static weight on the open door per CPSC description.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": null
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/s3fs-public/pdfs/rangestability.pdf",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "standards and incident record",
+          "verified": true,
+          "tier": "primary",
+          "quote": "most manufacturers include an anti-tipping bracket"
+        },
+        {
+          "url": "https://www.cpsc.gov/s3fs-public/pdfs/rangestability.pdf",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "fatalities",
+          "verified": true,
+          "tier": "primary",
+          "quote": "from 2000 to 2008, CPSC staff has reports of 13 fatalities associated with instability and tipover of appliances"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2022/GE-Appliances-a-Haier-Company-Recalls-to-Repair-Free-Standing-and-Slide-In-Ranges-Due-to-Tip-Over-Hazard",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "supports": "2021 recall",
+          "verified": true,
+          "tier": "primary",
+          "quote": "About 132,000 (In addition, about 12,960 in Canada)"
+        }
+      ],
+      "open_questions": "Share of installed ranges lacking brackets; recall history beyond GE and Danby.",
+      "verification": {
+        "status": "partly-confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Standards, incident counts, GE recall.",
+        "what_is_not": "Prevalence of missing brackets."
+      }
+    }
+  ],
+  "feasibility_notes": "Recall data from CPSC is strong: notices give unit counts, manufacture or sale windows, and identification marks, so dates for those entries are high confidence. What is weak is prevalence per house: CPSC units are national totals, and no source gives the share of 2000-2025 homes with a given product, so most prevalence ratings are rated possible or rare from reasoning, not data. Several candidates were dropped or not made into entries because no large recall was found (heat pumps and mini-splits, microwaves/range hoods, garage door openers, ceiling fans on counts too small, GFCI expansions) or because the best sources were unreachable (SEC filings for LP and Hardie siding litigation; ICC code text; NFPA 54/70; ASHRAE). CSST is flagged: only Wikipedia was opened, no primary dates. The code-milestone entries (AFCI, IECC 2012, ventilation) give model-code years; actual requirement in a house depends on the date the state or city adopted that code edition, which was not researched. A second pass would need access to ICC and NFPA text, state adoption tables (DOE energycodes.gov), and CPSC remedy-status checks (many remedies are old and may be closed). Builder-grade end-of-life notes (not entries; from general knowledge, not verified here): 2000s asphalt shingles, first-generation gas tank water heaters (8-12 years), original R-22 AC compressors (15-20 years), vinyl-window seal failures, original dishwashers and smoke alarms (10-year limit) all reach end of life in 15-25 year old houses; another researcher covers lifespans.",
+  "missed": [
+    "GFCI requirement expansions 2000-2020",
+    "CO alarm requirements in 2009+ IRC (R315) and state laws",
+    "Brass PEX fittings from Uponor, NIBCO and others (only Zurn opened)",
+    "Fiber-cement, engineered-wood siding and vinyl-clad window litigation (SEC and court dockets unreachable)",
+    "Roofing underlayment and radiant-barrier sheathing issues",
+    "Heat pump and mini-split recalls (none found)",
+    "Large fire-sprinkler recalls beyond Central O-ring (Globe Model J 2007 about 300,000 seen in search, not opened)",
+    "Other counterfeit breaker recalls (North American Breaker, Miami Breaker, Connecticut Electric, Scott Electric) not opened",
+    "Newer boiler recalls (Crown, U.S. Boiler, Lochinvar 2024, HTP 2025) not opened",
+    "Hampton Bay and other ceiling fan recalls (counts under 200,000)",
+    "Allied Air/Armstrong furnaces 2023 (about 9,255 units) not made an entry"
+  ]
+}
