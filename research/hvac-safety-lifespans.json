@@ -1,0 +1,1290 @@
+{
+  "domain": "HVAC, appliances, fire and life safety, and component lifespans",
+  "web_access": "partial",
+  "web_access_detail": "WebSearch worked; every attempt to open a page failed. WebFetch returned ENOTFOUND and curl got HTTP 403 from the session's egress proxy for www.cpsc.gov, www.epa.gov, www.ecfr.gov and www.pmmag.com, i.e. outbound hosts are not on this session's network allowlist. Consequently NO source could be opened and, under the brief's rule, every source is marked verified:false. Each 'supports' note says the claim was seen only as a search-engine extract of that URL. All URLs were returned by the search tool; none is invented. Statements labelled 'from memory' in date_notes/prevalence_basis have no source at all.",
+  "entries": [
+    {
+      "id": "consolidated-industries-horizontal-furnace",
+      "name": "Consolidated Industries (Premier) horizontal 'NOx rod' attic furnace",
+      "category": "hvac",
+      "summary": "Gas horizontal forced-air furnaces made by Consolidated Industries (formerly Premier Furnace) for the California market, usually installed in attics or crawlspaces. CPSC warned in 2000 and announced a recall in 2001 because burners and heat exchangers can fail and start fires. The maker is out of business and the remedy has expired, so a surviving unit simply needs replacing.",
+      "installed_from": 1983,
+      "installed_to": 1994,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "medium",
+      "date_notes": "CPSC texts disagree: one release says made for California sale 1983-1994; another says sold January 1983 through December 1992. Unit count is ~140,000 in the 2001 recall notice versus ~190,000 in the September 2000 warning. I could not open the CPSC pages to settle which wording is in which release.",
+      "regions": "California only (units built with NOx rods to meet California air-quality rules)",
+      "prevalence": "rare",
+      "prevalence_basis": "CPSC: about 140,000 (or 190,000) units, 50 fires reported, all in California. No denominator of California homes built 1983-1994 was computed and no data exists on how many units survive 30+ years later; most are past normal furnace life, hence 'rare'.",
+      "how_to_identify": "Look at the furnace in the attic or crawlspace: brand label Consolidated, Premier, Addison or Weatherking (other private labels existed), and steel rods mounted above the burners (the 'NOx rods').",
+      "risk": {
+        "safety": "Fire: CPSC reported about 50 fires; no injuries cited in the recall notice. CPSC suggested an ionization smoke alarm in the attic as an interim measure.",
+        "financial": "No manufacturer remedy remains (firm bankrupt; litigation remedy expired). Owner pays for a new furnace.",
+        "insurance_or_sale": "A home inspector who recognises it will call for replacement; may be a negotiation item in a California sale."
+      },
+      "fix": {
+        "what": "Replace the furnace.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found this session."
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Recalls/2001/CPSC-Announces-Recall-of-Furnaces-in-California",
+          "publisher": "CPSC (recall 01-189, July 2001)",
+          "supports": "~140,000 furnaces, 50 fires, brands, NOx rods identification, remedy no longer available, firm out of business [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2000/cpsc-warns-about-defective-furnaces-in-california",
+          "publisher": "CPSC (warning 00-190, Sept 2000)",
+          "supports": "fire-risk warning, California-only, attic smoke detector advice [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://webarchive.library.unt.edu/web/20121112220751mp_/http://www.cpsc.gov/cpscpub/prerel/prhtml01/01189.html",
+          "publisher": "CPSC via UNT web archive",
+          "supports": "1983-1994 manufacture range; private-litigation remedy expired [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "Exact production window (1983-1992 vs 1983-1994); complete list of private-label brand names; surviving population."
+    },
+    {
+      "id": "cadet-encore-in-wall-heaters",
+      "name": "Cadet / Encore in-wall electric fan heaters (recalled)",
+      "category": "hvac",
+      "summary": "Small electric fan-forced heaters recessed into walls, very common in Pacific Northwest houses and apartments. CPSC sued Cadet in 1999 and a 2000 settlement recalled more than 1.9 million units because they can overheat, spark and catch fire. The original free-repair programme is long over, so recalled units still in walls should be replaced.",
+      "installed_from": 1978,
+      "installed_to": 1999,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "medium",
+      "date_notes": "Sources disagree on years. A CPSC 2002/2003 reminder (03-030) reportedly says sold 'from about 1978 through 2000'; trade press says 1982-1999; the 1997 CPSC notice for the first (190,000-unit) recall says installed 1985-1992; InspectAPedia gives per-series dates (FW 1978-1989, FX and LX 1984-1995). A Federal Register excerpt mentions series made 1993-1999. Per-model dates need the CPSC notice itself.",
+      "regions": "Mainly Washington, Oregon, California, Idaho, Montana (also Wyoming per the 1997 notice)",
+      "prevalence": "possible",
+      "prevalence_basis": "1.9 million units concentrated in about five states is a large number, but no source gives the share of homes; applies mostly to homes with electric zonal heat. No survival data.",
+      "how_to_identify": "Remove nothing: read the label on the front of the heater assembly behind the grille. Recalled models begin FW, FX, LX, TK, ZA, Z, RA, RK, RLX, RX, RW or ZC followed by three digits; brands Cadet and Encore.",
+      "risk": {
+        "safety": "Fire and burn hazard. CPSC's later reminder cited four deaths, two serious burn injuries and six partial or total house fires (three deaths and five fires in the February 2000 text).",
+        "financial": "Replacement of each heater at owner's cost now; several per house is typical.",
+        "insurance_or_sale": "Commonly flagged in Pacific Northwest home inspections."
+      },
+      "fix": {
+        "what": "Replace each recalled heater with a current model.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found this session."
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Recalls/2000/CPSC-Cadet-Recall-In-Wall-Heaters-Settle-Lawsuit",
+          "publisher": "CPSC (release 00-070, Feb 2000)",
+          "supports": "1.9 million heaters, model prefixes, states, overheating/fire defect [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.cpsc.gov/Newsroom/News-Releases/2003/CPSC-Reminds-Consumers-to-Check-for-Recalled-Cadet-In-Wall-Heaters",
+          "publisher": "CPSC (release 03-030)",
+          "supports": "four deaths, two burn injuries, $4.3M claims, six house fires; 'about 1978 through 2000' sale period [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/1997/cpsc-cadet-manufacturing-announce-recall-of-in-wall-heaters",
+          "publisher": "CPSC (release 98-017, Oct 1997)",
+          "supports": "first recall of ~190,000 FW/FX/LX/ZA heaters, limit-switch sparking, installed 1985-1992 [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://inspectapedia.com/electric/CadetHeaters.htm",
+          "publisher": "InspectAPedia (secondary)",
+          "supports": "per-series manufacture dates FW 1978-1989, FX/LX 1984-1995 [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "Authoritative per-model date table; whether any replacement programme still exists via the current brand owner (Glen Dimplex)."
+    },
+    {
+      "id": "htpv-plastic-vent-pipe",
+      "name": "Plexvent / Ultravent high-temperature plastic vent (HTPV) pipe on gas furnaces and boilers",
+      "category": "hvac",
+      "summary": "Grey or black plastic vent pipe used to vent mid-efficiency gas or propane furnaces and boilers through a side wall. CPSC and the appliance makers announced a recall programme in 1998 because the pipe can crack or separate at joints and leak carbon monoxide into the house.",
+      "installed_from": 1988,
+      "installed_to": 1994,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "The only date range seen this session is for one subset: about 10,000 systems on Goodman mid-efficiency furnaces manufactured October 1988 to July 1994. The overall installation window for all ~250,000 systems was not stated in anything I could read; from memory it is roughly 1987-1993 but I could not confirm that.",
+      "regions": "national (cold-climate states most likely)",
+      "prevalence": "rare",
+      "prevalence_basis": "CPSC: about 250,000 systems nationally; about 93,000 replaced as of October 2005. That is a small share of the housing stock and the attached appliances are now 30+ years old.",
+      "how_to_identify": "Follow the furnace or boiler flue: a grey or black plastic pipe going out through a side wall, printed 'Plexvent', 'Plexvent II' or 'Ultravent'. White PVC or CPVC pipe is not part of the recall.",
+      "risk": {
+        "safety": "Carbon monoxide poisoning from cracked or separated vent joints.",
+        "financial": "Under the 2009 revision, Plexvent owners were offered a free new vent or up to $400 rebate; Ultravent owners about $250. Whether any of this is still honoured is unknown.",
+        "insurance_or_sale": "A known inspection call-out; a CO hazard an inspector will report."
+      },
+      "fix": {
+        "what": "Replace the vent system or, more realistically at this age, the appliance.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found this session."
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Recalls/2009/CPSC-Goodman-Manufacturing-Co-Announce-Changes-to-1998-Recall-Program-to-Replace-Dangerous-Home-Heating-Vent-Pipes",
+          "publisher": "CPSC (2009 re-announcement)",
+          "supports": "250,000 systems, CO hazard, Goodman furnaces Oct 1988-Jul 1994, identification, remedy amounts [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://cpsc.gov/Recalls/1998/cpsc-manufacturers-announce-recall-program-to-replace-vent-pipes-on-home-heating",
+          "publisher": "CPSC (Feb 1998 programme)",
+          "supports": "original recall programme and scope (horizontal sidewall systems only) [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.cpsc.gov/Newsroom/News-Releases/1999/CPSC-Urges-Seasonal-Furnace-Inspection-Replacement-of-Recalled-Vent-Pipes-to-Prevent-CO-Poisonings",
+          "publisher": "CPSC",
+          "supports": "about 93,000 replaced as of October 2005 (figure appeared in a search extract of a CPSC reminder; exact release not confirmed) [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "Full installation year range; whether the remedy programme is still open."
+    },
+    {
+      "id": "gravity-octopus-furnace",
+      "name": "Gravity ('octopus') furnace with asbestos-wrapped ducts",
+      "category": "hvac",
+      "summary": "A large basement furnace with no blower: warm air rises through big round ducts that branch out like octopus arms. Originally coal-fired and often converted to oil or gas, they are roughly 50% efficient and the furnace and ducts were typically insulated with asbestos. (Asbestos itself is covered in the hazmat domain.)",
+      "installed_from": 1880,
+      "installed_to": 1950,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "InterNACHI says only 'late 1800s to the mid-20th century'; no source gives firm start, end or peak years. 1880 and 1950 are placeholders for that phrase, not documented dates.",
+      "regions": "national, concentrated in cold-climate houses with basements (Midwest, Northeast)",
+      "prevalence": "rare",
+      "prevalence_basis": "No survey data found on how many remain. Original presence in pre-1940 basement houses was common, but most have been replaced; 'rare' reflects survival today, not original installation.",
+      "how_to_identify": "Basement: a very large round or boxy furnace with multiple large sheet-metal ducts sloping upward from the top, no blower compartment, often white or grey cloth-like or corrugated-paper wrap on ducts (possible asbestos; do not disturb).",
+      "risk": {
+        "safety": "Asbestos fibre release if insulation is damaged or disturbed; combustion safety of a very old converted appliance.",
+        "financial": "High fuel bills (InterNACHI: only about half the heat reaches the house); removal needs asbestos abatement and usually new ductwork.",
+        "insurance_or_sale": "InterNACHI advises buyers to negotiate price to cover asbestos and furnace removal."
+      },
+      "fix": {
+        "what": "Licensed asbestos abatement, then replace with a modern furnace and ducts.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found this session."
+      },
+      "sources": [
+        {
+          "url": "https://nachi.org/gravity-furnace-inspection.htm",
+          "publisher": "InterNACHI",
+          "supports": "era (late 1800s to mid-20th century), ~50% efficiency, asbestos insulation, buyer advice [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "Any dated end of production; survival rate; cost of abatement plus replacement."
+    },
+    {
+      "id": "buried-heating-oil-tank",
+      "name": "Buried (underground) home heating oil tank",
+      "category": "hazmat",
+      "summary": "Bare steel tanks buried in the yard to hold heating oil. They corrode and leak, contaminating soil and groundwater, and the homeowner is generally responsible for cleanup. Many were abandoned in place when houses converted to gas, so a house can have one without having oil heat.",
+      "installed_from": 1930,
+      "installed_to": 1985,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "No source read this session dates the era of installation; the 1930-1985 range is my unverified general understanding, not a documented span. What is documented is service life: Massachusetts says most steel underground tanks last about 10-20 years, Maryland about 15 years, Idaho DEQ about 30 years. Residential heating-oil tanks are largely exempt from the federal UST rules, so there is no national cut-off date.",
+      "regions": "Regional: Northeast and Mid-Atlantic (NJ, NY, CT, MA, PA, MD), plus Pacific Northwest and other oil-heat pockets",
+      "prevalence": "possible",
+      "prevalence_basis": "No prevalence data found. Likelihood depends on whether the neighbourhood was ever on oil heat; cannot be stated from year built alone.",
+      "how_to_identify": "Outside: a fill pipe and a vent pipe near the foundation, or capped pipes; inside: cut-off copper oil lines through the basement wall. Absence of pipes does not prove absence of a tank; a tank sweep (metal detection or GPR) is the usual check.",
+      "risk": {
+        "safety": "Low direct safety risk; environmental contamination of soil and drinking-water wells.",
+        "financial": "A 2011 Philadelphia Inquirer report put simple removal at $1,500-$2,000, with cleanup of a leaked tank running into tens of thousands. NJDEP runs an Unregulated Heating Oil Tank programme; its grant fund has been reported as depleted.",
+        "insurance_or_sale": "Lenders and buyers in oil-heat regions often require removal or a clean tank test; state guidance (MD, MA) says replace any buried tank over about 15-20 years old or of unknown age with an above-ground tank."
+      },
+      "fix": {
+        "what": "Tank sweep, then removal (or approved closure in place) with soil testing; remediate if leaked.",
+        "cost_low_usd": 1500,
+        "cost_high_usd": 2000,
+        "cost_year": 2011,
+        "cost_source": "Philadelphia Inquirer, 21 Oct 2011, removal only, no leak (seen as search extract; dated; leak cleanup is far higher and unbounded)"
+      },
+      "sources": [
+        {
+          "url": "https://www.mass.gov/doc/tips-for-maintaining-your-home-heating-system-prevent-heating-oil-leaks-and-spills-1/download",
+          "publisher": "Massachusetts DEP",
+          "supports": "steel underground tanks last roughly 10-20 years; replace with above-ground [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://mde.State.md.us/programs/land/OilControl/Documents/Oil%20Tank%20Inspection%20Checklist%20Brochure%203.20.07%202%20pgs.pdf",
+          "publisher": "Maryland Department of the Environment",
+          "supports": "about 15 years in Maryland soil; replace if older or age unknown [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://dec.ny.gov/environmental-protection/hazardous-substance-bulk-storage/underground-heating-oil-tanks-homeowner-guide",
+          "publisher": "New York State DEC",
+          "supports": "buried heating-oil tanks will eventually corrode and leak [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://nj.gov/dep/srp/community/notices/heatingoil.htm",
+          "publisher": "New Jersey DEP",
+          "supports": "tanks rust and leak; UHOT programme; homeowner duty to act [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.inquirer.com/philly/business/20111021_Underground_oil_tanks_can_hold_staggering_costs.html",
+          "publisher": "Philadelphia Inquirer (2011)",
+          "supports": "removal $1,500-$2,000; leak cleanup tens of thousands; insurer coverage limits [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "Documented installation era by region; current removal and remediation costs; share of homes affected."
+    },
+    {
+      "id": "r22-air-conditioner",
+      "name": "Air conditioner or heat pump that uses R-22 (Freon)",
+      "category": "hvac",
+      "summary": "Central air conditioners and heat pumps made before 2010 use the ozone-depleting refrigerant HCFC-22 (R-22). US production and import of R-22 ended on 1 January 2020, so a leak now has to be topped up from recovered or stockpiled refrigerant, which is scarce and expensive. EPA does not require replacement, but any such unit is also at or past normal service life.",
+      "installed_from": 1960,
+      "installed_to": 2010,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "medium",
+      "date_notes": "End date is firm in regulation: from 1 January 2010 virgin R-22 could not be used in new equipment (EPA). Trade press notes a loophole: 'dry-charge' R-22 condensing units shipped without refrigerant were still sold as replacements for some years after 2010, so a post-2010 replacement unit can still be R-22. The 1960 start is a placeholder for when central AC became common; R-22 was the standard residential refrigerant for decades before 2010 but I found no source giving a start year. R-410A units were sold alongside R-22 for some years before 2010.",
+      "regions": "national",
+      "prevalence": "possible",
+      "prevalence_basis": "Applies only where the original (or a pre-2010 replacement) unit is still running. At a typical 10-15+ year life most pre-2010 units have been replaced, but no survey figure was found.",
+      "how_to_identify": "Read the data plate on the outdoor unit: 'R-22' or 'HCFC-22' (newer units say R-410A, or R-454B/R-32). The manufacture date is usually on the same plate.",
+      "risk": {
+        "safety": "None directly to occupants.",
+        "financial": "A refrigerant leak can make repair uneconomic; the indoor coil usually must be replaced with the outdoor unit when changing refrigerant.",
+        "insurance_or_sale": "Inspectors routinely note R-22 systems as near end of life; buyers may ask for a credit."
+      },
+      "fix": {
+        "what": "Continue to run until it fails, then replace the system (outdoor unit and indoor coil).",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found this session. No current R-22 price per pound was found."
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/sites/production/files/2020-03/documents/residential_air_conditioning_and_the_phaseout_of_hcfc-22_what_you_need_to_know_final_508.pdf",
+          "publisher": "US EPA",
+          "supports": "production/import ended 1 Jan 2020; units made before 2010 may still be serviced; no requirement to replace or convert [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.epa.gov/sites/production/files/2015-07/documents/what_technicians_and_contractors_need_to_know_about_phasing_out_hcfc_refrigerants_to_protect_the_ozone_layer.pdf",
+          "publisher": "US EPA",
+          "supports": "from 1 Jan 2010 R-22 may be produced/imported only to service existing equipment, not for new equipment [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.achrnews.com/articles/166776-r-22-phaseout-the-long-goodbye",
+          "publisher": "ACHR News (trade press)",
+          "supports": "dry-charge R-22 units after 2010; R-410A as dominant replacement [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "Year the dry-charge loophole closed; current recharge cost; share of pre-2010 units still in service."
+    },
+    {
+      "id": "unlined-masonry-chimney",
+      "name": "Unlined or deteriorated masonry chimney",
+      "category": "fire-safety",
+      "summary": "Older brick chimneys were often built with no clay tile liner, or have liner tiles that have cracked. Without a sound liner, heat, flue gases and acidic condensate attack the brick and mortar and can reach nearby wood framing. Current model codes (IRC R1003.11) require every masonry chimney to be lined.",
+      "installed_from": null,
+      "installed_to": 1950,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "I could not find a source that pins when liners became a code requirement. The Chimney Safety Institute of America says flue lining 'has been recommended since the early part of this century' (i.e. early 1900s) and cites National Bureau of Standards tests in the 1940s that called unlined chimneys 'little less than criminal'. A code-explainer site says homes built 'before the 1950s' often have unlined chimneys. Adoption was local and gradual; 1950 is an approximate end, not a code date. installed_from is null because chimneys predate any useful start year.",
+      "regions": "national",
+      "prevalence": "possible",
+      "prevalence_basis": "No prevalence data found. Sources say only 'often' for pre-1950s houses. Separately, lined chimneys of any age can have cracked tiles, and an old oversized chimney serving a newer gas appliance can suffer condensation damage.",
+      "how_to_identify": "Look up from the fireplace or down from the clean-out with a torch: bare brick and mortar means unlined; square orange/buff clay tiles mean lined. Cracked tiles usually need a camera inspection (NFPA 211 Level 2).",
+      "risk": {
+        "safety": "Chimney fire spreading to framing; carbon monoxide leakage into the house.",
+        "financial": "Relining is a significant repair; not doing it can make the fireplace or appliance flue unusable.",
+        "insurance_or_sale": "A Level 2 chimney inspection is commonly recommended at sale; some insurers ask about wood-burning appliances."
+      },
+      "fix": {
+        "what": "Install a listed stainless-steel liner or cast-in-place liner, or re-tile; or decommission the flue.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found this session."
+      },
+      "sources": [
+        {
+          "url": "https://www.csia.org/homeowner-resources/about_chimney_liners.aspx",
+          "publisher": "Chimney Safety Institute of America",
+          "supports": "liners recommended since early 1900s; NBS tests in the 1940s and 1980s; 'little less than criminal' quote [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.jaspector.com/codes/irc-2018/ch10-chimneys-fireplaces/chimney-flue-liner-code-irc-2018/",
+          "publisher": "Jaspector (code explainer, weak source)",
+          "supports": "IRC 2018 R1003.11 requires lining; pre-1950s homes often unlined [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/RPT/nbsreport7520.pdf",
+          "publisher": "National Bureau of Standards (Shoub, 1962 literature survey)",
+          "supports": "NBFU recommendation of ceramic flue lining (date of recommendation not seen) [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "The first model-code edition (NBFU National Building Code, UBC, BOCA) to mandate flue liners; any prevalence figure."
+    },
+    {
+      "id": "csst-gas-tubing-unbonded",
+      "name": "Yellow corrugated stainless steel gas tubing (CSST) without lightning bonding",
+      "category": "fire-safety",
+      "summary": "Flexible yellow-jacketed stainless steel gas piping used in place of black iron pipe. A nearby lightning strike can arc through its thin wall and ignite the leaking gas. Since the 2009 model gas codes it must be directly bonded to the electrical grounding system with a 6 AWG copper conductor; earlier installations often are not.",
+      "installed_from": 1990,
+      "installed_to": 2009,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "medium",
+      "date_notes": "Start: one source says NFPA 54 first approved CSST in the US in 1988; I use 1990 as the practical start of installation in houses (unverified; my assignment brief also mentions 1990). End of the 'unbonded' era: direct bonding became mandatory in the 2009 NFPA 54 (section 7.13.2) and, from memory, the 2009 IRC/IFGC, but states adopted those editions years later and manufacturers' instructions required bonding from about 2006-2007 after the class settlement. CSST itself is still installed today (installed_to marks the end of routinely unbonded installs, not of the product).",
+      "regions": "national; lightning exposure highest in the Southeast, Gulf and Midwest",
+      "prevalence": "possible",
+      "prevalence_basis": "No market-share figure was found this session. Applies only to houses with gas service.",
+      "how_to_identify": "Look at exposed gas piping in the basement, attic, crawlspace or at the furnace/water heater: a flexible corrugated tube in a yellow jacket (black jacket on newer arc-resistant products). Bonding is a clamp on a rigid gas fitting with a bare or green 6 AWG copper wire running to the electrical panel or grounding electrode.",
+      "risk": {
+        "safety": "House fire after a direct or nearby lightning strike.",
+        "financial": "Bonding is a small electrician job; a 2007 class settlement offered vouchers of $75-$160 toward a bonding jumper or $200-$2,000 toward a lightning protection system (claims closed 5 Sept 2007).",
+        "insurance_or_sale": "Many home inspectors flag unbonded yellow CSST as a standard report item."
+      },
+      "fix": {
+        "what": "Have a licensed electrician bond the gas piping per the tubing manufacturer's instructions and current code.",
+        "cost_low_usd": 75,
+        "cost_high_usd": 160,
+        "cost_year": 2007,
+        "cost_source": "Voucher values for a bonding jumper in the 2007 Arkansas class settlement, as reported by PM Magazine (search extract; a proxy, not a current market price)"
+      },
+      "sources": [
+        {
+          "url": "https://www.pmmag.com/articles/90257-csst-lawsuit-settled",
+          "publisher": "PM Magazine (trade press, 2007)",
+          "supports": "defendants Omegaflex, Parker Hannifin, Titeflex, Ward; $29M attorney fees; voucher amounts; 5 Sept 2006 / 5 Sept 2007 dates [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://lawinsider.com/contracts/hmCxDFrNS9z",
+          "publisher": "Stipulation and Settlement Agreement (copy on Law Insider)",
+          "supports": "settling defendants and Arkansas circuit court venue [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.fireengineering.com/fire-safety/new-requirements-for-csst-installation/",
+          "publisher": "Fire Engineering",
+          "supports": "2009 NFPA 54 section 7.13 direct-bonding requirement; CSST approved by NFPA 54 in 1988 [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://iaeimagazine.org/2009/july2009/bonding-metal-gas-piping/",
+          "publisher": "IAEI Magazine (July 2009)",
+          "supports": "bonding of metal gas piping and CSST, 6 AWG conductor [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.oilandgas360.com/class-action-settlement-seeks-to-reduce-the-risk-of-gas-leaks-and-fires-in-maryland-homes-and-buildings/",
+          "publisher": "Press release (2017 Maryland Titeflex/Ward settlement)",
+          "supports": "later Maryland settlement offering inspection and subsidised bonding [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "Whether the 2007 class is 'installed as of' or 'installed after' 5 Sept 2006 (trade press is inconsistent); case caption and court; first year of arc-resistant black-jacket CSST and whether it is exempt from separate bonding; market share by year."
+    },
+    {
+      "id": "uncoated-brass-gas-connector",
+      "name": "Old uncoated brass flexible gas appliance connector",
+      "category": "fire-safety",
+      "summary": "The flexible corrugated tube joining a gas range, dryer or water heater to the gas pipe. Older connectors made of uncoated brass have soldered end fittings that can crack or separate, especially when the appliance is moved, causing gas leaks, fires and explosions. CPSC says any uncoated brass connector should be replaced.",
+      "installed_from": null,
+      "installed_to": 1980,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "CPSC never gives a year. Its 1997 release says these 'have not been made for at least the past 10 years' (so before about 1987); a later CPSC publication says more than 30 years; a gas-utility page says more than 20. One CPSC document says they are found mostly with gas appliances 15+ years old (as of the late 1990s). 1980 is a rough midpoint, not a documented date. No start year found.",
+      "regions": "national",
+      "prevalence": "rare",
+      "prevalence_basis": "No count found. A connector is normally replaced with the appliance, so only homes with very old original gas appliances are likely to have one.",
+      "how_to_identify": "CPSC says do not move the appliance to look. If visible: a dull brass-coloured corrugated tube with no grey/yellow plastic coating; modern connectors are stainless steel or coated. Have a professional check.",
+      "risk": {
+        "safety": "Gas leak, fire or explosion; CPSC's 1997 warnings cite deaths and injuries (figures not seen this session).",
+        "financial": "Inexpensive part; the cost is the service call.",
+        "insurance_or_sale": "Routine inspection defect."
+      },
+      "fix": {
+        "what": "Have a qualified person fit a new stainless-steel or plastic-coated connector; never reuse a connector.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found this session."
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Newsroom/News-Releases/1997/CPSC-Warns-About-Dangerous-Flexible-Gas-Connectors-Used-on-Home-Appliances",
+          "publisher": "CPSC (1997)",
+          "supports": "uncoated brass connectors not made for at least 10 years; soldered joints fail; replace immediately [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.cpsc.gov/Newsroom/News-Releases/1997/CPSC-Urges-Consumers-to-Have-Flexible-Gas-Connectors-Checked",
+          "publisher": "CPSC (1997)",
+          "supports": "do not move appliance to check; have a professional inspect [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://webarchive.library.unt.edu/web/20120913080315/http://www.cpsc.gov/cpscpub/pubs/5135.pdf",
+          "publisher": "CPSC publication 5135 via UNT archive",
+          "supports": "later wording: not made for more than 30 years [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "Actual year manufacture stopped; incident counts; whether any formal recall (as opposed to warning) applied to particular brands."
+    },
+    {
+      "id": "smoke-alarms-by-era",
+      "name": "Smoke alarms: missing, battery-only, not interconnected, or over 10 years old",
+      "category": "code-milestone",
+      "summary": "What a house was built with depends on its year: none before the mid-1970s, a single hallway alarm after that, then hard-wired, then interconnected alarms in every bedroom with battery backup. Older houses are not automatically upgraded, and any alarm more than 10 years old should be replaced regardless.",
+      "installed_from": null,
+      "installed_to": 1993,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "Milestones seen this session, mostly from secondary sources that disagree: (a) 1973 - first required in a model code (ICBO Uniform Building Code, hallway outside bedrooms), with other model codes and the CABO One- and Two-Family Dwelling Code following 1975-76; NFPA 101 (1976) required them in homes. (b) Hard-wired in new construction - a home-inspector summary puts it at the 1979 UBC; Minnesota's state fire marshal page uses a 1989 cut-off for its own rules. (c) Every sleeping room and interconnection - one source says the BOCA/ICBO/SBCCI codes from 1988; a UBC summary says 1988 = every floor and 1991 = every sleeping room; NFPA 72 required bedrooms in 1993; a New Jersey municipality uses 1 May 1993 for hard-wired with battery backup in all bedrooms. So 'in bedrooms' is 1988-1993 depending on code family, plus local adoption lag. (d) Replace at 10 years - NFPA 72 from 1999 per one source. installed_to 1993 marks the last year a new house could plausibly have been built without bedroom alarms under a model code; local adoption could be later.",
+      "regions": "national; exact dates depend on which model code (UBC west, BOCA northeast/midwest, SBC south) and edition the state or city had adopted",
+      "prevalence": "likely",
+      "prevalence_basis": "Reasoning, not data: any house built before the early 1990s was built to a lesser standard than today's; whether it has since been upgraded is unknown. No survey figure was found this session.",
+      "how_to_identify": "Count them: one in each bedroom, one outside each sleeping area, one per level including basement. Press test on one - if all sound, they are interconnected. A unit with no wiring behind it is battery-only. Check the manufacture date on the back; over 10 years means replace.",
+      "risk": {
+        "safety": "Late or no warning of fire, especially with bedroom doors closed.",
+        "financial": "Low: alarms are cheap; hard-wiring an older house costs more, and wireless-interconnect alarms are an alternative.",
+        "insurance_or_sale": "Many states and cities require working alarms (some require 10-year sealed-battery units, e.g. California, Illinois, Maryland per a manufacturer's compliance guide) at sale or rental."
+      },
+      "fix": {
+        "what": "Add alarms to every bedroom, hallway and level; use interconnected (wired or wireless) units; replace any over 10 years old.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found this session."
+      },
+      "sources": [
+        {
+          "url": "https://wpiarchives.omeka.net/exhibits/show/duanepearsall/venturecapitalism/effectsregulation/codechanges",
+          "publisher": "Worcester Polytechnic Institute archives (Duane Pearsall exhibit)",
+          "supports": "ICBO UBC first model code to require detectors outside bedrooms; other codes 1975-76 [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.nist.gov/fire/history/driving-residential-smoke-alarm-adoption-1970s",
+          "publisher": "NIST",
+          "supports": "federal research role in 1970s residential smoke alarm adoption [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.mysmokealarm.org/smoke-alarm-history/",
+          "publisher": "mysmokealarm.org (advocacy site, weak)",
+          "supports": "NFPA 74 1973, NFPA 101 1976, model codes 1988 interconnect/bedrooms, NFPA 74 1989, NFPA 72 1993 bedrooms, 1999 ten-year replacement [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://dps.mn.gov/divisions/sfm/fire-code/fire-code-information-topic/smoke-alarm-requirements",
+          "publisher": "Minnesota State Fire Marshal",
+          "supports": "state requirements keyed to construction date (1989 cut-off) [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://activerain.com/blogsview/1025306/smoke-detector-requirements",
+          "publisher": "Home-inspector blog (weak)",
+          "supports": "UBC edition-by-edition summary: 1979 hard-wired, 1988 every floor, 1991 every sleeping room [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.iccsafe.org/building-safety-journal/press-releases/icc-commemorates-milestone-in-construction-codes/",
+          "publisher": "International Code Council",
+          "supports": "smoke alarms first required in the predecessor model codes in 1973 [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "The actual text of each UBC/BOCA/SBC/CABO edition for: hard-wiring, each-level, each-bedroom, interconnection and battery backup. Needs primary code books; this is the single most date-sensitive item I could not pin."
+    },
+    {
+      "id": "carbon-monoxide-alarms",
+      "name": "No carbon monoxide alarms (houses built before CO alarm rules)",
+      "category": "code-milestone",
+      "summary": "Carbon monoxide alarms were not part of model residential codes until the 2009 International Residential Code, which requires them in new homes that have fuel-burning appliances or an attached garage. Houses built before a state adopted that rule often have none unless a state law required a retrofit.",
+      "installed_from": null,
+      "installed_to": 2009,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "medium",
+      "date_notes": "A trade article states the CO alarm requirement was added in the 2009 IRC (section R315, from memory); later editions (2018, 2021) keep the trigger 'fuel-burning appliance or attached garage'. I could not read the 2009 text. Many states had their own statutes before or after 2009 and adopted the 2009 IRC on different dates, so the practical cut-off varies by state from roughly the mid-2000s to the mid-2010s.",
+      "regions": "national model code; state statutes vary (NCSL keeps the state list)",
+      "prevalence": "likely",
+      "prevalence_basis": "Reasoning: any house built before its state's adoption was built without CO alarms. NCSL says most states now have some CO detector requirement, many applying at sale or rental. No data on actual presence.",
+      "how_to_identify": "Look outside each sleeping area and on each level for a unit labelled 'carbon monoxide' or a combination smoke/CO alarm. CO alarms expire (commonly 5-10 years; see the date on the unit).",
+      "risk": {
+        "safety": "CO poisoning from furnaces, water heaters, fireplaces, generators or cars in attached garages.",
+        "financial": "Low: plug-in or battery units.",
+        "insurance_or_sale": "Often required at sale or in rentals under state law."
+      },
+      "fix": {
+        "what": "Install listed CO alarms outside each sleeping area and on every level.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found this session."
+      },
+      "sources": [
+        {
+          "url": "https://www.ncsl.org/environment-and-natural-resources/carbon-monoxide-detector-requirements-laws-and-regulations",
+          "publisher": "National Conference of State Legislatures",
+          "supports": "most states have CO detector requirements; scope varies [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.securitysales.com/ssi/fire-side-chat-more-of-what-you-need-to-know-about-co",
+          "publisher": "Security Sales & Integration (trade press)",
+          "supports": "CO alarm requirement added to the 2009 IRC; not all states adopted it [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.jaspector.com/codes/irc-2018/ch03-building-planning/carbon-monoxide-alarm-required-irc-2018/",
+          "publisher": "Jaspector (code explainer, weak)",
+          "supports": "IRC R315.1 trigger: fuel-burning appliance or attached garage [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "2009 IRC R315 wording from the primary text; a state-by-state effective-date table."
+    },
+    {
+      "id": "bedroom-egress-windows",
+      "name": "Bedroom windows too small or too high to escape through",
+      "category": "code-milestone",
+      "summary": "Modern codes require every bedroom (and habitable basement) to have a window or door big enough to climb out of and for a firefighter to enter. Houses built before these rules, and many basement bedrooms added later, have windows that are too small or too high off the floor.",
+      "installed_from": null,
+      "installed_to": 1976,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "medium",
+      "date_notes": "Uniform Building Code history from city/state handouts: no requirement in early editions; 1964 UBC - 5.0 sq ft net opening, 24 in. by 24 in. minimum, sill max 48 in.; 1976 UBC - 5.7 sq ft, 24 in. min height, 20 in. min width, sill max 44 in., which is essentially today's IRC rule (5.0 sq ft allowed at grade floor). Local adoption lagged: Sacramento used the 1976 UBC from July 1977, Fort Collins from Dec 1977, Minnesota from Sept 1978 (with a 48 in. sill amendment). I found nothing for the BOCA or Southern codes, so dates outside UBC states are unknown. installed_to 1976 = the edition in which the modern dimensions appeared.",
+      "regions": "national; dates shown are for Uniform Building Code jurisdictions (mostly western and some midwestern states)",
+      "prevalence": "possible",
+      "prevalence_basis": "No data. Pre-1964 houses had no rule; 1964-1976 houses met a slightly smaller rule. Basement bedrooms are the most common failure in any era.",
+      "how_to_identify": "Open the bedroom window fully and measure the clear opening: at least 24 in. high and 20 in. wide, 5.7 sq ft total (5.0 at ground floor), with the sill no more than 44 in. above the floor. Basement windows need a window well you can climb out of.",
+      "risk": {
+        "safety": "Occupants trapped in a bedroom fire; firefighters cannot enter.",
+        "financial": "Cutting in a basement egress window with a well is a substantial job.",
+        "insurance_or_sale": "A room without a compliant egress opening may not be countable as a bedroom in a listing or appraisal, depending on local rules."
+      },
+      "fix": {
+        "what": "Enlarge the window / add an egress window and well; existing houses are generally not required to upgrade unless altering or adding a bedroom.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found this session."
+      },
+      "sources": [
+        {
+          "url": "https://www.dli.mn.gov/sites/default/files/pdf/sbc_EgressDates.pdf",
+          "publisher": "Minnesota Department of Labor and Industry",
+          "supports": "egress requirements by code edition and Minnesota adoption date (1976 UBC effective 9/19/1978, 5.7 sq ft, 48 in. sill amendment) [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://dli.mn.gov/sites/default/files/pdf/fs-emergency-escapes-history.pdf",
+          "publisher": "Minnesota Department of Labor and Industry",
+          "supports": "history of emergency escape requirements; 1964 UBC not adopted in MN [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.washoecounty.gov/building/Files/washoe_co_window_egress_2012.pdf",
+          "publisher": "Washoe County, NV Building",
+          "supports": "1964 UBC: 48 in. sill, 5.0 sq ft, 24 in. x 24 in. [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.fcgov.com/building/files/emergency-escape-and-rescue-windows.pdf",
+          "publisher": "City of Fort Collins, CO",
+          "supports": "1976 UBC: 5.7 sq ft, 24 in. height, 20 in. width, 44 in. sill; in force 12/13/77-5/19/98 [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.cityofsacramento.gov/content/dam/portal/cdd/Building/Forms/CDD-0327_Window-Replacement-Guidelines.pdf",
+          "publisher": "City of Sacramento, CA",
+          "supports": "1976 UBC egress dimensions in force July 6, 1977 to Aug 15, 1983 [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "BOCA, SBC and CABO histories; intermediate UBC editions (1967-1973)."
+    },
+    {
+      "id": "garage-door-opener-no-auto-reverse",
+      "name": "Garage door opener without auto-reverse / photo-eye sensors",
+      "category": "code-milestone",
+      "summary": "Automatic garage door openers made before 1991 may not reverse when the closing door hits a person, and those made before 1993 lack the second safety system (photo-electric eyes or a sensing edge). Children have been killed by entrapment under closing doors.",
+      "installed_from": null,
+      "installed_to": 1992,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "Federal law (Consumer Product Safety Improvement Act of 1990) required openers manufactured on or after 1 January 1991 to meet UL 325's entrapment-protection requirements; CPSC codified this in 16 CFR Part 1211. Additional requirements for a secondary entrapment-protection device apply to openers manufactured on or after 1 January 1993 (CPSC final rule, December 1992). One 2004 CFR excerpt reads 'January 21, 1993', which looks like an extraction error but should be checked. Note this is the opener's manufacture date, not the house's build date; openers are often added or replaced later.",
+      "regions": "national",
+      "prevalence": "possible",
+      "prevalence_basis": "Typical opener life is 10-15 years (InterNACHI chart), so a pre-1993 opener still in service is unusual, but no survey figure was found.",
+      "how_to_identify": "Look for two small sensor 'eyes' about 6 in. off the floor on each side of the door opening; none means pre-1993 (or disabled). Check the date on the opener's label. Test: door should reverse on contact with a 2x4 laid flat on the floor.",
+      "risk": {
+        "safety": "Crushing or entrapment, mainly of children.",
+        "financial": "Cost of a new opener.",
+        "insurance_or_sale": "Routine home-inspection safety item."
+      },
+      "fix": {
+        "what": "Replace the opener with a current UL 325-compliant unit; do not try to retrofit very old units.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found this session."
+      },
+      "sources": [
+        {
+          "url": "https://www.cpsc.gov/Newsroom/News-Releases/1993/Safety-Commission-Publishes-Final-Rules-For-Automatic-Garage-Door-Openers",
+          "publisher": "CPSC (final rule release)",
+          "supports": "1 Jan 1991 UL 325 requirement; additional entrapment protection for openers made on/after 1 Jan 1993 [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.ecfr.gov/current/title-16/chapter-II/subchapter-B/part-1211/",
+          "publisher": "eCFR, 16 CFR Part 1211",
+          "supports": "safety standard for automatic residential garage door operators; applies to operators manufactured on or after 1 Jan 1993 [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.cpsc.gov/Newsroom/News-Releases/1992/Safety-Commission-Proposes-Rules-For-Automatic-Garage-Door-Openers",
+          "publisher": "CPSC (1992 proposal)",
+          "supports": "background to the 1993 requirements [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://ulse.org/wp-content/uploads/2025/05/Pilot_Impact_Assessment_of_UL_325.pdf",
+          "publisher": "UL Standards & Engagement",
+          "supports": "UL 325 revision of 31 Dec 1991 with effective date 1 Jan 1993 [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "CPSC death counts; exact wording of what the 1991 tier required versus the 1982 voluntary standard."
+    },
+    {
+      "id": "non-safety-glazing-pre-1977",
+      "name": "Ordinary (non-tempered) glass in doors, sliding doors and shower enclosures",
+      "category": "code-milestone",
+      "summary": "Before the federal safety glazing standard, patio doors, storm doors, glazed entry doors and tub/shower enclosures were often made with ordinary annealed glass, which breaks into large sharp shards. The CPSC standard (16 CFR Part 1201) applies to glazing made after 6 July 1977 for these products.",
+      "installed_from": null,
+      "installed_to": 1977,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "high",
+      "date_notes": "16 CFR 1201.7 sets the effective date as 6 July 1977 (rule published 6 January 1977, 42 FR 1427), with transition allowances for some pre-1977 stock through 5 July 1981. From memory, the covered products are storm/combination doors, doors, bathtub and shower doors and enclosures, and sliding glass (patio) doors, and many states had their own safety-glazing laws from the late 1960s and early 1970s; neither point was confirmed in what I could read. Building codes added further hazardous locations (glass near doors, floors, stairs, tubs) over later editions, so some locations in post-1977 houses can still be non-tempered.",
+      "regions": "national (federal rule); earlier state laws vary",
+      "prevalence": "likely",
+      "prevalence_basis": "Reasoning: a pre-1977 house that still has its original sliding door, storm door or shower enclosure plausibly has annealed glass, particularly if built before the state's own glazing law. No survey data found.",
+      "how_to_identify": "Look in each corner of the glass for a small etched or sand-blasted 'bug' naming the maker and 'tempered' or '16 CFR 1201' / 'ANSI Z97.1'. No mark on a door or shower panel in an older house suggests ordinary glass (laminated safety glass also carries a mark).",
+      "risk": {
+        "safety": "Severe lacerations from falls into or through the glass.",
+        "financial": "Replacing a patio door or shower enclosure, or applying an approved safety film as a lesser measure.",
+        "insurance_or_sale": "Inspectors commonly note missing safety-glazing marks in hazardous locations."
+      },
+      "fix": {
+        "what": "Replace with tempered or laminated safety glazing.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found this session."
+      },
+      "sources": [
+        {
+          "url": "https://www.ecfr.gov/current/title-16/chapter-II/subchapter-B/part-1201",
+          "publisher": "eCFR, 16 CFR Part 1201",
+          "supports": "safety standard for architectural glazing materials; applies to glazing manufactured after the effective date [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.customsmobile.com/regulations/16/1201.7",
+          "publisher": "16 CFR 1201.7 (mirror)",
+          "supports": "effective date 6 July 1977 and transition exceptions to 5 July 1981 [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/FR-2016-03-23/html/2016-06523.htm",
+          "publisher": "Federal Register (2016 amendment notice)",
+          "supports": "history: standard issued 6 Jan 1977 (42 FR 1427), amended 20 June 1977 [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "The 1201.1(a) product list from the primary text; state safety-glazing statute dates before 1977; code-edition history of 'hazardous locations'."
+    },
+    {
+      "id": "guard-baluster-spacing",
+      "name": "Stair and deck railings with wide gaps (pre-4-inch-sphere rule)",
+      "category": "code-milestone",
+      "summary": "Current codes require guards (railings on stairs, balconies, decks) to be built so a 4-inch sphere cannot pass through, to stop small children slipping through. Older houses were built to 6-inch or even 9-inch spacing rules, or none.",
+      "installed_from": null,
+      "installed_to": 1992,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "I found no primary source. Building-official forum recollections: older model codes allowed 9 in., then 6 in. from the mid/late 1980s, then 4 in.; BOCA adopted the 4-inch sphere in its 1990 edition; the 1992 CABO One and Two Family Dwelling Code is quoted (section R-214.2) as 4 in. with 6 in. allowed at the stair tread/riser/bottom-rail triangle, though another poster recalls 1992 CABO as 6 in.; and 'many jurisdictions never followed the 4-inch sphere till the mid-90s'. From memory the UBC moved 9 in. -> 6 in. in 1985 and -> 4 in. in 1991, unconfirmed. Today's IRC: 4 in., with 4 3/8 in. on the open side of stairs and 6 in. at the stair triangle.",
+      "regions": "national; date depends on model code family and local adoption",
+      "prevalence": "likely",
+      "prevalence_basis": "Reasoning: houses built before about 1990 with original railings were built to a wider rule. No survey data.",
+      "how_to_identify": "Measure the clear gap between balusters and under the bottom rail; anything over 4 in. (4 3/8 in. on stair sides) is below current standard. Also check guard height (36 in. minimum in current IRC).",
+      "risk": {
+        "safety": "Falls of small children through or under the guard.",
+        "financial": "Adding intermediate balusters or infill panels is usually modest; replacing a whole railing is more.",
+        "insurance_or_sale": "Frequently written up by home inspectors as a child-safety item; not normally a required retrofit."
+      },
+      "fix": {
+        "what": "Add balusters, cable/mesh or panel infill, or replace the guard.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found this session."
+      },
+      "sources": [
+        {
+          "url": "https://www.thebuildingcodeforum.com/forum/threads/history-and-meaning-of-the-4-inch-rule-for-guards-fences-etc.10472/latest",
+          "publisher": "The Building Code Forum (practitioner forum, weak)",
+          "supports": "9 in. -> 6 in. -> 4 in. sequence; BOCA 1990; slow local uptake [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.thebuildingcodeforum.com/forum/threads/1995-cabo.694/latest",
+          "publisher": "The Building Code Forum (weak)",
+          "supports": "1992 CABO R-214.2: 4 in. guard openings, 6 in. triangle (disputed in thread) [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://iccsafe.org/wp-content/uploads/ctc/Guard_CC_History.pdf",
+          "publisher": "International Code Council, Code Technology Committee",
+          "supports": "guard code-change history (indexed portion covers 2000 onward only) [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.jaspector.com/codes/irc-2018/ch03-building-planning/guard-height-baluster-spacing-irc-2018/",
+          "publisher": "Jaspector (code explainer, weak)",
+          "supports": "current IRC 4 in. sphere, 4 3/8 in. stair exception, 6 in. triangle [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "Edition-by-edition text for UBC, BOCA, SBC and CABO. Needs the legacy code books; evidence here is the weakest of the code milestones."
+    },
+    {
+      "id": "residential-fire-sprinklers",
+      "name": "Home fire sprinklers (required by model code since 2009 IRC, rarely adopted)",
+      "category": "code-milestone",
+      "summary": "The 2009 International Residential Code added a requirement for fire sprinklers in new one- and two-family homes from 1 January 2011 (townhouses earlier). Almost every state deleted the requirement when adopting the code, so most new houses still have none; California and Maryland (and Washington DC) are the notable exceptions.",
+      "installed_from": 2011,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "medium",
+      "date_notes": "The model-code date is well supported (ICC 2009 release: one- and two-family dwellings effective 1 Jan 2011; section R313 from memory). State adoption is contested: one source says California, Maryland and DC are the only jurisdictions with the requirement; a 2010-era ICC article also listed Pennsylvania, New Jersey and New Hampshire as adopting it, and Pennsylvania's was approved in Dec 2009 but (from memory) repealed by the legislature in 2011. An NAHB 2019 summary says almost all states have removed it. Some cities (e.g. Scottsdale AZ since the 1980s, from memory) have long required sprinklers locally. This is a 'present since' entry: installed_from is when a new house in an adopting state would have them.",
+      "regions": "California and Maryland statewide (new homes from 2011), Washington DC, plus scattered local ordinances",
+      "prevalence": "rare",
+      "prevalence_basis": "Outside adopting jurisdictions, sprinklers in single-family houses are uncommon; within California and Maryland a house built from 2011 on should have them. No national percentage was found.",
+      "how_to_identify": "Small sprinkler heads (often under flat white cover plates) in ceilings of every room; a riser with a gauge and flow switch near the water main or in the garage.",
+      "risk": {
+        "safety": "Benefit, not hazard. Absence means no automatic suppression.",
+        "financial": "Systems need little maintenance but freeze damage and accidental discharge are possible; painted or obstructed heads must be replaced.",
+        "insurance_or_sale": "Some insurers discount for sprinklers."
+      },
+      "fix": {
+        "what": "Not a retrofit most owners make; where present, keep the control valve open and heads unpainted.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found this session."
+      },
+      "sources": [
+        {
+          "url": "https://www.iccsafe.org/wp-content/uploads/news_release_links/0106-2009IRC.pdf",
+          "publisher": "International Code Council (2009 IRC news release)",
+          "supports": "sprinklers required in one- and two-family homes effective 1 January 2011 [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.nahb.org/-/media/NAHB/advocacy/docs/top-priorities/codes/fire-sprinklers/fire-sprinkler-state-adoption-2019.pdf",
+          "publisher": "National Association of Home Builders (2019; an opponent of the mandate)",
+          "supports": "almost all states removed the requirement; only two states plus DC enforce it [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://ohsonline.com/articles/2010/01/19/3-states-adopt-sprinkler-rules.aspx",
+          "publisher": "Occupational Health & Safety (2010)",
+          "supports": "early state adoptions including Pennsylvania's Dec 2009 approval [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://blog.qrfs.com/400-residential-fire-sprinkler-protection-codes-garages-other-exceptions/",
+          "publisher": "QRFS blog (vendor, weak)",
+          "supports": "California, Maryland and DC as the adopting jurisdictions [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "Current state-by-state status as of 2026; list of local ordinances with dates."
+    },
+    {
+      "id": "lifespan-asphalt-shingle-roof",
+      "name": "Asphalt shingle roof: expected life",
+      "category": "lifespan",
+      "summary": "Typical life about 20 years for basic 3-tab shingles and about 30 years for laminated ('architectural') shingles, less in hot, sunny or storm-prone climates. A roof at or past this age should be budgeted for replacement.",
+      "installed_from": null,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "medium",
+      "date_notes": "Sources agree within about 5 years for temperate climates; hot-climate figures are roughly a third shorter. Manufacturer 'lifetime' or '30-year' warranty labels are not service-life measurements.",
+      "regions": "national (climate shortens or lengthens life; see notes)",
+      "prevalence": "likely",
+      "prevalence_basis": "Typical life 20 years (3-tab) to 30 years (architectural), per InterNACHI's Standard Estimated Life Expectancy Chart as quoted by secondary sites; InterNACHI's Florida chart and an InterNACHI-attributed figure give about 14 years for 3-tab in hot climates versus 19+ in the Northeast. The NAHB/Bank of America 2007 study also covers roofing but its figure was not seen this session.",
+      "how_to_identify": "Curling, cracked or missing shingles, bald patches, granules in gutters; ask for the roof permit or installation date.",
+      "risk": {
+        "safety": "Generally none from age alone; see summary where failure has a safety side.",
+        "financial": "Full re-roof is one of the largest single maintenance costs of a house.",
+        "insurance_or_sale": "Insurers and buyers increasingly ask the age of the roof, water heater, HVAC and electrical panel; items past typical life are common negotiation points."
+      },
+      "fix": {
+        "what": "Re-roof (tear-off and replace).",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found this session."
+      },
+      "sources": [
+        {
+          "url": "https://www.nachi.org/life-expectancy.html",
+          "publisher": "InterNACHI Standard Estimated Life Expectancy Chart",
+          "supports": "3-tab about 20 years, architectural about 30 years (figures seen via third-party copies of the chart, not the chart itself) [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://nachi.org/florida-life-expectancy.htm",
+          "publisher": "InterNACHI Florida chart",
+          "supports": "shorter lives in hot, humid, coastal climate [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://standards.nsf.org/higherlogic/ws/public/download/348/NAHB 2007 StudyUseful Life of Home Components.pdf",
+          "publisher": "NAHB / Bank of America, Study of Life Expectancy of Home Components (Feb 2007)",
+          "supports": "existence and scope of the study; figures are averages (roof figure not seen) [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "Primary-chart confirmation of the 20/30 figures; a climate-zone adjustment table."
+    },
+    {
+      "id": "lifespan-water-heater-tank",
+      "name": "Tank water heater: expected life",
+      "category": "lifespan",
+      "summary": "Typical life about 10 to 15 years; hard water and lack of flushing shorten it. Failure usually means a leaking tank, which can cause significant water damage if the heater is in a finished area or attic.",
+      "installed_from": null,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "medium",
+      "date_notes": "Good agreement on 10-15 years.",
+      "regions": "national (climate shortens or lengthens life; see notes)",
+      "prevalence": "likely",
+      "prevalence_basis": "Typical life 10-15 years (US DOE Energy Saver: 'water heaters typically last about 10 to 15 years'). Consistent with: about 10 years in a Maine regulation appendix citing InterNACHI; 13 years effective useful life for electric storage heaters in NYSERDA's table (citing DEER 2014); median replacement interval 11.3 years in ServiceTitan contractor data. One third-party copy of an InterNACHI chart says '20+', which is an outlier.",
+      "how_to_identify": "The manufacture date is encoded in the serial number on the rating label (format varies by brand). Rust at the base, moisture in the pan, rumbling noises.",
+      "risk": {
+        "safety": "Generally none from age alone; see summary where failure has a safety side.",
+        "financial": "Replacement cost plus possible water damage from a burst tank.",
+        "insurance_or_sale": "Insurers and buyers increasingly ask the age of the roof, water heater, HVAC and electrical panel; items past typical life are common negotiation points."
+      },
+      "fix": {
+        "what": "Replace the heater; add a drain pan and, where required, expansion tank and seismic strapping.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found this session."
+      },
+      "sources": [
+        {
+          "url": "https://www.energy.gov/node/374245",
+          "publisher": "US Department of Energy, Energy Saver (URL is a node ID returned by search; exact page title not confirmed)",
+          "supports": "water heaters typically last about 10 to 15 years [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/Home-Energy-Savings/TRM-effective-useful-life-table.pdf",
+          "publisher": "NYSERDA effective useful life table",
+          "supports": "electric storage water heater 13 years (DEER 2014) [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.nachi.org/life-expectancy.html",
+          "publisher": "InterNACHI life expectancy chart",
+          "supports": "about 10 years conventional tank (as quoted in a Maine regulatory appendix); mineral content shortens life [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://servicetitan.com/toolbox/state-of-the-trades/trends/equipment-replacement-lifespan",
+          "publisher": "ServiceTitan (industry data)",
+          "supports": "median replacement interval 11.3 years [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "Which exact energy.gov page carries the 10-15 figure; gas versus electric difference."
+    },
+    {
+      "id": "lifespan-furnace",
+      "name": "Forced-air furnace: expected life",
+      "category": "lifespan",
+      "summary": "Typical life about 15 to 25 years for a gas furnace. Past that, heat-exchanger cracks (a carbon monoxide risk) and unavailable parts become more likely, and efficiency is well below current models.",
+      "installed_from": null,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "medium",
+      "date_notes": "Range across sources is 15-25 years with DOE-derived mean about 22.",
+      "regions": "national (climate shortens or lengthens life; see notes)",
+      "prevalence": "likely",
+      "prevalence_basis": "Typical life 15-25 years (InterNACHI standard chart: furnace 15 to 25). NYSERDA's effective-useful-life table lists 22 years for a residential gas furnace, citing US DOE technical support documents; NAHB 2007 is quoted by a third-party copy as 15-20; NYSERDA's consumer guide treats 15-20 years old as the point to consider upgrading.",
+      "how_to_identify": "Data plate inside the burner compartment door gives model/serial (date is often encoded in the serial). Rust, soot, yellow flame, frequent cycling.",
+      "risk": {
+        "safety": "Generally none from age alone; see summary where failure has a safety side.",
+        "financial": "Furnace replacement; emergency replacement in winter costs more.",
+        "insurance_or_sale": "Insurers and buyers increasingly ask the age of the roof, water heater, HVAC and electrical panel; items past typical life are common negotiation points."
+      },
+      "fix": {
+        "what": "Replace; have older units inspected annually meanwhile.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found this session."
+      },
+      "sources": [
+        {
+          "url": "https://www.nachi.org/life-expectancy.html",
+          "publisher": "InterNACHI Standard Estimated Life Expectancy Chart",
+          "supports": "furnace 15 to 25 years [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/Home-Energy-Savings/TRM-effective-useful-life-table.pdf",
+          "publisher": "NYSERDA effective useful life table (citing US DOE residential furnace TSD, 2016)",
+          "supports": "gas furnace 22 years [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/Home-Energy-Rating/heating-and-cooling-guide.pdf",
+          "publisher": "NYSERDA heating and cooling guide",
+          "supports": "consider upgrading heating equipment at 15-20 years [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "The DOE TSD lifetime distribution itself (not opened); boilers and oil furnaces separately."
+    },
+    {
+      "id": "lifespan-central-ac-heat-pump",
+      "name": "Central air conditioner / heat pump: expected life",
+      "category": "lifespan",
+      "summary": "Typical life about 10 to 15 years, shorter in hot or coastal climates where the unit runs most of the year and longer in mild ones. Units made before 2010 also use phased-out R-22 refrigerant (see separate entry).",
+      "installed_from": null,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "medium",
+      "date_notes": "Good agreement on 10-15, with some data to about 18-20 in mild climates (not sourced this session).",
+      "regions": "national (climate shortens or lengthens life; see notes)",
+      "prevalence": "likely",
+      "prevalence_basis": "Typical life 10-15 years (InterNACHI standard chart: heat pump 10 to 15; central AC 10-15 per a Maine regulatory appendix citing InterNACHI, 12-15 in a third-party copy). NYSERDA lists 15 years effective useful life for air-source heat pumps (DEER 2014) and says a maintained central AC 'can last up to 15 years'. ServiceTitan contractor data: median replacement interval 15.3 years for AC, 13.3 for heat pumps.",
+      "how_to_identify": "Data plate on the outdoor unit shows manufacture date and refrigerant type.",
+      "risk": {
+        "safety": "Generally none from age alone; see summary where failure has a safety side.",
+        "financial": "Replacement of the outdoor unit and usually the indoor coil; R-22 systems cannot simply be topped up cheaply.",
+        "insurance_or_sale": "Insurers and buyers increasingly ask the age of the roof, water heater, HVAC and electrical panel; items past typical life are common negotiation points."
+      },
+      "fix": {
+        "what": "Replace the system when it fails or repairs exceed its value.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found this session."
+      },
+      "sources": [
+        {
+          "url": "https://www.nachi.org/life-expectancy.html",
+          "publisher": "InterNACHI Standard Estimated Life Expectancy Chart",
+          "supports": "heat pump 10 to 15 years; central AC 10-15 (via copies) [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/Home-Energy-Savings/TRM-effective-useful-life-table.pdf",
+          "publisher": "NYSERDA effective useful life table",
+          "supports": "air-source heat pump 15 years (DEER 2014) [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://servicetitan.com/toolbox/state-of-the-trades/trends/equipment-replacement-lifespan",
+          "publisher": "ServiceTitan (industry data)",
+          "supports": "median replacement interval 15.3 years AC, 13.3 years heat pumps [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "US DOE central AC/heat pump TSD lifetime (not found); climate-zone breakdown."
+    },
+    {
+      "id": "lifespan-windows",
+      "name": "Windows: expected life",
+      "category": "lifespan",
+      "summary": "Roughly 15 to 30+ years depending on frame material and exposure; the sealed insulating-glass units often fail (fogging between panes) before the frames do. This is the lifespan entry with the weakest evidence in this pass.",
+      "installed_from": null,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "No authoritative figure confirmed this session; the range is from memory.",
+      "regions": "national (climate shortens or lengthens life; see notes)",
+      "prevalence": "likely",
+      "prevalence_basis": "Typical life roughly 15-30+ years, but NO figure was actually seen this session: searches returned only a table-of-contents fragment from the NAHB 2007 study showing '15' beside 'Windows and Skylights' without context. From memory (unverified), the NAHB study and InterNACHI chart give about 15-20 years for aluminium, 20-40 for vinyl, and 30+ for wood windows. Treat as unconfirmed.",
+      "how_to_identify": "Fogging or condensation between panes, rotted sills, failed balances, drafts. Some insulating-glass spacers carry a stamped manufacture date.",
+      "risk": {
+        "safety": "Generally none from age alone; see summary where failure has a safety side.",
+        "financial": "Whole-house window replacement is expensive; single failed glass units can be replaced individually.",
+        "insurance_or_sale": "Insurers and buyers increasingly ask the age of the roof, water heater, HVAC and electrical panel; items past typical life are common negotiation points."
+      },
+      "fix": {
+        "what": "Replace failed insulating-glass units or whole windows.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found this session."
+      },
+      "sources": [
+        {
+          "url": "https://standards.nsf.org/higherlogic/ws/public/download/348/NAHB 2007 StudyUseful Life of Home Components.pdf",
+          "publisher": "NAHB / Bank of America, Study of Life Expectancy of Home Components (Feb 2007)",
+          "supports": "study includes a windows and skylights section (figures not seen) [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.nachi.org/life-expectancy.html",
+          "publisher": "InterNACHI Standard Estimated Life Expectancy Chart",
+          "supports": "chart has a windows section (figures not seen) [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "All actual figures by frame type; insulating-glass seal life as a separate number."
+    },
+    {
+      "id": "lifespan-garage-door-opener",
+      "name": "Garage door opener: expected life",
+      "category": "lifespan",
+      "summary": "Typical life about 10 to 15 years. An opener made before 1993 also lacks required safety sensors (see separate entry) and should be replaced regardless of whether it still works.",
+      "installed_from": null,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "medium",
+      "date_notes": "Single source seen; consistent with general expectation.",
+      "regions": "national (climate shortens or lengthens life; see notes)",
+      "prevalence": "likely",
+      "prevalence_basis": "Typical life 10-15 years (InterNACHI Standard Estimated Life Expectancy Chart: 'Garage Door Openers 10 to 15'; quality and frequency of use affect it).",
+      "how_to_identify": "Date on the label of the motor unit; presence of photo-eye sensors near the floor.",
+      "risk": {
+        "safety": "Generally none from age alone; see summary where failure has a safety side.",
+        "financial": "Modest replacement cost.",
+        "insurance_or_sale": "Insurers and buyers increasingly ask the age of the roof, water heater, HVAC and electrical panel; items past typical life are common negotiation points."
+      },
+      "fix": {
+        "what": "Replace the opener.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found this session."
+      },
+      "sources": [
+        {
+          "url": "https://www.nachi.org/life-expectancy.html",
+          "publisher": "InterNACHI Standard Estimated Life Expectancy Chart",
+          "supports": "garage door openers 10 to 15 years [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "A second independent source (NAHB figure not seen)."
+    },
+    {
+      "id": "lifespan-electrical-panel",
+      "name": "Electrical service panel and breakers: expected life",
+      "category": "lifespan",
+      "summary": "No authoritative published service life was found. Contractor rule of thumb is about 25 to 40 years for a panel and 30 to 40 for breakers, but breakers are rated in operating cycles, not years. Specific problem brands (covered in the electrical domain) matter far more than age.",
+      "installed_from": null,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "No authoritative source; range is trade rule of thumb and sources vary from 20 to 60 years.",
+      "regions": "national (climate shortens or lengthens life; see notes)",
+      "prevalence": "likely",
+      "prevalence_basis": "Typical life roughly 25-40 years by contractor rule of thumb only. No NEMA, CPSC, UL or InterNACHI figure was confirmed this session: contractor and supplier sites say breakers 30-40 years and panels 25-40 (one says 20-30); one site attributes '35 years' for breakers to CPSC, which I could not trace; an engineer quoted on a trade forum says he knows of no research defining breaker service life. From memory, the InterNACHI chart lists a longer figure for service panels (about 60 years) - unverified.",
+      "how_to_identify": "Panel label and inspection sticker dates; rust, scorch marks, warm breakers, buzzing; fuses instead of breakers; brand name on the door.",
+      "risk": {
+        "safety": "Generally none from age alone; see summary where failure has a safety side.",
+        "financial": "Panel replacement, sometimes with a service upgrade.",
+        "insurance_or_sale": "Insurers and buyers increasingly ask the age of the roof, water heater, HVAC and electrical panel; items past typical life are common negotiation points."
+      },
+      "fix": {
+        "what": "Have an electrician evaluate; replace if damaged, obsolete or a known-defective brand.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found this session."
+      },
+      "sources": [
+        {
+          "url": "https://forums.mikeholt.com/threads/what-is-known-about-molded-case-circuit-breaker-life-expectancy.114292/latest",
+          "publisher": "Mike Holt forum (practitioner forum, weak)",
+          "supports": "no known research defining molded-case breaker service life [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.se.com/us/en/faqs/FA228296",
+          "publisher": "Schneider Electric FAQ (manufacturer)",
+          "supports": "manufacturer statement on breaker life expectancy (content not seen; appeared in results) [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://ajlongelectric.com/blog/how-long-do-electrical-panels-last",
+          "publisher": "Electrical contractor blog (weak, sells the fix)",
+          "supports": "panels 25-40 years rule of thumb [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "Any standards-body or manufacturer figure in years; the InterNACHI chart's electrical rows."
+    },
+    {
+      "id": "lifespan-well-pump",
+      "name": "Well pump: expected life",
+      "category": "lifespan",
+      "summary": "Submersible well pumps commonly last around 8 to 15 years, with wide variation from water quality, sediment and how often the pump cycles. No authoritative source was found, only pump sellers and service companies.",
+      "installed_from": null,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "low",
+      "date_notes": "No authoritative source; commercial sources range 7 to 30 years.",
+      "regions": "national (climate shortens or lengthens life; see notes)",
+      "prevalence": "likely",
+      "prevalence_basis": "Typical life about 8-15 years per commercial pump retailers and well-service companies (one: 10-15 years for 3-wire, 8-13 for 2-wire residential pumps). An 'industry average of about 7 years' is repeated without a source; installers anecdotally report 20-30 years. No university extension, NGWA or government figure was found this session.",
+      "how_to_identify": "Pump is down the well and cannot be seen; check the well log or installer's tag on the pressure tank or control box for dates. Symptoms: short cycling, low pressure, air spitting, high electric bills.",
+      "risk": {
+        "safety": "Generally none from age alone; see summary where failure has a safety side.",
+        "financial": "Pump pulling and replacement; loss of water with no warning.",
+        "insurance_or_sale": "Insurers and buyers increasingly ask the age of the roof, water heater, HVAC and electrical panel; items past typical life are common negotiation points."
+      },
+      "fix": {
+        "what": "Replace pump (and often pressure tank/controls) when it fails.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": null,
+        "cost_source": "No credible figure found this session."
+      },
+      "sources": [
+        {
+          "url": "https://www.rcworst.com/blog/How-Long-Should-My-Submersible-Well-Pump-Last",
+          "publisher": "R.C. Worst & Co. (pump retailer, weak)",
+          "supports": "8-15 year ranges by pump type; cycling shortens life [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://thedriller.com/articles/88374-let-me-tell-ya-finally-last-thoughts-about-older-submersibles",
+          "publisher": "The Driller (trade magazine)",
+          "supports": "practitioner commentary on life of older submersibles (content not examined) [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "Any authoritative figure (NGWA, extension service, manufacturer warranty data); jet pumps versus submersibles."
+    },
+    {
+      "id": "lifespan-septic-system",
+      "name": "Septic system: expected life",
+      "category": "lifespan",
+      "summary": "EPA puts the average life of a septic system at 15 to 40 years, longer if well maintained; the drainfield is usually what fails. Failure can mean sewage backing up or surfacing in the yard and a five-figure replacement.",
+      "installed_from": null,
+      "installed_to": null,
+      "peak_from": null,
+      "peak_to": null,
+      "date_confidence": "medium",
+      "date_notes": "Single authoritative range, very wide (15-40).",
+      "regions": "national (climate shortens or lengthens life; see notes)",
+      "prevalence": "likely",
+      "prevalence_basis": "Typical life 15-40 years (US EPA homebuyer's guide to septic systems: 'average lifespan of a septic system is 15 to 40 years, but it can last longer if properly maintained'). EPA says life depends on materials, design, installation, soil and maintenance, and recommends inspection every 3-5 years.",
+      "how_to_identify": "County health department permit records give the install date and layout. Warning signs: slow drains, sewage odour, wet or unusually green ground over the drainfield.",
+      "risk": {
+        "safety": "Generally none from age alone; see summary where failure has a safety side.",
+        "financial": "EPA: repairing or replacing a malfunctioning conventional system can cost $5,000 to $15,000, versus $250-$500 for pumping every three to five years. Mound or aerobic systems cost more.",
+        "insurance_or_sale": "Insurers and buyers increasingly ask the age of the roof, water heater, HVAC and electrical panel; items past typical life are common negotiation points."
+      },
+      "fix": {
+        "what": "Pump and inspect regularly; replace the drainfield or whole system on failure.",
+        "cost_low_usd": 5000,
+        "cost_high_usd": 15000,
+        "cost_year": null,
+        "cost_source": "US EPA, 'Why Maintain Your Septic System' (figure seen as a search extract; the page's own cost year is not stated, so cost_year is null)"
+      },
+      "sources": [
+        {
+          "url": "https://www.epa.gov/sites/default/files/2017-08/documents/170803-homebuyerssepticguidebrochurelayout_508c.pdf",
+          "publisher": "US EPA, New Homebuyer's Guide to Septic Systems (2017)",
+          "supports": "average lifespan 15 to 40 years; inspect every 3-5 years [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        },
+        {
+          "url": "https://www.epa.gov/septic/why-maintain-your-septic-system",
+          "publisher": "US EPA",
+          "supports": "replacement $5,000-$15,000 conventional; maintenance $250-$500 every 3-5 years; factors affecting life [seen only as a search-engine extract this session; page could not be opened]",
+          "verified": false
+        }
+      ],
+      "open_questions": "Separate lives for tank (by material) and drainfield; regional cost variation."
+    }
+  ],
+  "feasibility_notes": "Mixed. (1) Recalls and federal rules are highly feasible: CPSC notices and the CFR give exact dates, unit counts and identification marks (Consolidated furnaces 1983-1994, Cadet heaters, HTPV vent pipe, garage door openers 1 Jan 1991 / 1 Jan 1993, safety glazing 6 July 1977, R-22 1 Jan 2010 / 1 Jan 2020, sprinklers 1 Jan 2011). Even so, CPSC's own releases disagree with each other on year ranges and counts, so a second pass must read the notices, not summaries. (2) Building-code milestones are the hard part: smoke alarms, egress windows, baluster spacing and chimney liners changed edition by edition in three or four competing model codes (UBC, BOCA, SBC, CABO) and then took effect locally years later. Free online evidence is mostly municipal handouts (good, but UBC-only) and practitioner forum recollections (weak). A reliable product needs the legacy code books or ICC's archive, and should present these as 'model code year, your jurisdiction may be later' rather than a single year. Baluster spacing and chimney liners have the thinnest evidence; I could not pin a liner date at all. (3) Prevalence is almost never quantified: recalls give unit counts but no surviving population; code items have no survey of actual presence. Nearly all prevalence values here are reasoning, and say so. (4) Lifespans: EPA (septic) and DOE (water heater) give usable figures; furnace and AC are reasonably triangulated (InterNACHI, NYSERDA/DOE, contractor data); windows, electrical panels and well pumps have no authoritative figure I could find. The two obvious sources, InterNACHI's chart and the NAHB 2007 study, were visible only in fragments. (5) Costs: almost nothing credible; left null except EPA's septic range, a 2011 newspaper oil-tank figure and 2007 settlement voucher values. (6) The decisive limitation of this pass is that page fetching was blocked by the session network policy, so zero sources are verified. A second pass needs cpsc.gov, epa.gov, ecfr.gov, energy.gov, nachi.org, iccsafe.org, ncsl.org, nist.gov, govinfo.gov and state .gov hosts allowed, after which most of the recall/federal-rule entries could be verified in an hour.",
+  "missed": [
+    "Other CPSC furnace/boiler/heater recalls with year ranges (e.g. Lennox Pulse furnaces, various wall-furnace and boiler recalls) - not researched",
+    "Water heaters: flammable-vapor-ignition-resistant (FVIR) design from about 2003, missing temperature/pressure relief valves and discharge pipes, seismic strapping (California)",
+    "Recalled smoke/CO alarms and ionization-versus-photoelectric debate",
+    "Recalled dehumidifiers, dishwashers, ranges (anti-tip brackets) and other appliance recalls",
+    "Dryer venting (plastic/foil flex duct), unvented gas heaters, vent-free fireplaces",
+    "Zero-clearance fireplace and wood-stove clearances; factory-built chimney recalls",
+    "Asbestos-cement (transite) flue pipe - belongs with hazmat domain",
+    "Electric baseboard and radiant ceiling heat panels (some recalled 1980s-90s)",
+    "Aboveground/basement oil tank lifespan and single-wall copper oil line issues",
+    "Handrail graspability, stair rise/run and guard-height changes by code edition",
+    "AFCI/GFCI milestones (electrical domain)",
+    "Lifespans for boilers, tankless water heaters, architectural versus other roof types, pressure tanks, garage doors",
+    "State-by-state CO alarm and sealed-battery smoke alarm statute dates"
+  ]
+}
