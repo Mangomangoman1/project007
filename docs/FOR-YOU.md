@@ -11,6 +11,15 @@ Kept up to date as the build goes. Nothing here blocks tonight's work unless mar
       whether to add test-kit and inspector referrals.
 
 ## Things only you can do
+- [ ] **Contact email.** The corrections, privacy and about pages show "a contact address will be
+      listed here shortly" until you give me one (ideally at yearbuilt.house). One setting to add.
+- [ ] **Expert review.** Find a licensed home inspector to review at least the "check first"
+      issues. The about page says plainly that no inspector has reviewed the content yet; I'll
+      update that sentence and credit them when it's done. Launch is fine before this; promoting
+      the site widely is better after.
+- [ ] **Google Search Console.** After launch: verify yearbuilt.house and submit
+      `https://yearbuilt.house/sitemap.xml`. Needs your Google account.
+- The site stays anonymous for now, as you asked: no names anywhere.
 - [ ] **Check your DataForSEO account.** One query earlier returned a notice that the account was
       "temporarily paused" for unusual activity. Later queries worked, but confirm it's in good
       standing.
