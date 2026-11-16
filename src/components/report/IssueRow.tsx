@@ -88,7 +88,7 @@ export function IssueRow({ issue, year, index, open = false }: IssueRowProps) {
       </details>
 
       <div className={styles.aside}>
-        <IssueBand issue={issue} year={year} />
+        <IssueBand issue={issue} year={year} axis />
         <p className={styles.years}>
           <span>{yearsLabel(issue)}</span>
           {peak ? <span className={core ? styles.peakOn : styles.peak}>{core ? `${year} is in the peak years` : peak}</span> : null}

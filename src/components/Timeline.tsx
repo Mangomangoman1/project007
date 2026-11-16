@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useId, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react';
 import type { Issue } from '@/lib/types';
 import { CATEGORIES } from '@/lib/labels';
 import { appliesTo, inState } from '@/lib/select';
@@ -70,15 +70,26 @@ export function Timeline({
   const plotRef = useRef<HTMLDivElement>(null);
   const drag = useRef<{ id: number; x0: number; y0: number; active: boolean; touch: boolean } | null>(null);
   const [dragging, setDragging] = useState(false);
+  const [width, setWidth] = useState(1000);
+
+  useEffect(() => {
+    const el = plotRef.current;
+    if (!el || typeof ResizeObserver === 'undefined') return;
+    const ro = new ResizeObserver(([entry]) => setWidth(entry.contentRect.width || 1000));
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
 
   /* ---- static layout: lanes, rows, geometry (independent of the selected year) ---- */
   const layout = useMemo(() => {
-    let y = dims.axis;
-    const lanes = CATEGORIES.map((cat) => {
+    type Lane = { cat: (typeof CATEGORIES)[number]; top: number; height: number; bands: { issue: TimelineIssue; geom: ReturnType<typeof bandGeom>; y: number }[] };
+    const lanes: Lane[] = [];
+    let cursor = dims.axis;
+    for (const cat of CATEGORIES) {
       const items = issues.filter((i) => i.category === cat.id);
-      if (items.length === 0) return null;
+      if (items.length === 0) continue;
       const { rows, rowOf } = packRows(items, domain);
-      const top = y;
+      const top = cursor;
       const bandsTop = top + dims.laneLabel;
       const bands = items.map((issue) => ({
         issue,
@@ -86,10 +97,10 @@ export function Timeline({
         y: bandsTop + rowOf.get(issue)! * (dims.band + dims.rowGap),
       }));
       const height = dims.laneLabel + rows * (dims.band + dims.rowGap) - dims.rowGap;
-      y = top + height + dims.laneGap;
-      return { cat, top, height, bands };
-    }).filter((l): l is NonNullable<typeof l> => l !== null);
-    return { lanes, height: y - dims.laneGap + dims.bottom };
+      cursor = top + height + dims.laneGap;
+      lanes.push({ cat, top, height, bands });
+    }
+    return { lanes, height: cursor - dims.laneGap + dims.bottom };
   }, [issues, domain, dims]);
 
   const ticks = useMemo(() => decades(domain), [domain]);
@@ -162,6 +173,9 @@ export function Timeline({
   };
 
   const linePct = pctMid(year, domain);
+  // Hide decade labels the year tag would sit on top of (tag ~44px wide, label ~30px).
+  const pxPerYear = width / (max + 1 - min);
+  const tickCovered = (t: number) => Math.abs(t - (year + 0.5)) * pxPerYear < 42;
   const tagAlign = linePct < 6 ? 'start' : linePct > 94 ? 'end' : 'center';
   const valueText = `${year}${describe ? `: ${describe(year)}` : `: ${litCount} issues apply`}`;
 
@@ -233,7 +247,7 @@ export function Timeline({
                 key={t}
                 x={`${pctMid(t - 0.5, domain)}%`}
                 y={dims.axis - 12}
-                className={`${styles.tick} ${t % 20 !== 0 ? styles.tickMinor : ''}`}
+                className={`${styles.tick} ${t % 20 !== 0 ? styles.tickMinor : ''} ${tickCovered(t) ? styles.tickHidden : ''}`}
                 textAnchor={t === ticks[0] && pctMid(t - 0.5, domain) < 2 ? 'start' : 'middle'}
               >
                 {t}
@@ -255,7 +269,7 @@ export function Timeline({
                   const on = appliesTo(issue, year);
                   const ghost = !inState(issue, state);
                   const tone = ghost ? 'ghost' : on ? (issue.priority === 1 ? 'accent' : 'lit') : 'dim';
-                  const cls = [styles.band, styles[`tone_${tone}`], issue.kind === 'missing' ? styles.missing : ''].join(' ');
+                  const cls = [styles.band, styles[`tone_${tone}`], issue.kind === 'missing' ? styles.missing : '', geom.coreX === null ? styles.noCore : ''].join(' ');
                   return (
                     <g key={issue.id} className={cls} style={{ '--i': i } as React.CSSProperties}>
                       <title>{`${issue.title} · ${geom.label}`}</title>
@@ -266,10 +280,17 @@ export function Timeline({
                           width={`${geom.w}%`}
                           y={y}
                           height={dims.band}
-                          fill={issue.kind === 'missing' ? `url(#${uid}-hatch-${tone})` : undefined}
+                          style={issue.kind === 'missing' ? { fill: `url(#${uid}-hatch-${tone})` } : undefined}
                         />
                         {geom.coreX !== null && geom.coreW !== null && (
-                          <rect className={styles.core} x={`${geom.coreX}%`} width={`${geom.coreW}%`} y={y} height={dims.band} />
+                          <rect
+                            className={styles.core}
+                            x={`${geom.coreX}%`}
+                            width={`${geom.coreW}%`}
+                            y={y}
+                            height={dims.band}
+                            style={issue.kind === 'missing' ? { fill: `url(#${uid}-hatch-${tone})` } : undefined}
+                          />
                         )}
                       </g>
                       {geom.sharpStart && <line className={styles.cap} x1={`${geom.x}%`} x2={`${geom.x}%`} y1={y - 2.5} y2={y + dims.band + 2.5} />}

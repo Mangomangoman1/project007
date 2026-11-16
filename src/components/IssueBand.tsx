@@ -34,7 +34,7 @@ export function IssueBand({ issue, year, axis = false, accent = true, idPrefix =
   const bh = 8;
   return (
     <svg
-      className={`${styles.band} ${styles[`tone_${tone}`]} ${issue.kind === 'missing' ? styles.missing : ''} ${className ?? ''}`}
+      className={`${styles.band} ${styles[`tone_${tone}`]} ${issue.kind === 'missing' ? styles.missing : ''} ${g.coreX === null ? styles.noCore : ''} ${className ?? ''}`}
       width="100%"
       height={H}
       aria-hidden="true"
@@ -59,8 +59,10 @@ export function IssueBand({ issue, year, axis = false, accent = true, idPrefix =
           <line key={t} className={styles.tickLine} x1={`${pctMid(t - 0.5, d)}%`} x2={`${pctMid(t - 0.5, d)}%`} y1={by + bh / 2 - (t % 50 === 0 ? 4 : 2)} y2={by + bh / 2 + (t % 50 === 0 ? 4 : 2)} />
         ))}
       <g mask={`url(#${id}-m)`}>
-        <rect className={styles.body} x={`${g.x}%`} width={`${g.w}%`} y={by} height={bh} fill={issue.kind === 'missing' ? `url(#${id}-h)` : undefined} />
-        {g.coreX !== null && g.coreW !== null && <rect className={styles.core} x={`${g.coreX}%`} width={`${g.coreW}%`} y={by} height={bh} />}
+        <rect className={styles.body} x={`${g.x}%`} width={`${g.w}%`} y={by} height={bh} style={issue.kind === 'missing' ? { fill: `url(#${id}-h)` } : undefined} />
+        {g.coreX !== null && g.coreW !== null && (
+          <rect className={styles.core} x={`${g.coreX}%`} width={`${g.coreW}%`} y={by} height={bh} style={issue.kind === 'missing' ? { fill: `url(#${id}-h)` } : undefined} />
+        )}
       </g>
       {g.sharpStart && <line className={styles.cap} x1={`${g.x}%`} x2={`${g.x}%`} y1={by - 3} y2={by + bh + 3} />}
       {g.sharpEnd && <line className={styles.cap} x1={`${g.x + g.w}%`} x2={`${g.x + g.w}%`} y1={by - 3} y2={by + bh + 3} />}

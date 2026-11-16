@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { MAX_YEAR, MIN_YEAR } from '@/lib/site';
 import styles from './YearInput.module.css';
 
@@ -22,12 +22,11 @@ export function YearInput({ year, onChange, onSubmit, id = 'year-input', label =
   const [draft, setDraft] = useState(String(year));
   const [focused, setFocused] = useState(false);
 
-  useEffect(() => {
-    if (!focused) setDraft(String(year));
-  }, [year, focused]);
+  // While editing show the draft; otherwise always show the committed year.
+  const shown = focused ? draft : String(year);
 
   const valid = (s: string) => /^\d{4}$/.test(s) && Number(s) >= MIN_YEAR && Number(s) <= MAX_YEAR;
-  const invalid = draft.length === 4 && !valid(draft);
+  const invalid = focused && draft.length === 4 && !valid(draft);
   const step = (n: number) => onChange(Math.min(MAX_YEAR, Math.max(MIN_YEAR, year + n)));
   const age = MAX_YEAR - year;
 
@@ -45,17 +44,16 @@ export function YearInput({ year, onChange, onSubmit, id = 'year-input', label =
           autoComplete="off"
           pattern="[0-9]{4}"
           maxLength={4}
-          value={draft}
+          value={shown}
           aria-invalid={invalid || undefined}
           aria-describedby={`${id}-hint`}
           onFocus={(e) => {
             setFocused(true);
-            e.currentTarget.select();
-          }}
-          onBlur={() => {
-            setFocused(false);
             setDraft(String(year));
+            const el = e.currentTarget;
+            requestAnimationFrame(() => el.select());
           }}
+          onBlur={() => setFocused(false)}
           onChange={(e) => {
             const v = e.target.value.replace(/\D/g, '').slice(0, 4);
             setDraft(v);

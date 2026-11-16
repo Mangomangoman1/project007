@@ -1,0 +1,314 @@
+.root {
+  --cols: minmax(0, 1.5fr) minmax(0, 2fr) 5.5rem 5.5rem;
+  display: grid;
+  gap: var(--s-5);
+}
+
+/* summary counters as a title-block strip */
+.summary {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border: var(--hair) solid var(--rule-strong);
+}
+.summary > div {
+  padding: var(--s-3) var(--s-4);
+  border-right: var(--hair) solid var(--rule);
+  display: grid;
+  gap: var(--s-1);
+}
+.summary > div:last-child {
+  border-right: 0;
+}
+.summary dt {
+  font-family: var(--font-mono);
+  font-size: var(--t-2xs);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.summary dd {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--t-xl);
+  line-height: 1;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-variation-settings: 'opsz' 144;
+}
+.sumOn dd {
+  color: var(--line);
+}
+.howto {
+  font-size: var(--t-sm);
+  color: var(--ink-2);
+}
+
+/* chart header */
+.chartHead {
+  display: grid;
+  grid-template-columns: var(--cols);
+  gap: var(--s-4);
+  align-items: end;
+  font-family: var(--font-mono);
+  font-size: var(--t-2xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  padding-bottom: var(--s-2);
+  border-bottom: var(--hair) solid var(--rule-strong);
+  margin-bottom: calc(var(--s-5) * -1 + var(--s-2));
+}
+.axis {
+  position: relative;
+  height: 2.4rem;
+}
+.tick {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+  letter-spacing: 0;
+}
+.tick:first-child {
+  transform: none;
+}
+.ageTag {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  padding: 1px 6px;
+  background: var(--ink);
+  color: var(--paper);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  border-radius: 1px;
+}
+.headLife,
+.headStatus {
+  text-align: right;
+}
+
+/* groups */
+.group {
+  display: grid;
+  gap: var(--s-2);
+}
+.groupHead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s-3);
+  padding-top: var(--s-4);
+}
+.groupHead h3 {
+  font-size: var(--t-md);
+  font-weight: 500;
+  font-family: var(--font-sans);
+  letter-spacing: 0;
+}
+summary.groupHead {
+  cursor: pointer;
+}
+summary.groupHead:hover h3 {
+  text-decoration: underline;
+}
+.groupCount {
+  font-family: var(--font-mono);
+  font-size: var(--t-xs);
+  color: var(--ink-3);
+}
+.blurb {
+  font-size: var(--t-sm);
+  color: var(--ink-2);
+  max-width: 44rem;
+}
+.rows {
+  list-style: none;
+  border-top: var(--hair) solid var(--rule);
+}
+
+/* row */
+.row {
+  display: grid;
+  grid-template-columns: var(--cols);
+  gap: 0 var(--s-4);
+  align-items: stretch;
+  border-bottom: var(--hair) solid var(--rule);
+  transition: background-color var(--dur-fast) var(--ease);
+}
+.row:hover {
+  background: color-mix(in srgb, var(--paper-2) 60%, transparent);
+}
+.name {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s-3);
+  padding: var(--s-2) 0;
+  cursor: pointer;
+  min-width: 0;
+}
+.name .check {
+  margin-top: 2px;
+}
+.name > span {
+  display: grid;
+  min-width: 0;
+}
+.title {
+  font-size: var(--t-sm);
+  font-weight: 500;
+  line-height: 1.35;
+}
+.zone {
+  font-family: var(--font-mono);
+  font-size: var(--t-2xs);
+  color: var(--ink-3);
+  letter-spacing: 0.03em;
+}
+.note {
+  margin-top: var(--s-1);
+  font-size: var(--t-sm);
+  line-height: 1.45;
+  color: var(--ink-2);
+}
+.track {
+  position: relative;
+  min-height: 2.25rem;
+  background-image: linear-gradient(var(--rule), var(--rule));
+  background-size: 100% 1px;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+}
+.range {
+  position: absolute;
+  top: 50%;
+  height: 8px;
+  margin-top: -4px;
+  background: var(--band);
+  opacity: 0.35;
+  border-radius: 1px;
+}
+.range[data-clipped] {
+  -webkit-mask-image: linear-gradient(90deg, #000 80%, transparent);
+  mask-image: linear-gradient(90deg, #000 80%, transparent);
+}
+.st_due .range {
+  opacity: 1;
+}
+.st_soon .range {
+  opacity: 0.6;
+}
+.st_past .range {
+  background: var(--ink-3);
+  opacity: 0.45;
+}
+.ageLine {
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  border-left: 1.5px solid var(--ink);
+}
+.life {
+  align-self: center;
+  text-align: right;
+  font-family: var(--font-mono);
+  font-size: var(--t-xs);
+  color: var(--ink-2);
+  white-space: nowrap;
+}
+.status {
+  align-self: center;
+  text-align: right;
+  font-family: var(--font-mono);
+  font-size: var(--t-xs);
+  font-weight: 500;
+  white-space: nowrap;
+  color: var(--ink-2);
+}
+.st_due .status {
+  color: var(--line);
+}
+.st_past .status {
+  color: var(--ink);
+}
+
+.more > summary {
+  display: inline-block;
+  margin-top: var(--s-2);
+  font-family: var(--font-mono);
+  font-size: var(--t-xs);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--line);
+  padding: var(--s-2) 0;
+}
+.more > summary:hover {
+  color: var(--ink);
+}
+.more[open] > summary {
+  display: none;
+}
+
+.replaced .replacedList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2) var(--s-5);
+}
+.replacedList label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  font-size: var(--t-sm);
+  color: var(--ink-3);
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.sources {
+  font-size: var(--t-xs);
+  color: var(--ink-3);
+  line-height: 1.6;
+}
+.sources a {
+  color: var(--ink-2);
+}
+
+@media (max-width: 720px) {
+  .root {
+    --cols: minmax(0, 1fr) 4.75rem;
+  }
+  .headName,
+  .headLife,
+  .headStatus {
+    display: none;
+  }
+  .row {
+    grid-template-areas: 'name status' 'track life';
+    padding-bottom: var(--s-2);
+  }
+  .name {
+    grid-area: name;
+    padding-bottom: 0;
+  }
+  .status {
+    grid-area: status;
+    align-self: start;
+    padding-top: var(--s-2);
+  }
+  .track {
+    grid-area: track;
+    min-height: 1.25rem;
+  }
+  .life {
+    grid-area: life;
+  }
+  .summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .summary > div:nth-child(2) {
+    border-right: 0;
+  }
+  .summary > div:nth-child(-n + 2) {
+    border-bottom: var(--hair) solid var(--rule);
+  }
+}

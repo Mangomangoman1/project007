@@ -1,6 +1,6 @@
 {
-  "sample": true,
-  "editorialFile": "content/sample-editorial.json",
+  "sample": false,
+  "editorialFile": "content/editorial.json",
   "lifespansFile": "content/lifespans.json",
   "researchFiles": [
     "electrical",
@@ -8,11 +8,12 @@
     "hazmat",
     "envelope",
     "hvac-safety-lifespans",
-    "structure-regional"
+    "structure-regional",
+    "newer-homes"
   ],
-  "issueCount": 15,
-  "excludedCount": 1,
+  "issueCount": 80,
+  "excludedCount": 64,
   "lifespanCount": 53,
-  "sourceCount": 46,
-  "primarySourceCount": 29
+  "sourceCount": 168,
+  "primarySourceCount": 104
 }

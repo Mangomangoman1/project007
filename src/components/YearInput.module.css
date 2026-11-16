@@ -1,16 +1,18 @@
 .root {
   display: grid;
-  gap: var(--s-2);
-  width: max-content;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  column-gap: var(--s-5);
+  row-gap: var(--s-2);
   max-width: 100%;
 }
 .row {
-  display: flex;
-  align-items: center;
-  gap: var(--s-3);
+  display: contents;
 }
 .input {
-  width: 4.05ch;
+  width: auto;
+  field-sizing: content;
+  min-width: 2ch;
   padding: 0;
   margin: 0 0 0 -0.04em;
   border: 0;
@@ -39,6 +41,8 @@
   border-bottom-color: var(--accent) !important;
 }
 .steppers {
+  grid-row: 1 / span 2;
+  grid-column: 2;
   display: grid;
   gap: var(--s-2);
   align-self: center;
@@ -71,11 +75,7 @@
   display: flex;
   align-items: center;
   gap: var(--s-3);
-  width: 4.05ch;
-  font-family: var(--font-display);
-  font-size: var(--t-hero);
-  font-variation-settings: 'opsz' 144;
-  line-height: 1;
+  grid-column: 1;
   margin-top: calc(var(--s-1) * -1);
 }
 .dimLine {
@@ -107,6 +107,9 @@
   white-space: nowrap;
 }
 .hint {
+  grid-column: 1 / -1;
+  width: 0;
+  min-width: 100%;
   font-family: var(--font-mono);
   font-size: var(--t-xs);
   color: var(--ink-3);
@@ -119,4 +122,8 @@
     width: 40px;
     height: 40px;
   }
+}
+:global(html:not(.js)) .hint,
+:global(html:not(.js)) .steppers {
+  display: none;
 }

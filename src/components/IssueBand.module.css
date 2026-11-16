@@ -46,7 +46,16 @@
 
 .missing .body {
   fill-opacity: 1;
+  opacity: 0.5;
 }
 .missing .core {
+  fill-opacity: 1;
+}
+/* no stated core: the whole range carries the weight */
+.noCore.tone_lit .body,
+.noCore.tone_accent .body {
   fill-opacity: 0.85;
+}
+.noCore.tone_dim .body {
+  fill-opacity: 0.32;
 }

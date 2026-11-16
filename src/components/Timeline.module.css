@@ -44,6 +44,9 @@
   font-size: 10.5px;
   letter-spacing: 0.02em;
 }
+.tickHidden {
+  opacity: 0;
+}
 @media (max-width: 640px) {
   .tickMinor {
     display: none;
@@ -124,16 +127,13 @@
 .tone_ghost .core { fill: var(--band); fill-opacity: 0.12; }
 .tone_ghost .cap { stroke: var(--band); stroke-opacity: 0.2; }
 
-/* missing protections: hatched body (fill set inline to the matching pattern), outlined */
-.missing .body {
-  fill-opacity: 1;
-  stroke-width: 1;
-}
-.tone_dim.missing .body { fill-opacity: 1; }
-.tone_dim.missing .core { fill-opacity: 0.3; }
-.tone_lit.missing .core { fill-opacity: 0.9; }
+/* missing protections: hatched (fill set inline to the matching pattern); body lighter, core full */
+.missing .body { fill-opacity: 1; opacity: 0.5; }
+.missing .core { fill-opacity: 1; opacity: 1; }
+.tone_dim.missing .body { opacity: 0.55; }
+.tone_dim.missing .core { opacity: 1; }
 
-.hatch_dim { fill: var(--band); fill-opacity: 0.45; }
+.hatch_dim { fill: var(--band); fill-opacity: 0.6; }
 .hatch_lit { fill: var(--band); }
 .hatch_accent { fill: var(--accent); }
 .hatch_ghost { fill: var(--band); fill-opacity: 0.15; }
@@ -213,3 +213,8 @@
 .plot:focus-visible .yearTag::after {
   border-top-color: var(--line);
 }
+
+/* no stated core: the whole range carries the weight */
+.noCore.tone_lit .body,
+.noCore.tone_accent .body { fill-opacity: 0.85; }
+.noCore.tone_dim .body { fill-opacity: 0.3; }
