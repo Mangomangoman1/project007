@@ -51,9 +51,10 @@ export function HomeExplorer({ issues }: { issues: IssueLite[] }) {
     <div className={styles.root}>
       <section className={`${styles.hero} wrap`} aria-labelledby="hero-title">
         <div className={styles.yearCol}>
-          <p className="label" id="hero-title">
+          {/* the page's h1: the question the year input answers (set as a label, as before) */}
+          <h1 className="label" id="hero-title">
             When was your house built?
-          </p>
+          </h1>
           <YearInput year={year} onChange={change} onSubmit={go} />
         </div>
 

@@ -1,6 +1,24 @@
 {
  "events": [
   {
+   "id": "gravity-furnaces",
+   "year": 1880,
+   "yearTo": 1950,
+   "precision": "range",
+   "category": "heating-cooling",
+   "title": "Gravity warm-air furnaces installed",
+   "text": "InterNACHI says gravity furnaces, which have no blower and move warm air by convection through large ducts, were installed from the late 1800s to the mid-20th century, originally burning coal. They cannot be paired with central air conditioning without ductwork changes.",
+   "sources": [
+    {
+     "url": "https://www.nachi.org/gravity-furnace-inspection.htm",
+     "publisher": "InterNACHI",
+     "tier": "trade",
+     "quote": "These antiquated furnaces were installed from the late 1800s to the mid-20 th century",
+     "verified": true
+    }
+   ]
+  },
+  {
    "id": "knob-and-tube-era",
    "year": 1880,
    "yearTo": 1940,
@@ -44,6 +62,24 @@
    ]
   },
   {
+   "id": "room-thermostat-1883",
+   "year": 1883,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "heating-cooling",
+   "title": "Bimetal room thermostat patented",
+   "text": "Warren Johnson of Wisconsin patented a bi-metal room thermostat in 1883, and the electric thermostat was patented in 1886. Automatic temperature control in houses came decades later; early central heating was regulated by hand.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Thermostat",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "Warren S. Johnson (1847–1911), of Wisconsin , patented a bi-metal room thermostat in 1883",
+     "verified": true
+    }
+   ]
+  },
+  {
    "id": "streetcar-suburbs",
    "year": 1888,
    "yearTo": 1928,
@@ -57,6 +93,42 @@
      "publisher": "National Park Service, National Register Bulletin 46 (Historic Residential Suburbs)",
      "tier": "primary",
      "quote": "Streetcar Suburbs, 1888 to 1928",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "automatic-gas-water-heater",
+   "year": 1889,
+   "yearTo": null,
+   "precision": "circa",
+   "category": "plumbing",
+   "title": "Automatic storage-tank gas water heater invented",
+   "text": "The first automatic, storage tank-type gas water heater was invented around 1889. Hot water on demand from a tank was therefore not a feature of houses much before the 1890s, and most older houses had it added later.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Water_heater",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "The first automatic, storage tank-type gas water heater was invented around 1889 by Ruud",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "edison-fuse-1890",
+   "year": 1890,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "electrical",
+   "title": "Fuse patented for electric distribution",
+   "text": "Thomas Edison patented a fuse in 1890 as part of his electric distribution system. Fuses, not circuit breakers, protected household circuits for the following decades.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fuse_(electrical)",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "A fuse was patented by Thomas Edison in 1890 as part of his electric distribution system.",
      "verified": true
     }
    ]
@@ -220,6 +292,24 @@
    ]
   },
   {
+   "id": "armored-cable-1906",
+   "year": 1906,
+   "yearTo": null,
+   "precision": "circa",
+   "category": "electrical",
+   "title": "Armored cable offered as an alternative to knob-and-tube",
+   "text": "Armored cable with rubber-insulated conductors in a flexible metal sheath was used as early as 1906 and was considered better than open knob-and-tube wiring, though much more expensive. Houses of the 1900s and 1910s can mix both methods.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Building_wiring",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "Armored cables with two rubber-insulated conductors in a flexible metal sheath were used as early as 1906",
+     "verified": true
+    }
+   ]
+  },
+  {
    "id": "kit-homes-begin",
    "year": 1906,
    "yearTo": null,
@@ -313,6 +403,60 @@
    ]
   },
   {
+   "id": "first-home-air-conditioning-1914",
+   "year": 1914,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "heating-cooling",
+   "title": "First residential air conditioning installed",
+   "text": "In 1914 the first domestic air conditioning was installed in a Minneapolis house, though the equipment may never have been used. Air conditioning in ordinary houses came decades later.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Air_conditioning",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "In 1914, the first domestic air conditioning was installed in Minneapolis in the home of Charles Gilbert Gates",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "electric-water-heater-1917",
+   "year": 1917,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "plumbing",
+   "title": "Electric water heater patented",
+   "text": "Ida Forbes patented an electric water heater in 1917. Electric water heating in houses of that decade would have been rare.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Water_heater",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "In 1917, Ida Forbes patented her invention of an electric water heater",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "vermiculite-libby-1919-1990",
+   "year": 1919,
+   "yearTo": 1990,
+   "precision": "range",
+   "category": "materials",
+   "title": "Libby vermiculite sold for attic insulation",
+   "text": "A mine near Libby, Montana supplied over 70 percent of vermiculite sold in the United States from 1919 to 1990, and it was contaminated with asbestos. EPA advises homeowners to assume vermiculite attic insulation, often sold as Zonolite, may contain asbestos.",
+   "sources": [
+    {
+     "url": "https://www.epa.gov/asbestos/protect-your-family-asbestos-contaminated-vermiculite-insulation",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "A mine near Libby, Montana, was the source of over 70 percent of all vermiculite sold in the United States from 1919 to 1990.",
+     "verified": true
+    }
+   ]
+  },
+  {
    "id": "asphalt-tile-floors",
    "year": 1920,
    "yearTo": 1969,
@@ -351,6 +495,24 @@
      "publisher": "Wikipedia",
      "tier": "reference",
      "quote": "Balloon framing using a technique suspending floors from the walls was common until the late 1940s",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "rubber-insulated-cable-1922",
+   "year": 1922,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "electrical",
+   "title": "Rubber-insulated cable for building wiring introduced",
+   "text": "The first rubber-insulated cables for US building wiring were introduced in 1922. Over time such rubber insulation becomes brittle, so cable of the 1920s and 1930s often has insulation that flakes when disturbed.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Building_wiring",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "The first rubber-insulated cables for US building wiring were introduced in 1922",
      "verified": true
     }
    ]
@@ -590,6 +752,42 @@
    ]
   },
   {
+   "id": "colonial-village-1935",
+   "year": 1935,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "First FHA-insured rental project",
+   "text": "Colonial Village in Arlington, Virginia, built in 1935, was the first large-scale rental housing project erected in the United States that was FHA-insured.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Federal_Housing_Administration",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "In 1935, Colonial Village in Arlington County, Virginia",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "holc-maps-1935",
+   "year": 1935,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "Residential security maps drawn for 239 cities",
+   "text": "In 1935 the Federal Home Loan Bank Board asked HOLC to create residential security maps for 239 cities. These maps later guided lending patterns that affected where houses were built and maintained.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Redlining",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "In 1935, the Federal Home Loan Bank Board (FHLBB) asked the Home Owners' Loan Corporation (HOLC) to look at 239 cities",
+     "verified": true
+    }
+   ]
+  },
+  {
    "id": "rural-electrification-begins",
    "year": 1935,
    "yearTo": null,
@@ -669,6 +867,24 @@
    ]
   },
   {
+   "id": "owens-corning-1938",
+   "year": 1938,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "materials",
+   "title": "Owens-Corning Fiberglas becomes a separate company",
+   "text": "Owens-Corning, the main American maker of fiberglass insulation, became a separate company in 1938. Glass-fiber insulation in houses dates from the late 1930s at the earliest and became common later.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Owens_Corning",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "It became a separate company in 1938 with its headquarters established in Toledo, Ohio.",
+     "verified": true
+    }
+   ]
+  },
+  {
    "id": "asphalt-shingles-1939",
    "year": 1939,
    "yearTo": null,
@@ -682,6 +898,24 @@
      "publisher": "Wikipedia",
      "tier": "reference",
      "quote": "by 1939 11 million squares",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "defense-housing-1941",
+   "year": 1941,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "Defense Housing Insurance program",
+   "text": "Amendments to the National Housing Act in 1941 added a Defense Housing Insurance program for housing in areas critical for defense production.",
+   "sources": [
+    {
+     "url": "https://www.nps.gov/subjects/nationalregister/upload/NRB46_Suburbs_part1_508.pdf",
+     "publisher": "National Park Service, National Register Bulletin 46 (Historic Residential Suburbs)",
+     "tier": "primary",
+     "quote": "1941 Amendments to the National Housing Act",
      "verified": true
     }
    ]
@@ -725,6 +959,24 @@
      "publisher": "Wikipedia",
      "tier": "reference",
      "quote": "After the adoption of the Serviceman's Readjustment Act (known as the GI Bill ) in 1944, the FHA brought together a system of long-term mortgages for the construction and sale of private homes.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "fha-lending-disparity",
+   "year": 1945,
+   "yearTo": 1959,
+   "precision": "range",
+   "category": "policy",
+   "title": "Federally insured loans overwhelmingly to white buyers",
+   "text": "Between 1945 and 1959 African Americans received less than 2 percent of federally insured home loans, shaping who lived in new postwar subdivisions.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Federal_Housing_Administration",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "Between 1945 and 1959, African Americans received less than 2 percent of all federally insured home loans.",
      "verified": true
     }
    ]
@@ -881,6 +1133,24 @@
    ]
   },
   {
+   "id": "pvc-wire-jackets-1950",
+   "year": 1950,
+   "yearTo": null,
+   "precision": "circa",
+   "category": "electrical",
+   "title": "PVC insulation and jackets introduced for residential wiring",
+   "text": "About 1950 PVC insulation and jackets were introduced, especially for residential wiring, replacing rubber and cloth coverings. Wiring with cloth or rubber covering is therefore older than about 1950.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Building_wiring",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "About 1950, PVC insulation and jackets were introduced, especially for residential wiring.",
+     "verified": true
+    }
+   ]
+  },
+  {
    "id": "ranch-house-dominant",
    "year": 1950,
    "yearTo": 1969,
@@ -962,6 +1232,24 @@
      "publisher": "Wikipedia",
      "tier": "reference",
      "quote": "In 1951, ionization smoke detectors were first sold in the United States.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "levittown-pennsylvania",
+   "year": 1952,
+   "yearTo": 1958,
+   "precision": "range",
+   "category": "industry",
+   "title": "Second Levittown built in Pennsylvania",
+   "text": "The second Levittown, in Pennsylvania, was built 1952 to 1958, repeating the mass-production tract approach.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Levittown",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "Levittown, Pennsylvania – the second Levittown (1952–1958)",
      "verified": true
     }
    ]
@@ -1189,6 +1477,24 @@
    ]
   },
   {
+   "id": "national-flood-insurance-1968",
+   "year": 1968,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "National Flood Insurance Program created",
+   "text": "Congress created the National Flood Insurance Program in 1968 through the National Flood Insurance Act. Houses in mapped flood zones are subject to its elevation and insurance rules, depending on when they were built.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/National_Flood_Insurance_Program",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "is a program created by the Congress of the United States in 1968 through the National Flood Insurance Act of 1968",
+     "verified": true
+    }
+   ]
+  },
+  {
    "id": "pool-light-gfci-1968",
    "year": 1968,
    "yearTo": null,
@@ -1250,6 +1556,24 @@
    ]
   },
   {
+   "id": "smoke-detector-single-station-1971",
+   "year": 1971,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "fire-safety",
+   "title": "Battery single-station smoke detector reaches market",
+   "text": "The first single-station battery smoke detector was invented in 1970 and brought out the next year. It cost about $125, so houses of the early 1970s rarely had one.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Smoke_detector",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "The first single-station smoke detector was invented in 1970 and was brought out the next year.",
+     "verified": true
+    }
+   ]
+  },
+  {
    "id": "cabo-formed-1972",
    "year": 1972,
    "yearTo": null,
@@ -1306,6 +1630,31 @@
      "publisher": "U.S. Census Bureau, Characteristics of New Housing 2017 (annual tables)",
      "tier": "primary",
      "quote": "1990 966 124 409 263 170 100 13 42 27 18",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "cellulose-insulation-boom",
+   "year": 1973,
+   "yearTo": 1978,
+   "precision": "range",
+   "category": "materials",
+   "title": "Cellulose insulation boom after the oil embargo",
+   "text": "Demand for insulation rose after the 1973-74 oil embargo, and loose-fill cellulose was made by hundreds of small firms. The federal government began enacting insulation standards in 1978 over safety and quality concerns.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Cellulose_insulation",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "Demand for insulation increased following the oil embargo of 1973–74",
+     "verified": true
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Cellulose_insulation",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "the U.S. federal government began enacting insulation standards beginning in 1978",
      "verified": true
     }
    ]
@@ -1494,6 +1843,24 @@
    ]
   },
   {
+   "id": "model-energy-code-1970s",
+   "year": 1975,
+   "yearTo": null,
+   "precision": "circa",
+   "category": "codes",
+   "title": "Energy conservation standards enter residential codes",
+   "text": "The National Park Service notes that energy conservation standards for residential construction began in the 1970s and were carried in the Model Energy Code published by CABO. Houses built before the mid-1970s were built without any energy code.",
+   "sources": [
+    {
+     "url": "https://www.nps.gov/orgs/1739/upload/preservation-brief-51-building-codes.pdf",
+     "publisher": "National Park Service, Preservation Brief 51: Building Codes for Historic and Existing Buildings",
+     "tier": "primary",
+     "quote": "Beginning in the 1970s, energy conservation standards for",
+     "verified": true
+    }
+   ]
+  },
+  {
    "id": "hud-code-1976",
    "year": 1976,
    "yearTo": null,
@@ -1609,6 +1976,24 @@
    ]
   },
   {
+   "id": "tract-ranch-ends",
+   "year": 1978,
+   "yearTo": null,
+   "precision": "circa",
+   "category": "industry",
+   "title": "Tract ranch house building winds down",
+   "text": "Small-scale tract building of ranch houses ended in the late 1970s and early 1980s, after which ranch houses were mostly individual custom houses. Builders had also begun simplifying ranch houses to cut costs from the late 1960s.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ranch-style_house",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "Small-scale tract building of ranch houses ended in the late 1970s and early 1980s.",
+     "verified": true
+    }
+   ]
+  },
+  {
    "id": "cellulose-insulation-standard-1979",
    "year": 1979,
    "yearTo": null,
@@ -1622,6 +2007,24 @@
      "publisher": "Code of Federal Regulations, 16 CFR 1209",
      "tier": "primary",
      "quote": "manufactured after October 15, 1979",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "polyurethane-insulation-1979",
+   "year": 1979,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "materials",
+   "title": "Polyurethane foam begins to be used as building insulation",
+   "text": "Polyurethane foam was invented in 1937, but it began to be used as building insulation only in 1979. Spray-foam insulation in an older house was added later.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Spray_foam",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "in 1979 polyurethane began being used as building insulation",
      "verified": true
     }
    ]
@@ -1643,20 +2046,936 @@
      "verified": true
     }
    ]
+  },
+  {
+   "id": "gfci-receptacles-1980s",
+   "year": 1980,
+   "yearTo": 1989,
+   "precision": "circa",
+   "category": "electrical",
+   "title": "Receptacle-type GFCIs become common",
+   "text": "GFCIs built into the outlet receptacle became commonplace beginning in the 1980s, after the early 1970s when most were circuit-breaker types.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Residual-current_device",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "GFCIs built into the outlet receptacle became commonplace beginning in the 1980s.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "fiberglass-shingles-overtake",
+   "year": 1982,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "materials",
+   "title": "Fiberglass shingles overtake organic shingles",
+   "text": "Fiberglass-based asphalt shingles gradually replaced organic felt shingles and by 1982 overtook them in use. Some organic shingles made before the early 1980s may contain asbestos.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Asphalt_shingle",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "Fiberglass shingles gradually began to replace organic felt shingles, and by 1982 overtook them in use.",
+     "verified": true
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Asphalt_shingle",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "some organic shingles produced before the early 1980s may contain asbestos",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "house-size-trough-1982",
+   "year": 1982,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "industry",
+   "title": "Median new house shrinks to 1,520 square feet",
+   "text": "The median new single-family house fell to 1,520 square feet in 1982, a low for the series, before climbing steadily.",
+   "sources": [
+    {
+     "url": "https://www.census.gov/construction/chars/pdf/c25ann2017.pdf",
+     "publisher": "U.S. Census Bureau, Characteristics of New Housing 2017 (annual tables)",
+     "tier": "primary",
+     "quote": "1982 1,520",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "uffi-ban-1982",
+   "year": 1982,
+   "yearTo": 1983,
+   "precision": "range",
+   "category": "hazmat",
+   "title": "Urea-formaldehyde foam insulation banned, then ban reversed",
+   "text": "Massachusetts and Connecticut banned urea-formaldehyde foam insulation in 1981, the CPSC banned it nationwide in 1982, and the ban was reversed in 1983. Foam-injected walls of those years may carry formaldehyde odor complaints.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Urea-formaldehyde",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "In 1982, the U.S. Consumer Product Safety Commission banned UFFI nationwide,",
+     "verified": true
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Urea-formaldehyde",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "but this ban was reversed in 1983.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "lead-pipe-solder-ban-1986",
+   "year": 1986,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "plumbing",
+   "title": "Lead pipe, solder and flux banned in drinking-water plumbing",
+   "text": "The 1986 Safe Drinking Water Act amendments prohibited pipe, solder or flux that was not lead free in plumbing providing drinking water after June 1986, with lead-free solder then defined as no more than 0.2 percent lead. Copper plumbing soldered before 1986 may have lead solder joints.",
+   "sources": [
+    {
+     "url": "https://www.epa.gov/sdwa/use-lead-free-pipes-fittings-fixtures-solder-and-flux-drinking-water",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "In 1986 Congress Amended the Safe Drinking Water Act, prohibiting the use of pipes, solder or flux that were not “lead free” in public water systems or plumbing in facilities providing water for human consumption.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "gfci-kitchens-1987",
+   "year": 1987,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "electrical",
+   "title": "GFCI protection required at some kitchen receptacles",
+   "text": "The National Electrical Code began requiring GFCI protection for some kitchen receptacles in 1987, garage outlets having been added in 1978.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/099_0.pdf",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "o Kitchens (since 1987)",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "radon-program-1988",
+   "year": 1988,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "hazmat",
+   "title": "EPA begins its radon program and the Indoor Radon Abatement Act passes",
+   "text": "Since 1988 EPA has run a voluntary program to reduce radon exposure under the Indoor Radon Abatement Act. There is no federal radon requirement for houses, so radon-resistant features in new houses are voluntary or set by local code.",
+   "sources": [
+    {
+     "url": "https://www.epa.gov/sites/default/files/2015-11/documents/20080603-08-p-0174.pdf",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "Since 1988, EPA has administered a voluntary program to reduce",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "toilet-water-limit-1988",
+   "year": 1988,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "plumbing",
+   "title": "Massachusetts first to mandate low-flush toilets",
+   "text": "In 1988 Massachusetts became the first state to require low-flush toilets in new construction and remodeling. Before the early 1990s standard US toilets typically used at least 3.5 gallons per flush.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Low-flow_toilet",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "In 1988, Massachusetts became the first state in the US to mandate the use of low-flush toilets in new construction and remodeling.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "asbestos-partial-ban-1989",
+   "year": 1989,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "hazmat",
+   "title": "EPA partial ban on asbestos products",
+   "text": "EPA issued a partial ban on the manufacture, import, processing and distribution of some asbestos products in 1989 and banned new uses. Many asbestos building products already existed, so house materials made around then may still contain it.",
+   "sources": [
+    {
+     "url": "https://www.epa.gov/asbestos/epa-actions-protect-public-exposure-asbestos",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "1989 Partial Ban on the manufacture, import, processing, and distribution of some asbestos-containing products.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "census-1990-new-house",
+   "year": 1990,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "industry",
+   "title": "Typical new house in 1990",
+   "text": "In 1990, 76 percent of new single-family houses completed had air conditioning and the median house had 1,905 square feet.",
+   "sources": [
+    {
+     "url": "https://www.census.gov/construction/chars/pdf/c25ann2017.pdf",
+     "publisher": "U.S. Census Bureau, Characteristics of New Housing 2017 (annual tables)",
+     "tier": "primary",
+     "quote": "1990 966 731 235 100 76 24",
+     "verified": true
+    },
+    {
+     "url": "https://www.census.gov/construction/chars/pdf/c25ann2017.pdf",
+     "publisher": "U.S. Census Bureau, Characteristics of New Housing 2017 (annual tables)",
+     "tier": "primary",
+     "quote": "1990 1,905 1,955 1,850 1,855 1,985 2,080 2,105 2,005 2,055 2,160",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "gfci-basements-1990",
+   "year": 1990,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "electrical",
+   "title": "GFCI protection required in unfinished basements and crawl spaces",
+   "text": "GFCI protection for receptacles in crawl spaces and unfinished basements has been required by the code since 1990, with wet bar sinks added in 1993 and laundry and utility sinks in 2005.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/099_0.pdf",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "o Crawl spaces and unfinished basements (since 1990)",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "garage-door-opener-rules-1991",
+   "year": 1991,
+   "yearTo": 1993,
+   "precision": "range",
+   "category": "fire-safety",
+   "title": "Garage door opener entrapment rules begin",
+   "text": "Federal law required automatic garage door openers made on or after January 1, 1991 to meet UL 325 entrapment protection, with added requirements from January 1, 1993. A garage door opener from before 1991 may lack reversing protection.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/Newsroom/News-Releases/1993/Safety-Commission-Publishes-Final-Rules-For-Automatic-Garage-Door-Openers",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "automatic residential garage door openers manufactured on or after January 1, 1993 for sale in the United States",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "energy-star-1992",
+   "year": 1992,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "ENERGY STAR program established",
+   "text": "EPA established the ENERGY STAR program in 1992, first for computers, and it later added a label for new homes. Energy Star certified homes are built to at least 10 percent better than code.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Energy_Star",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "The Energy Star program was established by the EPA in 1992 under Section 103(g) of the Clean Air Act",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "epact-toilets-1992",
+   "year": 1992,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "plumbing",
+   "title": "Energy Policy Act sets a 1.6 gallon toilet limit",
+   "text": "The 1992 Energy Policy Act made 1.6 gallons per flush the federal maximum for new toilets, effective January 1, 1994 for residential buildings. Toilets in houses built before then commonly used 3.5 gallons or more.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Low-flow_toilet",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "In 1992 US President George H. W. Bush signed the Energy Policy Act .",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "hud-wind-standards-andrew",
+   "year": 1992,
+   "yearTo": null,
+   "precision": "circa",
+   "category": "codes",
+   "title": "Manufactured home wind standards revised after Andrew",
+   "text": "After Hurricane Andrew in 1992 new wind standards were adopted for manufactured homes. Manufactured homes built before then were built to weaker wind provisions.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mobile_home",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "After Hurricane Andrew in 1992, new standards were",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "hurricane-andrew-1992",
+   "year": 1992,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "event",
+   "title": "Hurricane Andrew leads to Florida code reform",
+   "text": "Before Hurricane Andrew in 1992 Florida had 400 or more local building codes with no unified wind standard, and the destruction of about 63,500 homes led to the nation's strictest building code. A 1994 South Florida code created High-Velocity Hurricane Zones.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Florida_Building_Code",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "Prior to Hurricane Andrew in 1992, Florida had building codes at each county and municipality, 400+ in total.",
+     "verified": true
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Florida_Building_Code",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "The 1994 South Florida Building Code created High-Velocity Hurricane Zones (HVHZ)",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "lead-title-x-1992",
+   "year": 1992,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "Residential Lead-Based Paint Hazard Reduction Act (Title X)",
+   "text": "Congress passed the Residential Lead-Based Paint Hazard Reduction Act of 1992, known as Title X, which led to the lead disclosure and lead-safe housing rules.",
+   "sources": [
+    {
+     "url": "https://www.hud.gov/sites/documents/lbph-28.pdf",
+     "publisher": "U.S. Department of Housing and Urban Development",
+     "tier": "primary",
+     "quote": "implementing Section 1018 of the Residential Lead-Based Paint Poisoning Lead Hazard Reduction Act of 1992",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "icc-founded-1994",
+   "year": 1994,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "codes",
+   "title": "International Code Council formed",
+   "text": "In 1994 the three regional model code groups merged to form the International Code Council to write one set of national I-Codes. Houses built before the ICC codes were governed by regional codes.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/International_Residential_Code",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "In 1994, BOCA, SBCCI, and ICBO merged to form the International Code Council (ICC)",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "northridge-1994",
+   "year": 1994,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "event",
+   "title": "Northridge earthquake",
+   "text": "The Northridge earthquake struck Los Angeles on January 17, 1994, and much of the damage was to wood-frame buildings. Seismic provisions were added to model codes in the early 1990s. A date of 1992 appears for Northridge in one NPS brief, but 1994 is correct.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Northridge_earthquake",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "January 17, 1994, at 04:30:55 PST",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "smoke-alarm-lithium-1995",
+   "year": 1995,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "fire-safety",
+   "title": "Ten-year lithium battery smoke alarm introduced",
+   "text": "The 10-year lithium-battery smoke alarm was introduced in 1995.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Smoke_detector",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "The 10-year-lithium-battery-powered smoke alarm was introduced years later, in 1995.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "lead-disclosure-rule-1996",
+   "year": 1996,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "Lead disclosure rule for pre-1978 housing",
+   "text": "HUD and EPA jointly issued the Lead Disclosure Rule in 1996, requiring sellers and landlords of most pre-1978 housing to disclose known lead paint information and provide a pamphlet.",
+   "sources": [
+    {
+     "url": "https://www.hud.gov/sites/documents/lbph-28.pdf",
+     "publisher": "U.S. Department of Housing and Urban Development",
+     "tier": "primary",
+     "quote": "by HUD and the Environmental Protection Agency (EPA) in 1996 (61 FR 9063-9088, March 6, 1996)",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "roofing-impact-class-1996",
+   "year": 1996,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "materials",
+   "title": "UL 2218 impact classification for roofing",
+   "text": "In 1996 insurers, the Institute for Business and Home Safety and UL created UL 2218, an impact resistance classification for roofing materials, relevant for hail-prone areas.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Asphalt_shingle",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "The system, known as UL 2218",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "sdwa-fixtures-1996",
+   "year": 1996,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "plumbing",
+   "title": "Lead leaching standards extended to fittings and fixtures",
+   "text": "In 1996 Congress amended the Safe Drinking Water Act to require plumbing fittings and fixtures to meet voluntary lead leaching standards.",
+   "sources": [
+    {
+     "url": "https://www.epa.gov/sdwa/use-lead-free-pipes-fittings-fixtures-solder-and-flux-drinking-water",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "In 1996 Congress further amended the Safe Drinking Water Act, requiring plumbing fittings and fixtures",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "ubc-last-1997",
+   "year": 1997,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "codes",
+   "title": "Last edition of the Uniform Building Code",
+   "text": "The 1997 edition was the final Uniform Building Code, replaced in 2000 by the International Building Code.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Uniform_Building_Code",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "Updated editions of the code were published approximately every three years until 1997, which was the final version of the code.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "lead-safe-housing-1999",
+   "year": 1999,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "HUD Lead Safe Housing Rule",
+   "text": "HUD issued the Lead Safe Housing Rule in 1999 for federally assisted pre-1978 housing.",
+   "sources": [
+    {
+     "url": "https://www.hud.gov/sites/documents/lbph-28.pdf",
+     "publisher": "U.S. Department of Housing and Urban Development",
+     "tier": "primary",
+     "quote": "The Lead Safe Housing Rule (LSHR) (24 CFR Part 35, subparts B-R) was issued by HUD in 1999",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "nec-1999-afci-fourwire",
+   "year": 1999,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "electrical",
+   "title": "1999 NEC adds arc-fault protection and four-wire range and dryer receptacles",
+   "text": "The 1999 NEC required grounded 120/240-volt receptacles for ranges and dryers (four-slot) and introduced arc-fault circuit interrupters. Local adoption lagged.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/National_Electrical_Code",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "The 1999 Code required that new 120/240 volt receptacles, such as those for electric ranges and dryers, be grounded also",
+     "verified": true
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/National_Electrical_Code",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "Another safety device introduced with the 1999 code is the arc-fault circuit interrupter (AFCI).",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "census-2000-new-house",
+   "year": 2000,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "industry",
+   "title": "Typical new house in 2000: 2,057 square feet and air conditioned",
+   "text": "The median new single-family house completed in 2000 had 2,057 square feet and 85 percent had air conditioning. By 2000 71 percent of new houses used a forced-air furnace.",
+   "sources": [
+    {
+     "url": "https://www.census.gov/construction/chars/pdf/c25ann2017.pdf",
+     "publisher": "U.S. Census Bureau, Characteristics of New Housing 2017 (annual tables)",
+     "tier": "primary",
+     "quote": "2000 2,057 2,266 1,971 2,075 2,014 2,266 2,435 2,170 2,287 2,244",
+     "verified": true
+    },
+    {
+     "url": "https://www.census.gov/construction/chars/pdf/c25ann2017.pdf",
+     "publisher": "U.S. Census Bureau, Characteristics of New Housing 2017 (annual tables)",
+     "tier": "primary",
+     "quote": "2000 1,242 1,060 181 100 85 15",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "international-codes-2000",
+   "year": 2000,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "codes",
+   "title": "International Building Code and IECC first published",
+   "text": "The first edition of the International Building Code was published in 2000, along with the International Energy Conservation Code, created by the ICC in 2000.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/International_Residential_Code",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "the first edition of the International Building Code was published in 2000",
+     "verified": true
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/International_Energy_Conservation_Code",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "is a building code created by the International Code Council in 2000",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "chinese-drywall",
+   "year": 2001,
+   "yearTo": 2009,
+   "precision": "range",
+   "category": "materials",
+   "title": "Imported Chinese drywall used in houses",
+   "text": "Defective drywall made in China was imported and used in residential construction between 2001 and 2009, mostly in the Southeast, with CPSC complaints starting in late 2008. Corrosion of copper and metal fixtures is the typical sign.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Chinese_drywall",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "imported to the United States and used in residential construction between 2001 and 2009",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/pdfs/blk_media_jul2009status.pdf",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "In late December 2008, CPSC first began to receive drywall-related complaints from",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "afci-bedrooms-2002",
+   "year": 2002,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "electrical",
+   "title": "Arc-fault protection required in bedrooms",
+   "text": "The arc-fault requirement for bedroom circuits took effect in 2002, and the 2005 code made clear all bedroom outlets must be protected. Houses before then lack AFCIs.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/AFCIFireTechnology.pdf",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "circuits effective in the year 2002.",
+     "verified": true
+    },
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/acfismoke.pdf",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "the current edition of the NEC (2005), bedroom branch circuits must be protected by AFCIs.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "florida-building-code-2002",
+   "year": 2002,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "codes",
+   "title": "Unified Florida Building Code takes effect",
+   "text": "The unified Florida Building Code was adopted March 1, 2002, and a review after Hurricane Milton in 2024 found no homes built after it were destroyed.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Florida_Building_Code",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "no homes built after the unified Florida Building Code (FBC) was adopted March 1, 2002 were destroyed",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "cca-residential-2003",
+   "year": 2003,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "materials",
+   "title": "Arsenic-treated lumber discontinued for residential use",
+   "text": "In December 2003 manufacturers voluntarily stopped making CCA-treated wood for homeowner uses such as decks and playsets. Pressure-treated wood from before 2004 may contain arsenic.",
+   "sources": [
+    {
+     "url": "https://www.epa.gov/ingredients-used-pesticide-products/chromated-arsenicals",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "In December 2003, chromated arsenicals manufacturers voluntarily discontinued manufacturing chromated arsenicals-treated wood products for homeowner uses.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "gfci-laundry-2005",
+   "year": 2005,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "electrical",
+   "title": "GFCI protection extended to laundry and utility sinks",
+   "text": "GFCI protection for receptacles near laundry and utility sinks has been required since 2005.",
+   "sources": [
+    {
+     "url": "https://www.cpsc.gov/s3fs-public/099_0.pdf",
+     "publisher": "U.S. Consumer Product Safety Commission",
+     "tier": "primary",
+     "quote": "o Laundry and utility sinks (since 2005)",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "homeownership-peak-2005",
+   "year": 2005,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "industry",
+   "title": "Homeownership and house building peak",
+   "text": "Home ownership peaked at nearly 69 percent in 2005, near the peak of the housing bubble, and Census counted 1,636 thousand new single-family houses completed that year.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Federal_Housing_Administration",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "Home ownership peaked at nearly 69% in 2005, near the peak of the US housing bubble.",
+     "verified": true
+    },
+    {
+     "url": "https://www.census.gov/construction/chars/pdf/c25ann2017.pdf",
+     "publisher": "U.S. Census Bureau, Characteristics of New Housing 2017 (annual tables)",
+     "tier": "primary",
+     "quote": "2005 1,636 1,463 173 100 89 11",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "new-house-size-2007",
+   "year": 2007,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "industry",
+   "title": "Median new house size reaches 2,277 square feet",
+   "text": "The median new single-family house completed in 2007 had 2,277 square feet, before dipping to 2,135 square feet in 2009 and rising to a peak of 2,467 in 2015.",
+   "sources": [
+    {
+     "url": "https://www.census.gov/construction/chars/pdf/c25ann2017.pdf",
+     "publisher": "U.S. Census Bureau, Characteristics of New Housing 2017 (annual tables)",
+     "tier": "primary",
+     "quote": "2007 2,277",
+     "verified": true
+    },
+    {
+     "url": "https://www.census.gov/construction/chars/pdf/c25ann2017.pdf",
+     "publisher": "U.S. Census Bureau, Characteristics of New Housing 2017 (annual tables)",
+     "tier": "primary",
+     "quote": "2015 2,467 2,492 2,320 2,517 2,435 2,687 2,792 2,526 2,750 2,615",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "rrp-rule-2008",
+   "year": 2008,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "policy",
+   "title": "EPA lead renovation, repair and painting rule",
+   "text": "EPA's 2008 RRP Rule, amended in 2010 and 2011, requires lead-safe work practices and certified renovators for paid work disturbing paint in homes built before 1978.",
+   "sources": [
+    {
+     "url": "https://www.epa.gov/lead/lead-renovation-repair-and-painting-program-rules",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "EPA’s 2008 Lead-Based Paint Renovation, Repair and Painting (RRP) Rule (as amended in 2010 and 2011)",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "completions-2010-low",
+   "year": 2010,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "industry",
+   "title": "New single-family completions fall to 496 thousand",
+   "text": "After the housing collapse only 496 thousand new single-family houses were completed in 2010, versus 1,636 thousand in 2005; heat pumps were in 38 percent of them.",
+   "sources": [
+    {
+     "url": "https://www.census.gov/construction/chars/pdf/c25ann2017.pdf",
+     "publisher": "U.S. Census Bureau, Characteristics of New Housing 2017 (annual tables)",
+     "tier": "primary",
+     "quote": "2010 496 279 189 12 16 100 56 38 2 3",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "lead-free-2011",
+   "year": 2011,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "plumbing",
+   "title": "Lead-free definition tightened to 0.25 percent",
+   "text": "In 2011 Congress passed the Reduction of Lead in Drinking Water Act lowering the lead content of wetted plumbing surfaces from 8 percent to a weighted average of 0.25 percent.",
+   "sources": [
+    {
+     "url": "https://www.epa.gov/sdwa/use-lead-free-pipes-fittings-fixtures-solder-and-flux-drinking-water",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "In 2011 Congress passed the Reduction of Lead in Drinking Water Act (RLDWA) revising the definition of lead free",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "afci-most-outlets-2014",
+   "year": 2014,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "electrical",
+   "title": "Arc-fault protection extended to most residential outlets",
+   "text": "The National Electrical Code has required arc-fault protection for most residential outlets since 2014.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Arc-fault_circuit_interrupter",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "the US National Electrical Code has required them to protect most residential outlets since 2014",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "census-2017-new-house",
+   "year": 2017,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "industry",
+   "title": "Typical new house in 2017",
+   "text": "In 2017, 93 percent of new single-family houses completed had air conditioning, 41 percent used heat pumps, and 37 percent had three or more bathrooms.",
+   "sources": [
+    {
+     "url": "https://www.census.gov/construction/chars/pdf/c25ann2017.pdf",
+     "publisher": "U.S. Census Bureau, Characteristics of New Housing 2017 (annual tables)",
+     "tier": "primary",
+     "quote": "2017 795 742 53 100 93 7",
+     "verified": true
+    },
+    {
+     "url": "https://www.census.gov/construction/chars/pdf/c25ann2017.pdf",
+     "publisher": "U.S. Census Bureau, Characteristics of New Housing 2017 (annual tables)",
+     "tier": "primary",
+     "quote": "2017 795 451 323 9 13 100 57 41 1 2",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "formaldehyde-composite-wood-2018",
+   "year": 2018,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "materials",
+   "title": "Formaldehyde emission standards for composite wood take effect",
+   "text": "The EPA formaldehyde emission standards for plywood, particleboard and fiberboard came into force June 1, 2018.",
+   "sources": [
+    {
+     "url": "https://www.epa.gov/formaldehyde/frequent-questions-consumers-about-formaldehyde-standards-composite-wood-products-act",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "The formaldehyde emission standards come into force beginning June 1, 2018.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "asbestos-snur-2019",
+   "year": 2019,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "hazmat",
+   "title": "EPA rule on discontinued asbestos uses",
+   "text": "In April 2019 EPA finalized a rule so discontinued asbestos products cannot return to the market without review.",
+   "sources": [
+    {
+     "url": "https://www.epa.gov/asbestos/epa-actions-protect-public-exposure-asbestos",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "April 2019 Restrictions on Discontinued Uses of Asbestos Rule",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "lead-free-rule-2020",
+   "year": 2020,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "plumbing",
+   "title": "EPA final lead-free pipes, fixtures, solder and flux rule",
+   "text": "On September 1, 2020 EPA published the final regulation on lead-free pipes, fittings, fixtures, solder and flux.",
+   "sources": [
+    {
+     "url": "https://www.epa.gov/sdwa/use-lead-free-pipes-fittings-fixtures-solder-and-flux-drinking-water",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "On September 1, 2020, the U.S. Environmental Protection Agency (EPA) published the final regulation",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "chrysotile-ban-2024",
+   "year": 2024,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "hazmat",
+   "title": "EPA bans ongoing uses of chrysotile asbestos",
+   "text": "In March 2024 EPA finalized a rule prohibiting ongoing uses of chrysotile asbestos.",
+   "sources": [
+    {
+     "url": "https://www.epa.gov/asbestos/epa-actions-protect-public-exposure-asbestos",
+     "publisher": "U.S. Environmental Protection Agency",
+     "tier": "primary",
+     "quote": "In March 2024, EPA finalized the risk management rule for chrysotile asbestos.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "census-2025",
+   "year": 2025,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "industry",
+   "title": "New house in 2025: about 2,194 square feet",
+   "text": "The median size of a new single-family home sold in 2025 was 2,194 square feet, and 91 percent of owner-built homes completed had air conditioning.",
+   "sources": [
+    {
+     "url": "https://www.census.gov/construction/chars/highlights.html",
+     "publisher": "U.S. Census Bureau",
+     "tier": "primary",
+     "quote": "The median size of a new single-family home sold in 2025 was 2,194 square feet.",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "nec-2026",
+   "year": 2026,
+   "yearTo": null,
+   "precision": "exact",
+   "category": "codes",
+   "title": "2026 National Electrical Code is the current edition",
+   "text": "The 2026 edition is the current National Electrical Code, updated every three years.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/National_Electrical_Code",
+     "publisher": "Wikipedia",
+     "tier": "reference",
+     "quote": "with the 2026 edition being the most current.",
+     "verified": true
+    }
+   ]
   }
  ],
  "coverage": {
-  "1880s": 3,
-  "1890s": 4,
-  "1900s": 7,
-  "1910s": 1,
-  "1920s": 5,
-  "1930s": 15,
-  "1940s": 8,
-  "1950s": 8,
-  "1960s": 9,
-  "1970s": 21,
-  "1980s": 1
+  "1880s": 6,
+  "1890s": 5,
+  "1900s": 8,
+  "1910s": 4,
+  "1920s": 6,
+  "1930s": 18,
+  "1940s": 10,
+  "1950s": 10,
+  "1960s": 10,
+  "1970s": 26,
+  "1980s": 10,
+  "1990s": 17,
+  "2000s": 10,
+  "2010s": 6,
+  "2020s": 4
  },
- "notes": "Work in progress."
+ "notes": "Evidence is thinnest for 1910-1929 (few events, mostly materials), the 1940s-1950s mechanical systems (forced-air adoption, oil burners, copper pipe and its dating), and 1980-2000 energy codes. I could not open a source for the 1983 Model Energy Code, the 1995 ENERGY STAR new-homes label, ASHRAE 90-75, NM cable (\"Romex\" 1922/1926 in the NEC), 1924 mineral-granule shingles, 3-tab shingles, housewrap, low-E glass, PEX, engineered lumber, HUD Minimum Property Standards editions, Hurricane Andrew's HUD/FEMA reports, or the 1950s truss and plywood-standard dates (huduser.gov refused, energystar.gov was unreachable), so those are absent rather than guessed. Several well-known 1930s and 1940s items (wartime wallboard adoption, forced-air heating spread) have no dated source here. Many pre-1970 entries rest on Wikipedia or InterNACHI (reference or trade tier); the NEC edition years for most requirements come from CPSC GFCI fact sheets only. Years with no event: 1881, 1884 to 1887, 1891 to 1896 except fuse/wire nails, 1898 to 1904, 1907, 1909, 1911 to 1913, 1915 to 1916, 1918 to 1921 and a few others. Disputed or unreliable dates: Sackett board 1890 (Wikipedia) versus 1894 sometimes cited, which I could not verify; Sheetrock 1917 (Wikipedia) versus 1916 often cited; aluminum wire 1965-1973 (CPSC) versus 1967-1975 (InterNACHI); OSB 1963 invention versus 'developed in the 1980s' (InterNACHI); balloon framing ending 1920s, late 1940s or mid-1950s depending on source; galvanized-to-copper pipe c.1960 versus late 1960s; Stab-Lok production 1950-1980 versus 1950-1990 in two Wikipedia pages; CABO formed 1972 per Wikipedia, not the 1971 sometimes cited; the commonly repeated 1964 nominal lumber size change did not appear in NIST's history, which documents R 16-53 revised in 1969 and replaced by PS 20-70; NPS Preservation Brief 51 lists Northridge as 1992 although the earthquake was January 17, 1994; CPSC's garage door rule press release is dated December 1992 for units made from January 1, 1993. PDF quotes from NPS come from two-column text extraction, so quotes are short single-line fragments. Wikipedia quotes keep the source's spacing around punctuation."
 }
