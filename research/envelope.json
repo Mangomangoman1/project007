@@ -12,7 +12,7 @@
       "peak_from": null,
       "peak_to": null,
       "date_confidence": "high",
-      "date_notes": "A 1995 Spokesman-Review report (search summary) says the product was first marketed in 1985 and that the settlement covers siding installed before 1 January 1996; the settlement agreement and an LP investor release use the same 1 January 1996 cutoff. LP continued to sell a reformulated product (SmartSide) afterwards, which is not the class product. No source seen gives peak years.",
+      "date_notes": "A 1995 Spokesman-Review report (search summary) says the product was first marketed in 1985 and that the settlement covers siding installed before 1 January 1996; the settlement agreement and an LP investor release use the same 1 January 1996 cutoff. LP continued to sell a reformulated product (SmartSide) afterwards, which is not the class product. No source seen gives peak years. Verification pass: the D. Oregon court opinion of 26 July 2012 (govinfo) quotes the class notice: siding \"installed prior to January 1, 1996\" with claims \"prior to January 1, 2003\". Wikipedia gives 1985 for first marketing but is internally inconsistent (it also says \"early 1990s through 1996\").",
       "regions": "National. From memory, sales and failures were heaviest in the Pacific Northwest and the wet Southeast (a separate Florida class existed); no source seen this session quantifies the regional split.",
       "prevalence": "rare",
       "prevalence_basis": "No verified figure. A frequently repeated number is roughly 800,000 homes, but a targeted search did not confirm it. Even if true that is a small share of the roughly 13-15 million homes built 1985-1995, so 'rare' nationally and 'possible' in the Pacific Northwest. Many installations have since been replaced.",
@@ -22,14 +22,61 @@
         "financial": "Full re-side when it fails; settlement money is no longer available.",
         "insurance_or_sale": "Routinely called out in home-inspection reports; insurers do not normally cover it because it is a product defect, not sudden damage. No insurer-specific exclusion was verified."
       },
-      "fix": { "what": "Replace failed boards or re-side; keep paint and caulk intact meanwhile.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "No credible figure found; page fetching was blocked." },
+      "fix": {
+        "what": "Replace failed boards or re-side; keep paint and caulk intact meanwhile.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found; page fetching was blocked."
+      },
       "sources": [
-        { "url": "https://www.sec.gov/Archives/edgar/data/0000060519/000091205701007679/a2041518z10-k405.htm", "publisher": "Louisiana-Pacific Corp, Form 10-K405 FY2000 (SEC EDGAR)", "supports": "National settlement terms; claim deadlines; class keyed to installation date. Seen only as a search-result summary; page not opened (host blocked).", "verified": false },
-        { "url": "https://law.justia.com/cases/federal/district-courts/oregon/ordce/3:1995cv00879/42057/713/", "publisher": "US District Court, D. Oregon (Sandpiper Village v. Louisiana-Pacific), via Justia", "supports": "Class covers siding installed before 1 January 1996; claims had to be made by 1 January 2003. Search-result summary only.", "verified": false },
-        { "url": "https://www.spokesman.com/stories/1995/nov/17/refunds-for-siding-under-way-louisiana-pacific", "publisher": "The Spokesman-Review", "supports": "Siding first marketed in 1985; siding installed after 1 January 1996 not covered. Search-result summary only.", "verified": false },
-        { "url": "https://investor.lpcorp.com/news-releases/news-release-details/lp-announces-inner-seal-siding-claimant-offer-program", "publisher": "Louisiana-Pacific investor relations", "supports": "2003 Claimant Offer Program; product installed prior to 1 January 1996. Search-result summary only.", "verified": false }
+        {
+          "url": "https://www.govinfo.gov/content/pkg/USCOURTS-ord-3_95-cv-00879/pdf/USCOURTS-ord-3_95-cv-00879-3.pdf",
+          "publisher": "US District Court, D. Oregon, In re Louisiana-Pacific Inner-Seal Siding Litigation, Opinion and Order filed 26 July 2012 (govinfo)",
+          "tier": "primary",
+          "supports": "Class covers siding installed before 1 January 1996; claims had to be filed before 1 January 2003; settlement approved April 1996.",
+          "verified": true,
+          "quote": "Exterior Inner-Seal™ Siding has been installed prior to January 1, 1996"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Louisiana-Pacific",
+          "publisher": "Wikipedia, Louisiana-Pacific",
+          "tier": "reference",
+          "supports": "Inner-Seal siding first marketed in 1985.",
+          "verified": true,
+          "quote": "in 1985 began to market Inner-Seal siding for the exterior of homes"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/0000060519/000091205701007679/a2041518z10-k405.htm",
+          "publisher": "Louisiana-Pacific Corp, Form 10-K405 FY2000 (SEC EDGAR)",
+          "supports": "National settlement terms; claim deadlines; class keyed to installation date. Seen only as a search-result summary; page not opened (host blocked).",
+          "verified": false
+        },
+        {
+          "url": "https://law.justia.com/cases/federal/district-courts/oregon/ordce/3:1995cv00879/42057/713/",
+          "publisher": "US District Court, D. Oregon (Sandpiper Village v. Louisiana-Pacific), via Justia",
+          "supports": "Class covers siding installed before 1 January 1996; claims had to be made by 1 January 2003. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.spokesman.com/stories/1995/nov/17/refunds-for-siding-under-way-louisiana-pacific",
+          "publisher": "The Spokesman-Review",
+          "supports": "Siding first marketed in 1985; siding installed after 1 January 1996 not covered. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://investor.lpcorp.com/news-releases/news-release-details/lp-announces-inner-seal-siding-claimant-offer-program",
+          "publisher": "Louisiana-Pacific investor relations",
+          "supports": "2003 Claimant Offer Program; product installed prior to 1 January 1996. Search-result summary only.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "End of window (installed before 1 January 1996) and the 1 January 2003 claim cutoff, from the Oregon district court opinion itself. The court also records approval of the settlement on 22 April 1996. Start year 1985 is supported by Wikipedia only (reference tier).",
+        "what_is_not": "No count of homes (the 800,000 figure was not found on any opened page). Start year has no primary source. The same Wikipedia article elsewhere says the siding was \"manufactured from the early 1990s through 1996\", which conflicts with its own 1985 statement. Regional split and knot-pattern identifier unverified. SEC, Justia, Spokesman-Review and LP investor pages were not opened (sec.gov refuses automated requests; the others are outside the allowed hosts)."
+      },
       "open_questions": "Number of homes; regional distribution; whether LP still honours the reinstated 25-year warranty for any late installations (the last would have expired around 2020)."
     },
     {
@@ -52,11 +99,43 @@
         "financial": "Re-siding at owner's cost; no settlement funds remain.",
         "insurance_or_sale": "Commonly flagged by inspectors; treated as a maintenance/defect item rather than an insured loss. No insurer rule verified."
       },
-      "fix": { "what": "Spot-replace boards, maintain paint and caulk, or re-side.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "No credible figure found." },
+      "fix": {
+        "what": "Spot-replace boards, maintain paint and caulk, or re-side.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found."
+      },
       "sources": [
-        { "url": "https://lieffcabraser.com/defect/masonite", "publisher": "Lieff Cabraser Heimann & Bernstein (co-lead class counsel, Naef v. Masonite)", "supports": "Install window 1 Jan 1980 - 15 Jan 1998; ~4 million homeowners; 1996 jury finding; settlement approved 1998; claims programme ran through 2008. Search-result summary only; host blocked.", "verified": false }
+        {
+          "url": "https://en.wikipedia.org/wiki/Masonite",
+          "publisher": "Wikipedia, Masonite",
+          "tier": "reference",
+          "supports": "1996 jury finding that Masonite siding was defective.",
+          "verified": true,
+          "quote": "In 1996, International Paper (IP) lost a class action suit brought by homeowners whose Masonite siding had deteriorated. The jury found that IP's Masonite siding was defective."
+        },
+        {
+          "url": "https://www.nachi.org/documents2012/How_to_Inspect_the_Exterior-revised-Sept-2012.pdf",
+          "publisher": "InterNACHI, How to Inspect the Exterior (2012)",
+          "tier": "trade",
+          "supports": "Failure mode of hardboard siding (moisture swelling and rot); identification by uniform composition.",
+          "verified": true,
+          "quote": "Hardboard can be affected by moisture. It can rot. It swells more than natural wood when it is wet."
+        },
+        {
+          "url": "https://lieffcabraser.com/defect/masonite",
+          "publisher": "Lieff Cabraser Heimann & Bernstein (co-lead class counsel, Naef v. Masonite)",
+          "supports": "Install window 1 Jan 1980 - 15 Jan 1998; ~4 million homeowners; 1996 jury finding; settlement approved 1998; claims programme ran through 2008. Search-result summary only; host blocked.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "partly-confirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "The 1996 defect verdict (Wikipedia, reference tier) and the failure mode (InterNACHI). Wikipedia also says Masonite Corporation was bought by Premdor in 2001 and \"no longer supplies generic hardboard\" (marked citation-needed there).",
+        "what_is_not": "The class window (1 January 1980 to 15 January 1998), the roughly 4 million homeowner figure, settlement approval and claim deadlines: no opened page states them. The class action was in Alabama state court, so it is not on govinfo; class counsel's site is outside the allowed hosts."
+      },
       "open_questions": "Exact claim deadlines by installation year (from memory: January 2005 for 1980-89 installs, January 2008 for 1990-98); year Masonite ceased production; share already replaced."
     },
     {
@@ -79,12 +158,33 @@
         "financial": "Replacement at owner's cost; claims closed.",
         "insurance_or_sale": "Inspection call-out; no insurer rule verified."
       },
-      "fix": { "what": "Maintain paint/caulk; replace damaged boards or re-side.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "No credible figure found." },
+      "fix": {
+        "what": "Maintain paint/caulk; replace damaged boards or re-side.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found."
+      },
       "sources": [
-        { "url": "https://www.sec.gov/Archives/edgar/data/0000106535/000119312507044292/d10k.htm", "publisher": "Weyerhaeuser Co, Form 10-K FY2006 (SEC EDGAR)", "supports": "Class installed 1 Jan 1981 - 31 Dec 1999; San Francisco Superior Court approval December 2000; nine-year claims programme; 1994-99 claims expire 2009. Search-result summary only; host blocked.", "verified": false },
-        { "url": "https://www.sec.gov/Archives/edgar/data/0000106535/000119312505041798/d10k.htm", "publisher": "Weyerhaeuser Co, Form 10-K FY2004 (SEC EDGAR)", "supports": "Deadline for 1981-87 installs fell in December 2003. Search-result summary only.", "verified": false }
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/0000106535/000119312507044292/d10k.htm",
+          "publisher": "Weyerhaeuser Co, Form 10-K FY2006 (SEC EDGAR)",
+          "supports": "Class installed 1 Jan 1981 - 31 Dec 1999; San Francisco Superior Court approval December 2000; nine-year claims programme; 1994-99 claims expire 2009. Search-result summary only; host blocked.",
+          "verified": false
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/0000106535/000119312505041798/d10k.htm",
+          "publisher": "Weyerhaeuser Co, Form 10-K FY2004 (SEC EDGAR)",
+          "supports": "Deadline for 1981-87 installs fell in December 2003. Search-result summary only.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. The only sources are Weyerhaeuser SEC filings, and www.sec.gov refuses automated requests. The Wikipedia article on Weyerhaeuser was opened and does not mention hardboard siding or the class action.",
+        "what_is_not": "Class window 1981-1999, the December 2000 court approval and the 2003/2006/2009 claim expiries all rest on search-result summaries of SEC filings."
+      },
       "open_questions": "Number of structures; regional sales pattern."
     },
     {
@@ -107,14 +207,53 @@
         "financial": "Re-siding at owner's cost.",
         "insurance_or_sale": "Inspection call-out."
       },
-      "fix": { "what": "Maintain or re-side.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "No credible figure found." },
+      "fix": {
+        "what": "Maintain or re-side.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found."
+      },
       "sources": [
-        { "url": "https://www.sec.gov/Archives/edgar/data/0000041077/000004107798000013/0000041077-98-000013.txt", "publisher": "Georgia-Pacific Corp, Form 10-Q 1998 (SEC EDGAR)", "supports": "Alabama class, installed after 1 Jan 1980; approved 9 Jan 1998; claims through 18 Aug 1998. Search-result summary only.", "verified": false },
-        { "url": "https://www.sec.gov/Archives/edgar/data/60519/000091205702010142/a2073052zex-10_12.htm", "publisher": "Louisiana-Pacific Corp exhibit (ABTco settlement agreement), SEC EDGAR", "supports": "ABTco hardboard settlement terms, 25 years from installation. Search-result summary only.", "verified": false },
-        { "url": "https://www.sec.gov/Archives/edgar/data/0000012978/000001297800500014/ss01113a.htm", "publisher": "Boise Cascade Corp, Form 10-Q 2000 (SEC EDGAR)", "supports": "Five putative hardboard-siding class actions 1998-99; dismissals. Search-result summary only.", "verified": false },
-        { "url": "https://inspectapedia.com/exterior/abatibi.htm", "publisher": "InspectAPedia (secondary reference)", "supports": "Abitibi/ABTco Roaring River manufacture dates. Search-result summary only; weak secondary source.", "verified": false }
+        {
+          "url": "https://www.nachi.org/documents2012/How_to_Inspect_the_Exterior-revised-Sept-2012.pdf",
+          "publisher": "InterNACHI, How to Inspect the Exterior (2012)",
+          "tier": "trade",
+          "supports": "Generic hardboard failure mode only; says nothing about brands, dates or litigation.",
+          "verified": true,
+          "quote": "Hardboard can be affected by moisture. It can rot. It swells more than natural wood when it is wet."
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/0000041077/000004107798000013/0000041077-98-000013.txt",
+          "publisher": "Georgia-Pacific Corp, Form 10-Q 1998 (SEC EDGAR)",
+          "supports": "Alabama class, installed after 1 Jan 1980; approved 9 Jan 1998; claims through 18 Aug 1998. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/60519/000091205702010142/a2073052zex-10_12.htm",
+          "publisher": "Louisiana-Pacific Corp exhibit (ABTco settlement agreement), SEC EDGAR",
+          "supports": "ABTco hardboard settlement terms, 25 years from installation. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/0000012978/000001297800500014/ss01113a.htm",
+          "publisher": "Boise Cascade Corp, Form 10-Q 2000 (SEC EDGAR)",
+          "supports": "Five putative hardboard-siding class actions 1998-99; dismissals. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://inspectapedia.com/exterior/abatibi.htm",
+          "publisher": "InspectAPedia (secondary reference)",
+          "supports": "Abitibi/ABTco Roaring River manufacture dates. Search-result summary only; weak secondary source.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Only the generic failure mode of hardboard (InterNACHI, trade tier).",
+        "what_is_not": "Every date and every brand-specific claim (Georgia-Pacific, ABTco/Abitibi, Boise Cascade). All four original sources are on sec.gov (refuses automated requests) or outside the allowed hosts."
+      },
       "open_questions": "ABTco class dates need the settlement agreement itself; Georgia-Pacific final deadline; other makers (Forestex/Stimson, Temple-Inland, Champion) not researched."
     },
     {
@@ -130,22 +269,90 @@
       "date_notes": "The end is the better-pinned side: New Hanover County, NC stopped accepting barrier EIFS on 15 February 1996 and North Carolina required drainage for EIFS over wood framing from 1997 (search summaries of trade-press articles). Manufacturers moved to drainable systems for houses in the late 1990s, but barrier EIFS was not banned nationally and continued in some places into the early 2000s. The start and peak years are from memory (residential use grew through the 1980s and boomed in the early 1990s) and are not sourced.",
       "regions": "National, concentrated in the Southeast and Mid-Atlantic (North Carolina, Georgia, Virginia, Texas) on mid- and upper-priced houses.",
       "prevalence": "rare",
-      "prevalence_basis": "No national share found. EIFS was a minority cladding even at its peak (from memory, low single-digit percent of new homes). Among houses that DO have barrier EIFS the damage rate is high: a 1996 Virginian-Pilot report cites moisture problems in 98 percent of about 300 EIFS houses inspected in North Carolina cities. That is a sample of EIFS houses, not of all houses.",
+      "prevalence_basis": "EIFS was about 4 percent of the US residential siding market in 1997 (Wikipedia, citing a trade source; reference tier only), so 'rare' nationally. Among houses that DO have barrier EIFS the damage rate is reported as high: a 1996 Virginian-Pilot report (not opened) cites moisture problems in 98 percent of about 300 EIFS houses inspected in North Carolina cities. That is a sample of EIFS houses, not of all houses.",
       "how_to_identify": "Stucco-looking wall that sounds hollow and gives slightly when pressed or knocked; foam visible at a damaged spot or at the bottom edge; finish runs right down to or below grade with no weep screed. Look for staining below window corners and where decks or roofs meet the wall.",
       "risk": {
         "safety": "Structural decay of sheathing and framing; mould.",
         "financial": "Repairs range from sealant and flashing work to complete strip and re-clad; costs can be very large. No verified figure.",
         "insurance_or_sale": "Buyers and lenders commonly ask for an invasive EIFS moisture inspection; some insurers historically excluded EIFS water damage. Not verified this session."
       },
-      "fix": { "what": "Moisture-probe inspection by a certified EIFS inspector; add flashing/sealant where dry; strip and re-clad with a drained system where wet.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "No credible figure found." },
+      "fix": {
+        "what": "Moisture-probe inspection by a certified EIFS inspector; add flashing/sealant where dry; strip and re-clad with a drained system where wet.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found."
+      },
       "sources": [
-        { "url": "https://scholar.lib.vt.edu/VA-news/VA-Pilot/issues/1996/vp960225/02270480.htm", "publisher": "The Virginian-Pilot, 25 Feb 1996 (Virginia Tech archive)", "supports": "98 percent of about 300 inspected EIFS houses in NC had moisture problems. Search-result summary only.", "verified": false },
-        { "url": "https://www.wconline.com/articles/91911-the-rise-and-fall-of-the-eifs-house", "publisher": "Walls & Ceilings (trade press)", "supports": "Wilmington timeline. Search-result summary only; host blocked.", "verified": false },
-        { "url": "https://www.probuilder.com/products/building-envelope/article/55196751/uncertainties-continue-about-eifs-water-damage", "publisher": "Professional Builder (trade press)", "supports": "New Hanover County stopped accepting barrier EIFS 15 Feb 1996; NC drainage rule from 1997. Search-result summary only.", "verified": false },
-        { "url": "https://law.counselstack.com/opinion/ruff-v-parex-inc-ncbizct-1999", "publisher": "North Carolina Business Court, Ruff v. Parex, 1999 NCBC 6", "supports": "NC class action certified 18 September 1996 against EIFS manufacturers. Search-result summary only.", "verified": false },
-        { "url": "https://www.wconline.com/articles/84340-off-the-wall-br-beyond-the-storm", "publisher": "Walls & Ceilings (trade press)", "supports": "Proposed national Dryvit settlement (Posey v. Dryvit), up to $7,500 per home. Search-result summary only.", "verified": false }
+        {
+          "url": "https://en.wikipedia.org/wiki/Exterior_insulation_finishing_system",
+          "publisher": "Wikipedia, Exterior insulation finishing system",
+          "tier": "reference",
+          "supports": "Leak problems emerged in the late 1980s; codes later required drainage on wood-frame buildings; EIFS share of residential siding about 4 percent in 1997.",
+          "verified": true,
+          "quote": "As of 1997 EIFS accounted for about 4% of the residential siding market and 12% of the commercial siding market."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Exterior_insulation_finishing_system",
+          "publisher": "Wikipedia, Exterior insulation finishing system (second excerpt)",
+          "tier": "reference",
+          "supports": "Timing of the onset of leakage problems.",
+          "verified": true,
+          "quote": "In the late 1980s problems started developing due to water leakage in EIFS-clad buildings."
+        },
+        {
+          "url": "https://www.nachi.org/water-damage-eifs.htm",
+          "publisher": "InterNACHI, Water Damage and EIFS",
+          "tier": "trade",
+          "supports": "EIFS in US use since the late 1960s; often on wood-framed houses.",
+          "verified": true,
+          "quote": "It has been in use in Europe since the 1950s, and in the U.S. since the late ‘60s. It is often used on wood-framed houses."
+        },
+        {
+          "url": "https://www.nachi.org/documents2012/How_to_Inspect_for_Moisture_Intrusion-Third-Edition_rev-Oct-2012.pdf",
+          "publisher": "InterNACHI, How to Inspect for Moisture Intrusion (2012)",
+          "tier": "trade",
+          "supports": "Barrier EIFS is no longer permitted on residential construction; only drainable EIFS.",
+          "verified": true,
+          "quote": "building standards only allow the use of a new type of drainable EIFS (i.e., drained cavity) on residential construction"
+        },
+        {
+          "url": "https://scholar.lib.vt.edu/VA-news/VA-Pilot/issues/1996/vp960225/02270480.htm",
+          "publisher": "The Virginian-Pilot, 25 Feb 1996 (Virginia Tech archive)",
+          "supports": "98 percent of about 300 inspected EIFS houses in NC had moisture problems. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.wconline.com/articles/91911-the-rise-and-fall-of-the-eifs-house",
+          "publisher": "Walls & Ceilings (trade press)",
+          "supports": "Wilmington timeline. Search-result summary only; host blocked.",
+          "verified": false
+        },
+        {
+          "url": "https://www.probuilder.com/products/building-envelope/article/55196751/uncertainties-continue-about-eifs-water-damage",
+          "publisher": "Professional Builder (trade press)",
+          "supports": "New Hanover County stopped accepting barrier EIFS 15 Feb 1996; NC drainage rule from 1997. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://law.counselstack.com/opinion/ruff-v-parex-inc-ncbizct-1999",
+          "publisher": "North Carolina Business Court, Ruff v. Parex, 1999 NCBC 6",
+          "supports": "NC class action certified 18 September 1996 against EIFS manufacturers. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.wconline.com/articles/84340-off-the-wall-br-beyond-the-storm",
+          "publisher": "Walls & Ceilings (trade press)",
+          "supports": "Proposed national Dryvit settlement (Posey v. Dryvit), up to $7,500 per home. Search-result summary only.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "partly-confirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "That barrier EIFS on houses was superseded by drainable EIFS under building standards (InterNACHI), that leak problems appeared from the late 1980s, and that EIFS was about 4 percent of the residential siding market in 1997 (Wikipedia), which supports \"rare\" nationally.",
+        "what_is_not": "The specific end dates (New Hanover County 15 February 1996; North Carolina drainage rule 1997), the 1980 start and 1988-1996 peak, the 98-percent-of-300-houses figure, and the Dryvit settlement terms. No primary source was opened; trade-press and court pages cited are outside the allowed hosts."
+      },
       "open_questions": "Posey v. Dryvit class dates and claim deadline (from memory: homes clad after 1 January 1989, approved 2002-03, claims long closed) were not confirmed. No national prevalence figure. Start year is soft."
     },
     {
@@ -168,15 +375,51 @@
         "financial": "Re-decking affected roof areas, usually together with re-roofing; often an HOA-wide project.",
         "insurance_or_sale": "Regularly raised in townhouse resale inspections and HOA reserve studies in the Mid-Atlantic. No insurer rule verified."
       },
-      "fix": { "what": "Replace affected sheathing (usually the strips by the party walls, sometimes the whole deck) with code-compliant material when re-roofing.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "No credible figure found." },
+      "fix": {
+        "what": "Replace affected sheathing (usually the strips by the party walls, sometimes the whole deck) with code-compliant material when re-roofing.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found."
+      },
       "sources": [
-        { "url": "https://research.fs.usda.gov/treesearch/9656", "publisher": "USDA Forest Service, Forest Products Laboratory", "supports": "1985-1995 problems in Eastern and Southern multifamily housing. Search-result summary only; host blocked.", "verified": false },
-        { "url": "https://research.fs.usda.gov/treesearch/7419", "publisher": "USDA Forest Service, Forest Products Laboratory", "supports": "Acid fire-retardant chemicals plus heat and moisture cause strength loss; mid-to-late 1980s failures. Search-result summary only.", "verified": false },
-        { "url": "https://rga.lis.virginia.gov/Published/1993/HD27", "publisher": "Virginia Dept of Housing and Community Development, House Document 27 (1993)", "supports": "State study of premature deterioration of FRT plywood roof sheathing. Search-result summary only.", "verified": false },
-        { "url": "https://www.fireengineering.com/fire-safety/frt-plwood-not-as-safe-as-it-sounds/", "publisher": "Fire Engineering (trade press)", "supports": "BOCA code change in 1978 permitting FRT roof sheathing; townhouse concentration. Search-result summary only.", "verified": false },
-        { "url": "https://inspectapedia.com/structure/Fire_Retardant_Treated_FRT_Plywood.php", "publisher": "InspectAPedia (secondary reference)", "supports": "First found in New Jersey about 1987; identification by attic inspection near fire walls; do not walk on roof. Search-result summary only.", "verified": false }
+        {
+          "url": "https://research.fs.usda.gov/treesearch/9656",
+          "publisher": "USDA Forest Service, Forest Products Laboratory",
+          "supports": "1985-1995 problems in Eastern and Southern multifamily housing. Search-result summary only; host blocked.",
+          "verified": false
+        },
+        {
+          "url": "https://research.fs.usda.gov/treesearch/7419",
+          "publisher": "USDA Forest Service, Forest Products Laboratory",
+          "supports": "Acid fire-retardant chemicals plus heat and moisture cause strength loss; mid-to-late 1980s failures. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://rga.lis.virginia.gov/Published/1993/HD27",
+          "publisher": "Virginia Dept of Housing and Community Development, House Document 27 (1993)",
+          "supports": "State study of premature deterioration of FRT plywood roof sheathing. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.fireengineering.com/fire-safety/frt-plwood-not-as-safe-as-it-sounds/",
+          "publisher": "Fire Engineering (trade press)",
+          "supports": "BOCA code change in 1978 permitting FRT roof sheathing; townhouse concentration. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://inspectapedia.com/structure/Fire_Retardant_Treated_FRT_Plywood.php",
+          "publisher": "InspectAPedia (secondary reference)",
+          "supports": "First found in New Jersey about 1987; identification by attic inspection near fire walls; do not walk on roof. Search-result summary only.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. No allowed host yielded a page on FRT plywood degradation: searches of nist.gov, hud.gov, govinfo.gov and nachi.org returned nothing relevant, and en.wikipedia.org/wiki/Fire-retardant-treated_wood returned 404.",
+        "what_is_not": "All dates (1978 BOCA change, mid-to-late 1980s failures, 1985-1995 problem period), regions and cost estimates. The best sources (USDA Forest Products Laboratory, Virginia House Document 27) are on hosts outside the allowed list."
+      },
       "open_questions": "Hard end year; which treatment brands; number of units; whether the other model codes (SBCCI, ICBO) permitted the same substitution and when."
     },
     {
@@ -195,17 +438,59 @@
       "prevalence_basis": "Reasoning, not data: a roof shingled with organic shingles would now be at least 15 years old and most are 20-45 years old, beyond normal shingle life, so few remain. For the original roof of a pre-1980 house it was near-universal, but that roof has almost certainly been replaced.",
       "how_to_identify": "Cannot be told reliably from the ground. Heavy curling at tab corners, clawing and blistering on an old roof are typical. A torn shingle shows a brown/black felt core rather than white glass fibres. Wrapper or installation paperwork is the only firm identification.",
       "risk": {
-        "safety": "Typically Class C fire rating rather than Class A (per search summary).",
+        "safety": "Lower fire rating than fibreglass shingles. Sources differ on the class: Wikipedia says a maximum class \"B\" rating; an earlier search summary said typically Class C. Not confirmed against a primary source.",
         "financial": "Roof replacement due.",
         "insurance_or_sale": "Insurers increasingly restrict coverage on roofs over 15-20 years old regardless of mat type; not verified this session."
       },
-      "fix": { "what": "Re-roof.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "No credible figure found." },
+      "fix": {
+        "what": "Re-roof.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found."
+      },
       "sources": [
-        { "url": "https://en.wikipedia.org/wiki/Asphalt_shingle", "publisher": "Wikipedia (tertiary)", "supports": "Fibreglass overtook organic by 1982; BP last to cease organic production in 2011. Search-result summary only.", "verified": false },
-        { "url": "https://www.iko.com/blog/the-history-of-asphalt-shingles/", "publisher": "IKO (manufacturer)", "supports": "Organic phase-out between 2000 and 2012. Search-result summary only.", "verified": false },
-        { "url": "https://www.nps.gov/crps/tps/roofingexhibit/asphalt.htm", "publisher": "National Park Service, Technical Preservation Services", "supports": "History of asphalt shingles. Appeared in search results; content not seen.", "verified": false }
+        {
+          "url": "https://en.wikipedia.org/wiki/Asphalt_shingle",
+          "publisher": "Wikipedia, Asphalt shingle",
+          "tier": "reference",
+          "supports": "Fibreglass overtook organic by 1982.",
+          "verified": true,
+          "quote": "Fiberglass shingles gradually began to replace organic felt shingles, and by 1982 overtook them in use."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Asphalt_shingle",
+          "publisher": "Wikipedia, Asphalt shingle (second excerpt)",
+          "tier": "reference",
+          "supports": "Last organic production ended 2011 (BP Canada).",
+          "verified": true,
+          "quote": "with Building Products of Canada being the last manufacturer to make organic shingles, finally ceasing production in 2011"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Asphalt_shingle",
+          "publisher": "Wikipedia (tertiary)",
+          "supports": "Fibreglass overtook organic by 1982; BP last to cease organic production in 2011. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.iko.com/blog/the-history-of-asphalt-shingles/",
+          "publisher": "IKO (manufacturer)",
+          "supports": "Organic phase-out between 2000 and 2012. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.nps.gov/crps/tps/roofingexhibit/asphalt.htm",
+          "publisher": "National Park Service, Technical Preservation Services",
+          "supports": "History of asphalt shingles. Appeared in search results; content not seen.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "partly-confirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "installed_to 2011 and the 1982 crossover (peak_to about 1981), both from Wikipedia only (reference tier). The same article confirms all shingles were organic at first.",
+        "what_is_not": "No primary or industry source was opened (ARMA, IKO and NPS are outside the allowed hosts). CertainTeed 2005 is confirmed under its own entry; IKO 2008/2010 is not. Fire rating: Wikipedia says organic shingles have a maximum class \"B\" rating, whereas this entry had \"typically Class C\"; neither is from a primary source."
+      },
       "open_questions": "Market share by year; a primary ARMA source for the crossover date."
     },
     {
@@ -221,19 +506,56 @@
       "date_notes": "Manufacture window 1 July 1987 through 2005 is stated in CertainTeed's own 2010 press release. Installation could trail manufacture by a year or so.",
       "regions": "US and Canada in the settlement; per the press release, sold primarily in the upper Midwestern states and the Canadian provinces north of them.",
       "prevalence": "rare",
-      "prevalence_basis": "No count found. One brand's organic line, regional, and by now almost all would have been replaced on age alone.",
+      "prevalence_basis": "The court's 2010 approval opinion records CertainTeed's own estimate that about 1,857,000 structures were built with its organic shingles from 1987 to 2005 (US and Canada), and that 115,000 claims had been filed since April 2008. That is a small share of all roofs laid in 18 years, concentrated in the upper Midwest, and by now almost all would have been replaced on age alone, so 'rare' nationally.",
       "how_to_identify": "Brand names above on wrappers, invoices or warranty papers; organic (felt) core. The settlement claim form required a shingle sample.",
       "risk": {
         "safety": "None direct.",
         "financial": "Re-roof. Compensation was pro-rated by age and small.",
         "insurance_or_sale": "Old-roof underwriting rules apply."
       },
-      "fix": { "what": "Re-roof; check whether a claim is still possible.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "No credible figure found." },
+      "fix": {
+        "what": "Re-roof; check whether a claim is still possible.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found."
+      },
       "sources": [
-        { "url": "https://www.prnewswire.com/news-releases/certainteed-corporation-settles-class-action-lawsuit-regarding-organic-roofing-shingles-83796042.html", "publisher": "CertainTeed press release via PR Newswire (2010)", "supports": "Organic shingles made 1 July 1987 through 2005; sold mainly upper Midwest; claim deadlines range from 90 days to 25 years depending on circumstances. Search-result summary only.", "verified": false },
-        { "url": "https://www.claimdepot.com/settlements/certainteed-organic-shingles", "publisher": "ClaimDepot (settlement aggregator, weak)", "supports": "Lists a 2 March 2030 final claim date tied to warranty period. Search-result summary only; not confirmed against the administrator.", "verified": false }
+        {
+          "url": "https://www.govinfo.gov/content/pkg/USCOURTS-paed-2_07-md-01817/pdf/USCOURTS-paed-2_07-md-01817-1.pdf",
+          "publisher": "US District Court, E.D. Pennsylvania, In re CertainTeed Corp. Roofing Shingle Products Liability Litigation (MDL 1817), Opinion filed 31 August 2010 (govinfo)",
+          "tier": "primary",
+          "supports": "Manufacture window 1987-2005 and the only count of affected structures; final approval of the settlement.",
+          "verified": true,
+          "quote": "CertainTeed estimates that, from 1987 to 2005, approximately 1,857,000 structures were built using CertainTeed organic shingles."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/CertainTeed",
+          "publisher": "Wikipedia, CertainTeed",
+          "tier": "reference",
+          "supports": "Production of organic shingles stopped in 2005; settlement approved 1 September 2010.",
+          "verified": true,
+          "quote": "CertainTeed denies that the shingles were faulty, but quit manufacturing that particular type in 2005."
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/certainteed-corporation-settles-class-action-lawsuit-regarding-organic-roofing-shingles-83796042.html",
+          "publisher": "CertainTeed press release via PR Newswire (2010)",
+          "supports": "Organic shingles made 1 July 1987 through 2005; sold mainly upper Midwest; claim deadlines range from 90 days to 25 years depending on circumstances. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.claimdepot.com/settlements/certainteed-organic-shingles",
+          "publisher": "ClaimDepot (settlement aggregator, weak)",
+          "supports": "Lists a 2 March 2030 final claim date tied to warranty period. Search-result summary only; not confirmed against the administrator.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "The 1987-2005 window and a prevalence figure, from the court's approval opinion: about 1,857,000 structures. The accompanying order (same govinfo package, document 2) defines the class as organic shingles \"manufactured by CertainTeed after July 1, 1987\" (the scanned text renders the 1 as I). Wikipedia agrees on the 2005 end.",
+        "what_is_not": "Whether any claims are still open (the 2 March 2030 date from an aggregator was not confirmed; the opened opinion was not searched exhaustively for claim deadlines). The upper-Midwest regional statement is supported only indirectly: the court notes notice was published in Midwestern editions and Midwestern cable networks. The PR Newswire release was not opened."
+      },
       "open_questions": "CLAIMS STATUS IS NOT SETTLED: the 2010 release says deadlines vary up to 25 years, and aggregators list 2 March 2030, so some claims may still be open. This must be confirmed with the claims administrator before the site says either 'open' or 'closed'."
     },
     {
@@ -246,7 +568,7 @@
       "peak_from": null,
       "peak_to": null,
       "date_confidence": "medium",
-      "date_notes": "IKO's 2018 US settlement release says the shingles were installed on US buildings 'primarily between 1978 and 2008'. The Canadian settlement notice says organic shingles were not made after 2008 and not sold after 2010. 'Primarily' means the edges are soft.",
+      "date_notes": "IKO's 2018 US settlement release says the shingles were installed on US buildings 'primarily between 1978 and 2008'. The Canadian settlement notice says organic shingles were not made after 2008 and not sold after 2010. 'Primarily' means the edges are soft. Verification pass: the 7th Circuit (2 July 2014) describes the proposed class as IKO sales in eight states \"since 1979\"; the 1978 figure comes from the unopened 2018 press release. A one-year difference in a \"primarily\" range; installed_from left at 1978.",
       "regions": "National in principle; IKO's US presence is strongest in the Northeast, Midwest and Northwest (from memory).",
       "prevalence": "rare",
       "prevalence_basis": "No count found; one brand, and most such roofs have aged out.",
@@ -256,12 +578,41 @@
         "financial": "Re-roof.",
         "insurance_or_sale": "Old-roof underwriting rules apply."
       },
-      "fix": { "what": "Re-roof.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "No credible figure found." },
+      "fix": {
+        "what": "Re-roof.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found."
+      },
       "sources": [
-        { "url": "https://www.prnewswire.com/news-releases/iko-settles-class-action-lawsuit-regarding-organic-asphalt-shingles-300742840.html", "publisher": "IKO press release via PR Newswire (2018)", "supports": "US settlement, C.D. Illinois; shingles installed primarily 1978-2008; warranty extensions of up to five years. Search-result summary only.", "verified": false },
-        { "url": "https://www.siskinds.com/class-action/iko-roofing-shingles-2", "publisher": "Siskinds LLP (Canadian class counsel)", "supports": "Organic shingles not made since 2008, not sold since 2010; Canadian claims no later than 31 December 2023. Search-result summary only.", "verified": false }
+        {
+          "url": "https://www.govinfo.gov/content/pkg/USCOURTS-ca7-14-01532/pdf/USCOURTS-ca7-14-01532-0.pdf",
+          "publisher": "US Court of Appeals, 7th Circuit, In re IKO Roofing Shingle Products Liability Litigation, No. 14-1532, decided 2 July 2014 (govinfo)",
+          "tier": "primary",
+          "supports": "Litigation concerns IKO organic asphalt shingles; proposed class covered sales since 1979. Says nothing about when production ended.",
+          "verified": true,
+          "quote": "certify a class that would cover IKO’s sales in eight states since 1979"
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/iko-settles-class-action-lawsuit-regarding-organic-asphalt-shingles-300742840.html",
+          "publisher": "IKO press release via PR Newswire (2018)",
+          "supports": "US settlement, C.D. Illinois; shingles installed primarily 1978-2008; warranty extensions of up to five years. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.siskinds.com/class-action/iko-roofing-shingles-2",
+          "publisher": "Siskinds LLP (Canadian class counsel)",
+          "supports": "Organic shingles not made since 2008, not sold since 2010; Canadian claims no later than 31 December 2023. Search-result summary only.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "partly-confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "That purchasers in many states sued IKO over organic shingles and that the proposed class reached back to sales since 1979 (7th Circuit opinion), which is consistent with the 1978 start to within a year.",
+        "what_is_not": "The end years (not made after 2008, not sold after 2010), the 2018 US settlement and its terms. The 2014 opinion predates the settlement; PR Newswire and Siskinds are outside the allowed hosts and the Wikipedia article on IKO returned 404."
+      },
       "open_questions": "US claim deadline (assumed closed; not confirmed)."
     },
     {
@@ -284,12 +635,33 @@
         "financial": "Re-roof.",
         "insurance_or_sale": "Insurers do not pay for manufacturing-defect cracking; age-based roof rules apply."
       },
-      "fix": { "what": "Re-roof.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "No credible figure found." },
+      "fix": {
+        "what": "Re-roof.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found."
+      },
       "sources": [
-        { "url": "https://law.justia.com/cases/federal/district-courts/south-carolina/scdce/3:2011cv02784/185692/86", "publisher": "US District Court, D. South Carolina (In re Building Materials Corp. of America Asphalt Roofing Shingle Products Liability Litigation), via Justia", "supports": "Final approval order 22 April 2015; class definitions. Search-result summary only.", "verified": false },
-        { "url": "https://topclassactions.com/lawsuit-settlements/closed-settlements/gaf-timberline-shingles-class-action-settlement/", "publisher": "Top Class Actions (aggregator, weak)", "supports": "Mobile class 1999-2007; claim deadline the earlier of 7 years from effective date (about April 2022) or warranty expiry; listed as closed. Search-result summary only.", "verified": false }
+        {
+          "url": "https://law.justia.com/cases/federal/district-courts/south-carolina/scdce/3:2011cv02784/185692/86",
+          "publisher": "US District Court, D. South Carolina (In re Building Materials Corp. of America Asphalt Roofing Shingle Products Liability Litigation), via Justia",
+          "supports": "Final approval order 22 April 2015; class definitions. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://topclassactions.com/lawsuit-settlements/closed-settlements/gaf-timberline-shingles-class-action-settlement/",
+          "publisher": "Top Class Actions (aggregator, weak)",
+          "supports": "Mobile class 1999-2007; claim deadline the earlier of 7 years from effective date (about April 2022) or warranty expiry; listed as closed. Search-result summary only.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing about the cracking litigation. The Wikipedia article on GAF was opened; it covers Timberline (launched 1967) but does not mention the cracking class action. Guessed govinfo package names for the D. South Carolina MDL returned no document.",
+        "what_is_not": "Both class windows (Mobile 1999-2007; other plants from 1998), the 22 April 2015 final approval and the claim deadline. Justia and the aggregator are outside the allowed hosts."
+      },
       "open_questions": "Exact end date of the non-Mobile class; exact final claim date (2022 vs 2023 in different sources, both past)."
     },
     {
@@ -297,12 +669,12 @@
       "name": "Atlas Chalet / Stratford shingles",
       "category": "envelope",
       "summary": "A three-tab shingle with an added shadow line to look like an architectural shingle, heavily used by tract builders in Georgia and the Southeast. It was alleged to blister and shed granules; Atlas discontinued it in 2010. Because it cannot be matched, insurers and owners argue over whether storm damage requires a full re-roof.",
-      "installed_from": 1999,
+      "installed_from": 1998,
       "installed_to": 2010,
       "peak_from": null,
       "peak_to": null,
-      "date_confidence": "low",
-      "date_notes": "The 2010 discontinuation is from a N.D. Georgia court order (search summary). The start year was NOT confirmed by any source this session; 1999 is an unverified figure from memory and trade lore.",
+      "date_confidence": "medium",
+      "date_notes": "The 2010 discontinuation is from a N.D. Georgia court order (search summary). The start year was NOT confirmed by any source this session; 1999 is an unverified figure from memory and trade lore. Verification pass (correction): installed_from changed from 1999 to 1998. The N.D. Georgia opinion of 8 June 2018 says Atlas \"developed the Shingles in the 1990s\" and quotes testimony about marketing \"between 1998 and 2010\", so the product was on sale by 1998; the true first year may be earlier in the 1990s. The 2010 discontinuation is confirmed by the same opinion. Confidence raised from low to medium.",
       "regions": "Southeast, especially metro Atlanta; also Tennessee, the Carolinas, Alabama, Florida.",
       "prevalence": "possible",
       "prevalence_basis": "No data. Anecdotally very common on Atlanta-area subdivisions of 1999-2010; rare elsewhere. No class was certified (certification denied in the Georgia MDL, 2017), so there is no class count.",
@@ -312,12 +684,57 @@
         "financial": "No settlement fund; re-roof at owner's cost unless an insurer accepts a storm claim.",
         "insurance_or_sale": "Discontinued and unmatchable, which drives full-roof insurance disputes; some insurers add cosmetic or matching exclusions. Not verified."
       },
-      "fix": { "what": "Re-roof.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "No credible figure found." },
+      "fix": {
+        "what": "Re-roof.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found."
+      },
       "sources": [
-        { "url": "https://docs.justia.com/cases/federal/district-courts/georgia/gandce/1:2013cv02195/195884/64", "publisher": "US District Court, N.D. Georgia (Dishman v. Atlas Roofing), via Justia", "supports": "Sales discontinued 2010; class certification denied. Search-result summary only.", "verified": false },
-        { "url": "https://www.lexislegalnews.com/mealeys/articles/1625734", "publisher": "Mealey's / LexisNexis Legal News", "supports": "June 2017 refusal to certify a class. Search-result summary only.", "verified": false }
+        {
+          "url": "https://www.govinfo.gov/content/pkg/USCOURTS-gand-1_13-cv-02195/pdf/USCOURTS-gand-1_13-cv-02195-2.pdf",
+          "publisher": "US District Court, N.D. Georgia, Dishman v. Atlas Roofing Corp. (MDL 2495), Opinion and Order filed 8 June 2018 (govinfo)",
+          "tier": "primary",
+          "supports": "Product developed in the 1990s; sales discontinued 2010; marketing testimony covers 1998-2010.",
+          "verified": true,
+          "quote": "In 2010, the Defendant discontinued sales of the Shingles."
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/USCOURTS-gand-1_13-cv-02195/pdf/USCOURTS-gand-1_13-cv-02195-2.pdf",
+          "publisher": "Same opinion (second excerpt)",
+          "tier": "primary",
+          "supports": "Start: developed in the 1990s as an overlay product imitating architectural shingles.",
+          "verified": true,
+          "quote": "The Defendant developed the Shingles in the 1990s as a line of “overlay” products"
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/USCOURTS-gand-1_13-cv-02195/pdf/USCOURTS-gand-1_13-cv-02195-1.pdf",
+          "publisher": "US District Court, N.D. Georgia, Dishman v. Atlas Roofing Corp., Opinion and Order filed 9 June 2017 (govinfo)",
+          "tier": "primary",
+          "supports": "Class certification denied; product is Chalet and Stratford shingles; named plaintiffs in metro-Atlanta-area Georgia towns.",
+          "verified": true,
+          "quote": "The Plaintiffs and putative class members are purchasers of Atlas Chalet and Stratford Shingles"
+        },
+        {
+          "url": "https://docs.justia.com/cases/federal/district-courts/georgia/gandce/1:2013cv02195/195884/64",
+          "publisher": "US District Court, N.D. Georgia (Dishman v. Atlas Roofing), via Justia",
+          "supports": "Sales discontinued 2010; class certification denied. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.lexislegalnews.com/mealeys/articles/1625734",
+          "publisher": "Mealey's / LexisNexis Legal News",
+          "supports": "June 2017 refusal to certify a class. Search-result summary only.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "corrected",
+        "primary_verified": true,
+        "what_is_confirmed": "installed_to 2010 (court: sales discontinued in 2010) and denial of class certification on 9 June 2017. The court also says the shingles were developed in the 1990s, and quotes Atlas's sales vice-president on marketing \"between 1998 and 2010\"; a named plaintiff in the companion South Carolina case installed them in 1999.",
+        "what_is_not": "The exact first year of sale: the court says only \"in the 1990s\". Prevalence and the list of states remain unsourced, as do the insurance-matching disputes."
+      },
       "open_questions": "First year of manufacture; any later settlement; states where sold."
     },
     {
@@ -340,13 +757,47 @@
         "financial": "Shorter and more maintenance-dependent life than most roofs; replacement cost high.",
         "insurance_or_sale": "Insurance-press and filing reviews report many major insurers treat wood shake as ineligible, others only in wildfire-exposed areas; surcharges otherwise. Specific surcharge percentages seen came only from vendors and are not relied on."
       },
-      "fix": { "what": "Re-roof with a Class A covering.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "No credible figure found." },
+      "fix": {
+        "what": "Re-roof with a Class A covering.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found."
+      },
       "sources": [
-        { "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Building-Comunities-Safer-from-Wildfires-Updated-030625-V2.pdf", "publisher": "California Department of Insurance", "supports": "Wood shake shingles are not Class A fire rated. Search-result summary only.", "verified": false },
-        { "url": "https://insurancebusinessmag.com/us/news/property/california-insurers-tighten-roof-coverage-rules-576538.aspx", "publisher": "Insurance Business (trade press)", "supports": "California insurers tightening roof eligibility, wood shake commonly ineligible. Search-result summary only.", "verified": false },
-        { "url": "https://www.cedur.com/wood-roof-bans", "publisher": "CeDUR (synthetic-shake vendor; weak, commercial interest)", "supports": "List of local wood-roof bans including Los Angeles County 1989. Search-result summary only.", "verified": false }
+        {
+          "url": "https://en.wikipedia.org/wiki/Wood_shingle",
+          "publisher": "Wikipedia, Wood shingle",
+          "tier": "reference",
+          "supports": "General statement that wood shingles are fire-susceptible and less common than formerly; no dates, bans or insurance rules.",
+          "verified": true,
+          "quote": "Wood shingles are susceptible to fire and cost more than other types of shingle so they are not as common as in the past."
+        },
+        {
+          "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/03-res/upload/Building-Comunities-Safer-from-Wildfires-Updated-030625-V2.pdf",
+          "publisher": "California Department of Insurance",
+          "supports": "Wood shake shingles are not Class A fire rated. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://insurancebusinessmag.com/us/news/property/california-insurers-tighten-roof-coverage-rules-576538.aspx",
+          "publisher": "Insurance Business (trade press)",
+          "supports": "California insurers tightening roof eligibility, wood shake commonly ineligible. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.cedur.com/wood-roof-bans",
+          "publisher": "CeDUR (synthetic-shake vendor; weak, commercial interest)",
+          "supports": "List of local wood-roof bans including Los Angeles County 1989. Search-result summary only.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Only the general fire susceptibility (Wikipedia, reference tier).",
+        "what_is_not": "Peak years, every ban date (Los Angeles County 1989, California 2008, 2026 changes), the Class A statement and insurer practice. www.fema.gov refuses automated requests; a nist.gov search found WUI ember research but nothing specific to wood shake roofs; the California Department of Insurance is outside the allowed hosts."
+      },
       "open_questions": "Era prevalence by state; Texas rules; an authoritative list of bans with dates (state fire marshal or code text)."
     },
     {
@@ -369,13 +820,47 @@
         "financial": "Higher heating and cooling bills; condensation damage to sills.",
         "insurance_or_sale": "None typical."
       },
-      "fix": { "what": "Storm windows (interior or exterior, low-e), or window replacement.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "No credible figure found." },
+      "fix": {
+        "what": "Storm windows (interior or exterior, low-e), or window replacement.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found."
+      },
       "sources": [
-        { "url": "https://www.aceee.org/sites/default/files/proceedings/ssb26/pdfs/026_0959_1434_000546.pdf", "publisher": "ACEEE Summer Study proceedings", "supports": "Double-pane share of US window sales about 10 percent in 1970, about 90 percent by 2010; low-e IGUs 75 percent of market by 2010. Search-result summary only.", "verified": false },
-        { "url": "https://www.eia.gov/consumption/residential/data/2024/hc/pdf/HC2.3_2024.pdf", "publisher": "US Energy Information Administration, RECS 2024", "supports": "Counts of units by glass type (single 43.83M, double 86.08M, triple 2.63M); table identity inferred from search listing. Search-result summary only.", "verified": false },
-        { "url": "https://www.eia.gov/consumption/residential/data/2015/hc/php/hc2.3.php", "publisher": "US Energy Information Administration, RECS 2015", "supports": "2015 counts: single 48.7M, double 68.3M, triple 1.2M, with year-of-construction columns. Search-result summary only.", "verified": false }
+        {
+          "url": "https://www.energy.gov/sites/prod/files/guide_to_energy_efficient_windows.pdf",
+          "publisher": "US Department of Energy, Guide to Energy-Efficient Windows",
+          "tier": "primary",
+          "supports": "Qualitative only: single pane, then clear double pane, were the traditional US house windows. No dates or shares.",
+          "verified": true,
+          "quote": "Traditional window materials used in houses across the United States – single glass pane and later double-"
+        },
+        {
+          "url": "https://www.aceee.org/sites/default/files/proceedings/ssb26/pdfs/026_0959_1434_000546.pdf",
+          "publisher": "ACEEE Summer Study proceedings",
+          "supports": "Double-pane share of US window sales about 10 percent in 1970, about 90 percent by 2010; low-e IGUs 75 percent of market by 2010. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.eia.gov/consumption/residential/data/2024/hc/pdf/HC2.3_2024.pdf",
+          "publisher": "US Energy Information Administration, RECS 2024",
+          "supports": "Counts of units by glass type (single 43.83M, double 86.08M, triple 2.63M); table identity inferred from search listing. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.eia.gov/consumption/residential/data/2015/hc/php/hc2.3.php",
+          "publisher": "US Energy Information Administration, RECS 2015",
+          "supports": "2015 counts: single 48.7M, double 68.3M, triple 1.2M, with year-of-construction columns. Search-result summary only.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Only the qualitative sequence (single pane first, clear double pane later) from a DOE consumer guide, plus Wikipedia's note that sealed insulating glass became a commercial product in the 1930s-40s (Thermopane announced 1944). The DOE source is primary tier but supports no date or prevalence claim, so primary_verified is left false.",
+        "what_is_not": "The 10 percent (1970) and 90 percent (2010) double-pane sales shares, the RECS unit counts, and the 1975/1995 judgement years. ACEEE and EIA are outside the allowed hosts."
+      },
       "open_questions": "RECS glass type by year built (exists; needs eia.gov access). State energy-code dates that effectively ended single glazing."
     },
     {
@@ -391,19 +876,56 @@
       "date_notes": "No source pins a 'bad era'. What the evidence says: field studies reported in an ORNL/Buildings conference paper (Lingnell) found failure rates of only about 1 percent at 15 years for certified units, which cuts against the popular idea that 1970s-80s units failed en masse. A CMHC-related summary says dual-seal edge systems became popular in the 1990s for longer life; Cardinal (a manufacturer, so discount it) dates its dual-seal silicone to 1978. The peak range given is the conventional home-inspector view (pre-dual-seal, pre-warm-edge units now 30-50 years old) and is not backed by failure data.",
       "regions": "National; faster failure with heavy sun exposure and where glazing pockets do not drain.",
       "prevalence": "possible",
-      "prevalence_basis": "No population failure-rate data by era was found. Units over 25-30 years old are simply past the 20-year life commonly quoted for IG seals (figure from memory of inspector references; not confirmed).",
+      "prevalence_basis": "No population failure-rate data by era was found. Wikipedia (reference tier) says IG units typically last 10 to 25 years, less on sun-facing elevations, and InterNACHI lists window glazing at 10+ years; units over 25-30 years old are therefore past typical seal life.",
       "how_to_identify": "Haze, droplets or a milky/rainbow film between the panes that cannot be wiped off from either side; worst on cold mornings or in direct sun.",
       "risk": {
         "safety": "None.",
         "financial": "Glass-unit replacement per sash; loss of some insulating value.",
         "insurance_or_sale": "Standard inspection call-out and common repair-credit item."
       },
-      "fix": { "what": "Replace the sealed glass unit in the existing sash, or replace the window.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "No credible figure found." },
+      "fix": {
+        "what": "Replace the sealed glass unit in the existing sash, or replace the window.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found."
+      },
       "sources": [
-        { "url": "https://web.ornl.gov/sci/buildings/conf-archive/2007%20B10%20papers/066_Lingnell.pdf", "publisher": "Buildings X conference paper (Lingnell), hosted by Oak Ridge National Laboratory", "supports": "25-year field correlation study; about 1.0-1.2 percent failures at 15 years; single-seal vs dual-seal. Search-result summary only.", "verified": false },
-        { "url": "https://www.constructionspecifier.com/visually-obscured-glass-units/", "publisher": "The Construction Specifier", "supports": "Prolonged water at the edge seal is the main cause of early failure. Search-result summary only.", "verified": false }
+        {
+          "url": "https://en.wikipedia.org/wiki/Insulated_glazing",
+          "publisher": "Wikipedia, Insulated glazing",
+          "tier": "reference",
+          "supports": "Typical service life of sealed units; seal failure causes condensation between panes.",
+          "verified": true,
+          "quote": "IG units typically last from 10 to 25 years, with windows facing the equator often lasting less than 12 years."
+        },
+        {
+          "url": "https://www.nachi.org/life-expectancy.htm",
+          "publisher": "InterNACHI, Standard Estimated Life Expectancy Chart for Homes",
+          "tier": "trade",
+          "supports": "Chart lists window glazing at 10+ years.",
+          "verified": true,
+          "quote": "Window Glazing 10+"
+        },
+        {
+          "url": "https://web.ornl.gov/sci/buildings/conf-archive/2007%20B10%20papers/066_Lingnell.pdf",
+          "publisher": "Buildings X conference paper (Lingnell), hosted by Oak Ridge National Laboratory",
+          "supports": "25-year field correlation study; about 1.0-1.2 percent failures at 15 years; single-seal vs dual-seal. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.constructionspecifier.com/visually-obscured-glass-units/",
+          "publisher": "The Construction Specifier",
+          "supports": "Prolonged water at the edge seal is the main cause of early failure. Search-result summary only.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "partly-confirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "The wear-out framing and a typical life of 10 to 25 years (Wikipedia; InterNACHI lists window glazing at 10+ years). This replaces the from-memory \"20 years\" in prevalence_basis.",
+        "what_is_not": "Any era-specific failure rate, the Lingnell 1-percent-at-15-years result, the dual-seal dates, and the 1975-1995 peak, which remains a convention rather than a finding. ORNL and trade-press pages are outside the allowed hosts."
+      },
       "open_questions": "Hurd 'Heat Mirror' and other product-specific IG failures were searched for and nothing was found; they remain unverified. No era-specific failure rates for uncertified units."
     },
     {
@@ -426,11 +948,35 @@
         "financial": "Energy cost; replacement.",
         "insurance_or_sale": "In hurricane states, lack of impact rating or shutters affects wind premiums (not researched here)."
       },
-      "fix": { "what": "Replace with thermally broken or non-metal double-glazed units.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "No credible figure found." },
+      "fix": {
+        "what": "Replace with thermally broken or non-metal double-glazed units.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found."
+      },
       "sources": [
-        { "url": "https://efficientwindows.org/ftypes-metal/", "publisher": "Efficient Windows Collaborative", "supports": "Thermal behaviour of aluminium frames with and without thermal break. Appeared in search results; content not seen.", "verified": false }
+        {
+          "url": "https://www.nachi.org/life-expectancy.htm",
+          "publisher": "InterNACHI, Standard Estimated Life Expectancy Chart for Homes",
+          "tier": "trade",
+          "supports": "Service life of aluminium windows only; nothing on dates of use.",
+          "verified": true,
+          "quote": "Aluminum windows are expected to last between 15 and 20 years, while wooden windows should last nearly 30 years."
+        },
+        {
+          "url": "https://efficientwindows.org/ftypes-metal/",
+          "publisher": "Efficient Windows Collaborative",
+          "supports": "Thermal behaviour of aluminium frames with and without thermal break. Appeared in search results; content not seen.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Only that aluminium windows have a short expected life, 15 to 20 years (InterNACHI, trade tier), which supports the end-of-life framing.",
+        "what_is_not": "All four years and the regional pattern; no opened page dates residential aluminium windows or thermal breaks."
+      },
       "open_questions": "Everything about dates and prevalence. Needs window-industry (AAMA/FGIA) history or Census characteristics data."
     },
     {
@@ -453,13 +999,47 @@
         "financial": "Higher energy bills.",
         "insurance_or_sale": "None typical."
       },
-      "fix": { "what": "Dense-pack cellulose or fibreglass blown into wall cavities; attic insulation and air sealing first.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "No credible figure found." },
+      "fix": {
+        "what": "Dense-pack cellulose or fibreglass blown into wall cavities; attic insulation and air sealing first.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found."
+      },
       "sources": [
-        { "url": "https://webarchive.library.unt.edu/eot2008/20080921073426/http://www1.eere.energy.gov/consumer/tips/insulation_sealing.html", "publisher": "US DOE EERE consumer tips (archived 2008)", "supports": "Only about 20 percent of homes built before 1980 are well insulated. Search-result summary only.", "verified": false },
-        { "url": "https://www.eia.gov/consumption/residential/data/2020/hc/pdf/HC%202.3.pdf", "publisher": "US Energy Information Administration, RECS 2020 Table HC2.3", "supports": "Self-reported adequacy of insulation by year of construction. Search-result summary only; figures not extracted.", "verified": false },
-        { "url": "https://www.pnnl.gov/main/publications/external/technical_reports/PNNL-32231.pdf", "publisher": "Pacific Northwest National Laboratory", "supports": "Wall-upgrade retrofit study; likely contains stock estimates of uninsulated walls. Appeared in search results; content not seen.", "verified": false }
+        {
+          "url": "https://www.energy.gov/articles/insulate-your-home-and-your-bank-account",
+          "publisher": "US Department of Energy, Insulate Your Home and Your Bank Account",
+          "tier": "primary",
+          "supports": "Qualitative only: older homes were built with less insulation. No years or percentages.",
+          "verified": true,
+          "quote": "If you live in an older home, chances are it wasn’t built with state-of-the-art insulation technology."
+        },
+        {
+          "url": "https://webarchive.library.unt.edu/eot2008/20080921073426/http://www1.eere.energy.gov/consumer/tips/insulation_sealing.html",
+          "publisher": "US DOE EERE consumer tips (archived 2008)",
+          "supports": "Only about 20 percent of homes built before 1980 are well insulated. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.eia.gov/consumption/residential/data/2020/hc/pdf/HC%202.3.pdf",
+          "publisher": "US Energy Information Administration, RECS 2020 Table HC2.3",
+          "supports": "Self-reported adequacy of insulation by year of construction. Search-result summary only; figures not extracted.",
+          "verified": false
+        },
+        {
+          "url": "https://www.pnnl.gov/main/publications/external/technical_reports/PNNL-32231.pdf",
+          "publisher": "Pacific Northwest National Laboratory",
+          "supports": "Wall-upgrade retrofit study; likely contains stock estimates of uninsulated walls. Appeared in search results; content not seen.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Only a general DOE statement that older homes were built with poorer insulation. The DOE source is primary tier but supports no date or prevalence claim, so primary_verified is left false.",
+        "what_is_not": "The 1980 and 1950 years, the \"20 percent of pre-1980 homes well insulated\" figure, and the FHA Minimum Property Standards history. The archived EERE page, EIA and PNNL are outside the allowed hosts; current energy.gov Energy Saver URLs tried returned 404."
+      },
       "open_questions": "A sourced share of uninsulated walls by decade; FHA Minimum Property Standards insulation requirements by year."
     },
     {
@@ -472,7 +1052,7 @@
       "peak_from": null,
       "peak_to": null,
       "date_confidence": "medium",
-      "date_notes": "Sequence as given by IAEI Magazine, an Ohio state history and an ACEEE paper (search summaries, mutually consistent): ASHRAE Standard 90-75 published 1975, the first voluntary consensus energy standard; Model Code for Energy Conservation in New Building Construction (MCEC) 1977, written by NCSBCS under DOE contract and based on 90-75; first CABO Model Energy Code (MEC) 1983, with later editions including 1986 and 1992 (from memory also 1989, 1993, 1995); MEC handed to the ICC effective 4 December 1995; first International Energy Conservation Code (IECC) 1998, replacing the 1995 MEC; IECC editions every three years from 2000. From memory, California's Title 24 energy standards took effect in 1978 and the 2009 and 2012 IECC brought the largest jumps in stringency; not confirmed this session. The model-code year is NOT the year a given state enforced it; some states lagged by a decade or more and a few still have no statewide residential energy code.",
+      "date_notes": "Sequence as given by IAEI Magazine, an Ohio state history and an ACEEE paper (search summaries, mutually consistent): ASHRAE Standard 90-75 published 1975, the first voluntary consensus energy standard; Model Code for Energy Conservation in New Building Construction (MCEC) 1977, written by NCSBCS under DOE contract and based on 90-75; first CABO Model Energy Code (MEC) 1983, with later editions including 1986 and 1992 (from memory also 1989, 1993, 1995); MEC handed to the ICC effective 4 December 1995; first International Energy Conservation Code (IECC) 1998, replacing the 1995 MEC; IECC editions every three years from 2000. From memory, California's Title 24 energy standards took effect in 1978 and the 2009 and 2012 IECC brought the largest jumps in stringency; not confirmed this session. The model-code year is NOT the year a given state enforced it; some states lagged by a decade or more and a few still have no statewide residential energy code. Verification pass: Wikipedia confirms ASHRAE 90 was published in 1975. It dates the IECC to 2000 rather than 1998; the 1998 first edition stated here could not be checked against the ICC and should be treated as unconfirmed.",
       "regions": "National model codes; adoption is state by state (and in home-rule states, town by town).",
       "prevalence": "likely",
       "prevalence_basis": "Not a product. A house built before 1975 was built under no energy code anywhere in the US. For later houses the applicable code depends on state adoption dates, which DOE's Building Energy Codes Program tracks (site could not be opened).",
@@ -482,13 +1062,63 @@
         "financial": "Energy cost and comfort.",
         "insurance_or_sale": "None typical."
       },
-      "fix": { "what": "Energy audit; air sealing, attic and wall insulation.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "Not applicable." },
+      "fix": {
+        "what": "Energy audit; air sealing, attic and wall insulation.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "Not applicable."
+      },
       "sources": [
-        { "url": "https://iaeimagazine.org/2008/july2008/national-energy-codes-and-standards/", "publisher": "IAEI Magazine (International Association of Electrical Inspectors)", "supports": "ASHRAE 90-75 as first consensus standard; MCEC 1977; MEC 1983; transfer to ICC 4 Dec 1995; IECC 1998. Search-result summary only.", "verified": false },
-        { "url": "https://dam.assets.ohio.gov/image/upload/com.ohio.gov/documents/HistoryofEnergyCodeAdoptioninOhio-Fall2020.pdf", "publisher": "Ohio Department of Commerce", "supports": "State-level adoption history illustrating lag behind model codes. Search-result summary only.", "verified": false },
-        { "url": "https://www.aceee.org/files/proceedings/1992/data/papers/SS92_Panel6_Paper29.pdf", "publisher": "ACEEE Summer Study 1992", "supports": "MEC lineage and DOE role. Search-result summary only.", "verified": false }
+        {
+          "url": "https://en.wikipedia.org/wiki/ASHRAE_90.1",
+          "publisher": "Wikipedia, ASHRAE 90.1",
+          "tier": "reference",
+          "supports": "First energy standard, ASHRAE 90, published 1975.",
+          "verified": true,
+          "quote": "The original standard, ASHRAE 90, was published in 1975."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/International_Energy_Conservation_Code",
+          "publisher": "Wikipedia, International Energy Conservation Code",
+          "tier": "reference",
+          "supports": "IECC is the ICC model energy code, updated every three years. NOTE: gives 2000, not 1998, as its creation year.",
+          "verified": true,
+          "quote": "is a building code created by the International Code Council in 2000"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/International_Code_Council",
+          "publisher": "Wikipedia, International Code Council",
+          "tier": "reference",
+          "supports": "ICC founded 1994 by merger of BOCA, SBCCI and ICBO.",
+          "verified": true,
+          "quote": "In 1994, BOCA, SBCCI, and ICBO merged to form the International Code Council (ICC)"
+        },
+        {
+          "url": "https://iaeimagazine.org/2008/july2008/national-energy-codes-and-standards/",
+          "publisher": "IAEI Magazine (International Association of Electrical Inspectors)",
+          "supports": "ASHRAE 90-75 as first consensus standard; MCEC 1977; MEC 1983; transfer to ICC 4 Dec 1995; IECC 1998. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://dam.assets.ohio.gov/image/upload/com.ohio.gov/documents/HistoryofEnergyCodeAdoptioninOhio-Fall2020.pdf",
+          "publisher": "Ohio Department of Commerce",
+          "supports": "State-level adoption history illustrating lag behind model codes. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.aceee.org/files/proceedings/1992/data/papers/SS92_Panel6_Paper29.pdf",
+          "publisher": "ACEEE Summer Study 1992",
+          "supports": "MEC lineage and DOE role. Search-result summary only.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "partly-confirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "The 1975 starting point (ASHRAE Standard 90 published 1975) and the existence of the IECC as the ICC's three-yearly model code, from Wikipedia only.",
+        "what_is_not": "MCEC 1977, the first CABO Model Energy Code in 1983 and its editions, and the December 1995 transfer to the ICC: no opened page states them. First IECC edition: this entry says 1998, Wikipedia says the IECC was \"created ... in 2000\"; not resolved, because codes.iccsafe.org refuses automated requests. Searches of energy.gov, hud.gov and govinfo.gov found no code history."
+      },
       "open_questions": "State-by-state first-adoption years (needed if the site is to key on state); what each edition actually required for walls, ceilings and windows by climate zone."
     },
     {
@@ -496,12 +1126,12 @@
       "name": "Balloon framing (open wall cavities from basement to attic)",
       "category": "fire-safety",
       "summary": "In balloon-framed houses the wall studs run unbroken from the sill to the roof, leaving open cavities that act as chimneys in a fire, carrying flame from the basement to the attic in minutes unless fireblocking has been added. The same open cavities make it easy to blow in insulation and run wires.",
-      "installed_from": 1833,
+      "installed_from": 1832,
       "installed_to": 1950,
       "peak_from": 1870,
       "peak_to": 1930,
       "date_confidence": "low",
-      "date_notes": "Sources seen agree on the start (Chicago, early 1830s) and disagree on the end: 'late 19th century to mid-20th century', 'many homes built before the 1950s', 'platform framing dominant by the 1950s'. From memory, platform framing took over in most regions during the 1920s-1940s. Balloon-framed walls are still used today for tall gable ends and stair walls, with fireblocking. Peak years are an estimate.",
+      "date_notes": "Sources seen agree on the start (Chicago, early 1830s) and disagree on the end: 'late 19th century to mid-20th century', 'many homes built before the 1950s', 'platform framing dominant by the 1950s'. From memory, platform framing took over in most regions during the 1920s-1940s. Balloon-framed walls are still used today for tall gable ends and stair walls, with fireblocking. Peak years are an estimate. Verification pass (minor correction): installed_from changed from 1833 to 1832, the year Wikipedia gives for the first clearly balloon-framed building (a Chicago warehouse); attribution is disputed and the difference is immaterial for housing. The same page supports the 1950 end: \"common until the late 1940s\", and in another passage \"up until the mid-1950s\".",
       "regions": "National for wood-frame houses; most common in the Midwest and Northeast housing stock of 1870-1930.",
       "prevalence": "likely",
       "prevalence_basis": "No survey data exists. For a two-storey wood-frame house built before about 1920, inspectors generally assume balloon framing until shown otherwise; for 1930s-40s houses it is a toss-up by region and builder. One-storey houses are effectively unaffected.",
@@ -511,12 +1141,57 @@
         "financial": "Fireblocking retrofit is modest where cavities are reachable from basement and attic.",
         "insurance_or_sale": "Not normally an underwriting item on its own."
       },
-      "fix": { "what": "Install fireblocking (lumber, mineral wool or dense-pack insulation) at the basement and attic ends of each stud cavity and at floor lines where accessible.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "No credible figure found." },
+      "fix": {
+        "what": "Install fireblocking (lumber, mineral wool or dense-pack insulation) at the basement and attic ends of each stud cavity and at floor lines where accessible.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found."
+      },
       "sources": [
-        { "url": "https://en.wikipedia.org/wiki/Fire_blocking", "publisher": "Wikipedia (tertiary)", "supports": "Fireblocking purpose and materials; platform framing interrupts cavities at each floor. Search-result summary only.", "verified": false },
-        { "url": "https://www.finehomebuilding.com/project-guides/framing/evolution-of-the-house-frame", "publisher": "Fine Homebuilding", "supports": "Evolution from balloon to platform framing. Appeared in search results; content not seen.", "verified": false }
+        {
+          "url": "https://en.wikipedia.org/wiki/Framing_(construction)",
+          "publisher": "Wikipedia, Framing (construction) (Balloon framing redirects here)",
+          "tier": "reference",
+          "supports": "End of era: common until the late 1940s, then platform framing predominant.",
+          "verified": true,
+          "quote": "Balloon framing using a technique suspending floors from the walls was common until the late 1940s, but since that time, platform framing has become the predominant form of house construction."
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Framing_(construction)",
+          "publisher": "Wikipedia, Framing (construction) (second excerpt)",
+          "tier": "reference",
+          "supports": "Start: first clearly balloon-framed building, Chicago 1832.",
+          "verified": true,
+          "quote": "The first building clearly using balloon framing was a warehouse constructed in 1832 in Chicago"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Fire_blocking",
+          "publisher": "Wikipedia, Fire blocking",
+          "tier": "reference",
+          "supports": "Fire significance of open multi-storey cavities.",
+          "verified": true,
+          "quote": "where a cavity may traverse multiple floors"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Fire_blocking",
+          "publisher": "Wikipedia (tertiary)",
+          "supports": "Fireblocking purpose and materials; platform framing interrupts cavities at each floor. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.finehomebuilding.com/project-guides/framing/evolution-of-the-house-frame",
+          "publisher": "Fine Homebuilding",
+          "supports": "Evolution from balloon to platform framing. Appeared in search results; content not seen.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "corrected",
+        "primary_verified": false,
+        "what_is_confirmed": "Start in early-1830s Chicago and an end around 1950 (Wikipedia: \"common until the late 1940s\"; elsewhere on the same page \"up until the mid-1950s\"). The fire-spread concern is also confirmed. All reference tier.",
+        "what_is_not": "Peak years 1870-1930 and any prevalence. No primary source (USFA, NFPA, FPL) was reachable on the allowed hosts."
+      },
       "open_questions": "An authoritative transition date (NFPA, USFA or FPL Wood Frame House Construction editions would do); no prevalence data."
     },
     {
@@ -532,21 +1207,68 @@
       "date_notes": "The code side is reasonably firm: the American Wood Council says every IRC edition since 2000 has required positive anchorage of decks and prohibited nails in withdrawal, and that until the 2009 edition the IRC did not prescriptively say how to fasten a ledger. JLC reports prescriptive ledger rules entered through the 2007 IRC Supplement, and that since 2009 the IRC has required lateral-load hardware or an engineered alternative. Enforcement depends on local adoption and on whether a permit was pulled at all. The 1970 start (when attached wood decks became a common suburban feature) is an unsourced estimate. Decks are replaced or added far more often than houses, so house build year is a weak predictor.",
       "regions": "National.",
       "prevalence": "possible",
-      "prevalence_basis": "No survey of ledger fastening exists. The widely quoted claim that about 90 percent of deck collapses are ledger failures is an expert estimate attributed to Frank Woeste (Virginia Tech) and repeated by InterNACHI; a JLC article argues the real causes are not known because CPSC injury data come from emergency-room notes, not forensic reports. CPSC-derived analysis for 2003-2007 attributes about 15 percent of deck injuries to structural failure or collapse. The '40 million decks over 20 years old' figure often quoted from NADRA was searched for and not found.",
+      "prevalence_basis": "No survey of ledger fastening exists. The widely quoted claim that about 90 percent of deck collapses are ledger failures is an expert estimate attributed to Frank Woeste (Virginia Tech) and repeated by InterNACHI; a JLC article argues the real causes are not known because CPSC injury data come from emergency-room notes, not forensic reports. CPSC-derived analysis for 2003-2007 attributes about 15 percent of deck injuries to structural failure or collapse. The '40 million decks over 20 years old' figure often quoted from NADRA was searched for and not found. Verification pass: InterNACHI's deck-inspection page (opened) states the 90 percent figure without a source and adds its own estimate that only 40 percent of 45 million existing decks are completely safe; both are trade estimates, not measurements.",
       "how_to_identify": "From under the deck, look at the board fixed to the house: you should see staggered 1/2-inch bolt or lag-screw heads with washers, or structural screws, and metal flashing above. Only nail heads, a ledger fixed over siding, or rot and rust stains are warning signs.",
       "risk": {
         "safety": "Sudden collapse with multiple serious injuries, typically during gatherings.",
         "financial": "Retrofit bolting and hardware is inexpensive; rot may require rebuild.",
         "insurance_or_sale": "Common inspection call-out; unpermitted decks can complicate sale."
       },
-      "fix": { "what": "Add through-bolts or structural screws per the current IRC ledger table, lateral-load connectors, and flashing; rebuild if the ledger or house band is rotten.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "No credible figure found." },
+      "fix": {
+        "what": "Add through-bolts or structural screws per the current IRC ledger table, lateral-load connectors, and flashing; rebuild if the ledger or house band is rotten.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found."
+      },
       "sources": [
-        { "url": "https://awc.org/publications/is-your-deck-safely-connected-to-your-house", "publisher": "American Wood Council", "supports": "IRC since 2000 requires positive anchorage and bars nails in withdrawal; no prescriptive ledger fastening until 2009 IRC. Search-result summary only.", "verified": false },
-        { "url": "https://www.jlconline.com/deck-builder/new-ledger-attachment-requirements-adopted_o", "publisher": "Journal of Light Construction / Professional Deck Builder", "supports": "Prescriptive ledger attachment adopted in the 2007 IRC Supplement. Search-result summary only.", "verified": false },
-        { "url": "https://www.jlconline.com/deck-builder/we-dont-know-what-causes-most-deck-collapses_o/", "publisher": "Journal of Light Construction", "supports": "Critique of collapse statistics; CPSC data limits; about 15 percent of 2003-2007 deck injuries from structural failure; lateral hardware since 2009. Search-result summary only.", "verified": false },
-        { "url": "https://www.jlconline.com/deck-builder/nailed-ledgers-the-cause-of-most-deck-collapses_o", "publisher": "Journal of Light Construction", "supports": "Woeste estimate that about 90 percent of collapses involve a failed, usually nailed, ledger. Search-result summary only.", "verified": false }
+        {
+          "url": "https://www.nachi.org/deck-inspections.htm",
+          "publisher": "InterNACHI, Inspecting a Deck, Illustrated",
+          "tier": "trade",
+          "supports": "The 90 percent ledger-separation claim, as InterNACHI states it (no source given there).",
+          "verified": true,
+          "quote": "About 90% of deck collapses occurred as a result of the separation of the house and the deck ledger board, allowing the deck to swing away from the house."
+        },
+        {
+          "url": "https://www.nachi.org/deck-inspections.htm",
+          "publisher": "InterNACHI, Inspecting a Deck, Illustrated (second excerpt)",
+          "tier": "trade",
+          "supports": "InterNACHI estimate of the deck stock and share that is safe.",
+          "verified": true,
+          "quote": "InterNACHI estimates that of the 45 million existing decks, only 40% are completely safe."
+        },
+        {
+          "url": "https://awc.org/publications/is-your-deck-safely-connected-to-your-house",
+          "publisher": "American Wood Council",
+          "supports": "IRC since 2000 requires positive anchorage and bars nails in withdrawal; no prescriptive ledger fastening until 2009 IRC. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.jlconline.com/deck-builder/new-ledger-attachment-requirements-adopted_o",
+          "publisher": "Journal of Light Construction / Professional Deck Builder",
+          "supports": "Prescriptive ledger attachment adopted in the 2007 IRC Supplement. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.jlconline.com/deck-builder/we-dont-know-what-causes-most-deck-collapses_o/",
+          "publisher": "Journal of Light Construction",
+          "supports": "Critique of collapse statistics; CPSC data limits; about 15 percent of 2003-2007 deck injuries from structural failure; lateral hardware since 2009. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.jlconline.com/deck-builder/nailed-ledgers-the-cause-of-most-deck-collapses_o",
+          "publisher": "Journal of Light Construction",
+          "supports": "Woeste estimate that about 90 percent of collapses involve a failed, usually nailed, ledger. Search-result summary only.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "partly-confirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "That InterNACHI publishes the 90 percent ledger-separation figure and an estimate of 45 million existing decks of which 40 percent are \"completely safe\" (trade tier; InterNACHI gives no method). The same page says no system tracks deck failures, which supports this entry's caution about the statistics.",
+        "what_is_not": "Every code date (IRC 2000 positive anchorage, 2007 Supplement, 2009 prescriptive ledger and lateral-load rules): codes.iccsafe.org refuses automated requests and AWC/JLC are outside the allowed hosts. The 1970 start is still an estimate. CPSC injury figures were not located."
+      },
       "open_questions": "CPSC primary injury counts; pre-2000 model code (CABO One and Two Family Dwelling Code) wording; any data on fastening practice by decade."
     },
     {
@@ -559,7 +1281,7 @@
       "peak_from": 2005,
       "peak_to": 2008,
       "date_confidence": "medium",
-      "date_notes": "Three separate products with separate dates. (1) Louisiana-Pacific: CPSC recall 09-217 announced 13 May 2009 for LP WeatherBest, ABTCo and LP-made Veranda decking and railing SOLD January 2005 to August 2008; about 48 million linear feet; 37 breakage reports and 14 injuries. Those are sale dates, not manufacture dates. (2) Trex: class settlement over mould on first-generation uncapped boards bought from August 2004 until preliminary approval on 19 August 2013 (N.D. Cal.). (3) AERT ChoiceDek: settlement approved 9 January 2009 (W.D. Wash.) covering 2004-2007 purchases plus some boards made before a mould inhibitor was added in October 2006. An earlier Trex settlement (about 2004, surface defects) and cases against other brands (GAF/Elk CrossTimbers, Fiberon, TimberTech, AZEK) are recalled from memory but were not found in searches.",
+      "date_notes": "Three separate products with separate dates. (1) Louisiana-Pacific: CPSC recall 09-217 announced 13 May 2009 for LP WeatherBest, ABTCo and LP-made Veranda decking and railing SOLD January 2005 to August 2008; about 48 million linear feet; 37 breakage reports and 14 injuries. Those are sale dates, not manufacture dates. (2) Trex: class settlement over mould on first-generation uncapped boards bought from August 2004 until preliminary approval on 19 August 2013 (N.D. Cal.). (3) AERT ChoiceDek: settlement approved 9 January 2009 (W.D. Wash.) covering 2004-2007 purchases plus some boards made before a mould inhibitor was added in October 2006. An earlier Trex settlement (about 2004, surface defects) and cases against other brands (GAF/Elk CrossTimbers, Fiberon, TimberTech, AZEK) are recalled from memory but were not found in searches. Verification pass: the CPSC recall page confirms every LP figure. A Trex settlement that the first pass recalled as \"about 2004\" is in fact documented by a N.D. California preliminary-approval order of 30 July 2009 (Ross v. Trex, surface flaking and mould spotting); the later 2013 mould settlement remains unverified, so the 2004 and 2013 outer years are still unconfirmed while the 2005-2008 core is firm.",
       "regions": "National; LP Veranda was sold through The Home Depot nationwide.",
       "prevalence": "rare",
       "prevalence_basis": "No per-house figure. 48 million linear feet (LP) is on the order of tens of thousands of decks nationally. Composite was a minority of decks built in these years, and deck age is not tied to house age.",
@@ -569,13 +1291,55 @@
         "financial": "Re-decking; LP offered free inspection and replacement under the recall.",
         "insurance_or_sale": "Inspection call-out."
       },
-      "fix": { "what": "Replace deck boards; check the CPSC recall listing and contact LP for the recalled product.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "No credible figure found." },
+      "fix": {
+        "what": "Replace deck boards; check the CPSC recall listing and contact LP for the recalled product.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found."
+      },
       "sources": [
-        { "url": "https://www.cpsc.gov/Recalls/2009/Composite-Decks-Recalled-by-Louisiana-Pacific-Decks-Can-Deteriorate-and-Break-Posing-Fall-Hazard", "publisher": "US Consumer Product Safety Commission, recall 09-217", "supports": "Brands, 48 million linear feet, sold Jan 2005 - Aug 2008, 37 reports and 14 injuries, free inspection and replacement. Search-result summary only; host blocked.", "verified": false },
-        { "url": "https://www.sec.gov/Archives/edgar/data/0001069878/000119312513410895/d591245d10q.htm", "publisher": "Trex Co, Form 10-Q 2013 (SEC EDGAR)", "supports": "Mould class settlement, purchases from August 2004; preliminary approval 19 August 2013. Search-result summary only.", "verified": false },
-        { "url": "https://www.sec.gov/Archives/edgar/data/0000849706/000117184309000284/f10k_033009.htm", "publisher": "Advanced Environmental Recycling Technologies, Form 10-K FY2008 (SEC EDGAR)", "supports": "ChoiceDek settlement approved 9 January 2009; 2004-2007 purchases; mould inhibitor added October 2006. Search-result summary only.", "verified": false }
+        {
+          "url": "https://www.cpsc.gov/Recalls/2009/Composite-Decks-Recalled-by-Louisiana-Pacific-Decks-Can-Deteriorate-and-Break-Posing-Fall-Hazard",
+          "publisher": "US Consumer Product Safety Commission, recall 09-217 (13 May 2009)",
+          "tier": "primary",
+          "supports": "Brands, sale dates January 2005 to August 2008, about 48 million linear feet, 37 reports and 14 injuries, free inspection and replacement.",
+          "verified": true,
+          "quote": "nationwide from January 2005 to August 2008"
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-3_09-cv-00670/pdf/USCOURTS-cand-3_09-cv-00670-4.pdf",
+          "publisher": "US District Court, N.D. California, Ross v. Trex Co., Order granting preliminary approval of settlement, filed 30 July 2009 (govinfo)",
+          "tier": "primary",
+          "supports": "An earlier Trex class settlement (2009) over surface flaking and mould spotting on wood-composite decking. Does not state purchase dates in the passages read.",
+          "verified": true,
+          "quote": "types of defects: “surface flaking” and “mold spotting.”"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2009/Composite-Decks-Recalled-by-Louisiana-Pacific-Decks-Can-Deteriorate-and-Break-Posing-Fall-Hazard",
+          "publisher": "US Consumer Product Safety Commission, recall 09-217",
+          "supports": "Brands, 48 million linear feet, sold Jan 2005 - Aug 2008, 37 reports and 14 injuries, free inspection and replacement. Search-result summary only; host blocked.",
+          "verified": false
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/0001069878/000119312513410895/d591245d10q.htm",
+          "publisher": "Trex Co, Form 10-Q 2013 (SEC EDGAR)",
+          "supports": "Mould class settlement, purchases from August 2004; preliminary approval 19 August 2013. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/0000849706/000117184309000284/f10k_033009.htm",
+          "publisher": "Advanced Environmental Recycling Technologies, Form 10-K FY2008 (SEC EDGAR)",
+          "supports": "ChoiceDek settlement approved 9 January 2009; 2004-2007 purchases; mould inhibitor added October 2006. Search-result summary only.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "partly-confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "The Louisiana-Pacific part in full, from the CPSC recall page: recall 09-217 dated 13 May 2009; LP WeatherBest, ABTCo. and LP-made Veranda; sold January 2005 to August 2008; about 48 million linear feet; 37 breakage reports, 14 injuries; free inspection and replacement. Also confirmed: a Trex class settlement received preliminary approval in N.D. California on 30 July 2009 covering surface flaking and mould spotting.",
+        "what_is_not": "The 2013 Trex mould settlement (purchases from August 2004 to 19 August 2013), which is what sets installed_from 2004 and installed_to 2013, and the AERT ChoiceDek settlement: both rest on SEC filings and www.sec.gov refuses automated requests. Whether LP still honours the recall remedy."
+      },
       "open_questions": "Whether the LP recall remedy is still honoured in 2026; Trex and AERT claim deadlines (assumed closed); other brands not confirmed."
     },
     {
@@ -598,12 +1362,49 @@
         "financial": "Remediation commonly means stripping whole elevations; six-figure bills are reported in trade press (no verified figure).",
         "insurance_or_sale": "In affected markets buyers routinely demand invasive stucco testing; damage is generally excluded from homeowners policies as long-term seepage."
       },
-      "fix": { "what": "Invasive moisture testing; repair flashings; strip and re-clad wet walls with a drained assembly.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "No credible figure found." },
+      "fix": {
+        "what": "Invasive moisture testing; repair flashings; strip and re-clad wet walls with a drained assembly.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found."
+      },
       "sources": [
-        { "url": "https://buildingscience.com/documents/insights/bsi-029-stucco-woes-the-perfect-storm", "publisher": "Building Science Corporation (Lstiburek), BSI-029", "supports": "Mechanism: single layer bonds to stucco, OSB concentrates moisture, need for second layer or drainage gap. Search-result summary only; host blocked.", "verified": false },
-        { "url": "https://www.constructionspecifier.com/rethinking-stucco-wall-design-under-changing-codes/", "publisher": "The Construction Specifier", "supports": "Changing code requirements for WRB and drainage behind stucco. Search-result summary only.", "verified": false }
+        {
+          "url": "https://www.nachi.org/documents2012/How_to_Inspect_the_Exterior-revised-Sept-2012.pdf",
+          "publisher": "InterNACHI, How to Inspect the Exterior (2012)",
+          "tier": "trade",
+          "supports": "Weep screed requirement and clearances used in the identification advice.",
+          "verified": true,
+          "quote": "The weep screed should be placed a minimum of 4 inches above the earth, or 2 inches above paved areas"
+        },
+        {
+          "url": "https://www.nachi.org/documents2012/How_to_Inspect_for_Moisture_Intrusion-Third-Edition_rev-Oct-2012.pdf",
+          "publisher": "InterNACHI, How to Inspect for Moisture Intrusion (2012)",
+          "tier": "trade",
+          "supports": "Mechanism: conventional stucco over felt has no open drainage path.",
+          "verified": true,
+          "quote": "there is no open drainage pathway to allow water to freely drain from the concealed moisture barrier"
+        },
+        {
+          "url": "https://buildingscience.com/documents/insights/bsi-029-stucco-woes-the-perfect-storm",
+          "publisher": "Building Science Corporation (Lstiburek), BSI-029",
+          "supports": "Mechanism: single layer bonds to stucco, OSB concentrates moisture, need for second layer or drainage gap. Search-result summary only; host blocked.",
+          "verified": false
+        },
+        {
+          "url": "https://www.constructionspecifier.com/rethinking-stucco-wall-design-under-changing-codes/",
+          "publisher": "The Construction Specifier",
+          "supports": "Changing code requirements for WRB and drainage behind stucco. Search-result summary only.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Only the mechanism and the weep-screed identification point (InterNACHI, trade tier).",
+        "what_is_not": "All four years, the regional clusters and the code edition that introduced the two-layer rule. Building Science Corporation is outside the allowed hosts and codes.iccsafe.org refuses automated requests."
+      },
       "open_questions": "Code edition and year for the two-layer rule; regional failure rates; any state studies (Minnesota, Pennsylvania)."
     },
     {
@@ -626,13 +1427,39 @@
         "financial": "Strip and rebuild of affected walls.",
         "insurance_or_sale": "Growing inspection call-out; seepage damage generally not insured."
       },
-      "fix": { "what": "Moisture testing; remove and reinstall over two-layer WRB or drainage mat with weep screed and clearances.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "No credible figure found." },
+      "fix": {
+        "what": "Moisture testing; remove and reinstall over two-layer WRB or drainage mat with weep screed and clearances.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found."
+      },
       "sources": [
-        { "url": "https://www.jlconline.com/how-to/insulation/manufactured-stone-nightmares_o", "publisher": "Journal of Light Construction", "supports": "Field failures of adhered manufactured stone. Appeared in search results; content not seen.", "verified": false },
-        { "url": "https://www.constructionspecifier.com/ensuring-moisture-protection-for-manufactured-stone/", "publisher": "The Construction Specifier", "supports": "Water absorption, vapour drive, single WRB may be inadequate. Search-result summary only.", "verified": false },
-        { "url": "https://www.startribune.com/stone-siding-installation-defects/573025851", "publisher": "Star Tribune (home-inspector column)", "supports": "Common installation defects and reference standards. Search-result summary only.", "verified": false }
+        {
+          "url": "https://www.jlconline.com/how-to/insulation/manufactured-stone-nightmares_o",
+          "publisher": "Journal of Light Construction",
+          "supports": "Field failures of adhered manufactured stone. Appeared in search results; content not seen.",
+          "verified": false
+        },
+        {
+          "url": "https://www.constructionspecifier.com/ensuring-moisture-protection-for-manufactured-stone/",
+          "publisher": "The Construction Specifier",
+          "supports": "Water absorption, vapour drive, single WRB may be inadequate. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.startribune.com/stone-siding-installation-defects/573025851",
+          "publisher": "Star Tribune (home-inspector column)",
+          "supports": "Common installation defects and reference standards. Search-result summary only.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "unconfirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Nothing. The Wikipedia article on stone veneer was opened and has no dates or moisture-failure history for adhered manufactured stone; the InterNACHI exterior guide mentions manufactured stone only in a comparison table.",
+        "what_is_not": "All years and the 10-percent installation-quality estimate. JLC, Construction Specifier and the Star Tribune are outside the allowed hosts."
+      },
       "open_questions": "Dates; any prevalence or failure-rate study."
     },
     {
@@ -655,14 +1482,53 @@
         "financial": "Higher chance of hidden sheathing rot at windows and joints; more air leakage.",
         "insurance_or_sale": "None typical."
       },
-      "fix": { "what": "Add a WRB and proper flashing whenever siding or windows are replaced.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "Not applicable as a stand-alone job." },
+      "fix": {
+        "what": "Add a WRB and proper flashing whenever siding or windows are replaced.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "Not applicable as a stand-alone job."
+      },
       "sources": [
-        { "url": "https://www.finehomebuilding.com/project-guides/insulation/whats-building-code-housewrap-installation", "publisher": "Fine Homebuilding", "supports": "2003 IRC: most siding needed no WRB; 2006 IRC R703.2 requires it; 2015 IRC removed most exceptions. Search-result summary only.", "verified": false },
-        { "url": "https://www.dupont.com/news/tyvek-50th-anniversary.html", "publisher": "DuPont", "supports": "Tyvek trademark 1965, commercial production April 1967. Search-result summary only.", "verified": false },
-        { "url": "https://issuu.com/building-products/docs/bpd_08011992/s/28678859", "publisher": "Building Products Digest, August 1992 (trade press)", "supports": "Early-1980s introduction to builders; regional adoption estimates (South 5-10 percent, Chicago 70-80 percent). Search-result summary only.", "verified": false },
-        { "url": "https://www.homeinnovation.com/insights/trends_data/the-year-ahead-in-residential-housewrap/43861", "publisher": "Home Innovation Research Labs", "supports": "Mechanically attached house wrap on about two thirds of new homes. Search-result summary only.", "verified": false }
+        {
+          "url": "https://en.wikipedia.org/wiki/Tyvek",
+          "publisher": "Wikipedia, Tyvek",
+          "tier": "reference",
+          "supports": "Tyvek trademarked 1965, commercial from April 1967.",
+          "verified": true,
+          "quote": "DuPont did not trademark the actual brand until 1965, making it available for commercial purposes in April 1967."
+        },
+        {
+          "url": "https://www.finehomebuilding.com/project-guides/insulation/whats-building-code-housewrap-installation",
+          "publisher": "Fine Homebuilding",
+          "supports": "2003 IRC: most siding needed no WRB; 2006 IRC R703.2 requires it; 2015 IRC removed most exceptions. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.dupont.com/news/tyvek-50th-anniversary.html",
+          "publisher": "DuPont",
+          "supports": "Tyvek trademark 1965, commercial production April 1967. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://issuu.com/building-products/docs/bpd_08011992/s/28678859",
+          "publisher": "Building Products Digest, August 1992 (trade press)",
+          "supports": "Early-1980s introduction to builders; regional adoption estimates (South 5-10 percent, Chicago 70-80 percent). Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://www.homeinnovation.com/insights/trends_data/the-year-ahead-in-residential-housewrap/43861",
+          "publisher": "Home Innovation Research Labs",
+          "supports": "Mechanically attached house wrap on about two thirds of new homes. Search-result summary only.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "partly-confirmed",
+        "primary_verified": false,
+        "what_is_confirmed": "Product history only: Tyvek trademarked 1965, commercial April 1967 (Wikipedia, reference tier).",
+        "what_is_not": "The headline date: that the 2006 IRC (R703.2) first required a water-resistive barrier behind most sidings, and the 2015 clean-up. codes.iccsafe.org refuses automated requests and Fine Homebuilding is outside the allowed hosts. The 1992 regional adoption estimates and the two-thirds figure are also unverified. Wikipedia says Tyvek \"had reached the mainstream construction industry\" by 1970, earlier than the early-1980s house-wrap marketing date given here; neither is well sourced."
+      },
       "open_questions": "Annual adoption data (Home Innovation's Builder Practices Survey has it, paywalled); legacy-code (BOCA/SBC/UBC) WRB requirements before 2000."
     },
     {
@@ -675,7 +1541,7 @@
       "peak_from": null,
       "peak_to": null,
       "date_confidence": "low",
-      "date_notes": "Not an era item. Published life tables disagree and none could be opened. Figures as seen in search summaries or recalled: InterNACHI chart (as quoted by secondary sites): three-tab asphalt about 20 years, architectural asphalt about 30, wood 40-50 in one quotation and shorter elsewhere, slate 60-150 in one quotation and '50+' in another. One article citing InterNACHI's Florida chart puts three-tab life at about 14 years in hot climates against 19 or more in the Northeast. NAHB/Bank of America 2007 Study of Life Expectancy of Home Components (from memory): asphalt shingles about 20 years, fibre-cement shingles 25, wood shakes 30, slate, copper, clay and concrete tile 50 or more. From memory, metal standing-seam 40-70, built-up or modified-bitumen low-slope 10-20, EPDM/TPO membranes 15-25. Climate, slope, ventilation and installation quality move all of these by a third or more.",
+      "date_notes": "Not an era item. Figures read directly from the InterNACHI charts in the verification pass. National chart (years): asphalt three-tab 20; asphalt architectural 30; wood 25; slate 60 to 150; metal 40 to 80; clay/concrete 100+; copper 70+; fibre cement 25; built-up 30; modified bitumen 20; EPDM 15 to 25; TPO 7 to 20; simulated slate 10 to 35. InterNACHI's Florida chart is much shorter: three-tab 10 to 12; architectural 15 to 20; metal 17 to 20; built-up 5 to 15; modified bitumen 10; EPDM 10 to 15; clay/concrete 80+; slate 50+; wood 25. Corrections to the first pass: wood is 25 years on the chart (not 40-50), and Florida three-tab is 10 to 12 (not about 14). NAHB/Bank of America 2007 Study of Life Expectancy of Home Components (from memory, not opened): asphalt shingles about 20 years, fibre-cement shingles 25, wood shakes 30, slate, copper, clay and concrete tile 50 or more. Climate, slope, ventilation and installation quality move all of these; the chart itself says hot climates drastically reduce asphalt shingle life.",
       "regions": "National, with strong climate effect: shorter in hot-sun and hail regions.",
       "prevalence": "likely",
       "prevalence_basis": "Every house has a roof. The useful output is conditional: if the house is older than one roof life and there is no record of re-roofing, replacement is probably due. The NAHB study states its figures are a general guideline only.",
@@ -685,13 +1551,63 @@
         "financial": "Re-roofing is among the largest single maintenance costs of a house.",
         "insurance_or_sale": "Many insurers require inspection, switch to actual-cash-value settlement or decline at a set roof age (often 15-20 years for asphalt). Carrier rules vary by state and were not verified."
       },
-      "fix": { "what": "Re-roof at end of life.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "No credible figure found." },
+      "fix": {
+        "what": "Re-roof at end of life.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found."
+      },
       "sources": [
-        { "url": "https://www.nachi.org/life-expectancy.htm", "publisher": "InterNACHI, Standard Estimated Life Expectancy Chart for Homes", "supports": "Roofing life figures. Page could not be opened (host blocked); figures above come from secondary quotations in search summaries and may not match the current chart.", "verified": false },
-        { "url": "https://standards.nsf.org/higherlogic/ws/public/download/348/NAHB%202007%20StudyUseful%20Life%20of%20Home%20Components.pdf", "publisher": "NAHB / Bank of America Home Equity, Study of Life Expectancy of Home Components (2007)", "supports": "Existence, method (2006 survey of manufacturers and trade bodies) and the general-guideline disclaimer seen in search summary; roofing numbers recalled from memory, not seen.", "verified": false },
-        { "url": "https://nachi.org/florida-life-expectancy.htm", "publisher": "InterNACHI, Florida life expectancy chart", "supports": "Shorter lives in hot climates. Appeared in search results; content not seen.", "verified": false }
+        {
+          "url": "https://www.nachi.org/life-expectancy.htm",
+          "publisher": "InterNACHI, Standard Estimated Life Expectancy Chart for Homes",
+          "tier": "trade",
+          "supports": "National chart roofing lives: 3-tab asphalt 20, architectural asphalt 30, wood 25, slate 60 to 150, metal 40 to 80, clay/concrete 100+, EPDM 15 to 25, modified bitumen 20, BUR 30, TPO 7 to 20, fibre cement 25.",
+          "verified": true,
+          "quote": "Hot climates drastically reduce asphalt shingle life."
+        },
+        {
+          "url": "https://www.nachi.org/life-expectancy.htm",
+          "publisher": "InterNACHI, Standard Estimated Life Expectancy Chart for Homes (table row)",
+          "tier": "trade",
+          "supports": "Three-tab asphalt shingle life of 20 years.",
+          "verified": true,
+          "quote": "Asphalt Shingles (3-tab) 20"
+        },
+        {
+          "url": "https://www.nachi.org/florida-life-expectancy.htm",
+          "publisher": "InterNACHI, Florida life expectancy chart",
+          "tier": "trade",
+          "supports": "Florida chart: 3-tab asphalt 10 to 12, architectural asphalt 15 to 20, metal 17 to 20, slate 50+, wood 25, modified bitumen 10, BUR 5 to 15.",
+          "verified": true,
+          "quote": "Asphalt (architectural) 15 to 20"
+        },
+        {
+          "url": "https://www.nachi.org/life-expectancy.htm",
+          "publisher": "InterNACHI, Standard Estimated Life Expectancy Chart for Homes",
+          "supports": "Roofing life figures. Page could not be opened (host blocked); figures above come from secondary quotations in search summaries and may not match the current chart.",
+          "verified": false
+        },
+        {
+          "url": "https://standards.nsf.org/higherlogic/ws/public/download/348/NAHB%202007%20StudyUseful%20Life%20of%20Home%20Components.pdf",
+          "publisher": "NAHB / Bank of America Home Equity, Study of Life Expectancy of Home Components (2007)",
+          "supports": "Existence, method (2006 survey of manufacturers and trade bodies) and the general-guideline disclaimer seen in search summary; roofing numbers recalled from memory, not seen.",
+          "verified": false
+        },
+        {
+          "url": "https://nachi.org/florida-life-expectancy.htm",
+          "publisher": "InterNACHI, Florida life expectancy chart",
+          "supports": "Shorter lives in hot climates. Appeared in search results; content not seen.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "corrected",
+        "primary_verified": false,
+        "what_is_confirmed": "Both InterNACHI charts were opened and the roofing rows read directly; the figures in date_notes now come from the charts rather than from secondary quotations.",
+        "what_is_not": "The NAHB/Bank of America 2007 study (host outside the allowed list), and insurer roof-age rules. InterNACHI is a trade source; there is no primary-tier life table."
+      },
       "open_questions": "Exact figures from both primary tables; insurer roof-age rules by state."
     },
     {
@@ -704,7 +1620,7 @@
       "peak_from": 1980,
       "peak_to": 2003,
       "date_confidence": "medium",
-      "date_notes": "End is firm: EPA announced in February 2002 a voluntary industry cancellation of residential uses effective 30 or 31 December 2003 (EPA documents use both dates); existing stock could still be sold, so some 2004 decks used CCA. Start and peak are from memory (CCA dominated residential treated lumber from the 1970s) and are unsourced. This probably overlaps the hazmat domain; listed here because it is a deck item.",
+      "date_notes": "End is firm: EPA announced in February 2002 a voluntary industry cancellation of residential uses effective 30 or 31 December 2003 (EPA documents use both dates); existing stock could still be sold, so some 2004 decks used CCA. Start and peak are from memory (CCA dominated residential treated lumber from the 1970s) and are unsourced. This probably overlaps the hazmat domain; listed here because it is a deck item. Verification pass: end date confirmed against the EPA CCA page, the February 2002 EPA release and the cancellation notice at 68 FR 17366 (all say 31 December 2003, or \"December 2003\"). EPA dates the preservative itself to the 1940s; the 1975 start for residential decks is still an unsourced estimate.",
       "regions": "National.",
       "prevalence": "likely",
       "prevalence_basis": "For a pressure-treated wood deck built before 2004 that is still original: likely, since CCA was the standard residential preservative (from memory, the large majority of the market). No figure verified. Many such decks have since been replaced.",
@@ -714,11 +1630,59 @@
         "financial": "Low; sealing or eventual replacement.",
         "insurance_or_sale": "None typical."
       },
-      "fix": { "what": "Seal periodically, wash hands after contact, never burn or sand without controls; replace when the deck is due.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "No credible figure found." },
+      "fix": {
+        "what": "Seal periodically, wash hands after contact, never burn or sand without controls; replace when the deck is due.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found."
+      },
       "sources": [
-        { "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/1a8cfb4970823b3885256b5e006ffd67.html", "publisher": "US EPA press release, February 2002 (archive)", "supports": "Voluntary phase-out of residential CCA uses by end of 2003; EPA not recommending removal of existing structures. Search-result summary only; host blocked.", "verified": false }
+        {
+          "url": "https://www.epa.gov/ingredients-used-pesticide-products/chromated-arsenicals-cca",
+          "publisher": "US EPA, Chromated Arsenicals (CCA)",
+          "tier": "primary",
+          "supports": "End date: manufacture for homeowner uses voluntarily discontinued December 2003; used in decks and playsets before 2004; in use as a preservative since the 1940s.",
+          "verified": true,
+          "quote": "In December 2003, chromated arsenicals manufacturers voluntarily discontinued manufacturing chromated arsenicals-treated wood products for homeowner uses."
+        },
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/1a8cfb4970823b3885256b5e006ffd67.html",
+          "publisher": "US EPA press release, February 2002 (archive)",
+          "tier": "primary",
+          "supports": "EPA does not call for removal of existing structures; transition by 31 December 2003.",
+          "verified": true,
+          "quote": "EPA does not believe there is any reason to remove or replace CCA-treated structures, including decks or playground equipment."
+        },
+        {
+          "url": "https://www.govinfo.gov/link/fr/68/17366",
+          "publisher": "Federal Register, 68 FR 17366, 9 April 2003, EPA notice of cancellation order for CCA residential uses (govinfo)",
+          "tier": "primary",
+          "supports": "Notice of a cancellation order; amended label language restricts CCA use from 31 December 2003 to listed (non-residential) categories. The PDF text is three interleaved columns, so only a short label phrase could be quoted cleanly.",
+          "verified": true,
+          "quote": "Effective December 31, 2003, this product"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Chromated_copper_arsenate",
+          "publisher": "Wikipedia, Chromated copper arsenate",
+          "tier": "reference",
+          "supports": "Already-treated timber could still be sold after December 2003.",
+          "verified": true,
+          "quote": "Timber treated before that date was still allowed to be sold, but retailers were required provide warning labels."
+        },
+        {
+          "url": "https://www.epa.gov/archive/epapages/newsroom_archive/newsreleases/1a8cfb4970823b3885256b5e006ffd67.html",
+          "publisher": "US EPA press release, February 2002 (archive)",
+          "supports": "Voluntary phase-out of residential CCA uses by end of 2003; EPA not recommending removal of existing structures. Search-result summary only; host blocked.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "partly-confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "The end of the era, from three EPA/Federal Register documents: residential treatment ended 31 December 2003 by voluntary cancellation, existing stock could still be sold (so installed_to 2004 is reasonable), and EPA does not recommend removing existing decks. The 2002 release also says the transition \"affects virtually all residential uses\" of CCA-treated wood.",
+        "what_is_not": "The 1975 start and 1980 peak start for residential decks: EPA says only that chromated arsenicals have been used as wood preservatives \"since the 1940s\" and Wikipedia says since the mid-1930s, neither of which dates their use in house decks. No market-share figure by year."
+      },
       "open_questions": "Market share of CCA by year; start year. Also unresearched: post-2003 copper-rich preservatives corroding ordinary deck fasteners and hangers (2004 onward)."
     },
     {
@@ -730,8 +1694,8 @@
       "installed_to": 2009,
       "peak_from": null,
       "peak_to": null,
-      "date_confidence": "medium",
-      "date_notes": "An earlier (2012-13) settlement covered ProLine casement, awning and transom windows made 1991-2006, with claim forms due July 2013 in one notice and 15 January 2014 in another. After that settlement was overturned on appeal (from memory), a second settlement in Eubank v. Pella (N.D. Ill., 1:06-cv-04481) covered windows made 1 January 1991 - 31 December 2009 and received final approval on 15 March 2019. Sources are press releases and an aggregator.",
+      "date_confidence": "high",
+      "date_notes": "An earlier (2012-13) settlement covered ProLine casement, awning and transom windows made 1991-2006, with claim forms due July 2013 in one notice and 15 January 2014 in another. After that settlement was overturned on appeal (from memory), a second settlement in Eubank v. Pella (N.D. Ill., 1:06-cv-04481) covered windows made 1 January 1991 - 31 December 2009 and received final approval on 15 March 2019. Sources are press releases and an aggregator. Verification pass: both class windows and the 7th Circuit reversal (2 June 2014) are now confirmed from the court documents on govinfo; confidence raised to high.",
       "regions": "National (US), with a parallel Canadian action.",
       "prevalence": "rare",
       "prevalence_basis": "No count found. One product line of one manufacturer.",
@@ -741,17 +1705,53 @@
         "financial": "Sash or window replacement.",
         "insurance_or_sale": "Inspection call-out."
       },
-      "fix": { "what": "Replace rotted sashes or whole units.", "cost_low_usd": null, "cost_high_usd": null, "cost_year": 2025, "cost_source": "No credible figure found." },
+      "fix": {
+        "what": "Replace rotted sashes or whole units.",
+        "cost_low_usd": null,
+        "cost_high_usd": null,
+        "cost_year": 2025,
+        "cost_source": "No credible figure found."
+      },
       "sources": [
-        { "url": "https://www.prnewswire.com/news-releases/court-to-notify-current-or-former-owners-of-homes-or-other-structures-containing-pella-proline-casement-windows-that-they-may-qualify-for-benefits-from-a-class-action-settlement-182520591.html", "publisher": "Court-ordered notice via PR Newswire", "supports": "First settlement, 1991-2006 ProLine casement windows. Search-result summary only.", "verified": false },
-        { "url": "https://topclassactions.com/lawsuit-settlements/closed-settlements/pella-proline-windows-defect-class-action-settlement/", "publisher": "Top Class Actions (aggregator, weak)", "supports": "Second settlement, windows made 1 Jan 1991 - 31 Dec 2009; final approval 15 March 2019; listed as closed. Search-result summary only.", "verified": false }
+        {
+          "url": "https://www.govinfo.gov/content/pkg/USCOURTS-ilnd-1_06-cv-04481/pdf/USCOURTS-ilnd-1_06-cv-04481-2.pdf",
+          "publisher": "US District Court, N.D. Illinois, Eubank v. Pella Corp., No. 06 C 4481, order granting final approval, filed 15 March 2019 (govinfo)",
+          "tier": "primary",
+          "supports": "Second settlement: class definition 1 January 1991 to 31 December 2009, casement, awning and transom; final approval 15 March 2019.",
+          "verified": true,
+          "quote": "manufactured by Pella Corporation between January 1, 1991 and December 31, 2009"
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/USCOURTS-ca7-13-02091/pdf/USCOURTS-ca7-13-02091-0.pdf",
+          "publisher": "US Court of Appeals, 7th Circuit, Eubank v. Pella Corp., Nos. 13-2091 et al., decided 2 June 2014 (govinfo)",
+          "tier": "primary",
+          "supports": "First settlement covered ProLine casement windows made 1991-2006 and was reversed on appeal; describes the alleged defect.",
+          "verified": true,
+          "quote": "manufactured and sold between 1991 and 2006 had a design defect that allowed water to enter behind the"
+        },
+        {
+          "url": "https://www.prnewswire.com/news-releases/court-to-notify-current-or-former-owners-of-homes-or-other-structures-containing-pella-proline-casement-windows-that-they-may-qualify-for-benefits-from-a-class-action-settlement-182520591.html",
+          "publisher": "Court-ordered notice via PR Newswire",
+          "supports": "First settlement, 1991-2006 ProLine casement windows. Search-result summary only.",
+          "verified": false
+        },
+        {
+          "url": "https://topclassactions.com/lawsuit-settlements/closed-settlements/pella-proline-windows-defect-class-action-settlement/",
+          "publisher": "Top Class Actions (aggregator, weak)",
+          "supports": "Second settlement, windows made 1 Jan 1991 - 31 Dec 2009; final approval 15 March 2019; listed as closed. Search-result summary only.",
+          "verified": false
+        }
       ],
-      "verification": { "status": "unconfirmed", "primary_verified": false, "what_is_confirmed": "Nothing. No page could be opened in the verification pass, so no source was marked verified and no quote was added; all fields are unchanged from the first pass.", "what_is_not": "All key claims (install/class/recall years and any prevalence figure) remain unverified. Page fetches to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org failed at DNS resolution (host not in the session's allowed network domains); the other listed hosts were not attempted after that." },
+      "verification": {
+        "status": "confirmed",
+        "primary_verified": true,
+        "what_is_confirmed": "Both windows, from the court documents themselves: the 2019 final-approval order defines the class as ProLine wood casement, awning and/or transom windows made 1 January 1991 to 31 December 2009; the 7th Circuit opinion of 2 June 2014 describes the earlier 1991-2006 casement settlement and reverses its approval, which the first pass had only from memory.",
+        "what_is_not": "No count of windows or homes. The claim deadline of the second settlement was not read (the order describes a claims period and an extended claims period without dates in the passages checked). The Canadian action was not checked."
+      },
       "open_questions": "Claim deadline of the second settlement; other window class actions (Andersen, Marvin, Hurd, Weather Shield, MI Windows) not researched."
     }
   ],
-  "verification_pass": "2026-11-16: attempted. WebFetch to www.sec.gov, www.cpsc.gov, www.epa.gov, en.wikipedia.org and www.nachi.org each failed with getaddrinfo ENOTFOUND (host outside the session's allowed network domains). The remaining listed hosts (www.hud.gov, www.fema.gov, www.energy.gov, www.ecfr.gov, www.federalregister.gov, www.govinfo.gov, www.nist.gov, www.atsdr.cdc.gov, codes.iccsafe.org) were not attempted. No page was opened, so no source is marked verified, no quotes were added and no entry fields were changed; every entry carries verification.status unconfirmed.",
-  "feasibility_notes": "Web access was search-only. Every attempt to open a page (WebFetch, and curl through the session proxy) was refused: sec.gov, lieffcabraser.com, research.fs.usda.gov, nachi.org, wconline.com, energy.gov and en.wikipedia.org all failed, and the proxy log shows epa.gov and cpsc.gov refused as well, so the block is general rather than host-specific. WebSearch did work and returned short summaries with URLs. Under the brief's rule, nothing here is marked verified, because no page was opened; each source says whether the claim was at least seen in a search summary this session or is recalled from memory only. Those hosts need to be allowed in the session's network settings for a second pass. On substance, the domain splits in three. (1) Class-action and recall products are the most feasible: settlement class definitions give exact install or manufacture windows (LP Inner-Seal before 1 Jan 1996; Masonite 1980-Jan 1998; Weyerhaeuser 1981-1999; CertainTeed organic July 1987-2005; LP decking sold Jan 2005-Aug 2008), and SEC filings, court orders and CPSC notices are authoritative. Their weaknesses are that a class window is a legal window, not the product's real life; start-of-manufacture dates are often missing (Atlas Chalet, Masonite before 1980); and almost none have a count of affected homes, so prevalence is reasoning from class size at best. Claim status is closed for all siding and deck cases, but CertainTeed organic may still have open claims to 2030 and needs checking before publication. (2) Practice-era items (single glazing, no wall insulation, aluminium windows, balloon framing, house wrap, nailed ledgers, undrained stucco) have no sharp dates. They are gradual regional transitions, and the honest output is a curve, not a range; the best data (EIA RECS glass type and insulation by year built, NREL ResStock, Home Innovation builder surveys) exists but could not be opened. For these, date_confidence is low and several installed_from values are null on purpose. (3) Regional failure clusters (EIFS, FRT plywood, stucco, manufactured stone) are well documented qualitatively by FPL, Building Science Corporation, state reports and trade press, but have no denominators; the dramatic percentages (98 percent of EIFS houses wet, 90 percent of deck collapses at the ledger) are samples of problem houses or expert estimates and should not be presented as prevalence. No cost figure is given anywhere because no credible source could be opened; all cost fields are null. A second pass needs page access, the primary settlement documents, RECS year-built cross-tabs, and code text for the stucco two-layer rule and legacy-code WRB and deck provisions.",
+  "feasibility_notes": "Web access was search-only. Every attempt to open a page (WebFetch, and curl through the session proxy) was refused: sec.gov, lieffcabraser.com, research.fs.usda.gov, nachi.org, wconline.com, energy.gov and en.wikipedia.org all failed, and the proxy log shows epa.gov and cpsc.gov refused as well, so the block is general rather than host-specific. WebSearch did work and returned short summaries with URLs. Under the brief's rule, nothing here is marked verified, because no page was opened; each source says whether the claim was at least seen in a search summary this session or is recalled from memory only. Those hosts need to be allowed in the session's network settings for a second pass. On substance, the domain splits in three. (1) Class-action and recall products are the most feasible: settlement class definitions give exact install or manufacture windows (LP Inner-Seal before 1 Jan 1996; Masonite 1980-Jan 1998; Weyerhaeuser 1981-1999; CertainTeed organic July 1987-2005; LP decking sold Jan 2005-Aug 2008), and SEC filings, court orders and CPSC notices are authoritative. Their weaknesses are that a class window is a legal window, not the product's real life; start-of-manufacture dates are often missing (Atlas Chalet, Masonite before 1980); and almost none have a count of affected homes, so prevalence is reasoning from class size at best. Claim status is closed for all siding and deck cases, but CertainTeed organic may still have open claims to 2030 and needs checking before publication. (2) Practice-era items (single glazing, no wall insulation, aluminium windows, balloon framing, house wrap, nailed ledgers, undrained stucco) have no sharp dates. They are gradual regional transitions, and the honest output is a curve, not a range; the best data (EIA RECS glass type and insulation by year built, NREL ResStock, Home Innovation builder surveys) exists but could not be opened. For these, date_confidence is low and several installed_from values are null on purpose. (3) Regional failure clusters (EIFS, FRT plywood, stucco, manufactured stone) are well documented qualitatively by FPL, Building Science Corporation, state reports and trade press, but have no denominators; the dramatic percentages (98 percent of EIFS houses wet, 90 percent of deck collapses at the ledger) are samples of problem houses or expert estimates and should not be presented as prevalence. No cost figure is given anywhere because no credible source could be opened; all cost fields are null. A second pass needs page access, the primary settlement documents, RECS year-built cross-tabs, and code text for the stucco two-layer rule and legacy-code WRB and deck provisions. [Verification pass, 2026-11-16: the statement above that nothing is marked verified is superseded. Pages on cpsc.gov, epa.gov, energy.gov, govinfo.gov, nachi.org and en.wikipedia.org were opened through the approved fetch helper; see each entry's verification object and the sources carrying verified: true with a quote.]",
   "missed": [
     "T1-11 and other plywood panel siding (delamination, 1960s-1980s)",
     "Early vinyl siding and aluminium siding eras",
