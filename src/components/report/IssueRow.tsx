@@ -45,8 +45,9 @@ export function IssueRow({ issue, year, index, open = false }: IssueRowProps) {
           <Link href={`/issue/${issue.slug}`}>{issue.title}</Link>
         </h3>
         <p className={styles.hook}>{issue.hook}</p>
+      </div>
 
-        <details className={styles.details} open={open}>
+      <details className={styles.details} open={open}>
           <summary className={styles.summary}>
             <span className={styles.plus} aria-hidden="true" />
             How to check
@@ -84,8 +85,7 @@ export function IssueRow({ issue, year, index, open = false }: IssueRowProps) {
               Details and {issue.sourceCount} {issue.sourceCount === 1 ? 'source' : 'sources'} →
             </Link>
           </div>
-        </details>
-      </div>
+      </details>
 
       <div className={styles.aside}>
         <IssueBand issue={issue} year={year} />

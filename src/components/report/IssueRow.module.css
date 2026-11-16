@@ -1,6 +1,8 @@
 .row {
   display: grid;
   grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  grid-template-areas: 'main aside' 'details aside';
+  align-items: start;
   gap: var(--s-3) var(--s-7);
   padding: var(--s-5) 0 var(--s-5);
   border-bottom: var(--hair) solid var(--rule);
@@ -8,8 +10,10 @@
 }
 .first {
   grid-template-columns: 3.25rem minmax(0, 1.5fr) minmax(0, 1fr);
+  grid-template-areas: 'idx main aside' 'idx details aside';
 }
 .index {
+  grid-area: idx;
   font-family: var(--font-display);
   font-size: 2.25rem;
   line-height: 1;
@@ -20,6 +24,7 @@
   padding-top: 0.15rem;
 }
 .main {
+  grid-area: main;
   display: grid;
   align-content: start;
   gap: var(--s-2);
@@ -57,7 +62,8 @@
 
 /* disclosure */
 .details {
-  margin-top: var(--s-2);
+  grid-area: details;
+  min-width: 0;
 }
 .summary {
   display: inline-flex;
@@ -148,6 +154,7 @@
 
 /* aside: the band */
 .aside {
+  grid-area: aside;
   display: grid;
   align-content: start;
   gap: var(--s-2);
@@ -179,21 +186,19 @@
 }
 
 @media (max-width: 860px) {
-  .row,
-  .first {
+  .row {
     grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: 'main' 'aside' 'details';
+    row-gap: var(--s-3);
   }
   .first {
     grid-template-columns: 2.25rem minmax(0, 1fr);
-  }
-  .first .aside {
-    grid-column: 2;
+    grid-template-areas: 'idx main' 'idx aside' 'idx details';
   }
   .index {
     font-size: 1.6rem;
   }
   .aside {
     padding-top: 0;
-    order: 0;
   }
 }
