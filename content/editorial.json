@@ -2518,5 +2518,741 @@
   "termite-wood-soil-contact": {
     "include": false,
     "reason": "No dated code milestone verified; build year does not predict it."
+  },
+  "kidde-plastic-handle-extinguishers-2017": {
+    "include": true,
+    "slug": "kidde-plastic-handle-fire-extinguishers",
+    "title": "Kidde plastic-handle fire extinguishers (2017 recall)",
+    "category": "fire-safety",
+    "hook": "Kidde recalled about 37.8 million fire extinguishers because some may not spray when you need them.",
+    "summary": "In 2017 Kidde recalled 134 plastic-handle extinguisher models made from 1973 to August 2017, plus eight push-button Pindicator models made from 1995 to September 2017. They can clog, need too much force to work, or lose their nozzle. CPSC reported one death and about 16 injuries.",
+    "kind": "present",
+    "applies": {
+      "from": 1973,
+      "to": 2017,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "sharp",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "record",
+    "prevalence": {
+      "label": "unknown",
+      "note": "About 37.8 million units were recalled in the US; no count of affected homes exists."
+    },
+    "retrofit": true,
+    "where": [
+      "kitchen",
+      "garage"
+    ],
+    "check": [
+      "Look under the kitchen sink, in the pantry, garage and utility room for any Kidde extinguisher.",
+      "Note whether it has a plastic handle (red, white or silver models) or a push-button Pindicator top.",
+      "Read the model number on the label and compare it with the model list on the CPSC recall notice.",
+      "On units made in 2007 or later, a 10-digit date code is printed on the side of the cylinder near the bottom."
+    ],
+    "action": "If the model is on the list, replace it and contact Kidde through the product safety recall page on kidde.com. Check the recall notice for whether the replacement offer is still open.",
+    "caveat": "Extinguishers are bought, not built in, so the year a house was built predicts little: owners add them to houses of every age. The recall did not cover every Kidde extinguisher, only the listed models."
+  },
+  "gree-dehumidifiers-2013-recall": {
+    "include": true,
+    "slug": "gree-dehumidifiers-2013-recall",
+    "title": "Gree-made dehumidifiers (2013 recall)",
+    "category": "hvac",
+    "hook": "About 2.5 million dehumidifiers sold under a dozen familiar brands from 2005 to 2013 can overheat and catch fire.",
+    "summary": "Gree made dehumidifiers sold as Danby, De'Longhi, Fedders, Frigidaire, Kenmore, SoleusAir, GE and others between 2005 and 2013. They can overheat, smoke and catch fire. A 2016 reannouncement cited about 450 fires, and many of these units ran unattended in basements.",
+    "kind": "present",
+    "applies": {
+      "from": 2005,
+      "to": 2013,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "sharp",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 1,
+    "evidence": "record",
+    "prevalence": {
+      "label": "unknown",
+      "note": "About 2.2 million units were recalled in the US in 2013, rising to about 2.5 million with the GE-brand expansion; no count of affected homes exists."
+    },
+    "retrofit": true,
+    "where": [
+      "basement-foundation"
+    ],
+    "check": [
+      "Look in the basement, crawlspace entry and laundry area for a portable dehumidifier.",
+      "Read the brand and pint capacity on the front.",
+      "Find the sticker with the model number and date code on the back, front or side of the unit.",
+      "Compare the model and date code with the tables on the CPSC recall notice. Many Gree and SoleusAir models are listed as all units."
+    ],
+    "action": "If it matches, unplug it and stop using it. The remedy was a refund from Gree, not a repair; check the recall notice for whether refunds are still offered.",
+    "caveat": "A dehumidifier is a portable appliance, so it may have come with the house or been bought later for a house of any age. A separate 2023 Gree recall covers other models made 2011 to 2014."
+  },
+  "gree-dehumidifiers-2023-recall": {
+    "include": true,
+    "slug": "gree-dehumidifiers-2023-recall",
+    "title": "Gree-made dehumidifiers (2023 recall, made 2011-2014)",
+    "category": "hvac",
+    "hook": "A second Gree dehumidifier recall in 2023 covered models that the 2013 list missed.",
+    "summary": "In 2023 Gree recalled about 1.56 million dehumidifiers from 42 models sold as Kenmore, GE, SoleusAir, Norpole and Seabreeze, made from January 2011 to February 2014. They can overheat and catch fire. If you checked a unit against the 2013 list only, it is worth checking again.",
+    "kind": "present",
+    "applies": {
+      "from": 2011,
+      "to": 2014,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "sharp",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "record",
+    "prevalence": {
+      "label": "unknown",
+      "note": "About 1.56 million units were recalled; no count of affected homes exists."
+    },
+    "retrofit": true,
+    "where": [
+      "basement-foundation"
+    ],
+    "check": [
+      "Look for a portable dehumidifier in the basement, crawlspace entry or laundry area.",
+      "Check the brand: Kenmore, GE, SoleusAir, Norpole or Seabreeze.",
+      "Read the model number on the unit's label and compare it with the 42 models on the 2023 CPSC notice (for example Kenmore 407.53530310 or GE ADEH50LPQ1)."
+    ],
+    "action": "If it matches, unplug it and stop using it. The notice offers a refund from Gree; check the notice for current details.",
+    "caveat": "This is a portable appliance that owners buy for houses of any age, so build year is only a rough guide. The 2023 and 2013 recall lists are separate, and one unit may need checking against both."
+  },
+  "kidde-nighthawk-combo-alarm-2004-2010": {
+    "include": true,
+    "slug": "kidde-nighthawk-combo-alarm-recall",
+    "title": "Kidde NightHawk hard-wired smoke/CO alarms (2016 recall)",
+    "category": "fire-safety",
+    "hook": "A popular hard-wired smoke and CO alarm from 2004 to 2010 can go quiet at the end of its life, so it seems fine when it is not.",
+    "summary": "Kidde recalled about 3.6 million NightHawk talking combination smoke and carbon monoxide alarms, model KN-COSM-IB, made from June 2004 to December 2010. If the batteries are replaced near the alarm's seven-year end of life, it can stop giving its end-of-life chirp and stop protecting the home. They were sold through electrical distributors and home centers, so builders used them.",
+    "kind": "present",
+    "applies": {
+      "from": 2004,
+      "to": 2010,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "sharp",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 1,
+    "evidence": "record",
+    "prevalence": {
+      "label": "unknown",
+      "note": "About 3.6 million units were recalled in the US; no count of affected homes exists."
+    },
+    "retrofit": false,
+    "where": [
+      "whole-house"
+    ],
+    "check": [
+      "Look for white round alarms 5 to 6 inches across with 'Kidde' engraved on the front.",
+      "Twist one off its ceiling base (it stays wired to a plug) and read the label on the back.",
+      "Look for model KN-COSM-IB with a manufacture date between June 1, 2004 and December 31, 2010.",
+      "A compartment on the back for a 9-volt backup battery is another sign of this model."
+    ],
+    "action": "If it matches, contact Kidde about a replacement and check the recall notice for whether the offer is still open. Any alarm made in these years is well past its stated life, so replace it either way.",
+    "caveat": "No one knows how many went into new houses versus replacement installs. Alarms get swapped over the years, so read the label rather than going by build year."
+  },
+  "kidde-hardwired-i12010s-2014": {
+    "include": true,
+    "slug": "kidde-hardwired-alarms-2014-recall",
+    "title": "Kidde hard-wired smoke alarms (2014 recall)",
+    "category": "fire-safety",
+    "hook": "Some hard-wired Kidde alarms sold in 2014 may not sound after a power outage.",
+    "summary": "Kidde recalled about 1.2 million hard-wired smoke and smoke/CO alarms, models i12010S, i12010SCO and KN-COSM-IBA, made between October 2013 and May 2014 and sold from January to July 2014. They can fail to alert to fire or carbon monoxide after the power goes out and comes back.",
+    "kind": "present",
+    "applies": {
+      "from": 2013,
+      "to": 2014,
+      "coreFrom": 2014,
+      "coreTo": 2014,
+      "startEdge": "sharp",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 1,
+    "evidence": "record",
+    "prevalence": {
+      "label": "unknown",
+      "note": "About 1.2 million units were recalled in the US; no count of affected homes exists."
+    },
+    "retrofit": false,
+    "where": [
+      "whole-house"
+    ],
+    "check": [
+      "Look for white round alarms 5 to 6 inches across with 'Kidde' engraved on the front.",
+      "Twist one off its base and read the model number and manufacture date on the back.",
+      "Recalled: i12010S made Dec 18, 2013 to May 13, 2014; i12010SCO made Dec 30, 2013 to May 13, 2014; KN-COSM-IBA made Oct 22, 2013 to May 13, 2014.",
+      "The i12010S and i12010SCO have sealed batteries; the KN-COSM-IBA has a front compartment for AA backup batteries."
+    ],
+    "action": "If it matches, contact Kidde for the free replacement offered in the 2014 notice. Check the notice for whether it is still available.",
+    "caveat": "These alarms also went into older houses as replacements, and a 2014 house may have had its alarms changed since. The label is what counts."
+  },
+  "kidde-pi2010-dual-sensor-2016-2017": {
+    "include": true,
+    "slug": "kidde-dual-sensor-alarms-yellow-cap",
+    "title": "Kidde dual-sensor smoke alarms with a yellow cap (2018 recall)",
+    "category": "fire-safety",
+    "hook": "A yellow cap left on at the factory can block one of the two sensors in some Kidde alarms from 2016 and 2017.",
+    "summary": "Kidde recalled about 452,000 dual-sensor smoke alarms, the hard-wired PI2010 and battery-powered PI9010, with date codes from September 10, 2016 to October 13, 2017. A yellow cap left on during manufacture can cover one sensor, so the alarm may not detect smoke properly. You can see the cap through a side opening.",
+    "kind": "present",
+    "applies": {
+      "from": 2016,
+      "to": 2018,
+      "coreFrom": 2016,
+      "coreTo": 2017,
+      "startEdge": "sharp",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "record",
+    "prevalence": {
+      "label": "unknown",
+      "note": "About 452,000 units were recalled in the US; no count of affected homes exists."
+    },
+    "retrofit": true,
+    "where": [
+      "whole-house"
+    ],
+    "check": [
+      "Look for alarms with 'KIDDE' printed on the front.",
+      "Take one down and read the model (PI2010 or PI9010) and date code on the back.",
+      "If the date code is between 2016 Sep. 10 and 2017 Oct. 13, look through the side opening for a yellow cap."
+    ],
+    "action": "If it matches, contact Kidde for the free replacement listed in the notice, and check the notice for current details.",
+    "caveat": "The PI9010 is a battery model and both were sold as replacements, so these turn up in houses of any age, not just ones built in 2016 to 2018."
+  },
+  "kidde-trusense-alarms-2019-2020": {
+    "include": true,
+    "slug": "kidde-trusense-alarms-recall",
+    "title": "Kidde TruSense smoke alarms (2021 recall)",
+    "category": "fire-safety",
+    "hook": "Some Kidde TruSense alarms sold in 2019 and 2020 can fail to alert to a fire.",
+    "summary": "Kidde recalled about 226,000 TruSense smoke and combination smoke/CO alarms sold from May 2019 to September 2020 because they can fail to alert to fire. Only alarms with the TruSense logo are included.",
+    "kind": "present",
+    "applies": {
+      "from": 2019,
+      "to": 2020,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "sharp",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "record",
+    "prevalence": {
+      "label": "unknown",
+      "note": "About 226,000 units were recalled; no count of affected homes exists."
+    },
+    "retrofit": true,
+    "where": [
+      "whole-house"
+    ],
+    "check": [
+      "Look for the TruSense logo or the words 'AMBER=FAULT' printed on the front of each alarm.",
+      "Take it down and read the model number on the back.",
+      "Recalled models: 2040-DSR, 2050-DS10, 2060-ASR, 2070-VDSCR, 2070-VASCR, 2070-VDSR and 2070-VASR."
+    ],
+    "action": "If it matches, contact Kidde for the free replacement alarm. Check the recall notice for current details.",
+    "caveat": "These were sold as replacements as well as for new houses, so check the label in a house of any age."
+  },
+  "siemens-murray-breakers-2010-spring-clip": {
+    "include": true,
+    "slug": "siemens-murray-breakers-2010-recall",
+    "title": "Siemens and Murray circuit breakers (2010 recall)",
+    "category": "electrical",
+    "hook": "Siemens and Murray breakers sold in the summer of 2010 have a clip that can break and let the panel overheat.",
+    "summary": "Siemens recalled about 2.2 million breakers, load centers and meter combos sold from June to August 2010 under the Siemens and Murray names. A spring clip can break in normal use, loosening the connection and risking overheating, arcing and fire in the panel. The 2010 notice offered a free electrician inspection and replacement.",
+    "kind": "present",
+    "applies": {
+      "from": 2010,
+      "to": 2010,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "sharp",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "record",
+    "prevalence": {
+      "label": "unknown",
+      "note": "About 2.2 million units were recalled, counting breakers, load centers and meter combos together; no count of affected homes exists."
+    },
+    "retrofit": true,
+    "where": [
+      "electrical-panel"
+    ],
+    "check": [
+      "Open the panel door (not the cover behind it) and read the brand on the label and the breakers: Siemens or Murray.",
+      "If it is one of those and the house was built or re-paneled around 2010, note it.",
+      "Leave the date-code check to an electrician: the codes are on the side of the breaker, behind the panel cover."
+    ],
+    "action": "Do not remove the panel cover yourself. Ask an electrician to compare the breakers with the CPSC list, and contact Siemens about the free inspection and replacement; check the recall notice for whether it is still offered.",
+    "caveat": "The sale window was only three months, so most Siemens and Murray panels are not affected. Panels replaced in older houses in 2010 can have them too."
+  },
+  "square-d-afci-breakers-2004": {
+    "include": true,
+    "slug": "square-d-afci-breakers-2004-recall",
+    "title": "Square D arc-fault (AFCI) breakers (2004 recall)",
+    "category": "electrical",
+    "hook": "Some Square D arc-fault breakers from 2004, the ones with a blue test button, may not catch the sparking they were installed to catch.",
+    "summary": "About 700,000 Square D QO and Homeline arc-fault breakers made after March 1, 2004 and sold from March to September 2004 were recalled because they can fail to detect an arc fault. They still work as ordinary breakers. They were put in to meet the 2002 electrical code rule for bedroom circuits.",
+    "kind": "present",
+    "applies": {
+      "from": 2004,
+      "to": 2004,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "sharp",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 3,
+    "evidence": "record",
+    "prevalence": {
+      "label": "unknown",
+      "note": "About 700,000 units were recalled; no count of affected homes exists."
+    },
+    "retrofit": false,
+    "where": [
+      "electrical-panel"
+    ],
+    "check": [
+      "Open the panel door and look for Square D QO or Homeline breakers marked AFCI or arc fault, usually on bedroom circuits.",
+      "Note whether the test button is blue.",
+      "Have an electrician read the date code stamped in red on the breaker label: CN, DN, EN, FN, GN, HN or JN are the recalled codes."
+    ],
+    "action": "If they match, contact Schneider Electric (Square D) about replacement, and check the recall notice for current details.",
+    "caveat": "Only a seven-month batch is affected. A house built in 2004 or 2005 is the likeliest place to find one, but a breaker could have been added later."
+  },
+  "counterfeit-square-d-breakers-2003-2006": {
+    "include": true,
+    "slug": "counterfeit-square-d-breakers",
+    "title": "Counterfeit Square D circuit breakers (mid-2000s recalls)",
+    "category": "electrical",
+    "hook": "In the mid-2000s fake breakers labeled Square D were sold through distributors, and they may not trip on an overload.",
+    "summary": "Square D determined that breakers sold as QO and QOB by some distributors were counterfeit and can fail to trip when overloaded, a fire hazard. One recall alone, through Specialty Lamp International, covered about 371,000 breakers sold from May 2005 to June 2006. Other distributors had similar recalls.",
+    "kind": "present",
+    "applies": {
+      "from": 2003,
+      "to": 2006,
+      "coreFrom": 2005,
+      "coreTo": 2006,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 3,
+    "evidence": "record",
+    "prevalence": {
+      "label": "unknown",
+      "note": "About 371,000 units were recalled by one distributor, and other recalls add more; no count of affected homes exists."
+    },
+    "retrofit": true,
+    "where": [
+      "electrical-panel"
+    ],
+    "check": [
+      "Open the panel door and look for black breakers labeled Square D QO or QOB.",
+      "On genuine breakers (except some made before 2003) the amp rating is written in white paint on the handle.",
+      "Ask an electrician to check the hidden signs: a Square D insignia molded on the side and a yellow chromate mounting clip."
+    ],
+    "action": "If a breaker looks wrong, have an electrician replace it. The distributor named in the recall notice may offer inspection and replacement or a refund.",
+    "caveat": "Only one of several counterfeit recalls was confirmed for this guide, so the years here are approximate. Breakers are swapped in panels of any age."
+  },
+  "central-o-ring-fire-sprinklers-1989-2001": {
+    "include": true,
+    "slug": "central-o-ring-sprinkler-heads",
+    "title": "Central, Gem and Star O-ring sprinkler heads (2001 recall)",
+    "category": "fire-safety",
+    "hook": "If a house from around 1990 to 2001 has fire sprinklers, some heads from that era were recalled because they may not open in a fire.",
+    "summary": "About 35 million O-ring sprinkler heads made by Central Sprinkler, sold under the Central, Gem and Star names, were recalled in 2001 because corrosion or contaminants in the water can stop them working. They were installed in houses as well as larger buildings. The free replacement program ended on August 31, 2007.",
+    "kind": "present",
+    "applies": {
+      "from": 1989,
+      "to": 2001,
+      "coreFrom": 1989,
+      "coreTo": 2000,
+      "startEdge": "sharp",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 3,
+    "evidence": "record",
+    "prevalence": {
+      "label": "rare",
+      "note": "NIST said fewer than 5 percent of US homes had sprinklers in 2011, so few houses of this age have any sprinkler heads at all."
+    },
+    "retrofit": false,
+    "where": [
+      "whole-house"
+    ],
+    "check": [
+      "First check whether the house has sprinklers: small heads on ceilings or high on walls.",
+      "Look at the frame or deflector of each head for 'CENTRAL', 'STAR', the letters 'CSC', a 'G' in a triangle, or a star-shaped symbol.",
+      "Compare any model or date stamped on the head with the CPSC model list."
+    ],
+    "action": "The free replacement program closed on August 31, 2007, so any affected heads would need replacing at your own cost. Have a fire sprinkler contractor confirm and replace them.",
+    "caveat": "Dry-type heads in this recall go back to the mid-1970s, but these are rare in houses. Most houses of this era have no sprinklers, so this only matters if yours does."
+  },
+  "bosch-siemens-dishwashers-1999-2005": {
+    "include": true,
+    "slug": "bosch-siemens-dishwashers-2009-recall",
+    "title": "Bosch and Siemens dishwashers (2009 recall)",
+    "category": "electrical",
+    "hook": "Some Bosch and Siemens built-in dishwashers made from 1999 to 2005 have a part that can overheat and start a fire.",
+    "summary": "BSH recalled about 476,500 Bosch and Siemens dishwashers made from May 1999 to July 2005 and sold through December 2006. An electrical component can overheat, and CPSC had 51 reports including 30 fires. These were common builder and remodel choices at the time.",
+    "kind": "present",
+    "applies": {
+      "from": 1999,
+      "to": 2006,
+      "coreFrom": 1999,
+      "coreTo": 2005,
+      "startEdge": "sharp",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "record",
+    "prevalence": {
+      "label": "unknown",
+      "note": "About 476,500 units were recalled; no count of affected homes exists."
+    },
+    "retrofit": false,
+    "where": [
+      "kitchen"
+    ],
+    "check": [
+      "Check the brand on the front control panel: Bosch or Siemens.",
+      "Open the door and find the model and serial number label on the upper right edge of the inner door.",
+      "Bosch models SHE43C, SHE44C, SHE46C, SHE56C, SHU33, SHU42, SHU432, SHU43C and SHU53A, and Siemens SL34A, are on the list. Compare the serial number with the range on the CPSC notice."
+    ],
+    "action": "If it matches, stop using it and contact BSH as the 2009 notice directs; check the notice for whether the free repair is still offered. A dishwasher this old may be due for replacement anyway.",
+    "caveat": "Many dishwashers from these years have since been replaced. A house built in this window is the likeliest to still have an original one."
+  },
+  "rinnai-wall-furnaces-2000-2007": {
+    "include": true,
+    "slug": "rinnai-wall-furnaces-2008-recall",
+    "title": "Rinnai EnergySaver wall furnaces (2008 recall)",
+    "category": "hvac",
+    "hook": "Some Rinnai direct-vent wall heaters made from 2000 to 2007 have a gasket that can fail and leak carbon monoxide.",
+    "summary": "Rinnai recalled about 52,000 EnergySaver direct-vent wall furnaces, models RHFE-431 and RHFE-556, made from February 2000 to December 2007. A gasket can fail and let carbon monoxide into the home. The notice offered a free repair kit.",
+    "kind": "present",
+    "applies": {
+      "from": 2000,
+      "to": 2007,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "sharp",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "record",
+    "prevalence": {
+      "label": "unknown",
+      "note": "About 52,000 units were recalled, and wall furnaces are a minority heating type; no count of affected homes exists."
+    },
+    "retrofit": true,
+    "where": [
+      "heating-cooling"
+    ],
+    "check": [
+      "Look for a Rinnai heater mounted on an outside wall with its vent going straight through the wall.",
+      "Find the rating plate on the right side of the unit; the model number is at the top.",
+      "Look for RHFE-431 or RHFE-556 (with FAIII, WTA or WTA-72B/76B suffixes).",
+      "The first four digits of the serial number, at the bottom of the plate, are the year and month made: 0002 through 0712 are in the recall window."
+    ],
+    "action": "If it matches, contact Rinnai about the free repair kit using the details on the recall notice, and check the notice for whether it is still offered. Make sure there is a working CO alarm nearby.",
+    "caveat": "Wall heaters are often added to older houses and additions, so build year is a weak guide here. The rating plate is what tells you."
+  },
+  "rheem-paloma-tankless-2004-2006": {
+    "include": true,
+    "slug": "rheem-paloma-tankless-water-heaters-2007-recall",
+    "title": "Rheem and Paloma power-vent tankless water heaters (2007 recall)",
+    "category": "hvac",
+    "hook": "A batch of gas tankless water heaters sold from 2004 to 2006 could build up dust and produce carbon monoxide.",
+    "summary": "About 42,200 Rheem and Paloma power-vent tankless gas water heaters sold from May 2004 to December 2006 were recalled for repair in 2007. A misplaced filter-door switch could let dust build up, creating a carbon monoxide risk.",
+    "kind": "present",
+    "applies": {
+      "from": 2004,
+      "to": 2006,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "sharp",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 3,
+    "evidence": "record",
+    "prevalence": {
+      "label": "unknown",
+      "note": "About 42,200 units were recalled, and tankless heaters were a small share of water heaters then; no count of affected homes exists."
+    },
+    "retrofit": true,
+    "where": [
+      "water-heater"
+    ],
+    "check": [
+      "Check whether the water heater is a wall-mounted tankless unit branded Rheem or Paloma.",
+      "Read the model number on its label and compare it with the list on the CPSC notice.",
+      "Check that the air filter door is in place."
+    ],
+    "action": "If it matches, contact the installer or Rheem about the repair described in the notice, and check the notice for current details. Keep a working CO alarm nearby.",
+    "caveat": "Tankless heaters are often fitted when an older tank fails, so they turn up in houses of any age."
+  },
+  "coaire-quietside-tankless-2008-2014": {
+    "include": true,
+    "slug": "coaire-quietside-tankless-water-heaters",
+    "title": "Coaire and Quietside tankless water heaters (2014 recall, no remedy)",
+    "category": "hvac",
+    "hook": "These tankless water heaters sold from 2008 to 2014 can overheat, and the maker is gone, so there is no fix on offer.",
+    "summary": "About 29,000 Coaire and Quietside S-Line condensing tankless gas water heaters sold from July 2008 to August 2014 can overheat and start a fire. CPSC had 40 overheating reports. The firm is out of business and no remedy is available.",
+    "kind": "present",
+    "applies": {
+      "from": 2008,
+      "to": 2014,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "sharp",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "record",
+    "prevalence": {
+      "label": "unknown",
+      "note": "About 29,000 units were recalled in the US; no count of affected homes exists."
+    },
+    "retrofit": true,
+    "where": [
+      "water-heater"
+    ],
+    "check": [
+      "Look for a white wall-mounted tankless heater about 25 to 28 inches tall.",
+      "Check for 'S-Line Condensing' on the top front.",
+      "Check for the brand 'Coaire' or 'Quietside' on the bottom front."
+    ],
+    "action": "If it matches, stop using it and have it replaced. CPSC says the firm is no longer in business and a remedy is no longer available.",
+    "caveat": "Tankless heaters are often installed as replacements, so one could be in a house of any age."
+  },
+  "lochinvar-condensing-boilers-2016-2020": {
+    "include": true,
+    "slug": "lochinvar-condensing-boilers-2020-recall",
+    "title": "Lochinvar, A. O. Smith and State condensing boilers (2020 recall)",
+    "category": "hvac",
+    "hook": "Some high-efficiency home boilers sold from 2016 to 2020 have a flue seal that can wear out and let carbon monoxide escape.",
+    "summary": "About 34,300 condensing boilers, combi boilers and packaged systems sold from August 2016 to June 2020 under the Lochinvar, A. O. Smith and State Proline names were recalled. A flue grommet can deteriorate and let carbon monoxide escape. CPSC had 7 reports and 2 non-fatal CO injuries. A repair is the remedy.",
+    "kind": "present",
+    "applies": {
+      "from": 2016,
+      "to": 2020,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "sharp",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "record",
+    "prevalence": {
+      "label": "unknown",
+      "note": "About 34,300 units were recalled in the US; no count of affected homes exists."
+    },
+    "retrofit": true,
+    "where": [
+      "heating-cooling"
+    ],
+    "check": [
+      "Check whether the boiler is branded Lochinvar, A. O. Smith or State Proline.",
+      "Find the rating plate on the outer jacket or the underside of the front panel, with the model and serial number.",
+      "The notice lists serial numbers 103475818 through 115078306 and model families such as ACB, KHB, SCB and WHL. Compare yours with the full list."
+    ],
+    "action": "If it matches, contact the maker about the free repair described in the notice, and check the notice for whether it is still offered. Keep a working CO alarm near the boiler and bedrooms.",
+    "caveat": "Boilers are replaced in older houses too, so the label matters more than build year. Later boiler recalls from other makers exist but were not checked for this guide."
+  },
+  "fvir-gas-water-heaters-2003": {
+    "include": true,
+    "slug": "gas-water-heaters-before-fvir",
+    "title": "Gas water heaters made before 2003 (no flammable-vapor protection)",
+    "category": "fire-safety",
+    "hook": "Gas tank water heaters made since July 2003 are built so gasoline fumes on the floor can't reach the flame; older ones are not.",
+    "summary": "Under an industry standard developed with CPSC, standard gas tank water heaters made after July 1, 2003 have a flame arrestor that stops spilled gasoline or solvent vapors from igniting. CPSC said vapor ignition by gas water heaters was involved in nearly 800 home fires a year. An older heater still in service lacks this protection.",
+    "kind": "missing",
+    "applies": {
+      "from": null,
+      "to": 2003,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "sharp"
+    },
+    "regions": "national",
+    "severity": "safety",
+    "priority": 2,
+    "evidence": "era",
+    "prevalence": {
+      "label": "unknown",
+      "note": "Any gas tank heater made before July 2003 lacks it. Many heaters that old have been replaced; no count of how many remain exists."
+    },
+    "retrofit": true,
+    "where": [
+      "water-heater",
+      "garage"
+    ],
+    "check": [
+      "Check whether the water heater is a gas tank model (a burner at the bottom and a vent pipe on top).",
+      "Read the label for the words 'Flammable Vapor Ignition Resistant' or 'FVIR'.",
+      "Look for the manufacture date in the label or serial number: after July 2003 means it should have the protection.",
+      "Notice whether gasoline, paint thinner or solvents are stored near it, especially in a garage."
+    ],
+    "action": "Keep gasoline and solvents well away from any gas appliance. If the heater predates the standard, plan to replace it with a current model.",
+    "caveat": "This was a voluntary industry standard, not a federal law, and it covers standard 30, 40 and 50 gallon gas tank heaters. Water heaters are replaced often, so the heater's own date matters far more than the house's."
+  },
+  "doe-2015-water-heater-efficiency-standard": {
+    "include": false,
+    "reason": "Build year helps little: water heaters are replaced every decade or so, and the practical point for owners (that compliant tanks are larger and may not fit) is unverified."
+  },
+  "r22-hcfc-22-central-ac-2000-2009": {
+    "include": false,
+    "reason": "Covered in older files (R-22 refrigerant)."
+  },
+  "r410a-hfc-phasedown-2025": {
+    "include": true,
+    "slug": "r410a-air-conditioners",
+    "title": "R-410A air conditioners and heat pumps",
+    "category": "hvac",
+    "hook": "Central AC installed from about 2010 to 2025 most likely runs on R-410A, the refrigerant new equipment is now moving away from.",
+    "summary": "R-410A replaced R-22 in new central air conditioners and heat pumps. From January 1, 2025, EPA restricts making or importing new home systems that use high-warming refrigerants, so new equipment is moving to alternatives. Existing R-410A systems can keep running and be serviced.",
+    "kind": "present",
+    "applies": {
+      "from": 2010,
+      "to": 2025,
+      "coreFrom": 2010,
+      "coreTo": 2024,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "money",
+    "priority": 3,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "likely",
+      "note": "New equipment could no longer use R-22 from 2010 (EPA), and R-410A was the main replacement. No count of homes exists; this is an inference."
+    },
+    "retrofit": true,
+    "where": [
+      "heating-cooling"
+    ],
+    "check": [
+      "Find the nameplate on the outdoor unit.",
+      "Look for the refrigerant listed: R-410A, R-22, or a newer type such as R-454B or R-32."
+    ],
+    "action": "Nothing is required for a working system. When it is time to replace it, ask the contractor which refrigerant the new system uses and whether any other parts need changing.",
+    "caveat": "The 2010 start is approximate. EPA has since changed some installation dates for equipment made before 2025, so check EPA's current page before relying on a cutoff. Many older houses got an R-410A system as a replacement."
+  },
+  "problem-drywall-2001-2009": {
+    "include": false,
+    "reason": "Covered in older files (problem 'Chinese' drywall)."
+  },
+  "zurn-f1807-brass-pex-fittings-1996-2010": {
+    "include": false,
+    "reason": "Covered in older files: plumbing entry pex-brass-fittings-early covers Zurn F1807 fittings. The verified court quote here (sold 1996 to 2010) could strengthen that entry."
+  },
+  "csst-gas-tubing-bonding-lightning": {
+    "include": false,
+    "reason": "Covered in older files (csst-gas-tubing-unbonded), and this entry is unconfirmed with no primary source."
+  },
+  "radon-resistant-new-construction": {
+    "include": false,
+    "reason": "Covered in older files: hazmat entry radon covers radon-resistant construction. Note EPA's '3 million homes since 1990' here differs from the '1.5 million' figure in that entry."
+  },
+  "irc-2009-residential-sprinklers-2011": {
+    "include": false,
+    "reason": "Covered in older files (residential sprinklers in the IRC)."
+  },
+  "afci-protection-nec-2002-2014": {
+    "include": false,
+    "reason": "Covered in older files (basic AFCI requirement timeline)."
+  },
+  "iecc-2012-mandatory-air-leakage-test": {
+    "include": true,
+    "slug": "built-before-airtightness-testing",
+    "title": "Built before mandatory airtightness testing (2012 energy code)",
+    "category": "envelope",
+    "hook": "The 2012 energy code was the first to make new houses pass a whole-house air leakage test.",
+    "summary": "The 2012 International Energy Conservation Code added a mandatory whole-house pressure (blower-door) test, a stricter duct leakage test and more insulation, and DOE put it at about 30 percent more efficient than the 2006 code. A house built before its state adopted the 2012 code was not held to that test, so it likely leaks more air.",
+    "kind": "missing",
+    "applies": {
+      "from": null,
+      "to": 2015,
+      "coreFrom": null,
+      "coreTo": null,
+      "startEdge": "soft",
+      "endEdge": "soft"
+    },
+    "regions": "national",
+    "severity": "comfort",
+    "priority": 3,
+    "evidence": "rule",
+    "prevalence": {
+      "label": "likely",
+      "note": "Houses built before their state adopted the 2012 code were not required to pass this test. Adoption dates by state were not researched."
+    },
+    "retrofit": false,
+    "where": [
+      "whole-house",
+      "attic"
+    ],
+    "check": [
+      "Look near the electrical panel or furnace for an energy code certificate or a posted blower-door test result.",
+      "Ask the seller or builder whether a blower-door test or energy rating was done.",
+      "Notice drafts around outlets, attic hatches, recessed lights and window trim on a cold or windy day."
+    ],
+    "action": "Nothing is required. If the house feels drafty or bills are high, an energy audit with a blower-door test shows where air sealing would help most.",
+    "caveat": "This is a model code. States and cities adopted it at different times and some much later or not at all, so the end year here is stretched a few years and is soft. Check your state's adoption date."
+  },
+  "mechanical-ventilation-tight-homes": {
+    "include": false,
+    "reason": "No verified date: only the general DOE principle is confirmed, and the start year is a placeholder, so build year cannot be tied to it."
+  },
+  "spray-polyurethane-foam-insulation": {
+    "include": false,
+    "reason": "No verified era or prevalence (start year is a placeholder) and foam is often added to houses of any age, so build year does not help."
+  },
+  "range-anti-tip-brackets-unsecured": {
+    "include": false,
+    "reason": "Depends on the installer, not the build year (start year is a placeholder), so build year does not help. Worth a general safety tip outside the year bands."
   }
 }
