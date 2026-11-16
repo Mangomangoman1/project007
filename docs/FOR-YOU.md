@@ -11,14 +11,12 @@ Kept up to date as the build goes. Nothing here blocks tonight's work unless mar
       whether to add test-kit and inspector referrals.
 
 ## Launch status
-Everything I can do without you is done: the site builds clean (616 pages, 57 tests), the copy has
-been fact-checked against its sources, and the trust pages, indexing rules, icons and analytics
-are in. What is left needs you:
-1. Say "deploy a preview" and try it on a real phone.
-2. Give me a contact email for the corrections page.
-3. Then say "go live" and I'll attach yearbuilt.house.
-After launch: submit the sitemap in Google Search Console, switch on Speed Insights in the Vercel
-dashboard, and arrange the inspector review before promoting the site widely.
+Live at https://yearbuilt.house since November 16, 2026 (www redirects to it). Vercel builds and
+publishes every push to the working branch.
+After launch, for you:
+1. Click "Enable Analytics" on the project in the Vercel dashboard (and Speed Insights if wanted).
+2. Verify yearbuilt.house in Google Search Console and submit https://yearbuilt.house/sitemap.xml.
+3. Arrange the inspector review before promoting the site widely.
 
 ## Things only you can do
 - [ ] **Contact email.** The corrections, privacy and about pages show "a contact address will be
