@@ -117,3 +117,43 @@ Standard footer line: "A guide to what to look for. Not an inspection."
 pre-installed; `require('playwright')` works, do not install it) of every route at 390px and 1440px
 in both themes, LOOK at them, and iterate until they are genuinely polished. No horizontal page
 scroll at 390px. Report what you verified and what is unfinished.
+
+## v1.1: "About your house" (house profile)
+Optional questions that make a year's report specific to one house. The year stays the way in;
+nothing is required. Answers live in localStorage only (key in STORAGE_KEYS), apply to every
+year's report, and never leave the device.
+
+```ts
+type HouseProfile = Partial<{
+  type: 'site-built' | 'manufactured';
+  foundation: 'basement' | 'crawlspace' | 'slab';
+  stories: 'one' | 'two-plus';
+  exterior: 'wood' | 'vinyl-aluminum' | 'brick-stone' | 'stucco' | 'fiber-cement';
+  roof: 'asphalt' | 'wood' | 'tile' | 'metal' | 'flat';
+  heating: 'forced-air' | 'boiler' | 'electric-resistance' | 'heat-pump';
+  cooling: 'central' | 'none';
+  gas: 'yes' | 'no';           // any gas or propane appliance or service
+  water: 'city' | 'well';
+  sewer: 'city' | 'septic';
+  chimney: 'yes' | 'no';       // masonry chimney or fireplace
+}>;
+type When = Partial<Record<keyof HouseProfile, string[]>>;
+```
+Issues and lifespans may carry `when?: When`. An item applies to a profile when, for every
+attribute listed in `when`, the profile's answer is unset OR is one of the listed values. An item
+with no `when` always applies. Unanswered questions never hide anything.
+
+Content rule: add a condition only when it is true by the nature of the thing (unbonded gas
+tubing needs gas; an unbolted foundation needs a crawl space or basement, not a slab; septic life
+needs a septic system; asbestos-cement siding is not a concern on a brick house only if the
+research says it was a siding). When in doubt, leave the condition off: wrongly hiding a real
+issue is worse than showing an irrelevant one.
+
+UI: a compact "About your house" panel on the report (and a one-line prompt for it on the home
+page), in the notebook style: a row of small questions answered with chips, each with a "not
+sure" state (unset). It shows progress quietly, can be collapsed, and has "clear all". When
+answers hide items, the report says so plainly ("7 items hidden by your answers · show them")
+and the hidden ones can be revealed in place, marked as not applying. Counts, the headline, the
+timeline's lit bands, the house diagram counts and What's due all follow the profile. With no
+answers the report is exactly as before, and with JavaScript off the full unfiltered report is in
+the HTML.
