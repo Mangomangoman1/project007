@@ -18,8 +18,11 @@ structure-regional, newer-homes if present), `content/editorial.json` and `conte
   primary first. Editorial may add `researchIds: []` to merge sources from more entries.
 - `src/data/lifespans.json`: `Lifespan[]`, sorted by `lifeLow`. Inline `sources` or `researchId`.
 - `src/data/meta.json`: counts plus `sample: true|false`.
+Issues and lifespans may carry `when` (house profile, v1.1): validated by `validateWhen` imported
+straight from `src/lib/profile.ts` (Node strips the types, so the vocabulary has one source), and
+passed through in canonical attribute order; meta gains `conditionalIssueCount`/`conditionalLifespanCount`.
 It exits 1 and lists every problem (no verified source, bad Zone, bad state code, duplicate slug,
-bad years...). The generated JSON is committed so lint/typecheck work without a build.
+bad years, unknown `when` attribute or value...). The generated JSON is committed so lint/typecheck work without a build.
 
 ## Library (`src/lib`)
 | file | what |
@@ -31,6 +34,7 @@ bad years...). The generated JSON is committed so lint/typecheck work without a 
 | `timeline.ts` (pure) | percent geometry: `pctOf`, `pctMid`, `yearAt`, `bandGeom`, `packRows`, `packLane` (open-start "missing" bands share one sub-lane), `tickLabels` (collision-free decade labels for a px/year), `pickBand` (hit test), `placeNote` (annotation clamped inside the plot), `decades`, `yearsLabel` ("1965–1973", "Built 1978 or earlier"), `coreLabel` |
 | `labels.ts` | `CATEGORIES` (lane order), `EVIDENCE` (stamp text + long explanation), `PREVALENCE`, `SEVERITY`, `TIER`, `ZONE_LABEL`, `PARTS` (zone → "part of the house"), `STATES`, `plural()` |
 | `storage.ts` | `readStore` / `writeStore` (localStorage, try/catch'd) |
+| `profile.ts` (pure, import-free) | House profile, the single source of truth: `HouseProfile`, `When`, `PROFILE_KEYS`, `PROFILE_QUESTIONS` (question, name, chips: `label`, `fact` for "Hidden because: …", optional out-of-context `summary`), `PROFILE_GROUPS` (the building / its systems / its services), `matchesProfile` (spec rule: every listed attribute unset or allowed), `profileConflicts`, `hiddenReason` ("no gas", "furnace heat and no gas"), `splitByProfile`, `setAnswer`, `answeredCount`, `sanitizeProfile` (stored data), `validateWhen` (used by build-data). Tests: `profile.test.ts`. `types.ts` re-exports `HouseProfile`/`When`; `Issue.when?`, `Lifespan.when?`; `IssueLite` carries `when`. `STORAGE_KEYS.profile` = `builtin:profile` (shared by all years), `profileOpen`. |
 
 ## Components (`src/components`)
 | component | props | notes |
@@ -45,10 +49,28 @@ bad years...). The generated JSON is committed so lint/typecheck work without a 
 | `report/IssueRow` | `issue: ReportIssue`, `year`, `index?`, `open?`, `variant?: 'full'\|'compact'` | full (check first): always-visible title/hook/band, "How to check" disclosed. compact (built without, by part): one native `<details data-row>` row (title, years, one clamped line, mini band) expanding in place to hook, band + evidence, check steps with `<HouseCutaway zones size="sm">`, action, notes. Works without JS. `toReportIssue(issue)` strips sources to counts. Anchors: `#i-<slug>`. |
 | `report/LifespanList` (client) | `lifespans`, `year`, `age` | Honest "What's due": open groups due → past (plausibly original) → soon on a shared age axis; parts whose life is < house age / 1.5 fold into "Replaced at least once by now: find out when". Every part takes a "last replaced" year or decade (saved on Enter/blur in `localStorage[builtin:last-replaced:<year>]` as `{id: "2015"}`); a dated part is judged by its own age (diamond marker). Counters: due now, past if original, due within 5 yrs, replaced by now. |
 | `SiteHeader`, `SiteFooter`, `ThemeToggle`, `LogoMark` | | Footer is a title block; shows a note when built on sample content. |
+| `profile/useHouseProfile` (client) | | `[profile, save]` from `localStorage[builtin:profile]` via `useSyncExternalStore`: one shared snapshot for every component on the page, a custom event on save, the `storage` event across tabs. Server snapshot is `{}`, so static HTML is always unfiltered. `saveHouseProfile()` sanitizes. |
+| `profile/ProfilePanel` (client) | `year`, `profile`, `onChange`, `hiddenCount`, `reveal`, `onReveal` | "About your house", a row joined under the report's title block (`id="about-your-house"`; that hash opens it). Collapsed: answers so far, an 11-tick progress scale ("4 of 11"), Answer/Edit toggle (`aria-expanded`), and "N items hidden by your answers · show them". Open: three groups (columns on desktop; at ≤720px an accordion, one group at a time, each header showing its answers). Each question is a native radio group (`fieldset`/`legend`) whose first chip is a dashed "Not sure" (= unset). Clear all, Done; a polite live region announces each change and the hidden count. Open state kept in `builtin:profile-open`. Hidden without JS and in print. Also exports `RevealButton` ("show them / hide them", `aria-pressed`, `data-reveal-hidden`). |
+| `checklist/Tailor` (client islands) | | `ChecklistTailor` (injects `[data-item]`/`[data-part]{display:none}` for ruled-out rows/parts and a "Tailored to your answers: 3 items left out (no gas; …)" line in the sheet's title-block foot), `TailoredCount`, `TailoredCutaway`. |
+
+## House profile in the report (v1.1)
+`Report` filters regional issues by state first, then `splitByProfile` → `shown` / `ruledOut` (and
+the same for lifespans). Everything counts `shown`: title-block cells (with "of N" when answers hide
+some), headline (first applicable issue; new-house logic too), summary line ("…a 1972 house like
+yours"), section navigator, section ledes, the timeline (`Timeline profile` ghosts ruled-out bands
+like other states' bands, drops them from lane counts and "What the YEAR line crosses", and its
+annotation says "Not for your house: no gas"), the cutaway counts and What's due (`LifespanList`
+gets only applicable parts). "Show them" (one report-wide state, toggled from the panel or any
+section's "2 hidden by your answers · show them") renders ruled-out rows in place at the end of
+their own section / part, marked with a hatched wash, struck title and a dashed "Not for your house ·
+Hidden because: no gas" tag (`IssueRow hiddenBy`, `data-hidden-by`); the part index shows "+1"; What's
+due lists them under "Not for your house". With no answers every list is identical to v1.
+Home: one line under the primary action links to `/built/YEAR#about-your-house` (or says the
+report is tailored, "4 of 11"); hidden without JS. Home counts stay year-level.
 
 ## Routes
 - `/` (`src/app/page.tsx`), `/built/[year]` (1880..MAX_YEAR, `dynamicParams=false`).
-- Tests: `src/lib/select.test.ts` (selection + life stages + replaced-year parsing), `src/lib/timeline.test.ts` (packing, tick labels, hit test, note placement). `src/lib/timeline.ts` imports `./select.ts` with the extension so Node can run it.
+- Tests: `src/lib/select.test.ts` (selection + life stages + replaced-year parsing), `src/lib/profile.test.ts` (matching rule, reasons, split, sanitize, `validateWhen`), `src/lib/timeline.test.ts` (packing, tick labels, hit test, note placement). `src/lib/timeline.ts` imports `./select.ts` with the extension so Node can run it.
 - `/issue/[slug]`: **placeholder** (summary, band, check, sources with quotes). To be replaced,
   along with `/issues`, `/checklist/[year]` (the report links to it), `/about` (header/footer link
   to it), the house cutaway, OG images, sitemap/robots.
@@ -130,7 +152,11 @@ drafted sheet with a Print button (`components/checklist/PrintButton`, client) a
 Content: title block (year, age, counts, Address/Date fill-ins, site name, URL, disclaimer); Check
 these first (priority 1: title, `check[0]`, where to look); everything else by part (`groupByPart`;
 title + first sentence of `check[0]`); Built without; Ask the seller; a counts `HouseCutaway`; ruled
-notes that stretch to fill the band. Sparse years (< 10 issues) add "On any viewing" prompts and more
+notes that stretch to fill the band. House profile: rows carry `data-item`/`data-part`, and the
+`checklist/Tailor` islands hide ruled-out rows after hydration, recount On record / Check first /
+section counts and the cutaway, and add "Tailored to your answers" (printed too). Check-first numbers
+are a CSS counter so they stay consecutive. "Ask the seller" and the server-side column balance are
+not tailored. No answers or no JS = the full sheet. Sparse years (< 10 issues) add "On any viewing" prompts and more
 note lines; houses ≤ 10 years old get a warranty question.
 `components/checklist/sheet.ts` (pure): `oneLine`, `regionNote`, `sellerQuestions(lifespans, age)`
 (one question per part, backed by named lifespans and `lifeStatus`: due/past, or soon for houses
