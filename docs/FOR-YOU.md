@@ -22,15 +22,18 @@ Kept up to date as the build goes. Nothing here blocks tonight's work unless mar
 
 ## Added after v1 (all optional layers on the year report)
 - **About your house** (built): eleven optional questions that tailor the report and checklist.
-- **The typical new house of your year** (building): real Census figures by region, 1971 onward.
+- **The typical new house of your year** (built): real Census figures by region, 1971 onward.
   No roofing data exists, and nothing before 1971.
-- **Your place** (building): enter a ZIP for local housing age, heating fuel, radon zone, climate
+- **Your place** (built): enter a ZIP for local housing age, heating fuel, radon zone, climate
   zone and first flood-map year. FEMA's hazard ratings could not be downloaded automatically.
 - **Home styles** (not started): no dataset exists, only reference prose. Decide later.
 - **State-specific code dates** (not feasible as a download): would need compiling by hand from
   state statutes.
 
 ## Worth a read when you have time
+- [ ] **Six corrected Census figures.** Six percentages in the Census tables contradict their own
+      counts (apparent typos at the source). The site shows the share computed from the counts;
+      each correction is listed in `src/data/typical-house.json` under `corrections`.
 - [ ] **Try it.** Read the report for your own house's year and tell me what feels wrong,
       missing or confusing. You are the target reader.
 - [ ] **The "check first" list.** These 12 issues are flagged as priority on the reports for the
