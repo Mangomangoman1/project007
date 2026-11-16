@@ -291,6 +291,78 @@
           "publisher": "US CPSC news release, 1978",
           "supports": "CPSC position on residential aluminum wiring (title only)",
           "verified": false
+        },
+        {
+          "url": "https://www.cpsc.gov/s3fs-public/516.pdf",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "CPSC approves of only three methods for a permanent repair.",
+          "supports": "CPSC approves three permanent repairs (full copper rewiring, COPALUM crimp connectors, AlumiConn connectors); calls CO/ALR devices at best an incomplete repair; says twist-on pigtails are not a recommended repair (usable only as an emergency, temporary measure).",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/s3fs-public/516.pdf",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "if the COPALUM repair is not available, the AlumiConn connector may be considered the next best alternative for a permanent repair.",
+          "supports": "CPSC approves three permanent repairs (full copper rewiring, COPALUM crimp connectors, AlumiConn connectors); calls CO/ALR devices at best an incomplete repair; says twist-on pigtails are not a recommended repair (usable only as an emergency, temporary measure).",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/s3fs-public/516.pdf",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "CO/ALR devices must be considered, at best, an incomplete repair.",
+          "supports": "CPSC approves three permanent repairs (full copper rewiring, COPALUM crimp connectors, AlumiConn connectors); calls CO/ALR devices at best an incomplete repair; says twist-on pigtails are not a recommended repair (usable only as an emergency, temporary measure).",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/s3fs-public/516.pdf",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "CPSC staff believes that this method of repair does not solve the problem of overheating present in aluminum-wired branch circuits.",
+          "supports": "CPSC approves three permanent repairs (full copper rewiring, COPALUM crimp connectors, AlumiConn connectors); calls CO/ALR devices at best an incomplete repair; says twist-on pigtails are not a recommended repair (usable only as an emergency, temporary measure).",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/s3fs-public/516.pdf",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "CO/ALR devices may be used as an emergency, temporary repair",
+          "supports": "CPSC approves three permanent repairs (full copper rewiring, COPALUM crimp connectors, AlumiConn connectors); calls CO/ALR devices at best an incomplete repair; says twist-on pigtails are not a recommended repair (usable only as an emergency, temporary measure).",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/s3fs-public/516.pdf",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "No information was developed for aluminum-wired homes built after 1972.",
+          "supports": "CPSC says no information was developed for aluminum-wired homes built after 1972, and that homes built before 1965 are unlikely to have aluminum branch wiring; use ran from 1965 to the mid 1970s.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/s3fs-public/516.pdf",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Homes built before 1965 are unlikely to have aluminum branch circuit wiring.",
+          "supports": "CPSC says no information was developed for aluminum-wired homes built after 1972, and that homes built before 1965 are unlikely to have aluminum branch wiring; use ran from 1965 to the mid 1970s.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/s3fs-public/516.pdf",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Electrical cables installed between 1965 and the mid 1970s in new homes, in additions, and as part of rewired/new circuits may contain aluminum wiring.",
+          "supports": "CPSC says no information was developed for aluminum-wired homes built after 1972, and that homes built before 1965 are unlikely to have aluminum branch wiring; use ran from 1965 to the mid 1970s.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/s3fs-public/516.pdf",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "means that the cable uses copper-coated aluminum wire and is not covered by the repair recommendations outlined in this publication",
+          "supports": "CPSC says cable marked CU-clad or Copper-clad uses copper-coated aluminum wire and is not covered by its repair recommendations. It does not call it lower risk.",
+          "verified": true
         }
       ],
       "open_questions": "Open the two CPSC pages to confirm exact wording and the 2 million figure; get Census housing completions 1965-73 to compute a defensible share; whether copper-clad aluminum needs its own entry; credible repair-cost data.",
@@ -368,6 +440,38 @@
           "publisher": "Great American Insurance Group",
           "supports": "Insurer loss-control view of FPE and Zinsco panels (title/snippet only)",
           "verified": false
+        },
+        {
+          "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Commission-Closes-Investigation-Of-FPE-Circuit-Breakers-And-Provides-Safety-Information-For-Consumers",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "The Commission investigation into Federal Pacific Electric (FPE) circuit breakers began in June 1980",
+          "supports": "CPSC investigated from June 1980, confirmed breakers failing UL calibration tests, closed the case in March 1983 without deciding whether they are unsafe and without a recall.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Commission-Closes-Investigation-Of-FPE-Circuit-Breakers-And-Provides-Safety-Information-For-Consumers",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Commission testing confirmed that these breakers fail certain UL calibration test requirements.",
+          "supports": "CPSC investigated from June 1980, confirmed breakers failing UL calibration tests, closed the case in March 1983 without deciding whether they are unsafe and without a recall.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Commission-Closes-Investigation-Of-FPE-Circuit-Breakers-And-Provides-Safety-Information-For-Consumers",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "the data currently available to the Commission does not establish that the circuit breakers pose a serious risk of injury to consumers",
+          "supports": "CPSC investigated from June 1980, confirmed breakers failing UL calibration tests, closed the case in March 1983 without deciding whether they are unsafe and without a recall.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Commission-Closes-Investigation-Of-FPE-Circuit-Breakers-And-Provides-Safety-Information-For-Consumers",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "The Commission staff believes that it currently has insufficient data to accept or refute Reliance’s position.",
+          "supports": "CPSC investigated from June 1980, confirmed breakers failing UL calibration tests, closed the case in March 1983 without deciding whether they are unsafe and without a recall.",
+          "verified": true
         }
       ],
       "open_questions": "Number of panels/homes; exact last year of US installation; exact wording of CPSC's 2011 revision; correct dates of the NJ ruling and settlement; peer-reviewed status of Aronstein's figures (reportedly an IEEE paper - not located).",
@@ -518,6 +622,30 @@
           "publisher": "Waypoint Property Inspection (inspector blog - weak)",
           "supports": "Florida insurers requiring replacement (snippet only)",
           "verified": false
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/1988/challenger-electrical-equipment-corp-offers-replacement-program-for-9000-gfci-circuit",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "a mechanical part may become detached and prevent the ground fault feature of the circuit breaker from functioning",
+          "supports": "Recall facts: about 9,000 Challenger 15 and 20 amp type HAGF GFCI breakers; a mechanical part can detach and defeat the ground-fault function; no shock incidents reported; free replacement.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/1988/challenger-electrical-equipment-corp-offers-replacement-program-for-9000-gfci-circuit",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "No electric shock incidents have been reported by Challenger.",
+          "supports": "Recall facts: about 9,000 Challenger 15 and 20 amp type HAGF GFCI breakers; a mechanical part can detach and defeat the ground-fault function; no shock incidents reported; free replacement.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/1988/challenger-electrical-equipment-corp-offers-replacement-program-for-9000-gfci-circuit",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Approximately 9,000",
+          "supports": "Recall facts: about 9,000 Challenger 15 and 20 amp type HAGF GFCI breakers; a mechanical part can detach and defeat the ground-fault function; no shock incidents reported; free replacement.",
+          "verified": true
         }
       ],
       "open_questions": "Whether this entry should be published at all without better evidence: no agency finding beyond the 1988 GFCI breaker programme. Production years; any insurer underwriting document; whether the Lawndale notice refers to a different, later recall.",
@@ -1137,6 +1265,22 @@
           "publisher": "NAHB",
           "supports": "Recall notice to builders (title only)",
           "verified": false
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2022/Schneider-ElectricTM-Recalls-1-4-Million-Electrical-Panels-Due-to-Thermal-Burn-and-Fire-Hazards",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "The firm has received one report of an incident of a loose wire. No injuries have been reported.",
+          "supports": "Recall facts: about 1.4 million Square D QO plug-on neutral load centers made February 2020 to January 2022 (date codes 200561 to 220233); one report of a loose wire, no injuries; replace or repair.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2022/Schneider-ElectricTM-Recalls-1-4-Million-Electrical-Panels-Due-to-Thermal-Burn-and-Fire-Hazards",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "About 1.4 million (In addition, 289,000 were sold in Canada)",
+          "supports": "Recall facts: about 1.4 million Square D QO plug-on neutral load centers made February 2020 to January 2022 (date codes 200561 to 220233); one report of a loose wire, no injuries; replace or repair.",
+          "verified": true
         }
       ],
       "open_questions": "Exact catalogue numbers; share of new homes using this line; whether the recall remedy programme is still open.",

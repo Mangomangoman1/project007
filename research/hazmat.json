@@ -96,6 +96,30 @@
           "snippet_corroborated": true,
           "tier": "primary",
           "not_opened_reason": "Host refuses automated requests (bot check); not opened. Same rule text confirmed from the govinfo CFR PDF."
+        },
+        {
+          "url": "https://www.epa.gov/lead/renovation-repair-and-painting-program",
+          "publisher": "U.S. Environmental Protection Agency",
+          "tier": "primary",
+          "quote": "EPA's RRP Rule requires that anyone paid to perform work that disturbs painted surfaces in homes, childcare facilities and preschools built before 1978 be certified",
+          "supports": "EPA RRP rule: anyone paid to disturb paint in pre-1978 homes, childcare facilities and preschools must be certified and trained in lead-safe work practices; the rule does not generally apply to homeowners working on their own homes.",
+          "verified": true
+        },
+        {
+          "url": "https://www.epa.gov/lead/renovation-repair-and-painting-program",
+          "publisher": "U.S. Environmental Protection Agency",
+          "tier": "primary",
+          "quote": "In general, the RRP Rule does not apply to homeowners doing RRP projects in their own pre-1978 homes.",
+          "supports": "EPA RRP rule: anyone paid to disturb paint in pre-1978 homes, childcare facilities and preschools must be certified and trained in lead-safe work practices; the rule does not generally apply to homeowners working on their own homes.",
+          "verified": true
+        },
+        {
+          "url": "https://www.epa.gov/lead/renovation-repair-and-painting-program",
+          "publisher": "U.S. Environmental Protection Agency",
+          "tier": "primary",
+          "quote": "Approximately three-quarters of the homes in the United States built before 1978 still contain some lead-based paint.",
+          "supports": "EPA RRP rule: anyone paid to disturb paint in pre-1978 homes, childcare facilities and preschools must be certified and trained in lead-safe work practices; the rule does not generally apply to homeowners working on their own homes.",
+          "verified": true
         }
       ],
       "open_questions": "AHHS II prevalence by year-built bracket (the most current numbers) was not retrieved. Sources disagree on what share of homes with lead paint were built before 1978 (89% vs 93%) and one snippet claims 85.4% were pre-1940, which looks garbled. No cost data. State/local bans earlier than 1978 (e.g. some cities in the 1950s-60s) not researched.",
@@ -175,6 +199,30 @@
           "snippet_corroborated": true,
           "tier": "secondary",
           "not_opened_reason": "Host is not on the allowed list for this pass; not opened."
+        },
+        {
+          "url": "https://www.cpsc.gov/safety-education/safety-guides/home/asbestos-home",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "You can't tell whether a material contains asbestos simply by looking at it, unless it is labeled.",
+          "supports": "CPSC: you cannot tell whether a material contains asbestos by looking at it; have it sampled and analyzed by a qualified professional.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/safety-education/safety-guides/home/asbestos-home",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "If in doubt, treat the material as if it contains asbestos or have it sampled and analyzed by a qualified professional.",
+          "supports": "CPSC: you cannot tell whether a material contains asbestos by looking at it; have it sampled and analyzed by a qualified professional.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/safety-education/safety-guides/home/asbestos-home",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Taking samples yourself is not recommended.",
+          "supports": "Correction: CPSC says a professional should take samples and that taking samples yourself is not recommended, because sampling done incorrectly can be more hazardous than leaving the material alone. The copy should not point homeowners to self-sampling instructions.",
+          "verified": true
         }
       ],
       "open_questions": "The real last-installed year (stock sold after 1978) is unsourced; a second pass should look for state air-agency guidance that names a cutoff year (several Western agencies do). No prevalence data. No cost data.",
@@ -254,6 +302,22 @@
           "snippet_corroborated": true,
           "tier": "secondary",
           "not_opened_reason": "Host is not on the allowed list for this pass; not opened."
+        },
+        {
+          "url": "https://www.cpsc.gov/safety-education/safety-guides/home/asbestos-home",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Asbestos is found in some vinyl floor tiles and the backing on vinyl sheet flooring and adhesives.",
+          "supports": "CPSC: asbestos is found in some vinyl floor tiles, the backing on vinyl sheet flooring, and adhesives; sanding tiles or scraping sheet backing can release fibers. (CPSC says some, not frequently; no 9-inch-tile rule.)",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/safety-education/safety-guides/home/asbestos-home",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Sanding tiles can release fibers. So may scraping or sanding the backing of sheet flooring during removal.",
+          "supports": "CPSC: asbestos is found in some vinyl floor tiles, the backing on vinyl sheet flooring, and adhesives; sanding tiles or scraping sheet backing can release fibers. (CPSC says some, not frequently; no 9-inch-tile rule.)",
+          "verified": true
         }
       ],
       "open_questions": "No agency source for the end year; manufacturer-by-manufacturer end dates differ (1981-1986). No prevalence survey. Whether imported asbestos flooring was sold after 1986 is unknown.",
@@ -315,6 +379,14 @@
           "verified": true,
           "tier": "primary",
           "quote": "voted unanimously to grant a petition to ban commercial asbestos paper that is sold to consumers or installed in consumers' homes"
+        },
+        {
+          "url": "https://www.cpsc.gov/safety-education/safety-guides/home/asbestos-home",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "STEAM PIPES, BOILERS, and FURNACE DUCTS insulated with an asbestos blanket or asbestos paper tape.",
+          "supports": "CPSC lists steam pipes, boilers and furnace ducts insulated with an asbestos blanket or asbestos paper tape, and says houses built between 1930 and 1950 may have asbestos as insulation. It gives no ordering of duct tape versus pipe wrap.",
+          "verified": true
         }
       ],
       "open_questions": "Start year, real end year for residential installs, and separate dates for duct wrap/tape vs pipe lagging are all unsourced. The 1975 ban wording needs to be read from the EPA page.",
@@ -580,6 +652,62 @@
           "snippet_corroborated": true,
           "tier": "secondary",
           "not_opened_reason": "Host is not on the allowed list for this pass; not opened."
+        },
+        {
+          "url": "https://www.epa.gov/asbestos/protect-your-family-asbestos-contaminated-vermiculite-insulation",
+          "publisher": "U.S. Environmental Protection Agency",
+          "tier": "primary",
+          "quote": "Vermiculite from Libby was used in the majority of vermiculite insulation in the United States and was often sold under the brand name Zonolite.",
+          "supports": "EPA: Libby vermiculite was often sold as Zonolite; assume vermiculite contains asbestos and do not disturb it.",
+          "verified": true
+        },
+        {
+          "url": "https://www.epa.gov/asbestos/protect-your-family-asbestos-contaminated-vermiculite-insulation",
+          "publisher": "U.S. Environmental Protection Agency",
+          "tier": "primary",
+          "quote": "You should assume that vermiculite insulation is from Libby and treat the material as if it contained asbestos by not disturbing it or by using a trained professional if it needs to be removed.",
+          "supports": "EPA: Libby vermiculite was often sold as Zonolite; assume vermiculite contains asbestos and do not disturb it.",
+          "verified": true
+        },
+        {
+          "url": "https://www.epa.gov/asbestos/protect-your-family-asbestos-contaminated-vermiculite-insulation",
+          "publisher": "U.S. Environmental Protection Agency",
+          "tier": "primary",
+          "quote": "Leave vermiculite insulation undisturbed in your attic or in your walls.",
+          "supports": "EPA recommends leaving it undisturbed, keeping stored items and children out of the attic, not removing it yourself, and hiring a professional asbestos contractor for renovations that would disturb it.",
+          "verified": true
+        },
+        {
+          "url": "https://www.epa.gov/asbestos/protect-your-family-asbestos-contaminated-vermiculite-insulation",
+          "publisher": "U.S. Environmental Protection Agency",
+          "tier": "primary",
+          "quote": "Do not store boxes or other items in your attic if it contains vermiculite insulation.",
+          "supports": "EPA recommends leaving it undisturbed, keeping stored items and children out of the attic, not removing it yourself, and hiring a professional asbestos contractor for renovations that would disturb it.",
+          "verified": true
+        },
+        {
+          "url": "https://www.epa.gov/asbestos/protect-your-family-asbestos-contaminated-vermiculite-insulation",
+          "publisher": "U.S. Environmental Protection Agency",
+          "tier": "primary",
+          "quote": "Hire a professional asbestos contractor if you plan to remodel or conduct renovations that would disturb the vermiculite in your attic or walls",
+          "supports": "EPA recommends leaving it undisturbed, keeping stored items and children out of the attic, not removing it yourself, and hiring a professional asbestos contractor for renovations that would disturb it.",
+          "verified": true
+        },
+        {
+          "url": "https://www.nachi.org/vermiculite.htm",
+          "publisher": "InterNACHI",
+          "tier": "trade",
+          "quote": "Inspectors should be on guard for empty bags in the attic that bear the name Zonolite",
+          "supports": "InterNACHI tells inspectors to watch for empty bags in the attic bearing the Zonolite name (trade source).",
+          "verified": true
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/USCOURTS-ded-1_11-mc-00042/pdf/USCOURTS-ded-1_11-mc-00042-1.pdf",
+          "publisher": "U.S. Bankruptcy Court, D. Del. (opinion on govinfo.gov)",
+          "tier": "primary",
+          "quote": "Even the highly contested Zonolite Attic Insulation (\"ZAI\") Claims, both in the U.S. and Canada, have settled, notwithstanding prior objections.",
+          "supports": "Court record: the Zonolite Attic Insulation property-damage claims against W.R. Grace, in the U.S. and Canada, were settled in the bankruptcy. Current reimbursement terms and deadlines were NOT found.",
+          "verified": true
         }
       ],
       "open_questions": "Which home-count estimate is right (the 35 million figure is widely repeated and widely doubted). Last year of retail sale (1984 vs 1990). Share installed in new construction vs retrofit. Current ZAI Trust cap.",
@@ -666,6 +794,30 @@
           "snippet_corroborated": true,
           "tier": "primary",
           "not_opened_reason": "Host is not on the allowed list for this pass; not opened."
+        },
+        {
+          "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Ban-On-UFFI-Lifted",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "The U. S. Consumer Product Safety Commission's ban on urea formaldehyde foam insulation (UFFI) was lifted yesterday when the Solicitor General's office decided not to appeal the Fifth Circuit Court of Appeals' ruling which had overturned the ban.",
+          "supports": "CPSC voted to ban UFFI (4-1, February 22, 1982); the Fifth Circuit vacated the ban in April 1983; the ban was lifted in August 1983 when the Solicitor General declined to appeal.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Newsroom/News-Releases/1983/Ban-On-UFFI-Lifted",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "CPSC had voted (4 - 1) on February 22, 1982, to ban UFFI",
+          "supports": "CPSC voted to ban UFFI (4-1, February 22, 1982); the Fifth Circuit vacated the ban in April 1983; the ban was lifted in August 1983 when the Solicitor General declined to appeal.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Newsroom/News-Releases/1984/CPSC-Still-Concerned-About-Formaldehyde-Health-Risks",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "still considers urea formaldehyde foam insulation (UFFI) to be a hazardous product, and that purchasers of UFFI are at risk from elevated levels of formaldehyde",
+          "supports": "CPSC said on October 21, 1983, after the court decision, that it still considered UFFI a hazardous product with purchasers at risk from elevated formaldehyde.",
+          "verified": true
         }
       ],
       "open_questions": "Number of homes insulated (the 500,000 figure needs a primary citation; the 1982 CPSC release probably contains it). First year of meaningful US use. Which states still require UFFI disclosure.",
@@ -1031,6 +1183,22 @@
           "snippet_corroborated": false,
           "tier": "primary",
           "not_opened_reason": "Host is not on the allowed list for this pass; not opened."
+        },
+        {
+          "url": "https://www.epa.gov/sites/default/files/2020-07/documents/pcb-flb-factsheet-final-july-2020.pdf",
+          "publisher": "U.S. Environmental Protection Agency",
+          "tier": "primary",
+          "quote": "Any FLBs manufactured before July 2, 1979, may contain PCBs.",
+          "supports": "EPA: ballasts made before July 2, 1979 may contain PCBs; ballasts without PCBs made between July 1, 1978 and July 1, 1998 had to be marked \"No PCBs\".",
+          "verified": true
+        },
+        {
+          "url": "https://www.epa.gov/sites/default/files/2020-07/documents/pcb-flb-factsheet-final-july-2020.pdf",
+          "publisher": "U.S. Environmental Protection Agency",
+          "tier": "primary",
+          "quote": "between July 1, 1978 and July 1, 1998, to mark the ballasts that do not contain PCBs with the statement \"No PCBs\".",
+          "supports": "EPA: ballasts made before July 2, 1979 may contain PCBs; ballasts without PCBs made between July 1, 1978 and July 1, 1998 had to be marked \"No PCBs\".",
+          "verified": true
         }
       ],
       "open_questions": "Whether this belongs on a single-family report at all; I would show only the ballast item, and the caulk item only for multi-family buildings. No residential prevalence data exists that I could find.",
@@ -1119,6 +1287,46 @@
           "snippet_corroborated": true,
           "tier": "primary",
           "not_opened_reason": "Host is not on the allowed list for this pass; not opened."
+        },
+        {
+          "url": "https://www.atsdr.cdc.gov/ToxProfiles/tp31-c1-b.pdf",
+          "publisher": "ATSDR (CDC)",
+          "tier": "primary",
+          "quote": "Over 50 million persons have lived in chlordanetreated homes.",
+          "supports": "ATSDR: chlordane used as a pesticide 1948 to 1988; over 50 million people have lived in chlordane-treated homes.",
+          "verified": true
+        },
+        {
+          "url": "https://www.atsdr.cdc.gov/ToxProfiles/tp31-c1-b.pdf",
+          "publisher": "ATSDR (CDC)",
+          "tier": "primary",
+          "quote": "Chlordane is a man-made chemical that was used as a pesticide in the United States from 1948 to 1988.",
+          "supports": "ATSDR: chlordane used as a pesticide 1948 to 1988; over 50 million people have lived in chlordane-treated homes.",
+          "verified": true
+        },
+        {
+          "url": "https://www.atsdr.cdc.gov/ToxProfiles/tp31-c1-b.pdf",
+          "publisher": "ATSDR (CDC)",
+          "tier": "primary",
+          "quote": "From 1983 until 1988, chlordane's only approved use was to control termites in homes.",
+          "supports": "ATSDR: from 1983 until 1988 chlordane's only approved use was termite control in homes, applied underground around the foundation; even higher indoor levels are found in basements and crawl spaces; houses built since 1988 were not treated.",
+          "verified": true
+        },
+        {
+          "url": "https://www.atsdr.cdc.gov/ToxProfiles/tp31-c1-b.pdf",
+          "publisher": "ATSDR (CDC)",
+          "tier": "primary",
+          "quote": "Even higher levels are found in basements and crawl spaces.",
+          "supports": "ATSDR: from 1983 until 1988 chlordane's only approved use was termite control in homes, applied underground around the foundation; even higher indoor levels are found in basements and crawl spaces; houses built since 1988 were not treated.",
+          "verified": true
+        },
+        {
+          "url": "https://www.atsdr.cdc.gov/ToxProfiles/tp31-c1-b.pdf",
+          "publisher": "ATSDR (CDC)",
+          "tier": "primary",
+          "quote": "Houses built since 1988 have not been treated with chlordane for termite control.",
+          "supports": "ATSDR: from 1983 until 1988 chlordane's only approved use was termite control in homes, applied underground around the foundation; even higher indoor levels are found in basements and crawl spaces; houses built since 1988 were not treated.",
+          "verified": true
         }
       ],
       "open_questions": "Primary EPA citation for the 30 million figure. Exact cancellation date and how long existing stocks were applied. Regional prevalence. Dates for heptachlor, aldrin and dieldrin termiticides.",
@@ -1207,6 +1415,46 @@
           "snippet_corroborated": true,
           "tier": "secondary",
           "not_opened_reason": "Host is not on the allowed list for this pass; not opened."
+        },
+        {
+          "url": "https://www.epa.gov/ingredients-used-pesticide-products/chromated-arsenicals",
+          "publisher": "U.S. Environmental Protection Agency",
+          "tier": "primary",
+          "quote": "In December 2003, chromated arsenicals manufacturers voluntarily discontinued manufacturing chromated arsenicals-treated wood products for homeowner uses.",
+          "supports": "EPA: manufacturers voluntarily stopped making CCA wood for homeowner uses in December 2003; EPA does not require removing existing structures; a penetrating coating applied regularly may reduce leaching.",
+          "verified": true
+        },
+        {
+          "url": "https://www.epa.gov/ingredients-used-pesticide-products/chromated-arsenicals",
+          "publisher": "U.S. Environmental Protection Agency",
+          "tier": "primary",
+          "quote": "However, EPA does not require the removal of existing structures made with wood treated with chromated arsenicals or the surrounding soil.",
+          "supports": "EPA: manufacturers voluntarily stopped making CCA wood for homeowner uses in December 2003; EPA does not require removing existing structures; a penetrating coating applied regularly may reduce leaching.",
+          "verified": true
+        },
+        {
+          "url": "https://www.epa.gov/ingredients-used-pesticide-products/chromated-arsenicals",
+          "publisher": "U.S. Environmental Protection Agency",
+          "tier": "primary",
+          "quote": "applying a penetrating protective coating (such as oil- or water-based stains) on a regular basis may reduce the leaching of chemicals",
+          "supports": "EPA: manufacturers voluntarily stopped making CCA wood for homeowner uses in December 2003; EPA does not require removing existing structures; a penetrating coating applied regularly may reduce leaching.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/s3fs-public/pdfs/blk_pdf_cca.pdf",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "To address the potential exposure to chemical residues (e.g., arsenic) from existing CCA-treated wood structures",
+          "supports": "EPA: manufacturers voluntarily stopped making CCA wood for homeowner uses in December 2003; EPA does not require removing existing structures; a penetrating coating applied regularly may reduce leaching.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/s3fs-public/pdfs/blk_pdf_cca.pdf",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "granted a request by manufacturers to cancel the registration of CCA for use in wood for most residential structures (e.g., playgrounds, decks, picnic tables, etc.) after December 30, 2003",
+          "supports": "CPSC (citing EPA): registration for CCA in wood for most residential structures such as decks was cancelled after December 30, 2003. Old stock sales after that date are not addressed.",
+          "verified": true
         }
       ],
       "open_questions": "Market share figure. How long pre-2004 stock was sold. Exact sealant recommendation wording. Note the early ACQ replacements (2004 onward) were more corrosive to fasteners, a separate deck-safety issue for the structure domain.",

@@ -548,6 +548,14 @@
           "publisher": "ClaimDepot (settlement aggregator, weak)",
           "supports": "Lists a 2 March 2030 final claim date tied to warranty period. Search-result summary only; not confirmed against the administrator.",
           "verified": false
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/CertainTeed",
+          "publisher": "Wikipedia (CertainTeed)",
+          "tier": "reference",
+          "quote": "A class action suit brought by representatives of the end users against CertainTeed Organic Shingles was approved on September 1, 2010.",
+          "supports": "Wikipedia: a class action by end users over CertainTeed Organic Shingles was approved September 1, 2010.",
+          "verified": true
         }
       ],
       "verification": {
@@ -727,6 +735,14 @@
           "publisher": "Mealey's / LexisNexis Legal News",
           "supports": "June 2017 refusal to certify a class. Search-result summary only.",
           "verified": false
+        },
+        {
+          "url": "https://www.govinfo.gov/content/pkg/USCOURTS-gand-1_13-md-02495/pdf/USCOURTS-gand-1_13-md-02495-18.pdf",
+          "publisher": "U.S. District Court, N.D. Georgia (opinion on govinfo.gov)",
+          "tier": "primary",
+          "quote": "For the reasons set forth below, the Plaintiff's Motion for Class Certification [Doc. 37] is DENIED.",
+          "supports": "Federal court (N.D. Ga., June 9, 2017) denied class certification in the Chalet shingle MDL (Makowski). The opinion does not itself say there is no settlement.",
+          "verified": true
         }
       ],
       "verification": {
@@ -1111,6 +1127,14 @@
           "publisher": "ACEEE Summer Study 1992",
           "supports": "MEC lineage and DOE role. Search-result summary only.",
           "verified": false
+        },
+        {
+          "url": "https://www.energy.gov/sites/prod/files/2015/07/f24/Codes%20Fact%20Sheet%207-10-15.pdf",
+          "publisher": "U.S. Department of Energy",
+          "tier": "primary",
+          "quote": "States and localities are responsible for building energy code adoption and implementation.",
+          "supports": "DOE: states and localities are responsible for building energy code adoption and implementation (so adoption dates differ by state).",
+          "verified": true
         }
       ],
       "verification": {

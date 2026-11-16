@@ -45,6 +45,22 @@
           "verified": true,
           "tier": "primary",
           "quote": "About 37.8 million (in addition, 2.7 million in Canada and 6,730 in Mexico)"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2018/Kidde-Recalls-Fire-Extinguishers-with-Plastic-Handles-Due-to-Failure-to-Discharge-and-Nozzle-Detachment-One-Death-Reported",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "There have been approximately 391 reports of failed or limited activation or nozzle detachment, including the fatality, approximately 16 injuries, including smoke inhalation and minor burns, and approximately 91 reports of property damage.",
+          "supports": "CPSC counts for the Kidde plastic-handle extinguisher recall: one death (a 2014 car fire after a crash), about 16 injuries, about 391 failure reports, about 37.8 million US units, remedy replace.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2018/Kidde-Recalls-Fire-Extinguishers-with-Plastic-Handles-Due-to-Failure-to-Discharge-and-Nozzle-Detachment-One-Death-Reported",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "The firm is aware of a 2014 death involving a car fire following a crash.",
+          "supports": "CPSC counts for the Kidde plastic-handle extinguisher recall: one death (a 2014 car fire after a crash), about 16 injuries, about 391 failure reports, about 37.8 million US units, remedy replace.",
+          "verified": true
         }
       ],
       "open_questions": "Share of homes holding one; whether the Kidde replacement offer is still open; brand-name private-label units (Sears, Home, ADT etc.) are in the model list but I did not check that every one is sold in homes.",
@@ -114,6 +130,46 @@
           "verified": true,
           "tier": "primary",
           "quote": "The model number and date code are printed on a sticker on the back, front or side of the unit."
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2013/gree-recalls-12-brands-of-dehumidifiers",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Gree Recalls 12 Brands of Dehumidifiers Due to Serious Fire and Burn Hazards",
+          "supports": "The 2013 recall named 12 brands; the 2016 reannouncement lists 13 brand names including GE.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2017/Gree-Reannounces-Dehumidifier-Recall-Following-450-Fires-and-19-Million-in-Property-Damage-0",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "brand names Danby, De’Longhi, Fedders, Fellini, Frigidaire, GE, Gree, Kenmore, Norpole, Premiere, Seabreeze, SoleusAir and SuperClima",
+          "supports": "The 2013 recall named 12 brands; the 2016 reannouncement lists 13 brand names including GE.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2017/Gree-Reannounces-Dehumidifier-Recall-Following-450-Fires-and-19-Million-in-Property-Damage-0",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "There have been more than 2,000 reported incidents of dehumidifiers overheating. About 450 fires have been reported, resulting in more than $19 million in property damage.",
+          "supports": "The 2016 reannouncement cited more than 2,000 overheating reports, about 450 fires and over $19 million in property damage; about 2.5 million units; sold January 2005 to August 2013; remedy refund.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2017/Gree-Reannounces-Dehumidifier-Recall-Following-450-Fires-and-19-Million-in-Property-Damage-0",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "About 2.5 million (in addition, 55,000 were sold in Canada)",
+          "supports": "The 2016 reannouncement cited more than 2,000 overheating reports, about 450 fires and over $19 million in property damage; about 2.5 million units; sold January 2005 to August 2013; remedy refund.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2017/Gree-Reannounces-Dehumidifier-Recall-Following-450-Fires-and-19-Million-in-Property-Damage-0",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "from January 2005 through August 2013 for between $110 and $400",
+          "supports": "The 2016 reannouncement cited more than 2,000 overheating reports, about 450 fires and over $19 million in property damage; about 2.5 million units; sold January 2005 to August 2013; remedy refund.",
+          "verified": true
         }
       ],
       "open_questions": "Remaining stock in use; whether refunds are still honoured; the Gree 2023 recall is a separate entry.",
@@ -167,6 +223,30 @@
           "verified": true,
           "tier": "primary",
           "quote": "starting in 2011 through 2014 for between $110 and $400."
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2023/Gree-Recalls-1-56-Million-Dehumidifiers-Due-to-Fire-and-Burn-Hazards-Reports-of-At-Least-23-Fires",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Kenmore Model number Capacity 407.53530310 30-pint",
+          "supports": "The notice lists Kenmore 407.53530310 and GE ADEH50LPQ1 among the 42 recalled models.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2023/Gree-Recalls-1-56-Million-Dehumidifiers-Due-to-Fire-and-Burn-Hazards-Reports-of-At-Least-23-Fires",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "GE Model number Capacity ADEH50LPQ1 50-pint",
+          "supports": "The notice lists Kenmore 407.53530310 and GE ADEH50LPQ1 among the 42 recalled models.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2023/Gree-Recalls-1-56-Million-Dehumidifiers-Due-to-Fire-and-Burn-Hazards-Reports-of-At-Least-23-Fires",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Gree has received reports of at least 23 fires, 688 incidents of overheating, and $168,000 in property damage",
+          "supports": "The notice lists Kenmore 407.53530310 and GE ADEH50LPQ1 among the 42 recalled models.",
+          "verified": true
         }
       ],
       "open_questions": "Current remedy status; overlap with the 2013 recall's model lists.",
@@ -220,6 +300,38 @@
           "verified": true,
           "tier": "primary",
           "quote": "from June 2004 through December 2010 for between $40 and $65"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2017/Kidde-Recalls-Combination-Smoke-CO-Alarms",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "The combination smoke/carbon monoxide (CO) alarm can fail to continue to chirp when it reaches its 7-year end of life if the batteries are replaced, leading consumers to believe it is still working.",
+          "supports": "About 3.6 million NightHawk KN-COSM-IB alarms; sold through electrical distributors and home centers June 2004 to December 2010; chirp can stop at 7-year end of life if batteries are replaced; 8 incident reports, no injuries.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2017/Kidde-Recalls-Combination-Smoke-CO-Alarms",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Electrical distributors and home centers nationwide and online at Amazon.com from June 2004 through December 2010",
+          "supports": "About 3.6 million NightHawk KN-COSM-IB alarms; sold through electrical distributors and home centers June 2004 to December 2010; chirp can stop at 7-year end of life if batteries are replaced; 8 incident reports, no injuries.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2017/Kidde-Recalls-Combination-Smoke-CO-Alarms",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "About 3.6 million (in addition 1.5 million were sold in Canada)",
+          "supports": "About 3.6 million NightHawk KN-COSM-IB alarms; sold through electrical distributors and home centers June 2004 to December 2010; chirp can stop at 7-year end of life if batteries are replaced; 8 incident reports, no injuries.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2017/Kidde-Recalls-Combination-Smoke-CO-Alarms",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Kidde has received eight reports of incidents with the recalled alarms. No injuries have been reported.",
+          "supports": "About 3.6 million NightHawk KN-COSM-IB alarms; sold through electrical distributors and home centers June 2004 to December 2010; chirp can stop at 7-year end of life if batteries are replaced; 8 incident reports, no injuries.",
+          "verified": true
         }
       ],
       "open_questions": "Share in new construction; whether the replacement offer is still open.",
@@ -456,6 +568,30 @@
           "verified": true,
           "tier": "primary",
           "quote": "from June 2010 through August 2010 for between $2.50 to $235"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2010/siemens-recalls-circuit-breakers-due-to-fire-hazard",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Siemens has received one report of a circuit breaker spring clip that broke during installation. No injuries have been reported.",
+          "supports": "Recall facts: about 2.2 million Siemens and Murray breakers, load centers and meter combos; one report of a clip breaking during installation, no injuries; sold June to August 2010; remedy inspect and replace.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2010/siemens-recalls-circuit-breakers-due-to-fire-hazard",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Units: About 2.2 million",
+          "supports": "Recall facts: about 2.2 million Siemens and Murray breakers, load centers and meter combos; one report of a clip breaking during installation, no injuries; sold June to August 2010; remedy inspect and replace.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2010/siemens-recalls-circuit-breakers-due-to-fire-hazard",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Remedy: Inspect Replace",
+          "supports": "Recall facts: about 2.2 million Siemens and Murray breakers, load centers and meter combos; one report of a clip breaking during installation, no injuries; sold June to August 2010; remedy inspect and replace.",
+          "verified": true
         }
       ],
       "open_questions": "Whether the free inspection program remains open; the date-code format was taken from a search summary and should be checked against the notice list.",
@@ -517,6 +653,22 @@
           "verified": true,
           "tier": "primary",
           "quote": "They are required to be installed in bedroom circuits in accordance with the 2002 National Electrical Code."
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2005/cpsc-schneider-electric-north-american-division-announce-recall-of-afcis",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Although the AFCIs will function as regular circuit breakers, they may not detect an arc fault, posing a safety risk to consumers.",
+          "supports": "CPSC says the recalled AFCIs still work as ordinary breakers but may not detect an arc fault; about 700,000 units sold March to September 2004; refund or replacement.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2005/cpsc-schneider-electric-north-american-division-announce-recall-of-afcis",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Electrical distributors and retailers sold the AFCIs between March 2004 and September 2004",
+          "supports": "CPSC says the recalled AFCIs still work as ordinary breakers but may not detect an arc fault; about 700,000 units sold March to September 2004; refund or replacement.",
+          "verified": true
         }
       ],
       "open_questions": "Clarifying statement not opened; current remedy status.",
@@ -570,6 +722,62 @@
           "verified": true,
           "tier": "primary",
           "quote": "May 2005 through June 2006 for between $3 and $23"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2008/counterfeit-circuit-breakers-recalled-by-specialty-lamp-international-due-to-fire",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Counterfeit Circuit Breakers labeled as \"Square D\" Units: About 371,000",
+          "supports": "Other distributors did recall counterfeit Square D breakers sold in the same period (five CPSC notices, 2006 to 2010).",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2008/counterfeit-circuit-breakers-recalled-by-specialty-lamp-international-due-to-fire",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Electrical product distributors nationwide from May 2005 through June 2006",
+          "supports": "Other distributors did recall counterfeit Square D breakers sold in the same period (five CPSC notices, 2006 to 2010).",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2007/north-american-breaker-co-recalls-counterfeit-circuit-breakers-due-to-fire-hazard",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "NABCO, electrical distributors, and retailers nationwide from March 2003 through April 2006",
+          "supports": "Other distributors did recall counterfeit Square D breakers sold in the same period (five CPSC notices, 2006 to 2010).",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2007/north-american-breaker-co-recalls-counterfeit-circuit-breakers-due-to-fire-hazard",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Units: About 50,000",
+          "supports": "Other distributors did recall counterfeit Square D breakers sold in the same period (five CPSC notices, 2006 to 2010).",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2007/connecticut-electric-recalls-counterfeit-square-d-circuit-breakers-due-to-fire-hazard",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Units: About 64,000",
+          "supports": "Other distributors did recall counterfeit Square D breakers sold in the same period (five CPSC notices, 2006 to 2010).",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2007/Scott-Electric-Co-Inc-Recalls-Counterfeit-Circuit-Breakers-Due-To-Fire-Hazard",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Units: About 30,000",
+          "supports": "Other distributors did recall counterfeit Square D breakers sold in the same period (five CPSC notices, 2006 to 2010).",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2010/Miami-Breaker-Recalls-Counterfeit-Square-D-Circuit-Breakers-Due-to-Fire-Hazard",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Units: About 43,600",
+          "supports": "Other distributors did recall counterfeit Square D breakers sold in the same period (five CPSC notices, 2006 to 2010).",
+          "verified": true
         }
       ],
       "open_questions": "Other counterfeit-breaker recalls not opened; total counterfeit population unknown.",
@@ -631,6 +839,38 @@
           "verified": true,
           "tier": "primary",
           "quote": "postmarked by August 31, 2007"
+        },
+        {
+          "url": "https://www.nist.gov/news-events/news/2011/04/free-online-tool-aids-decisions-fire-sprinkler-systems-homes",
+          "publisher": "National Institute of Standards and Technology",
+          "tier": "primary",
+          "quote": "Fewer than 5 percent of U.S. homes are equipped with fire suppression sprinklers",
+          "supports": "NIST (2011): fewer than 5 percent of US homes had fire sprinklers.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2001/cpsc-central-sprinkler-company-announce-voluntary-recall-to-replace-o-ring-fire",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Central has received 4 reports of \"wet\" sprinklers failing to activate during a fire and 9 similar reports on \"dry\" sprinklers.",
+          "supports": "Recall facts: about 35 million heads, 13 reports of failure to activate, free replacement program whose claim deadline was August 31, 2007 (closed).",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2001/cpsc-central-sprinkler-company-announce-voluntary-recall-to-replace-o-ring-fire",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "The company will provide free parts and labor to replace 35 million Central fire",
+          "supports": "Recall facts: about 35 million heads, 13 reports of failure to activate, free replacement program whose claim deadline was August 31, 2007 (closed).",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Newsroom/News-Releases/2007/August-Deadline-Set-for-End-to-Central-Sprinkler-O-Ring-Sprinkler-RecallProperty-Owners-Should-Act-Now-To-Request-Replacement-of-Sprinkler-Heads",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "property owners must submit \"Proof of Claim\" and \"Waiver and Release of Claims\" forms to Central Sprinkler Company postmarked by August 31, 2007.",
+          "supports": "Recall facts: about 35 million heads, 13 reports of failure to activate, free replacement program whose claim deadline was August 31, 2007 (closed).",
+          "verified": true
         }
       ],
       "open_questions": "Share installed in single-family homes.",
@@ -692,6 +932,22 @@
           "verified": true,
           "tier": "primary",
           "quote": "from May 1999 through December 2006 for between $550 and $1,100"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2009/bosch-and-siemens-model-dishwashers-recalled-by-bsh-home-appliances-corporation-due-to",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "BSH Home Appliances has received 51 reports of incidents, including 30 reports of fires resulting in property damage. No injuries have been reported.",
+          "supports": "CPSC counts: 51 incident reports including 30 fires with property damage, no injuries; about 476,500 units; made May 1999 to July 2005; free repair.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2009/bosch-and-siemens-model-dishwashers-recalled-by-bsh-home-appliances-corporation-due-to",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Consumers should immediately stop using the listed model dishwashers and contact the repair hotline for a free repair.",
+          "supports": "CPSC counts: 51 incident reports including 30 fires with property damage, no injuries; about 476,500 units; made May 1999 to July 2005; free repair.",
+          "verified": true
         }
       ],
       "open_questions": "Whether a 20-year-old unit is still in service; remedy status.",
@@ -745,6 +1001,30 @@
           "verified": true,
           "tier": "primary",
           "quote": "About 52,000"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2008/rinnai-recalls-wall-furnaces-due-to-carbon-monoxide-hazard",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Rinnai has received 11 reports of carbon monoxide leaking from the furnace. No injuries have been reported.",
+          "supports": "Recall facts: about 52,000 RHFE 431 and RHFE 556 wall furnaces; 11 reports of CO leaking, no injuries; sold Feb 2000 to Dec 2007; free repair kit.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2008/rinnai-recalls-wall-furnaces-due-to-carbon-monoxide-hazard",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Consumers should stop using the furnace immediately and contact the firm to arrange for the installation of a free repair kit.",
+          "supports": "Recall facts: about 52,000 RHFE 431 and RHFE 556 wall furnaces; 11 reports of CO leaking, no injuries; sold Feb 2000 to Dec 2007; free repair kit.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2008/rinnai-recalls-wall-furnaces-due-to-carbon-monoxide-hazard",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Units: About 52,000",
+          "supports": "Recall facts: about 52,000 RHFE 431 and RHFE 556 wall furnaces; 11 reports of CO leaking, no injuries; sold Feb 2000 to Dec 2007; free repair kit.",
+          "verified": true
         }
       ],
       "open_questions": "Remedy status.",
@@ -798,6 +1078,46 @@
           "verified": true,
           "tier": "primary",
           "quote": "May 2004 through December 2006 for between $800 and $1,300"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2007/tankless-water-heaters-recalled-for-repair-due-to-carbon-monoxide-poisoning-hazard",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Incidents/Injuries: None reported.",
+          "supports": "Recall facts: about 42,200 indoor Power Vent 199,900 BTUH tankless heaters sold May 2004 to December 2006; no incidents reported; free on-site repair.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2007/tankless-water-heaters-recalled-for-repair-due-to-carbon-monoxide-poisoning-hazard",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "from May 2004 through December 2006 for between $800 and $1,300",
+          "supports": "Recall facts: about 42,200 indoor Power Vent 199,900 BTUH tankless heaters sold May 2004 to December 2006; no incidents reported; free on-site repair.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2007/tankless-water-heaters-recalled-for-repair-due-to-carbon-monoxide-poisoning-hazard",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "to arrange for a free, on-site repair",
+          "supports": "Recall facts: about 42,200 indoor Power Vent 199,900 BTUH tankless heaters sold May 2004 to December 2006; no incidents reported; free on-site repair.",
+          "verified": true
+        },
+        {
+          "url": "https://www.eia.gov/consumption/residential/data/2020/hc/pdf/HC%208.1.pdf",
+          "publisher": "U.S. Energy Information Administration",
+          "tier": "primary",
+          "quote": "All homes 123.53 77.07 7.45 9.34 22.84 6.83",
+          "supports": "EIA 2020 RECS: tankless main water heaters were in 8.03 million of 123.53 million US homes in 2020 (about 6.5 percent). This supports \"a minority\" but is a 2020 figure, not a 2004-2006 one.",
+          "verified": true
+        },
+        {
+          "url": "https://www.eia.gov/consumption/residential/data/2020/hc/pdf/HC%208.1.pdf",
+          "publisher": "U.S. Energy Information Administration",
+          "tier": "primary",
+          "quote": "Tankless 8.03 5.84 0.39 0.25 1.37 0.18",
+          "supports": "EIA 2020 RECS: tankless main water heaters were in 8.03 million of 123.53 million US homes in 2020 (about 6.5 percent). This supports \"a minority\" but is a 2020 figure, not a 2004-2006 one.",
+          "verified": true
         }
       ],
       "open_questions": "Remedy status.",
@@ -859,6 +1179,22 @@
           "verified": true,
           "tier": "primary",
           "quote": "The firm is no longer in business. A remedy is no longer available."
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2015/Tankless-Water-Heaters-Recalled",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Daesung has received 40 reports of the units overheating, including four involving burns on the wall where the heater was mounted and two involving fires and property damage.",
+          "supports": "Daesung received 40 overheating reports (4 with wall burns, 2 fires with property damage), no injuries; about 29,000 US units sold July 2008 to August 2014; no remedy available, dispose.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2015/Tankless-Water-Heaters-Recalled",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "The firm is no longer in business. A remedy is no longer available. Dispose of this recalled product.",
+          "supports": "Daesung received 40 overheating reports (4 with wall burns, 2 fires with property damage), no injuries; about 29,000 US units sold July 2008 to August 2014; no remedy available, dispose.",
+          "verified": true
         }
       ],
       "open_questions": "Replacement cost.",
@@ -912,6 +1248,30 @@
           "verified": true,
           "tier": "primary",
           "quote": "from August 2016 through June 2020, for between $8,000 and $25,000, including installation"
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2020/Lochinvar-Recalls-Condensing-Residential-Boilers-Due-to-Risk-of-Carbon-Monoxide-Poisoning",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "The firm has received 7 reports of boiler’s flue grommets deteriorating, including one report of two nonfatal injuries involving carbon monoxide poisoning, and two reports of carbon monoxide emission not involving an injury.",
+          "supports": "CPSC counts: 7 reports of deteriorating flue grommets, including one report of two nonfatal CO injuries and two reports of CO emission with no injury; about 34,300 units; remedy listed as Repair.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2020/Lochinvar-Recalls-Condensing-Residential-Boilers-Due-to-Risk-of-Carbon-Monoxide-Poisoning",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Remedy: Repair",
+          "supports": "CPSC counts: 7 reports of deteriorating flue grommets, including one report of two nonfatal CO injuries and two reports of CO emission with no injury; about 34,300 units; remedy listed as Repair.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2020/Lochinvar-Recalls-Condensing-Residential-Boilers-Due-to-Risk-of-Carbon-Monoxide-Poisoning",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Check for the recalled boilers’ serial number at: www.waterheaterrecall.com",
+          "supports": "The notice lists the remedy as Repair and gives a Lochinvar hotline and a serial-number look-up.",
+          "verified": true
         }
       ],
       "open_questions": "Other 2020s boiler recalls not opened.",
@@ -973,6 +1333,14 @@
           "verified": true,
           "tier": "reference",
           "quote": "Residential combustion water heaters manufactured since 2003 in the United States have been redesigned to resist ignition of flammable vapors"
+        },
+        {
+          "url": "https://www.cpsc.gov/Newsroom/News-Releases/2003/New-Technology-In-Gas-Water-Heaters-Can-Save-LivesCPSC-GAMA-Say-New-Heaters-Will-Prevent-Fires-from-Flammable-Vapors",
+          "publisher": "CPSC",
+          "tier": "primary",
+          "quote": "This technology, often referred to as a flame arrestor, prevents flashback fires by trapping and burning dangerous gas vapors inside of the heater, while preventing ignition of the vapors in the room.",
+          "supports": "CPSC/GAMA: the technology is often called a flame arrestor; it prevents flashback fires by trapping and burning gas vapors inside the heater. Applies to tank-type gas water heaters made after July 1, 2003.",
+          "verified": true
         }
       ],
       "open_questions": "Compliance rate; whether electric ignition or tankless products are covered; installation heights in garages.",
@@ -1148,6 +1516,14 @@
           "verified": true,
           "tier": "primary",
           "quote": "R-410A 2,090 No"
+        },
+        {
+          "url": "https://www.epa.gov/ods-phaseout/equipment-manufacturers-importers-and-exporters-frequent-questions",
+          "publisher": "EPA",
+          "tier": "primary",
+          "quote": "neither appliances nor components pre-charged with HCFC-22 (also called R-22) or HCFC-142b may be manufactured as of January 1, 2010.",
+          "supports": "Same EPA FAQ supports the 2010 R-22 manufacturing cutoff.",
+          "verified": true
         }
       ],
       "open_questions": "When R-410A became the default in new homes; current EPA installation cutoff after the 2025 reconsideration.",

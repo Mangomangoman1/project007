@@ -476,6 +476,14 @@
           "supports": "Retrofit provisions aimed at homes built before the 2002 code changes",
           "verified": false,
           "search_confirmed": true
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Florida_Building_Code",
+          "publisher": "Wikipedia (Florida Building Code)",
+          "tier": "reference",
+          "quote": "Approximately 4.7 million homes in Florida predate the modern FBC.",
+          "supports": "Wikipedia: about 4.7 million Florida homes predate the modern Florida Building Code, which was adopted March 1, 2002.",
+          "verified": true
         }
       ],
       "verification": {
@@ -1252,6 +1260,22 @@
           "supports": "Background on the HUD Code and manufactured housing stock",
           "verified": false,
           "search_confirmed": true
+        },
+        {
+          "url": "https://www.hud.gov/sites/documents/41502c8hsgh.pdf",
+          "publisher": "HUD (Handbook 4150.2 ch. 8)",
+          "tier": "primary",
+          "quote": "The manufactured home must not have been constructed before June 15, 1976.",
+          "supports": "HUD FHA handbook: a manufactured home must not have been constructed before June 15, 1976 and must carry the red metallic label; a removed label cannot be reattached to make it acceptable. (FHA rule only, not a general statement that certification is impossible.)",
+          "verified": true
+        },
+        {
+          "url": "https://www.hud.gov/sites/documents/41502c8hsgh.pdf",
+          "publisher": "HUD (Handbook 4150.2 ch. 8)",
+          "tier": "primary",
+          "quote": "If it has been removed, it cannot be reattached to make it acceptable for FHA insurance.",
+          "supports": "HUD FHA handbook: a manufactured home must not have been constructed before June 15, 1976 and must carry the red metallic label; a removed label cannot be reattached to make it acceptable. (FHA rule only, not a general statement that certification is impossible.)",
+          "verified": true
         }
       ],
       "verification": {

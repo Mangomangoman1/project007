@@ -52,6 +52,38 @@
           "publisher": "CPSC via UNT web archive",
           "supports": "1983-1994 manufacture range; private-litigation remedy expired [seen only as a search-engine extract this session; page could not be opened]",
           "verified": false
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2000/cpsc-warns-about-defective-furnaces-in-california",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Install an ionization-type smoke detector inside the attic to provide an early warning of smoke or fire.",
+          "supports": "CPSC advised installing an ionization-type smoke detector in the attic for early warning; also annual service. 2001 notice: 50 fire reports on 140,000 furnaces, no injuries, sold in California January 1983 to December 1992.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2000/cpsc-warns-about-defective-furnaces-in-california",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Make sure the furnace is installed correctly and serviced at least annually.",
+          "supports": "CPSC advised installing an ionization-type smoke detector in the attic for early warning; also annual service. 2001 notice: 50 fire reports on 140,000 furnaces, no injuries, sold in California January 1983 to December 1992.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2001/CPSC-Announces-Recall-of-Furnaces-in-California",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "CPSC has received 50 reports of fires associated with the 140,000 horizontal furnaces manufactured by Consolidated Industries Inc. No injuries have been reported.",
+          "supports": "CPSC advised installing an ionization-type smoke detector in the attic for early warning; also annual service. 2001 notice: 50 fire reports on 140,000 furnaces, no injuries, sold in California January 1983 to December 1992.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2001/CPSC-Announces-Recall-of-Furnaces-in-California",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "sold these furnaces in California from January 1983 through December 1992",
+          "supports": "CPSC advised installing an ionization-type smoke detector in the attic for early warning; also annual service. 2001 notice: 50 fire reports on 140,000 furnaces, no injuries, sold in California January 1983 to December 1992.",
+          "verified": true
         }
       ],
       "open_questions": "Why CPSC's count fell from 190,000 to 140,000 between the two notices; surviving population.",
@@ -119,6 +151,38 @@
           "publisher": "InspectAPedia (secondary)",
           "supports": "per-series manufacture dates FW 1978-1989, FX/LX 1984-1995 [seen only as a search-engine extract this session; page could not be opened]",
           "verified": false
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/1997/cpsc-cadet-manufacturing-announce-recall-of-in-wall-heaters",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Cadet Manufacturing has received 44 reports of fires involving these heaters.",
+          "supports": "1997 recall: about 190,000 heaters, 44 fire reports, installed 1985 to 1992 in six western states; 2000 recall: more than 1.9 million heaters, more than 320 reports and three deaths alleged, no remedy available.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2000/CPSC-Cadet-Recall-In-Wall-Heaters-Settle-Lawsuit",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "CPSC is aware of more than 320 reports of heaters that smoked, sparked, caught fire, emitted flames, or ejected burning particles or molten materials.",
+          "supports": "1997 recall: about 190,000 heaters, 44 fire reports, installed 1985 to 1992 in six western states; 2000 recall: more than 1.9 million heaters, more than 320 reports and three deaths alleged, no remedy available.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2000/CPSC-Cadet-Recall-In-Wall-Heaters-Settle-Lawsuit",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "These incidents have allegedly resulted in three deaths, two serious burn injuries and property damage claims exceeding $1.2 million",
+          "supports": "1997 recall: about 190,000 heaters, 44 fire reports, installed 1985 to 1992 in six western states; 2000 recall: more than 1.9 million heaters, more than 320 reports and three deaths alleged, no remedy available.",
+          "verified": true
+        },
+        {
+          "url": "https://www.cpsc.gov/Recalls/2000/CPSC-Cadet-Recall-In-Wall-Heaters-Settle-Lawsuit",
+          "publisher": "U.S. Consumer Product Safety Commission",
+          "tier": "primary",
+          "quote": "Units: More than 1.9 million",
+          "supports": "1997 recall: about 190,000 heaters, 44 fire reports, installed 1985 to 1992 in six western states; 2000 recall: more than 1.9 million heaters, more than 320 reports and three deaths alleged, no remedy available.",
+          "verified": true
         }
       ],
       "open_questions": "Authoritative per-model date table; whether any replacement programme still exists via the current brand owner (Glen Dimplex).",
@@ -407,6 +471,14 @@
           "verified": true,
           "quote": "You can no longer purchase a central AC unit that uses HCFC-22.",
           "tier": "primary"
+        },
+        {
+          "url": "https://www.epa.gov/ods-phaseout/equipment-manufacturers-importers-and-exporters-frequent-questions",
+          "publisher": "EPA",
+          "tier": "primary",
+          "quote": "neither appliances nor components pre-charged with HCFC-22 (also called R-22) or HCFC-142b may be manufactured as of January 1, 2010.",
+          "supports": "EPA: neither appliances nor pre-charged components may be manufactured with R-22 as of January 1, 2010. EPA also says existing R-22 equipment may keep running (not verified on a fetched page; see notFound).",
+          "verified": true
         }
       ],
       "open_questions": "Year the dry-charge loophole closed; current recharge cost; share of pre-2010 units still in service.",

@@ -128,6 +128,22 @@
           "verified": true,
           "quote": "Lead has not been used for water service piping since around 1950; lead contaminates potability.",
           "tier": "trade"
+        },
+        {
+          "url": "https://www.epa.gov/ground-water-and-drinking-water/lead-service-line-replacement",
+          "publisher": "U.S. Environmental Protection Agency",
+          "tier": "primary",
+          "quote": "An estimated 4 million lead service lines (LSLs) serve water to properties in communities across the United States.",
+          "supports": "EPA states an estimated 4 million lead service lines (the 9.2 million 2023 figure is not on this page).",
+          "verified": true
+        },
+        {
+          "url": "https://www.epa.gov/ground-water-and-drinking-water/lead-service-line-replacement",
+          "publisher": "U.S. Environmental Protection Agency",
+          "tier": "primary",
+          "quote": "The most common sources of lead in drinking water are lead pipes (service lines), and brass or bronze faucets and fixtures.",
+          "supports": "EPA states an estimated 4 million lead service lines (the 9.2 million 2023 figure is not on this page).",
+          "verified": true
         }
       ],
       "open_questions": "No national distribution of lead service lines by year of construction. The 9.2M vs 4M discrepancy is unresolved and politically contested. Whether a per-state or per-utility inventory dataset could be joined to the site by ZIP/utility (EPA published one in 2025) should be investigated; that would be far better than a year-based guess. Pre-1950 installation history needs a primary historical source.",
@@ -401,6 +417,30 @@
           "verified": true,
           "quote": "Polybutylene plumbing (marketed as Poly-B ) was used in several million homes built in the United States and Canada from around 1978 to 1997.",
           "tier": "reference"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Shell_USA",
+          "publisher": "Wikipedia (Shell USA)",
+          "tier": "reference",
+          "quote": "Between 1978 and 1995, Shell Oil produced polybutylene pipes, which corrode when exposed to chlorine.",
+          "supports": "Wikipedia: polybutylene was used in several million US and Canadian homes from about 1978 to 1997 (another Wikipedia page says Shell produced it 1978 to 1995), matching the stated range of mid-1995 to 1997.",
+          "verified": true
+        },
+        {
+          "url": "https://www.nachi.org/pb.htm",
+          "publisher": "InterNACHI",
+          "tier": "trade",
+          "quote": "Pipes made from polybutylene were installed in up to 10 million homes in the Unites States during that period.",
+          "supports": "InterNACHI: pipes made from polybutylene were installed in up to 10 million US homes.",
+          "verified": true
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Shell_USA",
+          "publisher": "Wikipedia (Shell USA)",
+          "tier": "reference",
+          "quote": "The settlement required Shell Oil to pay for the re-installation of piping for millions of houses for claims filed through May 2009.",
+          "supports": "Wikipedia: the Cox v. Shell settlement covered claims filed through May 2009 (a claim-filing end date; fund exhaustion itself was not found).",
+          "verified": true
         }
       ],
       "open_questions": "A sourced count of homes (the 6-10 million range is repeated, never derived). The exact date the Consumer Plumbing Recovery Center stopped taking claims (one weak source says 1 November 2009; I recall eligibility also being limited to leaks within 10-15 years of installation). A citable insurer position. Regional distribution data.",

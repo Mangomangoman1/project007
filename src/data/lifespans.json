@@ -21,8 +21,32 @@
     "zone": "whole-house",
     "lifeLow": 5,
     "lifeHigh": 5,
-    "note": "Plastic or foil flex duct traps lint and is a fire risk. Replace it with rigid or semi-rigid metal duct.",
+    "note": "Plastic or foil accordion duct traps lint more easily and can kink or crush, cutting airflow, and the overheating can ignite lint. CPSC advises replacing it with rigid or corrugated semi-rigid metal duct.",
     "sources": [
+      {
+        "url": "https://www.cpsc.gov/s3fs-public/5022.pdf",
+        "publisher": "CPSC",
+        "tier": "primary",
+        "quote": "Replace plastic or foil, accordion-type ducting material with rigid or corrugated semi-rigid metal duct."
+      },
+      {
+        "url": "https://www.cpsc.gov/s3fs-public/5022.pdf",
+        "publisher": "CPSC",
+        "tier": "primary",
+        "quote": "The flexible plastic or foil type duct can more easily trap lint and is more susceptible to kinks or crushing, which can greatly reduce the airflow."
+      },
+      {
+        "url": "https://www.energy.gov/sites/prod/files/2016/06/f32/Dryer_Venting.pdf",
+        "publisher": "U.S. Department of Energy (hosted guide)",
+        "tier": "primary",
+        "quote": "The spiral ribs restrict air flow, and the resulting overheating can ignite lint in the vent or inside the dryer."
+      },
+      {
+        "url": "https://www.energy.gov/sites/prod/files/2016/06/f32/Dryer_Venting.pdf",
+        "publisher": "U.S. Department of Energy (hosted guide)",
+        "tier": "primary",
+        "quote": "Once a fire starts, the plastic vent hose burns, spreading the fire."
+      },
       {
         "url": "https://www.nachi.org/life-expectancy.html",
         "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
@@ -198,8 +222,14 @@
     "zone": "whole-house",
     "lifeLow": 10,
     "lifeHigh": 10,
-    "note": "Replace a smoke alarm when it fails to respond to testing, or every 10 years, whichever comes first. The manufacture date is printed on the back.",
+    "note": "CPSC advises replacing smoke alarms every 10 years, and sooner if one fails to respond to testing. The manufacture date is printed on the back.",
     "sources": [
+      {
+        "url": "https://www.cpsc.gov/s3fs-public/pdfs/blk_media_559.pdf",
+        "publisher": "CPSC",
+        "tier": "primary",
+        "quote": "Replace smoke alarms every 10 years"
+      },
       {
         "url": "https://www.nachi.org/smoke-alarm-inspection.htm",
         "publisher": "InterNACHI, Smoke Alarm Inspection",
@@ -300,8 +330,20 @@
     "zone": "whole-house",
     "lifeLow": 13,
     "lifeHigh": 13,
-    "note": "Lint buildup is a fire hazard whatever the age; clean the lint trap every load and the vent duct regularly.",
+    "note": "Lint buildup in the dryer or its exhaust duct can start a fire, CPSC says, whatever the dryer's age. Clean the lint screen before or after every load and the vent duct regularly.",
     "sources": [
+      {
+        "url": "https://www.cpsc.gov/s3fs-public/5022.pdf",
+        "publisher": "CPSC",
+        "tier": "primary",
+        "quote": "Fires can occur when lint builds up in the dryer or in the exhaust duct."
+      },
+      {
+        "url": "https://www.cpsc.gov/s3fs-public/5022.pdf",
+        "publisher": "CPSC",
+        "tier": "primary",
+        "quote": "Clean the lint screen/filter before or after drying each load of clothes."
+      },
       {
         "url": "https://www.nachi.org/life-expectancy.html",
         "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
@@ -459,7 +501,7 @@
     "zone": "heating-cooling",
     "lifeLow": 15,
     "lifeHigh": 25,
-    "note": "Cracks in the heat exchanger can leak carbon monoxide, so have an older furnace checked yearly and keep a working CO alarm nearby. Frequent repairs and rising bills are signs of age.",
+    "note": "CPSC lists a breached heat exchanger, vent or chimney among the failures in furnace carbon monoxide incidents, and advises a professional inspection of fuel-burning heating every year. Keep a working CO alarm nearby. Frequent repairs and rising bills are signs of age.",
     "when": {
       "heating": [
         "forced-air",
@@ -467,6 +509,24 @@
       ]
     },
     "sources": [
+      {
+        "url": "https://www.cpsc.gov/Newsroom/News-Releases/2025/Theres-a-Chill-in-the-Air-Stay-Warm-Safely-Be-Cautious-When-Using-Generators-Furnaces-and-Space-Heaters",
+        "publisher": "CPSC",
+        "tier": "primary",
+        "quote": "Have a professional inspect all fuel-burning heating systems, including furnaces, boilers, fireplaces, wood stoves, water heaters, chimneys, flues and vents each year."
+      },
+      {
+        "url": "https://www.cpsc.gov/Newsroom/News-Releases/2025/Theres-a-Chill-in-the-Air-Stay-Warm-Safely-Be-Cautious-When-Using-Generators-Furnaces-and-Space-Heaters",
+        "publisher": "CPSC",
+        "tier": "primary",
+        "quote": "Fuel-burning heating systems, including furnaces and fireplaces, are a potential source of CO"
+      },
+      {
+        "url": "https://www.cpsc.gov/s3fs-public/Updated_IDI_review_CO_and_modern_furnaces_and_boilers.pdf",
+        "publisher": "CPSC",
+        "tier": "primary",
+        "quote": "Vent, Chimney, or Heat Exchanger Breach or Disconnect"
+      },
       {
         "url": "https://www.nachi.org/life-expectancy.html",
         "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
@@ -502,7 +562,7 @@
     "zone": "roof",
     "lifeLow": 20,
     "lifeHigh": 20,
-    "note": "Hot climates can shorten asphalt shingle life. Curling, cracked or bald shingles and granules in the gutters mean it is near the end.",
+    "note": "InterNACHI says hot climates drastically reduce asphalt shingle life. Curling, cracked or bald shingles and granules in the gutters mean it is near the end.",
     "when": {
       "roof": [
         "asphalt"
@@ -514,6 +574,12 @@
         "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
         "tier": "trade",
         "quote": "Asphalt Shingles (3-tab) 20"
+      },
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI",
+        "tier": "trade",
+        "quote": "Hot climates drastically reduce asphalt shingle life."
       }
     ]
   },
@@ -560,13 +626,25 @@
     "zone": "garage",
     "lifeLow": 20,
     "lifeHigh": 25,
-    "note": "Springs and cables wear with every use. A door that sticks, sags or looks off-balance should be serviced by a pro, since springs under tension can injure.",
+    "note": "Springs and cables wear with every use. CPSC says a door that sticks, binds or is out of balance should be serviced by a professional, and InterNACHI warns that springs are under very high tension and can snap, so do not adjust them yourself.",
     "sources": [
+      {
+        "url": "https://www.cpsc.gov/s3fs-public/garage.pdf",
+        "publisher": "CPSC",
+        "tier": "primary",
+        "quote": "If doors are not \"balanced,\" or if they bind or stick, they should be serviced by a professional."
+      },
       {
         "url": "https://www.nachi.org/life-expectancy.html",
         "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
         "tier": "trade",
         "quote": "Garage Doors 20 to 25"
+      },
+      {
+        "url": "https://www.nachi.org/garage-doors-openers.htm",
+        "publisher": "InterNACHI",
+        "tier": "trade",
+        "quote": "Homeowners should not attempt to adjust or repair springs themselves. The springs are held under extremely high tension and can snap suddenly and forcefully, causing serious or fatal injury."
       }
     ]
   },
@@ -608,8 +686,14 @@
     "zone": "interior-surfaces",
     "lifeLow": 25,
     "lifeHigh": 25,
-    "note": "Curling seams and cracks let water reach the subfloor. Very old sheet vinyl can contain asbestos, so do not sand it.",
+    "note": "Curling seams and cracks let water reach the subfloor. Very old sheet vinyl can have an asbestos backing, and CPSC says scraping or sanding it can release fibers, so do not sand or scrape it.",
     "sources": [
+      {
+        "url": "https://www.cpsc.gov/safety-education/safety-guides/home/asbestos-home",
+        "publisher": "U.S. Consumer Product Safety Commission",
+        "tier": "primary",
+        "quote": "RESILIENT FLOOR TILES (vinyl asbestos, asphalt, and rubber), the backing on VINYL SHEET FLOORING, and ADHESIVES used for installing floor tile. Sanding tiles can release fibers. So may scraping or sanding the backing of sheet flooring during removal."
+      },
       {
         "url": "https://www.nachi.org/life-expectancy.html",
         "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
@@ -666,13 +750,19 @@
     "zone": "kitchen",
     "lifeLow": 30,
     "lifeHigh": 30,
-    "note": "The chart says up to 30 years. Press the test button monthly; one that will not trip or reset must be replaced.",
+    "note": "The chart says up to 30 years, but InterNACHI says much less if they trip regularly. Press the test button monthly; one that will not trip or reset must be replaced.",
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
         "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
         "tier": "trade",
         "quote": "Ground-Fault Circuit Interrupters (GFCIs) up to 30"
+      },
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI",
+        "tier": "trade",
+        "quote": "GFCIs could last 30 years, but much less if tripped regularly."
       }
     ]
   },
@@ -698,7 +788,7 @@
     "zone": "heating-cooling",
     "lifeLow": 40,
     "lifeHigh": 40,
-    "note": "Boilers can outlast furnaces by many years. Leaks around the unit, rust and rising pressure problems suggest it is wearing out.",
+    "note": "InterNACHI's chart puts boilers at about 40 years against 15 to 25 for furnaces. Leaks around the unit, rust and rising pressure problems suggest it is wearing out.",
     "when": {
       "heating": [
         "boiler"
@@ -710,6 +800,18 @@
         "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
         "tier": "trade",
         "quote": "Boiler 40"
+      },
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI",
+        "tier": "trade",
+        "quote": "Furnace 15 to 25"
+      },
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI",
+        "tier": "trade",
+        "quote": "Hot-Water and Steam-Radiant Boiler 40"
       }
     ]
   },
@@ -756,13 +858,25 @@
     "zone": "chimney",
     "lifeLow": 40,
     "lifeHigh": 120,
-    "note": "A cracked liner can let heat and fumes reach the framing. Have the chimney inspected before using the fireplace in an older house.",
+    "note": "CPSC says a fireplace can start a fire if the chimney is cracked, blocked or coated with creosote. It advises a professional inspection of chimneys, flues and vents every year, so have one done before using the fireplace in an older house.",
     "when": {
       "chimney": [
         "yes"
       ]
     },
     "sources": [
+      {
+        "url": "https://www.cpsc.gov/Newsroom/News-Releases/2025/Theres-a-Chill-in-the-Air-Stay-Warm-Safely-Be-Cautious-When-Using-Generators-Furnaces-and-Space-Heaters",
+        "publisher": "CPSC",
+        "tier": "primary",
+        "quote": "Fireplaces can cause fires if the chimney is cracked, blocked or coated with creosote, or if sparks and embers reach flammable materials."
+      },
+      {
+        "url": "https://www.cpsc.gov/Newsroom/News-Releases/2025/Theres-a-Chill-in-the-Air-Stay-Warm-Safely-Be-Cautious-When-Using-Generators-Furnaces-and-Space-Heaters",
+        "publisher": "CPSC",
+        "tier": "primary",
+        "quote": "Have a professional inspect all fuel-burning heating systems, including furnaces, boilers, fireplaces, wood stoves, water heaters, chimneys, flues and vents each year."
+      },
       {
         "url": "https://www.nachi.org/life-expectancy.html",
         "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
@@ -913,7 +1027,7 @@
     "zone": "whole-house",
     "lifeLow": 100,
     "lifeHigh": 100,
-    "note": "The chart gives 100+ years for fiberglass doors. The weatherstripping wears out every five to eight years, so a draft means new seals, not a new door.",
+    "note": "InterNACHI says exterior fiberglass, steel and wood doors will last as long as the house, and its chart gives 100+ years for fiberglass. The weatherstripping wears out every five to eight years, so a draft means new seals, not a new door.",
     "openEnded": true,
     "sources": [
       {
@@ -927,6 +1041,12 @@
         "publisher": "InterNACHI Standard Estimated Life Expectancy Chart for Homes",
         "tier": "trade",
         "quote": "The gaskets/weatherstripping of exterior doors may have to be replaced every five to eight years."
+      },
+      {
+        "url": "https://www.nachi.org/life-expectancy.html",
+        "publisher": "InterNACHI",
+        "tier": "trade",
+        "quote": "Exterior fiberglass, steel and wood doors will last as long as the house"
       }
     ]
   },
