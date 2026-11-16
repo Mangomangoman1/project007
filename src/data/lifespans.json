@@ -792,6 +792,7 @@
     "lifeLow": 100,
     "lifeHigh": 100,
     "note": "The tile itself can last a century or more (the chart says 100+). The underlayment beneath often wears out first, so cracked or slipped tiles are the warning sign.",
+    "openEnded": true,
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -808,6 +809,7 @@
     "lifeLow": 100,
     "lifeHigh": 100,
     "note": "The door slab can last as long as the house (the chart says 100+). The weatherstripping wears out every five to eight years, so a draft means new seals, not a new door.",
+    "openEnded": true,
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -830,6 +832,7 @@
     "lifeLow": 100,
     "lifeHigh": 100,
     "note": "The chart says 100+. Keep the paint sound and the bottom edges clear of soil and splashing water.",
+    "openEnded": true,
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -846,6 +849,7 @@
     "lifeLow": 100,
     "lifeHigh": 100,
     "note": "Solid wood can be refinished several times and lasts for the life of the house (the chart says 100+). Water damage is what ends it.",
+    "openEnded": true,
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",
@@ -862,6 +866,7 @@
     "lifeLow": 100,
     "lifeHigh": 100,
     "note": "The china bowl lasts (the chart says 100+). The tank parts wear out in about five years, so a running toilet is a cheap repair.",
+    "openEnded": true,
     "sources": [
       {
         "url": "https://www.nachi.org/life-expectancy.html",

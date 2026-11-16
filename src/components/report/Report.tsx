@@ -293,7 +293,7 @@ export function Report({ year, issues, lifespans, timelineIssues }: ReportProps)
                         <span>{item.title}</span>
                         <span className={styles.upcomingWhen}>
                           {standing.stage === 'due'
-                            ? 'due now'
+                            ? 'in its window'
                             : standing.stage === 'past'
                               ? `${standing.by} yrs past`
                               : `in ${standing.by} ${standing.by === 1 ? 'yr' : 'yrs'}`}

@@ -128,13 +128,15 @@ export function lifeStanding(
  * due (soonest-ending first), past (least overdue first: those most plausibly still original),
  * soon (soonest first), later, cycled (shortest-lived first).
  */
-export function groupLifespans<T extends Pick<Lifespan, 'id' | 'title' | 'lifeLow' | 'lifeHigh'>>(
+export function groupLifespans<T extends Pick<Lifespan, 'id' | 'title' | 'lifeLow' | 'lifeHigh' | 'openEnded'>>(
   lifespans: T[],
   houseAge: number,
   opts: { replaced?: Record<string, number>; currentYear?: number; soonYears?: number } = {},
 ): Record<LifeStage, { item: T; standing: LifeStanding }[]> {
   const out: Record<LifeStage, { item: T; standing: LifeStanding }[]> = { due: [], past: [], soon: [], later: [], cycled: [] };
   for (const item of lifespans) {
+    // An open-ended life ("100+") says nothing about wear at any age: leave it out once reached.
+    if (item.openEnded && houseAge >= item.lifeLow && opts.replaced?.[item.id] == null) continue;
     const standing = lifeStanding(item, houseAge, {
       lastReplaced: opts.replaced?.[item.id] ?? null,
       currentYear: opts.currentYear,

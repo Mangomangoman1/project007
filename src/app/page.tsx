@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getIssuesLite, getMeta } from '@/lib/data';
 import { EVIDENCE } from '@/lib/labels';
@@ -6,6 +7,8 @@ import { HomeExplorer } from '@/components/HomeExplorer';
 import { EvidenceStamp, Prevalence } from '@/components/Stamps';
 import type { Evidence } from '@/lib/types';
 import styles from './home.module.css';
+
+export const metadata: Metadata = { alternates: { canonical: '/' } };
 
 export default function HomePage() {
   const issues = getIssuesLite();

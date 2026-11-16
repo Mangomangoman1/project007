@@ -21,7 +21,7 @@ const yrs = (n: number) => `${n} ${n === 1 ? 'yr' : 'yrs'}`;
 
 function statusText({ stage, by }: LifeStanding) {
   if (stage === 'past') return `${yrs(by)} past`;
-  if (stage === 'due') return 'Due now';
+  if (stage === 'due') return 'In its window';
   return `In ${yrs(by)}`;
 }
 
@@ -155,7 +155,7 @@ export function LifespanList({ lifespans, year, age }: LifespanListProps) {
     <div className={styles.root}>
       <dl className={styles.summary}>
         <div className={groups.due.length ? styles.sumOn : undefined}>
-          <dt>Due now</dt>
+          <dt>In their window</dt>
           <dd>{groups.due.length}</dd>
         </div>
         <div>

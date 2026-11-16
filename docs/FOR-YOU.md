@@ -5,6 +5,9 @@ Kept up to date as the build goes. Nothing here blocks tonight's work unless mar
 ## Decisions
 - [ ] **Name and domain.** The site is built as "Built In" (a working title, one-line change to
       rename). Pick a name and buy a domain when you're ready.
+- [ ] **Site address.** Until you have a domain the site calls itself `builtin.example` in the
+      sitemap, share links and the printed checklist footer. When you pick a domain, tell me and
+      I'll set it (one environment variable, `NEXT_PUBLIC_SITE_URL`).
 - [ ] **Go live.** I have not created a Vercel project or deployed anything; that publishes the
       site, so I'll wait for your say-so. Tell me "deploy a preview" and I'll set it up.
 - [ ] **Affiliate / monetisation.** None is built into v1 (no ads, no tracking). Decide later
@@ -18,6 +21,8 @@ Kept up to date as the build goes. Nothing here blocks tonight's work unless mar
       build stops mid-way, tell me to continue once it resets and I'll resume from the saved work.
 
 ## Worth a read when you have time
+- [ ] **Try it.** Read the report for your own house's year and tell me what feels wrong,
+      missing or confusing. You are the target reader.
 - [ ] **The "check first" list.** These 12 issues are flagged as priority on the reports for the
       years they apply to. Read them as a non-expert: do they make sense, are any scary in the
       wrong way?

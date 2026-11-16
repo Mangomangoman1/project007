@@ -270,7 +270,7 @@ for (const l of unwrapLifespans(lifespanContent.data)) {
   if (Array.isArray(l.sources)) raw.push(...l.sources.map((s) => ({ verified: true, ...s })));
   const sources = mapSources(raw, ctx);
   if (sources.length === 0) warn(`${ctx}: no verified sources`);
-  lifespans.push({ id, title: str(l.title, ctx, 'title'), zone, lifeLow, lifeHigh, note: typeof l.note === 'string' ? l.note.trim() : '', sources });
+  lifespans.push({ id, title: str(l.title, ctx, 'title'), zone, lifeLow, lifeHigh, note: typeof l.note === 'string' ? l.note.trim() : '', ...(l.openEnded === true ? { openEnded: true } : {}), sources });
 }
 lifespans.sort((a, b) => a.lifeLow - b.lifeLow || a.lifeHigh - b.lifeHigh || a.title.localeCompare(b.title));
 

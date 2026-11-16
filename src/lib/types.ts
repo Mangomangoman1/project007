@@ -51,6 +51,8 @@ export type Lifespan = {
   zone: Zone;
   lifeLow: number;
   lifeHigh: number;
+  /** True when the source gives an open-ended life ("100+"): never shown as worn out by age alone. */
+  openEnded?: boolean;
   note: string;
   sources: Source[];
 };

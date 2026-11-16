@@ -77,7 +77,8 @@
         "tier": "trade",
         "quote": "Clay/Concrete 100+"
       }
-    ]
+    ],
+    "openEnded": true
   },
   {
     "id": "epdm-flat-roof",
@@ -319,7 +320,8 @@
         "tier": "trade",
         "quote": "The gaskets/weatherstripping of exterior doors may have to be replaced every five to eight years."
       }
-    ]
+    ],
+    "openEnded": true
   },
   {
     "id": "garage-door",
@@ -447,7 +449,8 @@
         "tier": "trade",
         "quote": "Fiber Cement 100+"
       }
-    ]
+    ],
+    "openEnded": true
   },
   {
     "id": "asphalt-driveway",
@@ -773,7 +776,8 @@
         "tier": "trade",
         "quote": "Toilet Tank Components 5"
       }
-    ]
+    ],
+    "openEnded": true
   },
   {
     "id": "copper-water-lines",
@@ -859,7 +863,8 @@
         "tier": "trade",
         "quote": "All Wood Floors 100+"
       }
-    ]
+    ],
+    "openEnded": true
   },
   {
     "id": "vinyl-floor",

@@ -592,7 +592,7 @@
     "regions": "national",
     "severity": "comfort",
     "priority": 3,
-    "evidence": "rule",
+    "evidence": "era",
     "prevalence": {
       "label": "unknown",
       "note": "No reliable count exists of how many older houses have been upgraded. A house built before 1975 was built without any energy code."
@@ -1353,14 +1353,14 @@
       "coreFrom": null,
       "coreTo": null,
       "startEdge": "soft",
-      "endEdge": "sharp"
+      "endEdge": "soft"
     },
     "regions": [
       "FL"
     ],
     "severity": "safety",
     "priority": 2,
-    "evidence": "rule",
+    "evidence": "era",
     "prevalence": {
       "label": "likely",
       "note": "Wikipedia: about 4.7 million Florida homes predate the modern Florida Building Code."
@@ -1578,7 +1578,7 @@
       "coreFrom": null,
       "coreTo": null,
       "startEdge": "soft",
-      "endEdge": "sharp"
+      "endEdge": "soft"
     },
     "regions": "national",
     "severity": "safety",
@@ -1798,7 +1798,7 @@
     "regions": "national",
     "severity": "money",
     "priority": 2,
-    "evidence": "record",
+    "evidence": "era",
     "prevalence": {
       "label": "unknown",
       "note": "No reliable count exists. Class counsel described a Masonite class of about 4 million homeowners, but that figure could not be confirmed."
@@ -3245,7 +3245,7 @@
     "regions": "national",
     "severity": "money",
     "priority": 1,
-    "evidence": "record",
+    "evidence": "era",
     "prevalence": {
       "label": "possible",
       "note": "InterNACHI gives an upper estimate of up to 10 million homes. Against the tens of millions of homes built from 1978 to 1995, that is a minority of houses of the era."
@@ -4078,7 +4078,7 @@
     "regions": "national",
     "severity": "safety",
     "priority": 2,
-    "evidence": "rule",
+    "evidence": "era",
     "prevalence": {
       "label": "unknown",
       "note": "No reliable count exists. Before 1962 the code did not require grounded outlets, so a house of that age started with mostly two-wire circuits; how many have been rewired is unknown."
