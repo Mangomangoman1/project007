@@ -66,6 +66,8 @@
   border-right: 0;
 }
 .links a {
+  display: block;
+  padding: 2px 0; /* 24px tap targets */
   color: var(--ink);
   text-decoration: none;
 }

@@ -64,7 +64,7 @@
   --paper-3: #e1d8c4;          /* pressed / tracks */
   --ink: #1f2328;              /* graphite */
   --ink-2: #474c54;            /* secondary text   (≈7.6:1 on paper) */
-  --ink-3: #686c72;            /* tertiary labels  (≈4.9:1 on paper) */
+  --ink-3: #5f6369;            /* tertiary labels  (≈5.3:1 on paper, 4.8:1 on paper-2) */
   --line: #2b5d8c;             /* blueprint-blue linework (≈5.9:1) */
   --line-2: #5a83aa;           /* lighter linework */
   --rule: rgb(31 35 40 / 0.14);

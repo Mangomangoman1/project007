@@ -1,7 +1,7 @@
 # Year Built: front-end architecture
 
-Next.js 16 (App Router, TypeScript, `src/`), plain CSS (global tokens + CSS Modules), fonts from
-Fontsource (imported in `src/app/layout.tsx`). Everything is statically generated.
+Next.js 16 (App Router, TypeScript, `src/`), plain CSS (global tokens + CSS Modules), fonts from the
+Fontsource packages loaded through `next/font/local` (`src/app/fonts.ts`). Everything is statically generated.
 
 ```
 npm run dev | build     # both run scripts/build-data.mjs first (predev/prebuild)
@@ -69,7 +69,7 @@ median 1,755 sq ft); it exits 1 on any mismatch. The site build never touches th
 | `report/Report` (client) | `year`, `issues: ReportIssue[]`, `lifespans`, `timelineIssues` | Whole report; state filter client-side; new-house mode (age ≤ 15 and ≤ 2 priority-1/2 issues) leads with What's due. Headline = lead title + years in display type, hook as standfirst, lead band (or "first to come due" list for new houses) on the right, "Print the viewing checklist" link (also in the navigator). Timeline crossings link to `#i-<slug>`; opening a `#i-` hash (load or hashchange) opens that row. Section navigator: sticky sidebar on desktop, sticky strip at ≤1000px (sets `--report-sticky` for scroll margins) with the current section marked. "Expand all/Collapse all" per long section (JS only). By part of the house: `<HouseCutaway counts size="lg">` beside a part index (the figure column collapses via `:has(figure:empty)` if the drawing renders nothing). |
 | `report/IssueRow` | `issue: ReportIssue`, `year`, `index?`, `open?`, `variant?: 'full'\|'compact'` | full (check first): always-visible title/hook/band, "How to check" disclosed. compact (built without, by part): one native `<details data-row>` row (title, years, one clamped line, mini band) expanding in place to hook, band + evidence, check steps with `<HouseCutaway zones size="sm">`, action, notes. Works without JS. `toReportIssue(issue)` strips sources to counts. Anchors: `#i-<slug>`. |
 | `report/LifespanList` (client) | `lifespans`, `year`, `age` | Honest "What's due": open groups due → past (plausibly original) → soon on a shared age axis; parts whose life is < house age / 1.5 fold into "Replaced at least once by now: find out when". Every part takes a "last replaced" year or decade (saved on Enter/blur in `localStorage[builtin:last-replaced:<year>]` as `{id: "2015"}`); a dated part is judged by its own age (diamond marker). Counters: due now, past if original, due within 5 yrs, replaced by now. |
-| `SiteHeader`, `SiteFooter`, `ThemeToggle`, `LogoMark` | | Footer is a title block; shows a note when built on sample content. |
+| `SiteHeader`, `SiteFooter`, `ThemeToggle`, `LogoMark` | | Footer is a title block with a policy strip (Privacy, Terms & disclaimer, Corrections); shows a note when built on sample content. `ThemeToggle`'s accessible name starts with its visible word. |
 | `profile/useHouseProfile` (client) | | `[profile, save]` from `localStorage[builtin:profile]` via `useSyncExternalStore`: one shared snapshot for every component on the page, a custom event on save, the `storage` event across tabs. Server snapshot is `{}`, so static HTML is always unfiltered. `saveHouseProfile()` sanitizes. |
 | `profile/ProfilePanel` (client) | `year`, `profile`, `onChange`, `hiddenCount`, `reveal`, `onReveal` | "About your house", a row joined under the report's title block (`id="about-your-house"`; that hash opens it). Collapsed: answers so far, an 11-tick progress scale ("4 of 11"), Answer/Edit toggle (`aria-expanded`), and "N items hidden by your answers · show them". Open: three groups (columns on desktop; at ≤720px an accordion, one group at a time, each header showing its answers). Each question is a native radio group (`fieldset`/`legend`) whose first chip is a dashed "Not sure" (= unset). Clear all, Done; a polite live region announces each change and the hidden count. Open state kept in `builtin:profile-open`. Hidden without JS and in print. Also exports `RevealButton` ("show them / hide them", `aria-pressed`, `data-reveal-hidden`). |
 | `typical/TypicalHouse` (client) | `year`, `state`, `id?='typical-house'` | Report section "The typical new house of YEAR" (after By part, before What's due; navigator entry "Typical new house" with the characteristic count, absent before 1971). Region = the report's state's Census region (US when none; static HTML is US-wide); a US/Northeast/Midwest/South/West switch (radio group, JS only) overrides it until the state changes. Title block: one-sentence summary, median size, houses completed, median-size line. Then one row per characteristic: big lead share, `ShareStrip`, notes that apply to the year, and an over-time `Spark` of the lead category with the year marked and series breaks dashed (the line breaks there). House profile answers that line up get a dashed "yours" bracket and a line ("yours: slab, like 56% of new houses in the South that year (Census category: slab or other)"). Footer: general notes, source link and every table used. Before 1971 (and for years the Census has not published yet) only a short honest note. `typical/data.ts` imports the JSON (bundled once, ~12 KB gzipped) and exports `typicalNavCount(year)`. The printable checklist does not carry this section (the sheet is already one tight page for most years). |
@@ -179,8 +179,11 @@ title + first sentence of `check[0]`); Built without; Ask the seller; a counts `
 notes that stretch to fill the band. House profile: rows carry `data-item`/`data-part`, and the
 `checklist/Tailor` islands hide ruled-out rows after hydration, recount On record / Check first /
 section counts and the cutaway, and add "Tailored to your answers" (printed too). Check-first numbers
-are a CSS counter so they stay consecutive. "Ask the seller" and the server-side column balance are
-not tailored. No answers or no JS = the full sheet. Sparse years (< 10 issues) add "On any viewing" prompts and more
+are a CSS counter so they stay consecutive. "Ask the seller" is the `TailoredAsks` island:
+`sellerQuestions(lifespans, age, limit, profile)` drops parts the answers rule out (no central air →
+"How old is the furnace?"; slab → no sump pump; no chimney → no flue) and adds `alt` parts only when an
+answer names them (boiler, well pump, septic, metal/tile/wood/flat roofs). The server-side column
+balance is not tailored. No answers or no JS = the full sheet. Sparse years (< 10 issues) add "On any viewing" prompts and more
 note lines; houses ≤ 10 years old get a warranty question.
 `components/checklist/sheet.ts` (pure): `oneLine`, `regionNote`, `sellerQuestions(lifespans, age)`
 (one question per part, backed by named lifespans and `lifeStatus`: due/past, or soon for houses
@@ -227,10 +230,84 @@ New York County 4A; Miami-Dade 1A, radon 2; 22301 → Alexandria city; 06105 →
 |---|---|
 | `lib/place.ts` (pure, import-free; tests `place.test.ts`, incl. checks on the committed data) | `cleanZip`, `isValidZip`, `shardPath`, `FIPS_STATE`, `decodePlace` → `Place`, `BINS`, `compareYear` (uniform within a decade; "older than about", "newer than about", "older than at least" for pre-1940, "newest" after 2024), `binIndex`, `mainFuels` (≥ 5%), `housingFor` (ZIP figures, else county fallback with the reason), `radonStatement`, `climateStatement`, `firmContext`, `placeStatements` |
 | `components/place/usePlace.ts` (client) | `usePlacePref()` = `localStorage[builtin:place]` `{zip, setState?, keep?}` via `useSyncExternalStore` (server snapshot null). `usePlaceLookup(zip)` fetches only that ZIP's shard and `counties.json` from the same origin (memoised per page); 404 or absent ZIP = `missing`. |
-| `components/place/PlaceSection` (client) | Props `year`, `state`, `onStateChange` (the report's `chooseState`). ZIP strip (numeric keypad, ZIP+4 trimmed, auto-lookup on the fifth digit, "Forget this ZIP", privacy line). Sheet: title block (ZIP numeral, county + state, multi-county / independent-city / Connecticut notes), Houses around you (comparison sentence, `HousingChart`, median, homes counted, heating-fuel rows), Radon (boxed: zone scale + EPA's own caveat quoted, prominent), Climate zone + First flood map side by side (FEMA Flood Map Service Center link). Every fact has a source line. Without JS: a one-line note (`html:not(.js)`). |
+| `components/place/PlaceSection` (client) | Props `year`, `state`, `onStateChange` (the report's `chooseState`). ZIP strip (numeric keypad, ZIP+4 trimmed, auto-lookup on the fifth digit, "Forget this ZIP", privacy line). Sheet: title block (ZIP numeral, county + state, multi-county / independent-city / Connecticut / Puerto Rico notes; `areaUnit(place)` in `lib/place.ts` says "municipio" instead of "county" for PR), Houses around you (comparison sentence, `HousingChart`, median, homes counted, heating-fuel rows), Radon (boxed: zone scale + EPA's own caveat quoted, prominent), Climate zone + First flood map side by side (FEMA Flood Map Service Center link). Every fact has a source line. Without JS: a one-line note (`html:not(.js)`). |
 | `components/place/HousingChart` | Decade bars on the 1880–today axis (`pctOf`), oldest bin drawn over the 1930s with a faded tail, solid = built after the year, pale = before (the year's decade split at the line), year tag, hidden data table for screen readers. |
 
 State selector: a ZIP the visitor enters sets the report's state when it is "All states" or a state
 this section set earlier (note + Undo). If the visitor picked another state, it asks "Use Idaho /
 Keep Ohio" instead; "Keep" is remembered. Restoring a remembered ZIP never changes the state.
 Puerto Rico ZIPs show housing and FIRM facts only (no radon/climate data, not in the state list).
+The section navigator shows no count beside "Your place" (it depends on a ZIP the visitor may not give).
+
+## Launch: indexing, trust pages, icons, analytics, performance
+
+### Indexing and metadata (`src/lib/seo.ts`)
+- `pageMeta({title, shareTitle?, description, path, type?, image?, indexable?})` gives every page the
+  same set: title, description, canonical, `robots`, Open Graph (type, title, description, url,
+  site name, `en_US`, image) and a `summary_large_image` Twitter card. Next merges metadata shallowly,
+  so a page that sets `openGraph` must pass its image: the default is the site image
+  (`SITE_OG_IMAGE`, `/opengraph-image`); `image: null` on routes with their own `opengraph-image`
+  file (`/`, `/built/[year]`, `/issue/[slug]`). Checklists reuse `/built/[year]/opengraph-image`.
+- `robotsFor(indexable = true)`: index, follow; `false` = noindex, follow. `IS_NON_PRODUCTION_DEPLOY`
+  (`VERCEL_ENV` set and not `production`) makes every page noindex, nofollow, so preview deployments
+  are never indexed. The root layout sets `robots: robotsFor()`; any page that sets robots goes through
+  `robotsFor` so the preview rule cannot be overridden. `robots.ts` allows crawling (so crawlers can read
+  the noindex) and adds the sitemap line only in production. The 404 sets `robotsFor(false)` (Next adds
+  its own noindex too).
+- `/checklist/[year]`: noindex, follow, canonical to itself, not in `sitemap.ts`. The sitemap lists home,
+  `/issues`, `/about`, `/corrections`, `/privacy`, `/terms`, every `/built/Y` and every `/issue/<slug>`.
+- Year report descriptions (`yearDescription` in `built/[year]/page.tsx`) carry the report's own
+  headline: "1972 house report. Headline: Aluminum branch wiring, at its peak in 1972. 36 things on
+  record: 6 to check first, 12 protections it was built without and what is due at 54 years old."
+  (shortened to fit ~165 characters); new houses use the report's new-house wording and the first parts
+  to come due. Every one of the ~380 pages has a unique title and description (checked over the build).
+
+### Trust pages
+`/privacy`, `/terms`, `/corrections` share `components/doc/DocPage` (title block with cells and a
+"Last updated" stamp, sticky numbered index, numbered sections, `FactList`, closing `DocNote`; styles in
+`DocPage.module.css`). Linked from a policy strip at the foot of the footer title block.
+- `SITE.contactEmail` (`string | null`, null for now) drives `components/doc/Contact`: a mailto link, or
+  "A contact address will be listed here shortly." Used on /corrections, /about and /privacy.
+- `SITE.reviewStatus`: the one sentence on /about ("Who is behind this") about inspector review.
+- `SITE.policiesUpdated`: the date on the three pages.
+- `lib/corrections.ts`: `CORRECTIONS` (newest first; empty = "None yet."), rendered as a ledger.
+- `components/doc/ForgetDevice` (client): "Forget everything saved on this device". `savedKeys()` /
+  `clearSaved()` in `lib/storage.ts` derive every key from `STORAGE_KEYS` (per-year keys by prefix); it
+  also resets the profile and ZIP stores (`saveHouseProfile({})`, `forgetPlace()`), removes the theme
+  attribute and fires `THEME_RESET_EVENT` for `ThemeToggle`.
+
+### Icons, manifest, theme colour, 404
+- `scripts/build-icons.mjs` (dev only, Playwright: `NODE_PATH=$(npm root -g) node scripts/build-icons.mjs`)
+  redraws the LogoMark on a pixel grid and writes `src/app/icon.svg` (blueprint tile; paper tile when the
+  browser UI is dark), `src/app/favicon.ico` (16 with a pixel-snapped drawing, 32, 48), `src/app/apple-icon.png`
+  (180) and `public/icons/icon-192|512|maskable-512.png`. `src/app/manifest.ts` (`/manifest.webmanifest`).
+- `THEME_COLORS` in `site.ts` feeds the two `theme-color` metas (viewport), the manifest and the icons;
+  `ThemeToggle` points both metas at the chosen theme while one is chosen.
+- `src/app/not-found.tsx`: title-block sheet (outlined zero), links, `notfound/LookupYear` (the hero
+  `YearInput`, sized to its column through `--t-hero`; `YearInput` takes a `hint`) and the decade grid.
+
+### Analytics
+`components/TelemetryScripts` (client): `@vercel/analytics/next` `<Analytics>` and
+`@vercel/speed-insights/next` `<SpeedInsights>`, both with `beforeSend` that drops the query string and
+hash. The root layout renders `components/Telemetry`, which loads it with `next/dynamic` only when
+`process.env.BUILT_ON_VERCEL` is set; next.config.ts inlines that at build time (`'1'` when `VERCEL` is
+set), so local builds and other hosts compile none of the analytics code and request nothing. On Vercel
+both load from `/_vercel/insights/script.js` and `/_vercel/speed-insights/script.js` on the site's own
+origin and set no cookies (checked with a `VERCEL=1` build). Speed Insights must also be enabled in the
+Vercel dashboard.
+
+### Performance notes
+- Fonts: `next/font/local` over the same Fontsource woff2 files (latin only). Preloaded: Fraunces
+  (full axes, normal), Plex Sans 400, Plex Mono 400; the rest load on use. Fraunces italic is the
+  `standard` (wght + opsz) file, 82 KB instead of 150 KB: italics never use SOFT/WONK. Family names are
+  kept (`'Fraunces Variable'`, `'IBM Plex Sans'`, `'IBM Plex Mono'`) and the metric-matched fallbacks
+  (`'fraunces Fallback'`, `'plexSans Fallback'`, `'plexMono Fallback'`) sit second in the `--font-*`
+  tokens; this removed the font-swap layout shift (CLS 0.52 on /issues and 0.30 on a checklist before).
+- `HouseCutaway size="sm"` omits the detail that CSS hides at thumbnail size (`.fine`, `.h`, `.dots`,
+  `.agg`, `.dash`, the earth hatch) instead of shipping it hidden: the 1972 report went from 1.83 MB
+  (520 KB gzipped) to about 1.0 MB (116 KB gzipped) with identical rendering.
+- Accessibility: `--ink-3` (light) is #5f6369 so tertiary labels pass on `--paper-2` too; the home
+  hero question is the page's `h1` (styled as a label); footer index links are 24px targets.
+- Client props trimmed: the report's issues drop `summary`, the timeline gets `getIssuesTimeline()` (no
+  copy), lifespans come from `getLifespansLite()` (no quotes). `content-visibility` on the report's lower
+  sections was tried and removed: no measurable gain, and it gave Lighthouse stale rects.

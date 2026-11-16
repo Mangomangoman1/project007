@@ -765,17 +765,3 @@
   }
 }
 
-/*
- * The long tail of the report (from the third section on: by part, the typical house, what's due,
- * your place) skips rendering work until it nears the viewport. Everything stays in the HTML, in
- * find-in-page and in the accessibility tree; `auto` remembers each section's real height once seen.
- */
-.sections > :nth-child(n + 3) {
-  content-visibility: auto;
-  contain-intrinsic-size: auto 1400px;
-}
-@media print {
-  .sections > :nth-child(n + 3) {
-    content-visibility: visible;
-  }
-}

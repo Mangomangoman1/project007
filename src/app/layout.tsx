@@ -46,9 +46,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <SiteHeader />
         <main id="main">{children}</main>
         <SiteFooter />
-        {/* Vercel Web Analytics + Speed Insights: only in builds made on Vercel (VERCEL=1), so local
-            builds and other hosts render and request nothing extra. See /privacy. */}
-        {process.env.VERCEL ? <Telemetry /> : null}
+        {/* Vercel Web Analytics + Speed Insights: compiled in only for builds made on Vercel. See /privacy. */}
+        <Telemetry />
       </body>
     </html>
   );
