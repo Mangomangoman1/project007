@@ -881,7 +881,7 @@
     "title": "Asbestos floor tile and sheet flooring",
     "category": "hazmat",
     "hook": "CPSC says asbestos is found in some vinyl floor tiles, sheet-flooring backing and flooring adhesives, and that sanding tiles or scraping the backing can release fibers.",
-    "summary": "Some vinyl and asphalt floor tiles, sheet-vinyl backing and the adhesives used to lay them contained asbestos through much of the 20th century. EPA's 1989 ban was overturned in 1991, leaving vinyl-asbestos tile unbanned until a 2019 rule. Intact flooring is low risk; sanding, grinding or breaking it up releases fibers.",
+    "summary": "Some vinyl and asphalt floor tiles, sheet-vinyl backing and the adhesives used to lay them contained asbestos through much of the 20th century. EPA's 1989 asbestos ban was largely overturned in 1991, so it did not end up banning vinyl-asbestos tile. Intact flooring is low risk; sanding, grinding or breaking it up releases fibers.",
     "kind": "present",
     "applies": {
       "from": 1920,
