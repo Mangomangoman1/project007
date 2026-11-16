@@ -1,6 +1,6 @@
-# Built In — v1 spec
+# Year Built: v1 spec
 
-Working title "Built In" (the name lives in ONE config constant so it can be renamed). A site where
+Named "Year Built" at yearbuilt.house (originally the working title "Built In"; the name lives in ONE config constant). A site where
 you enter the year your US house was built and see what houses of that era typically contain, what
 to check first, and what is reaching end of life. Every claim is sourced. It is a guide to what to
 look for, never a substitute for an inspection.

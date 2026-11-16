@@ -1,12 +1,12 @@
 /** Site-wide constants. Rename the site here and nowhere else. */
 export const SITE = {
-  name: 'Built In',
+  name: 'Year Built',
   tagline: 'What your house was built with',
   description:
     'Enter the year your house was built and see what US houses of that era typically contain, what to check first, and what is reaching the end of its life. Every claim is sourced.',
   disclaimer: 'A guide to what to look for. Not an inspection.',
   /** Production origin, used for canonical URLs and OG images. */
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://builtin.example',
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://yearbuilt.house',
 } as const;
 
 /** Earliest build year we generate a report for. */

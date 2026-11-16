@@ -1,4 +1,4 @@
-# Built In: front-end architecture
+# Year Built: front-end architecture
 
 Next.js 16 (App Router, TypeScript, `src/`), plain CSS (global tokens + CSS Modules), fonts from
 Fontsource (imported in `src/app/layout.tsx`). Everything is statically generated.

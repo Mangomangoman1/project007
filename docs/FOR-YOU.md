@@ -3,11 +3,8 @@
 Kept up to date as the build goes. Nothing here blocks tonight's work unless marked **blocking**.
 
 ## Decisions
-- [ ] **Name and domain.** The site is built as "Built In" (a working title, one-line change to
-      rename). Pick a name and buy a domain when you're ready.
-- [ ] **Site address.** Until you have a domain the site calls itself `builtin.example` in the
-      sitemap, share links and the printed checklist footer. When you pick a domain, tell me and
-      I'll set it (one environment variable, `NEXT_PUBLIC_SITE_URL`).
+- [x] **Name and domain.** Year Built, at yearbuilt.house (purchased).
+- [x] **Site address.** Set to https://yearbuilt.house in the sitemap, share links and checklist.
 - [ ] **Go live.** I have not created a Vercel project or deployed anything; that publishes the
       site, so I'll wait for your say-so. Tell me "deploy a preview" and I'll set it up.
 - [ ] **Affiliate / monetisation.** None is built into v1 (no ads, no tracking). Decide later

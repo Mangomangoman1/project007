@@ -7,7 +7,7 @@
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import type { Issue } from '@/lib/types';
-import { MAX_YEAR, MIN_YEAR } from '@/lib/site';
+import { MAX_YEAR, MIN_YEAR, SITE } from '@/lib/site';
 import { appliesTo } from '@/lib/select';
 import { bandGeom, decades, packRows, pctMid, pctOf, type Domain } from '@/lib/timeline';
 import { woff2ToTtf } from './woff2';
@@ -100,7 +100,7 @@ export function OgFrame({ children, footRight }: { children: React.ReactNode; fo
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
             <OgLogo size={26} />
-            <span style={{ fontFamily: 'Fraunces Head', fontSize: 26, color: C.ink }}>Built In</span>
+            <span style={{ fontFamily: 'Fraunces Head', fontSize: 26, color: C.ink }}>{SITE.name}</span>
           </div>
           <span style={mono(14, C.ink2, 400)}>{footRight}</span>
         </div>

@@ -1,10 +1,10 @@
-# Built In
+# Year Built
 
 Enter the year a US house was built and see what houses of that era typically contain, what to
 check first, and what is reaching the end of its life. Every claim is sourced. A guide to what to
 look for, not an inspection.
 
-"Built In" is a working title; the name is one constant in `src/lib/site.ts`.
+The site lives at https://yearbuilt.house. The name and address are constants in `src/lib/site.ts`.
 
 ## Run it
 ```bash
